@@ -1,0 +1,34 @@
+{
+  "recorded_at": "2026-10-10 09:36:31 UTC",
+  "iteration": 3,
+  "bus": {
+    "project_id": "appgprj_6ac9e65f76c48191b8d53784212b5f4c",
+    "commit_sha": "2f616c21b832d8164b06c60a7ffc66499c20290f",
+    "deployment_id": "appgdep_6aca06d97cf4819191d7cd98c5a80355",
+    "version_id": "appgprj_6ac9e65f76c48191b8d53784212b5f4c~appgver_3d2d9fda24e08191bfc638a1664a844a",
+    "status": "succeeded",
+    "url": "https://bus-search-quantum-lab.syrupyspool2.chatgpt.site",
+    "audience": "owner-private"
+  },
+  "crowd": {
+    "project_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1",
+    "commit_sha": "2a4846d5582ff2423d5f38d7223c6a478cb23cc3",
+    "deployment_id": "appgdep_6aca06e69354819195cd5c4266a6205a",
+    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_60ffd87e42688191a917d9e1b835bb6f",
+    "status": "succeeded",
+    "url": "https://quantum-crowd-search.syrupyspool2.chatgpt.site",
+    "audience": "owner-private"
+  },
+  "submission": {
+    "status": "not-submitted",
+    "instruction": "Do not submit any work. Keep iterating improvements.",
+    "public_materials_published": false
+  },
+  "browser_preview": "Local source interactions tested, responsive layout checked. Hosted owner sign-in gates expected; authenticated hosted interaction remains unverified.",
+  "next_work": [
+    "Versioned foreground/shape representation and training asset variety; current production checkpoints remain unchanged",
+    "Constrained scene validation of ranking and coverage, preserving false-mark and abstention reporting",
+    "Record new feature/model/threshold/protocol freeze before opening reserve c photographs; primary a/b assets are now diagnostics",
+    "Keep both deliverables, rubric cross-check and local educational storyboard; no contest submission or public entry materials"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "version": "photo-relative-v3",
+  "status": "predeclared before candidate fitting and fresh asset disclosure",
+  "training_assets": ["dist/assets/real-schoolbus.png", "dist/assets/street-captcha.png", "model/training-assets/sauk-centre-street-512.png"],
+  "excluded_from_selection": ["Emeryville street", "Daniel Oines bus", "all iteration03 fresh photograph identities"],
+  "feature_design": "Eight engineered warm-color geometry and relative-dark shape features; HSV-style saturation>=0.24, max-channel>32, r>=0.90g, r>b, g>b, 0.25<=(g-b)/(r-b)<=1.10. Local dark threshold0.64 times median warm luminance. No feature design updates after fitting begins.",
+  "patch_splits": {
+    "train": {"n": 4800, "seed": 2026101030},
+    "validation": {"n": 1200, "seed": 2026101031},
+    "test": {"n": 2000, "seed": 2026101232},
+    "stress_test": {"n": 1200, "seed": 2026101233}
+  },
+  "augmentation": "Balanced patch labels; real-bus cutout width44..59 (stress36..64), half of positive placements can be partially cropped. Two backgrounds sampled equally; mixed512/256 scene rasters.35% negative examples are exact empty CAPTCHA tiles. Whole-patch illumination: gain uniform0.60..1.25, gamma0.85..1.20, per-channel balance0.90..1.10. Stress gain0.40..1.35, gamma0.75..1.30, balance0.85..1.15 plus RGB Gaussian sigma2.",
+  "qnn": {"qubits": 4, "layers": 4, "parameter_slots": 40, "restarts": 3, "steps_per_restart": 2200, "initialization": "three seeded random runs, no inherited v2 weights", "checkpoint_selection": "minimum validation patch BCE, evaluated every100 steps and first step"},
+  "logistic": {"parameters": 9, "regularization_grid": [0.000001,0.00001,0.0001,0.001,0.01,0.1], "selection": "minimum validation patch BCE; training-only standardization; Newton/backtracking optimizer"},
+  "scene_validation": {
+    "placement_seed": 2026101080,
+    "placements_per_background_and_grid": 128,
+    "grids": [4,8],
+    "empty_variants_per_background_and_grid": 36,
+    "empty_gains": [0.55,0.75,1.0,1.2],
+    "empty_gammas": [0.85,1.0,1.15],
+    "empty_channel_balances": [[1,1,1],[1.08,1,0.92],[0.92,1,1.08]],
+    "ground_truth": "any inserted target alpha>32 pixel in tile, evaluation only",
+    "budget": "zero marked tiles across all144 empty validation scenes and <=1% of512 target validation scenes with any false tile mark",
+    "threshold_grid": "0.100..0.995 inclusive step0.005",
+    "threshold_selection": "among budget-feasible thresholds maximize complete-scene rate, then patch validation F1, then prefer lower threshold. If none feasible, minimize number of violated empty/false scenes, then maximize complete-scene rate and patch F1; flag budget_feasible=false and do not promote."
+  },
+  "final_evaluation": "Freeze extractor source, trainer, candidate weights/thresholds, renderer, scene protocol, and model hashes before requesting fresh asset locations. Score fresh street absence and128 seeded seen-cutout placements/background/grid; score independently photographed bus known-ROI and full-photo coarse bbox separately. Previously inspected Emeryville/Oines are diagnostic only. No fresh/diagnostic result changes this iteration's candidates.",
+  "promotion_gate": "No automatic promotion. Requires budget, identical-pixel JS/Python parity, default-background absence/placement/boundary regression, fresh identity evaluation, and explicit root review. Artifacts remain readyForDemo:false."
+}

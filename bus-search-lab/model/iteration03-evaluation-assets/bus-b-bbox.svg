@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="960" viewBox="0 0 2048 1536" role="img" aria-labelledby="title desc">
+<title id="title">bus-b manual evaluation rectangle</title>
+<desc id="desc">Known-ROI recognition only, not segmentation. Box [0, 470, 2048, 1055]. Original photo by Ariana Rose Taylor-Stanley, CC BY 2.0.</desc>
+<image href="bus-b-source.jpg" width="2048" height="1536"/>
+<rect x="0" y="470" width="2048" height="585" fill="none" stroke="#00ffff" stroke-width="8"/>
+</svg>

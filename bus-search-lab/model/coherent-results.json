@@ -1,0 +1,310 @@
+{
+  "purpose": "coherent amplification of a raw QNN register-bit event; not sigmoid/threshold classification",
+  "qubits": {
+    "address": 2,
+    "qnn": 4,
+    "total": 6
+  },
+  "qnn_layers": 4,
+  "basis_convention": "basis_index = (address << 4) | qnn_basis; QNN bit 0 is least significant",
+  "good_event": "QNN qubit 3 measured as 1",
+  "initial_good_event_probability": 0.2714769699086931,
+  "theta": 0.5480625425042829,
+  "recommended_first_peak_iterations": 1,
+  "features": [
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.5038174715909091,
+      0.9777777777777777,
+      0.3333333333333333,
+      0.22556390977443608,
+      0.0,
+      1.0,
+      0.8863636363636364,
+      0.9022038567493113
+    ],
+    [
+      0.2596768465909091,
+      1.0,
+      1.0,
+      0.667420814479638,
+      0.844658451018446,
+      0.6666666666666666,
+      0.925,
+      0.8636363636363635
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "diagnostic_classical_sigmoid_scores": [
+    0.007649010067768826,
+    0.0018107175951275853,
+    0.3861527529724984,
+    0.007649010067768826
+  ],
+  "diagnostic_raw_bit_event_probabilities": [
+    0.15006839051428827,
+    0.22763016273737552,
+    0.55814093586882,
+    0.15006839051428827
+  ],
+  "initial_address_probability_given_good": [
+    0.13819624420145235,
+    0.20962198268046026,
+    0.5139855289166351,
+    0.13819624420145235
+  ],
+  "preparation_primitive_gate_counts": {
+    "h": 2,
+    "address_controlled_ry": 64,
+    "address_controlled_rz": 64,
+    "ry": 16,
+    "rz": 16,
+    "cx": 16
+  },
+  "preparation_primitive_gate_total": 178,
+  "checks": {
+    "inverse_matches_conjugate_transpose_max_error": 2.172217384091364e-16,
+    "A_unitarity_max_error": 1.110223024650501e-15,
+    "A_dagger_A_zero_recovery_max_error": 2.39773362036226e-16,
+    "Q_matches_dense_reflection_max_error": 1.8874147997039263e-15,
+    "analytic_curve_max_error": 2.886579864025407e-15,
+    "normalization_max_error": 4.218847493575595e-15,
+    "conditional_address_invariance_max_error": 2.1649348980190553e-15
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "norm": 1.0000000000000004,
+      "good_event_probability": 0.27147696990869313,
+      "analytic_good_event_probability": 0.271476969908693,
+      "absolute_formula_error": 1.1102230246251565e-16,
+      "address_probability": [
+        0.25,
+        0.25000000000000033,
+        0.2500000000000001,
+        0.25
+      ],
+      "joint_address_and_good_probability": [
+        0.037517097628572034,
+        0.05690754068434402,
+        0.13953523396720502,
+        0.037517097628572034
+      ],
+      "address_probability_given_good": [
+        0.13819624420145216,
+        0.20962198268046067,
+        0.513985528916635,
+        0.13819624420145216
+      ],
+      "A_applications": 1,
+      "A_dagger_applications": 0,
+      "good_reflections": 0,
+      "zero_reflections": 0
+    },
+    {
+      "iteration": 1,
+      "norm": 1.0000000000000004,
+      "good_event_probability": 0.9946233807179897,
+      "analytic_good_event_probability": 0.9946233807179891,
+      "absolute_formula_error": 6.661338147750939e-16,
+      "address_probability": [
+        0.1390213742308383,
+        0.20991997906152599,
+        0.5120372724767981,
+        0.1390213742308383
+      ],
+      "joint_address_and_good_probability": [
+        0.1374532156101772,
+        0.208494925086448,
+        0.5112220244111874,
+        0.1374532156101772
+      ],
+      "address_probability_given_good": [
+        0.13819624420145213,
+        0.209621982680461,
+        0.5139855289166347,
+        0.13819624420145213
+      ],
+      "A_applications": 2,
+      "A_dagger_applications": 1,
+      "good_reflections": 1,
+      "zero_reflections": 1
+    },
+    {
+      "iteration": 2,
+      "norm": 1.0000000000000009,
+      "good_event_probability": 0.15256595922355745,
+      "analytic_good_event_probability": 0.1525659592235566,
+      "absolute_formula_error": 8.604228440844963e-16,
+      "address_probability": [
+        0.2682488364145928,
+        0.2565905821101178,
+        0.20691174506069787,
+        0.2682488364145925
+      ],
+      "joint_address_and_good_probability": [
+        0.02108404255768751,
+        0.031981178861988695,
+        0.07841669524619377,
+        0.021084042557687484
+      ],
+      "address_probability_given_good": [
+        0.138196244201452,
+        0.20962198268046242,
+        0.5139855289166338,
+        0.1381962442014518
+      ],
+      "A_applications": 3,
+      "A_dagger_applications": 2,
+      "good_reflections": 2,
+      "zero_reflections": 2
+    },
+    {
+      "iteration": 3,
+      "norm": 1.0000000000000018,
+      "good_event_probability": 0.4099411834457057,
+      "analytic_good_event_probability": 0.40994118344570574,
+      "absolute_formula_error": 5.551115123125783e-17,
+      "address_probability": [
+        0.22875040530264423,
+        0.2423256915960051,
+        0.3001734977987084,
+        0.2287504053026443
+      ],
+      "joint_address_and_good_probability": [
+        0.056652331895695095,
+        0.08593268365626285,
+        0.21070383599805265,
+        0.056652331895695116
+      ],
+      "address_probability_given_good": [
+        0.1381962442014523,
+        0.20962198268045965,
+        0.5139855289166357,
+        0.13819624420145235
+      ],
+      "A_applications": 4,
+      "A_dagger_applications": 3,
+      "good_reflections": 3,
+      "zero_reflections": 3
+    },
+    {
+      "iteration": 4,
+      "norm": 1.0000000000000024,
+      "good_event_probability": 0.9523017324596281,
+      "analytic_good_event_probability": 0.9523017324596252,
+      "absolute_formula_error": 2.886579864025407e-15,
+      "address_probability": [
+        0.14551632227150263,
+        0.21226563482775934,
+        0.49670172062923795,
+        0.14551632227150255
+      ],
+      "joint_address_and_good_probability": [
+        0.13160452277245688,
+        0.1996233772682244,
+        0.4894693096464901,
+        0.13160452277245674
+      ],
+      "address_probability_given_good": [
+        0.13819624420145232,
+        0.2096219826804602,
+        0.5139855289166353,
+        0.13819624420145216
+      ],
+      "A_applications": 5,
+      "A_dagger_applications": 4,
+      "good_reflections": 4,
+      "zero_reflections": 4
+    },
+    {
+      "iteration": 5,
+      "norm": 1.0000000000000033,
+      "good_event_probability": 0.06338257937823032,
+      "analytic_good_event_probability": 0.06338257937822951,
+      "absolute_formula_error": 8.049116928532385e-16,
+      "address_probability": [
+        0.2819354824225674,
+        0.2615335254451532,
+        0.17459550970971555,
+        0.2819354824225671
+      ],
+      "joint_address_and_good_probability": [
+        0.008759234417871853,
+        0.01328638195666626,
+        0.032577728585820385,
+        0.008759234417871822
+      ],
+      "address_probability_given_good": [
+        0.13819624420145232,
+        0.20962198268045973,
+        0.5139855289166362,
+        0.13819624420145182
+      ],
+      "A_applications": 6,
+      "A_dagger_applications": 5,
+      "good_reflections": 5,
+      "zero_reflections": 5
+    },
+    {
+      "iteration": 6,
+      "norm": 1.0000000000000042,
+      "good_event_probability": 0.5561111337217363,
+      "analytic_good_event_probability": 0.5561111337217359,
+      "absolute_formula_error": 3.3306690738754696e-16,
+      "address_probability": [
+        0.20631823946747668,
+        0.23422429666398603,
+        0.3531392244010644,
+        0.206318239467477
+      ],
+      "joint_address_and_good_probability": [
+        0.0768524700389554,
+        0.11657311844142938,
+        0.285833075202396,
+        0.07685247003895555
+      ],
+      "address_probability_given_good": [
+        0.13819624420145202,
+        0.2096219826804611,
+        0.5139855289166347,
+        0.1381962442014523
+      ],
+      "A_applications": 7,
+      "A_dagger_applications": 6,
+      "good_reflections": 6,
+      "zero_reflections": 6
+    }
+  ],
+  "model_path": "C:\\Users\\henri\\Documents\\Codex\\2026-10-10\\new-chat\\outputs\\bus-search-lab\\dist\\model\\model.json",
+  "model_sha256": "99643bd2693ad754a4e49a2560efaade8eade96d336a9bafb578266aef9f5d52",
+  "provenance": {
+    "fixtures_path": "C:\\Users\\henri\\Documents\\Codex\\2026-10-10\\new-chat\\outputs\\bus-search-lab\\model\\parity-fixtures.json",
+    "fixtures_sha256": "2ea729476c3b3b491c274386e841a8a0fb98b219c98118850c71a749038ed689",
+    "fixture_indices": [
+      0,
+      2,
+      1,
+      4
+    ],
+    "domain": "held-out synthetic patch features; no photographs"
+  }
+}

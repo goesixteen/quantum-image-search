@@ -1,0 +1,674 @@
+{
+  "model_sha256": "b0ec16ba57037897ce31ca5bd30c015c4ad1b57213e7360523bc1d4325d62a78",
+  "model_file": "coherent-classifier.json",
+  "source_sha256": {
+    "coherent_majority.py": "ddbdf491afb3228e64187409864d8ae8160282278a7d2ef8b4d38fca74b33bbf",
+    "coherent_prototype.py": "290959fcf27df26ed51340648c3be7d49a7542c9ea5ac97d1cd51fb5170cef87",
+    "train_coherent_classifier.py": "e927f79a68cc64820ecdd1b2dfe81c36e2f6de140ff4458c83bf955a286c2911",
+    "train.py": "b52f068b5c6ae427ac00d73a4c4181a3f925efe0067ff4ff79a3dc4bd861818e"
+  },
+  "features": [
+    [
+      0.5593039772727273,
+      0.9583333333333334,
+      0.3333333333333333,
+      0.1703296703296703,
+      0.0,
+      1.0,
+      0.8695652173913043,
+      0.7312252964426877
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.7235440340909091,
+      0.6969696969696969,
+      0.8333333333333334,
+      0.7692307692307692,
+      1.0,
+      0.0,
+      0.5652173913043478,
+      0.22727272727272727
+    ],
+    [
+      0.5692915482954546,
+      0.8518518518518517,
+      1.0,
+      0.9615384615384615,
+      0.8452597354778071,
+      1.0,
+      0.9891304347826086,
+      0.7227555053642009
+    ]
+  ],
+  "names": [
+    "yellow truck",
+    "blue car",
+    "striped yellow sign",
+    "yellow schoolbus"
+  ],
+  "evaluation_labels": [
+    0,
+    0,
+    0,
+    1
+  ],
+  "one_copy": {
+    "copies": 1,
+    "registers": {
+      "address": 2,
+      "qnn_copies": 1,
+      "qubits_per_copy": 4,
+      "total": 6
+    },
+    "dimension": 64,
+    "statevector_complex128_bytes": 1024,
+    "basis_convention": "index = (address << 4) | copy_basis; copy c uses bits4c..4c+3",
+    "good_event": "q3=1",
+    "no_dense_unitary_matrix": true,
+    "no_intermediate_measurement": true,
+    "threshold_used": false,
+    "retraining": false,
+    "raw_single_copy_event_probabilities": [
+      0.3525721815673515,
+      0.012531377713476954,
+      0.1811151782797672,
+      0.9303327326827602
+    ],
+    "analytic_branch_event_probabilities": [
+      0.3525721815673515,
+      0.012531377713476954,
+      0.1811151782797672,
+      0.9303327326827602
+    ],
+    "simulated_branch_event_probabilities": [
+      0.35257218156735104,
+      0.012531377713476892,
+      0.1811151782797669,
+      0.9303327326827604
+    ],
+    "initial_good_event_probability": 0.36913786756083894,
+    "initial_address_given_good": [
+      0.23878082726722882,
+      0.00848692237691627,
+      0.1226609311830606,
+      0.6300713191727944
+    ],
+    "recommended_first_peak_iterations": 1,
+    "history": [
+      {
+        "iteration": 0,
+        "norm": 0.9999999999999998,
+        "good_event_probability": 0.3691378675608388,
+        "analytic_good_event_probability": 0.3691378675608389,
+        "formula_error": 1.1102230246251565e-16,
+        "address_marginal": [
+          0.2499999999999999,
+          0.25,
+          0.24999999999999975,
+          0.25000000000000017
+        ],
+        "address_and_good": [
+          0.08814304539183776,
+          0.003132844428369223,
+          0.04527879456994172,
+          0.2325831831706901
+        ],
+        "address_given_good": [
+          0.23878082726722863,
+          0.008486922376916232,
+          0.12266093118306044,
+          0.6300713191727948
+        ],
+        "evaluation_true_bus_and_good_probability": 0.2325831831706901,
+        "evaluation_true_bus_address_probability": 0.25000000000000017,
+        "evaluation_true_bus_probability_given_good": 0.6300713191727948
+      },
+      {
+        "iteration": 1,
+        "norm": 0.9999999999999989,
+        "good_event_probability": 0.8567303872106293,
+        "analytic_good_event_probability": 0.8567303872106304,
+        "formula_error": 1.1102230246251565e-15,
+        "address_marginal": [
+          0.24132871602229808,
+          0.06333485718772064,
+          0.15157979973493238,
+          0.5437566270550479
+        ],
+        "address_and_good": [
+          0.20457079060312694,
+          0.007271004294201994,
+          0.10508734706807976,
+          0.5398012452452207
+        ],
+        "address_given_good": [
+          0.23878082726722835,
+          0.008486922376916227,
+          0.12266093118306048,
+          0.630071319172795
+        ],
+        "evaluation_true_bus_and_good_probability": 0.5398012452452207,
+        "evaluation_true_bus_address_probability": 0.5437566270550479,
+        "evaluation_true_bus_probability_given_good": 0.630071319172795
+      },
+      {
+        "iteration": 2,
+        "norm": 0.9999999999999978,
+        "good_event_probability": 0.015144900254555107,
+        "analytic_good_event_probability": 0.015144900254555194,
+        "formula_error": 8.673617379884035e-17,
+        "address_marginal": [
+          0.2562953663600632,
+          0.3855191991957332,
+          0.32145322647634744,
+          0.03673220796785391
+        ],
+        "address_and_good": [
+          0.0036163118116624192,
+          0.00012853359286654892,
+          0.0018576875678983013,
+          0.009542367282127838
+        ],
+        "address_given_good": [
+          0.2387808272672345,
+          0.008486922376916287,
+          0.12266093118306062,
+          0.6300713191727886
+        ],
+        "evaluation_true_bus_and_good_probability": 0.009542367282127838,
+        "evaluation_true_bus_address_probability": 0.03673220796785391,
+        "evaluation_true_bus_probability_given_good": 0.6300713191727886
+      },
+      {
+        "iteration": 3,
+        "norm": 0.9999999999999969,
+        "good_event_probability": 0.9801303085102164,
+        "analytic_good_event_probability": 0.9801303085102194,
+        "formula_error": 2.9976021664879227e-15,
+        "address_marginal": [
+          0.23913418735893183,
+          0.016093640384484832,
+          0.12667161415464037,
+          0.6181005581019399
+        ],
+        "address_and_good": [
+          0.2340363258957543,
+          0.00831828984758919,
+          0.12022369632260355,
+          0.6175519964442694
+        ],
+        "address_given_good": [
+          0.23878082726722943,
+          0.008486922376916256,
+          0.12266093118306053,
+          0.6300713191727938
+        ],
+        "evaluation_true_bus_and_good_probability": 0.6175519964442694,
+        "evaluation_true_bus_address_probability": 0.6181005581019399,
+        "evaluation_true_bus_probability_given_good": 0.6300713191727938
+      },
+      {
+        "iteration": 4,
+        "norm": 0.9999999999999964,
+        "good_event_probability": 0.15614940142963862,
+        "analytic_good_event_probability": 0.1561494014296391,
+        "formula_error": 4.718447854656915e-16,
+        "address_marginal": [
+          0.2537877600647457,
+          0.33153841752187585,
+          0.2929915690787006,
+          0.12168225333467425
+        ],
+        "address_and_good": [
+          0.03728548325065194,
+          0.0013252278491352818,
+          0.019153430983036963,
+          0.09838525934681445
+        ],
+        "address_given_good": [
+          0.23878082726723027,
+          0.008486922376916273,
+          0.12266093118306032,
+          0.6300713191727932
+        ],
+        "evaluation_true_bus_and_good_probability": 0.09838525934681445,
+        "evaluation_true_bus_address_probability": 0.12168225333467425,
+        "evaluation_true_bus_probability_given_good": 0.6300713191727932
+      },
+      {
+        "iteration": 5,
+        "norm": 0.9999999999999962,
+        "good_event_probability": 0.6133563874009851,
+        "analytic_good_event_probability": 0.6133563874009874,
+        "formula_error": 2.3314683517128287e-15,
+        "address_marginal": [
+          0.24565684859220277,
+          0.15650577470690566,
+          0.20070466698633974,
+          0.39713270971454795
+        ],
+        "address_and_good": [
+          0.1464577455932457,
+          0.005205508049257917,
+          0.07523486562568292,
+          0.3864582681327986
+        ],
+        "address_given_good": [
+          0.23878082726722816,
+          0.008486922376916225,
+          0.12266093118306065,
+          0.630071319172795
+        ],
+        "evaluation_true_bus_and_good_probability": 0.3864582681327986,
+        "evaluation_true_bus_address_probability": 0.39713270971454795,
+        "evaluation_true_bus_probability_given_good": 0.630071319172795
+      },
+      {
+        "iteration": 6,
+        "norm": 0.9999999999999958,
+        "good_event_probability": 0.6481972883863523,
+        "analytic_good_event_probability": 0.6481972883863546,
+        "formula_error": 2.3314683517128287e-15,
+        "address_marginal": [
+          0.24503724239582342,
+          0.14316762554331056,
+          0.19367205611926117,
+          0.4181230759416007
+        ],
+        "address_and_good": [
+          0.15477708475326707,
+          0.005501200071462555,
+          0.07950848298380475,
+          0.40841052057781796
+        ],
+        "address_given_good": [
+          0.23878082726722788,
+          0.008486922376916228,
+          0.12266093118306046,
+          0.6300713191727956
+        ],
+        "evaluation_true_bus_and_good_probability": 0.40841052057781796,
+        "evaluation_true_bus_address_probability": 0.4181230759416007,
+        "evaluation_true_bus_probability_given_good": 0.6300713191727956
+      }
+    ],
+    "selected_first_peak": {
+      "iteration": 1,
+      "norm": 0.9999999999999989,
+      "good_event_probability": 0.8567303872106293,
+      "analytic_good_event_probability": 0.8567303872106304,
+      "formula_error": 1.1102230246251565e-15,
+      "address_marginal": [
+        0.24132871602229808,
+        0.06333485718772064,
+        0.15157979973493238,
+        0.5437566270550479
+      ],
+      "address_and_good": [
+        0.20457079060312694,
+        0.007271004294201994,
+        0.10508734706807976,
+        0.5398012452452207
+      ],
+      "address_given_good": [
+        0.23878082726722835,
+        0.008486922376916227,
+        0.12266093118306048,
+        0.630071319172795
+      ],
+      "evaluation_true_bus_and_good_probability": 0.5398012452452207,
+      "evaluation_true_bus_address_probability": 0.5437566270550479,
+      "evaluation_true_bus_probability_given_good": 0.630071319172795
+    },
+    "resources": {
+      "A_primitive_count": 178,
+      "A_primitive_counts": {
+        "h": 2,
+        "address_controlled_ry": 64,
+        "address_controlled_rz": 64,
+        "ry": 16,
+        "rz": 16,
+        "cx": 16
+      },
+      "first_peak_A_applications": 2,
+      "first_peak_A_dagger_applications": 1,
+      "first_peak_total_preparation_primitives": 534,
+      "first_peak_good_reflections": 1,
+      "first_peak_zero_reflections": 1,
+      "good_reflection_decomposition": [
+        "Z(3)"
+      ],
+      "good_reflection_two_qubit_gates_per_iteration": 0,
+      "physical_decomposition_supplied": false,
+      "resource_scope": "Logical preparation primitives and exact good-reflection decomposition. Address-controlled rotations and all-zero reflection still need physical decomposition; no hardware gate-depth claim."
+    },
+    "checks": {
+      "branch_event_vs_independent_copy_polynomial_max_error": 4.440892098500626e-16,
+      "address_uniform_preparation_max_error": 2.498001805406602e-16,
+      "A_dagger_A_zero_error": 4.464140462261916e-16,
+      "A_dagger_A_three_random_states_max_error": 2.362346913646644e-16,
+      "Q_vs_rank_one_reflection_three_random_states_max_error": 3.681048881090748e-16,
+      "actual_good_reflection_vs_majority_mask_max_error": 0.0,
+      "analytic_curve_max_error": 2.9976021664879227e-15,
+      "norm_max_error": 4.218847493575595e-15,
+      "conditional_address_invariance_max_error": 5.773159728050814e-15
+    },
+    "elapsed_seconds": 0.026322799967601895
+  },
+  "three_copy_majority": {
+    "copies": 3,
+    "registers": {
+      "address": 2,
+      "qnn_copies": 3,
+      "qubits_per_copy": 4,
+      "total": 14
+    },
+    "dimension": 16384,
+    "statevector_complex128_bytes": 262144,
+    "basis_convention": "index = (address << 12) | copy_basis; copy c uses bits4c..4c+3",
+    "good_event": "at least two of payload bits3,7,11 are1",
+    "no_dense_unitary_matrix": true,
+    "no_intermediate_measurement": true,
+    "threshold_used": false,
+    "retraining": false,
+    "raw_single_copy_event_probabilities": [
+      0.3525721815673515,
+      0.012531377713476954,
+      0.1811151782797672,
+      0.9303327326827602
+    ],
+    "analytic_branch_event_probabilities": [
+      0.28526694830993504,
+      0.0004671705416832418,
+      0.0865259868662237,
+      0.9861156796777333
+    ],
+    "simulated_branch_event_probabilities": [
+      0.2852669483099346,
+      0.00046717054168323986,
+      0.0865259868662232,
+      0.9861156796777358
+    ],
+    "initial_good_event_probability": 0.33959394634889384,
+    "initial_address_given_good": [
+      0.2100059139576475,
+      0.0003439184846387674,
+      0.06369812226962386,
+      0.7259520452880898
+    ],
+    "recommended_first_peak_iterations": 1,
+    "history": [
+      {
+        "iteration": 0,
+        "norm": 0.9999999999999997,
+        "good_event_probability": 0.3395939463488942,
+        "analytic_good_event_probability": 0.3395939463488938,
+        "formula_error": 4.440892098500626e-16,
+        "address_marginal": [
+          0.24999999999999972,
+          0.24999999999999992,
+          0.24999999999999967,
+          0.2500000000000004
+        ],
+        "address_and_good": [
+          0.07131673707748365,
+          0.00011679263542080997,
+          0.0216314967165558,
+          0.24652891991943396
+        ],
+        "address_given_good": [
+          0.21000591395764692,
+          0.0003439184846387656,
+          0.06369812226962342,
+          0.7259520452880909
+        ],
+        "evaluation_true_bus_and_good_probability": 0.24652891991943396,
+        "evaluation_true_bus_address_probability": 0.2500000000000004,
+        "evaluation_true_bus_probability_given_good": 0.7259520452880909
+      },
+      {
+        "iteration": 1,
+        "norm": 0.9999999999999993,
+        "good_event_probability": 0.9151819348805617,
+        "analytic_good_event_probability": 0.9151819348805612,
+        "formula_error": 4.440892098500626e-16,
+        "address_marginal": [
+          0.21514248255143606,
+          0.032408048821367795,
+          0.08762546925538715,
+          0.6648239993718082
+        ],
+        "address_and_good": [
+          0.19219361867211993,
+          0.0003147479842128923,
+          0.05829537078697269,
+          0.6643781974372562
+        ],
+        "address_given_good": [
+          0.21000591395764678,
+          0.00034391848463876133,
+          0.06369812226962357,
+          0.725952045288091
+        ],
+        "evaluation_true_bus_and_good_probability": 0.6643781974372562,
+        "evaluation_true_bus_address_probability": 0.6648239993718082,
+        "evaluation_true_bus_probability_given_good": 0.725952045288091
+      },
+      {
+        "iteration": 2,
+        "norm": 0.9999999999999982,
+        "good_event_probability": 0.0009649607368697655,
+        "analytic_good_event_probability": 0.0009649607368697896,
+        "formula_error": 2.417770844642675e-17,
+        "address_marginal": [
+          0.2705073177511429,
+          0.37801334144051013,
+          0.34552791880793604,
+          0.0059514220004091645
+        ],
+        "address_and_good": [
+          0.0002026474614795519,
+          3.3186783436012384e-07,
+          6.146618700250862e-05,
+          0.0007005152205533448
+        ],
+        "address_given_good": [
+          0.21000591395761828,
+          0.0003439184846387319,
+          0.06369812226961553,
+          0.7259520452881274
+        ],
+        "evaluation_true_bus_and_good_probability": 0.0007005152205533448,
+        "evaluation_true_bus_address_probability": 0.0059514220004091645,
+        "evaluation_true_bus_probability_given_good": 0.7259520452881274
+      },
+      {
+        "iteration": 3,
+        "norm": 0.9999999999999969,
+        "good_event_probability": 0.8774445838740359,
+        "analytic_good_event_probability": 0.8774445838740369,
+        "formula_error": 9.992007221626409e-16,
+        "address_marginal": [
+          0.21742785055317038,
+          0.04667405853913411,
+          0.09827125197378714,
+          0.6376268389339053
+        ],
+        "address_and_good": [
+          0.1842685517836555,
+          0.0003017694116404491,
+          0.05589157238842754,
+          0.6369826902903124
+        ],
+        "address_given_good": [
+          0.21000591395764853,
+          0.0003439184846387638,
+          0.06369812226962383,
+          0.7259520452880889
+        ],
+        "evaluation_true_bus_and_good_probability": 0.6369826902903124,
+        "evaluation_true_bus_address_probability": 0.6376268389339053,
+        "evaluation_true_bus_probability_given_good": 0.7259520452880889
+      },
+      {
+        "iteration": 4,
+        "norm": 0.9999999999999962,
+        "good_event_probability": 0.3995328740832831,
+        "analytic_good_event_probability": 0.3995328740832846,
+        "formula_error": 1.4988010832439613e-15,
+        "address_marginal": [
+          0.24637010802695844,
+          0.2273410347381429,
+          0.23309110777478986,
+          0.293197749460105
+        ],
+        "address_and_good": [
+          0.08390426637798565,
+          0.00013740674061809319,
+          0.02544949386409133,
+          0.290041707100588
+        ],
+        "address_given_good": [
+          0.21000591395764773,
+          0.0003439184846387649,
+          0.06369812226962418,
+          0.7259520452880893
+        ],
+        "evaluation_true_bus_and_good_probability": 0.290041707100588,
+        "evaluation_true_bus_address_probability": 0.293197749460105,
+        "evaluation_true_bus_probability_given_good": 0.7259520452880893
+      },
+      {
+        "iteration": 5,
+        "norm": 0.9999999999999948,
+        "good_event_probability": 0.28212919752261767,
+        "analytic_good_event_probability": 0.2821291975226182,
+        "formula_error": 5.551115123125783e-16,
+        "address_marginal": [
+          0.25348005609011803,
+          0.2717236409901387,
+          0.2662109213724661,
+          0.20858538154727196
+        ],
+        "address_and_good": [
+          0.05924879997987498,
+          9.702944608432978e-05,
+          0.0179711001196265,
+          0.20481226797703186
+        ],
+        "address_given_good": [
+          0.21000591395764748,
+          0.00034391848463876604,
+          0.06369812226962364,
+          0.7259520452880901
+        ],
+        "evaluation_true_bus_and_good_probability": 0.20481226797703186,
+        "evaluation_true_bus_address_probability": 0.20858538154727196,
+        "evaluation_true_bus_probability_given_good": 0.7259520452880901
+      },
+      {
+        "iteration": 6,
+        "norm": 0.9999999999999939,
+        "good_event_probability": 0.9465153231753828,
+        "analytic_good_event_probability": 0.9465153231753898,
+        "formula_error": 6.994405055138486e-15,
+        "address_marginal": [
+          0.213244937517537,
+          0.020562956095402388,
+          0.07878625731493216,
+          0.6874058490721223
+        ],
+        "address_and_good": [
+          0.1987738155183639,
+          0.00032552411563384836,
+          0.060291248785697804,
+          0.6871247347556872
+        ],
+        "address_given_good": [
+          0.21000591395764703,
+          0.0003439184846387648,
+          0.06369812226962357,
+          0.7259520452880907
+        ],
+        "evaluation_true_bus_and_good_probability": 0.6871247347556872,
+        "evaluation_true_bus_address_probability": 0.6874058490721223,
+        "evaluation_true_bus_probability_given_good": 0.7259520452880907
+      }
+    ],
+    "selected_first_peak": {
+      "iteration": 1,
+      "norm": 0.9999999999999993,
+      "good_event_probability": 0.9151819348805617,
+      "analytic_good_event_probability": 0.9151819348805612,
+      "formula_error": 4.440892098500626e-16,
+      "address_marginal": [
+        0.21514248255143606,
+        0.032408048821367795,
+        0.08762546925538715,
+        0.6648239993718082
+      ],
+      "address_and_good": [
+        0.19219361867211993,
+        0.0003147479842128923,
+        0.05829537078697269,
+        0.6643781974372562
+      ],
+      "address_given_good": [
+        0.21000591395764678,
+        0.00034391848463876133,
+        0.06369812226962357,
+        0.725952045288091
+      ],
+      "evaluation_true_bus_and_good_probability": 0.6643781974372562,
+      "evaluation_true_bus_address_probability": 0.6648239993718082,
+      "evaluation_true_bus_probability_given_good": 0.725952045288091
+    },
+    "resources": {
+      "A_primitive_count": 530,
+      "A_primitive_counts": {
+        "h": 2,
+        "address_controlled_ry": 192,
+        "address_controlled_rz": 192,
+        "ry": 48,
+        "rz": 48,
+        "cx": 48
+      },
+      "first_peak_A_applications": 2,
+      "first_peak_A_dagger_applications": 1,
+      "first_peak_total_preparation_primitives": 1590,
+      "first_peak_good_reflections": 1,
+      "first_peak_zero_reflections": 1,
+      "good_reflection_decomposition": [
+        "CZ(3,7)",
+        "CZ(3,11)",
+        "CZ(7,11)"
+      ],
+      "good_reflection_two_qubit_gates_per_iteration": 3,
+      "physical_decomposition_supplied": false,
+      "resource_scope": "Logical preparation primitives and exact good-reflection decomposition. Address-controlled rotations and all-zero reflection still need physical decomposition; no hardware gate-depth claim."
+    },
+    "checks": {
+      "branch_event_vs_independent_copy_polynomial_max_error": 2.55351295663786e-15,
+      "address_uniform_preparation_max_error": 3.885780586188048e-16,
+      "A_dagger_A_zero_error": 7.092014968790019e-16,
+      "A_dagger_A_three_random_states_max_error": 3.5730671761682146e-17,
+      "Q_vs_rank_one_reflection_three_random_states_max_error": 4.864190610302088e-17,
+      "actual_good_reflection_vs_majority_mask_max_error": 0.0,
+      "analytic_curve_max_error": 6.994405055138486e-15,
+      "norm_max_error": 6.106226635438361e-15,
+      "conditional_address_invariance_max_error": 3.7636560534792807e-14
+    },
+    "elapsed_seconds": 0.9590967001859099
+  },
+  "interpretation": "Majority changes the coherent predicate: q_i=3p_i^2-2p_i^3. Amplification preserves address weights inside each fixed good subspace. This four-exemplar synthetic experiment neither fixes systematic p>0.5 errors nor demonstrates a computational advantage.",
+  "majority_parameter_sharing": "All copies use identical frozen angles and the same address-conditioned feature table. This repeats circuit evaluation, not independent training or cloning an unknown quantum state."
+}

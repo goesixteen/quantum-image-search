@@ -1,0 +1,606 @@
+{
+  "version": 1,
+  "name": "Photo same-feature logistic regression",
+  "parameter_count": 9,
+  "feature_names": [
+    "yellow_coverage",
+    "yellow_aspect",
+    "window_runs",
+    "window_darkness",
+    "window_spacing",
+    "wheel_runs",
+    "body_fill",
+    "lower_darkness"
+  ],
+  "feature_version": "yellow-hue-v2",
+  "training_domain": "same supplied real schoolbus cutout composited on supplied street-photo assets; held-out placement seeds, not unseen photo identities",
+  "split_configuration": {
+    "train": {
+      "n": 3200,
+      "seed": 731091,
+      "stress": false
+    },
+    "validation": {
+      "n": 800,
+      "seed": 731092,
+      "stress": false
+    },
+    "test": {
+      "n": 2000,
+      "seed": 731293,
+      "stress": false
+    },
+    "stress_test": {
+      "n": 1200,
+      "seed": 731294,
+      "stress": true
+    }
+  },
+  "generator_source_sha256": {
+    "train.py": "b52f068b5c6ae427ac00d73a4c4181a3f925efe0067ff4ff79a3dc4bd861818e",
+    "train_photo.py": "500168704528ec1a4bf6bab08b04f536de9e5ffb57bbfd1f67750ccfbb1db5c3",
+    "photo_features.py": "f94476a7d7c8f9329fa0e15cb65b2a2aa592b9faaa8bbfd6cb9a1f1c82a5cfef",
+    "classical_baseline.py": "07694ec576b5f67044530b8120398e9aedb000a5583523078dec4837adfc3894"
+  },
+  "split_feature_and_label_sha256": {
+    "train": "6b631d6e0cb0c4bf9702d12ff343c8ab3da0605abec2beeaaf6a2b248e4a08fe",
+    "validation": "4e58eee08aa3f052390a09005ebdc888006d3bcc79caa55ba49eba7147fa3ddc",
+    "test": "4df23b42916f883bb2c12c1eadf5b2ec2075da2d9d101d866b94a3a2c131c587",
+    "stress_test": "7b239e8b835ec914dfae75d672a5413f41b4ff090cc4aff385d03d27a8ff87ee"
+  },
+  "comparator_source_sha256": "9186dd0de75848a1212de725f425dd362b67cad0387ab0993417f998c747aa16",
+  "assets": [
+    {
+      "file": "real-schoolbus.png",
+      "sha256": "5eb0cf031cf560b3af03407bb55a178446a57c411fc5d5d049d2680143c8d3ca"
+    },
+    {
+      "file": "street-photo.jpg",
+      "sha256": "cc64d0b7f6281911ce6f9ea665852d933b494501e51fd444a1c86c2937211db2"
+    }
+  ],
+  "normalized_background": {
+    "file": "street-captcha.png",
+    "sha256": "9d37da13f6d7c646c434488b505b67cf09b6ec11f1a9b897ed8adc4ca25f322a",
+    "source": "street-photo.jpg",
+    "size": [
+      512,
+      512
+    ],
+    "sourceCrop": [
+      518,
+      0,
+      2194,
+      2194
+    ],
+    "resize": "Pillow LANCZOS; RGB numeric pixels; no color-profile transform"
+  },
+  "preprocessing": "training-only mean/std; affine standardization absorbed into raw coefficients",
+  "optimization": "full-batch Newton logistic regression with line search; L2 weights only, bias unpenalized",
+  "regularization": 1e-05,
+  "regularization_selection": "minimum validation BCE; no test/stress/scene selection",
+  "regularization_candidates": [
+    {
+      "lambda_value": 1e-06,
+      "validation_bce": 0.019296515565363492,
+      "iterations": 11,
+      "training_regularized_objective": 0.019587580053823606,
+      "gradient_max_abs": 6.598320154047418e-10
+    },
+    {
+      "lambda_value": 1e-05,
+      "validation_bce": 0.019174630512736456,
+      "iterations": 11,
+      "training_regularized_objective": 0.020196648794323986,
+      "gradient_max_abs": 8.388380616889421e-11
+    },
+    {
+      "lambda_value": 0.0001,
+      "validation_bce": 0.01924828166886378,
+      "iterations": 11,
+      "training_regularized_objective": 0.02456085725477259,
+      "gradient_max_abs": 3.642512723736613e-16
+    },
+    {
+      "lambda_value": 0.001,
+      "validation_bce": 0.025394648566440595,
+      "iterations": 9,
+      "training_regularized_objective": 0.04275436954158637,
+      "gradient_max_abs": 1.3634788101086343e-10
+    },
+    {
+      "lambda_value": 0.01,
+      "validation_bce": 0.05680707425412937,
+      "iterations": 8,
+      "training_regularized_objective": 0.09282344645074206,
+      "gradient_max_abs": 8.945292423456763e-13
+    },
+    {
+      "lambda_value": 0.1,
+      "validation_bce": 0.13375731331148027,
+      "iterations": 6,
+      "training_regularized_objective": 0.20167936237437278,
+      "gradient_max_abs": 7.564893503286818e-10
+    }
+  ],
+  "threshold": 0.8200000000000006,
+  "threshold_selection": "maximum validation F1 on QNN-matched 0.15..0.85 step0.01 grid; first maximum",
+  "best_validation_bce": 0.019174630512736456,
+  "optimization_result": {
+    "iterations": 11,
+    "training_regularized_objective": 0.020196648794323986,
+    "gradient_max_abs": 8.388380616889421e-11
+  },
+  "raw_feature_weights": [
+    71.39110945150425,
+    8.734529860817794,
+    -3.8133051618705647,
+    0.7415426087829222,
+    -5.223089781172858,
+    1.2895682847043546,
+    -3.456190303905944,
+    -4.136698523401942
+  ],
+  "raw_feature_bias": -7.289328797306256,
+  "training_feature_mean": [
+    0.1364905617453835,
+    0.4754839882331683,
+    0.23432291666666719,
+    0.5005065743731412,
+    0.13303906435523483,
+    0.3537500000000008,
+    0.2835984522825515,
+    0.38251490250576536
+  ],
+  "training_feature_std": [
+    0.14337320091369954,
+    0.4631150056810357,
+    0.27318986306300863,
+    0.4761990813904048,
+    0.2866045176622112,
+    0.4008668991489964,
+    0.31211703005512925,
+    0.4179332517935651
+  ],
+  "splits": {
+    "train": {
+      "n": 3200,
+      "threshold": 0.8200000000000006,
+      "accuracy": 0.9896875,
+      "precision": 0.9968294229549778,
+      "recall": 0.9825,
+      "f1": 0.9896128423040604,
+      "roc_auc": 0.999740234375,
+      "true_positive": 1572,
+      "false_positive": 5,
+      "false_negative": 28,
+      "true_negative": 1595,
+      "bce": 0.019551646707639727
+    },
+    "validation": {
+      "n": 800,
+      "threshold": 0.8200000000000006,
+      "accuracy": 0.99625,
+      "precision": 0.9974937343358395,
+      "recall": 0.995,
+      "f1": 0.9962453066332916,
+      "roc_auc": 0.999875,
+      "true_positive": 398,
+      "false_positive": 1,
+      "false_negative": 2,
+      "true_negative": 399,
+      "bce": 0.019174630512736456
+    },
+    "test": {
+      "n": 2000,
+      "threshold": 0.8200000000000006,
+      "accuracy": 0.9925,
+      "precision": 0.9969727547931383,
+      "recall": 0.988,
+      "f1": 0.9924660974384731,
+      "roc_auc": 0.999806,
+      "true_positive": 988,
+      "false_positive": 3,
+      "false_negative": 12,
+      "true_negative": 997,
+      "bce": 0.019306487812798857
+    },
+    "stress_test": {
+      "n": 1200,
+      "threshold": 0.8200000000000006,
+      "accuracy": 0.9708333333333333,
+      "precision": 0.9896013864818024,
+      "recall": 0.9516666666666667,
+      "f1": 0.9702633814783348,
+      "roc_auc": 0.9987555555555555,
+      "true_positive": 571,
+      "false_positive": 6,
+      "false_negative": 29,
+      "true_negative": 594,
+      "bce": 0.04922670190010944
+    }
+  },
+  "scene_audits": {
+    "grid4": {
+      "scenes": 384,
+      "seed": 731292,
+      "grid": [
+        4,
+        4
+      ],
+      "sprite_size": [
+        105,
+        44
+      ],
+      "any_overlap_hit_rate": 1.0,
+      "no_false_tile_mark_rate": 1.0,
+      "misses": [],
+      "empty_scene_audits": [
+        {
+          "max_score": 0.017990063659725445,
+          "marked_tiles": [],
+          "scores": [
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.017990063659725445,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662
+          ]
+        }
+      ],
+      "legacy_ground_truth": "any foreground alpha>20 pixel in tile; matches frozen trainer audit",
+      "current_ui_ground_truth": "any foreground alpha>32 pixel in tile; evaluation only",
+      "paired_comparison": {
+        "logistic": {
+          "alpha20": {
+            "scenes": 384,
+            "any_overlap_hit_rate": 1.0,
+            "no_false_tile_mark_rate": 1.0,
+            "misses": []
+          },
+          "alpha32": {
+            "scenes": 384,
+            "any_overlap_hit_rate": 1.0,
+            "no_false_tile_mark_rate": 1.0,
+            "misses": []
+          }
+        },
+        "qnn": {
+          "alpha20": {
+            "scenes": 384,
+            "any_overlap_hit_rate": 1.0,
+            "no_false_tile_mark_rate": 1.0,
+            "misses": []
+          },
+          "alpha32": {
+            "scenes": 384,
+            "any_overlap_hit_rate": 1.0,
+            "no_false_tile_mark_rate": 1.0,
+            "misses": []
+          }
+        }
+      },
+      "qnn_empty_scene_audits": [
+        {
+          "max_score": 0.0502270811318283,
+          "marked_tiles": [],
+          "scores": [
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.0502270811318283,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114
+          ]
+        }
+      ],
+      "scope": "same supplied photo/cutout assets; held-out full-canvas placements; alpha overlap is evaluation only, not an inference input"
+    },
+    "grid8": {
+      "scenes": 384,
+      "seed": 731292,
+      "grid": [
+        8,
+        8
+      ],
+      "sprite_size": [
+        52,
+        22
+      ],
+      "any_overlap_hit_rate": 1.0,
+      "no_false_tile_mark_rate": 1.0,
+      "misses": [],
+      "empty_scene_audits": [
+        {
+          "max_score": 0.7304359463153561,
+          "marked_tiles": [],
+          "scores": [
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.049801593326614775,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0027394161167902734,
+            0.0006823203080352662,
+            0.7304359463153561,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.002356668638848142,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662,
+            0.0006823203080352662
+          ]
+        }
+      ],
+      "legacy_ground_truth": "any foreground alpha>20 pixel in tile; matches frozen trainer audit",
+      "current_ui_ground_truth": "any foreground alpha>32 pixel in tile; evaluation only",
+      "paired_comparison": {
+        "logistic": {
+          "alpha20": {
+            "scenes": 384,
+            "any_overlap_hit_rate": 1.0,
+            "no_false_tile_mark_rate": 1.0,
+            "misses": []
+          },
+          "alpha32": {
+            "scenes": 384,
+            "any_overlap_hit_rate": 1.0,
+            "no_false_tile_mark_rate": 1.0,
+            "misses": []
+          }
+        },
+        "qnn": {
+          "alpha20": {
+            "scenes": 384,
+            "any_overlap_hit_rate": 0.9973958333333334,
+            "no_false_tile_mark_rate": 1.0,
+            "misses": [
+              {
+                "position": [
+                  65,
+                  399
+                ],
+                "max_score": 0.603796233456691
+              }
+            ]
+          },
+          "alpha32": {
+            "scenes": 384,
+            "any_overlap_hit_rate": 0.9973958333333334,
+            "no_false_tile_mark_rate": 1.0,
+            "misses": [
+              {
+                "position": [
+                  65,
+                  399
+                ],
+                "max_score": 0.603796233456691
+              }
+            ]
+          }
+        }
+      },
+      "qnn_empty_scene_audits": [
+        {
+          "max_score": 0.603796233456691,
+          "marked_tiles": [],
+          "scores": [
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.603796233456691,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.6024644677161033,
+            0.006293486235606114,
+            0.2269104775903433,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.08851902810742036,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114,
+            0.006293486235606114
+          ]
+        }
+      ],
+      "scope": "same supplied photo/cutout assets; held-out full-canvas placements; alpha overlap is evaluation only, not an inference input"
+    }
+  },
+  "qnn_reference": {
+    "name": "BusPatch-QNN-photo-v1",
+    "parameter_count": 40,
+    "model_sha256": "a2466f8f29da4dccd7f2834c019d3fe291796cb204839e9f9a2e4c77265ae069",
+    "model_path": "C:\\Users\\henri\\Documents\\Codex\\2026-10-10\\new-chat\\outputs\\bus-search-lab\\dist\\model\\model-photo.json",
+    "split_seeds_and_counts_confirmed": true,
+    "regenerated_confusion_and_bce_confirmed": true,
+    "regenerated_splits": {
+      "train": {
+        "n": 3200,
+        "threshold": 0.6100000000000004,
+        "accuracy": 0.9865625,
+        "precision": 0.9826410415375078,
+        "recall": 0.990625,
+        "f1": 0.9866168689698102,
+        "roc_auc": 0.997478515625,
+        "true_positive": 1585,
+        "false_positive": 28,
+        "false_negative": 15,
+        "true_negative": 1572,
+        "bce": 0.05100668638254601
+      },
+      "validation": {
+        "n": 800,
+        "threshold": 0.6100000000000004,
+        "accuracy": 0.99,
+        "precision": 0.9851485148514851,
+        "recall": 0.995,
+        "f1": 0.9900497512437811,
+        "roc_auc": 0.99909375,
+        "true_positive": 398,
+        "false_positive": 6,
+        "false_negative": 2,
+        "true_negative": 394,
+        "bce": 0.04434143994077866
+      },
+      "test": {
+        "n": 2000,
+        "threshold": 0.6100000000000004,
+        "accuracy": 0.9845,
+        "precision": 0.9830508474576272,
+        "recall": 0.986,
+        "f1": 0.9845232151772342,
+        "roc_auc": 0.997248,
+        "true_positive": 986,
+        "false_positive": 17,
+        "false_negative": 14,
+        "true_negative": 983,
+        "bce": 0.05322030018396556
+      },
+      "stress_test": {
+        "n": 1200,
+        "threshold": 0.6100000000000004,
+        "accuracy": 0.9541666666666667,
+        "precision": 0.9459901800327333,
+        "recall": 0.9633333333333334,
+        "f1": 0.9545829892650702,
+        "roc_auc": 0.9795361111111112,
+        "true_positive": 578,
+        "false_positive": 33,
+        "false_negative": 22,
+        "true_negative": 567,
+        "bce": 0.1423739640263125
+      }
+    }
+  },
+  "verification": {
+    "loss_gradient_finite_difference_max_error": 1.4135609349708034e-11,
+    "raw_vs_standardized_probability_max_error": 1.1657341758564144e-15
+  },
+  "elapsed_seconds": {
+    "data_generation_and_qnn_recheck": 34.60303930006921,
+    "fitting_and_validation_selection": 0.10403429996222258,
+    "scene_audits": 3.688544200034812,
+    "total": 38.39600930013694
+  },
+  "interpretation": "Same input features and examples compare classifier behavior, not equal model capacity, photographic generalization, Grover success, or quantum runtime advantage."
+}

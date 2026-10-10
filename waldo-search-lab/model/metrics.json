@@ -1,0 +1,819 @@
+{
+  "seed": 202610103,
+  "steps": 1100,
+  "layers": 4,
+  "splits": {
+    "train": {
+      "n": 1600,
+      "threshold": 0.22000000000000006,
+      "accuracy": 0.99875,
+      "precision": 0.9975062344139651,
+      "recall": 1.0,
+      "f1": 0.9987515605493134,
+      "roc_auc": 0.9999875,
+      "true_positive": 800,
+      "false_positive": 2,
+      "false_negative": 0,
+      "true_negative": 798,
+      "bce": 0.012628387002052887
+    },
+    "validation": {
+      "n": 400,
+      "threshold": 0.22000000000000006,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0,
+      "true_positive": 200,
+      "false_positive": 0,
+      "false_negative": 0,
+      "true_negative": 200,
+      "bce": 0.016718111450004014
+    },
+    "test": {
+      "n": 600,
+      "threshold": 0.22000000000000006,
+      "accuracy": 0.99,
+      "precision": 0.9867549668874173,
+      "recall": 0.9933333333333333,
+      "f1": 0.9900332225913622,
+      "roc_auc": 0.9998555555555556,
+      "true_positive": 298,
+      "false_positive": 4,
+      "false_negative": 2,
+      "true_negative": 296,
+      "bce": 0.021191422839838835
+    }
+  },
+  "history": [
+    {
+      "step": 1,
+      "validation_bce": 0.710002971415936,
+      "validation_accuracy": 0.285
+    },
+    {
+      "step": 50,
+      "validation_bce": 0.13009323070751463,
+      "validation_accuracy": 0.9825
+    },
+    {
+      "step": 100,
+      "validation_bce": 0.05659377943634654,
+      "validation_accuracy": 0.9925
+    },
+    {
+      "step": 150,
+      "validation_bce": 0.04827678327772229,
+      "validation_accuracy": 0.9875
+    },
+    {
+      "step": 200,
+      "validation_bce": 0.04049162010387759,
+      "validation_accuracy": 0.985
+    },
+    {
+      "step": 250,
+      "validation_bce": 0.03822765081121251,
+      "validation_accuracy": 0.9875
+    },
+    {
+      "step": 300,
+      "validation_bce": 0.033215975830594546,
+      "validation_accuracy": 0.99
+    },
+    {
+      "step": 350,
+      "validation_bce": 0.026940152038602515,
+      "validation_accuracy": 0.9925
+    },
+    {
+      "step": 400,
+      "validation_bce": 0.030969978092481077,
+      "validation_accuracy": 0.985
+    },
+    {
+      "step": 450,
+      "validation_bce": 0.025971821417969804,
+      "validation_accuracy": 0.99
+    },
+    {
+      "step": 500,
+      "validation_bce": 0.03275815380310859,
+      "validation_accuracy": 0.9875
+    },
+    {
+      "step": 550,
+      "validation_bce": 0.02835279740421553,
+      "validation_accuracy": 0.99
+    },
+    {
+      "step": 600,
+      "validation_bce": 0.025735301212637073,
+      "validation_accuracy": 0.99
+    },
+    {
+      "step": 650,
+      "validation_bce": 0.023470567870158412,
+      "validation_accuracy": 0.9875
+    },
+    {
+      "step": 700,
+      "validation_bce": 0.020520143300900795,
+      "validation_accuracy": 0.99
+    },
+    {
+      "step": 750,
+      "validation_bce": 0.019956297518098857,
+      "validation_accuracy": 0.99
+    },
+    {
+      "step": 800,
+      "validation_bce": 0.021317938901879697,
+      "validation_accuracy": 0.9875
+    },
+    {
+      "step": 850,
+      "validation_bce": 0.019717118791332245,
+      "validation_accuracy": 0.9925
+    },
+    {
+      "step": 900,
+      "validation_bce": 0.020987399866644482,
+      "validation_accuracy": 0.9925
+    },
+    {
+      "step": 950,
+      "validation_bce": 0.020487346553069986,
+      "validation_accuracy": 0.9925
+    },
+    {
+      "step": 1000,
+      "validation_bce": 0.019105536261088,
+      "validation_accuracy": 0.9925
+    },
+    {
+      "step": 1050,
+      "validation_bce": 0.016718111450004014,
+      "validation_accuracy": 0.9925
+    },
+    {
+      "step": 1100,
+      "validation_bce": 0.02094022790403838,
+      "validation_accuracy": 0.9925
+    }
+  ],
+  "threshold_selection": "validation F1; test placements held out; all splits reuse the same character/crowd assets",
+  "assetHashes": {
+    "crowd.png": "33e371cb2d159bd773eb6dd4bf17997cd753b3e27037673c2013a0ed46790932",
+    "character.png": "aaf45e7c86fd27da3f2d119b2b743b4dc3526faea87cde56c700b3d086e2c792"
+  },
+  "grid_audit": [
+    {
+      "grid": 4,
+      "empty_crowd_false_positive_tiles": 0,
+      "empty_crowd_max_score": 0.11634753468281014,
+      "placement_trials": 20,
+      "placement_recall": 1.0,
+      "ground_truth": "tiles covering at least 20% of inserted character bounding-box area; evaluation only",
+      "trials": [
+        {
+          "trial": 0,
+          "x": 222,
+          "y": 173,
+          "width": 64,
+          "height": 96,
+          "ground_truth_tiles": [
+            5,
+            6
+          ],
+          "marked_tiles": [
+            5,
+            6
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 1,
+          "x": 128,
+          "y": 181,
+          "width": 64,
+          "height": 96,
+          "ground_truth_tiles": [
+            5,
+            9
+          ],
+          "marked_tiles": [
+            5
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 2,
+          "x": 39,
+          "y": 193,
+          "width": 64,
+          "height": 96,
+          "ground_truth_tiles": [
+            4,
+            8
+          ],
+          "marked_tiles": [
+            4
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 3,
+          "x": 385,
+          "y": 378,
+          "width": 64,
+          "height": 96,
+          "ground_truth_tiles": [
+            15
+          ],
+          "marked_tiles": [
+            15
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 4,
+          "x": 189,
+          "y": 413,
+          "width": 64,
+          "height": 96,
+          "ground_truth_tiles": [
+            13
+          ],
+          "marked_tiles": [
+            13
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 5,
+          "x": 16,
+          "y": 316,
+          "width": 64,
+          "height": 96,
+          "ground_truth_tiles": [
+            8,
+            12
+          ],
+          "marked_tiles": [
+            8
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 6,
+          "x": 129,
+          "y": 331,
+          "width": 64,
+          "height": 96,
+          "ground_truth_tiles": [
+            9,
+            13
+          ],
+          "marked_tiles": [
+            9
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 7,
+          "x": 192,
+          "y": 151,
+          "width": 64,
+          "height": 96,
+          "ground_truth_tiles": [
+            5
+          ],
+          "marked_tiles": [
+            5
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 8,
+          "x": 263,
+          "y": 291,
+          "width": 64,
+          "height": 96,
+          "ground_truth_tiles": [
+            10
+          ],
+          "marked_tiles": [
+            10
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 9,
+          "x": 427,
+          "y": 172,
+          "width": 64,
+          "height": 96,
+          "ground_truth_tiles": [
+            7
+          ],
+          "marked_tiles": [
+            7
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 10,
+          "x": 148,
+          "y": 319,
+          "width": 64,
+          "height": 96,
+          "ground_truth_tiles": [
+            9,
+            13
+          ],
+          "marked_tiles": [
+            9
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 11,
+          "x": 263,
+          "y": 350,
+          "width": 64,
+          "height": 96,
+          "ground_truth_tiles": [
+            10,
+            14
+          ],
+          "marked_tiles": [
+            14
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 12,
+          "x": 97,
+          "y": 333,
+          "width": 64,
+          "height": 96,
+          "ground_truth_tiles": [
+            8,
+            9,
+            12,
+            13
+          ],
+          "marked_tiles": [
+            8,
+            9
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 13,
+          "x": 386,
+          "y": 158,
+          "width": 64,
+          "height": 96,
+          "ground_truth_tiles": [
+            7
+          ],
+          "marked_tiles": [
+            7
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 14,
+          "x": 348,
+          "y": 44,
+          "width": 64,
+          "height": 96,
+          "ground_truth_tiles": [
+            2,
+            3
+          ],
+          "marked_tiles": [
+            2
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 15,
+          "x": 258,
+          "y": 215,
+          "width": 64,
+          "height": 96,
+          "ground_truth_tiles": [
+            6,
+            10
+          ],
+          "marked_tiles": [
+            6
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 16,
+          "x": 117,
+          "y": 44,
+          "width": 64,
+          "height": 96,
+          "ground_truth_tiles": [
+            1
+          ],
+          "marked_tiles": [
+            1
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 17,
+          "x": 209,
+          "y": 37,
+          "width": 64,
+          "height": 96,
+          "ground_truth_tiles": [
+            1,
+            2
+          ],
+          "marked_tiles": [
+            1
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 18,
+          "x": 392,
+          "y": 77,
+          "width": 64,
+          "height": 96,
+          "ground_truth_tiles": [
+            3,
+            7
+          ],
+          "marked_tiles": [
+            3
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 19,
+          "x": 152,
+          "y": 300,
+          "width": 64,
+          "height": 96,
+          "ground_truth_tiles": [
+            9
+          ],
+          "marked_tiles": [
+            9
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        }
+      ]
+    },
+    {
+      "grid": 8,
+      "empty_crowd_false_positive_tiles": 0,
+      "empty_crowd_max_score": 0.11012707592279726,
+      "placement_trials": 20,
+      "placement_recall": 0.95,
+      "ground_truth": "tiles covering at least 20% of inserted character bounding-box area; evaluation only",
+      "trials": [
+        {
+          "trial": 0,
+          "x": 167,
+          "y": 144,
+          "width": 32,
+          "height": 48,
+          "ground_truth_tiles": [
+            18,
+            19
+          ],
+          "marked_tiles": [
+            18
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 1,
+          "x": 104,
+          "y": 175,
+          "width": 32,
+          "height": 48,
+          "ground_truth_tiles": [
+            17,
+            25
+          ],
+          "marked_tiles": [
+            25
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 2,
+          "x": 73,
+          "y": 98,
+          "width": 32,
+          "height": 48,
+          "ground_truth_tiles": [
+            9,
+            17
+          ],
+          "marked_tiles": [
+            9
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 3,
+          "x": 68,
+          "y": 266,
+          "width": 32,
+          "height": 48,
+          "ground_truth_tiles": [
+            33
+          ],
+          "marked_tiles": [
+            33
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 4,
+          "x": 447,
+          "y": 365,
+          "width": 32,
+          "height": 48,
+          "ground_truth_tiles": [
+            47,
+            55
+          ],
+          "marked_tiles": [
+            55
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 5,
+          "x": 26,
+          "y": 119,
+          "width": 32,
+          "height": 48,
+          "ground_truth_tiles": [
+            16
+          ],
+          "marked_tiles": [
+            16
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 6,
+          "x": 17,
+          "y": 381,
+          "width": 32,
+          "height": 48,
+          "ground_truth_tiles": [
+            48
+          ],
+          "marked_tiles": [
+            48
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 7,
+          "x": 107,
+          "y": 36,
+          "width": 32,
+          "height": 48,
+          "ground_truth_tiles": [
+            1,
+            2,
+            9
+          ],
+          "marked_tiles": [
+            1
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 8,
+          "x": 208,
+          "y": 120,
+          "width": 32,
+          "height": 48,
+          "ground_truth_tiles": [
+            19
+          ],
+          "marked_tiles": [
+            19
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 9,
+          "x": 453,
+          "y": 374,
+          "width": 32,
+          "height": 48,
+          "ground_truth_tiles": [
+            47,
+            55
+          ],
+          "marked_tiles": [
+            55
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 10,
+          "x": 19,
+          "y": 399,
+          "width": 32,
+          "height": 48,
+          "ground_truth_tiles": [
+            48
+          ],
+          "marked_tiles": [
+            48
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 11,
+          "x": 158,
+          "y": 107,
+          "width": 32,
+          "height": 48,
+          "ground_truth_tiles": [
+            10,
+            18
+          ],
+          "marked_tiles": [],
+          "at_least_one_true_tile_marked": false,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 12,
+          "x": 27,
+          "y": 14,
+          "width": 32,
+          "height": 48,
+          "ground_truth_tiles": [
+            0
+          ],
+          "marked_tiles": [
+            0
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 13,
+          "x": 445,
+          "y": 65,
+          "width": 32,
+          "height": 48,
+          "ground_truth_tiles": [
+            15
+          ],
+          "marked_tiles": [
+            15
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 14,
+          "x": 72,
+          "y": 90,
+          "width": 32,
+          "height": 48,
+          "ground_truth_tiles": [
+            9,
+            17
+          ],
+          "marked_tiles": [
+            9
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 15,
+          "x": 466,
+          "y": 6,
+          "width": 32,
+          "height": 48,
+          "ground_truth_tiles": [
+            7
+          ],
+          "marked_tiles": [
+            7
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 16,
+          "x": 245,
+          "y": 70,
+          "width": 32,
+          "height": 48,
+          "ground_truth_tiles": [
+            11,
+            12
+          ],
+          "marked_tiles": [
+            12
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 17,
+          "x": 183,
+          "y": 165,
+          "width": 32,
+          "height": 48,
+          "ground_truth_tiles": [
+            19,
+            27
+          ],
+          "marked_tiles": [
+            19
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 18,
+          "x": 323,
+          "y": 405,
+          "width": 32,
+          "height": 48,
+          "ground_truth_tiles": [
+            53
+          ],
+          "marked_tiles": [
+            53
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        },
+        {
+          "trial": 19,
+          "x": 341,
+          "y": 140,
+          "width": 32,
+          "height": 48,
+          "ground_truth_tiles": [
+            21
+          ],
+          "marked_tiles": [
+            21
+          ],
+          "at_least_one_true_tile_marked": true,
+          "false_positive_tiles": 0
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 68.3166732788086
+}

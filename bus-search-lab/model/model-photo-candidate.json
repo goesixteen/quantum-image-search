@@ -1,0 +1,154 @@
+{
+  "version": 1,
+  "name": "BusPatch-QNN-photo-v1",
+  "seed": 731091,
+  "qubits": 4,
+  "layers": 4,
+  "featureNames": [
+    "yellow_coverage",
+    "yellow_aspect",
+    "window_runs",
+    "window_darkness",
+    "window_spacing",
+    "wheel_runs",
+    "body_fill",
+    "lower_darkness"
+  ],
+  "theta": [
+    -2.1497577190773427,
+    1.2704189420130607,
+    0.34108415037028145,
+    0.7828585916750661,
+    -2.135059081971876,
+    -0.08737593777747779,
+    -0.7941336099003276,
+    2.168752243746657,
+    0.07887472567636292,
+    1.6443423326087778,
+    -1.7859509184926823,
+    -1.568636932301451,
+    0.3264895267528911,
+    -1.9159002596885066,
+    0.8353246694852965,
+    0.30246182665862453,
+    -0.7941517012654401,
+    -0.5553648085668377,
+    -0.8063089664442185,
+    -0.0052583521100105935,
+    0.43379757774093597,
+    2.1521715553769303,
+    0.09466808341527894,
+    -0.8263566716750546,
+    0.2230706714378805,
+    0.8294309627059909,
+    -0.8520853196955643,
+    0.6215856734423458,
+    0.7674216135444675,
+    0.45679657772521504,
+    0.13855213808275324,
+    -0.8553264017751653
+  ],
+  "readout": [
+    2.5130943765214524,
+    -3.080595896359802,
+    -4.377031236511333,
+    1.4221866857778163,
+    -1.450873732375562,
+    2.4314152953321146,
+    5.570198529661276
+  ],
+  "bias": 2.6818988782843713,
+  "threshold": 0.6100000000000004,
+  "observables": [
+    "Z0",
+    "Z1",
+    "Z2",
+    "Z3",
+    "Z0Z1",
+    "Z2Z3",
+    "Z0Z1Z2Z3"
+  ],
+  "parameterCount": 40,
+  "trainingDomain": "same supplied real schoolbus cutout composited on supplied street-photo assets; held-out placement seeds, not unseen photo identities",
+  "metrics": {
+    "train": {
+      "n": 3200,
+      "threshold": 0.6100000000000004,
+      "accuracy": 0.9865625,
+      "precision": 0.9826410415375078,
+      "recall": 0.990625,
+      "f1": 0.9866168689698102,
+      "roc_auc": 0.997478515625,
+      "true_positive": 1585,
+      "false_positive": 28,
+      "false_negative": 15,
+      "true_negative": 1572,
+      "bce": 0.05100668638254601
+    },
+    "validation": {
+      "n": 800,
+      "threshold": 0.6100000000000004,
+      "accuracy": 0.99,
+      "precision": 0.9851485148514851,
+      "recall": 0.995,
+      "f1": 0.9900497512437811,
+      "roc_auc": 0.99909375,
+      "true_positive": 398,
+      "false_positive": 6,
+      "false_negative": 2,
+      "true_negative": 394,
+      "bce": 0.04434143994077866
+    },
+    "test": {
+      "n": 2000,
+      "threshold": 0.6100000000000004,
+      "accuracy": 0.9845,
+      "precision": 0.9830508474576272,
+      "recall": 0.986,
+      "f1": 0.9845232151772342,
+      "roc_auc": 0.997248,
+      "true_positive": 986,
+      "false_positive": 17,
+      "false_negative": 14,
+      "true_negative": 983,
+      "bce": 0.05322030018396556
+    },
+    "stress_test": {
+      "n": 1200,
+      "threshold": 0.6100000000000004,
+      "accuracy": 0.9541666666666667,
+      "precision": 0.9459901800327333,
+      "recall": 0.9633333333333334,
+      "f1": 0.9545829892650702,
+      "roc_auc": 0.9795361111111112,
+      "true_positive": 578,
+      "false_positive": 33,
+      "false_negative": 22,
+      "true_negative": 567,
+      "bce": 0.1423739640263125
+    }
+  },
+  "splitSeeds": {
+    "train": 731091,
+    "validation": 731092,
+    "test": 731293,
+    "stress_test": 731294
+  },
+  "featureExtractor": "yellow-hue-v2",
+  "featureVersion": "yellow-hue-v2",
+  "readyForDemo": false,
+  "sceneGridSizes": [
+    4,
+    8
+  ],
+  "assets": [
+    {
+      "file": "real-schoolbus.png",
+      "sha256": "5eb0cf031cf560b3af03407bb55a178446a57c411fc5d5d049d2680143c8d3ca"
+    },
+    {
+      "file": "street-photo.jpg",
+      "sha256": "cc64d0b7f6281911ce6f9ea665852d933b494501e51fd444a1c86c2937211db2"
+    }
+  ]
+}

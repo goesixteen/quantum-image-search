@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Move an original explorer into a crowd. A trained quantum classifier builds the oracle, then Grover's algorithm amplifies its candidate regions.">
+  <meta name="theme-color" content="#f6f0e4">
+  <title>Find the Explorer — Quantum Search Atlas</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="oracle-quality.css">
+</head>
+<body>
+  <a class="skip-link" href="#experiment">Skip to the search</a>
+  <header class="site-header">
+    <a class="brand" href="#"><span class="brand-mark" aria-hidden="true">✳</span><span>SEARCH<br><b>ATLAS</b></span></a>
+    <nav aria-label="Main navigation"><a href="#experiment">The experiment</a><a href="#science">The science</a><a href="#evidence">The evidence</a></nav>
+    <span class="edition">FIELD NOTE 02 / QUANTUM</span>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <div><p class="eyebrow"><span></span> AN ORIGINAL CROWD-SEARCH EXPERIMENT</p><h1 id="page-title">Find the <em>explorer.</em></h1></div>
+      <p class="intro-copy">One small figure. A very busy world.<br>Place the explorer in the crowd and watch a trained quantum circuit guide a Grover search.</p>
+    </section>
+    <section id="experiment" class="experiment" aria-label="Interactive crowd search">
+      <div class="scene-column">
+        <div class="scene-toolbar">
+          <div><span class="section-number">01</span><strong>The crowd</strong><span class="scene-caption">Move the figure. Follow the probability.</span></div>
+          <button id="find" class="button-primary" disabled>Find the explorer <span aria-hidden="true">↗</span></button>
+        </div>
+        <div class="scene-frame">
+          <canvas id="scene" width="512" height="512" tabindex="0" role="application" aria-label="Interactive illustrated crowd. Drag or move the explorer with arrow keys; press Enter to search." aria-describedby="canvas-instructions"></canvas>
+          <span class="scene-corner corner-one" aria-hidden="true"></span><span class="scene-corner corner-two" aria-hidden="true"></span>
+          <div id="loading" class="loading-overlay"><span class="spinner" aria-hidden="true"></span><strong>Opening the atlas…</strong><span>Loading original art and trained weights.</span></div>
+        </div>
+        <div class="scene-feedback"><p id="scene-status">Preparing the local experiment.</p><a href="#probability-map">See probabilities ↓</a></div>
+        <div class="scene-under"><p id="canvas-instructions">Drag the explorer or click to place it. Arrow keys move it; Enter starts the search.</p><span id="grid-summary">16 regions · 4 search qubits</span></div>
+        <div class="controls" aria-label="Scene controls">
+          <div class="segmented" aria-label="Candidate grid size"><button id="grid-four" class="selected" aria-pressed="true">4 × 4</button><button id="grid-eight" aria-pressed="false">8 × 8</button></div>
+          <button id="move" class="button-subtle">↗ Move randomly</button>
+          <button id="remove" class="button-subtle">Remove explorer</button>
+          <button id="boundary-challenge" class="button-subtle">↗ Boundary challenge</button>
+          <button id="reset-demo" class="button-subtle">Reset demo</button>
+          <label class="toggle"><input id="free-placement" type="checkbox"><span>Free placement</span></label>
+          <label class="toggle"><input id="heatmap" type="checkbox"><span>QNN heatmap</span></label>
+        </div>
+      </div>
+      <aside class="search-column" aria-label="Search explanation and results">
+        <div class="target-card">
+          <div class="target-portrait"><img id="target-image" src="assets/character.png" alt="Original striped explorer with a distinctive outfit"></div>
+          <div><p class="eyebrow">YOUR VISUAL TARGET</p><h2>The explorer</h2><p>An original character.<br>A learned image predicate.</p></div>
+          <span class="stamp" aria-hidden="true">LOOK<br>CLOSELY</span>
+        </div>
+        <div class="result-card">
+          <p class="eyebrow">THE SEARCH LOG</p>
+          <h2 id="result-title">Ready when you are.</h2>
+          <p id="status" role="status" aria-live="polite">The model is loading. Place the explorer anywhere in the scene.</p>
+          <div class="result-facts">
+            <div><span>Accepted regions</span><strong id="mark-count">—</strong></div>
+            <div><span>Selected oracle steps</span><strong id="iteration-count">—</strong></div>
+            <div><span>Accepted-set probability</span><strong id="success-probability">—</strong></div>
+            <div><span>Measured region</span><strong id="measured-region">—</strong></div>
+          </div>
+          <p id="ground-truth" class="ground-truth">Ground truth is checked only after a measurement.</p>
+        </div>
+        <details class="experiment-settings">
+          <summary>Adjust the experiment <span aria-hidden="true">+</span></summary>
+          <div class="settings-content">
+            <label for="threshold">Classifier threshold <output id="threshold-value">—</output></label>
+            <input id="threshold" type="range" min="0.05" max="0.95" step="0.01" value="0.5">
+            <p>Higher thresholds accept fewer regions. A missed target cannot be rescued by amplification.</p>
+            <label for="iteration">Grover iteration <output id="iteration-value">0</output></label>
+            <input id="iteration" type="range" min="0" max="8" step="1" value="0" disabled>
+            <p>Step past the suggested peak to see probability fall again.</p>
+            <button id="measure" class="button-outline" disabled>Measure this state</button>
+          </div>
+        </details>
+        <div class="small-note"><span class="note-symbol" aria-hidden="true">↳</span><p>Every region is scored to build this oracle. The query count describes ideal quantum search; this browser is a classical simulation.</p></div>
+      </aside>
+    </section>
+    <section class="state-section" id="probability-map" aria-label="Simulated measurement probabilities">
+      <div class="section-heading"><div><span class="section-number">02</span><h2>A probability map, not a guess.</h2></div><span id="state-label">Uniform state · before the oracle</span></div>
+      <div id="bars" class="probability-bars" role="img" aria-label="Initial equal probabilities across the candidate regions"></div>
+      <div class="chart-key"><span><i class="key-default"></i>Unmarked region</span><span><i class="key-marked"></i>Accepted by the QNN</span><span id="truth-mass">Run the search to inspect a measurement.</span></div>
+    </section>
+    <section id="science" class="science-section">
+      <div class="section-heading"><div><span class="section-number">03</span><h2>Recognition supplies the question.<br>Interference changes the odds.</h2></div><p>Three steps connect the image to the quantum experiment.</p></div>
+      <div class="science-grid">
+        <article><span class="step-letter">A</span><h3>Learn a visual predicate</h3><p>Image features enter a trained variational circuit. Its outputs score each region. A threshold creates the accepted set.</p><div class="math-line">f(j) = 1[score(j) ≥ τ]</div></article>
+        <article><span class="step-letter">B</span><h3>Mark phase, then interfere</h3><p>The oracle flips accepted regions’ amplitudes. Diffusion reflects every amplitude around their mean.</p><div class="math-line">O<sub>f</sub>|j⟩ = (−1)<sup>f(j)</sup>|j⟩<br>a′<sub>j</sub> = 2ā − a<sub>j</sub></div></article>
+        <article><span class="step-letter">C</span><h3>Measure one region</h3><p>For M accepted regions out of N, the ideal accepted-set probability follows an exact curve. False positives are amplified too.</p><div class="math-line">P(r) = sin²[(2r + 1)θ]<br>θ = arcsin√(M/N)</div></article>
+      </div>
+    </section>
+<section class="oracle-lab" id="oracle-lab" data-oracle-lab data-theme="light" aria-labelledby="oracle-lab-title">
+  <div class="oq-heading"><div><span class="oq-kicker">TRY A DIFFERENT ORACLE</span><h2 id="oracle-lab-title">Confident search.<br>Wrong answer?</h2></div><p>This separate teaching example starts with one known target; you can remove it too. Change what the oracle accepts and compare its confidence with the chance of finding the target. These are constructed regions, not image-model predictions.</p></div>
+  <div class="oq-presets" aria-label="Teaching oracle examples"><button data-case="clean">Correct oracle</button><button data-case="contaminated">Three false positives</button><button data-case="miss">Missed target</button><button data-case="absent">No target</button></div>
+  <div class="oq-stats"><div><span>Accepted regions</span><strong data-oq="marked-count">—</strong></div><div><span>Accepted-set probability</span><strong data-oq="accepted-mass">—</strong></div><div><span>True-target probability</span><strong data-oq="target-mass">—</strong></div></div>
+  <div class="oq-layout"><div class="oq-controls">
+    <label>Candidate regions <select data-oq="size" aria-label="Teaching candidate regions"><option value="16">16 · 4 qubits</option><option value="64">64 · 6 qubits</option></select></label>
+    <label><input data-oq="present" type="checkbox" checked> A target is present</label>
+    <label><input data-oq="accepted" type="checkbox" checked> The oracle accepts the target</label>
+    <label for="oq-errors">Wrong regions accepted <output data-oq="error-count">0</output></label><input id="oq-errors" data-oq="errors" aria-label="Wrong regions accepted" type="range" min="0" max="15" value="0">
+    <label for="oq-rounds">Grover rounds <output data-oq="round-count">3</output></label><input id="oq-rounds" data-oq="rounds" aria-label="Teaching Grover rounds" type="range" min="0" max="12" value="3">
+    <button data-oq="peak" class="oq-peak">Use the first peak ↗</button>
+  </div><div><div data-oq="board" class="oq-board" role="img" aria-label="Constructed region probabilities"></div><div class="oq-key"><span><i></i>Accepted</span><span><i class="oq-key-target"></i>★ True target</span><span>Bars scaled to peak</span></div></div></div>
+
+  <p class="oq-explanation" data-oq="explanation" role="status" aria-live="polite"></p>
+  <div class="oq-formula">One true target inside M accepted regions:<br>P(target) = P(accepted) / M</div>
+  <details class="oq-quiz"><summary>Check your intuition ↓</summary><p>A search has 100% accepted-set probability. Does that guarantee the target?</p><button data-answer="incorrect" aria-pressed="false">The target is guaranteed</button><button data-answer="correct" aria-pressed="false">The oracle still needs checking</button><p class="oq-feedback" data-oq="quiz-feedback" role="status" aria-live="polite">Choose an answer, then try the false-positive and no-target examples.</p></details>
+  <a class="oq-link" href="https://bus-search-quantum-lab.syrupyspool2.chatgpt.site/compare.html">Compare the schoolbus and crowd experiments ↗</a>
+</section>
+    <section id="evidence" class="evidence-section">
+      <div class="evidence-intro"><p class="eyebrow">MEASURED, WITH A CLEAR SCOPE</p><h2>A tiny trained model.<br>A transparent experiment.</h2><p id="model-domain">This classifier is evaluated on controlled composites of this original character and crowd artwork. New positions do not establish recognition of arbitrary people or photographs.</p></div>
+      <div class="evidence-table"><div><span>Classifier circuit</span><strong id="model-circuit">Loading…</strong></div><div><span>Fitted parameter slots</span><strong id="model-parameters">—</strong></div><div><span>Held-out patch accuracy</span><strong id="test-accuracy">—</strong></div><div><span>Held-out patch examples</span><strong id="test-count">—</strong></div><div><span>Oracle build evaluations</span><strong id="inference-count">—</strong></div><div><span>Inference + trace time</span><strong id="runtime">—</strong></div></div>
+      <div class="baseline-comparison"><div><h3>Compare the same pixel features.</h3><a href="model/baseline_metrics.json" download>Download comparison ↗</a></div><table><thead><tr><th>Model · parameters</th><th>Accuracy</th><th>Recall</th></tr></thead><tbody id="baseline-table"><tr><td colspan="3">Loading the matched comparison…</td></tr></tbody></table><p id="baseline-note">Both models use the same seeded patches and eight pixel features. This controlled composite benchmark does not establish quantum superiority.</p></div>
+    </section>
+    <p class="parameter-note">The checkpoints store 40 fitted slots. Four final RZ phase angles do not affect the current Z-product readouts; 36 slots remain prediction-influencing. This is not a claim that all 36 are independent. <a href="model/hybrid-parameter-audit.json" download>Inspect the parameter audit ↓</a></p>
+    <section class="scene-audit-report"><p class="eyebrow">TEST THE WHOLE SCENE</p><h2>Fragments can defeat the predicate.</h2><p>The frozen QNN marks a true tile in 356/384 nominal 4 × 4 probes and 345/384 nominal 8 × 8 probes in a larger controlled audit. Both suites have zero false marks. These are Pillow-rendered placements of the same character and crowd, including dense boundary probes. The nominal 8 × 8 set has 369 unique geometry configurations among 384 predefined probes; repeated corner configurations retain their declared weighting.</p><p>Under separate scale and brightness stress, the 8 × 8 suite has only 132/384 clean-hit scenes: at least one true mark and no false marks. The matched logistic classifier also struggles, with 189/384 clean hits. These scene counts differ from patch accuracy and from a sampled quantum result.</p><div class="audit-actions"><a href="model/scene-audit-summary.json" download>Download the scene summary ↓</a><a href="assets/scene-audit-failures.png" target="_blank" rel="noopener">Inspect audited failures ↗</a><a href="#experiment">Try the Boundary challenge ↑</a></div><p class="audit-note">The two Boundary challenge placements are separately browser-verified to produce empty oracles on both grids at the frozen threshold. Other aggregate audit rates remain Pillow results; rasterizers can differ. New art identities are not tested here.</p></section>
+    <section class="comparison-note"><span class="note-symbol" aria-hidden="true">✳</span><div><h3>From a bus to a person-shaped target.</h3><p>The same search mathematics can amplify different visual predicates. Locating a fictional figure in these controlled scenes is an educational example; broader person localization needs independent data and a reliable recognition oracle.</p><p>Compare the crowd and schoolbus demos by oracle quality, candidate count, and true-target probability. This project demonstrates no end-to-end quantum speedup.</p></div></section>
+  </main>
+  <footer><a class="footer-brand" href="#">SEARCH ATLAS / FIELD NOTE 02</a><p>Original artwork · Trained QNN · Grover statevector simulation</p><div><a href="https://bus-search-quantum-lab.syrupyspool2.chatgpt.site/compare.html">Compare demos ↗</a><a href="model/model.json" download>Model & metrics ↗</a><a href="https://arxiv.org/abs/quant-ph/9605043" target="_blank" rel="noopener">Grover’s paper ↗</a></div></footer>
+  <script type="module" src="app.js"></script>
+  <script type="module" src="oracle-quality.js"></script>
+</body>
+</html>

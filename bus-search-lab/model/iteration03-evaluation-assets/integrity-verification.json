@@ -1,0 +1,63 @@
+{
+  "verifiedAtUtc": "2026-10-10T09:23:39.914718+00:00",
+  "passed": true,
+  "modelImportsOrPredictions": false,
+  "assets": [
+    {
+      "id": "street-a",
+      "originalSha256": "86965490ee36d6465a5d720f474215de563b8358c074fc43e97a64cb88a23be0",
+      "pixelsReproduced": true
+    },
+    {
+      "id": "street-b",
+      "originalSha256": "36a842be18e9921d737f6d698020140baca7c02e2aff340ddbb55e9fa43096f7",
+      "pixelsReproduced": true
+    },
+    {
+      "id": "bus-a",
+      "originalSha256": "9831b01bccdce5dd9dd59d05cc90560bb93c2775d0df73bac5097ba742cd790f",
+      "pixelsReproduced": true
+    },
+    {
+      "id": "bus-b",
+      "originalSha256": "6df339a3afa7ec7fcba10830cf8096be47b0c7a8fd6d854456471c901aec155a",
+      "pixelsReproduced": true
+    },
+    {
+      "id": "street-c",
+      "originalSha256": "e612ccfc805651b138bc1e5f276a049d625ad48524b76b800b18895500edc751",
+      "pixelsReproduced": true
+    },
+    {
+      "id": "bus-c",
+      "originalSha256": "409e2eb4c48ce033d2c50c3483f66ce352bed37c91924f2c048a3bd2a21ed436",
+      "pixelsReproduced": true
+    }
+  ],
+  "freezeFileSha256": "4a894af9106b1b66489b8e1d2cbb4b338b850b72ad8ad46a97595149ca8173b9",
+  "frozenExperimentFilesChecked": [
+    "model/photo_features_v3.py",
+    "model/photo_features_v3.mjs",
+    "model/photo_v3_data.py",
+    "model/train_photo_v3.py",
+    "model/audit_photo_v3.py",
+    "model/verify_photo_v3.py",
+    "model/verify_photo_v3.mjs",
+    "model/analyze_photo_v3.py",
+    "model/freeze_photo_v3.py",
+    "model/photo-v3-protocol.json",
+    "model/photo-v3-qnn-candidate.json",
+    "model/photo-v3-logistic-candidate.json",
+    "model/photo-v3-metrics.json",
+    "model/photo-v3-analysis.json",
+    "model/photo-v3-parity-verification.json",
+    "model/photo-v3-verification.json",
+    "dist\\qnn.js",
+    "dist\\model\\model-photo.json",
+    "dist\\assets\\real-schoolbus.png",
+    "dist\\assets\\street-captcha.png",
+    "model\\training-assets\\sauk-centre-street-512.png"
+  ],
+  "manifestStatus": "primary-released-for-frozen-evaluation-future-holdback-locked",
+  "futureHoldbackReleased": false
+}

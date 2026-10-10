@@ -1,0 +1,1771 @@
+{
+  "version": 1,
+  "name": "Stripe same-feature logistic regression",
+  "parameter_count": 9,
+  "feature_names": [
+    "red_coverage",
+    "stripe_bands",
+    "white_gaps",
+    "stripe_regularity",
+    "stripe_coherence",
+    "blue_below",
+    "stripe_area",
+    "stripe_aspect"
+  ],
+  "training_domain": "new seeded positions/scales of the SAME generated striped-explorer asset over crowd patches; no face identity training",
+  "split_configuration": {
+    "train": {
+      "n": 1600,
+      "seed": 202610103
+    },
+    "validation": {
+      "n": 400,
+      "seed": 202610104
+    },
+    "test": {
+      "n": 600,
+      "seed": 202610205
+    }
+  },
+  "generator_source_sha256": {
+    "train.py": "b2331c775c0c63cd6558f52ce251dbe68ee0a5bf9470036477ff317eb167adb2",
+    "qnn_core.py": "8d4fdd3e80d651e92ca6cf6f3450cf1048934762d9add9de612b3d06dabc4005",
+    "logistic_core.py": "0379093efa139867f9291322676dc21d321c0d1e021a17590012112a9393aeba",
+    "classical_baseline.py": "c3346f4727c20fe0cf29421de5ebeeef644445c0ae4b08f4a6b0bc1bf7fcdfc9"
+  },
+  "assets_sha256": {
+    "crowd.png": "33e371cb2d159bd773eb6dd4bf17997cd753b3e27037673c2013a0ed46790932",
+    "crowd-captcha.png": "17f9c327bdbeb186a3bb15a9d922383357651c70b22f627f2bf97b9c4e9997b3",
+    "character.png": "aaf45e7c86fd27da3f2d119b2b743b4dc3526faea87cde56c700b3d086e2c792"
+  },
+  "split_feature_and_label_sha256": {
+    "train": "8ce9d488be6cbb12236222701804c861b31be58e0f6fe0ec4ef0b16d0b05baef",
+    "validation": "a3478758c78635199c7afbc14ebb91ca07f872b9a3f45fd063f9169a21fd6487",
+    "test": "348f3fb5628d565b2b5ba99947f19cb5859a63fe938aba3ab0d3a2832b218579"
+  },
+  "preprocessing": "training-only mean/std; affine standardization absorbed into raw feature coefficients",
+  "optimization": "full-batch Newton logistic regression with line search; L2 weights only, bias unpenalized",
+  "regularization": 1e-06,
+  "regularization_selection": "minimum validation BCE; no test or scene selection",
+  "regularization_candidates": [
+    {
+      "lambda_value": 1e-06,
+      "validation_bce": 0.00019476290437128916,
+      "iterations": 17,
+      "training_regularized_objective": 0.0006282740216510498,
+      "gradient_max_abs": 3.2790166659387235e-14
+    },
+    {
+      "lambda_value": 1e-05,
+      "validation_bce": 0.0006098144880337377,
+      "iterations": 15,
+      "training_regularized_objective": 0.002595494749193938,
+      "gradient_max_abs": 1.5897920729434495e-14
+    },
+    {
+      "lambda_value": 0.0001,
+      "validation_bce": 0.0021828391550148237,
+      "iterations": 12,
+      "training_regularized_objective": 0.008583092188326643,
+      "gradient_max_abs": 3.3024862258388374e-11
+    },
+    {
+      "lambda_value": 0.001,
+      "validation_bce": 0.00916122478812162,
+      "iterations": 10,
+      "training_regularized_objective": 0.026472592173315553,
+      "gradient_max_abs": 1.3554724833872434e-11
+    },
+    {
+      "lambda_value": 0.01,
+      "validation_bce": 0.040650206801168445,
+      "iterations": 8,
+      "training_regularized_objective": 0.08735492120908434,
+      "gradient_max_abs": 5.608331207426764e-11
+    },
+    {
+      "lambda_value": 0.1,
+      "validation_bce": 0.15040975070358964,
+      "iterations": 6,
+      "training_regularized_objective": 0.2542506302326425,
+      "gradient_max_abs": 9.373672116286258e-10
+    }
+  ],
+  "threshold": 0.15,
+  "threshold_selection": "maximum validation F1 on QNN-matched 0.15..0.85 step0.01 grid; first maximum",
+  "best_validation_bce": 0.00019476290437128916,
+  "optimization_result": {
+    "iterations": 17,
+    "training_regularized_objective": 0.0006282740216510498,
+    "gradient_max_abs": 3.2790166659387235e-14
+  },
+  "raw_feature_weights": [
+    -5.448878958974566,
+    55.21177103186267,
+    -30.34484239537615,
+    38.228186803000916,
+    50.279385104718045,
+    19.475785887942095,
+    -61.465823740168354,
+    -24.325842764888854
+  ],
+  "raw_feature_bias": -65.6437970710628,
+  "training_feature_mean": [
+    0.8927811050415041,
+    0.6965625,
+    0.889875451427255,
+    0.8964317296239686,
+    0.7320158164577413,
+    0.6951136530778639,
+    0.17195510864257826,
+    0.8526230226426808
+  ],
+  "training_feature_std": [
+    0.16047042206890222,
+    0.3434030919979454,
+    0.19009828885594143,
+    0.17633205377314093,
+    0.31007595731970816,
+    0.4209082991409331,
+    0.10894858528120373,
+    0.2554448715851335
+  ],
+  "splits": {
+    "train": {
+      "n": 1600,
+      "threshold": 0.15,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0,
+      "true_positive": 800,
+      "false_positive": 0,
+      "false_negative": 0,
+      "true_negative": 800,
+      "bce": 0.0002119365374545896
+    },
+    "validation": {
+      "n": 400,
+      "threshold": 0.15,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0,
+      "true_positive": 200,
+      "false_positive": 0,
+      "false_negative": 0,
+      "true_negative": 200,
+      "bce": 0.00019476290437128916
+    },
+    "test": {
+      "n": 600,
+      "threshold": 0.15,
+      "accuracy": 0.9966666666666667,
+      "precision": 1.0,
+      "recall": 0.9933333333333333,
+      "f1": 0.9966555183946488,
+      "roc_auc": 0.9999,
+      "true_positive": 298,
+      "false_positive": 0,
+      "false_negative": 2,
+      "true_negative": 300,
+      "bce": 0.01630466004210522
+    }
+  },
+  "paired_scene_audits": {
+    "grid4": {
+      "grid": [
+        4,
+        4
+      ],
+      "seed": 202610207,
+      "historical_ground_truth": ">=20% character bounding-box area in a tile; original trainer audit",
+      "current_ui_ground_truth": "any foreground pixel with alpha>32 in a tile; evaluation only",
+      "summary": {
+        "logistic": {
+          "trials": 20,
+          "bbox20_hit_rate": 1.0,
+          "alpha32_hit_rate": 1.0,
+          "bbox20_no_false_tile_mark_rate": 1.0,
+          "alpha32_no_false_tile_mark_rate": 1.0,
+          "empty_crowd_max_score": 0.0008509586880548166,
+          "empty_crowd_marked_tiles": []
+        },
+        "qnn": {
+          "trials": 20,
+          "bbox20_hit_rate": 1.0,
+          "alpha32_hit_rate": 1.0,
+          "bbox20_no_false_tile_mark_rate": 1.0,
+          "alpha32_no_false_tile_mark_rate": 1.0,
+          "empty_crowd_max_score": 0.11634753468281013,
+          "empty_crowd_marked_tiles": []
+        }
+      },
+      "trials": [
+        {
+          "trial": 0,
+          "position": [
+            222,
+            173
+          ],
+          "sprite_size": [
+            64,
+            96
+          ],
+          "bbox20_true_tiles": [
+            5,
+            6
+          ],
+          "alpha32_true_tiles": [
+            5,
+            6,
+            9,
+            10
+          ],
+          "logistic": {
+            "marked_tiles": [
+              5,
+              6
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              5,
+              6
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 1,
+          "position": [
+            128,
+            181
+          ],
+          "sprite_size": [
+            64,
+            96
+          ],
+          "bbox20_true_tiles": [
+            5,
+            9
+          ],
+          "alpha32_true_tiles": [
+            5,
+            9
+          ],
+          "logistic": {
+            "marked_tiles": [
+              5
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              5
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 2,
+          "position": [
+            39,
+            193
+          ],
+          "sprite_size": [
+            64,
+            96
+          ],
+          "bbox20_true_tiles": [
+            4,
+            8
+          ],
+          "alpha32_true_tiles": [
+            4,
+            8
+          ],
+          "logistic": {
+            "marked_tiles": [
+              4
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              4
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 3,
+          "position": [
+            385,
+            378
+          ],
+          "sprite_size": [
+            64,
+            96
+          ],
+          "bbox20_true_tiles": [
+            15
+          ],
+          "alpha32_true_tiles": [
+            11,
+            15
+          ],
+          "logistic": {
+            "marked_tiles": [
+              15
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              15
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 4,
+          "position": [
+            189,
+            413
+          ],
+          "sprite_size": [
+            64,
+            96
+          ],
+          "bbox20_true_tiles": [
+            13
+          ],
+          "alpha32_true_tiles": [
+            13
+          ],
+          "logistic": {
+            "marked_tiles": [
+              13
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              13
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 5,
+          "position": [
+            16,
+            316
+          ],
+          "sprite_size": [
+            64,
+            96
+          ],
+          "bbox20_true_tiles": [
+            8,
+            12
+          ],
+          "alpha32_true_tiles": [
+            8,
+            12
+          ],
+          "logistic": {
+            "marked_tiles": [
+              8
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              8
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 6,
+          "position": [
+            129,
+            331
+          ],
+          "sprite_size": [
+            64,
+            96
+          ],
+          "bbox20_true_tiles": [
+            9,
+            13
+          ],
+          "alpha32_true_tiles": [
+            9,
+            13
+          ],
+          "logistic": {
+            "marked_tiles": [
+              9
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              9
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 7,
+          "position": [
+            192,
+            151
+          ],
+          "sprite_size": [
+            64,
+            96
+          ],
+          "bbox20_true_tiles": [
+            5
+          ],
+          "alpha32_true_tiles": [
+            5
+          ],
+          "logistic": {
+            "marked_tiles": [
+              5
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              5
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 8,
+          "position": [
+            263,
+            291
+          ],
+          "sprite_size": [
+            64,
+            96
+          ],
+          "bbox20_true_tiles": [
+            10
+          ],
+          "alpha32_true_tiles": [
+            10,
+            14
+          ],
+          "logistic": {
+            "marked_tiles": [
+              10
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              10
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 9,
+          "position": [
+            427,
+            172
+          ],
+          "sprite_size": [
+            64,
+            96
+          ],
+          "bbox20_true_tiles": [
+            7
+          ],
+          "alpha32_true_tiles": [
+            7,
+            11
+          ],
+          "logistic": {
+            "marked_tiles": [
+              7
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              7
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 10,
+          "position": [
+            148,
+            319
+          ],
+          "sprite_size": [
+            64,
+            96
+          ],
+          "bbox20_true_tiles": [
+            9,
+            13
+          ],
+          "alpha32_true_tiles": [
+            9,
+            13
+          ],
+          "logistic": {
+            "marked_tiles": [
+              9
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              9
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 11,
+          "position": [
+            263,
+            350
+          ],
+          "sprite_size": [
+            64,
+            96
+          ],
+          "bbox20_true_tiles": [
+            10,
+            14
+          ],
+          "alpha32_true_tiles": [
+            10,
+            14
+          ],
+          "logistic": {
+            "marked_tiles": [
+              14
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              14
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 12,
+          "position": [
+            97,
+            333
+          ],
+          "sprite_size": [
+            64,
+            96
+          ],
+          "bbox20_true_tiles": [
+            8,
+            9,
+            12,
+            13
+          ],
+          "alpha32_true_tiles": [
+            8,
+            9,
+            12,
+            13
+          ],
+          "logistic": {
+            "marked_tiles": [
+              8,
+              9
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              8,
+              9
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 13,
+          "position": [
+            386,
+            158
+          ],
+          "sprite_size": [
+            64,
+            96
+          ],
+          "bbox20_true_tiles": [
+            7
+          ],
+          "alpha32_true_tiles": [
+            7
+          ],
+          "logistic": {
+            "marked_tiles": [
+              7
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              7
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 14,
+          "position": [
+            348,
+            44
+          ],
+          "sprite_size": [
+            64,
+            96
+          ],
+          "bbox20_true_tiles": [
+            2,
+            3
+          ],
+          "alpha32_true_tiles": [
+            2,
+            3,
+            6,
+            7
+          ],
+          "logistic": {
+            "marked_tiles": [
+              2,
+              3
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              2
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 15,
+          "position": [
+            258,
+            215
+          ],
+          "sprite_size": [
+            64,
+            96
+          ],
+          "bbox20_true_tiles": [
+            6,
+            10
+          ],
+          "alpha32_true_tiles": [
+            6,
+            10
+          ],
+          "logistic": {
+            "marked_tiles": [
+              6,
+              10
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              6
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 16,
+          "position": [
+            117,
+            44
+          ],
+          "sprite_size": [
+            64,
+            96
+          ],
+          "bbox20_true_tiles": [
+            1
+          ],
+          "alpha32_true_tiles": [
+            1,
+            5
+          ],
+          "logistic": {
+            "marked_tiles": [
+              1
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              1
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 17,
+          "position": [
+            209,
+            37
+          ],
+          "sprite_size": [
+            64,
+            96
+          ],
+          "bbox20_true_tiles": [
+            1,
+            2
+          ],
+          "alpha32_true_tiles": [
+            1,
+            5
+          ],
+          "logistic": {
+            "marked_tiles": [
+              1
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              1
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 18,
+          "position": [
+            392,
+            77
+          ],
+          "sprite_size": [
+            64,
+            96
+          ],
+          "bbox20_true_tiles": [
+            3,
+            7
+          ],
+          "alpha32_true_tiles": [
+            3,
+            7
+          ],
+          "logistic": {
+            "marked_tiles": [
+              3
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              3
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 19,
+          "position": [
+            152,
+            300
+          ],
+          "sprite_size": [
+            64,
+            96
+          ],
+          "bbox20_true_tiles": [
+            9
+          ],
+          "alpha32_true_tiles": [
+            9,
+            13
+          ],
+          "logistic": {
+            "marked_tiles": [
+              9
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              9
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        }
+      ]
+    },
+    "grid8": {
+      "grid": [
+        8,
+        8
+      ],
+      "seed": 202610207,
+      "historical_ground_truth": ">=20% character bounding-box area in a tile; original trainer audit",
+      "current_ui_ground_truth": "any foreground pixel with alpha>32 in a tile; evaluation only",
+      "summary": {
+        "logistic": {
+          "trials": 20,
+          "bbox20_hit_rate": 1.0,
+          "alpha32_hit_rate": 1.0,
+          "bbox20_no_false_tile_mark_rate": 1.0,
+          "alpha32_no_false_tile_mark_rate": 1.0,
+          "empty_crowd_max_score": 7.884160627512307e-05,
+          "empty_crowd_marked_tiles": []
+        },
+        "qnn": {
+          "trials": 20,
+          "bbox20_hit_rate": 0.95,
+          "alpha32_hit_rate": 0.95,
+          "bbox20_no_false_tile_mark_rate": 1.0,
+          "alpha32_no_false_tile_mark_rate": 1.0,
+          "empty_crowd_max_score": 0.11012707592279727,
+          "empty_crowd_marked_tiles": []
+        }
+      },
+      "trials": [
+        {
+          "trial": 0,
+          "position": [
+            167,
+            144
+          ],
+          "sprite_size": [
+            32,
+            48
+          ],
+          "bbox20_true_tiles": [
+            18,
+            19
+          ],
+          "alpha32_true_tiles": [
+            18
+          ],
+          "logistic": {
+            "marked_tiles": [
+              18
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              18
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 1,
+          "position": [
+            104,
+            175
+          ],
+          "sprite_size": [
+            32,
+            48
+          ],
+          "bbox20_true_tiles": [
+            17,
+            25
+          ],
+          "alpha32_true_tiles": [
+            17,
+            25
+          ],
+          "logistic": {
+            "marked_tiles": [
+              25
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              25
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 2,
+          "position": [
+            73,
+            98
+          ],
+          "sprite_size": [
+            32,
+            48
+          ],
+          "bbox20_true_tiles": [
+            9,
+            17
+          ],
+          "alpha32_true_tiles": [
+            9,
+            17
+          ],
+          "logistic": {
+            "marked_tiles": [
+              9
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              9
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 3,
+          "position": [
+            68,
+            266
+          ],
+          "sprite_size": [
+            32,
+            48
+          ],
+          "bbox20_true_tiles": [
+            33
+          ],
+          "alpha32_true_tiles": [
+            33
+          ],
+          "logistic": {
+            "marked_tiles": [
+              33
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              33
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 4,
+          "position": [
+            447,
+            365
+          ],
+          "sprite_size": [
+            32,
+            48
+          ],
+          "bbox20_true_tiles": [
+            47,
+            55
+          ],
+          "alpha32_true_tiles": [
+            47,
+            55
+          ],
+          "logistic": {
+            "marked_tiles": [
+              55
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              55
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 5,
+          "position": [
+            26,
+            119
+          ],
+          "sprite_size": [
+            32,
+            48
+          ],
+          "bbox20_true_tiles": [
+            16
+          ],
+          "alpha32_true_tiles": [
+            8,
+            16
+          ],
+          "logistic": {
+            "marked_tiles": [
+              16
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              16
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 6,
+          "position": [
+            17,
+            381
+          ],
+          "sprite_size": [
+            32,
+            48
+          ],
+          "bbox20_true_tiles": [
+            48
+          ],
+          "alpha32_true_tiles": [
+            40,
+            48
+          ],
+          "logistic": {
+            "marked_tiles": [
+              48
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              48
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 7,
+          "position": [
+            107,
+            36
+          ],
+          "sprite_size": [
+            32,
+            48
+          ],
+          "bbox20_true_tiles": [
+            1,
+            2,
+            9
+          ],
+          "alpha32_true_tiles": [
+            1,
+            2,
+            9,
+            10
+          ],
+          "logistic": {
+            "marked_tiles": [
+              1
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              1
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 8,
+          "position": [
+            208,
+            120
+          ],
+          "sprite_size": [
+            32,
+            48
+          ],
+          "bbox20_true_tiles": [
+            19
+          ],
+          "alpha32_true_tiles": [
+            11,
+            19
+          ],
+          "logistic": {
+            "marked_tiles": [
+              19
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              19
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 9,
+          "position": [
+            453,
+            374
+          ],
+          "sprite_size": [
+            32,
+            48
+          ],
+          "bbox20_true_tiles": [
+            47,
+            55
+          ],
+          "alpha32_true_tiles": [
+            47,
+            55
+          ],
+          "logistic": {
+            "marked_tiles": [
+              55
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              55
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 10,
+          "position": [
+            19,
+            399
+          ],
+          "sprite_size": [
+            32,
+            48
+          ],
+          "bbox20_true_tiles": [
+            48
+          ],
+          "alpha32_true_tiles": [
+            48
+          ],
+          "logistic": {
+            "marked_tiles": [
+              48
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              48
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 11,
+          "position": [
+            158,
+            107
+          ],
+          "sprite_size": [
+            32,
+            48
+          ],
+          "bbox20_true_tiles": [
+            10,
+            18
+          ],
+          "alpha32_true_tiles": [
+            10,
+            18
+          ],
+          "logistic": {
+            "marked_tiles": [
+              18
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [],
+            "bbox20_hit": false,
+            "alpha32_hit": false,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 12,
+          "position": [
+            27,
+            14
+          ],
+          "sprite_size": [
+            32,
+            48
+          ],
+          "bbox20_true_tiles": [
+            0
+          ],
+          "alpha32_true_tiles": [
+            0
+          ],
+          "logistic": {
+            "marked_tiles": [
+              0
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              0
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 13,
+          "position": [
+            445,
+            65
+          ],
+          "sprite_size": [
+            32,
+            48
+          ],
+          "bbox20_true_tiles": [
+            15
+          ],
+          "alpha32_true_tiles": [
+            15
+          ],
+          "logistic": {
+            "marked_tiles": [
+              15
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              15
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 14,
+          "position": [
+            72,
+            90
+          ],
+          "sprite_size": [
+            32,
+            48
+          ],
+          "bbox20_true_tiles": [
+            9,
+            17
+          ],
+          "alpha32_true_tiles": [
+            9,
+            17
+          ],
+          "logistic": {
+            "marked_tiles": [
+              9
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              9
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 15,
+          "position": [
+            466,
+            6
+          ],
+          "sprite_size": [
+            32,
+            48
+          ],
+          "bbox20_true_tiles": [
+            7
+          ],
+          "alpha32_true_tiles": [
+            7
+          ],
+          "logistic": {
+            "marked_tiles": [
+              7
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              7
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 16,
+          "position": [
+            245,
+            70
+          ],
+          "sprite_size": [
+            32,
+            48
+          ],
+          "bbox20_true_tiles": [
+            11,
+            12
+          ],
+          "alpha32_true_tiles": [
+            11,
+            12
+          ],
+          "logistic": {
+            "marked_tiles": [
+              12
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              12
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 17,
+          "position": [
+            183,
+            165
+          ],
+          "sprite_size": [
+            32,
+            48
+          ],
+          "bbox20_true_tiles": [
+            19,
+            27
+          ],
+          "alpha32_true_tiles": [
+            19,
+            27
+          ],
+          "logistic": {
+            "marked_tiles": [
+              19
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              19
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 18,
+          "position": [
+            323,
+            405
+          ],
+          "sprite_size": [
+            32,
+            48
+          ],
+          "bbox20_true_tiles": [
+            53
+          ],
+          "alpha32_true_tiles": [
+            53,
+            61
+          ],
+          "logistic": {
+            "marked_tiles": [
+              53
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              53
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        },
+        {
+          "trial": 19,
+          "position": [
+            341,
+            140
+          ],
+          "sprite_size": [
+            32,
+            48
+          ],
+          "bbox20_true_tiles": [
+            21
+          ],
+          "alpha32_true_tiles": [
+            21
+          ],
+          "logistic": {
+            "marked_tiles": [
+              21
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          },
+          "qnn": {
+            "marked_tiles": [
+              21
+            ],
+            "bbox20_hit": true,
+            "alpha32_hit": true,
+            "bbox20_false_positive_tiles": 0,
+            "alpha32_false_positive_tiles": 0
+          }
+        }
+      ]
+    }
+  },
+  "qnn_reference": {
+    "name": "StripePatch-QNN-v1",
+    "parameter_count": 40,
+    "model_sha256": "9655fb62c446acd7239904f993d82aa6a05915bac07efffebaa83c5211d3d1f2",
+    "split_seeds_and_counts_confirmed": true,
+    "regenerated_confusion_and_bce_confirmed": true,
+    "historical_bbox_scene_audit_confirmed": true,
+    "regenerated_splits": {
+      "train": {
+        "n": 1600,
+        "threshold": 0.22000000000000006,
+        "accuracy": 0.99875,
+        "precision": 0.9975062344139651,
+        "recall": 1.0,
+        "f1": 0.9987515605493134,
+        "roc_auc": 0.9999875,
+        "true_positive": 800,
+        "false_positive": 2,
+        "false_negative": 0,
+        "true_negative": 798,
+        "bce": 0.012628387002052887
+      },
+      "validation": {
+        "n": 400,
+        "threshold": 0.22000000000000006,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "roc_auc": 1.0,
+        "true_positive": 200,
+        "false_positive": 0,
+        "false_negative": 0,
+        "true_negative": 200,
+        "bce": 0.016718111450004014
+      },
+      "test": {
+        "n": 600,
+        "threshold": 0.22000000000000006,
+        "accuracy": 0.99,
+        "precision": 0.9867549668874173,
+        "recall": 0.9933333333333333,
+        "f1": 0.9900332225913622,
+        "roc_auc": 0.9998555555555556,
+        "true_positive": 298,
+        "false_positive": 4,
+        "false_negative": 2,
+        "true_negative": 296,
+        "bce": 0.021191422839838835
+      }
+    }
+  },
+  "verification": {
+    "loss_gradient_finite_difference_max_error": 1.4135609349708034e-11,
+    "raw_vs_standardized_probability_max_error": 1.790234627208065e-15
+  },
+  "elapsed_seconds": {
+    "data_generation_and_qnn_recheck": 41.87917779991403,
+    "fitting_and_validation_selection": 0.019208299927413464,
+    "scene_audits": 3.7135754998307675,
+    "total": 45.61216220003553
+  },
+  "interpretation": "Same engineered pixel features/examples compare classifier behavior, not equal model capacity, unseen-character generalization, Grover outcomes, face identity, or quantum runtime advantage."
+}

@@ -1,0 +1,94 @@
+{
+  "verification": "PASS",
+  "cases": {
+    "bus_illustrated": {
+      "model": "BusPatch-QNN-v1",
+      "model_path": "bus-search-lab\\dist\\model\\model-synthetic.json",
+      "model_sha256": "99643bd2693ad754a4e49a2560efaade8eade96d336a9bafb578266aef9f5d52",
+      "source_path": "bus-search-lab\\model\\train.py",
+      "source_sha256": "b52f068b5c6ae427ac00d73a4c4181a3f925efe0067ff4ff79a3dc4bd861818e",
+      "parameter_slots": 40,
+      "angle_slots": 32,
+      "readout_weights": 7,
+      "biases": 1,
+      "prediction_insensitive_angle_slots": [
+        25,
+        27,
+        29,
+        31
+      ],
+      "remaining_prediction_influencing_slots_observed": 36,
+      "probes": 128,
+      "probe_seed": 362614,
+      "checks": {
+        "final_rz_all_observable_derivative_max": 9.521580222249058e-17,
+        "final_rz_prediction_derivative_max": 1.3699451597092639e-16,
+        "finite_joint_final_rz_perturbation_observable_max_error": 6.661338147750939e-16,
+        "finite_joint_final_rz_perturbation_prediction_max_error": 8.881784197001252e-16,
+        "smallest_active_angle_max_probe_derivative": 0.6538894635321778
+      },
+      "mechanism": "Final learned RZ phases leave basis probabilities unchanged; the final CNOT ring only permutes basis amplitudes. All seven readouts are Z-products, hence depend only on those probabilities.",
+      "interpretation": "40 nominal parameter slots, including four prediction-insensitive final RZ angles; 36 remaining slots. Nonzero responses on probes do not prove independence, identifiability, or a 36-dimensional function family."
+    },
+    "bus_photo": {
+      "model": "BusPatch-QNN-photo-v1",
+      "model_path": "bus-search-lab\\dist\\model\\model-photo.json",
+      "model_sha256": "a2466f8f29da4dccd7f2834c019d3fe291796cb204839e9f9a2e4c77265ae069",
+      "source_path": "bus-search-lab\\model\\train.py",
+      "source_sha256": "b52f068b5c6ae427ac00d73a4c4181a3f925efe0067ff4ff79a3dc4bd861818e",
+      "parameter_slots": 40,
+      "angle_slots": 32,
+      "readout_weights": 7,
+      "biases": 1,
+      "prediction_insensitive_angle_slots": [
+        25,
+        27,
+        29,
+        31
+      ],
+      "remaining_prediction_influencing_slots_observed": 36,
+      "probes": 128,
+      "probe_seed": 362614,
+      "checks": {
+        "final_rz_all_observable_derivative_max": 8.697818093949401e-17,
+        "final_rz_prediction_derivative_max": 1.1355903921885577e-16,
+        "finite_joint_final_rz_perturbation_observable_max_error": 5.551115123125783e-16,
+        "finite_joint_final_rz_perturbation_prediction_max_error": 1.2212453270876722e-15,
+        "smallest_active_angle_max_probe_derivative": 0.5296031504851721
+      },
+      "mechanism": "Final learned RZ phases leave basis probabilities unchanged; the final CNOT ring only permutes basis amplitudes. All seven readouts are Z-products, hence depend only on those probabilities.",
+      "interpretation": "40 nominal parameter slots, including four prediction-insensitive final RZ angles; 36 remaining slots. Nonzero responses on probes do not prove independence, identifiability, or a 36-dimensional function family."
+    },
+    "crowd": {
+      "model": "StripePatch-QNN-v1",
+      "model_path": "waldo-search-lab\\dist\\model\\model.json",
+      "model_sha256": "9655fb62c446acd7239904f993d82aa6a05915bac07efffebaa83c5211d3d1f2",
+      "source_path": "waldo-search-lab\\model\\qnn_core.py",
+      "source_sha256": "8d4fdd3e80d651e92ca6cf6f3450cf1048934762d9add9de612b3d06dabc4005",
+      "parameter_slots": 40,
+      "angle_slots": 32,
+      "readout_weights": 7,
+      "biases": 1,
+      "prediction_insensitive_angle_slots": [
+        25,
+        27,
+        29,
+        31
+      ],
+      "remaining_prediction_influencing_slots_observed": 36,
+      "probes": 128,
+      "probe_seed": 362614,
+      "checks": {
+        "final_rz_all_observable_derivative_max": 1.1675351307219105e-16,
+        "final_rz_prediction_derivative_max": 1.9468233142707794e-16,
+        "finite_joint_final_rz_perturbation_observable_max_error": 6.661338147750939e-16,
+        "finite_joint_final_rz_perturbation_prediction_max_error": 4.996003610813204e-16,
+        "smallest_active_angle_max_probe_derivative": 0.19634707925750258
+      },
+      "mechanism": "Final learned RZ phases leave basis probabilities unchanged; the final CNOT ring only permutes basis amplitudes. All seven readouts are Z-products, hence depend only on those probabilities.",
+      "interpretation": "40 nominal parameter slots, including four prediction-insensitive final RZ angles; 36 remaining slots. Nonzero responses on probes do not prove independence, identifiability, or a 36-dimensional function family."
+    }
+  },
+  "mutation": false,
+  "scope": "Read-only numerical checks and basis-probability argument for the actual current hybrid circuits; no hardware/generalization claim."
+}

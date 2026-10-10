@@ -1,0 +1,120 @@
+{
+  "version": 3,
+  "featureVersion": "photo-relative-v3",
+  "featureExtractor": "photo-relative-v3",
+  "featureNames": [
+    "warm_coverage",
+    "warm_aspect",
+    "relative_window_runs",
+    "relative_window_darkness",
+    "window_spacing",
+    "relative_wheel_runs",
+    "lower_warm_fill",
+    "relative_lower_darkness"
+  ],
+  "readyForDemo": false,
+  "seed": 2026101030,
+  "splitSeeds": {
+    "train": 2026101030,
+    "validation": 2026101031,
+    "test": 2026101232,
+    "stress_test": 2026101233
+  },
+  "trainingDomain": "One real bus cutout on Covington/Sauk Centre with controlled illumination; placements and augmentations held out, not photograph identities",
+  "assets": [
+    {
+      "file": "dist\\assets\\real-schoolbus.png",
+      "sha256": "5eb0cf031cf560b3af03407bb55a178446a57c411fc5d5d049d2680143c8d3ca"
+    },
+    {
+      "file": "dist\\assets\\street-captcha.png",
+      "sha256": "9d37da13f6d7c646c434488b505b67cf09b6ec11f1a9b897ed8adc4ca25f322a"
+    },
+    {
+      "file": "model\\training-assets\\sauk-centre-street-512.png",
+      "sha256": "57c9ec48db618c00d5443c7aec0147d87585d106c4506b17f006bebcaf4bd5ad"
+    }
+  ],
+  "sourceHashes": {
+    "photo_features_v3.py": "2707b7bd04941bf7d3521f45803cde94490284643f340d444a6c0e182f8ff1c3",
+    "photo_v3_data.py": "e3b513f64db6c3b337b9bc657a4d0ad24b496e201793a17cb5a5feb8b5175e21",
+    "train_photo_v3.py": "a81d2659b029b8ab80a25f36d420e42bb13c0143004ab800354d0c58f918898a",
+    "train.py": "b52f068b5c6ae427ac00d73a4c4181a3f925efe0067ff4ff79a3dc4bd861818e",
+    "classical_baseline.py": "07694ec576b5f67044530b8120398e9aedb000a5583523078dec4837adfc3894",
+    "photo-v3-protocol.json": "0d3739448492e8dffd688cc546165aa24e8288e412171ae5d783862dc37795f3"
+  },
+  "name": "BusPhoto-v3-logistic-candidate",
+  "threshold": 0.94,
+  "metrics": {
+    "train": {
+      "n": 4800,
+      "threshold": 0.94,
+      "accuracy": 0.5158333333333334,
+      "precision": 0.9871794871794872,
+      "recall": 0.03208333333333333,
+      "f1": 0.062146892655367235,
+      "roc_auc": 0.8462576388888889,
+      "true_positive": 77,
+      "false_positive": 1,
+      "false_negative": 2323,
+      "true_negative": 2399,
+      "bce": 0.4653672976196651
+    },
+    "validation": {
+      "n": 1200,
+      "threshold": 0.94,
+      "accuracy": 0.515,
+      "precision": 1.0,
+      "recall": 0.03,
+      "f1": 0.05825242718446602,
+      "roc_auc": 0.8567666666666667,
+      "true_positive": 18,
+      "false_positive": 0,
+      "false_negative": 582,
+      "true_negative": 600,
+      "bce": 0.4492194882263591
+    },
+    "test": {
+      "n": 2000,
+      "threshold": 0.94,
+      "accuracy": 0.52,
+      "precision": 0.9761904761904762,
+      "recall": 0.041,
+      "f1": 0.07869481765834933,
+      "roc_auc": 0.85139,
+      "true_positive": 41,
+      "false_positive": 1,
+      "false_negative": 959,
+      "true_negative": 999,
+      "bce": 0.45345681877468463
+    },
+    "stress_test": {
+      "n": 1200,
+      "threshold": 0.94,
+      "accuracy": 0.5133333333333333,
+      "precision": 1.0,
+      "recall": 0.02666666666666667,
+      "f1": 0.05194805194805195,
+      "roc_auc": 0.8299361111111111,
+      "true_positive": 16,
+      "false_positive": 0,
+      "false_negative": 584,
+      "true_negative": 600,
+      "bce": 0.4870953636015162
+    }
+  },
+  "validationBudgetFeasible": true,
+  "parameterCount": 9,
+  "raw_feature_weights": [
+    2.199672168666794,
+    2.7131922963001673,
+    2.182931067648038,
+    -0.20525445712422952,
+    -0.39461688116903065,
+    -0.24702762922629054,
+    0.22252497995811646,
+    0.01355893598065942
+  ],
+  "raw_feature_bias": -3.0649956381969723,
+  "regularization": 1e-06
+}

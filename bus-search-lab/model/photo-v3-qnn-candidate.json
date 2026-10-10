@@ -1,0 +1,163 @@
+{
+  "version": 3,
+  "featureVersion": "photo-relative-v3",
+  "featureExtractor": "photo-relative-v3",
+  "featureNames": [
+    "warm_coverage",
+    "warm_aspect",
+    "relative_window_runs",
+    "relative_window_darkness",
+    "window_spacing",
+    "relative_wheel_runs",
+    "lower_warm_fill",
+    "relative_lower_darkness"
+  ],
+  "readyForDemo": false,
+  "seed": 2026101030,
+  "splitSeeds": {
+    "train": 2026101030,
+    "validation": 2026101031,
+    "test": 2026101232,
+    "stress_test": 2026101233
+  },
+  "trainingDomain": "One real bus cutout on Covington/Sauk Centre with controlled illumination; placements and augmentations held out, not photograph identities",
+  "assets": [
+    {
+      "file": "dist\\assets\\real-schoolbus.png",
+      "sha256": "5eb0cf031cf560b3af03407bb55a178446a57c411fc5d5d049d2680143c8d3ca"
+    },
+    {
+      "file": "dist\\assets\\street-captcha.png",
+      "sha256": "9d37da13f6d7c646c434488b505b67cf09b6ec11f1a9b897ed8adc4ca25f322a"
+    },
+    {
+      "file": "model\\training-assets\\sauk-centre-street-512.png",
+      "sha256": "57c9ec48db618c00d5443c7aec0147d87585d106c4506b17f006bebcaf4bd5ad"
+    }
+  ],
+  "sourceHashes": {
+    "photo_features_v3.py": "2707b7bd04941bf7d3521f45803cde94490284643f340d444a6c0e182f8ff1c3",
+    "photo_v3_data.py": "e3b513f64db6c3b337b9bc657a4d0ad24b496e201793a17cb5a5feb8b5175e21",
+    "train_photo_v3.py": "a81d2659b029b8ab80a25f36d420e42bb13c0143004ab800354d0c58f918898a",
+    "train.py": "b52f068b5c6ae427ac00d73a4c4181a3f925efe0067ff4ff79a3dc4bd861818e",
+    "classical_baseline.py": "07694ec576b5f67044530b8120398e9aedb000a5583523078dec4837adfc3894",
+    "photo-v3-protocol.json": "0d3739448492e8dffd688cc546165aa24e8288e412171ae5d783862dc37795f3"
+  },
+  "name": "BusPhoto-v3-qnn-candidate",
+  "threshold": 0.95,
+  "metrics": {
+    "train": {
+      "n": 4800,
+      "threshold": 0.95,
+      "accuracy": 0.5925,
+      "precision": 0.9955357142857143,
+      "recall": 0.18583333333333332,
+      "f1": 0.31320224719101125,
+      "roc_auc": 0.8609388888888889,
+      "true_positive": 446,
+      "false_positive": 2,
+      "false_negative": 1954,
+      "true_negative": 2398,
+      "bce": 0.43570897500942074
+    },
+    "validation": {
+      "n": 1200,
+      "threshold": 0.95,
+      "accuracy": 0.59,
+      "precision": 1.0,
+      "recall": 0.18,
+      "f1": 0.3050847457627119,
+      "roc_auc": 0.8658277777777778,
+      "true_positive": 108,
+      "false_positive": 0,
+      "false_negative": 492,
+      "true_negative": 600,
+      "bce": 0.42838502542266177
+    },
+    "test": {
+      "n": 2000,
+      "threshold": 0.95,
+      "accuracy": 0.588,
+      "precision": 1.0,
+      "recall": 0.176,
+      "f1": 0.29931972789115646,
+      "roc_auc": 0.862403,
+      "true_positive": 176,
+      "false_positive": 0,
+      "false_negative": 824,
+      "true_negative": 1000,
+      "bce": 0.43023335872864604
+    },
+    "stress_test": {
+      "n": 1200,
+      "threshold": 0.95,
+      "accuracy": 0.5833333333333334,
+      "precision": 0.9901960784313726,
+      "recall": 0.16833333333333333,
+      "f1": 0.28774928774928776,
+      "roc_auc": 0.8443055555555555,
+      "true_positive": 101,
+      "false_positive": 1,
+      "false_negative": 499,
+      "true_negative": 599,
+      "bce": 0.46255436879702394
+    }
+  },
+  "validationBudgetFeasible": true,
+  "qubits": 4,
+  "layers": 4,
+  "parameterCount": 40,
+  "theta": [
+    -1.1190161788164685,
+    0.6791928297296835,
+    -1.353064368640293,
+    -0.18504343969442708,
+    0.3536829482616033,
+    2.020634337072734,
+    0.8025488246250824,
+    1.3723357396844404,
+    -0.2848777297938996,
+    0.4056292241068047,
+    -0.1647798829312205,
+    -0.6648998711270877,
+    0.10071968822342808,
+    -0.4365030296819298,
+    -0.6088649318975421,
+    -0.06277208639882716,
+    -0.40911148764767924,
+    -0.26894055473948386,
+    1.2770267883718454,
+    0.0976584920971735,
+    0.4317819745698662,
+    0.43714230999566944,
+    -0.25321205019049986,
+    1.5753306276083472,
+    -0.07608521896491022,
+    0.2681495520583481,
+    -0.19122606910717113,
+    0.596154400126242,
+    -0.41385612471744126,
+    0.9673938743679129,
+    0.9600303766853773,
+    -0.24748237095734324
+  ],
+  "readout": [
+    -0.10886079408799766,
+    -2.4683745366033802,
+    -0.33044645899180847,
+    -1.01344449327183,
+    0.6602480108821924,
+    -2.135762417023474,
+    -1.873802752541905
+  ],
+  "bias": 0.38102926446404395,
+  "observables": [
+    "Z0",
+    "Z1",
+    "Z2",
+    "Z3",
+    "Z0Z1",
+    "Z2Z3",
+    "Z0Z1Z2Z3"
+  ]
+}

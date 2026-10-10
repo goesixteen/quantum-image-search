@@ -1,0 +1,168 @@
+{
+  "version": 1,
+  "name": "BusPatch-QNN-negative-mix-v1",
+  "seed": 731091,
+  "qubits": 4,
+  "layers": 4,
+  "featureNames": [
+    "yellow_coverage",
+    "yellow_aspect",
+    "window_runs",
+    "window_darkness",
+    "window_spacing",
+    "wheel_runs",
+    "body_fill",
+    "lower_darkness"
+  ],
+  "theta": [
+    -2.3178992410159123,
+    1.5431432730269206,
+    0.4425562344664653,
+    1.6533352966732306,
+    -2.236176953796289,
+    -0.18182038600802045,
+    -0.5037086099669006,
+    1.7526561383429693,
+    0.02005426328424155,
+    1.7537249130944605,
+    -2.574049080911045,
+    -1.962300634887361,
+    0.5952396794541236,
+    -2.4616964208679177,
+    0.6450829215681558,
+    0.6625862452566513,
+    -0.7063401877367717,
+    -0.9131288199283619,
+    -1.2446259549861216,
+    0.6257121984787163,
+    -0.35701941342790855,
+    1.791636746652589,
+    -0.017786030967480163,
+    -0.8215103948998214,
+    0.08218663928342118,
+    0.829430962744454,
+    -0.9648231814005966,
+    0.6215856739868075,
+    0.7374779584854734,
+    0.4567965776971856,
+    0.09711378330546105,
+    -0.8553264018181777
+  ],
+  "readout": [
+    1.9030945423653056,
+    -3.073913541616154,
+    -0.8232000022771806,
+    2.431292143738789,
+    -4.08842903235634,
+    -0.05601279603278736,
+    4.218125335096779
+  ],
+  "bias": 1.144190885015917,
+  "threshold": 0.40000000000000024,
+  "observables": [
+    "Z0",
+    "Z1",
+    "Z2",
+    "Z3",
+    "Z0Z1",
+    "Z2Z3",
+    "Z0Z1Z2Z3"
+  ],
+  "parameterCount": 40,
+  "trainingDomain": "same supplied real schoolbus cutout composited on supplied street-photo assets; held-out placement seeds, not unseen photo identities",
+  "metrics": {
+    "train": {
+      "n": 3200,
+      "threshold": 0.40000000000000024,
+      "accuracy": 0.9115625,
+      "precision": 0.8726655348047538,
+      "recall": 0.96375,
+      "f1": 0.9159489159489159,
+      "roc_auc": 0.969966015625,
+      "true_positive": 1542,
+      "false_positive": 225,
+      "false_negative": 58,
+      "true_negative": 1375,
+      "bce": 0.2077643902936635
+    },
+    "validation": {
+      "n": 800,
+      "threshold": 0.40000000000000024,
+      "accuracy": 0.91625,
+      "precision": 0.8899297423887588,
+      "recall": 0.95,
+      "f1": 0.9189842805320435,
+      "roc_auc": 0.97000625,
+      "true_positive": 380,
+      "false_positive": 47,
+      "false_negative": 20,
+      "true_negative": 353,
+      "bce": 0.21172082824696759
+    },
+    "test": {
+      "n": 2000,
+      "threshold": 0.40000000000000024,
+      "accuracy": 0.9085,
+      "precision": 0.8730593607305936,
+      "recall": 0.956,
+      "f1": 0.9126491646778043,
+      "roc_auc": 0.960402,
+      "true_positive": 956,
+      "false_positive": 139,
+      "false_negative": 44,
+      "true_negative": 861,
+      "bce": 0.2363479351201422
+    },
+    "stress_test": {
+      "n": 1200,
+      "threshold": 0.40000000000000024,
+      "accuracy": 0.86,
+      "precision": 0.813953488372093,
+      "recall": 0.9333333333333333,
+      "f1": 0.8695652173913043,
+      "roc_auc": 0.9336833333333333,
+      "true_positive": 560,
+      "false_positive": 128,
+      "false_negative": 40,
+      "true_negative": 472,
+      "bce": 0.3140563057490091
+    }
+  },
+  "splitSeeds": {
+    "train": 731091,
+    "validation": 731092,
+    "test": 731293,
+    "stress_test": 731294
+  },
+  "featureExtractor": "yellow-hue-v2",
+  "featureVersion": "yellow-hue-v2",
+  "readyForDemo": false,
+  "sceneGridSizes": [
+    4,
+    8
+  ],
+  "assets": [
+    {
+      "file": "real-schoolbus.png",
+      "sha256": "5eb0cf031cf560b3af03407bb55a178446a57c411fc5d5d049d2680143c8d3ca"
+    },
+    {
+      "file": "street-captcha.png",
+      "sha256": "9d37da13f6d7c646c434488b505b67cf09b6ec11f1a9b897ed8adc4ca25f322a"
+    },
+    {
+      "file": "sauk-centre-street-512.png",
+      "sha256": "57c9ec48db618c00d5443c7aec0147d87585d106c4506b17f006bebcaf4bd5ad"
+    }
+  ],
+  "validationSummary": {
+    "grid4_scene_hit_rate": 1.0,
+    "grid8_scene_hit_rate": 0.9973958333333334,
+    "empty_scene_marks": 0,
+    "photo_identity_holdout": false
+  },
+  "initialCheckpoint": {
+    "file": "model-photo.json",
+    "sha256": "a2466f8f29da4dccd7f2834c019d3fe291796cb204839e9f9a2e4c77265ae069"
+  }
+}

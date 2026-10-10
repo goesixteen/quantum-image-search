@@ -1,0 +1,91 @@
+{
+  "checkedAtUtc": "2026-10-10T09:23:48.3327768Z",
+  "checked": 21,
+  "allUnchanged": true,
+  "files": [
+    {
+      "file": "model/photo_features_v3.py",
+      "unchanged": true
+    },
+    {
+      "file": "model/photo_features_v3.mjs",
+      "unchanged": true
+    },
+    {
+      "file": "model/photo_v3_data.py",
+      "unchanged": true
+    },
+    {
+      "file": "model/train_photo_v3.py",
+      "unchanged": true
+    },
+    {
+      "file": "model/audit_photo_v3.py",
+      "unchanged": true
+    },
+    {
+      "file": "model/verify_photo_v3.py",
+      "unchanged": true
+    },
+    {
+      "file": "model/verify_photo_v3.mjs",
+      "unchanged": true
+    },
+    {
+      "file": "model/analyze_photo_v3.py",
+      "unchanged": true
+    },
+    {
+      "file": "model/freeze_photo_v3.py",
+      "unchanged": true
+    },
+    {
+      "file": "model/photo-v3-protocol.json",
+      "unchanged": true
+    },
+    {
+      "file": "model/photo-v3-qnn-candidate.json",
+      "unchanged": true
+    },
+    {
+      "file": "model/photo-v3-logistic-candidate.json",
+      "unchanged": true
+    },
+    {
+      "file": "model/photo-v3-metrics.json",
+      "unchanged": true
+    },
+    {
+      "file": "model/photo-v3-analysis.json",
+      "unchanged": true
+    },
+    {
+      "file": "model/photo-v3-parity-verification.json",
+      "unchanged": true
+    },
+    {
+      "file": "model/photo-v3-verification.json",
+      "unchanged": true
+    },
+    {
+      "file": "dist\\qnn.js",
+      "unchanged": true
+    },
+    {
+      "file": "dist\\model\\model-photo.json",
+      "unchanged": true
+    },
+    {
+      "file": "dist\\assets\\real-schoolbus.png",
+      "unchanged": true
+    },
+    {
+      "file": "dist\\assets\\street-captcha.png",
+      "unchanged": true
+    },
+    {
+      "file": "model\\training-assets\\sauk-centre-street-512.png",
+      "unchanged": true
+    }
+  ]
+}

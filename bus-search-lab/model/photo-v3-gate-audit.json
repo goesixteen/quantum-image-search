@@ -1,0 +1,959 @@
+{
+  "protocol": "Read-only supplemental frozen-candidate analysis on training identities only. Validation set regenerates declared seeds; fixed default/boundary probes are descriptive and never select candidate weights/thresholds.",
+  "model_sha256": {
+    "qnn": "34fe9dbfa62452e3acc72b3097cced8c0dddb33dbdcd89207dafbf9c80a6ec63",
+    "logistic": "1393d9b17f4d187161de6eeb525c62692b28d4e007b3152160a2cf2e0e18961d"
+  },
+  "validation_probability_accounting": {
+    "qnn": {
+      "target_scenes": 512,
+      "empty_oracle_scenes": 434,
+      "nonempty_oracle_scenes": 78,
+      "mean_ideal_predicate_mass": 0.1489306274157039,
+      "mean_theoretical_alpha32_target_mass": 0.2161773214477628,
+      "mean_effective_target_mass_empty_means_no_output": 0.1453460226196378,
+      "groups": [
+        {
+          "background": 0,
+          "grid": 4,
+          "summary": {
+            "scenes": 128,
+            "empty_oracle_scene_count": 101,
+            "iteration_counts": {
+              "0": 101,
+              "3": 27
+            },
+            "ideal_predicate_mass": {
+              "mean": 0.20277822017669678,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.9613189697265625
+            },
+            "ideal_alpha32_target_mass": {
+              "mean": 0.3120678663253784,
+              "minimum": 0.0625,
+              "median": 0.125,
+              "maximum": 0.9664764404296875
+            },
+            "effective_target_mass_if_empty_oracle_means_no_output": {
+              "mean": 0.20318114757537842,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.9664764404296875
+            },
+            "semantics": "Ideal exact-statevector probabilities after the browser first-peak iteration rule, not sampled outcomes. Empty marks give a uniform theoretical distribution at zero rounds; the UI returns no search result, so a separate effective mass treats those scenes as zero.",
+            "formula": "(|T intersect S|/M) sin^2((2k+1)theta) + (|T minus S|/(N-M)) cos^2((2k+1)theta), theta=asin(sqrt(M/N)); uniform for M=0 or N."
+          }
+        },
+        {
+          "background": 0,
+          "grid": 8,
+          "summary": {
+            "scenes": 128,
+            "empty_oracle_scene_count": 117,
+            "iteration_counts": {
+              "0": 117,
+              "6": 11
+            },
+            "ideal_predicate_mass": {
+              "mean": 0.08564408194261554,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.996585680786799
+            },
+            "ideal_alpha32_target_mass": {
+              "mean": 0.11775323155959783,
+              "minimum": 0.015625,
+              "median": 0.03125,
+              "maximum": 0.9966940718729324
+            },
+            "effective_target_mass_if_empty_oracle_means_no_output": {
+              "mean": 0.08564873937209784,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.9966940718729324
+            },
+            "semantics": "Ideal exact-statevector probabilities after the browser first-peak iteration rule, not sampled outcomes. Empty marks give a uniform theoretical distribution at zero rounds; the UI returns no search result, so a separate effective mass treats those scenes as zero.",
+            "formula": "(|T intersect S|/M) sin^2((2k+1)theta) + (|T minus S|/(N-M)) cos^2((2k+1)theta), theta=asin(sqrt(M/N)); uniform for M=0 or N."
+          }
+        },
+        {
+          "background": 1,
+          "grid": 4,
+          "summary": {
+            "scenes": 128,
+            "empty_oracle_scene_count": 113,
+            "iteration_counts": {
+              "0": 113,
+              "3": 15
+            },
+            "ideal_predicate_mass": {
+              "mean": 0.11265456676483154,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.9613189697265625
+            },
+            "ideal_alpha32_target_mass": {
+              "mean": 0.21361851692199707,
+              "minimum": 0.005157470703125,
+              "median": 0.125,
+              "maximum": 0.963897705078125
+            },
+            "effective_target_mass_if_empty_oracle_means_no_output": {
+              "mean": 0.09789586067199707,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.963897705078125
+            },
+            "semantics": "Ideal exact-statevector probabilities after the browser first-peak iteration rule, not sampled outcomes. Empty marks give a uniform theoretical distribution at zero rounds; the UI returns no search result, so a separate effective mass treats those scenes as zero.",
+            "formula": "(|T intersect S|/M) sin^2((2k+1)theta) + (|T minus S|/(N-M)) cos^2((2k+1)theta), theta=asin(sqrt(M/N)); uniform for M=0 or N."
+          }
+        },
+        {
+          "background": 1,
+          "grid": 8,
+          "summary": {
+            "scenes": 128,
+            "empty_oracle_scene_count": 103,
+            "iteration_counts": {
+              "0": 103,
+              "6": 25
+            },
+            "ideal_predicate_mass": {
+              "mean": 0.1946456407786717,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.996585680786799
+            },
+            "ideal_alpha32_target_mass": {
+              "mean": 0.2212696709840779,
+              "minimum": 0.015625,
+              "median": 0.03125,
+              "maximum": 0.9967482674159991
+            },
+            "effective_target_mass_if_empty_oracle_means_no_output": {
+              "mean": 0.19465834285907796,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.9967482674159991
+            },
+            "semantics": "Ideal exact-statevector probabilities after the browser first-peak iteration rule, not sampled outcomes. Empty marks give a uniform theoretical distribution at zero rounds; the UI returns no search result, so a separate effective mass treats those scenes as zero.",
+            "formula": "(|T intersect S|/M) sin^2((2k+1)theta) + (|T minus S|/(N-M)) cos^2((2k+1)theta), theta=asin(sqrt(M/N)); uniform for M=0 or N."
+          }
+        }
+      ]
+    },
+    "logistic": {
+      "target_scenes": 512,
+      "empty_oracle_scenes": 504,
+      "nonempty_oracle_scenes": 8,
+      "mean_ideal_predicate_mass": 0.015433890672214685,
+      "mean_theoretical_alpha32_target_mass": 0.08907484687641176,
+      "mean_effective_target_mass_empty_means_no_output": 0.007653948438911756,
+      "groups": [
+        {
+          "background": 0,
+          "grid": 4,
+          "summary": {
+            "scenes": 128,
+            "empty_oracle_scene_count": 127,
+            "iteration_counts": {
+              "0": 127,
+              "3": 1
+            },
+            "ideal_predicate_mass": {
+              "mean": 0.0075103044509887695,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.9613189697265625
+            },
+            "ideal_alpha32_target_mass": {
+              "mean": 0.13838982582092285,
+              "minimum": 0.0625,
+              "median": 0.125,
+              "maximum": 0.963897705078125
+            },
+            "effective_target_mass_if_empty_oracle_means_no_output": {
+              "mean": 0.0075304508209228516,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.963897705078125
+            },
+            "semantics": "Ideal exact-statevector probabilities after the browser first-peak iteration rule, not sampled outcomes. Empty marks give a uniform theoretical distribution at zero rounds; the UI returns no search result, so a separate effective mass treats those scenes as zero.",
+            "formula": "(|T intersect S|/M) sin^2((2k+1)theta) + (|T minus S|/(N-M)) cos^2((2k+1)theta), theta=asin(sqrt(M/N)); uniform for M=0 or N."
+          }
+        },
+        {
+          "background": 0,
+          "grid": 8,
+          "summary": {
+            "scenes": 128,
+            "empty_oracle_scene_count": 126,
+            "iteration_counts": {
+              "0": 126,
+              "6": 2
+            },
+            "ideal_predicate_mass": {
+              "mean": 0.015571651262293734,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.996585680786799
+            },
+            "ideal_alpha32_target_mass": {
+              "mean": 0.050117549699793734,
+              "minimum": 0.015625,
+              "median": 0.03125,
+              "maximum": 0.996585680786799
+            },
+            "effective_target_mass_if_empty_oracle_means_no_output": {
+              "mean": 0.015571651262293734,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.996585680786799
+            },
+            "semantics": "Ideal exact-statevector probabilities after the browser first-peak iteration rule, not sampled outcomes. Empty marks give a uniform theoretical distribution at zero rounds; the UI returns no search result, so a separate effective mass treats those scenes as zero.",
+            "formula": "(|T intersect S|/M) sin^2((2k+1)theta) + (|T minus S|/(N-M)) cos^2((2k+1)theta), theta=asin(sqrt(M/N)); uniform for M=0 or N."
+          }
+        },
+        {
+          "background": 1,
+          "grid": 4,
+          "summary": {
+            "scenes": 128,
+            "empty_oracle_scene_count": 127,
+            "iteration_counts": {
+              "0": 127,
+              "3": 1
+            },
+            "ideal_predicate_mass": {
+              "mean": 0.0075103044509887695,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.9613189697265625
+            },
+            "ideal_alpha32_target_mass": {
+              "mean": 0.13543999195098877,
+              "minimum": 0.0625,
+              "median": 0.125,
+              "maximum": 0.9613189697265625
+            },
+            "effective_target_mass_if_empty_oracle_means_no_output": {
+              "mean": 0.0075103044509887695,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.9613189697265625
+            },
+            "semantics": "Ideal exact-statevector probabilities after the browser first-peak iteration rule, not sampled outcomes. Empty marks give a uniform theoretical distribution at zero rounds; the UI returns no search result, so a separate effective mass treats those scenes as zero.",
+            "formula": "(|T intersect S|/M) sin^2((2k+1)theta) + (|T minus S|/(N-M)) cos^2((2k+1)theta), theta=asin(sqrt(M/N)); uniform for M=0 or N."
+          }
+        },
+        {
+          "background": 1,
+          "grid": 8,
+          "summary": {
+            "scenes": 128,
+            "empty_oracle_scene_count": 124,
+            "iteration_counts": {
+              "0": 124,
+              "6": 4
+            },
+            "ideal_predicate_mass": {
+              "mean": 0.03114330252458747,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.996585680786799
+            },
+            "ideal_alpha32_target_mass": {
+              "mean": 0.032352020033941664,
+              "minimum": 0.00010839108613336544,
+              "median": 0.03125,
+              "maximum": 0.0625
+            },
+            "effective_target_mass_if_empty_oracle_means_no_output": {
+              "mean": 3.38722144166767e-06,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.00010839108613336544
+            },
+            "semantics": "Ideal exact-statevector probabilities after the browser first-peak iteration rule, not sampled outcomes. Empty marks give a uniform theoretical distribution at zero rounds; the UI returns no search result, so a separate effective mass treats those scenes as zero.",
+            "formula": "(|T intersect S|/M) sin^2((2k+1)theta) + (|T minus S|/(N-M)) cos^2((2k+1)theta), theta=asin(sqrt(M/N)); uniform for M=0 or N."
+          }
+        }
+      ]
+    }
+  },
+  "default_absence_boundary_gates": {
+    "grid4": {
+      "absence_marks": {
+        "qnn": [],
+        "logistic": []
+      },
+      "scope": "Covington numeric512 raster, Pillow resized sprites/patches; rounded UI-like centers. Not browser pixel parity or model selection.",
+      "cases": {
+        "ui_default_or_grid_snap": {
+          "center": [
+            320,
+            192
+          ],
+          "top_left": [
+            268,
+            170
+          ],
+          "models": {
+            "qnn": {
+              "marked": [],
+              "alpha32_tiles": [
+                6
+              ],
+              "max_score": 0.7586987534133519,
+              "hit": false,
+              "false_marks": [],
+              "grover": {
+                "iterations": 0,
+                "marked_count": 0,
+                "true_tile_count": 1,
+                "correct_mark_count": 0,
+                "false_mark_count": 0,
+                "ideal_predicate_mass": 0.0,
+                "ideal_alpha32_target_mass": 0.0625,
+                "search_runs": false,
+                "effective_target_mass_if_empty_oracle_means_no_output": 0.0
+              }
+            },
+            "logistic": {
+              "marked": [],
+              "alpha32_tiles": [
+                6
+              ],
+              "max_score": 0.8922990277770092,
+              "hit": false,
+              "false_marks": [],
+              "grover": {
+                "iterations": 0,
+                "marked_count": 0,
+                "true_tile_count": 1,
+                "correct_mark_count": 0,
+                "false_mark_count": 0,
+                "ideal_predicate_mass": 0.0,
+                "ideal_alpha32_target_mass": 0.0625,
+                "search_runs": false,
+                "effective_target_mass_if_empty_oracle_means_no_output": 0.0
+              }
+            }
+          }
+        },
+        "vertical_boundary": {
+          "center": [
+            256,
+            224
+          ],
+          "top_left": [
+            204,
+            202
+          ],
+          "models": {
+            "qnn": {
+              "marked": [],
+              "alpha32_tiles": [
+                5,
+                6
+              ],
+              "max_score": 0.9296682652994062,
+              "hit": false,
+              "false_marks": [],
+              "grover": {
+                "iterations": 0,
+                "marked_count": 0,
+                "true_tile_count": 2,
+                "correct_mark_count": 0,
+                "false_mark_count": 0,
+                "ideal_predicate_mass": 0.0,
+                "ideal_alpha32_target_mass": 0.125,
+                "search_runs": false,
+                "effective_target_mass_if_empty_oracle_means_no_output": 0.0
+              }
+            },
+            "logistic": {
+              "marked": [],
+              "alpha32_tiles": [
+                5,
+                6
+              ],
+              "max_score": 0.8922990277770092,
+              "hit": false,
+              "false_marks": [],
+              "grover": {
+                "iterations": 0,
+                "marked_count": 0,
+                "true_tile_count": 2,
+                "correct_mark_count": 0,
+                "false_mark_count": 0,
+                "ideal_predicate_mass": 0.0,
+                "ideal_alpha32_target_mass": 0.125,
+                "search_runs": false,
+                "effective_target_mass_if_empty_oracle_means_no_output": 0.0
+              }
+            }
+          }
+        },
+        "horizontal_boundary": {
+          "center": [
+            288,
+            256
+          ],
+          "top_left": [
+            236,
+            234
+          ],
+          "models": {
+            "qnn": {
+              "marked": [],
+              "alpha32_tiles": [
+                5,
+                6,
+                9,
+                10
+              ],
+              "max_score": 0.7586987534133519,
+              "hit": false,
+              "false_marks": [],
+              "grover": {
+                "iterations": 0,
+                "marked_count": 0,
+                "true_tile_count": 4,
+                "correct_mark_count": 0,
+                "false_mark_count": 0,
+                "ideal_predicate_mass": 0.0,
+                "ideal_alpha32_target_mass": 0.25,
+                "search_runs": false,
+                "effective_target_mass_if_empty_oracle_means_no_output": 0.0
+              }
+            },
+            "logistic": {
+              "marked": [],
+              "alpha32_tiles": [
+                5,
+                6,
+                9,
+                10
+              ],
+              "max_score": 0.7930179397635603,
+              "hit": false,
+              "false_marks": [],
+              "grover": {
+                "iterations": 0,
+                "marked_count": 0,
+                "true_tile_count": 4,
+                "correct_mark_count": 0,
+                "false_mark_count": 0,
+                "ideal_predicate_mass": 0.0,
+                "ideal_alpha32_target_mass": 0.25,
+                "search_runs": false,
+                "effective_target_mass_if_empty_oracle_means_no_output": 0.0
+              }
+            }
+          }
+        },
+        "four_way_boundary": {
+          "center": [
+            256,
+            256
+          ],
+          "top_left": [
+            204,
+            234
+          ],
+          "models": {
+            "qnn": {
+              "marked": [],
+              "alpha32_tiles": [
+                5,
+                6,
+                9,
+                10
+              ],
+              "max_score": 0.7586987534133519,
+              "hit": false,
+              "false_marks": [],
+              "grover": {
+                "iterations": 0,
+                "marked_count": 0,
+                "true_tile_count": 4,
+                "correct_mark_count": 0,
+                "false_mark_count": 0,
+                "ideal_predicate_mass": 0.0,
+                "ideal_alpha32_target_mass": 0.25,
+                "search_runs": false,
+                "effective_target_mass_if_empty_oracle_means_no_output": 0.0
+              }
+            },
+            "logistic": {
+              "marked": [],
+              "alpha32_tiles": [
+                5,
+                6,
+                9,
+                10
+              ],
+              "max_score": 0.7914654315609412,
+              "hit": false,
+              "false_marks": [],
+              "grover": {
+                "iterations": 0,
+                "marked_count": 0,
+                "true_tile_count": 4,
+                "correct_mark_count": 0,
+                "false_mark_count": 0,
+                "ideal_predicate_mass": 0.0,
+                "ideal_alpha32_target_mass": 0.25,
+                "search_runs": false,
+                "effective_target_mass_if_empty_oracle_means_no_output": 0.0
+              }
+            }
+          }
+        },
+        "left_edge": {
+          "center": [
+            52.5,
+            224
+          ],
+          "top_left": [
+            0,
+            202
+          ],
+          "models": {
+            "qnn": {
+              "marked": [],
+              "alpha32_tiles": [
+                4
+              ],
+              "max_score": 0.778247494416747,
+              "hit": false,
+              "false_marks": [],
+              "grover": {
+                "iterations": 0,
+                "marked_count": 0,
+                "true_tile_count": 1,
+                "correct_mark_count": 0,
+                "false_mark_count": 0,
+                "ideal_predicate_mass": 0.0,
+                "ideal_alpha32_target_mass": 0.0625,
+                "search_runs": false,
+                "effective_target_mass_if_empty_oracle_means_no_output": 0.0
+              }
+            },
+            "logistic": {
+              "marked": [],
+              "alpha32_tiles": [
+                4
+              ],
+              "max_score": 0.9357736279565422,
+              "hit": false,
+              "false_marks": [],
+              "grover": {
+                "iterations": 0,
+                "marked_count": 0,
+                "true_tile_count": 1,
+                "correct_mark_count": 0,
+                "false_mark_count": 0,
+                "ideal_predicate_mass": 0.0,
+                "ideal_alpha32_target_mass": 0.0625,
+                "search_runs": false,
+                "effective_target_mass_if_empty_oracle_means_no_output": 0.0
+              }
+            }
+          }
+        },
+        "top_left_edge": {
+          "center": [
+            52.5,
+            22.0
+          ],
+          "top_left": [
+            0,
+            0
+          ],
+          "models": {
+            "qnn": {
+              "marked": [
+                0
+              ],
+              "alpha32_tiles": [
+                0
+              ],
+              "max_score": 0.9684952086658666,
+              "hit": true,
+              "false_marks": [],
+              "grover": {
+                "iterations": 3,
+                "marked_count": 1,
+                "true_tile_count": 1,
+                "correct_mark_count": 1,
+                "false_mark_count": 0,
+                "ideal_predicate_mass": 0.9613189697265625,
+                "ideal_alpha32_target_mass": 0.9613189697265625,
+                "search_runs": true,
+                "effective_target_mass_if_empty_oracle_means_no_output": 0.9613189697265625
+              }
+            },
+            "logistic": {
+              "marked": [],
+              "alpha32_tiles": [
+                0
+              ],
+              "max_score": 0.936198619071008,
+              "hit": false,
+              "false_marks": [],
+              "grover": {
+                "iterations": 0,
+                "marked_count": 0,
+                "true_tile_count": 1,
+                "correct_mark_count": 0,
+                "false_mark_count": 0,
+                "ideal_predicate_mass": 0.0,
+                "ideal_alpha32_target_mass": 0.0625,
+                "search_runs": false,
+                "effective_target_mass_if_empty_oracle_means_no_output": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    "grid8": {
+      "absence_marks": {
+        "qnn": [],
+        "logistic": []
+      },
+      "scope": "Covington numeric512 raster, Pillow resized sprites/patches; rounded UI-like centers. Not browser pixel parity or model selection.",
+      "cases": {
+        "ui_default_or_grid_snap": {
+          "center": [
+            288,
+            224
+          ],
+          "top_left": [
+            262,
+            213
+          ],
+          "models": {
+            "qnn": {
+              "marked": [],
+              "alpha32_tiles": [
+                28
+              ],
+              "max_score": 0.7323700457880554,
+              "hit": false,
+              "false_marks": [],
+              "grover": {
+                "iterations": 0,
+                "marked_count": 0,
+                "true_tile_count": 1,
+                "correct_mark_count": 0,
+                "false_mark_count": 0,
+                "ideal_predicate_mass": 0.0,
+                "ideal_alpha32_target_mass": 0.015625,
+                "search_runs": false,
+                "effective_target_mass_if_empty_oracle_means_no_output": 0.0
+              }
+            },
+            "logistic": {
+              "marked": [],
+              "alpha32_tiles": [
+                28
+              ],
+              "max_score": 0.841811204357216,
+              "hit": false,
+              "false_marks": [],
+              "grover": {
+                "iterations": 0,
+                "marked_count": 0,
+                "true_tile_count": 1,
+                "correct_mark_count": 0,
+                "false_mark_count": 0,
+                "ideal_predicate_mass": 0.0,
+                "ideal_alpha32_target_mass": 0.015625,
+                "search_runs": false,
+                "effective_target_mass_if_empty_oracle_means_no_output": 0.0
+              }
+            }
+          }
+        },
+        "vertical_boundary": {
+          "center": [
+            256,
+            224
+          ],
+          "top_left": [
+            230,
+            213
+          ],
+          "models": {
+            "qnn": {
+              "marked": [],
+              "alpha32_tiles": [
+                27,
+                28
+              ],
+              "max_score": 0.7323700457880554,
+              "hit": false,
+              "false_marks": [],
+              "grover": {
+                "iterations": 0,
+                "marked_count": 0,
+                "true_tile_count": 2,
+                "correct_mark_count": 0,
+                "false_mark_count": 0,
+                "ideal_predicate_mass": 0.0,
+                "ideal_alpha32_target_mass": 0.03125,
+                "search_runs": false,
+                "effective_target_mass_if_empty_oracle_means_no_output": 0.0
+              }
+            },
+            "logistic": {
+              "marked": [],
+              "alpha32_tiles": [
+                27,
+                28
+              ],
+              "max_score": 0.841811204357216,
+              "hit": false,
+              "false_marks": [],
+              "grover": {
+                "iterations": 0,
+                "marked_count": 0,
+                "true_tile_count": 2,
+                "correct_mark_count": 0,
+                "false_mark_count": 0,
+                "ideal_predicate_mass": 0.0,
+                "ideal_alpha32_target_mass": 0.03125,
+                "search_runs": false,
+                "effective_target_mass_if_empty_oracle_means_no_output": 0.0
+              }
+            }
+          }
+        },
+        "horizontal_boundary": {
+          "center": [
+            288,
+            256
+          ],
+          "top_left": [
+            262,
+            245
+          ],
+          "models": {
+            "qnn": {
+              "marked": [],
+              "alpha32_tiles": [
+                28,
+                36
+              ],
+              "max_score": 0.7323700457880554,
+              "hit": false,
+              "false_marks": [],
+              "grover": {
+                "iterations": 0,
+                "marked_count": 0,
+                "true_tile_count": 2,
+                "correct_mark_count": 0,
+                "false_mark_count": 0,
+                "ideal_predicate_mass": 0.0,
+                "ideal_alpha32_target_mass": 0.03125,
+                "search_runs": false,
+                "effective_target_mass_if_empty_oracle_means_no_output": 0.0
+              }
+            },
+            "logistic": {
+              "marked": [],
+              "alpha32_tiles": [
+                28,
+                36
+              ],
+              "max_score": 0.841811204357216,
+              "hit": false,
+              "false_marks": [],
+              "grover": {
+                "iterations": 0,
+                "marked_count": 0,
+                "true_tile_count": 2,
+                "correct_mark_count": 0,
+                "false_mark_count": 0,
+                "ideal_predicate_mass": 0.0,
+                "ideal_alpha32_target_mass": 0.03125,
+                "search_runs": false,
+                "effective_target_mass_if_empty_oracle_means_no_output": 0.0
+              }
+            }
+          }
+        },
+        "four_way_boundary": {
+          "center": [
+            256,
+            256
+          ],
+          "top_left": [
+            230,
+            245
+          ],
+          "models": {
+            "qnn": {
+              "marked": [],
+              "alpha32_tiles": [
+                27,
+                28,
+                35,
+                36
+              ],
+              "max_score": 0.7370585071903629,
+              "hit": false,
+              "false_marks": [],
+              "grover": {
+                "iterations": 0,
+                "marked_count": 0,
+                "true_tile_count": 4,
+                "correct_mark_count": 0,
+                "false_mark_count": 0,
+                "ideal_predicate_mass": 0.0,
+                "ideal_alpha32_target_mass": 0.0625,
+                "search_runs": false,
+                "effective_target_mass_if_empty_oracle_means_no_output": 0.0
+              }
+            },
+            "logistic": {
+              "marked": [],
+              "alpha32_tiles": [
+                27,
+                28,
+                35,
+                36
+              ],
+              "max_score": 0.841811204357216,
+              "hit": false,
+              "false_marks": [],
+              "grover": {
+                "iterations": 0,
+                "marked_count": 0,
+                "true_tile_count": 4,
+                "correct_mark_count": 0,
+                "false_mark_count": 0,
+                "ideal_predicate_mass": 0.0,
+                "ideal_alpha32_target_mass": 0.0625,
+                "search_runs": false,
+                "effective_target_mass_if_empty_oracle_means_no_output": 0.0
+              }
+            }
+          }
+        },
+        "left_edge": {
+          "center": [
+            26.0,
+            224
+          ],
+          "top_left": [
+            0,
+            213
+          ],
+          "models": {
+            "qnn": {
+              "marked": [
+                24
+              ],
+              "alpha32_tiles": [
+                24
+              ],
+              "max_score": 0.9661623543809278,
+              "hit": true,
+              "false_marks": [],
+              "grover": {
+                "iterations": 6,
+                "marked_count": 1,
+                "true_tile_count": 1,
+                "correct_mark_count": 1,
+                "false_mark_count": 0,
+                "ideal_predicate_mass": 0.996585680786799,
+                "ideal_alpha32_target_mass": 0.996585680786799,
+                "search_runs": true,
+                "effective_target_mass_if_empty_oracle_means_no_output": 0.996585680786799
+              }
+            },
+            "logistic": {
+              "marked": [],
+              "alpha32_tiles": [
+                24
+              ],
+              "max_score": 0.9370951395282288,
+              "hit": false,
+              "false_marks": [],
+              "grover": {
+                "iterations": 0,
+                "marked_count": 0,
+                "true_tile_count": 1,
+                "correct_mark_count": 0,
+                "false_mark_count": 0,
+                "ideal_predicate_mass": 0.0,
+                "ideal_alpha32_target_mass": 0.015625,
+                "search_runs": false,
+                "effective_target_mass_if_empty_oracle_means_no_output": 0.0
+              }
+            }
+          }
+        },
+        "top_left_edge": {
+          "center": [
+            26.0,
+            11.0
+          ],
+          "top_left": [
+            0,
+            0
+          ],
+          "models": {
+            "qnn": {
+              "marked": [
+                0
+              ],
+              "alpha32_tiles": [
+                0
+              ],
+              "max_score": 0.9674216907351164,
+              "hit": true,
+              "false_marks": [],
+              "grover": {
+                "iterations": 6,
+                "marked_count": 1,
+                "true_tile_count": 1,
+                "correct_mark_count": 1,
+                "false_mark_count": 0,
+                "ideal_predicate_mass": 0.996585680786799,
+                "ideal_alpha32_target_mass": 0.996585680786799,
+                "search_runs": true,
+                "effective_target_mass_if_empty_oracle_means_no_output": 0.996585680786799
+              }
+            },
+            "logistic": {
+              "marked": [],
+              "alpha32_tiles": [
+                0
+              ],
+              "max_score": 0.9371565138415437,
+              "hit": false,
+              "false_marks": [],
+              "grover": {
+                "iterations": 0,
+                "marked_count": 0,
+                "true_tile_count": 1,
+                "correct_mark_count": 0,
+                "false_mark_count": 0,
+                "ideal_predicate_mass": 0.0,
+                "ideal_alpha32_target_mass": 0.015625,
+                "search_runs": false,
+                "effective_target_mass_if_empty_oracle_means_no_output": 0.0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

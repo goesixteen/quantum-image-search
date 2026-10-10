@@ -1,0 +1,142 @@
+{
+  "acquiredDate": "2026-10-10",
+  "assets": [
+    {
+      "key": "emeryville-evaluation-street",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Main_Street_%281766449963%29.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Main_Street_(1766449963).jpg",
+      "path": "dist/assets/unseen/emeryville-bay-street-original.jpg",
+      "normalized": "model/evaluation-assets/emeryville-bay-street-512.png",
+      "creator": "Payton Chung",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "photoDate": "2007-10-26",
+      "role": "held-out evaluation only",
+      "bytes": 521741,
+      "sha256": "216bb102646c6ceff02b1dddad3f6f72970c9dad52e5d9d20ee50143732c2f20",
+      "sha1": "212083cf436d921e06ecd1b13bb60f35731ca274",
+      "dimensions": [
+        1929,
+        1423
+      ],
+      "format": "JPEG",
+      "exifOrientation": null,
+      "iccProfilePresent": false,
+      "normalization": {
+        "cropXYWH": [
+          253,
+          0,
+          1423,
+          1423
+        ],
+        "size": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "resize": "Pillow LANCZOS",
+        "exifTransposeApplied": false,
+        "colorProfileTransformApplied": false,
+        "sha256": "1ed94ab43560cf8287da67137b496897ad4148fea5d5fce7122834e1b6e21e47"
+      },
+      "commonsRevisionId": 1184185132,
+      "visuallyInspected": true,
+      "visualNotes": "Bay Street urban shopping street with red/ochre facades, a yellow leasing banner, parked cars, and pedestrians. No visible bus found by manual inspection.",
+      "annotations": {
+        "busPresent": false,
+        "method": "manual visual inspection, not an exhaustive certification"
+      }
+    },
+    {
+      "key": "daniel-oines-evaluation-bus",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Blue_Bird_Vision_sideview.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Blue_Bird_Vision_sideview.jpg",
+      "path": "model/evaluation-assets/daniel-oines-blue-bird-vision-original.jpg",
+      "creator": "Daniel Oines",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "photoDate": "2015-05-07",
+      "role": "held-out evaluation only",
+      "bytes": 2270559,
+      "sha256": "fbbe96b8a72a11d7dfde0f5ad95d19ddf90f1c4d7014101c927879bc606007d0",
+      "sha1": "31ddb28519971cb4aa528def207c703980a28ea3",
+      "dimensions": [
+        4288,
+        2416
+      ],
+      "format": "JPEG",
+      "exifOrientation": 1,
+      "iccProfilePresent": false,
+      "commonsRevisionId": 1089908720,
+      "visuallyInspected": true,
+      "commonsSha1Verified": true,
+      "visualNotes": "Large yellow/orange schoolbus in side/front perspective under dusk lighting, independent photographer and vehicle model from the SupportPDX A3FE training source.",
+      "annotations": {
+        "busBoundingBoxXYXY": [
+          50,
+          650,
+          4260,
+          2200
+        ],
+        "busBoundingBoxXYWH": [
+          50,
+          650,
+          4210,
+          1550
+        ],
+        "coordinateSystem": "original JPEG pixels; origin top-left; right/bottom exclusive",
+        "method": "manual approximate loose visible-object box including mirrors and wheels",
+        "preciseSegmentation": false,
+        "evidence": "model/evaluation-assets/daniel-oines-bbox-proof.svg"
+      }
+    },
+    {
+      "key": "sauk-centre-auxiliary-training-street",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Original_Main_Street_HD.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Original_Main_Street_HD.jpg",
+      "path": "model/training-assets/sauk-centre-street-original.jpg",
+      "normalized": "model/training-assets/sauk-centre-street-512.png",
+      "creator": "McGhiever",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "photoDate": "2015-10-02",
+      "role": "optional auxiliary training, never part of the held-out evaluation street",
+      "bytes": 1389191,
+      "sha256": "85ce715157868ca8dd4861e1b9c3df323eec543d3d50adf0a0c41c883bb0528a",
+      "sha1": "57375870957d76952849dc6bfed271badbf50169",
+      "dimensions": [
+        1595,
+        1177
+      ],
+      "format": "JPEG",
+      "exifOrientation": 1,
+      "iccProfilePresent": true,
+      "normalization": {
+        "cropXYWH": [
+          209,
+          0,
+          1177,
+          1177
+        ],
+        "size": [
+          512,
+          512
+        ],
+        "mode": "RGB",
+        "resize": "Pillow LANCZOS",
+        "exifTransposeApplied": false,
+        "colorProfileTransformApplied": false,
+        "sha256": "57c9ec48db618c00d5443c7aec0147d87585d106c4506b17f006bebcaf4bd5ad"
+      },
+      "commonsRevisionId": 1116534396,
+      "visuallyInspected": true,
+      "commonsSha1Verified": true,
+      "visualNotes": "Independent Minnesota street with brick storefronts, a large yellow traffic-light warning sign, yellow crossing markers, red vehicles, and a green foreground street sign. No visible bus found by manual inspection.",
+      "annotations": {
+        "busPresent": false,
+        "method": "manual visual inspection, not an exhaustive certification"
+      }
+    }
+  ],
+  "splitPolicy": "Evaluation assets must not be used to fit features, weights, thresholds, or select model candidates. Auxiliary training asset is independent and separately identified."
+}

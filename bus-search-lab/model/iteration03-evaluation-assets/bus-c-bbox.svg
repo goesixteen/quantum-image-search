@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="960" viewBox="0 0 4032 3024" role="img" aria-labelledby="title desc">
+<title id="title">bus-c manual evaluation rectangle</title>
+<desc id="desc">Known-ROI recognition only, not segmentation. Box [240, 400, 3590, 2780]. Original photo by 2008ICBE200, CC BY 4.0.</desc>
+<image href="bus-c-source.jpg" width="4032" height="3024"/>
+<rect x="240" y="400" width="3350" height="2380" fill="none" stroke="#00ffff" stroke-width="16"/>
+</svg>

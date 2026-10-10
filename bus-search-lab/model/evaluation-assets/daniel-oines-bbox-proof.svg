@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="721" viewBox="0 0 4288 2416" role="img" aria-labelledby="title desc">
+<title id="title">Manual approximate schoolbus bounding box</title>
+<desc id="desc">Daniel Oines photo. Box x50 y650 x4260 y2200 in original 4288 by 2416 pixels. Includes mirrors and wheels; not a segmentation mask.</desc>
+<image href="daniel-oines-blue-bird-vision-original.jpg" width="4288" height="2416"/>
+<rect x="50" y="650" width="4210" height="1550" fill="none" stroke="#00ffff" stroke-width="18"/>
+<rect x="70" y="70" width="3040" height="335" fill="#101820" fill-opacity="0.86"/>
+<text x="110" y="170" fill="white" font-family="sans-serif" font-size="70">Approximate manual bbox: [50, 650, 4260, 2200]</text>
+<text x="110" y="255" fill="white" font-family="sans-serif" font-size="58">Original pixels; includes mirrors/wheels; not segmentation</text>
+<text x="110" y="340" fill="white" font-family="sans-serif" font-size="58">Photo: Daniel Oines / CC BY 2.0. Evaluation annotation only.</text>
+</svg>

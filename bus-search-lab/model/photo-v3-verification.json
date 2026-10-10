@@ -1,0 +1,111 @@
+{
+  "checks_passed": 3,
+  "fixture_count": 16,
+  "feature_max_error": 0.0,
+  "qnn_prediction_max_error": 0.0,
+  "unclipped_float_uniform_gain_feature_max_error": 0.0,
+  "training_asset_illumination_probe": [
+    {
+      "gain": 1.0,
+      "v2_features": [
+        0.3140536221590909,
+        1.0,
+        0.5,
+        0.9966777408637874,
+        0.972972972972973,
+        0.3333333333333333,
+        0.673469387755102,
+        0.2411873840445269
+      ],
+      "v3_features": [
+        0.4816228693181818,
+        1.0,
+        1.0,
+        0.49067211857909526,
+        0.3903015000472898,
+        0.3333333333333333,
+        0.7244897959183674,
+        0.19171304885590598
+      ],
+      "v2_nonzero_features": 8,
+      "v3_nonzero_features": 8
+    },
+    {
+      "gain": 0.8,
+      "v2_features": [
+        0.2163973721590909,
+        1.0,
+        0.16666666666666666,
+        1.0,
+        0.0,
+        0.3333333333333333,
+        0.5306122448979592,
+        0.27829313543599254
+      ],
+      "v3_features": [
+        0.4794034090909091,
+        1.0,
+        1.0,
+        0.506005622284692,
+        0.4510462799762154,
+        0.3333333333333333,
+        0.7244897959183674,
+        0.19171304885590598
+      ],
+      "v2_nonzero_features": 7,
+      "v3_nonzero_features": 8
+    },
+    {
+      "gain": 0.6,
+      "v2_features": [
+        0.10875355113636363,
+        1.0,
+        0.16666666666666666,
+        1.0,
+        0.0,
+        1.0,
+        0.0625,
+        1.0
+      ],
+      "v3_features": [
+        0.4738547585227273,
+        1.0,
+        1.0,
+        0.5162279580884231,
+        0.4063284339877148,
+        0.3333333333333333,
+        0.7244897959183674,
+        0.19171304885590598
+      ],
+      "v2_nonzero_features": 7,
+      "v3_nonzero_features": 8
+    },
+    {
+      "gain": 0.4,
+      "v2_features": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "v3_features": [
+        0.4461115056818182,
+        1.0,
+        1.0,
+        0.5571173013033478,
+        0.34661460901415664,
+        0.3333333333333333,
+        0.7040816326530612,
+        0.19171304885590598
+      ],
+      "v2_nonzero_features": 0,
+      "v3_nonzero_features": 8
+    }
+  ],
+  "limits": "Exact uniform-scale check concerns floating RGB with no clipping and all warm pixels above32. Quantization, gamma, white balance, saturation/clipping, and dark floor can change features. No broad illumination-invariance claim.",
+  "model_sha256": "34fe9dbfa62452e3acc72b3097cced8c0dddb33dbdcd89207dafbf9c80a6ec63"
+}

@@ -1,0 +1,10 @@
+{
+  "verification": "PASS",
+  "patches": 24,
+  "maxFeatureError": 4.440892098500626e-16,
+  "maxProbabilityError": 8.881784197001252e-16,
+  "fixturesSha256": "c0e10ec19eb9b2b11e349222d6003401502a4703e0606cc62dee5eae81e2cdf5",
+  "qnnModelSha256": "9655fb62c446acd7239904f993d82aa6a05915bac07efffebaa83c5211d3d1f2",
+  "javascriptModuleSha256": "c881e6a815c7e5e1b4013a241d7b36ff78f3c21ac49ef0f47f2f8005979e972e",
+  "scope": "Same RGBA arrays in JS and Python; browser image drawing/resampling is separately assessed."
+}

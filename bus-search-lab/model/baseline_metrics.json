@@ -1,0 +1,261 @@
+{
+  "version": 1,
+  "name": "Same-feature logistic regression",
+  "feature_names": [
+    "yellow_coverage",
+    "yellow_aspect",
+    "window_runs",
+    "window_darkness",
+    "window_spacing",
+    "wheel_runs",
+    "body_fill",
+    "lower_darkness"
+  ],
+  "parameter_count": 9,
+  "training_domain": "same synthetic 64x64 engineered-feature vehicle patches as QNN; no photographs",
+  "generator_source_sha256": "b52f068b5c6ae427ac00d73a4c4181a3f925efe0067ff4ff79a3dc4bd861818e",
+  "split_configuration": {
+    "train": {
+      "n": 3200,
+      "seed": 20261010,
+      "stress": false
+    },
+    "validation": {
+      "n": 800,
+      "seed": 20261011,
+      "stress": false
+    },
+    "test": {
+      "n": 2000,
+      "seed": 20261112,
+      "stress": false
+    },
+    "stress_test": {
+      "n": 1200,
+      "seed": 20261113,
+      "stress": true
+    }
+  },
+  "preprocessing": "feature mean/std fit on training split only; reversible affine standardization",
+  "optimization": "full-batch Newton method with line search; mean BCE + lambda/2 times squared standardized weights; bias unpenalized",
+  "regularization": 0.001,
+  "regularization_selection": "minimum validation BCE; test and stress results not used",
+  "regularization_candidates": [
+    {
+      "lambda": 1e-06,
+      "validation_bce": 0.17009637540292866,
+      "iterations": 9,
+      "training_regularized_objective": 0.15826948915563674,
+      "gradient_max_abs": 1.9812961095650465e-11
+    },
+    {
+      "lambda": 1e-05,
+      "validation_bce": 0.1700387652418844,
+      "iterations": 9,
+      "training_regularized_objective": 0.15838451261164688,
+      "gradient_max_abs": 1.9637476801386962e-11
+    },
+    {
+      "lambda": 0.0001,
+      "validation_bce": 0.16952874420465347,
+      "iterations": 9,
+      "training_regularized_objective": 0.15950085657707297,
+      "gradient_max_abs": 1.7537236758819776e-11
+    },
+    {
+      "lambda": 0.001,
+      "validation_bce": 0.16783826703117877,
+      "iterations": 9,
+      "training_regularized_objective": 0.168404039246234,
+      "gradient_max_abs": 1.700794398980937e-12
+    },
+    {
+      "lambda": 0.01,
+      "validation_bce": 0.18027258559301296,
+      "iterations": 8,
+      "training_regularized_objective": 0.20869206631186668,
+      "gradient_max_abs": 5.678266017106193e-12
+    },
+    {
+      "lambda": 0.1,
+      "validation_bce": 0.24648963240266944,
+      "iterations": 7,
+      "training_regularized_objective": 0.31880795320008865,
+      "gradient_max_abs": 1.9290125052862095e-15
+    }
+  ],
+  "threshold": 0.5200000000000002,
+  "threshold_selection": "maximum validation F1 on same 0.20..0.85 step-0.01 grid as QNN; first maximum",
+  "best_validation_bce": 0.16783826703117877,
+  "optimization_result": {
+    "iterations": 9,
+    "training_regularized_objective": 0.168404039246234,
+    "gradient_max_abs": 1.700794398980937e-12
+  },
+  "raw_feature_weights": [
+    -4.765017661297276,
+    -3.8040950682747265,
+    7.4870842999395,
+    3.178825358556329,
+    0.7446295124274106,
+    3.1866157885080106,
+    0.507616305306222,
+    2.2667043920586587
+  ],
+  "raw_feature_bias": -6.731573035959675,
+  "training_feature_mean": [
+    0.3478018604625355,
+    0.6593129273407036,
+    0.5639583333333323,
+    0.5981536755921819,
+    0.524594927374668,
+    0.5327083333333377,
+    0.725907787918901,
+    0.5472783959088959
+  ],
+  "training_feature_std": [
+    0.21481107926186319,
+    0.3316905676680405,
+    0.41817181269252707,
+    0.4041863085482888,
+    0.42745932458928976,
+    0.42545681127923,
+    0.354577417865848,
+    0.3340560680032441
+  ],
+  "splits": {
+    "train": {
+      "n": 3200,
+      "threshold": 0.5200000000000002,
+      "accuracy": 0.9565625,
+      "precision": 0.9673704414587332,
+      "recall": 0.945,
+      "f1": 0.9560543787543472,
+      "roc_auc": 0.985107421875,
+      "true_positive": 1512,
+      "false_positive": 51,
+      "false_negative": 88,
+      "true_negative": 1549,
+      "bce": 0.1600849141542179
+    },
+    "validation": {
+      "n": 800,
+      "threshold": 0.5200000000000002,
+      "accuracy": 0.9625,
+      "precision": 0.9768041237113402,
+      "recall": 0.9475,
+      "f1": 0.9619289340101523,
+      "roc_auc": 0.98325625,
+      "true_positive": 379,
+      "false_positive": 9,
+      "false_negative": 21,
+      "true_negative": 391,
+      "bce": 0.16783826703117877
+    },
+    "test": {
+      "n": 2000,
+      "threshold": 0.5200000000000002,
+      "accuracy": 0.951,
+      "precision": 0.9639917695473251,
+      "recall": 0.937,
+      "f1": 0.9503042596348884,
+      "roc_auc": 0.984861,
+      "true_positive": 937,
+      "false_positive": 35,
+      "false_negative": 63,
+      "true_negative": 965,
+      "bce": 0.1643317333977284
+    },
+    "stress_test": {
+      "n": 1200,
+      "threshold": 0.5200000000000002,
+      "accuracy": 0.9483333333333334,
+      "precision": 0.9621993127147767,
+      "recall": 0.9333333333333333,
+      "f1": 0.9475465313028765,
+      "roc_auc": 0.9825805555555556,
+      "true_positive": 560,
+      "false_positive": 22,
+      "false_negative": 40,
+      "true_negative": 578,
+      "bce": 0.17736406641327446
+    }
+  },
+  "qnn_reference": {
+    "name": "BusPatch-QNN-v1",
+    "qubits": 4,
+    "layers": 4,
+    "parameter_count": 40,
+    "model_sha256": "99643bd2693ad754a4e49a2560efaade8eade96d336a9bafb578266aef9f5d52",
+    "model_path_relative_to_project": "dist\\model\\model-synthetic.json",
+    "same_features_and_split_seeds_confirmed": true,
+    "splits": {
+      "train": {
+        "n": 3200,
+        "threshold": 0.2800000000000001,
+        "accuracy": 0.9753125,
+        "precision": 0.9738317757009346,
+        "recall": 0.976875,
+        "f1": 0.9753510140405616,
+        "roc_auc": 0.995781640625,
+        "true_positive": 1563,
+        "false_positive": 42,
+        "false_negative": 37,
+        "true_negative": 1558,
+        "bce": 0.07528765405654929
+      },
+      "validation": {
+        "n": 800,
+        "threshold": 0.2800000000000001,
+        "accuracy": 0.98375,
+        "precision": 0.9825436408977556,
+        "recall": 0.985,
+        "f1": 0.9837702871410736,
+        "roc_auc": 0.99885625,
+        "true_positive": 394,
+        "false_positive": 7,
+        "false_negative": 6,
+        "true_negative": 393,
+        "bce": 0.060589720661849034
+      },
+      "test": {
+        "n": 2000,
+        "threshold": 0.2800000000000001,
+        "accuracy": 0.9695,
+        "precision": 0.9634748272458046,
+        "recall": 0.976,
+        "f1": 0.9696969696969697,
+        "roc_auc": 0.993995,
+        "true_positive": 976,
+        "false_positive": 37,
+        "false_negative": 24,
+        "true_negative": 963,
+        "bce": 0.08280700242248469
+      },
+      "stress_test": {
+        "n": 1200,
+        "threshold": 0.2800000000000001,
+        "accuracy": 0.9616666666666667,
+        "precision": 0.9694915254237289,
+        "recall": 0.9533333333333334,
+        "f1": 0.9613445378151261,
+        "roc_auc": 0.9867055555555555,
+        "true_positive": 572,
+        "false_positive": 18,
+        "false_negative": 28,
+        "true_negative": 582,
+        "bce": 0.12472500886879663
+      }
+    }
+  },
+  "verification": {
+    "loss_gradient_finite_difference_max_error": 1.4135609349708034e-11,
+    "raw_vs_standardized_probability_max_error": 4.440892098500626e-16
+  },
+  "elapsed_seconds": {
+    "data_generation": 1.7250785999931395,
+    "fitting_and_validation_selection": 0.07625019992701709,
+    "total": 1.8257846999913454
+  },
+  "interpretation": "A transparent baseline on identical features. This comparison measures model behavior within one synthetic family; no quantum superiority or practical speedup is established."
+}

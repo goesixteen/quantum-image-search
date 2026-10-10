@@ -1,0 +1,35 @@
+{
+  "frozen_at_utc": "2026-10-10T09:14:56.344050+00:00",
+  "status": "Feature/model/threshold/renderer/protocol freeze before fresh asset disclosure",
+  "files_sha256": {
+    "model/photo_features_v3.py": "2707b7bd04941bf7d3521f45803cde94490284643f340d444a6c0e182f8ff1c3",
+    "model/photo_features_v3.mjs": "d7795072e194f573ff96b43bfb0a2219404e81562ad60996c6707360a14706cb",
+    "model/photo_v3_data.py": "e3b513f64db6c3b337b9bc657a4d0ad24b496e201793a17cb5a5feb8b5175e21",
+    "model/train_photo_v3.py": "a81d2659b029b8ab80a25f36d420e42bb13c0143004ab800354d0c58f918898a",
+    "model/audit_photo_v3.py": "b22f0da04333b2060a31a47124f7200f7655bddc25321a1542931ea683d90d7a",
+    "model/verify_photo_v3.py": "abfd51cb5887ee5c26be752faa20f104ad0893724b96d6f72f35d840b51e7a12",
+    "model/verify_photo_v3.mjs": "dc1183f2576f71039f9ff7b4c3f225fd4aefa122f818f15842c4008a956d9fe0",
+    "model/analyze_photo_v3.py": "5b4de1926bddbcd9c3164d25a9c4b92ba587dc529d8fbff666f6cc2343eeab5f",
+    "model/freeze_photo_v3.py": "5121c17ec457772b27a07429951cd2f7c88eabaf95047fece428d42e42b99943",
+    "model/photo-v3-protocol.json": "0d3739448492e8dffd688cc546165aa24e8288e412171ae5d783862dc37795f3",
+    "model/photo-v3-qnn-candidate.json": "34fe9dbfa62452e3acc72b3097cced8c0dddb33dbdcd89207dafbf9c80a6ec63",
+    "model/photo-v3-logistic-candidate.json": "1393d9b17f4d187161de6eeb525c62692b28d4e007b3152160a2cf2e0e18961d",
+    "model/photo-v3-metrics.json": "6491e1e9e07b4cf438548d1737bc8fa9d166d3017599936b0e5b637af86302d3",
+    "model/photo-v3-analysis.json": "2ae3804402f71bdc126c186741fea677111a69e0b3ed16e76844f89dff5130dd",
+    "model/photo-v3-parity-verification.json": "c98e04d762dbd768e11457e91b0d15dc0edcd09f41566e0ec611c0a9dcb5f6b1",
+    "model/photo-v3-verification.json": "1ba53078ab7fd0e034e740d97749a67c61aa7d2398a87b9e6fd7a3dbb5b8fe90",
+    "dist\\qnn.js": "4cd3e0110ab979689f8bbeaaf50d8c9d33dd8c8eb4d057c8818cfa776733c2ee",
+    "dist\\model\\model-photo.json": "a2466f8f29da4dccd7f2834c019d3fe291796cb204839e9f9a2e4c77265ae069",
+    "dist\\assets\\real-schoolbus.png": "5eb0cf031cf560b3af03407bb55a178446a57c411fc5d5d049d2680143c8d3ca",
+    "dist\\assets\\street-captcha.png": "9d37da13f6d7c646c434488b505b67cf09b6ec11f1a9b897ed8adc4ca25f322a",
+    "model\\training-assets\\sauk-centre-street-512.png": "57c9ec48db618c00d5443c7aec0147d87585d106c4506b17f006bebcaf4bd5ad"
+  },
+  "thresholds": {
+    "qnn": 0.95,
+    "logistic": 0.94
+  },
+  "readyForDemo": false,
+  "remaining_evaluation": "Fresh street identities: normalized512 empty+128 seeded seen-cutout placements pergrid. Fresh bus identities: supplied coarsebbox fullphoto and knownROI thumbnail52px wide. Diagnostic Emeryville/Oines only after this freeze; neither changes candidates.",
+  "audit_seed": 2026101130,
+  "ground_truth": "any inserted alpha>32 pixel in tile; segmentation unavailable for independently photographed bus bboxes"
+}

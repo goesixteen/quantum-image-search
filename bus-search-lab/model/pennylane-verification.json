@@ -1,0 +1,71 @@
+{
+  "pennylane_version": "0.45.1",
+  "model_layers": 4,
+  "qnn_feature_vectors": 32,
+  "qnn_expectation_max_error": 2.498001805406602e-16,
+  "grover_cases": [
+    {
+      "N": 4,
+      "marks": [
+        2
+      ],
+      "rounds": 1,
+      "max_amplitude_error": 2.220446049250313e-16
+    },
+    {
+      "N": 16,
+      "marks": [
+        7
+      ],
+      "rounds": 3,
+      "max_amplitude_error": 2.220446049250313e-16
+    },
+    {
+      "N": 64,
+      "marks": [
+        28
+      ],
+      "rounds": 6,
+      "max_amplitude_error": 2.7755575615628914e-17
+    },
+    {
+      "N": 64,
+      "marks": [
+        3,
+        12
+      ],
+      "rounds": 4,
+      "max_amplitude_error": 2.7755575615628914e-17
+    },
+    {
+      "N": 64,
+      "marks": [],
+      "rounds": 3,
+      "max_amplitude_error": 2.7755575615628914e-17
+    },
+    {
+      "N": 16,
+      "marks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "rounds": 2,
+      "max_amplitude_error": 2.7755575615628914e-17
+    }
+  ],
+  "passed": true
+}

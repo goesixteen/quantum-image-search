@@ -1,0 +1,90 @@
+{
+  "gridSide": 4,
+  "busFeatures": [
+    0.6192294034090909,
+    0.8421052631578947,
+    1.0,
+    0.8424908424908425,
+    0.838029114032075,
+    1.0,
+    0.9479166666666666,
+    0.7251082251082251
+  ],
+  "backgroundFeatures": [
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.5038174715909091,
+      0.9777777777777777,
+      0.3333333333333333,
+      0.22556390977443608,
+      0.0,
+      1.0,
+      0.8863636363636364,
+      0.9022038567493113
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "description": "Saved synthetic CAPTCHA patch feature vectors for a runnable Qiskit demonstration, not a photo dataset.",
+  "provenance": {
+    "source": "model/parity-fixtures.json from the trained synthetic patch experiment",
+    "positiveFixtureIndex": 3,
+    "backgroundFixtureIndices": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10
+    ],
+    "sourceFixturesSha256": "2ea729476c3b3b491c274386e841a8a0fb98b219c98118850c71a749038ed689",
+    "sourceModelSha256": "99643bd2693ad754a4e49a2560efaade8eade96d336a9bafb578266aef9f5d52"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "fixtures": 16,
+  "maxFeatureError": 2.220446049250313e-16,
+  "maxQnnError": 4.440892098500626e-16,
+  "maxLogisticError": 2.220446049250313e-16
+}

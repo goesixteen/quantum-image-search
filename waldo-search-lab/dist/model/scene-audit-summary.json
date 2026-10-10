@@ -1,0 +1,180 @@
+{
+  "version": 1,
+  "title": "Expanded controlled crowd scene audit",
+  "scope": "Controlled same-asset composite evaluation, not unseen characters/crowds, photographs, face identity, empirical quantum hardware, or speed advantage.",
+  "raster": "Pillow LANCZOS; native browser confirmation is limited to named fixtures in docs/SCENE_AUDIT.md",
+  "full_report": "scene-audit.json",
+  "fixtures": "scene-audit-fixtures.json",
+  "audit_seed": 202610303,
+  "measurement_seed": 202610304,
+  "shots_per_scene": 64,
+  "thresholds": {
+    "qnn": 0.22000000000000006,
+    "logistic": 0.15
+  },
+  "models_sha256": {
+    "qnn": "9655fb62c446acd7239904f993d82aa6a05915bac07efffebaa83c5211d3d1f2",
+    "logistic_report": "1ba3d393bff671ceab329a347bc60c35057c847fa9afbf19fbe53115ed879222"
+  },
+  "empty_oracle_policy": "No output; zero effective true-target probability.",
+  "protocol_weighting": "384 predefined probes per suite/grid. Nominal 8x8 contains 369 unique rendering configurations because 15 corner probes repeat; all other suites/grids have 384 unique configurations. Aggregate statistics weight each declared probe. Deduplicated sensitivity is in scene-audit-diagnostics.json.",
+  "unique_render_configurations": {
+    "nominal": {
+      "grid4": 384,
+      "grid8": 369
+    },
+    "stress": {
+      "grid4": 384,
+      "grid8": 384
+    }
+  },
+  "clean_hit_definition": "At least one true marked tile and no false marked tiles; not every overlapping tile must be marked.",
+  "results": {
+    "nominal": {
+      "grid4": {
+        "qnn": {
+          "scenes": 384,
+          "target_hit_scenes": 356,
+          "false_mark_scenes": 0,
+          "clean_hit_scenes": 356,
+          "missed_scenes": 28,
+          "empty_oracle_scenes": 28,
+          "accepted_set_mass_mean": 0.8899479707082113,
+          "exact_true_target_mass_mean": 0.8925345341364542,
+          "sampled_single_target_hits": 342,
+          "repeated_shots_requested": 24576,
+          "repeated_target_hits": 21964
+        },
+        "logistic": {
+          "scenes": 384,
+          "target_hit_scenes": 384,
+          "false_mark_scenes": 0,
+          "clean_hit_scenes": 384,
+          "missed_scenes": 0,
+          "empty_oracle_scenes": 0,
+          "accepted_set_mass_mean": 0.9593181610107422,
+          "exact_true_target_mass_mean": 0.9621749321619669,
+          "sampled_single_target_hits": 370,
+          "repeated_shots_requested": 24576,
+          "repeated_target_hits": 23673
+        }
+      },
+      "grid8": {
+        "qnn": {
+          "scenes": 384,
+          "target_hit_scenes": 345,
+          "false_mark_scenes": 0,
+          "clean_hit_scenes": 345,
+          "missed_scenes": 39,
+          "empty_oracle_scenes": 39,
+          "accepted_set_mass_mean": 0.8953902337909249,
+          "exact_true_target_mass_mean": 0.8954363122387314,
+          "sampled_single_target_hits": 344,
+          "repeated_shots_requested": 24576,
+          "repeated_target_hits": 22000
+        },
+        "logistic": {
+          "scenes": 384,
+          "target_hit_scenes": 365,
+          "false_mark_scenes": 0,
+          "clean_hit_scenes": 365,
+          "missed_scenes": 19,
+          "empty_oracle_scenes": 19,
+          "accepted_set_mass_mean": 0.9472889759288922,
+          "exact_true_target_mass_mean": 0.9473402763430879,
+          "sampled_single_target_hits": 364,
+          "repeated_shots_requested": 24576,
+          "repeated_target_hits": 23276
+        }
+      }
+    },
+    "stress": {
+      "grid4": {
+        "qnn": {
+          "scenes": 384,
+          "target_hit_scenes": 319,
+          "false_mark_scenes": 0,
+          "clean_hit_scenes": 319,
+          "missed_scenes": 65,
+          "empty_oracle_scenes": 65,
+          "accepted_set_mass_mean": 0.7976471583048502,
+          "exact_true_target_mass_mean": 0.8000046014785767,
+          "sampled_single_target_hits": 308,
+          "repeated_shots_requested": 24576,
+          "repeated_target_hits": 19690
+        },
+        "logistic": {
+          "scenes": 384,
+          "target_hit_scenes": 380,
+          "false_mark_scenes": 0,
+          "clean_hit_scenes": 380,
+          "missed_scenes": 4,
+          "empty_oracle_scenes": 4,
+          "accepted_set_mass_mean": 0.9496795733769735,
+          "exact_true_target_mass_mean": 0.9523434638977051,
+          "sampled_single_target_hits": 366,
+          "repeated_shots_requested": 24576,
+          "repeated_target_hits": 23456
+        }
+      },
+      "grid8": {
+        "qnn": {
+          "scenes": 384,
+          "target_hit_scenes": 176,
+          "false_mark_scenes": 48,
+          "clean_hit_scenes": 132,
+          "missed_scenes": 208,
+          "empty_oracle_scenes": 204,
+          "accepted_set_mass_mean": 0.4675065373647709,
+          "exact_true_target_mass_mean": 0.40120597611159575,
+          "sampled_single_target_hits": 148,
+          "repeated_shots_requested": 24576,
+          "repeated_target_hits": 9815
+        },
+        "logistic": {
+          "scenes": 384,
+          "target_hit_scenes": 189,
+          "false_mark_scenes": 0,
+          "clean_hit_scenes": 189,
+          "missed_scenes": 195,
+          "empty_oracle_scenes": 195,
+          "accepted_set_mass_mean": 0.4905274121311745,
+          "exact_true_target_mass_mean": 0.49055333096882076,
+          "sampled_single_target_hits": 187,
+          "repeated_shots_requested": 24576,
+          "repeated_target_hits": 12058
+        }
+      }
+    }
+  },
+  "empty_scene_false_marks": {
+    "grid4": {
+      "1.0": {
+        "qnn": 0,
+        "logistic": 0
+      },
+      "0.72": {
+        "qnn": 0,
+        "logistic": 0
+      },
+      "1.22": {
+        "qnn": 0,
+        "logistic": 0
+      }
+    },
+    "grid8": {
+      "1.0": {
+        "qnn": 0,
+        "logistic": 0
+      },
+      "0.72": {
+        "qnn": 0,
+        "logistic": 0
+      },
+      "1.22": {
+        "qnn": 1,
+        "logistic": 0
+      }
+    }
+  }
+}
