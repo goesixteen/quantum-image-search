@@ -390,3 +390,60 @@ Resume from outputs/WANDA_ITERATION_BRIEF.md and publication-receipt.json;
 do not revive old static instructions or the rejected photographic theme.
 Private Git export/receipt and source ZIP are verified separately after sync.
 The independent merged qnn-playground29-file tree remains source-only scope.
+
+## Iteration 21 — static clip-art people in the top game (2026-10-11T20:48:27.985435+00:00)
+
+The user rejected the earlier people theme and requested new clip-art people,
+then corrected the request to fewer people in clusters of two to four only
+on top-right object edges. The final top game uses all ten distinct generated
+people once each, ten total: map frame four, Wanda card three and Find button
+three. No figures appear on the heading/world picker or scatter on sides/bottom.
+This supersedes the earlier two-or-three-copies-per-person direction. The lower
+under-the-hood half has the same red background as Find Wanda, a white/red
+striped transition and light readable diagram cards, with no decorative people.
+Current owner-private Wanda source `e99fb70e961358738b87187c73c73509e0470514`,
+deployment `appgdep_6acbf467c7ec8191bfc99e63659537f0`, succeeded. The rejected sign pictograms,
+walking and viewport-entry dispersal are removed. This latest direction
+supersedes iteration-20 decorations and the clean intermediate rollback.
+Preserve the small static top-right object-edge clusters,
+requested Quantum Vision heading/subheading, five-scene empty welcome, hanging
+Wanda pickup, connected three-stage explanation and optional scientific details.
+
+Final tested top-half style: Ten original clip-art people, one each, stand in three compact groups (4/3/3) on the top-right edges of the map frame, Wanda card and Find Wanda. The top-half style test uses warm paper texture, illustrated scene cards, a stronger painted map frame and gentle menu shadows. Find and the full lower chapter share #d24e45, with a white/red striped transition and light diagram panels. This is the completed styling increment before the newly requested inline QNN playground replacement.
+
+The three standalone PNG downloads remain historical artwork, absent from the
+live interface and inference. Rejected dense records/proofs are archived in
+`archive/iteration20-dense-rejected`; earlier decorative archives remain.
+
+All 147 engineering tests and frozen 11/7/12 verification were actually rerun
+on the final static clip-art revision and passed. Read WANDA_HANDOFF.md, WANDA_ITERATION21_QA.md,
+WANDA_ITERATION_BRIEF.md and publication-receipt.json for exact checks and scope.
+Frozen recognition evidence and original failures remain. The schoolbus
+deployment and both private Site identities remain. The independent playground
+source remains preserved without new build/runtime/scientific validation claims.
+No training or reserved evaluation was rerun, no usage reset or purchase was
+performed, and nothing was submitted. Preserve the remaining reset for the user.
+Do not restore rejected pictograms or motion, or add decorative people under the hood.
+
+## Iteration 22 — inline red/light QNN Playground (2026-10-11T21:07:59.205669+00:00)
+
+Current owner-private Wanda source `ca6290523fb8d1c07b00e0491e42c2c037a3eb36`, deployment
+`appgdep_6acbfa0430248191809d2cfba2c4087d`, succeeded. The entire old underhood section is removed
+and replaced with the latest QNN Playground inline on the same page, styled
+red/light. Preserve accepted top styling and ten static top-right object-edge
+people in 4/3/3 groups; none under the hood. Entire former under-the-hood interface replaced inline by the latest Git QNN playground, with red accents and light panels; accepted picture-puzzle top styling and compact 4/3/3 clip-art groups preserved.
+
+The original imported playground remains a separate 32-file source tree at
+`d7a6a02ea8b34e50842820a5d0fa42208f04ec94` / `e9082497a54f7fb6ca3a8a3d735a45cf52e62a19`, with Apache LICENSE/NOTICE.
+147 game engineering tests, 29 playground tests, TypeScript and frozen 11/7/12
+verification passed. Actual new-interface coverage is in WANDA_ITERATION22_QA.md,
+WANDA_HANDOFF.md and publication-receipt.json, not inferred from prior checks.
+The playground has its own scene. Its live accuracy may overlap training and
+evaluation windows/pairs; do not call it an independent recognition benchmark.
+Frozen Wanda evidence, original failures and native/browser scope remain.
+
+Continue from WANDA_ITERATION_BRIEF.md and the inline playground. Do not restore
+the removed old section, old tabs, dark theme or rejected decorative themes.
+Preserve original source, the unchanged schoolbus deployment and both private
+Site identities. Existing usage/reset observation is retained; zero agent resets,
+no purchase and no submission. Preserve the remaining reset for the user.

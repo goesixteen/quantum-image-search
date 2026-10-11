@@ -1,15 +1,17 @@
 # Quantum Vision: Where's Wanda? — Quantum Unlocked
 
-The heading asks “Can you find Wanda using quantum crowd search?” Dense crowds
-of darker pastel red, yellow and blue pedestrian pictograms gather over key
-headings and actions. On entering the viewport they disperse toward the edges
-at a steady 28 CSS pixels per second, revealing the labels. The existing welcome,
-drag-and-drop game and three-stage quantum explanation remain.
+The heading asks “Can you find Wanda using quantum crowd search?” Ten original
+clip-art people stand in compact groups on the top-right edges of the map frame,
+Wanda’s card and Find Wanda. The lower quantum chapter uses Find Wanda’s red
+with a white/red striped transition and light readable diagram panels.
+The top game tries a picture-puzzle-book style: warm paper texture, illustrated
+scene cards, a stronger painted map frame and gently shaded menu controls.
 
-Reduced-motion preferences park the figures immediately. The decorative groups
-do not intercept controls or enter the analyzed image. The previously rejected
-photographic cutout theme remains archived. Read
-[asset provenance](docs/PEDESTRIAN_ASSETS.md).
+The welcome and drag-and-drop game remain. The previous under-the-hood interface
+has been replaced wholesale by the latest Git QNN playground, embedded directly
+in the red chapter with light panels. [The decorative artwork and prompt provenance](dist/assets/ui-clipart/provenance.json)
+are separate from the searched canvas and frozen detector. The rejected pictogram
+crowds, entry animations and scattered placements remain archived outside the app.
 
 The game opens with an empty Festival scene. Five map thumbnails sit in one row
 above it, and a large Wanda waits in the welcome card on the right. Drag her
@@ -19,7 +21,7 @@ or use arrow keys or Enter. Find Wanda stays in the right menu. Remove Wanda
 returns her to the box; Start over resets Festival to this empty welcome state.
 Changing worlds preserves an existing placement. The QNN and Grover are unchanged.
 
-[Open the owner-private Wanda site](https://quantum-crowd-search.syrupyspool2.chatgpt.site). Hide a small female red-and-white-striped PNG in one of five original crowded scenes, then watch a genuinely trained, simulated QNN build the predicate for Grover amplitude amplification. The play surface contains the game menu; the separate “Look under the hood” section connects the actual scene window to its features, quantum gates, reduced Bloch states, readout and Grover reflections.
+[Open the owner-private Wanda site](https://quantum-crowd-search.syrupyspool2.chatgpt.site). Hide a small female red-and-white-striped PNG in one of five original crowded scenes, then watch a genuinely trained, simulated QNN build the predicate for Grover amplitude amplification. Below the game, the inline playground lets you train a circuit, inspect its gates and readout, load the frozen demo weights and run Grover search. It uses the same image pipeline but its own scene and training settings; it is not a replay of the top game's current placement. All qubits are simulated.
 
 The frozen **Wanda** classifier completes **298/300 native-rendered reserved target scenes**, with **0/25 false detections on empty scenes**. Its matched same-feature logistic baseline completes **299/300**. All 60 default-height 52px reserved cases pass. These are disjoint placements of the same known PNG on five known backgrounds, at supplied heights 40/46/52/58/64px, fully visible and inside the frame. They do not establish unseen-person recognition, unknown-size detection, occlusion robustness or quantum advantage.
 
@@ -27,7 +29,9 @@ A separate Chromium engineering audit passes 15/15 known-center target probes ac
 
 Start locally with `node serve.mjs`, then open `http://127.0.0.1:4174/`. If that port is occupied, run `node serve.mjs --port 4178`, or use `--port 0` and open the free port printed by the server. Keep the terminal running; Ctrl+C stops your preview. The website is static and needs no dependency installation, inference service, API key or quantum hardware. It uses modern Node.js and a canvas-capable browser. Numerical regeneration uses the separately documented model dependencies.
 
-Run `node --test tests/*.test.mjs` for the engineering suite; the latest exact count and checks are in the iteration QA and external handoff. The three-stage explanation follows the same image and saved search: **Image + QNN → Grover interference → Measurement**. Play this layer pauses at each actual QNN layer endpoint; continue explicitly through the four layers or inspect every gate with the full slider. These are frozen trained angles during inference, and the displayed score uses the complete circuit. Watch one round presents the exact signs and reflection preview, then saves just one Grover round; it supports pause/resume and reduced-animation stepping. Start at round 0 rewinds a completed game explicitly; changing tabs preserves it. Evidence and secondary tools remain optional. See [the short quick-start](../WANDA_QUICKSTART.md) and [current lesson](docs/WANDA_LESSON.md).
+Run `node --test tests/*.test.mjs` for the retained engineering suite; the latest exact count and current browser checks are in the iteration QA and external handoff. Some tests cover historical lesson modules that are no longer displayed. The new playground has its own 29-test suite in the sibling source folder. See [inline integration and reproducible build instructions](playground-integration/README.md) and [the playground source documentation](../qnn-playground/README.md).
+
+The playground's generated-window score is illustrative: ranking pairs overlap its window check and share a composited image. It is not additional reserved accuracy. The classical comparison uses different settings and is not a controlled benchmark. Its compiled Grover oracle receives already-scored locations, so the visualization does not demonstrate an end-to-end speed-up. These live experiments do not modify the top game's frozen checkpoint.
 
 For the complete suite on a normal machine, install Node.js with npm, then run
 `npm install` and `node --test tests/*.test.mjs` from this folder. This installs
@@ -35,7 +39,7 @@ the pinned `@napi-rs/canvas` version `0.1.100` development dependency. The tests
 prefer that local package; a Codex runtime fallback supports the development
 workspace. Read-only Python verification separately needs NumPy and Pillow.
 
-- [Guided live lesson and semantics](docs/WANDA_LESSON.md), [current presentation checks](docs/WANDA_ITERATION16_QA.md)
+- [Historical lesson semantics](docs/WANDA_LESSON.md), [historical presentation checks](docs/WANDA_ITERATION16_QA.md)
 - [Independent current Wanda Qiskit companion](qollab-wanda/README.md)
 - [Paired browser/native rendering audit](model/wanda-browser-audit/README.md)
 - [Wanda architecture, protocol, results and failures](docs/WANDA_QNN.md)

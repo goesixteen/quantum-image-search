@@ -41,25 +41,22 @@ that run and keeps the scene ready for another attempt. Start over restores
 Festival and the trained detector, with Wanda waiting in her box. Remove Wanda
 returns her to the box. The five map choices appear above the scene in one row.
 
-Look under the hood follows the same image through three stages:
+Look under the hood now contains the QNN playground directly in the page:
 
-1. **Image + QNN:** read the image, inspect a window and choose Play this layer.
-   It pauses after each actual layer; continue through all four, or use the slider.
-   Reduce animations uses gate stepping and removes prolonged search animation.
-   The visible score is the completed circuit readout; spheres show the current
-   gate's reduced qubit states.
-2. **Grover interference:** Start at round 0, Phase flip, Reflect, then Complete
-   one round. Reflection is a preview; the completed round is the saved state.
-   Watch one round walks those exact steps for you, with pause/resume. Restart
-   preview keeps the saved round. Reduce animations turns playback into stepping.
-   The first peak and past-peak controls expose amplification and overshoot.
-3. **Measurement:** inspect any exact outcome or sample the saved distribution.
-   A classifier-accepted address and the independent target check are different
-   claims. Empty accepted sets abstain rather than manufacture an answer.
+1. Pick a world and watch its four-qubit circuit train for 120 rounds. Use
+   Train again to continue; Run the search animates Grover amplification.
+2. Choose Show all details to inspect feature inputs, circuit gates, readout,
+   state amplitudes and search controls. Click a region to inspect its state.
+3. Load demo weights restores the exact frozen Wanda parameters and threshold.
+   This is useful when a short live-training run accepts no addresses.
 
-Changing tabs preserves the run. Editing the image or supplied size invalidates
-it. Advanced controls and evidence are optional; the game's soft field is a
-display, not a map of semantic person probabilities.
+The playground uses the game's image pipeline with its own scene and training
+settings. Its generated-window check is illustrative and can overlap training
+pairs; it is not new held-out accuracy. All qubits are simulated. The compiled
+Grover oracle receives already-scored locations, so this is an explanation of
+amplification rather than an end-to-end speed-up. The game's soft field remains
+a display, not a map of semantic person probabilities. Rebuilding the embed is
+documented in [the integration guide](waldo-search-lab/playground-integration/README.md).
 
 ## Engineering checks and model reproduction
 

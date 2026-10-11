@@ -1,0 +1,351 @@
+{
+  "schemaVersion": 1,
+  "status": "SUCCEEDED",
+  "recordedAtUtc": "2026-10-11T20:00:13.948545+00:00",
+  "userAuthorization": "Push the current files to my private QHack GitHub repository; authorization persists for the requested interface revision.",
+  "repository": "https://github.com/goesixteen/quantum-image-search",
+  "branch": "main",
+  "commit": "25d178570e10a61d967925fe1fe45c9ddf6122b6",
+  "commitUrl": "https://github.com/goesixteen/quantum-image-search/commit/25d178570e10a61d967925fe1fe45c9ddf6122b6",
+  "baselineCommit": "032615659c5967df8f025b63bdd610954d21b3ea",
+  "preservedExternalMerge": {
+    "sourceMergeCommit": "032615659c5967df8f025b63bdd610954d21b3ea",
+    "previousSyncCommit": "5ee1f25ffc0c80cd616135ddcd47e3294764ce6c",
+    "pullRequest": "https://github.com/goesixteen/quantum-image-search/pull/1",
+    "sourceBranch": "Andrew",
+    "sourceBranchCommit": "a85fce871f97d6428a15e2e65aa0b1add4196986",
+    "path": "qnn-playground",
+    "fileCount": 29,
+    "sourceTreeObjectSHA1": "75e3d7f1a84257bd2c5b71637f0c71544bbaa428",
+    "sourceFileManifestSHA256": "02eab171140a589cf8cacc802f6889e0fb24862e676091dc18ef78c0a642b675",
+    "files": [
+      {
+        "path": "qnn-playground/.gitignore",
+        "sha256": "790e3169bc19b046fe55ba1da6d13b976c28363c8c00462a2195fe5faf260910",
+        "bytes": 20
+      },
+      {
+        "path": "qnn-playground/DEVLOG.md",
+        "sha256": "d493ffee02cd6545fcb42704073f1bbef950495a449ba9a39aaeb8805cec6c3f",
+        "bytes": 40389
+      },
+      {
+        "path": "qnn-playground/LICENSE",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "bytes": 11358
+      },
+      {
+        "path": "qnn-playground/NOTICE",
+        "sha256": "70cfaf9463d6d73546a2a6f3482dc80b6b791d41478a07ed2a45f9f3aa132af2",
+        "bytes": 1136
+      },
+      {
+        "path": "qnn-playground/README.md",
+        "sha256": "5b972cdc75f7b036c8ec53f849f61eab48bb8777e781f144d05be3fad32c1b4b",
+        "bytes": 9030
+      },
+      {
+        "path": "qnn-playground/favicon.png",
+        "sha256": "35969b34af89f94328c15e663eba7cd4fa37ef224fd041bb992da8542f9d7d51",
+        "bytes": 239
+      },
+      {
+        "path": "qnn-playground/index.html",
+        "sha256": "8332983afea1def4818909e052f0a994371087d2913b90cd4a03002e7febb759",
+        "bytes": 15930
+      },
+      {
+        "path": "qnn-playground/package-lock.json",
+        "sha256": "cbb90d99fb0c335700b01298817f68d0a835f66dba00aafaba60895ad3db1088",
+        "bytes": 16477
+      },
+      {
+        "path": "qnn-playground/package.json",
+        "sha256": "445da09b0df729baaf4050c39457b764e3fe882e65cae7b624ab1992180dbbcf",
+        "bytes": 661
+      },
+      {
+        "path": "qnn-playground/scripts/build.mjs",
+        "sha256": "6e78b3d0c9d9033609be89410732f74176a019174c3867c969e203485dcf33c7",
+        "bytes": 2970
+      },
+      {
+        "path": "qnn-playground/scripts/smoke.mjs",
+        "sha256": "19c132600ae525836ff1e9c26f28775d9208d63bffa9e111d8467daff97b7775",
+        "bytes": 17785
+      },
+      {
+        "path": "qnn-playground/serve.mjs",
+        "sha256": "b7739c6b848df01d29bdd2b89619fa98719540f974a63f122476c6a5b1aa62da",
+        "bytes": 1240
+      },
+      {
+        "path": "qnn-playground/src/dataset.ts",
+        "sha256": "fe6a7bf6eea34d548497b70857e69d09ae77ccdba8922e0a3b58c9085dd0f182",
+        "bytes": 7077
+      },
+      {
+        "path": "qnn-playground/src/heatmap.ts",
+        "sha256": "54380527bfd9962b47a32577426e40902cf2a1ea8203b855bc43f5b83f7ffac5",
+        "bytes": 7269
+      },
+      {
+        "path": "qnn-playground/src/linechart.ts",
+        "sha256": "3ce780d9b9d3c8360ff340e43490a7eae093d003dede01f7bc1946d4b225381c",
+        "bytes": 3242
+      },
+      {
+        "path": "qnn-playground/src/playground.ts",
+        "sha256": "ef1b2c9e3b4a2ef6ed70c6d3d0b20125fa63ba82de35b7bdabc47a4d5d4b3ef8",
+        "bytes": 63859
+      },
+      {
+        "path": "qnn-playground/src/qnn.ts",
+        "sha256": "21b6dde71f41d54ed3af7c6f40a0dae10cc4ed60829f15c6e926978e87855984",
+        "bytes": 16858
+      },
+      {
+        "path": "qnn-playground/src/quantum/ansatz.js",
+        "sha256": "cc39e709b128938c0cba8ccead2cf68e86fce4f700ef1610e0ad3eb12c81f9b4",
+        "bytes": 4478
+      },
+      {
+        "path": "qnn-playground/src/quantum/circuit.js",
+        "sha256": "e6d156df9e7fbacfba49d7afcad3e97fe7fcdef1c40e3cc989691c0cbe0df07a",
+        "bytes": 18622
+      },
+      {
+        "path": "qnn-playground/src/quantum/coherent.js",
+        "sha256": "6d92075bcaa5c7b01273e1d668fda06cf11af7e4ddb1999d46327f4ad5d053c6",
+        "bytes": 3071
+      },
+      {
+        "path": "qnn-playground/src/quantumViews.ts",
+        "sha256": "f9a511630c1f641427d3c1582a15b416a59e13b4859cd2f56deccc1154bff6d8",
+        "bytes": 16810
+      },
+      {
+        "path": "qnn-playground/src/scenes.ts",
+        "sha256": "ab5670500a6a6d75d148541dceb03160c3dfd18154a4d6a016dc27b4dbc505fd",
+        "bytes": 14632
+      },
+      {
+        "path": "qnn-playground/src/search.ts",
+        "sha256": "fc1e9dfd9355646947b0ae1e2d762ff883c2c8bc3e0a18982d3a927a5679e989",
+        "bytes": 14588
+      },
+      {
+        "path": "qnn-playground/src/seedrandom.d.ts",
+        "sha256": "dfd8cdb5463bbe2386a583db1d80c7e518236ce42bb3be1f4e1ef6d983135b4b",
+        "bytes": 736
+      },
+      {
+        "path": "qnn-playground/src/state.ts",
+        "sha256": "df7cbd182d367e22d39e827e534394a0f1a68ba9edca3913b4f37a6d16e01bf0",
+        "bytes": 8131
+      },
+      {
+        "path": "qnn-playground/styles.css",
+        "sha256": "98697e8e7855f222b058d04f28dd65e7857aa9c3405d61721c0eb54eaa1829b2",
+        "bytes": 30928
+      },
+      {
+        "path": "qnn-playground/tests/qnn.test.mjs",
+        "sha256": "ce3bb81021a787bc2371224930856ed56a1e58690de4326d5baf87ee50a661a0",
+        "bytes": 7183
+      },
+      {
+        "path": "qnn-playground/tests/quantum.test.mjs",
+        "sha256": "e09e5c952b06f545dfe58a90f3745d92c941f6642b9403a1ff130a6f71efb52a",
+        "bytes": 9856
+      },
+      {
+        "path": "qnn-playground/tsconfig.json",
+        "sha256": "61a6a49dab40f5d5dd223544d65c64ba1311961a59a2bda971aafa727b0333df",
+        "bytes": 238
+      }
+    ],
+    "scope": "The independent PR #1 playground source was retained byte-for-byte. No install, build, runtime, scientific or recognition validation of this new project was performed."
+  },
+  "previousPrivateGitRevision": {
+    "commit": "5ee1f25ffc0c80cd616135ddcd47e3294764ce6c",
+    "publishedApplicationIteration": 19,
+    "archivedReceipt": "archive/iteration19-before-crowd-theme/GITHUB_SYNC_RECEIPT.json",
+    "archivedReceiptSHA256": "d1d820f488814de9ec2f3c9eae761da8c4c5929e41a90beb343dc72a3f080635"
+  },
+  "remoteCommitVerified": true,
+  "workingTreeClean": true,
+  "visibility": "private",
+  "visibilityVerification": "Root verified the current signed-in GitHub repository page marked Private and saved the post-push proof.",
+  "proof": "github-private-sync-proof.png",
+  "proofSHA256": "a4fdab820962b5364adadcb8d8089903f494bd03c90c6948d2362a262abdb1e7",
+  "trackedFiles": 1178,
+  "exportedFiles": 1176,
+  "scope": "Both current demo projects, artwork, model/training files, frozen evidence, tests, historical failures and latest documentation.",
+  "exportManifest": "GITHUB_EXPORT_MANIFEST.json",
+  "exportManifestSHA256": "2f2f905fdd2ca32a792c92fe73b755ef3a071238682469817c84b460a76bcbbe",
+  "checks": {
+    "status": "PASS",
+    "manifestFilesVerified": 1176,
+    "trackedFiles": 1178,
+    "gitIndexMatchesRawExportBytes": true,
+    "readmeLocalLinksVerified": 11,
+    "syntax": [
+      {
+        "project": "waldo-search-lab",
+        "files": 24
+      },
+      {
+        "project": "bus-search-lab",
+        "files": 9
+      }
+    ],
+    "copiedWandaHTTP200ByteMatches": [
+      "/",
+      "/app.js",
+      "/underhood.js",
+      "/circuit-playback.js",
+      "/model/wanda-qnn.json"
+    ],
+    "whitespaceAudit": {
+      "CRLFRecognized": true,
+      "originalGeneratedSVGWhitespacePreserved": []
+    },
+    "frozenVerifier": "PASS: 11 files, 7 source files, 12 pixel fixtures; no held-out evaluation",
+    "scope": "Transfer integrity and copied startup only; the 147 engineering tests were rerun separately for iteration 20 in the published application checkout, not in this transfer helper."
+  },
+  "applicationValidation": {
+    "publishedApplicationIteration": 20,
+    "publishedWandaSource": "66f66be39e50df251ffb7345486b9b006c7b25e4",
+    "nodeTestsPassed": 147,
+    "nodeTestsRerunForIteration20": true,
+    "nodeTestsRerunForFinalRevision": true,
+    "nodeTestScope": "All 147 Node engineering tests were actually rerun on the final dense pedestrian revision and passed. The read-only frozen verifier was actually rerun on that revision and passed: 11 files, 7 source contracts and 12 pixel fixtures. The model SHA256 is unchanged. These are engineering/integrity checks, not a new recognition benchmark.",
+    "frozenVerifier": {
+      "passed": true,
+      "frozen_files": 11,
+      "frozen_sources": 7,
+      "pixel_fixtures": 12
+    },
+    "evidence": "publication-receipt.json and WANDA_ITERATION20_DENSE_QA.md"
+  },
+  "scientificScope": "All 147 Node engineering tests were actually rerun on the final dense pedestrian revision and passed. The read-only frozen verifier was actually rerun on that revision and passed: 11 files, 7 source contracts and 12 pixel fixtures. The model SHA256 is unchanged. These are engineering/integrity checks, not a new recognition benchmark. Git transfer checks cover integrity and copied Wanda startup. The independently merged qnn-playground project was preserved byte-for-byte as source only; no installation, build, runtime or scientific validation of that new project was performed. No retraining, reserved-test rerun or new recognition accuracy was produced.",
+  "retainedHistoricalFailure": {
+    "iteration": 17,
+    "description": "Initial Git staging normalized a CRLF file. Root -text attributes and explicit index renormalization corrected it; all 1063 export entries then matched Git blobs exactly. Generated historical SVG trailing whitespace retained byte-for-byte."
+  },
+  "retainedHistoricalPackagingRepairs": {
+    "iteration": 18,
+    "items": [
+      "Archive verification caught the old ZIP helper excluding archived release sidecars by filename. Restricted exclusion to the root current sidecar and rebuilt; prior records remain included.",
+      "GitHub commit-message locator matched repeated file-row links; scoped to the observed latest-commit region, then saved current private proof."
+    ]
+  },
+  "concurrentBranchObservation": {
+    "branch": "Andrew",
+    "before": "a85fce871f97d6428a15e2e65aa0b1add4196986",
+    "after": "a85fce871f97d6428a15e2e65aa0b1add4196986",
+    "advancedDuringRun": false,
+    "priorHistoryRetained": true,
+    "modifiedByThisRun": false,
+    "note": "The observed Andrew branch remains at its pre-run revision. This run pushed only main, with no merge or reset."
+  },
+  "retainedHistoricalRecordRepairs": {
+    "iteration": 19,
+    "items": [
+      "The first receipt guard expected Andrew to stay at its pre-run SHA. It rejected an independent branch advance; read-only fetch confirmed retained ancestry and the receipt now records both observations.",
+      "An intermediate ZIP was generated after the failed receipt guard and contained the prior Git receipt. The final ZIP was rebuilt and verified only after the corrected current receipt succeeded."
+    ]
+  },
+  "rejectedHistoricalWalkingTheme": {
+    "commit_sha": "74e899459f013bdbd3552ad40da7081b1cb58153",
+    "deployment_id": "appgdep_6acbdb31a5f08191ae544a76c13f0e41",
+    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_74f24397bde8819185367dcffc4c3a05",
+    "status": "succeeded",
+    "historical_only": true,
+    "reason": "The user rejected the animated walking photo-cutout crowd theme. Later pictogram entry motion does not restore that theme.",
+    "archive": "archive/iteration20-rejected-crowd-theme"
+  },
+  "preparedExportRefresh": {
+    "previousPublishedWandaSource": "e40f28f25ca3876c06bf325ddf72a315cfc47e6c",
+    "previousManifestSHA256": "e72ef6eab5a6710872375d1fdb84e04186503dcf6d4a4de2c681b758705a795a",
+    "previousManifestFilesVerified": 1153,
+    "preparedFilesAndIndexByteIdentityVerified": true,
+    "ownedDirtyPathsVerified": [
+      "DELIVERABLES.md",
+      "GITHUB_EXPORT_MANIFEST.json",
+      "OVERNIGHT_RESOURCE_BUDGET.json",
+      "README.md",
+      "WANDA_HANDOFF.md",
+      "WANDA_ITERATION20_STATIC_QA.md",
+      "WANDA_ITERATION_BRIEF.md",
+      "archive/WANDA_HANDOFF-iteration19.md",
+      "archive/iteration19-before-crowd-theme/GITHUB_SYNC_RECEIPT.json",
+      "archive/iteration19-before-crowd-theme/github-private-sync-proof.png",
+      "archive/iteration19-before-crowd-theme/publication-receipt.json",
+      "archive/iteration19-before-crowd-theme/wanda-release-checks.json",
+      "archive/iteration20-first-static/wanda-pedestrians-found-hosted-proof.png",
+      "archive/iteration20-first-static/wanda-pedestrians-underhood-hosted-proof.png",
+      "archive/iteration20-rejected-crowd-theme/dist/assets/ui-crowd/provenance.json",
+      "archive/iteration20-rejected-crowd-theme/dist/crowd-cast.js",
+      "archive/iteration20-rejected-crowd-theme/dist/crowd-ui.css",
+      "archive/iteration20-rejected-crowd-theme/dist/crowd-ui.js",
+      "archive/iteration20-rejected-crowd-theme/docs/CROWD_CAST_ASSETS.md",
+      "archive/iteration20-rejected-crowd-theme/docs/WANDA_ITERATION20_QA.md",
+      "archive/iteration20-rejected-crowd-theme/pastel-red-pedestrian-first.png",
+      "archive/iteration20-rejected-crowd-theme/pastel-red-pedestrian-light.png",
+      "archive/iteration20-rejected-crowd-theme/wanda-crowd-found-hosted-proof.png",
+      "archive/iteration20-rejected-crowd-theme/wanda-crowd-hosted-proof.png",
+      "archive/iteration20-rejected-crowd-theme/wanda-crowd-phone-proof.png",
+      "archive/iteration20-rejected-crowd-theme/wanda-crowd-underhood-hosted-proof.png",
+      "archive/iteration20-rejected-crowd-theme/wanda-crowd-walk-hosted-proof.png",
+      "bus-search-lab/docs/NEXT_STEPS.md",
+      "bus-search-lab/docs/PROJECT_STATE.md",
+      "bus-search-lab/docs/RUN_LOG.md",
+      "pastel-blue-pedestrian.png",
+      "pastel-red-pedestrian.png",
+      "pastel-yellow-pedestrian.png",
+      "publication-receipt.json",
+      "waldo-search-lab/README.md",
+      "waldo-search-lab/dist/assets/ui-pedestrians/pedestrian-blue.png",
+      "waldo-search-lab/dist/assets/ui-pedestrians/pedestrian-red.png",
+      "waldo-search-lab/dist/assets/ui-pedestrians/pedestrian-yellow.png",
+      "waldo-search-lab/dist/assets/ui-pedestrians/provenance.json",
+      "waldo-search-lab/dist/index.html",
+      "waldo-search-lab/dist/pedestrian-crowds.css",
+      "waldo-search-lab/dist/pedestrian-crowds.js",
+      "waldo-search-lab/dist/wanda.css",
+      "waldo-search-lab/docs/PEDESTRIAN_ASSETS.md",
+      "waldo-search-lab/docs/WANDA_WORKLOG.md",
+      "wanda-pedestrians-found-hosted-proof.png",
+      "wanda-pedestrians-hosted-proof.png",
+      "wanda-pedestrians-phone-proof.png",
+      "wanda-pedestrians-underhood-hosted-proof.png",
+      "wanda-title-only-hosted-proof.png"
+    ],
+    "retainedTransferFailure": "The transfer verifier rejected a README link to GITHUB_SYNC_RECEIPT.json, which is intentionally local-only and excluded from the repository export. Root owns the README correction before refreshed transfer validation."
+  },
+  "retainedIteration20TransferFailure": {
+    "description": "The first transfer verifier rejected a README link to local-only GITHUB_SYNC_RECEIPT.json, which was intentionally excluded from the repository snapshot.",
+    "resolution": "Root corrected the README before the successful current transfer checks. The earlier prepared snapshot was verified against its manifest and staged bytes before being refreshed from the final private publication."
+  },
+  "localRecordRepairs": [
+    "Corrected the exported README reference to the excluded local-only Git receipt and refreshed the verified prepared snapshot after the final interface revision."
+  ],
+  "preserved": {
+    "priorHistory": true,
+    "AndrewBranch": "a85fce871f97d6428a15e2e65aa0b1add4196986",
+    "externalMainMerge": "032615659c5967df8f025b63bdd610954d21b3ea",
+    "qnnPlaygroundSourceTreeUnchanged": true,
+    "desktopCheckoutUntouched": true,
+    "hostedPublicationReceiptIteration": 20,
+    "priorGitReceiptArchived": true,
+    "localRehearsalContinuation": null,
+    "bothWebsiteAudiencesUnchanged": true
+  },
+  "excluded": "Root redundant source ZIP and final archive sidecar, Git internals, dependency folders, caches and credentials. Application ZIP downloads and compressed experiment evidence were kept.",
+  "localOnlyReceipt": "This post-push receipt and verification screenshot are local outputs, excluded from the repository snapshot.",
+  "contestSubmitted": false,
+  "agentUsageResetsConsumed": 0,
+  "nextResumption": "Read this receipt with WANDA_ITERATION_BRIEF.md, WANDA_HANDOFF.md and publication-receipt.json. Keep the Quantum Vision heading and question subheading, with the newly authorized dense overlapping red, yellow and blue pictogram crowds that disperse on entry at constant medium velocity. Review their pacing and text visibility using actual usability observations. Preserve the five-scene welcome, shrinking hand-held drag flow, connected three-stage explanation, frozen model, failures and merged playground source. The former scene-cutout walking rejection remains historical. Before future GitHub updates, inspect remote changes and avoid replacing teammate work."
+}

@@ -1,0 +1,17 @@
+QNN Playground
+Copyright 2026 the quantum-image-search contributors.
+
+This product is a fork of the TensorFlow Neural Network Playground
+(https://github.com/tensorflow/playground, commit 02469bd3751764b20486015d4202b792af5362a6),
+Copyright 2016 Google Inc., licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Files taken from upstream unchanged (dataset.ts now only supplies shuffle()): src/dataset.ts, src/heatmap.ts,
+src/linechart.ts, src/seedrandom.d.ts. Upstream's src/nn.ts and analytics.js are not included.
+Files modified from upstream (each carries a notice): index.html, styles.css, src/playground.ts, src/state.ts.
+New files: everything else (src/qnn.ts, src/quantumViews.ts, src/scenes.ts, src/search.ts,
+src/quantum/, scripts/, tests/, serve.mjs, favicon.png, README.md, DEVLOG.md).
+
+At build time, dist/project/ receives artwork and trained models from the sibling
+bus-search-lab and waldo-search-lab folders of this repository (MIT, original
+artwork); src/scenes.ts and src/search.ts import their feature and Grover code.
+Google Analytics calls, regression, regularization and the tutorial loader are removed.

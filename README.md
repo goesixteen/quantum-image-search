@@ -1,8 +1,7 @@
 # Quantum Image Search
 
-Private QHack development workspace with two interactive demos, **Where’s
-Wanda** and the **schoolbus CAPTCHA**, and the **QNN Playground**, which opens
-up Where’s Wanda’s quantum pipeline. All run locally using included artwork,
+Private QHack development workspace with two interactive demos: **Where’s
+Wanda** and the **schoolbus CAPTCHA**. Both run locally using included artwork,
 trained models and classical statevector simulators. Nothing has been submitted
 to the hackathon.
 
@@ -27,59 +26,39 @@ package installation, API key, Python or quantum hardware. Ctrl+C stops a
 server. See [Wanda’s quick start](WANDA_QUICKSTART.md) for alternate ports,
 keyboard controls, optional engineering checks and reproduction instructions.
 
-```text
-cd qnn-playground
-npm install
-npm run dev
-```
-
-Open http://127.0.0.1:4175/ for the QNN Playground. It needs a one-time
-`npm install` (build tools only) and reads the Where’s Wanda folder.
-
 ## Current version
 
-The heading is **Quantum Vision: Where's Wanda?** and the subheading is
-**Can you find Wanda using quantum crowd search?** Dense overlapping red,
-yellow and blue pictogram crowds disperse on viewport entry at a constant
-28 CSS px/s with linear timing, settling at text-safe edges and corners.
-The existing five-map welcome, hanging Wanda pickup and connected three-stage
-quantum explanation remain.
+Iteration 22 replaces the entire old under-the-hood section with the latest
+QNN Playground inline on the same page, styled red/light. Entire former under-the-hood interface replaced inline by the latest Git QNN playground, with red accents and light panels; accepted picture-puzzle top styling and compact 4/3/3 clip-art groups preserved.
 
-Private iteration 20 source: `66f66be39e50df251ffb7345486b9b006c7b25e4`. All 147 Node engineering tests were actually rerun on the final dense pedestrian revision and passed. The read-only frozen verifier was actually rerun on that revision and passed: 11 files, 7 source contracts and 12 pixel fixtures. The model SHA256 is unchanged. These are engineering/integrity checks, not a new recognition benchmark.
-Detailed actual final browser/motion observations are in the current QA record.
-The decorations do not enter inference, and prior recognition failures remain
-documented. The preceding staggered static revision is historical.
+The accepted top styling remains: warm paper texture, illustrated scene cards, painted map frame and soft menu shadows. Ten original clip-art people appear once each in static top-right edge clusters: map frame four, Wanda card three and Find button three. No people decorate the heading, world picker, sides, bottom or technical section. The five-scene empty welcome, speech bubble and hanging Wanda pickup remain.
+The requested heading **Quantum Vision: Where's Wanda?** and subheading
+**Can you find Wanda using quantum crowd search?** remain.
 
-- [Current handoff](WANDA_HANDOFF.md), [dense-crowd QA](WANDA_ITERATION20_DENSE_QA.md) and [exact private receipt](publication-receipt.json)
-- Standalone artwork: [Red PNG](pastel-red-pedestrian.png), [Yellow PNG](pastel-yellow-pedestrian.png), [Blue PNG](pastel-blue-pedestrian.png)
-- [Quick start](WANDA_QUICKSTART.md), [deliverables](DELIVERABLES.md) and [tracked Git export manifest](GITHUB_EXPORT_MANIFEST.json)
+Private source `ca6290523fb8d1c07b00e0491e42c2c037a3eb36`; deployment `appgdep_6acbfa0430248191809d2cfba2c4087d`, succeeded.
+Root reports 147 passing Wanda engineering tests, 29 passing QNN Playground tests and passing TypeScript checks. Read-only frozen verification passed for 11 files, 7 source contracts and 12 pixel fixtures. The 147-test suite is retained game/integrity coverage; it does not establish complete coverage of the new playground UI. Actual new-interface coverage is limited to the supplied local and hosted observations below. These checks are not a new recognition benchmark.
+
+- [Current handoff](WANDA_HANDOFF.md), [current QA](WANDA_ITERATION22_QA.md) and [exact private receipt](publication-receipt.json)
+- [Wanda quick start](WANDA_QUICKSTART.md), [deliverables](DELIVERABLES.md) and [tracked Git export manifest](GITHUB_EXPORT_MANIFEST.json)
 - Local private Git receipt: `GITHUB_SYNC_RECEIPT.json` (excluded from Git)
-- [Preserved QNN playground](qnn-playground/README.md), merged independently in PR #1; source only, without installation/build/runtime/scientific validation in this iteration
-
-The default Wanda detector is a genuinely trained, simulated four-qubit QNN.
-Classical image descriptors and supplied scale enter its saved circuit and
-readout. Classical thresholding compiles accepted addresses for a separate
-12-qubit Grover location register. The soft heat field is a display; the lesson
-shows exact signed amplitudes and probabilities separately.
-
-The historical native 298/300 recognition result concerns the known Wanda PNG,
-five original unseeded backgrounds, supplied scales and fully visible targets.
-The matched classical baseline scored 299/300. Retained failures, browser/native
-differences and the later curated Park lookalike have their own documented
-scope. No arbitrary-person recognition or end-to-end quantum runtime advantage
-is established.
 
 ## QNN Playground
 
-[`qnn-playground/`](qnn-playground/README.md) lays Where’s Wanda’s pipeline out
-like the TensorFlow Neural Network Playground: window features → the 4-qubit,
-4-layer circuit → readout → marked addresses → Grover search. It is built from
-the Wanda site’s own artwork, scene catalog, compositor, feature extractor,
-scan, threshold, ground-truth rule and Grover simulator. Visitors can train the
-circuit live with the site’s recipe and objective, or load its exact weights.
-Its tests check that, with those weights, its scores match the site’s to about
-1e-15 and its scan gives the site’s `scanQNN()` scores and marks. It changes
-nothing in either demo. [Development log](qnn-playground/DEVLOG.md).
+Use **Look under the hood** on the Wanda page to reach the inline playground.
+Pick a world, watch or restart its live training, inspect scores/marks, then run
+the search. **Show all details** exposes the circuit, readout and search settings.
+The playground creates its own scene experiment; it is independent of the top
+game's current placement/search. Live accuracy may contain overlapping training
+and evaluation windows/pairs and is an illustrative check, not a new benchmark.
+Everything runs in a classical simulator; the default compiled oracle supplies
+no end-to-end quantum speedup.
+
+The original latest 32-file source is preserved in
+[qnn-playground/README.md](qnn-playground/README.md), with its Apache LICENSE/NOTICE.
+Its Git source is `d7a6a02ea8b34e50842820a5d0fa42208f04ec94`, subtree `e9082497a54f7fb6ca3a8a3d735a45cf52e62a19`. The website uses
+a separate red/light adaptation. The removed old underhood interface is historical.
+
+The frozen standing Wanda detector, scene artwork, threshold and recognition pipeline remain unchanged. Historical native QNN 298/300 versus logistic 299/300 applies to the known Wanda PNG, supplied sizes, fully visible targets and five original unseeded background identities. The browser diagnostic's 15/15 target cases versus native 13/15 retains its separate original scope. Park's 40px/46px false acceptances, browser/native differences and iteration 19's arbitrary-drop abstention remain recorded failures. Live playground training does not refit or replace that frozen model and does not rerun its reserved evaluation.
 
 ## Repository contents
 

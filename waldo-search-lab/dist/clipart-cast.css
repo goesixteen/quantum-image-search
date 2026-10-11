@@ -1,0 +1,32 @@
+/* Three compact static casts stand on visible object edges in the game only. */
+.wanda-site .clipart-cast-host { position: relative; }
+.wanda-site .world-picker.clipart-cast-worlds { padding-bottom: 24px; }
+.wanda-site #find.clipart-cast-find { margin-top: 24px; }
+@media (max-width: 650px) {
+  .wanda-site .play-menu.clipart-cast-menu { margin-top: 20px; }
+}
+.wanda-site .clipart-cast-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  user-select: none;
+  contain: layout style;
+}
+.wanda-site .clipart-cast-person {
+  position: absolute;
+  display: block;
+  pointer-events: none;
+  overflow: hidden;
+}
+.wanda-site .clipart-cast-person img {
+  display: block;
+  width: 100%;
+  height: var(--cast-image-height);
+  object-fit: contain;
+  max-width: none;
+  max-height: none;
+  transform: scaleX(var(--cast-facing, 1));
+  pointer-events: none;
+  user-select: none;
+}

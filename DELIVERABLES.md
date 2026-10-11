@@ -1,26 +1,30 @@
 # Quantum image-search deliverables
 
-Current review: **iteration 20, dense pedestrian entry motion**.
-[Open Quantum Vision: Where's Wanda?](https://quantum-crowd-search.syrupyspool2.chatgpt.site). The requested title and
-question subheading remain. Dense overlapping red, yellow and blue pictogram
-crowds disperse on viewport entry with linear timing at a constant 28 CSS px/s,
-settling at text-safe edges/corners. Wanda placement/search and the connected
-three-stage explanation remain.
+Current review: **iteration 22, inline red/light QNN Playground**.
+[Open Quantum Vision: Where's Wanda?](https://quantum-crowd-search.syrupyspool2.chatgpt.site). The latest playground
+replaces the entire old under-the-hood section on the same page. The accepted
+top styling, ten static people in 4/3/3 clusters, empty five-scene welcome and
+hanging Wanda pickup remain. No decorative people appear under the hood.
 
-Standalone artwork: [Red PNG](pastel-red-pedestrian.png), [Yellow PNG](pastel-yellow-pedestrian.png), [Blue PNG](pastel-blue-pedestrian.png).
-[Handoff](WANDA_HANDOFF.md), [current QA](WANDA_ITERATION20_DENSE_QA.md),
-[exact receipt](publication-receipt.json), [quick start](WANDA_QUICKSTART.md) and
+Entire former under-the-hood interface replaced inline by the latest Git QNN playground, with red accents and light panels; accepted picture-puzzle top styling and compact 4/3/3 clip-art groups preserved.
+
+[Handoff](WANDA_HANDOFF.md), [current QA](WANDA_ITERATION22_QA.md),
+[exact receipt](publication-receipt.json), [quick start](WANDA_QUICKSTART.md),
+[original QNN source documentation](qnn-playground/README.md) and
 [tracked Git export manifest](GITHUB_EXPORT_MANIFEST.json).
 Local private Git receipt: `GITHUB_SYNC_RECEIPT.json` (excluded from Git).
 
-Current source `66f66be39e50df251ffb7345486b9b006c7b25e4`; private deployment `appgdep_6acbe87168448191aa180c8f25ef0e4e`
-succeeded. All 147 Node engineering tests were actually rerun on the final dense pedestrian revision and passed. The read-only frozen verifier was actually rerun on that revision and passed: 11 files, 7 source contracts and 12 pixel fixtures. The model SHA256 is unchanged. These are engineering/integrity checks, not a new recognition benchmark.
-The three unchanged PNGs remain outside inference. The independent PR #1 merge
-at `032615659c5967df8f025b63bdd610954d21b3ea` and its 29 playground source files
-are preserved without installation/build/runtime/scientific validation claims.
-The schoolbus deployment, scientific details, prior failures and owner-private
-Site identities remain. Previous staggered-static records are historical at
-`archive/iteration20-staggered-static`. Nothing was submitted; zero agent usage resets were consumed.
+Source `ca6290523fb8d1c07b00e0491e42c2c037a3eb36`; private deployment `appgdep_6acbfa0430248191809d2cfba2c4087d`, succeeded.
+Root reports 147 passing Wanda engineering tests, 29 passing QNN Playground tests and passing TypeScript checks. Read-only frozen verification passed for 11 files, 7 source contracts and 12 pixel fixtures. The 147-test suite is retained game/integrity coverage; it does not establish complete coverage of the new playground UI. Actual new-interface coverage is limited to the supplied local and hosted observations below. These checks are not a new recognition benchmark.
+The live playground renders an independent scene; its illustrative accuracy can
+overlap training/evaluation windows and pairs. It is not a fresh recognition
+benchmark. The frozen standing Wanda detector, scene artwork, threshold and recognition pipeline remain unchanged. Historical native QNN 298/300 versus logistic 299/300 applies to the known Wanda PNG, supplied sizes, fully visible targets and five original unseeded background identities. The browser diagnostic's 15/15 target cases versus native 13/15 retains its separate original scope. Park's 40px/46px false acceptances, browser/native differences and iteration 19's arbitrary-drop abstention remain recorded failures. Live playground training does not refit or replace that frozen model and does not rerun its reserved evaluation.
+
+The exact 32-file imported source and original licenses are preserved separately
+from the adaptation. Original cast provenance/hashes, historical standalone
+artwork, schoolbus deployment, both private Site identities and prior failures
+remain. Iteration-21 records/proofs are historical at `archive/iteration21-styling`.
+No contest/public-material submission, purchase or usage reset occurred.
 
 ## Historical increments
 

@@ -1,0 +1,132 @@
+/* Reversible picture-puzzle book styling. Scoped to the game, with no canvas padding. */
+.wanda-site #experiment {
+  --ink: #403128;
+  --muted: #796759;
+  --line: #ddc8ad;
+  --card: #fff9ed;
+  background-color: #faf2e2;
+  background-image:
+    radial-gradient(#a67b5311 .65px, transparent .8px),
+    linear-gradient(125deg, #fffbf0cc 0%, #f7eacdcc 100%);
+  background-size: 7px 7px, 100% 100%;
+  border-radius: 22px;
+}
+
+.wanda-site #experiment .play-heading .title-kicker {
+  color: #866047;
+  font-weight: 700;
+  letter-spacing: -.7px;
+}
+.wanda-site #experiment .play-heading .title-question {
+  color: #403128;
+  text-shadow: 0 2px 0 #fff9ee;
+}
+.wanda-site #experiment .play-heading h1 em { color: var(--orange); }
+.wanda-site #experiment .play-heading .play-tag { color: #746355; }
+.wanda-site #experiment .menu-step { color: #a95443; }
+
+/* Keep all five illustrated scene choices in their existing grid. */
+.wanda-site #experiment .scene-thumb {
+  background: #fffaf0;
+  border: 1px solid #dbc4a8;
+  border-radius: 10px;
+  padding: 4px;
+  box-shadow: 2px 3px 0 #b69a7738;
+  color: #6d5647;
+}
+.wanda-site #experiment .scene-thumb img {
+  border: 0;
+  border-radius: 6px;
+  box-shadow: inset 0 0 0 1px #66493615;
+}
+.wanda-site #experiment .scene-thumb span {
+  color: inherit;
+  font-weight: 700;
+  margin-top: 6px;
+  line-height: 1.35;
+}
+.wanda-site #experiment .scene-thumb[aria-pressed="true"] {
+  background: #fbe5d6;
+  border-color: #bf5c49;
+  box-shadow: 0 0 0 2px #bf5c4933, 2px 3px 0 #a74d3838;
+  color: #924339;
+}
+.wanda-site #experiment .scene-thumb:hover {
+  border-color: #c38e6c;
+  box-shadow: 2px 4px 0 #b58b684f;
+}
+.wanda-site #experiment .scene-thumb:hover img { transform: none; }
+
+/* The stronger frame is painted outside its original one-pixel border. */
+.wanda-site #experiment .play-board .scene-frame {
+  padding: 0;
+  border-width: 1px;
+  border-color: #6f5140;
+  background: #fff6e5;
+  box-shadow:
+    0 0 0 3px #fff6e5,
+    0 0 0 5px #caa980,
+    0 10px 0 -2px #a88a6652,
+    0 18px 30px #5f3a241f;
+}
+
+.wanda-site #experiment .play-menu {
+  background-color: #fffaf0;
+  background-image: radial-gradient(#a77c5310 .65px, transparent .85px);
+  background-size: 8px 8px;
+  border-color: #cfad8b;
+  border-radius: 16px;
+  box-shadow: 7px 8px 0 #bc71512b, 0 12px 25px #6143300d;
+}
+.wanda-site #experiment .wanda-tray { border-bottom-color: #ddc6aa; }
+.wanda-site #experiment .wanda-tray:not(.is-placed) #wanda-greeting {
+  color: #a74c40;
+  background: #fffdf5;
+  border-color: #bd6450;
+  box-shadow: 3px 3px 0 #be755522;
+}
+.wanda-site #experiment .wanda-tray:not(.is-placed) .wanda-speech-bubble::after {
+  background: #fffdf5;
+  border-color: #bd6450;
+}
+.wanda-site #experiment .wanda-tray:not(.is-placed) .tray-portrait {
+  background: repeating-linear-gradient(135deg, #faf0df 0 8px, #fff8e9 8px 16px);
+  border-color: #d6b994;
+}
+.wanda-site #experiment .wanda-invitation { color: #735b4c; }
+.wanda-site #experiment .wanda-controls-help { color: #8b7563; }
+
+.wanda-site #experiment #find {
+  background: var(--orange);
+  color: #fffaf0;
+  border-radius: 9px;
+  box-shadow: 0 5px 0 #8d3c31, 0 7px 12px #9a4e3020;
+}
+.wanda-site #experiment #find:hover:not(:disabled) { background: #a8463c; }
+.wanda-site #experiment .play-actions .button-subtle {
+  color: #735445;
+  background: #f7edda;
+  border: 1px solid #ddc7aa;
+  border-radius: 7px;
+  padding: 6px 8px;
+}
+.wanda-site #experiment .play-actions .button-subtle:hover:not(:disabled) {
+  background: #f0dfc7;
+  color: #9c4a3d;
+}
+.wanda-site #experiment .hood-link { color: #9a4a3f; }
+.wanda-site #experiment .play-result h2 { color: #674437; }
+.wanda-site #experiment .demo-kind { color: #9b7760; }
+.wanda-site #experiment :is(button, canvas):focus-visible {
+  outline: 3px solid #a96c38;
+  outline-offset: 4px;
+}
+
+@media (max-width: 650px) {
+  .wanda-site #experiment { border-radius: 16px; }
+  .wanda-site #experiment .scene-thumb { padding: 3px; border-radius: 8px; }
+  .wanda-site #experiment .scene-thumb img { border-radius: 5px; }
+  .wanda-site #experiment .scene-thumb span { margin-top: 5px; }
+  .wanda-site #experiment .play-menu { box-shadow: 5px 6px 0 #bc71512b; }
+  .wanda-site #experiment .play-actions .button-subtle { padding: 6px 5px; }
+}

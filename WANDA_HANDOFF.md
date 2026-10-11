@@ -1,61 +1,49 @@
-# Quantum Vision: Where's Wanda? — iteration 20
+# Quantum Vision: Where's Wanda? — iteration 22
 
-[Open the owner-private website](https://quantum-crowd-search.syrupyspool2.chatgpt.site). The heading remains
-**Quantum Vision: Where's Wanda?** and the subheading remains
-**Can you find Wanda using quantum crowd search?** Dense, overlapping groups of
-the existing red, yellow and blue pedestrian PNGs decorate points of interest.
-On viewport entry they disperse linearly at a constant **28 CSS px/s**, settling
-at text-safe edges and corners. This latest explicit motion request supersedes
-the earlier static-only instruction; the rejected photo-cutout theme remains historical.
+[Open the owner-private website](https://quantum-crowd-search.syrupyspool2.chatgpt.site). The entire old under-the-hood section has been replaced by the latest QNN Playground, inline on the same page. Its interface is red/light, with #d24e45 matching Find Wanda, a white/red striped transition and readable light panels. Current use follows the inline playground; the removed old teaching interface is preserved only as historical evidence.
 
-The empty welcome, five map choices, hanging Wanda pickup and connected
-Image + QNN → Grover → Measurement lesson remain. The decorative PNGs stay
-outside the image analyzed by the detector. Standalone copies: [Red PNG](pastel-red-pedestrian.png), [Yellow PNG](pastel-yellow-pedestrian.png), [Blue PNG](pastel-blue-pedestrian.png).
+Entire former under-the-hood interface replaced inline by the latest Git QNN playground, with red accents and light panels; accepted picture-puzzle top styling and compact 4/3/3 clip-art groups preserved.
 
-Current private source: `66f66be39e50df251ffb7345486b9b006c7b25e4`. Version: `appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_c42dec371de081919ce0d561f713881f`.
-Deployment: `appgdep_6acbe87168448191aa180c8f25ef0e4e`, succeeded. The schoolbus deployment and
-both original owner-private Site identities remain.
+The accepted top styling remains: warm paper texture, illustrated scene cards, painted map frame and soft menu shadows. Ten original clip-art people appear once each in static top-right edge clusters: map frame four, Wanda card three and Find button three. No people decorate the heading, world picker, sides, bottom or technical section. The five-scene empty welcome, speech bubble and hanging Wanda pickup remain.
 
-All 147 Node engineering tests were actually rerun on the final dense pedestrian revision and passed. The read-only frozen verifier was actually rerun on that revision and passed: 11 files, 7 source contracts and 12 pixel fixtures. The model SHA256 is unchanged. These are engineering/integrity checks, not a new recognition benchmark.
-Final module syntax and Git whitespace checks passed (ordinary CRLF conversion notices only). The three unchanged 1145×1374 RGBA PNGs retain transparent/opaque alpha and exact website/output byte identity.
+Current source `ca6290523fb8d1c07b00e0491e42c2c037a3eb36`; version `appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_1172efc409fc8191a156d9883d0c6a1f`; deployment
+`appgdep_6acbfa0430248191809d2cfba2c4087d`, succeeded. The original schoolbus deployment and both
+owner-private Site identities remain. Original playground source: `d7a6a02ea8b34e50842820a5d0fa42208f04ec94`, subtree `e9082497a54f7fb6ca3a8a3d735a45cf52e62a19`, 32 files in `qnn-playground`, preserved separately from the inline red/light adaptation. Apache LICENSE and NOTICE remain. See [QNN Playground source documentation](qnn-playground/README.md).
 
-The following are the supplied actual final motion/browser observations:
+Root reports 147 passing Wanda engineering tests, 29 passing QNN Playground tests and passing TypeScript checks. Read-only frozen verification passed for 11 files, 7 source contracts and 12 pixel fixtures. The 147-test suite is retained game/integrity coverage; it does not establish complete coverage of the new playground UI. Actual new-interface coverage is limited to the supplied local and hosted observations below. These checks are not a new recognition benchmark.
+static_checks: 101 direct game bindings present; no duplicate light-DOM IDs, no old explainer markup, no iframes; only app.js/qnn-playground.js/clipart-cast.js loaded.
+build: Rebuilt the inline assets from the 32 original source files using pinned official dependencies; integration syntax and static checks passed.
 
-- Source uses a seeded compact ellipse, stable varied size/depth/facing, and WAAPI straight translations with easing linear. Every duration is the unrounded Euclidean route distance divided by28 CSS px/s; durations are not clamped. Short button routes can finish below3s and long desktop flanks exceed7s.
-- Three actual rendered desktop samples across189ms showed six different people advancing along their routes at approximately27.8px/s overall, consistent with28px/s and frame sampling. The samples are a short visual-motion check, not a long-duration performance benchmark.
-- Viewport entry starts at15% visibility; a full exit parks and enables replay. Actual navigation away/back changed the main heading from parked to spreading. Resize and the site's Reduce animations checkbox park the groups.
-- Source review found coherent OS reduced-motion, background-first entry and bfcache cleanup. OS preference toggling, background restoration and actual bfcache navigation were not independently exercised.
-- Nine decorative groups allocate190 desktop figures: main48, underhood36, stage16, Find18, other controls14–16. Hidden stage controls remain hidden; these are not190 simultaneous onscreen people. Initial main crowd visibly overlapped, then spread to clear upper perches and a right flank.
-- Actual390/320 CSS-pixel viewports retain one row of five map thumbnails. Document scroll widths375/305px during ordinary preview; at320 no active visible figure exceeded the viewport. Resize parks motion. Actual390×844 JPEG proof is wanda-pedestrians-dense-phone-proof.jpg.
-- The site's Reduce animations checkbox parked all nine groups immediately. Unchecking, fully exiting and returning to Play restarted the main crowd.
-- After the complete two-Enter keyboard placement, clicking the decorated Find control returned Found Wanda / Measured point420,300. Switching to the Grover tab updated the stage title to Signs prepare interference. and preserved the decoration.
-- Local warning/error console was empty. The existing preview server was reused and left running.
-- Exact published source66f66be39e50df251ffb7345486b9b006c7b25e4 deployed successfully to the original owner-private Site. Actual DOM shows main48/underhood36/stage16/Find18 and speed28, with the main crowd spreading on load.
-- Saved initial dense entry and dispersed layout JPEGs are actual hosted renders. A full-page clipped screenshot temporarily resizes layout and parks the animation, so the initial-motion proof uses an ordinary viewport capture.
-- Actual published decorated Find returned Found Wanda / Measured point420,300 after complete keyboard placement.
-- Actual navigation to Look under the hood showed its36-person crowd spreading; selecting Grover updated the stage title. Reduce animations produced zero spreading groups. Returning to Play replayed the main crowd.
-- Hosted warning/error console was empty. Start over and Play restored the empty Festival welcome; the hosted tab remains available as the deliverable.
+Actual final local and hosted observations:
 
-See [current QA](WANDA_ITERATION20_DENSE_QA.md), [the exact publication receipt](publication-receipt.json)
-and final hosted proofs: [wanda-pedestrians-dense-entry-hosted-proof](wanda-pedestrians-dense-entry-hosted-proof.jpg), [wanda-pedestrians-dense-dispersed-hosted-proof](wanda-pedestrians-dense-dispersed-hosted-proof.jpg), [wanda-pedestrians-dense-found-hosted-proof](wanda-pedestrians-dense-found-hosted-proof.jpg), [wanda-pedestrians-dense-underhood-hosted-proof](wanda-pedestrians-dense-underhood-hosted-proof.jpg).
+- Inline playground reaches ready and trains for 120 rounds; five worlds visible.
+- Actual guided Grover measurement found address 2420 after 50 rounds; saved checkpoint loaded with score 0.988 and threshold 0.9056472752971427.
+- Advanced settings changed to no entanglement, quantum-only readout and first-layer encoding; guided mode restored CNOT, hybrid readout, every-layer encoding and exact shots.
+- Phone viewport 390x844: document scrollWidth383, bounded two-column guide cards, in-flow circuit before output and responsive plot viewBoxes. Park scene selection and Run the search control work.
+- Original game after integration: Found Wanda at measured point420,300; removing Wanda returns no match.
+- Published source ca6290523fb8d1c07b00e0491e42c2c037a3eb36; native deployment succeeded, existing owner-private custom audience1/0/0 preserved.
+- Hosted page has inline mount and no old explainer/iframe; playground ready after 120 rounds; Find and lower chapter both RGB210,78,69.
+- Saved demo weights load on the hosted page; one accepted address; search finishes at region2420 with marked probability100.0% after50 rounds.
 
-Iteration 20 history is preserved: rejected photo-cutout source
-`74e899459f013bdbd3552ad40da7081b1cb58153`, title-only rollback `f2024f7180c8c444e558d558bfb34e6eb2994baa`,
-initial static rows `9149477da30b6949473acaa08b06dc1ac6badbd3` and staggered static source
-`e40f28f25ca3876c06bf325ddf72a315cfc47e6c`. The latter's exact records/proofs are in
-`archive/iteration20-staggered-static`; rejected records remain in `archive/iteration20-rejected-crowd-theme`.
+[Current QA](WANDA_ITERATION22_QA.md), [exact receipt](publication-receipt.json),
+and fresh hosted proofs: [wanda22-hosted-playground](wanda22-hosted-playground.jpg), [wanda22-hosted-top](wanda22-hosted-top.jpg), [wanda22-hosted-overview](wanda22-hosted-overview.jpg).
 
-The independent PR #1 merge at `032615659c5967df8f025b63bdd610954d21b3ea` and
-its 29 `qnn-playground` source files remain preserved. That project was not
-installed, built, runtime tested or scientifically validated in this iteration.
-The local private Git receipt is `GITHUB_SYNC_RECEIPT.json` (excluded from Git). The tracked [Git export manifest](GITHUB_EXPORT_MANIFEST.json) records the export scope; website source and private Git commits have separate histories.
+Scientific limits for the inline playground:
 
-Historical 298/300 QNN versus 299/300 classical results retain their original
-known-target, supplied-size, unseeded native-renderer scope. Park's 40px/46px
-false acceptances, browser/native differences and iteration 19's arbitrary-drop
-abstention remain recorded failures. No retraining or reserved evaluation occurred.
+- Live window evaluation is illustrative: labelled windows and ranking pairs are generated together and then split as individual entries. Evaluation windows or related same-composite examples may overlap training pairs; background mining also occurs before that split. Do not present this as independent held-out recognition accuracy.
+- The playground renders and trains on its own scene/placement. It is an independent experiment and does not explain the exact top game's current image/search unless an explicit bridge is implemented and verified.
+- The default list oracle scores windows classically before amplification, so it demonstrates Grover behavior without an end-to-end speedup. Coherent mode simulates a different quantum-only readout and still uses classically prepared/selected window features; efficient coherent input loading is not implemented.
+- Live logistic/CNOT/no-entangler comparisons are illustrative and use different thresholds/optimization schedules; they are not a controlled performance benchmark or evidence of quantum advantage.
+- Random live-training initializations can yield no accepted addresses after120 rounds. The saved demo checkpoint remains available via Show all details→Load demo weights. The frozen game's inference is independent and unchanged.
 
-Read this handoff, WANDA_ITERATION_BRIEF.md and the exact receipts before continuing.
-Preserve the dense constant-speed motion, current interaction, optional science
-details and frozen evidence. Zero agent usage resets were consumed. Nothing
-has been submitted or published as public contest material.
+The frozen standing Wanda detector, scene artwork, threshold and recognition pipeline remain unchanged. Historical native QNN 298/300 versus logistic 299/300 applies to the known Wanda PNG, supplied sizes, fully visible targets and five original unseeded background identities. The browser diagnostic's 15/15 target cases versus native 13/15 retains its separate original scope. Park's 40px/46px false acceptances, browser/native differences and iteration 19's arbitrary-drop abstention remain recorded failures. Live playground training does not refit or replace that frozen model and does not rerun its reserved evaluation.
+
+The iteration-21 styling receipt, QA, handoff, brief and proofs remain in
+`archive/iteration21-styling`. Earlier failures and decorative revision archives remain.
+The local private Git receipt is `GITHUB_SYNC_RECEIPT.json` (excluded from Git). The tracked [Git export manifest](GITHUB_EXPORT_MANIFEST.json) records export scope. A website publication and a private Git synchronization have separate histories.
+
+Continue from the inline red/light playground and current top styling. Do not
+restore the removed old section, old stage tabs, dark theme or rejected people
+themes. No contest submission, public-material publication, purchase or account
+reset occurred. The ledger's existing usage observation is preserved; zero
+agent resets consumed and the remaining reset stays reserved for the user.

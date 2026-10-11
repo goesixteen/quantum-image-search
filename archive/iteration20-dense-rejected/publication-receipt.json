@@ -1,0 +1,232 @@
+{
+  "recorded_at": "2026-10-11T19:53:37.109235+00:00",
+  "iteration": 20,
+  "work_step": "dense-pictogram-crowds-constant-speed-entry-dispersal",
+  "bus": {
+    "project_id": "appgprj_6ac9e65f76c48191b8d53784212b5f4c",
+    "commit_sha": "2f616c21b832d8164b06c60a7ffc66499c20290f",
+    "deployment_id": "appgdep_6aca06d97cf4819191d7cd98c5a80355",
+    "version_id": "appgprj_6ac9e65f76c48191b8d53784212b5f4c~appgver_3d2d9fda24e08191bfc638a1664a844a",
+    "status": "succeeded",
+    "url": "https://bus-search-quantum-lab.syrupyspool2.chatgpt.site",
+    "audience": "owner-private"
+  },
+  "crowd": {
+    "project_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1",
+    "commit_sha": "66f66be39e50df251ffb7345486b9b006c7b25e4",
+    "deployment_id": "appgdep_6acbe87168448191aa180c8f25ef0e4e",
+    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_c42dec371de081919ce0d561f713881f",
+    "status": "succeeded",
+    "url": "https://quantum-crowd-search.syrupyspool2.chatgpt.site",
+    "audience": "owner-private"
+  },
+  "previous_crowd_revision": {
+    "project_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1",
+    "commit_sha": "e40f28f25ca3876c06bf325ddf72a315cfc47e6c",
+    "deployment_id": "appgdep_6acbe34696348191b0a2a94a7547952a",
+    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_f5599442fb4c8191ba5c1afb3b15b3e6",
+    "status": "succeeded",
+    "url": "https://quantum-crowd-search.syrupyspool2.chatgpt.site",
+    "audience": "owner-private"
+  },
+  "previous_iteration19_revision": {
+    "project_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1",
+    "commit_sha": "002574d248d81237e542b0c954185213eda9208a",
+    "deployment_id": "appgdep_6acbd4091a308191aa1ede8ca65c2675",
+    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_5daa63b3a8bc819181549750493a7a87",
+    "status": "succeeded",
+    "url": "https://quantum-crowd-search.syrupyspool2.chatgpt.site",
+    "audience": "owner-private"
+  },
+  "rejected_iteration20_revision": {
+    "commit_sha": "74e899459f013bdbd3552ad40da7081b1cb58153",
+    "deployment_id": "appgdep_6acbdb31a5f08191ae544a76c13f0e41",
+    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_74f24397bde8819185367dcffc4c3a05",
+    "status": "succeeded",
+    "historical_only": true,
+    "reason": "The user rejected the animated walking photo-cutout crowd theme. Later pictogram entry motion does not restore that theme.",
+    "archive": "archive/iteration20-rejected-crowd-theme"
+  },
+  "intermediate_iteration20_rollback": {
+    "commit_sha": "f2024f7180c8c444e558d558bfb34e6eb2994baa",
+    "deployment_id": "appgdep_6acbdd6ce8048191b7b7271c71cb27ab",
+    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_33ce12f62e148191b8164a4bc315c25b",
+    "status": "succeeded",
+    "historical_only": true,
+    "reason": "Intermediate title-only rollback, subsequently replaced by the requested pictogram theme."
+  },
+  "previous_static_revision": {
+    "commit_sha": "9149477da30b6949473acaa08b06dc1ac6badbd3",
+    "deployment_id": "appgdep_6acbe04779708191b2f5ecaa3d4386b4",
+    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_49a72dde18f08191b5dd521c85a40b9a",
+    "status": "succeeded",
+    "historical_only": true,
+    "reason": "Initial static rows, superseded first by varied heights/facing and corner/side placement, then by the authorized dense entry-motion refinement."
+  },
+  "staggered_static_revision": {
+    "project_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1",
+    "commit_sha": "e40f28f25ca3876c06bf325ddf72a315cfc47e6c",
+    "deployment_id": "appgdep_6acbe34696348191b0a2a94a7547952a",
+    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_f5599442fb4c8191ba5c1afb3b15b3e6",
+    "status": "succeeded",
+    "url": "https://quantum-crowd-search.syrupyspool2.chatgpt.site",
+    "audience": "owner-private",
+    "historical_only": true,
+    "reason": "Completed staggered static pictogram revision, superseded by the user-requested dense crowds and constant-speed viewport-entry dispersal.",
+    "archive": "archive/iteration20-staggered-static",
+    "qa_evidence": "archive/iteration20-staggered-static/WANDA_ITERATION20_STATIC_QA.md"
+  },
+  "submission": {
+    "status": "not-submitted",
+    "instruction": "Do not submit any work. Keep iterating improvements.",
+    "public_materials_published": false
+  },
+  "browser_preview": "Quantum Vision: Where's Wanda? with dense overlapping red, yellow and blue pictogram crowds that disperse on viewport entry at constant 28 CSS px/s and settle at text-safe edges/corners.",
+  "hosted_browser_proofs": [
+    "wanda-pedestrians-dense-entry-hosted-proof.jpg",
+    "wanda-pedestrians-dense-dispersed-hosted-proof.jpg",
+    "wanda-pedestrians-dense-found-hosted-proof.jpg",
+    "wanda-pedestrians-dense-underhood-hosted-proof.jpg"
+  ],
+  "owner_access_verified": {
+    "role": "owner",
+    "mode": "custom",
+    "allowed_users": 1,
+    "allowed_groups": 0,
+    "external_visitors": 0
+  },
+  "current_qa": {
+    "node_tests_passed": 147,
+    "node_tests_rerun_for_final": true,
+    "frozen_verifier_rerun_for_final": true,
+    "engineering_test_scope": "All 147 Node engineering tests were actually rerun on the final dense pedestrian revision and passed. The read-only frozen verifier was actually rerun on that revision and passed: 11 files, 7 source contracts and 12 pixel fixtures. The model SHA256 is unchanged. These are engineering/integrity checks, not a new recognition benchmark.",
+    "frozen_model_sha256": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88",
+    "frozen_verifier": {
+      "passed": true,
+      "frozen_files": 11,
+      "frozen_sources": 7,
+      "pixel_fixtures": 12
+    },
+    "static_checks": "Final module syntax and Git whitespace checks passed (ordinary CRLF conversion notices only). The three unchanged 1145\u00d71374 RGBA PNGs retain transparent/opaque alpha and exact website/output byte identity.",
+    "motion_checks": [
+      "Source uses a seeded compact ellipse, stable varied size/depth/facing, and WAAPI straight translations with easing linear. Every duration is the unrounded Euclidean route distance divided by28 CSS px/s; durations are not clamped. Short button routes can finish below3s and long desktop flanks exceed7s.",
+      "Three actual rendered desktop samples across189ms showed six different people advancing along their routes at approximately27.8px/s overall, consistent with28px/s and frame sampling. The samples are a short visual-motion check, not a long-duration performance benchmark.",
+      "Viewport entry starts at15% visibility; a full exit parks and enables replay. Actual navigation away/back changed the main heading from parked to spreading. Resize and the site's Reduce animations checkbox park the groups.",
+      "Source review found coherent OS reduced-motion, background-first entry and bfcache cleanup. OS preference toggling, background restoration and actual bfcache navigation were not independently exercised."
+    ],
+    "local_checks": [
+      "Nine decorative groups allocate190 desktop figures: main48, underhood36, stage16, Find18, other controls14\u201316. Hidden stage controls remain hidden; these are not190 simultaneous onscreen people. Initial main crowd visibly overlapped, then spread to clear upper perches and a right flank.",
+      "Actual390/320 CSS-pixel viewports retain one row of five map thumbnails. Document scroll widths375/305px during ordinary preview; at320 no active visible figure exceeded the viewport. Resize parks motion. Actual390\u00d7844 JPEG proof is wanda-pedestrians-dense-phone-proof.jpg.",
+      "The site's Reduce animations checkbox parked all nine groups immediately. Unchecking, fully exiting and returning to Play restarted the main crowd.",
+      "After the complete two-Enter keyboard placement, clicking the decorated Find control returned Found Wanda / Measured point420,300. Switching to the Grover tab updated the stage title to Signs prepare interference. and preserved the decoration.",
+      "Local warning/error console was empty. The existing preview server was reused and left running."
+    ],
+    "hosted_checks": [
+      "Exact published source66f66be39e50df251ffb7345486b9b006c7b25e4 deployed successfully to the original owner-private Site. Actual DOM shows main48/underhood36/stage16/Find18 and speed28, with the main crowd spreading on load.",
+      "Saved loaded replay-entry and dispersed-layout JPEGs are actual hosted renders. A full-page clipped screenshot temporarily resizes layout and parks the animation, so the motion proof uses an ordinary viewport capture.",
+      "Actual published decorated Find returned Found Wanda / Measured point420,300 after complete keyboard placement.",
+      "Actual navigation to Look under the hood showed its36-person crowd spreading; selecting Grover updated the stage title. Reduce animations produced zero spreading groups. Returning to Play replayed the main crowd.",
+      "Hosted warning/error console was empty. Start over and Play restored the empty Festival welcome; the hosted tab remains available as the deliverable."
+    ],
+    "requested_motion_behavior": {
+      "source": "Latest explicit human steering; supersedes the earlier static-only direction.",
+      "artwork": "The same three red, yellow and blue pictogram PNGs, with dense overlapping compact initial groups at points of interest.",
+      "trigger": "Viewport entry",
+      "speed_css_px_per_second": 28,
+      "timing": "linear",
+      "destination": "Text-safe edges and corners",
+      "scientific_scope": "Decorations remain outside the analyzed canvas and inference."
+    },
+    "scientific_scope": "Decorative interface motion only. The trained standing target, five scene images, model, threshold, features and quantum math are unchanged. Decorative pedestrians remain outside the analyzed canvas. No training, reserved evaluation or new recognition accuracy was produced.",
+    "retained_limits": [
+      "Physical touch/pen, multi-touch, OS motion preference and unfamiliar users not directly tested",
+      "Park40/46 lookalike false acceptances and native/browser differences retained",
+      "No arbitrary-person, unknown-size, occlusion, hardware or end-to-end speedup claim"
+    ],
+    "historical_static_attempts_repairs": [
+      "The user rejected the walking cutout theme. It was removed in the intermediate rollback; the current revision uses static red, yellow and blue pictogram pedestrians instead.",
+      "Remote main independently merged PR #1 at 032615659c5967df8f025b63bdd610954d21b3ea. Its 29 qnn-playground files were preserved as source; no installation, build, runtime or scientific validation of that project is claimed.",
+      "The first generated light-red pictogram had stray edge pixels; a cleanup edit and requested color variants were produced with ImageGen. Original candidates are archived; final PNG copies are intact.",
+      "A read-only alpha probe attempted SciPy, which was unavailable. Final mode/dimension/alpha-extrema and byte-identity checks used installed Pillow instead, without raster editing.",
+      "Two documentation patches used stale contexts and were rejected; correct contexts were then applied. Application tests and source publication were unaffected.",
+      "The first static rows were superseded by the user-requested staggered heights, varied facing and corner/side placement. Earlier successful private source9149477 remains historical, not current."
+    ],
+    "attempts_repairs": [
+      "The rejected animated photo-cutout theme was removed by the title-only rollback. The latest explicit user request authorizes motion of the retained pictograms and supersedes the intervening static-only instruction.",
+      "Initial static rows and the later staggered static revision are historical. The complete staggered-static records and proofs are preserved in archive/iteration20-staggered-static.",
+      "The Git export README-link guard failed because GITHUB_SYNC_RECEIPT.json is local-only and excluded from Git. Generated records now render that local receipt as a literal filename and link the tracked GITHUB_EXPORT_MANIFEST.json.",
+      "Remote main independently merged PR #1 at 032615659c5967df8f025b63bdd610954d21b3ea. Its 29 qnn-playground files are preserved as source; no installation, build, runtime or scientific validation of that project is claimed.",
+      "First local search check armed the tray but omitted scene Enter; the unplaced/empty scene correctly returned No match. Correcting the interaction to two Enter presses returned Found at420,300. This was a QA interaction omission, not a recognition regression.",
+      "An exact navigation locator incorrectly included the arrow in its accessible name; inspection showed the name Look under the hood, and the corrected locator succeeded. A later Found heading wait also used the wrong exact label; direct result observation confirmed completion.",
+      "An early phone viewport screenshot was only98\u00d7211 despite actual390 CSS-pixel layout. Full-page clipped capture produced the actual390\u00d7844 JPEG proof; the original static phone proof was restored from its archive.",
+      "Browser screenshot exports are JPEGs. New screenshot filenames were corrected to .jpg without raster editing.",
+      "The first motion-agent patch format was rejected before mutation; the corrected module replacement succeeded. No application state was lost.",
+      "The refreshed private-Git transfer whitespace audit rejected extra blank lines at EOF in the three newly appended bus project-state documents. Their trailing blank lines were removed before retry; the transfer validator records the actual retry result separately.",
+      "The first hosted entry screenshot caught Opening the scene editor before the decorative PNGs rendered. Its actual loading frame is retained in archive/iteration20-cold-loading-proof.jpg. The current entry proof was replaced with a loaded viewport re-entry capture showing48 figures partway through dispersal. Initial dense overlap was independently observed in the local preview; the current hosted capture shows the loaded replay in progress."
+    ]
+  },
+  "qa_evidence": "WANDA_ITERATION20_DENSE_QA.md",
+  "checks_performed_this_iteration": [
+    "All 147 Node engineering tests were actually rerun on the final dense pedestrian revision and passed. The read-only frozen verifier was actually rerun on that revision and passed: 11 files, 7 source contracts and 12 pixel fixtures. The model SHA256 is unchanged. These are engineering/integrity checks, not a new recognition benchmark.",
+    "Final module syntax and Git whitespace checks passed (ordinary CRLF conversion notices only). The three unchanged 1145\u00d71374 RGBA PNGs retain transparent/opaque alpha and exact website/output byte identity.",
+    "All three unchanged output PNGs match their supplied metadata SHA256 and website asset copies byte-for-byte.",
+    "Source uses a seeded compact ellipse, stable varied size/depth/facing, and WAAPI straight translations with easing linear. Every duration is the unrounded Euclidean route distance divided by28 CSS px/s; durations are not clamped. Short button routes can finish below3s and long desktop flanks exceed7s.",
+    "Three actual rendered desktop samples across189ms showed six different people advancing along their routes at approximately27.8px/s overall, consistent with28px/s and frame sampling. The samples are a short visual-motion check, not a long-duration performance benchmark.",
+    "Viewport entry starts at15% visibility; a full exit parks and enables replay. Actual navigation away/back changed the main heading from parked to spreading. Resize and the site's Reduce animations checkbox park the groups.",
+    "Source review found coherent OS reduced-motion, background-first entry and bfcache cleanup. OS preference toggling, background restoration and actual bfcache navigation were not independently exercised.",
+    "Nine decorative groups allocate190 desktop figures: main48, underhood36, stage16, Find18, other controls14\u201316. Hidden stage controls remain hidden; these are not190 simultaneous onscreen people. Initial main crowd visibly overlapped, then spread to clear upper perches and a right flank.",
+    "Actual390/320 CSS-pixel viewports retain one row of five map thumbnails. Document scroll widths375/305px during ordinary preview; at320 no active visible figure exceeded the viewport. Resize parks motion. Actual390\u00d7844 JPEG proof is wanda-pedestrians-dense-phone-proof.jpg.",
+    "The site's Reduce animations checkbox parked all nine groups immediately. Unchecking, fully exiting and returning to Play restarted the main crowd.",
+    "After the complete two-Enter keyboard placement, clicking the decorated Find control returned Found Wanda / Measured point420,300. Switching to the Grover tab updated the stage title to Signs prepare interference. and preserved the decoration.",
+    "Local warning/error console was empty. The existing preview server was reused and left running.",
+    "Exact published source66f66be39e50df251ffb7345486b9b006c7b25e4 deployed successfully to the original owner-private Site. Actual DOM shows main48/underhood36/stage16/Find18 and speed28, with the main crowd spreading on load.",
+    "Saved initial dense entry and dispersed layout JPEGs are actual hosted renders. A full-page clipped screenshot temporarily resizes layout and parks the animation, so the initial-motion proof uses an ordinary viewport capture.",
+    "Actual published decorated Find returned Found Wanda / Measured point420,300 after complete keyboard placement.",
+    "Actual navigation to Look under the hood showed its36-person crowd spreading; selecting Grover updated the stage title. Reduce animations produced zero spreading groups. Returning to Play replayed the main crowd.",
+    "Hosted warning/error console was empty. Start over and Play restored the empty Festival welcome; the hosted tab remains available as the deliverable."
+  ],
+  "next_priority": "Review the dense pictogram motion with the user. Preserve constant 28 CSS px/s linear dispersal, text/control clearance, the Wanda interaction, connected three-stage lesson, frozen detector, prior failures and independent playground source.",
+  "prior_evidence_receipt": "archive/iteration20-staggered-static/publication-receipt.json",
+  "iteration19_evidence_receipt": "archive/iteration19-before-crowd-theme/publication-receipt.json",
+  "new_ui_assets": [
+    {
+      "path": "pastel-red-pedestrian.png",
+      "website_path": "waldo-search-lab/dist/assets/ui-pedestrians/pedestrian-red.png",
+      "sha256": "dec0a388b558239df7d5108e9bc83098add8f462f1253551062ad9150094fad8",
+      "bytes": 496719,
+      "scope": "Decorative interface artwork; not part of the image searched or QNN inference.",
+      "inference_input": false
+    },
+    {
+      "path": "pastel-yellow-pedestrian.png",
+      "website_path": "waldo-search-lab/dist/assets/ui-pedestrians/pedestrian-yellow.png",
+      "sha256": "3e65880860e3be5405f052692fca430890b510e98a7307def16fb96512ab6f51",
+      "bytes": 488423,
+      "scope": "Decorative interface artwork; not part of the image searched or QNN inference.",
+      "inference_input": false
+    },
+    {
+      "path": "pastel-blue-pedestrian.png",
+      "website_path": "waldo-search-lab/dist/assets/ui-pedestrians/pedestrian-blue.png",
+      "sha256": "acf54ce0bf379ab7084b013772575f7dd68804b989a8d93399a22157fd75e977",
+      "bytes": 504010,
+      "scope": "Decorative interface artwork; not part of the image searched or QNN inference.",
+      "inference_input": false
+    }
+  ],
+  "external_repository_work": {
+    "merge_commit": "032615659c5967df8f025b63bdd610954d21b3ea",
+    "pull_request": "https://github.com/goesixteen/quantum-image-search/pull/1",
+    "path": "qnn-playground",
+    "files": 29,
+    "source_preserved": true,
+    "validation_scope": "Source preservation only; no installation, build, runtime or scientific validation in this UI iteration."
+  },
+  "overnight_reset_budget": {
+    "maximum": 1,
+    "agent_consumed": 0,
+    "preserve_for_user": 1,
+    "ledger": "OVERNIGHT_RESOURCE_BUDGET.json",
+    "available_observed": 1
+  }
+}
