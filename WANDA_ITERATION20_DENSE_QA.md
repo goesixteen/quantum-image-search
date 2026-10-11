@@ -21,7 +21,7 @@ Final module syntax and Git whitespace checks passed (ordinary CRLF conversion n
 - After the complete two-Enter keyboard placement, clicking the decorated Find control returned Found Wanda / Measured point420,300. Switching to the Grover tab updated the stage title to Signs prepare interference. and preserved the decoration.
 - Local warning/error console was empty. The existing preview server was reused and left running.
 - Exact published source66f66be39e50df251ffb7345486b9b006c7b25e4 deployed successfully to the original owner-private Site. Actual DOM shows main48/underhood36/stage16/Find18 and speed28, with the main crowd spreading on load.
-- Saved initial dense entry and dispersed layout JPEGs are actual hosted renders. A full-page clipped screenshot temporarily resizes layout and parks the animation, so the initial-motion proof uses an ordinary viewport capture.
+- Saved loaded replay-entry and dispersed-layout JPEGs are actual hosted renders. A full-page clipped screenshot temporarily resizes layout and parks the animation, so the initial-motion proof uses an ordinary viewport capture.
 - Actual published decorated Find returned Found Wanda / Measured point420,300 after complete keyboard placement.
 - Actual navigation to Look under the hood showed its36-person crowd spreading; selecting Grover updated the stage title. Reduce animations produced zero spreading groups. Returning to Play replayed the main crowd.
 - Hosted warning/error console was empty. Start over and Play restored the empty Festival welcome; the hosted tab remains available as the deliverable.
@@ -62,3 +62,7 @@ The local private Git receipt is `GITHUB_SYNC_RECEIPT.json` (excluded from Git).
 ## Transfer repair
 
 The refreshed private-Git transfer whitespace audit rejected extra blank lines at EOF in the three newly appended bus project-state documents. Their trailing blank lines were removed before retry; the transfer validator records the actual retry result separately.
+
+## Hosted entry proof repair
+
+The first hosted entry screenshot caught Opening the scene editor before the decorative PNGs rendered. Its actual loading frame is retained in archive/iteration20-cold-loading-proof.jpg. The current entry proof was replaced with a loaded viewport re-entry capture showing48 figures partway through dispersal. Initial dense overlap was independently observed in the local preview; the current hosted capture shows the loaded replay in progress.
