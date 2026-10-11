@@ -1,9 +1,9 @@
 # Current next step — build on iteration 19
 
-Read [the current handoff](../../WANDA_HANDOFF.md),
-[iteration brief](../../WANDA_ITERATION_BRIEF.md),
-[exact private receipt](../../publication-receipt.json) and
-[resource ledger](../../OVERNIGHT_RESOURCE_BUDGET.json). The speech bubble,
+Read [the current handoff](../../docs/WANDA_HANDOFF.md),
+[iteration brief](../../docs/history/WANDA_ITERATION_BRIEF.md),
+[exact private receipt](../../docs/history/publication-receipt.json) and
+[resource ledger](../../docs/history/OVERNIGHT_RESOURCE_BUDGET.json). The speech bubble,
 raised-hand 190ms pickup and trailing swing are privately published. Actual
 hosted pickup, plain placed-message styling, default Find (420,300), off-map
 removal and empty console checks are complete. The first arbitrary hosted
@@ -34,11 +34,11 @@ published handoff and latest human steering take precedence.
 
 **Iteration 10 resumption:** Read the current Wanda handoff/receipt and latest human steering. The guided lesson, private deployment, actual two-copy experiment,420300default and emptyFestivalcheck are complete. Avoid repeating them unless code changes. Next priority: novice walkthrough/educational clarity and polish. Preserve frozen weights/reserved evidence; predeclare new renderer/generalization probes before a fresh version. Warm field is target-specific clue display, not generic person detection. No submission/public release.
 
-**Current priority:** the first two-part Wanda implementation is complete. Read [WANDA_HANDOFF.md](../../WANDA_HANDOFF.md) before the older plans below. Next: guided explanation/novice review, new-model Qiskit parity, prospectively frozen unseen-background evaluation. Preserve 298/300 reserved results, failures, owner-private Sites and the no-submission instruction.
+**Current priority:** the first two-part Wanda implementation is complete. Read [WANDA_HANDOFF.md](../../docs/WANDA_HANDOFF.md) before the older plans below. Next: guided explanation/novice review, new-model Qiskit parity, prospectively frozen unseen-background evaluation. Preserve 298/300 reserved results, failures, owner-private Sites and the no-submission instruction.
 
 # Next iteration: Where’s Wanda
 
-Read [WANDA_ITERATION_BRIEF.md](../../WANDA_ITERATION_BRIEF.md) first. It supersedes the older task order below: streamlined five-scene female-character demo, new-domain trained QNN, then linked image/circuit/Bloch/Grover education. Use provisional planning weights, preserve all evidence and private identities, and do not submit.
+Read [WANDA_ITERATION_BRIEF.md](../../docs/history/WANDA_ITERATION_BRIEF.md) first. It supersedes the older task order below: streamlined five-scene female-character demo, new-domain trained QNN, then linked image/circuit/Bloch/Grover education. Use provisional planning weights, preserve all evidence and private identities, and do not submit.
 
 # Next hourly step after layered-editor recovery
 
@@ -48,7 +48,7 @@ Updated October 10, 2026, approximately 18:00 UTC. Read [PROJECT_STATE.md](PROJE
 
 ## First: finish the current evidence boundary
 
-1. Read root's finalized [layered handoff](../../LAYERED_SEARCH_HANDOFF.md), QA and latest private deployment receipt. The crowd editor now has completed local browser QA,26 passing Node tests, a frozen2,064-probe audit and a successful owner-private deployment; see the exact receipt. Bus hosting is unchanged and recovered local reliability files await a later bus update. Never infer a new deployment from a saved source file or old receipt.
+1. Read root's finalized [layered handoff](../../docs/history/LAYERED_SEARCH_HANDOFF.md), QA and latest private deployment receipt. The crowd editor now has completed local browser QA,26 passing Node tests, a frozen2,064-probe audit and a successful owner-private deployment; see the exact receipt. Bus hosting is unchanged and recovered local reliability files await a later bus update. Never infer a new deployment from a saved source file or old receipt.
 2. Test actual browser pixels for each open-art background and target: target present/absent, all fine grids, ordinary and odd-size renders, fractional input, named/custom foreground layers, target behind/in front, partial/full occlusion, scores/amplitudes/probabilities, measurement/replay/overshoot, uploads and keyboard/mobile controls. Record exact fixtures and failures. Source review supports local-only uploads; dynamic network verification is a separate check.
 3. Check served static references and retain the now-repaired reliability module/results copies if the page is included. Local verification covers 889 statevector oracles, 20 exact frozen scenarios and headless Edge normal/perfect/absent presets; hosted inclusion still needs the new receipt. Do not call hypothetical independent-error rates empirical QNN calibration.
 

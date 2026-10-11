@@ -709,7 +709,6 @@ function makeGUI() {
     search.clear();
     updateUI();
   });
-  d3.select("#compare-run").on("click", () => runComparison());
   d3.select("#toggle-target").on("click", () => {
     state.target = state.target >= 0 ? -1 : views.probe;
     placeScene();
@@ -742,7 +741,7 @@ function makeGUI() {
     }
   });
 
-  // Search, readout, state and comparison sit in one full-width row of
+  // Search, readout and state sit in one full-width row of
   // cards under the circuit, not in a long narrow column.
   let panels = d3.select("#panels");
   let card = (cls: string) => panels.append("div")
@@ -752,9 +751,6 @@ function makeGUI() {
   readoutCard.append("div").attr("id", "readout-info");
   views.initReadout(readoutCard);
   views.initStatevector(card("card-state"));
-  let compareCard = card("card-compare");
-  (compareCard.node() as Element).appendChild(
-      document.getElementById("compare-panel"));
 
   // Add scale to the gradient color map.
   let x = d3.scale.linear().domain([-1, 1]).range([0, 144]);
@@ -1717,51 +1713,6 @@ function drawLink(
       updateHoverCard(null);
     });
   return line;
-}
-
-/**
- * Does the quantum part matter? Trains fresh circuits with and without the
- * entangling ring on the same patches, for the same number of epochs, and
- * reports them next to the classical baseline. Time-sliced: the page stays
- * responsive while it runs.
- */
-async function runComparison() {
-  let out = d3.select("#compare-result");
-  let epochs = 120;
-  let results: string[] = [];
-  d3.select("#compare-run").property("disabled", true);
-  for (let entangler of ["cnot", "none"] as nn.Entangler[]) {
-    let net = nn.buildNetwork({featureIds: scene.featureNames, qubits: qubits(),
-        layers: state.numHiddenLayers, entangler, reupload: state.reupload,
-        readout: state.readout, shots: 0});
-    for (let e = 0; e < epochs; e++) {
-      let order = trainData.slice();
-      shuffle(order);
-      order.forEach((p, i) => {
-        trainOn(net, p);
-        if ((i + 1) % state.batchSize === 0 || i === order.length - 1) {
-          nn.updateWeights(net, state.learningRate);
-        }
-      });
-      if (e % 10 === 0) {
-        out.text(`Training the ${entangler === "cnot" ? "entangled" :
-            "unentangled"} circuit: epoch ${e} / ${epochs}…`);
-        await new Promise(r => setTimeout(r, 0));
-      }
-    }
-    let correct = evaluate(net, testData).accuracy;
-    results.push(`${entangler === "cnot" ? "With CNOT ring" :
-        "No entanglement"}: <b>${Math.round(100 * correct)}%</b>`);
-  }
-  results.push(`Logistic regression (9 parameters, classical): ` +
-      `<b>${Math.round(100 * baselineAcc)}%</b>`);
-  out.html(`Same ${labelled(trainData).length} training ` +
-      `windows, ${epochs} epochs ` +
-      `each, ${state.numHiddenLayers} layers, ${state.readout === "project" ?
-          "hybrid" : "quantum-only"} readout; test accuracy on ` +
-      `${labelled(testData).length} new ones:<br>${results.join("<br>")}<br>` +
-      "If these are close, entanglement is not what makes this task work.");
-  d3.select("#compare-run").property("disabled", false);
 }
 
 function updateReadoutInfo() {

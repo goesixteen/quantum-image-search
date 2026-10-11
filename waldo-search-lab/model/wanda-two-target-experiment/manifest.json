@@ -13,17 +13,17 @@
     "one-sampled-addresses.json": "9fe4abd7ce46f066ab65ce114ded0edf6513eae7d08995a9c720b3863a40cc02",
     "one-scan.json.gz": "cb27cc1bce115b64f2011c43531eecd3282cb32604aaf2972d694606b1b6d592",
     "one-scene.png": "58da260d137b7844341ab259091bedce84d34bcb1de8e8be08c6d31d8b16796c",
-    "plot.py": "1414948f233642fac1a3d58dd6ccdd810e5c9cf87f250c4be9aa18fe968fc40e",
+    "plot.py": "74b3a5b6ddaef85cea61eaa9d73d62b5313f99d02d71779fde0fa66a88d421cb",
     "README.md": "4dd65ed9caa16af344dea1b1509e789a3238a12595c9614de26357b445770c44",
     "report.json": "2947ee3c212687d75d6ad73515997485e9fe558c658b418fff9cce99969e4f2e",
-    "run.mjs": "9f5dbc163e68e1d55d583911a84bfe0aac73d4bcaee24785b5c9ecaaed30b715",
+    "run.mjs": "9e5c89ab51637f28087232022f31c9fb01ec4c46533908d3cdf646f9595049a4",
     "two-grover-history.json.gz": "48753a245a217d935acb83adb124356248e7c9fc69c30acf7f76d607f2aba71d",
     "two-sampled-addresses.json": "4db660bccb51d4afeb4b2bbd325098fa0e845fd894cdadd6292a4c02a14418a5",
     "two-scan.json.gz": "96d3fef3bf63eb1a3c526247e6cf826761a8ca1697371b6d9bed0703bd0ad1ef",
     "two-scene.png": "c5a9695a1fa64f50be13f8db7fc925b48356deb6b2f49b972ad8978af94009d1"
   },
   "illustration": {
-    "path": "../../../wanda-two-target-experiment.png",
+    "path": "../../../docs/screenshots/wanda-two-target-experiment.png",
     "sha256": "84032af2bfeb0b5f44d1d7f862eb12c1317fe85d582a666b8c84ab603296698f"
   },
   "convergence": {

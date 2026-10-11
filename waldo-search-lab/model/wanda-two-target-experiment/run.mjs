@@ -80,7 +80,7 @@ for(const [j,scene] of [firstOnly,both].entries()) {
   p.fillText(`10,000 draws: ${r.samples.eachTarget.join(' / ')} target hits; ${r.samples.unmarked} unmarked`,x,674);
 }
 p.font='11px sans-serif';p.fillStyle='#6b7680';p.fillText('Controlled native renderer demonstration. Blue rings mark accepted points after inference; this is not a held-out accuracy estimate.',28,697);
-const illustration=path.resolve(project,'../wanda-two-target-experiment.png');fs.writeFileSync(illustration,picture.toBuffer('image/png'));
-const manifest={recordedAtUtc:report.recordedAtUtc,modelSHA256:report.unchangedSources.model,files:Object.fromEntries(fs.readdirSync(here).filter(f=>f!=='manifest.json').map(f=>[f,sha(path.join(here,f))])),illustration:{path:'../../../wanda-two-target-experiment.png',sha256:sha(illustration)},browserBackground:report.browserBackground};
+const illustration=path.resolve(project,'../docs/screenshots/wanda-two-target-experiment.png');fs.writeFileSync(illustration,picture.toBuffer('image/png'));
+const manifest={recordedAtUtc:report.recordedAtUtc,modelSHA256:report.unchangedSources.model,files:Object.fromEntries(fs.readdirSync(here).filter(f=>f!=='manifest.json').map(f=>[f,sha(path.join(here,f))])),illustration:{path:'../../../docs/screenshots/wanda-two-target-experiment.png',sha256:sha(illustration)},browserBackground:report.browserBackground};
 fs.writeFileSync(path.join(here,'manifest.json'),JSON.stringify(manifest,null,2)+'\n');
 console.log(JSON.stringify({report:path.join(here,'report.json'),illustration,browserBackground}));

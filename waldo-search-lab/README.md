@@ -47,7 +47,7 @@ workspace. Read-only Python verification separately needs NumPy and Pillow.
 - [Actual-state trace and independent parity evidence](docs/QNN_TRACE.md)
 - [Browser checks](docs/WANDA_BROWSER_QA.md), [work log](docs/WANDA_WORKLOG.md)
 - [Artwork, exact generation prompts and provenance](docs/WANDA_ART.md)
-- [Latest external handoff](../WANDA_HANDOFF.md), [private publication receipt](../publication-receipt.json)
+- [Latest external handoff](../docs/WANDA_HANDOFF.md), [private publication receipt](../docs/history/publication-receipt.json)
 
 The checkpoint’s inherited descriptive `trainingDomain` string is corrected by an explicit [metadata erratum](model/wanda-qnn/metadata-erratum.json). Frozen checkpoint bytes, fitted weights, inference and test results remain unchanged. Read the corrected Wanda model card rather than the inherited description.
 
@@ -63,7 +63,7 @@ Drag a red-and-white striped PNG into one of three busy scenes and watch a train
 
 The picker contains **Original Festival**, **Magic Arena**, and **Coronation Queue**. The two new scenes are cropped David Revoy / Pepper&Carrot panels, licensed CC BY 4.0. Original JPEGs and crop coordinates are preserved. Bruegel and Seurat are removed from the picker and retained for earlier benchmarks. The striped OpenMoji adaptation retains CC BY-SA 4.0. Original Festival remains the existing generated benchmark artwork.
 
-Existing private review: [Search Atlas](https://quantum-crowd-search.syrupyspool2.chatgpt.site). Companion: [Quantum CAPTCHA](https://bus-search-quantum-lab.syrupyspool2.chatgpt.site). Exact deployed source/status and proof are in [publication-receipt.json](../publication-receipt.json); local changes are not evidence of a hosted update. Preserve crowd Sites ID `appgprj_6ac9ed0456008191aafac54f8d5af4d1` and its owner-private audience.
+Existing private review: [Search Atlas](https://quantum-crowd-search.syrupyspool2.chatgpt.site). Companion: [Quantum CAPTCHA](https://bus-search-quantum-lab.syrupyspool2.chatgpt.site). Exact deployed source/status and proof are in [publication-receipt.json](../docs/history/publication-receipt.json); local changes are not evidence of a hosted update. Preserve crowd Sites ID `appgprj_6ac9ed0456008191aafac54f8d5af4d1` and its owner-private audience.
 
 ## Run and reproduce
 
@@ -111,4 +111,4 @@ The frozen four-qubit QNN is available with Original Festival and the original e
 
 ## Continued work
 
-Code/docs are MIT; artwork retains separate licenses/attribution. Uploaded images stay in the browser. The user requested continued iteration **without submission**. Contest uploads, public source/video and submission materials remain withheld. [Canonical state](../bus-search-lab/docs/PROJECT_STATE.md), [handoff](../LAYERED_SEARCH_HANDOFF.md), [rubric](../bus-search-lab/docs/RUBRIC.md).
+Code/docs are MIT; artwork retains separate licenses/attribution. Uploaded images stay in the browser. The user requested continued iteration **without submission**. Contest uploads, public source/video and submission materials remain withheld. [Canonical state](../bus-search-lab/docs/PROJECT_STATE.md), [handoff](../docs/history/LAYERED_SEARCH_HANDOFF.md), [rubric](../bus-search-lab/docs/RUBRIC.md).

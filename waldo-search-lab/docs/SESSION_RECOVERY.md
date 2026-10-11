@@ -6,7 +6,7 @@ The latest user direction prioritizes the crowd editor: finer location cells, an
 
 ## Last confirmed hosted state
 
-The authoritative [publication receipt](../../publication-receipt.json) was recorded at **2026-10-10 09:36:31 UTC**, Iteration 03. Both terminal statuses are **succeeded**, audience **owner-private**. These are earlier successful updates, not evidence that interrupted Iteration 04 or the new editor is hosted.
+The authoritative [publication receipt](../../docs/history/publication-receipt.json) was recorded at **2026-10-10 09:36:31 UTC**, Iteration 03. Both terminal statuses are **succeeded**, audience **owner-private**. These are earlier successful updates, not evidence that interrupted Iteration 04 or the new editor is hosted.
 
 | Site | Preserved Sites project ID | Last confirmed deployment | Confirmed source |
 | --- | --- | --- | --- |

@@ -1546,7 +1546,6 @@ body.guided #search-panel .search-row,
 body.guided #search-panel .search-result,
 body.guided #network .ent-arcs,
 body.guided #linechart,
-body.guided #compare-panel,
 body.guided #oracle-mode,
 body.guided .oracle-row,
 body.guided #toggle-target,
@@ -1757,22 +1756,6 @@ body.guided .play-caption {
   display: inline-block;
 }
 
-#compare-panel {
-  width: 262px;
-  margin-top: 10px;
-  font-size: 12px;
-  color: #333;
-  line-height: 1.4;
-}
-
-#compare-panel button {
-  margin-top: 6px !important;
-}
-
-#compare-result {
-  margin-top: 6px;
-}
-
 #search-panel .oracle-row select {
   font-size: 11px;
   max-width: 230px;
@@ -1908,16 +1891,14 @@ footer .attribution {
 
 .panel-card #search-panel,
 .panel-card #readout-panel,
-.panel-card #statevector,
-.panel-card #compare-panel {
+.panel-card #statevector {
   margin: 0;
   width: auto;
 }
 
 /* Empty cards (all of their content hidden) disappear. */
 body.guided .panel-card.card-readout,
-body.guided .panel-card.card-state,
-body.guided .panel-card.card-compare {
+body.guided .panel-card.card-state {
   display: none;
 }
 

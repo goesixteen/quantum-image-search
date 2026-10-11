@@ -1556,7 +1556,6 @@ footer .attribution {
 .qnn-surface.guided #search-panel .search-result,
 .qnn-surface.guided #network .ent-arcs,
 .qnn-surface.guided #linechart,
-.qnn-surface.guided #compare-panel,
 .qnn-surface.guided #oracle-mode,
 .qnn-surface.guided .oracle-row,
 .qnn-surface.guided #toggle-target,
@@ -1767,22 +1766,6 @@ footer .attribution {
   display: inline-block;
 }
 
-#compare-panel {
-  width: 262px;
-  margin-top: 10px;
-  font-size: 12px;
-  color: #333;
-  line-height: 1.4;
-}
-
-#compare-panel button {
-  margin-top: 6px !important;
-}
-
-#compare-result {
-  margin-top: 6px;
-}
-
 #search-panel .oracle-row select {
   font-size: 11px;
   max-width: 230px;
@@ -1918,16 +1901,14 @@ footer .attribution {
 
 .panel-card #search-panel,
 .panel-card #readout-panel,
-.panel-card #statevector,
-.panel-card #compare-panel {
+.panel-card #statevector {
   margin: 0;
   width: auto;
 }
 
 /* Empty cards (all of their content hidden) disappear. */
 .qnn-surface.guided .panel-card.card-readout,
-.qnn-surface.guided .panel-card.card-state,
-.qnn-surface.guided .panel-card.card-compare {
+.qnn-surface.guided .panel-card.card-state {
   display: none;
 }
 

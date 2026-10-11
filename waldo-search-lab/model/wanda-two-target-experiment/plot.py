@@ -31,7 +31,7 @@ for ax, title in zip(axes, ["Probability of either accepted address", "Probabili
     ax.legend(frameon=False, fontsize=9)
 fig.suptitle("Frozen Wanda detector: one versus two fully visible copies", fontsize=15)
 fig.supxlabel("N=4096. Lines: sin²((2r+1)asin√(M/N)); dots: saved statevector. Both accepted points match a target.", fontsize=9)
-output = here.parents[2] / "wanda-two-target-convergence.png"
+output = here.parents[2] / "docs" / "screenshots" / "wanda-two-target-convergence.png"
 fig.savefig(output, dpi=190)
 fig.savefig(here / "convergence.svg")
 print(output)

@@ -214,8 +214,6 @@ try {
   check(/classifier says "target"/.test(await text('#search-panel .search-stats')), 'coherent oracle runs the classifier inside the search');
   await evaluate(`document.querySelector('#grover-run').click()`);
   check(await waitFor(`/Measured region/.test(document.querySelector('#search-panel .search-result').textContent)`), 'coherent search measures a region');
-  await evaluate(`document.querySelector('#compare-run').click()`);
-  check(await waitFor(`/Logistic regression/.test(document.querySelector('#compare-result').textContent)`, 60000), `comparison reports entangled vs not vs classical (${(await text('#compare-result')).replace(/\s+/g, ' ').slice(-220)})`);
   await open('mode=explorer');
   await waitFor(`document.querySelectorAll('#network g.bloch').length === 16`);
   await evaluate(`(() => { const o = document.querySelector('#oracle-mode'); o.value = 'coherent'; o.dispatchEvent(new Event('change')); })()`);

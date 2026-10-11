@@ -127,7 +127,6 @@ import('./src/playground.ts').catch(error => {
           .replace('      "Accuracy");', '      "Illustrative window check");')
           .replace('`<b>${Math.round(100 * accTest)}%</b> correct on test ` +\n             `squares (classical baseline: ${Math.round(100 * baselineAcc)}%).`', '`Illustrative window check: <b>${Math.round(100 * accTest)}%</b> ` +\n             `(classical illustration: ${Math.round(100 * baselineAcc)}%).`')
           .replace('`<b>${Math.round(100 * accTest)}%</b> correct.`', '`illustrative check <b>${Math.round(100 * accTest)}%</b>.`')
-          .replace('"hybrid" : "quantum-only"} readout; test accuracy on ', '"hybrid" : "quantum-only"} readout; illustrative window check on ')
           .replace('Accuracy is on new examples made the same way with the same ', 'This window check uses generated examples, with possible pair overlap, from the same ')
           .replace('square root of N checks instead of N.', 'square root of N/M oracle calls for M accepted addresses out of N, with efficient coherent input access.')
           .replace('readout\'s classical sigmoid cannot run inside a quantum " +\n          "computer.', 'readout\'s classical sigmoid is not implemented as a coherent " +\n          "quantum oracle in this playground.');
