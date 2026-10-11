@@ -1,3 +1,9 @@
+/**
+ * wanda-evidence.js: renders the frozen Wanda QNN's reserved-test metrics (and the
+ * matched logistic baseline) from model/wanda-qnn-metrics.json into #wanda-metrics.
+ * Pipeline role: reports evaluation of stage 2; no inference happens here.
+ *   renderWandaEvidence(metrics): metrics is the parsed JSON, or null while unavailable.
+ */
 const pct=x=>(100*x).toFixed(1)+'%';
 export function renderWandaEvidence(metrics){
  if(!metrics?.qnn?.sceneMetrics?.test){document.getElementById('wanda-test-scope').textContent='Wanda’s model is trained and frozen. Reserved test evaluation is running; final numbers will appear when the record is ready. Historical accuracy is kept separate below.';return;}

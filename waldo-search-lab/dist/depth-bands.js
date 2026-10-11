@@ -1,3 +1,8 @@
+/**
+ * depth-bands.js: groups foreground-object silhouettes into depth rows so Wanda can stand
+ * behind or in front of crowd members. Pipeline role: scene composition (stage 1) only;
+ * the occluded composite is what the QNN later scores. Build-time helper for the presets.
+ */
 /** Whole-object depth rows for supplied transparent PNG silhouettes.
  * This groups known masks; it does not segment objects or remove ground pixels.
  * Every source pixel stays at its original scene registration, including soft edges.

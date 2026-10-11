@@ -125,3 +125,7 @@ scripts/build.mjs          esbuild build + copies the site's worlds, Wanda, cata
 scripts/smoke.mjs          headless-Chrome end-to-end test
 serve.mjs                  static server for dist/ on :4175
 ```
+
+## License
+
+The team's code (the quantum engine, scenes, search, scripts and tests) is MIT. Files adapted from the [TensorFlow Neural Network Playground](https://github.com/tensorflow/playground) remain Apache-2.0 under Google's copyright and are marked as modified. [LICENSE](LICENSE) contains both texts, and [NOTICE](NOTICE) lists which file is which.

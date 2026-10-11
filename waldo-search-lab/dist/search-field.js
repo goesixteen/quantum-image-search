@@ -1,3 +1,9 @@
+/**
+ * search-field.js: builds the smooth heat-map shown over the scene.
+ * Pipeline role: display of stage 2 scores (buildCandidateField) blended with stage 4
+ * Born probabilities (buildSearchDisplayField), coloured by colorizeField. The field is a
+ * visualisation only; the search itself always uses the exact scores and statevector.
+ */
 /** Smooth DISPLAY fields from actual detector scores and Grover snapshots.
  * No detector, oracle, target coordinates, truth masks, randomness or DOM use.
  * Raster values are visualization samples, never a replacement statevector.

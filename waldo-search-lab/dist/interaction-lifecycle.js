@@ -1,3 +1,8 @@
+/**
+ * interaction-lifecycle.js: cancellation tokens and pointer sessions for app.js, so a newer
+ * scene, target or reset always supersedes older asynchronous work (no stale searches).
+ * Pipeline role: control flow only; never reads pixels or model outputs.
+ */
 /** Interaction ownership only; this module never reads image pixels or model outputs. */
 export function createLatestOperation(){
   let revision=0;

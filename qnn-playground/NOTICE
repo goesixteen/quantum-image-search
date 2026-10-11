@@ -1,5 +1,7 @@
 QNN Playground
 Copyright 2026 the quantum-image-search contributors.
+The team's own files and modifications are licensed under the MIT License;
+upstream TensorFlow Playground files remain under Apache-2.0 (both texts in LICENSE).
 
 This product is a fork of the TensorFlow Neural Network Playground
 (https://github.com/tensorflow/playground, commit 02469bd3751764b20486015d4202b792af5362a6),

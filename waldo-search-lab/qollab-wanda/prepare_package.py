@@ -1,4 +1,14 @@
-"""Rebuild the compact fixture table from exact frozen files; never fit/select rows."""
+"""Rebuild scene.json and package-manifest.json from the frozen model and fixture.
+
+Usage: ``python prepare_package.py`` (developer tool; not needed to run the demo).
+
+* Verifies model.json and held-out-trace-fixtures.json against their known
+  SHA-256 hashes, so a different model or fixture cannot slip in.
+* Copies the first 16 reserved test rows, in their fixed order, into scene.json.
+  No training, row picking or threshold tuning happens here.
+* Inside the full repository it also refreshes the source PNGs and artwork
+  provenance; a standalone copy of this folder reuses the files it already has.
+"""
 import hashlib
 import json
 from pathlib import Path

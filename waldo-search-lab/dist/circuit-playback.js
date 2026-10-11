@@ -1,3 +1,8 @@
+/**
+ * circuit-playback.js: gate-by-gate playback position for the QNN circuit explainer.
+ * Pipeline role: presentation of the classifier circuit (stage 2) only; it never changes
+ * gates, parameters or readouts. Used by underhood.js and tests/circuit-playback.test.mjs.
+ */
 /** Playback ownership and exact gate coordinates only; no circuit or readout changes. */
 function positionValid(trace,position){
   if(!Array.isArray(trace?.gates)||!trace.gates.length||!Number.isFinite(position)||position<0||position>trace.gates.length)throw new RangeError('Position must lie inside an ordered circuit trace.');

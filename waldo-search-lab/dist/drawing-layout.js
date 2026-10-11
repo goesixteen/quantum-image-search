@@ -1,3 +1,8 @@
+/**
+ * drawing-layout.js: pure geometry helpers (high-DPI canvas sizing, circuit viewport,
+ * amplitude-bar layout) for the circuit and Grover explainer drawings in underhood.js.
+ * Presentation only; no scores, gates, probabilities or sampling.
+ */
 /** Presentation geometry only. No scores, quantum gates, probabilities or sampling. */
 const positive=(value,name)=>{if(!Number.isFinite(value)||value<=0)throw new RangeError(name+' must be positive and finite.');return value;};
 

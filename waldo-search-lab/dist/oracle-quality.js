@@ -1,3 +1,10 @@
+/**
+ * oracle-quality.js: a self-contained teaching lab showing how oracle mistakes (false or
+ * missing marks) change Grover amplification. Pipeline role: stage 3/4 illustration with
+ * a constructed oracle; it never touches image classifier scores. Mounts on any
+ * [data-oracle-lab] element; the current index.html has none, so it is dormant there.
+ *   oracleScenario(options): builds marks and runs quantum.js simulateGrover().
+ */
 import { simulateGrover, recommendIterations } from './quantum.js';
 
 // A deliberately constructed teaching oracle. This is separate from all image

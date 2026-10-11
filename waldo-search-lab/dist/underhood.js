@@ -1,3 +1,12 @@
+/**
+ * underhood.js: the earlier "look under the hood" explainer (circuit playback, Bloch
+ * spheres, joint 4-qubit state, Grover rounds and measurement). It listens for app.js
+ * 'wanda-scene' / 'wanda-grover' events and replays the classifier circuit (qnn-trace.js)
+ * and Grover steps (quantum.js oracle/diffuse) for the selected window.
+ * Not loaded by the current index.html, whose lower section now embeds the QNN
+ * playground (qnn-playground.js) instead; tests still exercise its readiness handshake
+ * and playback loop.
+ */
 import {traceQNN,getQNNFrame} from './qnn-trace.js';
 import {oracle,diffuse,recommendIterations} from './quantum.js';
 import {addressAt,inspectPredicate,lessonRounds} from './lesson-model.js';

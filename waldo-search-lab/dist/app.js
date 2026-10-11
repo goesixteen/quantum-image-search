@@ -1,3 +1,28 @@
+/**
+ * app.js: the "Where's Wanda?" game controller and the entry module loaded by index.html.
+ *
+ * It owns the 512x512 scene canvas, Wanda's placement (pointer drag, tap, or keyboard)
+ * and the Find Wanda button, and drives the quantum search pipeline end to end:
+ *   1. Compose: scene-editor.js composites background + Wanda + foreground depth bands
+ *      into the final RGB image (renderPixels). The detector reads only those pixels.
+ *   2. Score: wanda-localizer.js scanQNN() scores 64x64 = 4,096 Wanda-sized windows with
+ *      the trained 4-qubit variational circuit in qnn.js (predict(): statevector
+ *      Z-expectations -> learned sigmoid readout). Each Grover address keeps its best window.
+ *   3. Mark: addresses scoring >= the frozen threshold, after non-maximum suppression of
+ *      nearby duplicates, form the marked set M that defines the Grover phase oracle.
+ *   4. Amplify: quantum.js simulateGrover() applies oracle + diffuser to the N-amplitude
+ *      statevector (N = grid^2, 4,096 = 2^12 by default) for about (pi/4)*sqrt(N/M)
+ *      rounds (recommendIterations); animate() replays the exact per-round snapshots.
+ *   5. Measure: measure() draws one Born-rule sample (quantum.js sample()); evaluate()
+ *      compares it with Wanda's true placement only after sampling.
+ * search-field.js converts scores and snapshots into the smooth heat-map display only.
+ * Alternate modes: search-core.js (classical pixel-template comparison, used for uploaded
+ * targets) and inferQNN() (the legacy tile QNN). Every qubit here is simulated in the browser.
+ *
+ * Accessibility: status text is mirrored to the polite #search-announcer region, keyboard
+ * placement is handled in the canvas keydown listener, and motion honours
+ * prefers-reduced-motion via reducedGameMotion(). See docs/ACCESSIBILITY.md.
+ */
 import { renderWandaEvidence } from './wanda-evidence.js';
 import { extractFeatures, predict } from './qnn.js';
 import { simulateGrover, recommendIterations, sample, bitstring } from './quantum.js';
@@ -317,6 +342,13 @@ async function selectTarget(id,{resetToken=null,placeTarget=true}={}) {
   } catch(error) {if(token===state.targetLoadRevision&&(resetToken==null||resetOwner.isCurrent(resetToken))){if(!state.ready)throw error;status('Target unavailable.',error.message);}return false;} finally {if(token===state.targetLoadRevision){state.targetLoading=false;if(state.ready){syncControls();updateQuantum();}}}
 }
 function place(x,y) {keyboardPlacement=false;const r=targetRect(),s=512/state.grid;state.cx=clamp(state.snap?(Math.floor(x/s)+.5)*s:x,r.width/2,512-r.width/2);state.cy=clamp(state.snap?(Math.floor(y/s)+.5)*s:y,r.height/2,512-r.height/2);state.present=true;refresh();}
+// Accessibility: the canvas is visual only, so keyboard and button moves are
+// also announced through the polite #search-announcer status region (WCAG 4.1.3).
+function announceWandaPosition(prefix='') {
+  if(!state.present)return;
+  const column=state.cx<512/3?'left':state.cx<1024/3?'centre':'right',row=state.cy<512/3?'top':state.cy<1024/3?'middle':'bottom';
+  $('search-announcer').textContent=(prefix?prefix+' ':'')+'Wanda is in the '+row+' '+column+' of the scene, at x '+Math.round(state.cx)+', y '+Math.round(state.cy)+' of 512.';
+}
 function localPoint(event) {const r=canvas.getBoundingClientRect();return{x:(event.clientX-r.left)*512/r.width,y:(event.clientY-r.top)*512/r.height};}
 function rebuildCustomLayer() {const existing=state.layers.filter(l=>l.id!=='custom');state.layers=[...existing,...createForegroundLayers(state.background,[{id:'custom',name:'Your foreground cutout',zIndex:40,enabled:true,paths:state.customPaths}])];}
 function cancelPointer(){cancelTrayDrag();const pointer=state.pointer;if(!pointer)return;state.pointer=null;if(canvas.hasPointerCapture(pointer.pointerId))canvas.releasePointerCapture(pointer.pointerId);if(pointer.tool!=='move')renderLayerList();if(state.ready)draw();}
@@ -338,7 +370,7 @@ canvas.addEventListener('pointermove',event=>{
   if(action.type==='move')place(action.x,action.y);else{if(!state.customPaths.includes(action.path)){cancelPointer();return;}action.path.points.push(action.point);rebuildCustomLayer();refresh();}
 });
 canvas.addEventListener('pointerup',endPointer);canvas.addEventListener('pointercancel',endPointer);canvas.addEventListener('lostpointercapture',endPointer);
-canvas.addEventListener('keydown',event=>{if(event.key==='Escape'){if(state.busy){event.preventDefault();stopSearch();}else if(state.pointer||trayDrag){event.preventDefault();cancelPointer();}else if(keyboardPlacement){event.preventDefault();keyboardPlacement=false;$('target-token').focus();status('Ready to search.','');}return;}if(!state.ready||state.sceneLoading||state.targetLoading)return;if(event.key==='Enter'){event.preventDefault();if(keyboardPlacement&&!state.present)place(state.cx,state.cy);else search();return;}const d={ArrowLeft:[-1,0],ArrowRight:[1,0],ArrowUp:[0,-1],ArrowDown:[0,1]}[event.key];if(d){event.preventDefault();const step=state.snap?512/state.grid:event.shiftKey?12:2;place(state.cx+d[0]*step,state.cy+d[1]*step);}});
+canvas.addEventListener('keydown',event=>{if(event.key==='Escape'){if(state.busy){event.preventDefault();stopSearch();}else if(state.pointer||trayDrag){event.preventDefault();cancelPointer();}else if(keyboardPlacement){event.preventDefault();keyboardPlacement=false;$('target-token').focus();status('Ready to search.','');}return;}if(!state.ready||state.sceneLoading||state.targetLoading)return;if(event.key==='Enter'){event.preventDefault();if(keyboardPlacement&&!state.present){place(state.cx,state.cy);announceWandaPosition('Wanda is hidden in the scene.');}else search();return;}const d={ArrowLeft:[-1,0],ArrowRight:[1,0],ArrowUp:[0,-1],ArrowDown:[0,1]}[event.key];if(d){event.preventDefault();const step=state.snap?512/state.grid:event.shiftKey?12:2;place(state.cx+d[0]*step,state.cy+d[1]*step);announceWandaPosition();}});
 
 // The welcome portrait and drag preview are interface artwork only. The search
 // still receives the final 512px composite, through the unchanged RGB scanner.
@@ -473,7 +505,7 @@ $('field-exposure').addEventListener('input',event=>{state.colorExposure=Number(
 $('snap').addEventListener('change',event=>{state.snap=event.target.checked;if(state.snap)place(state.cx,state.cy);});
 $('editor-tool').addEventListener('change',event=>{cancelPointer();state.tool=event.target.value;canvas.style.cursor=state.tool==='move'?'grab':'crosshair';});
 $('clear-custom').addEventListener('click',()=>{cancelPointer();state.customPaths=[];state.layers=state.layers.filter(l=>l.id!=='custom');renderLayerList();refresh();});
-$('move').addEventListener('click',()=>place(60+Math.random()*392,60+Math.random()*392));$('remove').addEventListener('click',()=>{cancelPointer();keyboardPlacement=false;state.present=false;refresh();});
+$('move').addEventListener('click',()=>{place(60+Math.random()*392,60+Math.random()*392);announceWandaPosition('Wanda moved.');});$('remove').addEventListener('click',()=>{cancelPointer();keyboardPlacement=false;state.present=false;refresh();$('search-announcer').textContent='Wanda is back in her box. Place her in the scene again, then choose Find Wanda.';});
 function stopSearch(){if(!state.busy)return;cancelPointer();refresh('Search stopped. Your image and placement are preserved.');status('Search stopped.','Choose Find Wanda to start a fresh search.');}
 $('find').addEventListener('click',()=>state.busy?stopSearch():search());$('measure').addEventListener('click',measure);
 $('replay').addEventListener('click',async()=>{if(!state.trace||state.busy)return;state.busy=true;syncSearchButton();updateQuantum();$('iteration').disabled=true;$('measure').disabled=true;$('replay').disabled=true;await animate(state.revision);});

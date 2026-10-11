@@ -1,3 +1,9 @@
+/**
+ * quick-tour.js: wires a <details> "quick tour" whose buttons trigger demo actions and
+ * report the result in a feedback element. Not imported by the current index.html.
+ *   mountQuickTour(root, actions): actions maps data-tour-step names to async functions
+ *   that resolve to a feedback message.
+ */
 export function mountQuickTour(root, actions) {
   const buttons = [...root.querySelectorAll('[data-tour-step]')];
   const feedback = root.querySelector('[data-tour-feedback]');

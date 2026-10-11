@@ -1,3 +1,8 @@
+/**
+ * clipart-cast.js: purely decorative clip-art bystanders drawn around the game controls.
+ * Not part of the quantum pipeline: the figures live in an aria-hidden, inert overlay
+ * outside the scene canvas, so they never reach the pixels that the QNN scores.
+ */
 // Ten static people stand on three game objects. No ornament enters the scene canvas.
 const GROUPS = [
   { anchor: 'scene-frame', selector: '.scene-frame', people: [1, 2, 3, 4], heights: [36, 33, 38, 35] },

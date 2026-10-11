@@ -1,3 +1,47 @@
+QNN Playground licensing
+========================
+
+This folder combines two kinds of files:
+
+1. Files written by the quantum-image-search team (listed as "New files" in
+   NOTICE: src/qnn.ts, src/quantumViews.ts, src/scenes.ts, src/search.ts,
+   src/scan.ts, src/quantum/, scripts/, tests/, serve.mjs, README.md,
+   DEVLOG.md and the rest) are licensed under the MIT License below, as are
+   the team's own modifications to the upstream files.
+
+2. Files taken or adapted from the TensorFlow Neural Network Playground
+   (src/dataset.ts, src/heatmap.ts, src/linechart.ts, src/seedrandom.d.ts,
+   src/playground.ts, src/state.ts, index.html, styles.css), Copyright 2016
+   Google Inc., remain under the Apache License, Version 2.0, reproduced in
+   full below. Each such file keeps its original copyright header and states
+   that it was modified. Apache-2.0 section 4 permits licensing the team's
+   modifications under different terms, which is done here with MIT.
+
+-------------------------------------------------------------------------------
+MIT License
+
+Copyright (c) 2026 the quantum-image-search contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-------------------------------------------------------------------------------
+Apache License 2.0 (upstream TensorFlow Playground files)
 
                                  Apache License
                            Version 2.0, January 2004

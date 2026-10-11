@@ -19,20 +19,20 @@
   "scores": [
     0.9896217635627839,
     0.9962496416401938,
-    0.005436390151655227,
+    0.0054363901516552215,
     0.00346371104177671,
-    0.0024104469973118383,
+    0.002410446997311834,
     0.0010677280637632642,
-    0.009499140619093627,
-    0.0031835429802802946,
-    0.03864535187440968,
+    0.009499140619093634,
+    0.0031835429802803,
+    0.03864535187440964,
     0.9995869726938996,
     0.9962227586525629,
-    0.0058060501069872,
-    5.326068842189159e-05,
+    0.005806050106987205,
+    5.3260688421891685e-05,
     0.004697587815234545,
-    0.0006568421717819501,
-    0.0025623878888183025
+    0.0006568421717819542,
+    0.0025623878888182956
   ],
   "threshold": 0.9056472752971427,
   "learnedMarkedIndices": [
@@ -93,10 +93,10 @@
   },
   "oracleConstruction": "local Qiskit QNN expectations + classical sigmoid/threshold; compiled phase-flip oracle on fixture rows",
   "scope": "First16 fixed-order reserved test windows from multiple example scenes. Grover addresses index this fixture table, not one CAPTCHA image. Threshold-only compilation; cross-scene NMS is inapplicable. Numerical circuit companion, not whole-scene accuracy or quantum-advantage evidence.",
-  "createdAtUtc": "2026-10-11T05:19:13.289511+00:00",
+  "createdAtUtc": "2026-10-11T21:15:47.807471+00:00",
   "qiskitVersion": "2.5.2",
-  "numpyVersion": "2.5.3",
-  "testsPassed": 10,
+  "numpyVersion": "2.5.4",
+  "testsPassed": 12,
   "testsSkipped": 0,
   "modelSHA256": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88",
   "heldoutFixtureSHA256": "a6da338c53bea727b3c7e39f4f24aa81c618e554e8029a05035e3a5997db49ea",
@@ -119,11 +119,11 @@
     15
   ],
   "samplingSeed": 2026101107,
-  "maxReadoutErrorVsSavedNumPy": 5.551115123125783e-16,
+  "maxReadoutErrorVsSavedNumPy": 7.771561172376096e-16,
   "maxScoreErrorVsSavedNumPy": 2.220446049250313e-16,
   "maxDistributionErrorVsAnalyticGrover": 1.4432899320127035e-15,
-  "maxOracleMatrixError": 1.1157603309187458e-15,
-  "maxDiffuserMatrixError": 1.112220904202983e-15,
+  "maxOracleMatrixError": 1.4477405352078513e-15,
+  "maxDiffuserMatrixError": 1.0129325150143713e-15,
   "scoreSelectionPolicy": "Frozen threshold; no test-based row selection or threshold adjustment",
   "implementationOrigin": "Adapted original project qollab/main.py, preserved unchanged in its archived package",
   "limitations": [
@@ -133,10 +133,10 @@
     "No coherent QNN sigmoid oracle, hardware/platform verification, calibration or quantum-advantage evidence"
   ],
   "sourceSHA256": {
-    "main.py": "2a01bf6514f4b26980b47709d19110ee42e2e56a190ace78bcb1a7eaec3ce25c",
-    "test_qiskit.py": "b3f9c85088c1575c41f781259384dc066ebe578f44af877b3dded74cad989b52",
-    "validate_local.py": "eac9e7f129d04b58f1d1278f3df374593818be110f3227f719d1b669bbf2a338",
-    "prepare_package.py": "168191dc5ede0d7e6e4a22aaab78f699fcf95debc865d1a5f3f8c4f61c149aa7",
+    "main.py": "684abe19acd7b6cca4943ab547f3720ac775791bd3760c1e2a3dfbc4e83cbd62",
+    "test_qiskit.py": "9cff68b40476285d49496e759d839c86f46485e98994221d2d21983189aeecf0",
+    "validate_local.py": "a21014ab65247f539cad92b665c09af90a1415994b2212e744a18c5a837a906c",
+    "prepare_package.py": "a5bbb8206eca3bf33dee05a478a91fdbc74f6e646faf85441481e197b9d7ec5c",
     "requirements.txt": "f267371b3ae710bcc7816eb0b9f410fb44073489c3d23e98e835f518c52ad165"
   }
 }

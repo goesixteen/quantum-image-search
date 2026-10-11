@@ -1,4 +1,9 @@
 /**
+ * drag-pendulum.js: the swinging "held by the hand" preview shown while Wanda is dragged.
+ * Presentation only; outside the quantum pipeline. stepDragPendulum({reducedMotion}) keeps
+ * the sprite upright (no swing) when app.js reports prefers-reduced-motion.
+ */
+/**
  * Presentation-only hanging-sprite motion. Times are monotonic milliseconds,
  * normally performance.now(); pointer coordinates are viewport CSS pixels.
  *

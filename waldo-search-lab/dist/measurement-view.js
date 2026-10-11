@@ -1,3 +1,9 @@
+/**
+ * measurement-view.js: summarizes Born-rule measurement probabilities of a saved Grover
+ * state (stage 5): total, minimum and maximum probability for accepted vs. unmarked addresses.
+ *   summarizeMeasurement(amplitudes, markedIndices): exact values with no renormalisation
+ *   or sampling; unnormalised states and invalid accepted sets throw. Used by underhood.js.
+ */
 /** Exact saved-state measurement summary. No score, color, truth, or sampling. */
 import {probabilities} from './quantum.js';
 

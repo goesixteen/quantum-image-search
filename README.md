@@ -5,6 +5,22 @@ Wanda** and the **schoolbus CAPTCHA**. Both run locally using included artwork,
 trained models and classical statevector simulators. Nothing has been submitted
 to the hackathon.
 
+## Hackathon submission (Qollab)
+
+The Qollab project is [waldo-search-lab/qollab-wanda/](waldo-search-lab/qollab-wanda/).
+It is a Qiskit program: a trained 4-qubit quantum neural network marks
+candidate windows, and a Grover circuit searches them with a single measured
+job, so it runs on Qollab's local simulators and on IonQ's simulator. Its
+[README](waldo-search-lab/qollab-wanda/README.md) is the project-page
+write-up. It covers the problem, how to run, replicate and extend the project,
+the disclosure of outside code, and licensing. The interactive website below
+is the companion demo. Its accessibility notes are in
+[waldo-search-lab/docs/ACCESSIBILITY.md](waldo-search-lab/docs/ACCESSIBILITY.md).
+
+Licensing: [MIT](LICENSE) for all project code. The only exception is the
+upstream TensorFlow Playground files inside `qnn-playground/`, which stay
+Apache-2.0 (see [qnn-playground/LICENSE](qnn-playground/LICENSE)).
+
 ## Run the demos
 
 Install a modern Node.js version. From this repository, use separate terminals:

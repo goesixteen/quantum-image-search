@@ -1,3 +1,10 @@
+/**
+ * grover-guide.js: step-through guide for one Grover round (oracle phase flip, then
+ * diffusion) in the explainer. Pipeline role: presents stage 4 using the exact saved
+ * statevector snapshots; it never interpolates or samples. Used by underhood.js.
+ *   guideEligibility(context) -> {enabled, reason}: whether a round can be shown.
+ *   createRoundGuide(options): owns the view -> commit lifecycle of a single round.
+ */
 /** One exact round's presentation lifecycle. No interpolation, probabilities or sampling. */
 export function guideEligibility(context){
   if(!context?.scene||!context.amplitudes)return {enabled:false,reason:'Read this image first to build its saved location state.'};

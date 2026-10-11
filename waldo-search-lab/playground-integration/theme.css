@@ -6,6 +6,10 @@
 h1,h2,h3,h4,p,label,button,select{font-family:inherit}
 button,select,input{accent-color:var(--qnn-red)}
 button:focus-visible,select:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:3px solid #934139;outline-offset:3px}
+/* Accessibility: upstream rules such as `#main-part .basic-button` and `#top-controls .control select` set
+   outline:none with higher specificity, which hid keyboard focus (WCAG 2.4.7). Keep one visible indicator. */
+:is(button,select,input,summary,a,[tabindex]):focus-visible{outline:3px solid #934139!important;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
 button{border-radius:7px!important}
 .material-icons{font-family:inherit;font-style:normal;line-height:1}
 #top-controls{background:#fff2e8;border:1px solid #ecd6c9;border-radius:12px;padding:10px 12px!important;position:relative;top:auto;box-shadow:none}
