@@ -1,0 +1,742 @@
+{
+  "recorded_at": "2026-10-11T21:07:59.205669+00:00",
+  "iteration": 22,
+  "work_step": "replace-entire-old-underhood-with-inline-latest-qnn-playground",
+  "bus": {
+    "project_id": "appgprj_6ac9e65f76c48191b8d53784212b5f4c",
+    "commit_sha": "2f616c21b832d8164b06c60a7ffc66499c20290f",
+    "deployment_id": "appgdep_6aca06d97cf4819191d7cd98c5a80355",
+    "version_id": "appgprj_6ac9e65f76c48191b8d53784212b5f4c~appgver_3d2d9fda24e08191bfc638a1664a844a",
+    "status": "succeeded",
+    "url": "https://bus-search-quantum-lab.syrupyspool2.chatgpt.site",
+    "audience": "owner-private"
+  },
+  "crowd": {
+    "project_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1",
+    "commit_sha": "ca6290523fb8d1c07b00e0491e42c2c037a3eb36",
+    "deployment_id": "appgdep_6acbfa0430248191809d2cfba2c4087d",
+    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_1172efc409fc8191a156d9883d0c6a1f",
+    "status": "succeeded",
+    "url": "https://quantum-crowd-search.syrupyspool2.chatgpt.site",
+    "audience": "owner-private"
+  },
+  "previous_crowd_revision": {
+    "project_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1",
+    "commit_sha": "e99fb70e961358738b87187c73c73509e0470514",
+    "deployment_id": "appgdep_6acbf467c7ec8191bfc99e63659537f0",
+    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_97a24335d3348191b0e391e92889c6fd",
+    "status": "succeeded",
+    "url": "https://quantum-crowd-search.syrupyspool2.chatgpt.site",
+    "audience": "owner-private"
+  },
+  "prior_evidence_receipt": "archive/iteration21-styling/publication-receipt.json",
+  "submission": {
+    "status": "not-submitted",
+    "instruction": "Do not submit any work. Keep iterating improvements.",
+    "public_materials_published": false
+  },
+  "browser_preview": "Entire former under-the-hood interface replaced inline by the latest Git QNN playground, with red accents and light panels; accepted picture-puzzle top styling and compact 4/3/3 clip-art groups preserved.",
+  "interface_scope": "Entire former under-the-hood interface replaced inline by the latest Git QNN playground, with red accents and light panels; accepted picture-puzzle top styling and compact 4/3/3 clip-art groups preserved.",
+  "owner_access_verified": {
+    "role": "owner",
+    "mode": "custom",
+    "allowed_users": 1,
+    "allowed_groups": 0,
+    "external_visitors": 0
+  },
+  "hosted_browser_proofs": [
+    "wanda22-hosted-playground.jpg",
+    "wanda22-hosted-top.jpg",
+    "wanda22-hosted-overview.jpg"
+  ],
+  "hosted_browser_proof_integrity": [
+    {
+      "path": "wanda22-hosted-playground.jpg",
+      "sha256": "067d2cd1437082a3d9c7099a84d74bc34191c2b6e074a8588afcb4cdd5572184",
+      "bytes": 127482
+    },
+    {
+      "path": "wanda22-hosted-top.jpg",
+      "sha256": "362e82f7f8c3fff10c4c5d8d92056b603d12a0e8dda50a68e158157a3a80d673",
+      "bytes": 210791
+    },
+    {
+      "path": "wanda22-hosted-overview.jpg",
+      "sha256": "9dbd15d431e667da32360c1fb40a2b6b2182844821bbb44e0eca2b8be482c0b0",
+      "bytes": 142634
+    }
+  ],
+  "current_qa": {
+    "node_tests_passed": 147,
+    "playground_tests_passed": 29,
+    "types": "passed",
+    "frozen_verifier": {
+      "passed": true,
+      "frozen_files": 11,
+      "frozen_sources": 7,
+      "pixel_fixtures": 12
+    },
+    "build": "Rebuilt the inline assets from the 32 original source files using pinned official dependencies; integration syntax and static checks passed.",
+    "static_checks": "101 direct game bindings present; no duplicate light-DOM IDs, no old explainer markup, no iframes; only app.js/qnn-playground.js/clipart-cast.js loaded.",
+    "local_checks": [
+      "Inline playground reaches ready and trains for 120 rounds; five worlds visible.",
+      "Actual guided Grover measurement found address 2420 after 50 rounds; saved checkpoint loaded with score 0.988 and threshold 0.9056472752971427.",
+      "Advanced settings changed to no entanglement, quantum-only readout and first-layer encoding; guided mode restored CNOT, hybrid readout, every-layer encoding and exact shots.",
+      "Phone viewport 390x844: document scrollWidth383, bounded two-column guide cards, in-flow circuit before output and responsive plot viewBoxes. Park scene selection and Run the search control work.",
+      "Original game after integration: Found Wanda at measured point420,300; removing Wanda returns no match."
+    ],
+    "hosted_checks": [
+      "Published source ca6290523fb8d1c07b00e0491e42c2c037a3eb36; native deployment succeeded, existing owner-private custom audience1/0/0 preserved.",
+      "Hosted page has inline mount and no old explainer/iframe; playground ready after 120 rounds; Find and lower chapter both RGB210,78,69.",
+      "Saved demo weights load on the hosted page; one accepted address; search finishes at region2420 with marked probability100.0% after50 rounds."
+    ],
+    "attempts_repairs": [
+      "First embedded startup failed because D3 read an undefined this.navigator; rebuilt its UMD with window context while retaining scoped document.",
+      "Removed duplicate training caption that overlapped the epoch counter.",
+      "Phone guide retained upstream display:flex and clipped its fourth card; changed to bounded grid, fixed plot/control width and verified scrollWidth383 at390.",
+      "First live refresh immediately after publication still displayed the prior deployment; a subsequent explicit reload showed the new exact interface.",
+      "A fresh hosted live-training run at seed0.03401 produced89% illustrative check and zero accepted addresses. This is retained as a live-training failure; loading the frozen demo checkpoint accepted Wanda and completed search."
+    ],
+    "engineering_test_scope": "Root reports 147 passing Wanda engineering tests, 29 passing QNN Playground tests and passing TypeScript checks. Read-only frozen verification passed for 11 files, 7 source contracts and 12 pixel fixtures. The 147-test suite is retained game/integrity coverage; it does not establish complete coverage of the new playground UI. Actual new-interface coverage is limited to the supplied local and hosted observations below. These checks are not a new recognition benchmark.",
+    "frozen_model_sha256": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88",
+    "interface_scope": "Entire former under-the-hood interface replaced inline by the latest Git QNN playground, with red accents and light panels; accepted picture-puzzle top styling and compact 4/3/3 clip-art groups preserved.",
+    "source_limits": [
+      "Live window evaluation is illustrative: labelled windows and ranking pairs are generated together and then split as individual entries. Evaluation windows or related same-composite examples may overlap training pairs; background mining also occurs before that split. Do not present this as independent held-out recognition accuracy.",
+      "The playground renders and trains on its own scene/placement. It is an independent experiment and does not explain the exact top game's current image/search unless an explicit bridge is implemented and verified.",
+      "The default list oracle scores windows classically before amplification, so it demonstrates Grover behavior without an end-to-end speedup. Coherent mode simulates a different quantum-only readout and still uses classically prepared/selected window features; efficient coherent input loading is not implemented.",
+      "Live logistic/CNOT/no-entangler comparisons are illustrative and use different thresholds/optimization schedules; they are not a controlled performance benchmark or evidence of quantum advantage.",
+      "Random live-training initializations can yield no accepted addresses after120 rounds. The saved demo checkpoint remains available via Show all details\u2192Load demo weights. The frozen game's inference is independent and unchanged."
+    ],
+    "retained_scientific_scope": "The frozen standing Wanda detector, scene artwork, threshold and recognition pipeline remain unchanged. Historical native QNN 298/300 versus logistic 299/300 applies to the known Wanda PNG, supplied sizes, fully visible targets and five original unseeded background identities. The browser diagnostic's 15/15 target cases versus native 13/15 retains its separate original scope. Park's 40px/46px false acceptances, browser/native differences and iteration 19's arbitrary-drop abstention remain recorded failures. Live playground training does not refit or replace that frozen model and does not rerun its reserved evaluation.",
+    "retained_limits": [
+      "Physical touch/pen, multi-touch, OS motion preference and unfamiliar users not directly tested",
+      "Park40/46 lookalike false acceptances and native/browser differences retained",
+      "No arbitrary-person, unknown-size, occlusion, hardware or end-to-end speedup claim"
+    ],
+    "historical_qa_receipt": "archive/iteration21-styling/publication-receipt.json",
+    "historical_qa_evidence": "archive/iteration21-styling/WANDA_ITERATION21_QA.md"
+  },
+  "qa_evidence": "WANDA_ITERATION22_QA.md",
+  "checks_performed_this_iteration": [
+    "Root reports 147 passing Wanda engineering tests, 29 passing QNN Playground tests and passing TypeScript checks. Read-only frozen verification passed for 11 files, 7 source contracts and 12 pixel fixtures. The 147-test suite is retained game/integrity coverage; it does not establish complete coverage of the new playground UI. Actual new-interface coverage is limited to the supplied local and hosted observations below. These checks are not a new recognition benchmark.",
+    "Inline playground reaches ready and trains for 120 rounds; five worlds visible.",
+    "Actual guided Grover measurement found address 2420 after 50 rounds; saved checkpoint loaded with score 0.988 and threshold 0.9056472752971427.",
+    "Advanced settings changed to no entanglement, quantum-only readout and first-layer encoding; guided mode restored CNOT, hybrid readout, every-layer encoding and exact shots.",
+    "Phone viewport 390x844: document scrollWidth383, bounded two-column guide cards, in-flow circuit before output and responsive plot viewBoxes. Park scene selection and Run the search control work.",
+    "Original game after integration: Found Wanda at measured point420,300; removing Wanda returns no match.",
+    "Published source ca6290523fb8d1c07b00e0491e42c2c037a3eb36; native deployment succeeded, existing owner-private custom audience1/0/0 preserved.",
+    "Hosted page has inline mount and no old explainer/iframe; playground ready after 120 rounds; Find and lower chapter both RGB210,78,69.",
+    "Saved demo weights load on the hosted page; one accepted address; search finishes at region2420 with marked probability100.0% after50 rounds.",
+    "101 direct game bindings present; no duplicate light-DOM IDs, no old explainer markup, no iframes; only app.js/qnn-playground.js/clipart-cast.js loaded.",
+    "Supplied build result: Rebuilt the inline assets from the 32 original source files using pinned official dependencies; integration syntax and static checks passed."
+  ],
+  "playground_import": {
+    "commit": "d7a6a02ea8b34e50842820a5d0fa42208f04ec94",
+    "tree": "e9082497a54f7fb6ca3a8a3d735a45cf52e62a19",
+    "files": 32,
+    "source_path": "qnn-playground",
+    "original_source_preserved": true,
+    "source_scope": "Original 32-file Git source retained separately from the red/light Wanda integration.",
+    "original_source_integrity": [
+      {
+        "path": "qnn-playground/.gitignore",
+        "sha256": "790e3169bc19b046fe55ba1da6d13b976c28363c8c00462a2195fe5faf260910",
+        "bytes": 20
+      },
+      {
+        "path": "qnn-playground/DEVLOG.md",
+        "sha256": "e3ee114b72e96df66eabc10648cf262ddb48b0125c39f9d6df79a511be59b75f",
+        "bytes": 46867
+      },
+      {
+        "path": "qnn-playground/LICENSE",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "bytes": 11358
+      },
+      {
+        "path": "qnn-playground/NOTICE",
+        "sha256": "70cfaf9463d6d73546a2a6f3482dc80b6b791d41478a07ed2a45f9f3aa132af2",
+        "bytes": 1136
+      },
+      {
+        "path": "qnn-playground/README.md",
+        "sha256": "b09f335df57e25ff79223370ac8f74009a8c109489f49f142c14bfb9a5175750",
+        "bytes": 12599
+      },
+      {
+        "path": "qnn-playground/favicon.png",
+        "sha256": "35969b34af89f94328c15e663eba7cd4fa37ef224fd041bb992da8542f9d7d51",
+        "bytes": 239
+      },
+      {
+        "path": "qnn-playground/index.html",
+        "sha256": "64ce42ff1a3eb82fb5631f0615f1b6cca1fbfd5289a55e54d9952d0af1a5ff20",
+        "bytes": 15838
+      },
+      {
+        "path": "qnn-playground/package-lock.json",
+        "sha256": "cbb90d99fb0c335700b01298817f68d0a835f66dba00aafaba60895ad3db1088",
+        "bytes": 16477
+      },
+      {
+        "path": "qnn-playground/package.json",
+        "sha256": "445da09b0df729baaf4050c39457b764e3fe882e65cae7b624ab1992180dbbcf",
+        "bytes": 661
+      },
+      {
+        "path": "qnn-playground/scripts/build.mjs",
+        "sha256": "c2ff4b3f6b9dcf2275b056c224911d38821c4c49a4723b071436bfff0e9de8d4",
+        "bytes": 3259
+      },
+      {
+        "path": "qnn-playground/scripts/smoke.mjs",
+        "sha256": "aa19f40031020d14cd03c42952161aa8c08ef8683578d531de922e4625ad9edb",
+        "bytes": 21363
+      },
+      {
+        "path": "qnn-playground/serve.mjs",
+        "sha256": "b7739c6b848df01d29bdd2b89619fa98719540f974a63f122476c6a5b1aa62da",
+        "bytes": 1240
+      },
+      {
+        "path": "qnn-playground/src/dataset.ts",
+        "sha256": "fe6a7bf6eea34d548497b70857e69d09ae77ccdba8922e0a3b58c9085dd0f182",
+        "bytes": 7077
+      },
+      {
+        "path": "qnn-playground/src/heatmap.ts",
+        "sha256": "54380527bfd9962b47a32577426e40902cf2a1ea8203b855bc43f5b83f7ffac5",
+        "bytes": 7269
+      },
+      {
+        "path": "qnn-playground/src/linechart.ts",
+        "sha256": "3ce780d9b9d3c8360ff340e43490a7eae093d003dede01f7bc1946d4b225381c",
+        "bytes": 3242
+      },
+      {
+        "path": "qnn-playground/src/playground.ts",
+        "sha256": "e56a58ff8a85d04c9061a1d68475c610320b0d08cbb0fb2b33e2c0bc57881185",
+        "bytes": 77860
+      },
+      {
+        "path": "qnn-playground/src/qnn.ts",
+        "sha256": "7c0f5d75bf8ef258ef36378057f42dca8dc34e6368c54c8c1e674b6540c82933",
+        "bytes": 18909
+      },
+      {
+        "path": "qnn-playground/src/quantum/ansatz.js",
+        "sha256": "37e1758009a31a5e35fe80d562794ec61770e4111ae759e69853c36a098d9a17",
+        "bytes": 4898
+      },
+      {
+        "path": "qnn-playground/src/quantum/circuit.js",
+        "sha256": "e23aa1ac8d4ebfc92dfa5f9e6a4854490f54d7a07ef662f32a0c85b08d651d47",
+        "bytes": 18624
+      },
+      {
+        "path": "qnn-playground/src/quantum/coherent.js",
+        "sha256": "6d92075bcaa5c7b01273e1d668fda06cf11af7e4ddb1999d46327f4ad5d053c6",
+        "bytes": 3071
+      },
+      {
+        "path": "qnn-playground/src/quantumViews.ts",
+        "sha256": "f54df5604239da2fa0f2ea7b4c7042e64cc4b6ef16e7609b4f80ecbeccc9efb7",
+        "bytes": 16815
+      },
+      {
+        "path": "qnn-playground/src/scan.ts",
+        "sha256": "72df12a35ec39a06e0392cbe17e037e1fea61d2f53bedd193148783616a0d726",
+        "bytes": 3399
+      },
+      {
+        "path": "qnn-playground/src/scenes.ts",
+        "sha256": "b3947ea1ab0939df80a0c6f2477cdd240e34ebef3a74795c54737a59ead6bb27",
+        "bytes": 18251
+      },
+      {
+        "path": "qnn-playground/src/search.ts",
+        "sha256": "52d609ae95fee13ea904c42965e5593cc4b46005b079d3219cdcf2c9b6a59045",
+        "bytes": 16539
+      },
+      {
+        "path": "qnn-playground/src/seedrandom.d.ts",
+        "sha256": "dfd8cdb5463bbe2386a583db1d80c7e518236ce42bb3be1f4e1ef6d983135b4b",
+        "bytes": 736
+      },
+      {
+        "path": "qnn-playground/src/state.ts",
+        "sha256": "7ffd3781523d3fc8c491ef2776b983dc30ad108e5eab37f2e1ecae74f39feac8",
+        "bytes": 8377
+      },
+      {
+        "path": "qnn-playground/styles.css",
+        "sha256": "5de080c5c6b99e08cebab89e6dec025502ecc5f4a83d369d6bab40c8a7389d9c",
+        "bytes": 33386
+      },
+      {
+        "path": "qnn-playground/tests/png.mjs",
+        "sha256": "198f4aff5479abc60f86634caa99b8af35a3f20ef7258d6fc398a179b5206b0a",
+        "bytes": 1940
+      },
+      {
+        "path": "qnn-playground/tests/qnn.test.mjs",
+        "sha256": "5de47e890160042c45486af27fdc534f9c57272dd3e912843da8d43df7b7aa42",
+        "bytes": 7019
+      },
+      {
+        "path": "qnn-playground/tests/quantum.test.mjs",
+        "sha256": "0879bbc1cf23f59d8d3fb713c94474ba9f338fdf56e539543d28cbcdd8570ea0",
+        "bytes": 10421
+      },
+      {
+        "path": "qnn-playground/tests/scan.test.mjs",
+        "sha256": "9d60c5545e265323a10e2083a95cddedd3ec095088638d8450e98abc13683b57",
+        "bytes": 6055
+      },
+      {
+        "path": "qnn-playground/tsconfig.json",
+        "sha256": "61a6a49dab40f5d5dd223544d65c64ba1311961a59a2bda971aafa727b0333df",
+        "bytes": 238
+      }
+    ]
+  },
+  "science_scope": "The frozen standing Wanda detector, scene artwork, threshold and recognition pipeline remain unchanged. Historical native QNN 298/300 versus logistic 299/300 applies to the known Wanda PNG, supplied sizes, fully visible targets and five original unseeded background identities. The browser diagnostic's 15/15 target cases versus native 13/15 retains its separate original scope. Park's 40px/46px false acceptances, browser/native differences and iteration 19's arbitrary-drop abstention remain recorded failures. Live playground training does not refit or replace that frozen model and does not rerun its reserved evaluation.",
+  "source_limits": [
+    "Live window evaluation is illustrative: labelled windows and ranking pairs are generated together and then split as individual entries. Evaluation windows or related same-composite examples may overlap training pairs; background mining also occurs before that split. Do not present this as independent held-out recognition accuracy.",
+    "The playground renders and trains on its own scene/placement. It is an independent experiment and does not explain the exact top game's current image/search unless an explicit bridge is implemented and verified.",
+    "The default list oracle scores windows classically before amplification, so it demonstrates Grover behavior without an end-to-end speedup. Coherent mode simulates a different quantum-only readout and still uses classically prepared/selected window features; efficient coherent input loading is not implemented.",
+    "Live logistic/CNOT/no-entangler comparisons are illustrative and use different thresholds/optimization schedules; they are not a controlled performance benchmark or evidence of quantum advantage.",
+    "Random live-training initializations can yield no accepted addresses after120 rounds. The saved demo checkpoint remains available via Show all details\u2192Load demo weights. The frozen game's inference is independent and unchanged."
+  ],
+  "new_ui_assets": [],
+  "retained_ui_assets": [
+    {
+      "n": 1,
+      "label": "Maya",
+      "description": "A young adult woman with medium brown skin, abundant short curly black hair, mustard-yellow sweater, turquoise pleated knee-length skirt, white sneakers, small lavender shoulder bag. Relaxed cheerful standing pose, one hand on her bag.",
+      "prompt": "One original full-body clip-art person, isolated on a genuinely transparent background. A coherent illustrated crowd-puzzle picture-book style: clean dark-brown ink outlines, simple flat warm colors, restrained shading, friendly small facial features, natural slightly cartooned proportions around six heads tall, clear separated shoes and limbs. Charming detailed clothing that remains legible at 35\u201370 pixels tall on a website. Compact silhouette, whole head and shoes visible, narrow portrait composition with only a little transparent padding. No scene, no floor, no drop shadow, no glow, no lettering, no watermark, no other people. Do not use red-and-white striped clothes or make this person Wanda. The character is standing still, not walking.\n\nCharacter 1: A young adult woman with medium brown skin, abundant short curly black hair, mustard-yellow sweater, turquoise pleated knee-length skirt, white sneakers, small lavender shoulder bag. Relaxed cheerful standing pose, one hand on her bag.",
+      "source_path": "C:\\Users\\henri\\.codex\\generated_images\\01a124aa-1559-7223-b74a-9c8f72700b0a\\exec-f797db09-08a7-48b8-afa3-8435699143bb.png",
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "copies": 1,
+      "path": "wanda-clipart/person-01.png",
+      "website_path": "waldo-search-lab/dist/assets/ui-clipart/person-01.png",
+      "sha256": "16732ab8255544eefd11be2be80183e6aa94442cf7b70fc6de00a66e855f78c1",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_pixels": 1158960,
+      "bytes": 1566631,
+      "scope": "Static decorative clip-art person in the top game interface only, outside the analyzed canvas and inference.",
+      "integrated_into_website": true,
+      "inference_input": false,
+      "placement_region": "top-right-object-edges-in-top-game-only",
+      "animation": "none",
+      "iteration22_scope": "Unchanged top-game asset; one static person in the retained 4/3/3 top-right object-edge clusters."
+    },
+    {
+      "n": 2,
+      "label": "Ben",
+      "description": "A young adult man with light olive skin and short dark brown hair, cobalt-blue casual jacket, pale beige trousers, red backpack, brown trainers. Relaxed standing, facing slightly left.",
+      "prompt": "One original full-body clip-art person, isolated on a genuinely transparent background. A coherent illustrated crowd-puzzle picture-book style: clean dark-brown ink outlines, simple flat warm colors, restrained shading, friendly small facial features, natural slightly cartooned proportions around six heads tall, clear separated shoes and limbs. Charming detailed clothing that remains legible at 35\u201370 pixels tall on a website. Compact silhouette, whole head and shoes visible, narrow portrait composition with only a little transparent padding. No scene, no floor, no drop shadow, no glow, no lettering, no watermark, no other people. Do not use red-and-white striped clothes or make this person Wanda. The character is standing still, not walking.\n\nCharacter 2: A young adult man with light olive skin and short dark brown hair, cobalt-blue casual jacket, pale beige trousers, red backpack, brown trainers. Relaxed standing, facing slightly left.",
+      "source_path": "C:\\Users\\henri\\.codex\\generated_images\\01a124aa-1559-7223-b74a-9c8f72700b0a\\exec-aa0ae619-a3d5-4568-a2e6-3dd76edf5823.png",
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "copies": 1,
+      "path": "wanda-clipart/person-02.png",
+      "website_path": "waldo-search-lab/dist/assets/ui-clipart/person-02.png",
+      "sha256": "f9fcd3b9efd75668cbf9e9d120a16172725c6fdfb356ad61ab341066504787e8",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_pixels": 1130334,
+      "bytes": 1340347,
+      "scope": "Static decorative clip-art person in the top game interface only, outside the analyzed canvas and inference.",
+      "integrated_into_website": true,
+      "inference_input": false,
+      "placement_region": "top-right-object-edges-in-top-game-only",
+      "animation": "none",
+      "iteration22_scope": "Unchanged top-game asset; one static person in the retained 4/3/3 top-right object-edge clusters."
+    },
+    {
+      "n": 3,
+      "label": "Iris",
+      "description": "An older woman with fair skin and a neat silver bob, round glasses, plum-purple coat over pale coral dress, sensible brown shoes, holding a little green book. Friendly upright standing pose.",
+      "prompt": "One original full-body clip-art person, isolated on a genuinely transparent background. A coherent illustrated crowd-puzzle picture-book style: clean dark-brown ink outlines, simple flat warm colors, restrained shading, friendly small facial features, natural slightly cartooned proportions around six heads tall, clear separated shoes and limbs. Charming detailed clothing that remains legible at 35\u201370 pixels tall on a website. Compact silhouette, whole head and shoes visible, narrow portrait composition with only a little transparent padding. No scene, no floor, no drop shadow, no glow, no lettering, no watermark, no other people. Do not use red-and-white striped clothes or make this person Wanda. The character is standing still, not walking.\n\nCharacter 3: An older woman with fair skin and a neat silver bob, round glasses, plum-purple coat over pale coral dress, sensible brown shoes, holding a little green book. Friendly upright standing pose.",
+      "source_path": "C:\\Users\\henri\\.codex\\generated_images\\01a124aa-1559-7223-b74a-9c8f72700b0a\\exec-bcfa48b7-c960-45a4-a5f0-351d50ef48eb.png",
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "copies": 1,
+      "path": "wanda-clipart/person-03.png",
+      "website_path": "waldo-search-lab/dist/assets/ui-clipart/person-03.png",
+      "sha256": "52b58f361f206c347e6b6cf0565beb7fe3d332b5cdfff597c03bb1b2fa58c8f9",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_pixels": 1085872,
+      "bytes": 1645572,
+      "scope": "Static decorative clip-art person in the top game interface only, outside the analyzed canvas and inference.",
+      "integrated_into_website": true,
+      "inference_input": false,
+      "placement_region": "top-right-object-edges-in-top-game-only",
+      "animation": "none",
+      "iteration22_scope": "Unchanged top-game asset; one static person in the retained 4/3/3 top-right object-edge clusters."
+    },
+    {
+      "n": 4,
+      "label": "Leo",
+      "description": "A school-age boy with tan skin and tousled auburn hair, teal hoodie, mustard shorts, white socks, navy sneakers. Standing happily holding a small orange basketball at his side.",
+      "prompt": "One original full-body clip-art person, isolated on a genuinely transparent background. A coherent illustrated crowd-puzzle picture-book style: clean dark-brown ink outlines, simple flat warm colors, restrained shading, friendly small facial features, natural slightly cartooned proportions around six heads tall, clear separated shoes and limbs. Charming detailed clothing that remains legible at 35\u201370 pixels tall on a website. Compact silhouette, whole head and shoes visible, narrow portrait composition with only a little transparent padding. No scene, no floor, no drop shadow, no glow, no lettering, no watermark, no other people. Do not use red-and-white striped clothes or make this person Wanda. The character is standing still, not walking.\n\nCharacter 4: A school-age boy with tan skin and tousled auburn hair, teal hoodie, mustard shorts, white socks, navy sneakers. Standing happily holding a small orange basketball at his side.",
+      "source_path": "C:\\Users\\henri\\.codex\\generated_images\\01a124aa-1559-7223-b74a-9c8f72700b0a\\exec-d79cf3e0-5a42-4b68-b2a7-0f82c9114254.png",
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "copies": 1,
+      "path": "wanda-clipart/person-04.png",
+      "website_path": "waldo-search-lab/dist/assets/ui-clipart/person-04.png",
+      "sha256": "4b3be5757c919c801a24f37d62a9e93dbd896bf75a3fbadbeddcb98e6f9eac87",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_pixels": 1092099,
+      "bytes": 1647252,
+      "scope": "Static decorative clip-art person in the top game interface only, outside the analyzed canvas and inference.",
+      "integrated_into_website": true,
+      "inference_input": false,
+      "placement_region": "top-right-object-edges-in-top-game-only",
+      "animation": "none",
+      "iteration22_scope": "Unchanged top-game asset; one static person in the retained 4/3/3 top-right object-edge clusters."
+    },
+    {
+      "n": 5,
+      "label": "Arthur",
+      "description": "An elderly man with light skin, white mustache and sparse silver hair under a little brown flat cap, pale green waistcoat over cream shirt, rust-brown trousers, brown shoes. Standing with a slim cane and a friendly smile.",
+      "prompt": "One original full-body clip-art person, isolated on a genuinely transparent background. A coherent illustrated crowd-puzzle picture-book style: clean dark-brown ink outlines, simple flat warm colors, restrained shading, friendly small facial features, natural slightly cartooned proportions around six heads tall, clear separated shoes and limbs. Charming detailed clothing that remains legible at 35\u201370 pixels tall on a website. Compact silhouette, whole head and shoes visible, narrow portrait composition with only a little transparent padding. No scene, no floor, no drop shadow, no glow, no lettering, no watermark, no other people. Do not use red-and-white striped clothes or make this person Wanda. The character is standing still, not walking.\n\nCharacter 5: An elderly man with light skin, white mustache and sparse silver hair under a little brown flat cap, pale green waistcoat over cream shirt, rust-brown trousers, brown shoes. Standing with a slim cane and a friendly smile.",
+      "source_path": "C:\\Users\\henri\\.codex\\generated_images\\01a124aa-1559-7223-b74a-9c8f72700b0a\\exec-e2bfab94-3e96-47fb-9e26-c04f98ac78c9.png",
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "copies": 1,
+      "path": "wanda-clipart/person-05.png",
+      "website_path": "waldo-search-lab/dist/assets/ui-clipart/person-05.png",
+      "sha256": "12eddeee215031a3df063ff822447382fe0852a5b7163c2f3150884a22569f2f",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_pixels": 1046964,
+      "bytes": 1681217,
+      "scope": "Static decorative clip-art person in the top game interface only, outside the analyzed canvas and inference.",
+      "integrated_into_website": true,
+      "inference_input": false,
+      "placement_region": "top-right-object-edges-in-top-game-only",
+      "animation": "none",
+      "iteration22_scope": "Unchanged top-game asset; one static person in the retained 4/3/3 top-right object-edge clusters."
+    },
+    {
+      "n": 6,
+      "label": "Nia",
+      "description": "A young adult woman with dark brown skin and long neat dark braids, coral-pink blouse, navy trousers and pale yellow shoes. Standing casually, holding a turquoise takeaway cup.",
+      "prompt": "One original full-body clip-art person, isolated on a genuinely transparent background. A coherent illustrated crowd-puzzle picture-book style: clean dark-brown ink outlines, simple flat warm colors, restrained shading, friendly small facial features, natural slightly cartooned proportions around six heads tall, clear separated shoes and limbs. Charming detailed clothing that remains legible at 35\u201370 pixels tall on a website. Compact silhouette, whole head and shoes visible, narrow portrait composition with only a little transparent padding. No scene, no floor, no drop shadow, no glow, no lettering, no watermark, no other people. Do not use red-and-white striped clothes or make this person Wanda. The character is standing still, not walking.\n\nCharacter 6: A young adult woman with dark brown skin and long neat dark braids, coral-pink blouse, navy trousers and pale yellow shoes. Standing casually, holding a turquoise takeaway cup.",
+      "source_path": "C:\\Users\\henri\\.codex\\generated_images\\01a124aa-1559-7223-b74a-9c8f72700b0a\\exec-d9402518-7531-4d22-9501-572801e795e4.png",
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "copies": 1,
+      "path": "wanda-clipart/person-06.png",
+      "website_path": "waldo-search-lab/dist/assets/ui-clipart/person-06.png",
+      "sha256": "99a4cec07763eb4473c547dd875e7bb2d4cd6bb5ddaa55557aefece9a45bbebe",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_pixels": 1126820,
+      "bytes": 1267773,
+      "scope": "Static decorative clip-art person in the top game interface only, outside the analyzed canvas and inference.",
+      "integrated_into_website": true,
+      "inference_input": false,
+      "placement_region": "top-right-object-edges-in-top-game-only",
+      "animation": "none",
+      "iteration22_scope": "Unchanged top-game asset; one static person in the retained 4/3/3 top-right object-edge clusters."
+    },
+    {
+      "n": 7,
+      "label": "Owen",
+      "description": "A sturdy adult man with fair freckled skin, ginger beard, orange work overalls over navy shirt, brown work boots, a small dark tool belt. Relaxed standing pose, one hand resting on the belt.",
+      "prompt": "One original full-body clip-art person, isolated on a genuinely transparent background. A coherent illustrated crowd-puzzle picture-book style: clean dark-brown ink outlines, simple flat warm colors, restrained shading, friendly small facial features, natural slightly cartooned proportions around six heads tall, clear separated shoes and limbs. Charming detailed clothing that remains legible at 35\u201370 pixels tall on a website. Compact silhouette, whole head and shoes visible, narrow portrait composition with only a little transparent padding. No scene, no floor, no drop shadow, no glow, no lettering, no watermark, no other people. Do not use red-and-white striped clothes or make this person Wanda. The character is standing still, not walking.\n\nCharacter 7: A sturdy adult man with fair freckled skin, ginger beard, orange work overalls over navy shirt, brown work boots, a small dark tool belt. Relaxed standing pose, one hand resting on the belt.",
+      "source_path": "C:\\Users\\henri\\.codex\\generated_images\\01a124aa-1559-7223-b74a-9c8f72700b0a\\exec-0f89c72e-2c87-4586-9da7-bdc12700e413.png",
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "copies": 1,
+      "path": "wanda-clipart/person-07.png",
+      "website_path": "waldo-search-lab/dist/assets/ui-clipart/person-07.png",
+      "sha256": "4f644626a6cddd555e7f57216dbdc35cef0775eb5a69959af6ea5fe46e7fac65",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_pixels": 978693,
+      "bytes": 1661420,
+      "scope": "Static decorative clip-art person in the top game interface only, outside the analyzed canvas and inference.",
+      "integrated_into_website": true,
+      "inference_input": false,
+      "placement_region": "top-right-object-edges-in-top-game-only",
+      "animation": "none",
+      "iteration22_scope": "Unchanged top-game asset; one static person in the retained 4/3/3 top-right object-edge clusters."
+    },
+    {
+      "n": 8,
+      "label": "Sam",
+      "description": "A teenager with medium brown skin and shoulder-length straight black hair, lavender T-shirt, bright blue jeans, lime-green headphones around their neck and white sneakers. Standing with one hand in a pocket.",
+      "prompt": "One original full-body clip-art person, isolated on a genuinely transparent background. A coherent illustrated crowd-puzzle picture-book style: clean dark-brown ink outlines, simple flat warm colors, restrained shading, friendly small facial features, natural slightly cartooned proportions around six heads tall, clear separated shoes and limbs. Charming detailed clothing that remains legible at 35\u201370 pixels tall on a website. Compact silhouette, whole head and shoes visible, narrow portrait composition with only a little transparent padding. No scene, no floor, no drop shadow, no glow, no lettering, no watermark, no other people. Do not use red-and-white striped clothes or make this person Wanda. The character is standing still, not walking.\n\nCharacter 8: A teenager with medium brown skin and shoulder-length straight black hair, lavender T-shirt, bright blue jeans, lime-green headphones around their neck and white sneakers. Standing with one hand in a pocket.",
+      "source_path": "C:\\Users\\henri\\.codex\\generated_images\\01a124aa-1559-7223-b74a-9c8f72700b0a\\exec-c6b99cc1-7936-422f-afa9-06918e20791d.png",
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "copies": 1,
+      "path": "wanda-clipart/person-08.png",
+      "website_path": "waldo-search-lab/dist/assets/ui-clipart/person-08.png",
+      "sha256": "6e15653643c6b52e7ffe26c8d0930c12a5d5edef4fb177939721390f129d7fe5",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_pixels": 1124291,
+      "bytes": 1440133,
+      "scope": "Static decorative clip-art person in the top game interface only, outside the analyzed canvas and inference.",
+      "integrated_into_website": true,
+      "inference_input": false,
+      "placement_region": "top-right-object-edges-in-top-game-only",
+      "animation": "none",
+      "iteration22_scope": "Unchanged top-game asset; one static person in the retained 4/3/3 top-right object-edge clusters."
+    },
+    {
+      "n": 9,
+      "label": "June",
+      "description": "An adult East Asian woman with warm light skin, short black hair and a straw sun hat, pale olive-green midi dress, coral shoes. Standing holding a tiny bouquet of colorful flowers.",
+      "prompt": "One original full-body clip-art person, isolated on a genuinely transparent background. A coherent illustrated crowd-puzzle picture-book style: clean dark-brown ink outlines, simple flat warm colors, restrained shading, friendly small facial features, natural slightly cartooned proportions around six heads tall, clear separated shoes and limbs. Charming detailed clothing that remains legible at 35\u201370 pixels tall on a website. Compact silhouette, whole head and shoes visible, narrow portrait composition with only a little transparent padding. No scene, no floor, no drop shadow, no glow, no lettering, no watermark, no other people. Do not use red-and-white striped clothes or make this person Wanda. The character is standing still, not walking.\n\nCharacter 9: An adult East Asian woman with warm light skin, short black hair and a straw sun hat, pale olive-green midi dress, coral shoes. Standing holding a tiny bouquet of colorful flowers.",
+      "source_path": "C:\\Users\\henri\\.codex\\generated_images\\01a124aa-1559-7223-b74a-9c8f72700b0a\\exec-d3116b5b-9cc1-4d96-90bc-b962b91c1dcf.png",
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "copies": 1,
+      "path": "wanda-clipart/person-09.png",
+      "website_path": "waldo-search-lab/dist/assets/ui-clipart/person-09.png",
+      "sha256": "508af001c3daff7e84e4e4368021df73517126694a910d98b6902f6efc756d31",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_pixels": 1108296,
+      "bytes": 1443058,
+      "scope": "Static decorative clip-art person in the top game interface only, outside the analyzed canvas and inference.",
+      "integrated_into_website": true,
+      "inference_input": false,
+      "placement_region": "top-right-object-edges-in-top-game-only",
+      "animation": "none",
+      "iteration22_scope": "Unchanged top-game asset; one static person in the retained 4/3/3 top-right object-edge clusters."
+    },
+    {
+      "n": 10,
+      "label": "Felix",
+      "description": "An adult man with medium brown skin, short curly dark hair, dark teal raincoat, mustard scarf, gray trousers and reddish-brown boots. Standing holding a small closed orange umbrella at his side.",
+      "prompt": "One original full-body clip-art person, isolated on a genuinely transparent background. A coherent illustrated crowd-puzzle picture-book style: clean dark-brown ink outlines, simple flat warm colors, restrained shading, friendly small facial features, natural slightly cartooned proportions around six heads tall, clear separated shoes and limbs. Charming detailed clothing that remains legible at 35\u201370 pixels tall on a website. Compact silhouette, whole head and shoes visible, narrow portrait composition with only a little transparent padding. No scene, no floor, no drop shadow, no glow, no lettering, no watermark, no other people. Do not use red-and-white striped clothes or make this person Wanda. The character is standing still, not walking.\n\nCharacter 10: An adult man with medium brown skin, short curly dark hair, dark teal raincoat, mustard scarf, gray trousers and reddish-brown boots. Standing holding a small closed orange umbrella at his side.",
+      "source_path": "C:\\Users\\henri\\.codex\\generated_images\\01a124aa-1559-7223-b74a-9c8f72700b0a\\exec-2df0ea5f-ddd4-4c9d-8970-48e018e25504.png",
+      "tool": "built-in image_gen",
+      "transparent_background": true,
+      "copies": 1,
+      "path": "wanda-clipart/person-10.png",
+      "website_path": "waldo-search-lab/dist/assets/ui-clipart/person-10.png",
+      "sha256": "a853ed4ab426d20fac1e61923fb6d66f6f33bf60ff2b1aeb0ae1842b477968ec",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_pixels": 1083792,
+      "bytes": 1306282,
+      "scope": "Static decorative clip-art person in the top game interface only, outside the analyzed canvas and inference.",
+      "integrated_into_website": true,
+      "inference_input": false,
+      "placement_region": "top-right-object-edges-in-top-game-only",
+      "animation": "none",
+      "iteration22_scope": "Unchanged top-game asset; one static person in the retained 4/3/3 top-right object-edge clusters."
+    }
+  ],
+  "retained_standalone_artwork": [
+    {
+      "path": "pastel-red-pedestrian.png",
+      "sha256": "dec0a388b558239df7d5108e9bc83098add8f462f1253551062ad9150094fad8",
+      "bytes": 496719,
+      "scope": "Retained requested standalone download; historical artwork, absent from the live interface and inference.",
+      "integrated_into_website": false,
+      "inference_input": false,
+      "historical_website_path": "waldo-search-lab/dist/assets/ui-pedestrians/pedestrian-red.png",
+      "historical_provenance_receipt": "archive/iteration20-dense-rejected/publication-receipt.json"
+    },
+    {
+      "path": "pastel-yellow-pedestrian.png",
+      "sha256": "3e65880860e3be5405f052692fca430890b510e98a7307def16fb96512ab6f51",
+      "bytes": 488423,
+      "scope": "Retained requested standalone download; historical artwork, absent from the live interface and inference.",
+      "integrated_into_website": false,
+      "inference_input": false,
+      "historical_website_path": "waldo-search-lab/dist/assets/ui-pedestrians/pedestrian-yellow.png",
+      "historical_provenance_receipt": "archive/iteration20-dense-rejected/publication-receipt.json"
+    },
+    {
+      "path": "pastel-blue-pedestrian.png",
+      "sha256": "acf54ce0bf379ab7084b013772575f7dd68804b989a8d93399a22157fd75e977",
+      "bytes": 504010,
+      "scope": "Retained requested standalone download; historical artwork, absent from the live interface and inference.",
+      "integrated_into_website": false,
+      "inference_input": false,
+      "historical_website_path": "waldo-search-lab/dist/assets/ui-pedestrians/pedestrian-blue.png",
+      "historical_provenance_receipt": "archive/iteration20-dense-rejected/publication-receipt.json"
+    }
+  ],
+  "presentation": {
+    "underhood": "Latest QNN Playground inline on the same page; whole old section removed",
+    "theme": "Red/light; Find and lower section share #d24e45 with white/red striped transition",
+    "people": "Ten unchanged static top-game people, one each, in 4/3/3 top-right object-edge clusters; none under the hood"
+  },
+  "next_priority": "Continue from the inline red/light QNN Playground, preserving its original source and current top-game styling. Keep live metrics explicitly illustrative and independent of frozen Wanda evaluation. Use observed user feedback to select further changes. Do not restore the removed old underhood section, old stage tabs, dark styling or rejected people themes.",
+  "overnight_reset_budget": {
+    "maximum": 1,
+    "agent_consumed": 0,
+    "preserve_for_user": 1,
+    "ledger": "OVERNIGHT_RESOURCE_BUDGET.json",
+    "last_observation": {
+      "recorded_at": "2026-10-11T20:50:05.521612+00:00",
+      "weekly_used_percent": 47,
+      "available_count": 1,
+      "agent_resets_consumed": 0
+    }
+  },
+  "historical_external_repository_work": {
+    "merge_commit": "032615659c5967df8f025b63bdd610954d21b3ea",
+    "pull_request": "https://github.com/goesixteen/quantum-image-search/pull/1",
+    "path": "qnn-playground",
+    "files": 29,
+    "source_preserved": true,
+    "validation_scope": "Source preservation only; no installation, build, runtime or scientific validation in this UI iteration."
+  },
+  "rejected_dense_pictogram_revision": {
+    "project_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1",
+    "commit_sha": "66f66be39e50df251ffb7345486b9b006c7b25e4",
+    "deployment_id": "appgdep_6acbe87168448191aa180c8f25ef0e4e",
+    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_c42dec371de081919ce0d561f713881f",
+    "status": "succeeded",
+    "url": "https://quantum-crowd-search.syrupyspool2.chatgpt.site",
+    "audience": "owner-private",
+    "historical_only": true,
+    "reason": "The user rejected all decorative interface people and requested their complete rollback.",
+    "archive": "archive/iteration20-dense-rejected",
+    "qa_evidence": "archive/iteration20-dense-rejected/WANDA_ITERATION20_DENSE_QA.md"
+  },
+  "previous_iteration19_revision": {
+    "project_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1",
+    "commit_sha": "002574d248d81237e542b0c954185213eda9208a",
+    "deployment_id": "appgdep_6acbd4091a308191aa1ede8ca65c2675",
+    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_5daa63b3a8bc819181549750493a7a87",
+    "status": "succeeded",
+    "url": "https://quantum-crowd-search.syrupyspool2.chatgpt.site",
+    "audience": "owner-private"
+  },
+  "rejected_iteration20_revision": {
+    "commit_sha": "74e899459f013bdbd3552ad40da7081b1cb58153",
+    "deployment_id": "appgdep_6acbdb31a5f08191ae544a76c13f0e41",
+    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_74f24397bde8819185367dcffc4c3a05",
+    "status": "succeeded",
+    "historical_only": true,
+    "reason": "The user rejected the animated walking photo-cutout crowd theme. Later pictogram entry motion does not restore that theme.",
+    "archive": "archive/iteration20-rejected-crowd-theme"
+  },
+  "intermediate_iteration20_rollback": {
+    "commit_sha": "f2024f7180c8c444e558d558bfb34e6eb2994baa",
+    "deployment_id": "appgdep_6acbdd6ce8048191b7b7271c71cb27ab",
+    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_33ce12f62e148191b8164a4bc315c25b",
+    "status": "succeeded",
+    "historical_only": true,
+    "reason": "Intermediate title-only rollback, subsequently replaced by the requested pictogram theme."
+  },
+  "previous_static_revision": {
+    "commit_sha": "9149477da30b6949473acaa08b06dc1ac6badbd3",
+    "deployment_id": "appgdep_6acbe04779708191b2f5ecaa3d4386b4",
+    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_49a72dde18f08191b5dd521c85a40b9a",
+    "status": "succeeded",
+    "historical_only": true,
+    "reason": "Initial static rows, superseded first by varied heights/facing and corner/side placement, then by the authorized dense entry-motion refinement."
+  },
+  "staggered_static_revision": {
+    "project_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1",
+    "commit_sha": "e40f28f25ca3876c06bf325ddf72a315cfc47e6c",
+    "deployment_id": "appgdep_6acbe34696348191b0a2a94a7547952a",
+    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_f5599442fb4c8191ba5c1afb3b15b3e6",
+    "status": "succeeded",
+    "url": "https://quantum-crowd-search.syrupyspool2.chatgpt.site",
+    "audience": "owner-private",
+    "historical_only": true,
+    "reason": "Completed staggered static pictogram revision, superseded by the user-requested dense crowds and constant-speed viewport-entry dispersal.",
+    "archive": "archive/iteration20-staggered-static",
+    "qa_evidence": "archive/iteration20-staggered-static/WANDA_ITERATION20_STATIC_QA.md"
+  },
+  "iteration19_evidence_receipt": "archive/iteration19-before-crowd-theme/publication-receipt.json",
+  "iteration21_intermediate_clean_rollback": {
+    "commit_sha": "2ed43e039595532af34455dbff36edf2ffa314c5",
+    "deployment_id": "appgdep_6acbee38dbe88191958b79b6023ace26",
+    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_b5fe87f8bbdc819187b12ea1b5a2c829",
+    "status": "succeeded",
+    "url": "https://quantum-crowd-search.syrupyspool2.chatgpt.site",
+    "historical_only": true,
+    "reason": "Clean intermediate rollback, superseded by the user's explicitly requested new static clip-art style."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "source": "3e9c34c40263d0839cfe13eae96cf6bcdd8fc27b",
+  "deployment": {
+    "id": "appgdep_6acbf23ceb048191aa52141a2bae1722",
+    "project_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1",
+    "title": "Quantum Crowd Search",
+    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_d197265894a48191b8d2e99a9bf9e140",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://quantum-crowd-search.syrupyspool2.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ac9ed0456008191aafac54f8d5af4d1",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-11T20:32:10.351107+00:00"
+  },
+  "scope": "Ten static people in three top-right edge groups (4/3/3) and red underhood; prior to latest user-requested top style test.",
+  "proof": "top.jpg"
+}

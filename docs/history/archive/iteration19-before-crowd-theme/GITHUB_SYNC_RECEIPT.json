@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "status": "SUCCEEDED",
+  "recordedAtUtc": "2026-10-11T18:30:56.476027+00:00",
+  "userAuthorization": "Push the current files to my private QHack GitHub repository; authorization persists for the requested interface revision.",
+  "repository": "https://github.com/goesixteen/quantum-image-search",
+  "branch": "main",
+  "commit": "5ee1f25ffc0c80cd616135ddcd47e3294764ce6c",
+  "commitUrl": "https://github.com/goesixteen/quantum-image-search/commit/5ee1f25ffc0c80cd616135ddcd47e3294764ce6c",
+  "baselineCommit": "f31091d3ee7b8f3aaa647debe3c9fcd22d4acefa",
+  "previousPrivateGitRevision": {
+    "commit": "f31091d3ee7b8f3aaa647debe3c9fcd22d4acefa",
+    "publishedApplicationIteration": 18,
+    "archivedReceipt": "archive/iteration18-before-speech-and-swing/GITHUB_SYNC_RECEIPT.json",
+    "archivedReceiptSHA256": "7c2af82eec17c9537354b350199297680cbafa262263b96285ef7e34e9cf73ae"
+  },
+  "remoteCommitVerified": true,
+  "workingTreeClean": true,
+  "visibility": "private",
+  "visibilityVerification": "Root verified the current signed-in GitHub repository page marked Private and saved the post-push proof.",
+  "proof": "github-private-sync-proof.png",
+  "proofSHA256": "44531e7979e4ae205ed34c4641fa2ffbc85fb2840a34b0acf56cbc653fe1bd34",
+  "trackedFiles": 1090,
+  "exportedFiles": 1088,
+  "scope": "Both current demo projects, artwork, model/training files, frozen evidence, tests, historical failures and latest documentation.",
+  "exportManifest": "GITHUB_EXPORT_MANIFEST.json",
+  "exportManifestSHA256": "aaafe444fc74aa1477a155b764e6e28bb939e97781f3fb384654dac3cee3d795",
+  "checks": {
+    "status": "PASS",
+    "manifestFilesVerified": 1088,
+    "trackedFiles": 1090,
+    "gitIndexMatchesRawExportBytes": true,
+    "readmeLocalLinksVerified": 14,
+    "syntax": [
+      {
+        "project": "waldo-search-lab",
+        "files": 23
+      },
+      {
+        "project": "bus-search-lab",
+        "files": 9
+      }
+    ],
+    "copiedWandaHTTP200ByteMatches": [
+      "/",
+      "/app.js",
+      "/underhood.js",
+      "/circuit-playback.js",
+      "/model/wanda-qnn.json"
+    ],
+    "whitespaceAudit": {
+      "CRLFRecognized": true,
+      "originalGeneratedSVGWhitespacePreserved": []
+    },
+    "frozenVerifier": "PASS: 11 files, 7 source files, 12 pixel fixtures; no held-out evaluation",
+    "scope": "Transfer integrity and copied startup only; the 147 engineering tests were rerun separately for iteration 19 in the published application checkout, not in this transfer helper."
+  },
+  "applicationValidation": {
+    "publishedApplicationIteration": 19,
+    "publishedWandaSource": "002574d248d81237e542b0c954185213eda9208a",
+    "nodeTestsPassed": 147,
+    "nodeTestsRerunForIteration19": true,
+    "frozenVerifier": {
+      "passed": true,
+      "frozen_files": 11,
+      "frozen_sources": 7,
+      "pixel_fixtures": 12
+    },
+    "evidence": "publication-receipt.json and waldo-search-lab/docs/WANDA_ITERATION19_QA.md"
+  },
+  "scientificScope": "The 147 engineering tests were actually rerun for iteration 19; read-only frozen verification covered 11 files, 7 source contracts and 12 pixel fixtures. Git transfer checks cover integrity and copied startup. No retraining, reserved-test rerun or new recognition accuracy was produced.",
+  "retainedHistoricalFailure": {
+    "iteration": 17,
+    "description": "Initial Git staging normalized a CRLF file. Root -text attributes and explicit index renormalization corrected it; all 1063 export entries then matched Git blobs exactly. Generated historical SVG trailing whitespace retained byte-for-byte."
+  },
+  "retainedHistoricalPackagingRepairs": {
+    "iteration": 18,
+    "items": [
+      "Archive verification caught the old ZIP helper excluding archived release sidecars by filename. Restricted exclusion to the root current sidecar and rebuilt; prior records remain included.",
+      "GitHub commit-message locator matched repeated file-row links; scoped to the observed latest-commit region, then saved current private proof."
+    ]
+  },
+  "concurrentBranchObservation": {
+    "branch": "Andrew",
+    "before": "47936eed9a363d18b5084d48cb7a7edd2fa1a6ca",
+    "after": "a85fce871f97d6428a15e2e65aa0b1add4196986",
+    "advancedDuringRun": true,
+    "priorHistoryRetained": true,
+    "modifiedByThisRun": false,
+    "note": "The independent Andrew branch advanced to Add QNN playground between remote observations. This run pushed only main and fetched Andrew read-only; no merge or reset."
+  },
+  "localRecordRepairs": [
+    "The first receipt guard expected Andrew to stay at its pre-run SHA. It rejected an independent branch advance; read-only fetch confirmed retained ancestry and the receipt now records both observations.",
+    "An intermediate ZIP was generated after the failed receipt guard and contained the prior Git receipt. The final ZIP was rebuilt and verified only after the corrected current receipt succeeded."
+  ],
+  "preserved": {
+    "priorHistory": true,
+    "AndrewBranch": "a85fce871f97d6428a15e2e65aa0b1add4196986",
+    "desktopCheckoutUntouched": true,
+    "hostedPublicationReceiptIteration": 19,
+    "priorGitReceiptArchived": true,
+    "localRehearsalContinuation": null,
+    "bothWebsiteAudiencesUnchanged": true
+  },
+  "excluded": "Root redundant source ZIP and final archive sidecar, Git internals, dependency folders, caches and credentials. Application ZIP downloads and compressed experiment evidence were kept.",
+  "localOnlyReceipt": "This post-push receipt and verification screenshot are local outputs, excluded from the repository snapshot.",
+  "contestSubmitted": false,
+  "agentUsageResetsConsumed": 0,
+  "nextResumption": "Read this receipt with WANDA_ITERATION_BRIEF.md, WANDA_HANDOFF.md and publication-receipt.json. Build on the five-scene welcome, speech bubble, shrinking hand-held drag flow and existing three-stage explanation; preserve the frozen model and failure scope. Before future GitHub updates, inspect remote changes and avoid replacing teammate work."
+}

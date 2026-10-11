@@ -1,0 +1,334 @@
+{
+  "recorded_at": "2026-10-11T02:33:48.222368+00:00",
+  "iteration": 8,
+  "work_step": "trained-striped-person-qnn-default",
+  "bus": {
+    "project_id": "appgprj_6ac9e65f76c48191b8d53784212b5f4c",
+    "commit_sha": "2f616c21b832d8164b06c60a7ffc66499c20290f",
+    "deployment_id": "appgdep_6aca06d97cf4819191d7cd98c5a80355",
+    "version_id": "appgprj_6ac9e65f76c48191b8d53784212b5f4c~appgver_3d2d9fda24e08191bfc638a1664a844a",
+    "status": "succeeded",
+    "url": "https://bus-search-quantum-lab.syrupyspool2.chatgpt.site",
+    "audience": "owner-private"
+  },
+  "crowd": {
+    "project_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1",
+    "commit_sha": "1448ac24789ffd2ac3e8ce899268fd8abd755a25",
+    "deployment_id": "appgdep_6acaf4dc17d08191ad716860ccd09beb",
+    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_f41051877b7c8191af063a11d209262d",
+    "status": "succeeded",
+    "url": "https://quantum-crowd-search.syrupyspool2.chatgpt.site",
+    "audience": "owner-private"
+  },
+  "previous_crowd_revision": {
+    "project_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1",
+    "commit_sha": "ed3521866bc46bb68b579dbd35a383e073fc5007",
+    "deployment_id": "appgdep_6aca9831f3008191a6e7b27d6df51fdd",
+    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_3454dd09e3a0819187cc099d71e42b12",
+    "status": "succeeded",
+    "url": "https://quantum-crowd-search.syrupyspool2.chatgpt.site",
+    "audience": "owner-private"
+  },
+  "submission": {
+    "status": "not-submitted",
+    "instruction": "Do not submit any work. Keep iterating improvements.",
+    "public_materials_published": false
+  },
+  "browser_preview": "Local and authenticated hosted default: trained-QNN badge,4096 circuit evaluations,one accepted point,round50,99.99% accepted mass,point(276,348),4.5px error,100% visible. Local3scene defaults,empty calls,real tray drag,supplied size112,16x16 addressing,uploads,keyboard cancellation,exact overshoot and390px responsive replay documented separately.",
+  "hosted_browser_proof": "hosted-qnn-proof.png",
+  "hosted_browser_proofs": [
+    "hosted-qnn-proof.png"
+  ],
+  "current_qa": {
+    "node_tests_passed": 74,
+    "qiskit_tests_passed": 9,
+    "release_checks": {
+      "status": "PASS",
+      "frozenModelSHA256": "9c5a25af8a37eb8482f09e49631418e63c05c47d0317fd0a2a5ead9b6c63465a",
+      "independentAuditSHA256": "7585ffce07d79540f849932c6b5bc9cb616c5ae44c33723b80aebda520d19808",
+      "packageFilesVerified": 120,
+      "legacyArtifactBytes": "unchanged",
+      "metricsAndAuditCopies": "byte-identical",
+      "jsonNumbers": "finite"
+    },
+    "test_scope": "74 Node tests after V3 feature freeze; actual trained pixel/Qiskit parity, portable data replay, static links/syntax and subsequent browser UX checks are separate.",
+    "reserved_test_qnn": {
+      "targetScenes": 250,
+      "absenceScenes": 12,
+      "completeHits": 223,
+      "completeHitRate": 0.892,
+      "targetFalsePointScenes": 2,
+      "targetFalsePointRate": 0.008,
+      "targetEmptyOracles": 25,
+      "targetCoverage": 0.892,
+      "absenceFalsePointScenes": 0,
+      "absenceAcceptedPoints": 0,
+      "threshold": 0.967190378886187,
+      "bySizeRanges": {
+        "24-35": {
+          "n": 39,
+          "completeHits": 31,
+          "completeHitRate": 0.7948717948717948,
+          "anyFalse": 1,
+          "emptyOracles": 7
+        },
+        "36-63": {
+          "n": 75,
+          "completeHits": 71,
+          "completeHitRate": 0.9466666666666667,
+          "anyFalse": 1,
+          "emptyOracles": 3
+        },
+        "64-91": {
+          "n": 73,
+          "completeHits": 66,
+          "completeHitRate": 0.9041095890410958,
+          "anyFalse": 0,
+          "emptyOracles": 7
+        },
+        "92-112": {
+          "n": 63,
+          "completeHits": 55,
+          "completeHitRate": 0.873015873015873,
+          "anyFalse": 0,
+          "emptyOracles": 8
+        }
+      },
+      "byVisibility": {
+        "20-50%": {
+          "n": 0,
+          "completeHits": 0,
+          "completeHitRate": 0.0,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        },
+        "50-90%": {
+          "n": 0,
+          "completeHits": 0,
+          "completeHitRate": 0.0,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        },
+        "90-below100%": {
+          "n": 0,
+          "completeHits": 0,
+          "completeHitRate": 0.0,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        },
+        "100%": {
+          "n": 250,
+          "completeHits": 223,
+          "completeHitRate": 0.892,
+          "anyFalse": 2,
+          "emptyOracles": 25
+        }
+      },
+      "byFrameClipping": {
+        "inside": {
+          "n": 233,
+          "completeHits": 212,
+          "completeHitRate": 0.9098712446351931,
+          "anyFalse": 2,
+          "emptyOracles": 19
+        },
+        "clipped": {
+          "n": 17,
+          "completeHits": 11,
+          "completeHitRate": 0.6470588235294118,
+          "anyFalse": 0,
+          "emptyOracles": 6
+        }
+      }
+    },
+    "reserved_test_logistic": {
+      "targetScenes": 250,
+      "absenceScenes": 12,
+      "completeHits": 221,
+      "completeHitRate": 0.884,
+      "targetFalsePointScenes": 0,
+      "targetFalsePointRate": 0.0,
+      "targetEmptyOracles": 29,
+      "targetCoverage": 0.884,
+      "absenceFalsePointScenes": 0,
+      "absenceAcceptedPoints": 0,
+      "threshold": 0.9928998922444161,
+      "bySizeRanges": {
+        "24-35": {
+          "n": 39,
+          "completeHits": 29,
+          "completeHitRate": 0.7435897435897436,
+          "anyFalse": 0,
+          "emptyOracles": 10
+        },
+        "36-63": {
+          "n": 75,
+          "completeHits": 64,
+          "completeHitRate": 0.8533333333333334,
+          "anyFalse": 0,
+          "emptyOracles": 11
+        },
+        "64-91": {
+          "n": 73,
+          "completeHits": 68,
+          "completeHitRate": 0.9315068493150684,
+          "anyFalse": 0,
+          "emptyOracles": 5
+        },
+        "92-112": {
+          "n": 63,
+          "completeHits": 60,
+          "completeHitRate": 0.9523809523809523,
+          "anyFalse": 0,
+          "emptyOracles": 3
+        }
+      },
+      "byVisibility": {
+        "20-50%": {
+          "n": 0,
+          "completeHits": 0,
+          "completeHitRate": 0.0,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        },
+        "50-90%": {
+          "n": 0,
+          "completeHits": 0,
+          "completeHitRate": 0.0,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        },
+        "90-below100%": {
+          "n": 0,
+          "completeHits": 0,
+          "completeHitRate": 0.0,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        },
+        "100%": {
+          "n": 250,
+          "completeHits": 221,
+          "completeHitRate": 0.884,
+          "anyFalse": 0,
+          "emptyOracles": 29
+        }
+      },
+      "byFrameClipping": {
+        "inside": {
+          "n": 233,
+          "completeHits": 210,
+          "completeHitRate": 0.9012875536480687,
+          "anyFalse": 0,
+          "emptyOracles": 23
+        },
+        "clipped": {
+          "n": 17,
+          "completeHits": 11,
+          "completeHitRate": 0.6470588235294118,
+          "anyFalse": 0,
+          "emptyOracles": 6
+        }
+      }
+    },
+    "independent_engineering_audit": {
+      "summary": {
+        "probes": 840,
+        "observable": 798,
+        "belowOrAtVisibilityGate": 42,
+        "hits": 435,
+        "misses": 363,
+        "cleanHits": 435,
+        "falseMarks": 12,
+        "falseMarkedScenes": 11,
+        "abstentions": 394,
+        "nearHiddenMarks": 0,
+        "visibleAtLeast20Percent": 722,
+        "hitsAtLeast20Percent": 435,
+        "visibleBetween1And20Percent": 76,
+        "hitsBetween1And20Percent": 0,
+        "seededCorrect": 435,
+        "seededMiss": 11,
+        "seededAbstention": 394,
+        "meanTruePointMass": 0.5178288473226226
+      },
+      "by_kind": {
+        "clean-default-coordinate": {
+          "probes": 12,
+          "observable": 12,
+          "belowOrAtVisibilityGate": 0,
+          "hits": 5,
+          "misses": 7,
+          "cleanHits": 5,
+          "falseMarks": 1,
+          "falseMarkedScenes": 1,
+          "abstentions": 6,
+          "nearHiddenMarks": 0,
+          "visibleAtLeast20Percent": 12,
+          "hitsAtLeast20Percent": 5,
+          "visibleBetween1And20Percent": 0,
+          "hitsBetween1And20Percent": 0,
+          "seededCorrect": 5,
+          "seededMiss": 1,
+          "seededAbstention": 6,
+          "meanTruePointMass": 0.41664390199758544
+        },
+        "clean-seeded": {
+          "probes": 288,
+          "observable": 288,
+          "belowOrAtVisibilityGate": 0,
+          "hits": 227,
+          "misses": 61,
+          "cleanHits": 227,
+          "falseMarks": 6,
+          "falseMarkedScenes": 5,
+          "abstentions": 56,
+          "nearHiddenMarks": 0,
+          "visibleAtLeast20Percent": 288,
+          "hitsAtLeast20Percent": 227,
+          "visibleBetween1And20Percent": 0,
+          "hitsBetween1And20Percent": 0,
+          "seededCorrect": 227,
+          "seededMiss": 5,
+          "seededAbstention": 56,
+          "meanTruePointMass": 0.788151377537007
+        },
+        "band-crossing": {
+          "probes": 540,
+          "observable": 498,
+          "belowOrAtVisibilityGate": 42,
+          "hits": 203,
+          "misses": 295,
+          "cleanHits": 203,
+          "falseMarks": 5,
+          "falseMarkedScenes": 5,
+          "abstentions": 332,
+          "nearHiddenMarks": 0,
+          "visibleAtLeast20Percent": 422,
+          "hitsAtLeast20Percent": 203,
+          "visibleBetween1And20Percent": 76,
+          "hitsBetween1And20Percent": 0,
+          "seededCorrect": 203,
+          "seededMiss": 5,
+          "seededAbstention": 332,
+          "meanTruePointMass": 0.3759053855488499
+        }
+      },
+      "empty": {
+        "cases": 12,
+        "falseMarkedScenes": 0,
+        "falseMarks": 0,
+        "abstentions": 12
+      }
+    },
+    "scope": "Same target artwork and three previously used scene identities; center-partition and seeded-rendering holdout. Fully visible primary targets, optional occlusion reported separately. No unseen-identity or quantum-advantage claim.",
+    "model_sha256": "9c5a25af8a37eb8482f09e49631418e63c05c47d0317fd0a2a5ead9b6c63465a",
+    "protocol_sha256": "4a113cef7f0dcd84f61845dae60703db5952e0355d95bf7256d79fb58fb6eb90",
+    "foreground_priority": "Fully visible primary demo. Existing optional layers retained; no further segmentation work in this step."
+  },
+  "next_work": [
+    "Improve tiny-target and point-centering robustness with new validation protocols; retain existing held-out/audit failures",
+    "Evaluate unseen backgrounds/poses with independent data before claiming general person localization",
+    "Keep display smoothing separate from exact state and measurement",
+    "Preserve both private sites; no contest or public submission"
+  ]
+}

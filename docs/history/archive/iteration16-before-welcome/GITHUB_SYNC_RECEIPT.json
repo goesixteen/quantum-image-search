@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "status": "SUCCEEDED",
+  "recordedAtUtc": "2026-10-11T17:04:57.709773+00:00",
+  "userAuthorization": "Push the current files to my private QHack GitHub repository.",
+  "repository": "https://github.com/goesixteen/quantum-image-search",
+  "branch": "main",
+  "commit": "00146e65220dacfbd1453ca2d3424b3924df59b8",
+  "commitUrl": "https://github.com/goesixteen/quantum-image-search/commit/00146e65220dacfbd1453ca2d3424b3924df59b8",
+  "baselineCommit": "47936eed9a363d18b5084d48cb7a7edd2fa1a6ca",
+  "remoteCommitVerified": true,
+  "workingTreeClean": true,
+  "visibility": "private",
+  "visibilityVerification": "Signed-in GitHub repository page showed Private before and after push.",
+  "proof": "github-private-sync-proof.png",
+  "trackedFiles": 1065,
+  "exportedFiles": 1063,
+  "scope": "Both current demo projects, artwork, model/training files, frozen evidence, tests, historical failures and latest documentation.",
+  "exportManifest": "GITHUB_EXPORT_MANIFEST.json",
+  "exportManifestSHA256": "f56f91fca900d0fbacd770ad8001fc45d32ab4608dc0e14a176c55a215ed34f2",
+  "checks": {
+    "status": "PASS",
+    "manifestFilesVerified": 1063,
+    "trackedFiles": 1065,
+    "gitIndexMatchesRawExportBytes": true,
+    "readmeLocalLinksVerified": 12,
+    "syntax": [
+      {
+        "project": "waldo-search-lab",
+        "files": 22
+      },
+      {
+        "project": "bus-search-lab",
+        "files": 9
+      }
+    ],
+    "copiedWandaHTTP200ByteMatches": [
+      "/",
+      "/app.js",
+      "/underhood.js",
+      "/circuit-playback.js",
+      "/model/wanda-qnn.json"
+    ],
+    "whitespaceAudit": {
+      "CRLFRecognized": true,
+      "originalGeneratedSVGWhitespacePreserved": [
+        "waldo-search-lab/model/wanda-two-target-experiment/convergence.svg"
+      ]
+    },
+    "frozenVerifier": "PASS: 11 files, 7 source files, 12 pixel fixtures; no held-out evaluation",
+    "scope": "Transfer integrity and copied startup; existing release 147 tests not rerun."
+  },
+  "scientificScope": "No retraining, reserved-test rerun or new recognition result. Prior 147 engineering tests remain scoped to unchanged published application code.",
+  "retainedFailure": "Initial Git staging normalized a CRLF file. Root -text attributes and explicit index renormalization corrected it; all 1063 export entries then matched Git blobs exactly. Generated historical SVG trailing whitespace retained byte-for-byte.",
+  "preserved": {
+    "priorHistory": true,
+    "AndrewBranch": "47936eed9a363d18b5084d48cb7a7edd2fa1a6ca",
+    "desktopCheckoutUntouched": true,
+    "hostedPublicationReceiptIteration": 16,
+    "localRehearsalContinuation": 17,
+    "bothWebsiteAudiencesUnchanged": true
+  },
+  "excluded": "Root redundant source ZIP, Git internals, dependency folders, caches and credentials. Application ZIP downloads and compressed experiment evidence were kept.",
+  "localOnlyReceipt": "This post-push receipt and verification screenshot are local outputs, excluded from the repository snapshot.",
+  "contestSubmitted": false,
+  "agentUsageResetsConsumed": 0,
+  "nextResumption": "Read this receipt with WANDA_ITERATION_BRIEF.md, WANDA_HANDOFF.md and publication-receipt.json. Build on the existing three-stage demo and preserve frozen model/failure scope. For future GitHub updates, inspect remote changes and avoid replacing teammate work."
+}

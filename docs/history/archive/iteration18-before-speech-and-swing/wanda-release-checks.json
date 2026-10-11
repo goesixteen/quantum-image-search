@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "sourceArchive": "quantum-image-search-deliverables.zip",
+  "files": 1076,
+  "bytes": 200202243,
+  "sha256": "f048d7b7e317d0b4ed82b045571ae182e1bafa0c26beb5c6ab1d092d5599bf70",
+  "crc": "all entries verified",
+  "pathSafety": "relative paths without traversal",
+  "frozenWandaModelSHA256": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88",
+  "scope": "Both current project trees, welcome/cursor correction, private GitHub receipt/proof, and retained prior evidence. No caches, Git internals or credentials.",
+  "schemaVersion": 1,
+  "publishedApplicationIteration": 18,
+  "publishedWandaSource": "17bd16281b095f3ab664f9e0c1396dfa3ee0a028",
+  "privateGithubCommit": "f31091d3ee7b8f3aaa647debe3c9fcd22d4acefa",
+  "exportManifestArchiveEntriesVerified": 1073,
+  "externalSidecar": "wanda-release-checks.json is excluded from its own archive and Git export to avoid a stale circular artifact identity.",
+  "postPushLocalArtifactsVerified": [
+    "GITHUB_SYNC_RECEIPT.json",
+    "github-private-sync-proof.png"
+  ],
+  "testScope": "147 engineering tests and read-only frozen11/7/12 verifier passed for iteration18. Final transfer/startup, index byte identity and archive CRC verified; no reserved evaluation."
+}

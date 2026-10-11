@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "sourceArchive": "quantum-image-search-deliverables.zip",
+  "files": 1065,
+  "bytes": 198946926,
+  "sha256": "166bb5ee48329bb0bd405e8bb94cab5e9172e7eddda063c3541928a98f1e8321",
+  "crc": "all entries verified",
+  "pathSafety": "relative paths without traversal",
+  "frozenWandaModelSHA256": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88",
+  "scope": "Both current project trees, latest local rehearsal, private GitHub receipt/proof and prior evidence. No caches, Git internals or credentials.",
+  "schemaVersion": 1,
+  "publishedApplicationIteration": 16,
+  "localDocumentationContinuation": 17,
+  "privateGithubCommit": "00146e65220dacfbd1453ca2d3424b3924df59b8",
+  "exportManifestArchiveEntriesVerified": 1062,
+  "excludedManifestEntry": "wanda-release-checks.json is an external archive sidecar, intentionally excluded",
+  "postPushLocalArtifactsVerified": [
+    "GITHUB_SYNC_RECEIPT.json",
+    "github-private-sync-proof.png"
+  ],
+  "testScope": "Transfer/packaging integrity and copied startup verified. Existing 147 engineering tests not rerun for unchanged application code."
+}
