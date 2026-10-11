@@ -28,34 +28,23 @@ keyboard controls, optional engineering checks and reproduction instructions.
 
 ## Current version
 
-Where’s Wanda starts empty, with five map thumbnails above the scene and a
-large portrait on the right. A speech bubble says “Hi, I’m Wanda!” Pick her
-up: she shrinks out of the box, hangs from the pointer by a raised hand, and
-swings behind mouse motion. Drop inside to place the original standing Wanda;
-drop outside to cancel. Dragging a placed target off-map returns her to the
-box. The placed message becomes plain text without the bubble outline.
-Find, Remove and Start over complete the loop. The soft overlay and
-connected **Image + QNN → Grover interference → Measurement** lesson remain.
+The heading is **Quantum Vision: Where's Wanda?** and the subheading is
+**Can you find Wanda using quantum crowd search?** Dense overlapping red,
+yellow and blue pictogram crowds disperse on viewport entry at a constant
+28 CSS px/s with linear timing, settling at text-safe edges and corners.
+The existing five-map welcome, hanging Wanda pickup and connected three-stage
+quantum explanation remain.
 
-Privately published application code is iteration 19, source
-`002574d248d81237e542b0c954185213eda9208a` in the separate Sites source repository.
-All 147 engineering tests and frozen verification pass. Actual local mouse,
-keyboard, reduced animation and 320/390px responsive checks are documented.
-Hosted pickup showed shrinking and rotation; its first arbitrary placement
-abstained, with the failure retained. A separate hosted keyboard default was
-found at (420,300), dragging off-map restored the welcome, and the console was
-empty. The hanging pose is UI-only;
-the trained standing PNG, model, threshold, scenes and quantum math are
-unchanged. The schoolbus deployment remains separate and unchanged.
+Private iteration 20 source: `66f66be39e50df251ffb7345486b9b006c7b25e4`. All 147 Node engineering tests were actually rerun on the final dense pedestrian revision and passed. The read-only frozen verifier was actually rerun on that revision and passed: 11 files, 7 source contracts and 12 pixel fixtures. The model SHA256 is unchanged. These are engineering/integrity checks, not a new recognition benchmark.
+Detailed actual final browser/motion observations are in the current QA record.
+The decorations do not enter inference, and prior recognition failures remain
+documented. The preceding staggered static revision is historical.
 
-- [Current handoff](WANDA_HANDOFF.md) and [iteration 19 source QA](waldo-search-lab/docs/WANDA_ITERATION19_QA.md)
-- [Hanging-pose provenance](waldo-search-lab/docs/WANDA_HANGING_ASSET.md)
-- [Private rehearsal script](WANDA_DEMO_REHEARSAL.md), [historical rehearsal](WANDA_ITERATION17_HANDOFF.md) and [deliverables overview](DELIVERABLES.md)
-- [Exact private deployment receipt](publication-receipt.json)
-- [Crowd project](waldo-search-lab/README.md) and [schoolbus project](bus-search-lab/README.md)
-- [Quantum explanation and scope](waldo-search-lab/docs/WANDA_LESSON.md)
-- [Frozen Wanda model and evidence](waldo-search-lab/model/wanda-qnn/README.md)
-- [Wanda artwork provenance](waldo-search-lab/docs/ASSETS.md) and [schoolbus assets](bus-search-lab/docs/ASSETS.md)
+- [Current handoff](WANDA_HANDOFF.md), [dense-crowd QA](WANDA_ITERATION20_DENSE_QA.md) and [exact private receipt](publication-receipt.json)
+- Standalone artwork: [Red PNG](pastel-red-pedestrian.png), [Yellow PNG](pastel-yellow-pedestrian.png), [Blue PNG](pastel-blue-pedestrian.png)
+- [Quick start](WANDA_QUICKSTART.md), [deliverables](DELIVERABLES.md) and [tracked Git export manifest](GITHUB_EXPORT_MANIFEST.json)
+- Local private Git receipt: `GITHUB_SYNC_RECEIPT.json` (excluded from Git)
+- [Preserved QNN playground](qnn-playground/README.md), merged independently in PR #1; source only, without installation/build/runtime/scientific validation in this iteration
 
 The default Wanda detector is a genuinely trained, simulated four-qubit QNN.
 Classical image descriptors and supplied scale enter its saved circuit and

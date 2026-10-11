@@ -1,38 +1,26 @@
 # Quantum image-search deliverables
 
-Current review: **iteration 19**. [Where’s Wanda](https://quantum-crowd-search.syrupyspool2.chatgpt.site)
-opens empty with five map choices above the scene. Its right-hand portrait
-says “Hi, I’m Wanda!” in a speech bubble. On pickup she shrinks toward the
-pointer, hangs by her raised hand and swings behind motion. Inside release
-places the original standing target; outside release cancels. The placed
-message is plain text, with speech-bubble decoration removed. Drag off-map,
-Remove or Start over return her to the box. The trained-QNN/Grover search and
-connected three-stage explanation are preserved.
+Current review: **iteration 20, dense pedestrian entry motion**.
+[Open Quantum Vision: Where's Wanda?](https://quantum-crowd-search.syrupyspool2.chatgpt.site). The requested title and
+question subheading remain. Dense overlapping red, yellow and blue pictogram
+crowds disperse on viewport entry with linear timing at a constant 28 CSS px/s,
+settling at text-safe edges/corners. Wanda placement/search and the connected
+three-stage explanation remain.
 
-**147 engineering tests** and frozen verification pass. Actual local mouse,
-keyboard, reduced animation and 320/390px checks are documented. Actual hosted
-pickup shrank and swung; its first arbitrary placement abstained and is retained
-as a recognition failure. The separate hosted default was found at (420,300);
-off-map dragging restored the welcome, and the warning/error console was empty.
-The new pose is interface artwork only;
-the trained standing PNG, scene artwork, model, threshold and quantum math
-remain unchanged. Historical recognition failures and Park false accepts
-retain their original scope.
+Standalone artwork: [Red PNG](pastel-red-pedestrian.png), [Yellow PNG](pastel-yellow-pedestrian.png), [Blue PNG](pastel-blue-pedestrian.png).
+[Handoff](WANDA_HANDOFF.md), [current QA](WANDA_ITERATION20_DENSE_QA.md),
+[exact receipt](publication-receipt.json), [quick start](WANDA_QUICKSTART.md) and
+[tracked Git export manifest](GITHUB_EXPORT_MANIFEST.json).
+Local private Git receipt: `GITHUB_SYNC_RECEIPT.json` (excluded from Git).
 
-Start with [the handoff](WANDA_HANDOFF.md), [quick-start](WANDA_QUICKSTART.md),
-[exact receipt](publication-receipt.json), [source QA](waldo-search-lab/docs/WANDA_ITERATION19_QA.md),
-[asset provenance](waldo-search-lab/docs/WANDA_HANGING_ASSET.md) or
-[source bundle](quantum-image-search-deliverables.zip). Source `002574d248d81237e542b0c954185213eda9208a`;
-private deployment `appgdep_6acbd4091a308191aa1ede8ca65c2675` succeeded. The
-[iteration 18 handoff](archive/WANDA_HANDOFF-iteration18.md) preserves the
-prior cursor correction; [iteration 17](WANDA_ITERATION17_HANDOFF.md) remains
-historical rehearsal evidence.
-
-The [schoolbus demo](https://bus-search-quantum-lab.syrupyspool2.chatgpt.site)
-and both owner-private Site identities are preserved. Ongoing private GitHub
-development synchronization is authorized; [its receipt](GITHUB_SYNC_RECEIPT.json)
-identifies the commit actually pushed. Nothing has been submitted. Zero agent
-resets were consumed; one remains for the user at the latest observation.
+Current source `66f66be39e50df251ffb7345486b9b006c7b25e4`; private deployment `appgdep_6acbe87168448191aa180c8f25ef0e4e`
+succeeded. All 147 Node engineering tests were actually rerun on the final dense pedestrian revision and passed. The read-only frozen verifier was actually rerun on that revision and passed: 11 files, 7 source contracts and 12 pixel fixtures. The model SHA256 is unchanged. These are engineering/integrity checks, not a new recognition benchmark.
+The three unchanged PNGs remain outside inference. The independent PR #1 merge
+at `032615659c5967df8f025b63bdd610954d21b3ea` and its 29 playground source files
+are preserved without installation/build/runtime/scientific validation claims.
+The schoolbus deployment, scientific details, prior failures and owner-private
+Site identities remain. Previous staggered-static records are historical at
+`archive/iteration20-staggered-static`. Nothing was submitted; zero agent usage resets were consumed.
 
 ## Historical increments
 
@@ -47,7 +35,7 @@ Current hosted absentFestival test:0/4096 accepted, no match, no fabricated loca
 
 Native reserved QNN298/300 versus logistic299/300 remains separate from the20-case browser renderer diagnostic(15/15targets,0/5emptyfalse; native13/15,0/5). No pixel parity, unseen-person recognition or end-to-end quantum speedup is claimed. 102Node/10current-WandaQiskit tests pass.
 
-[Handoff](WANDA_HANDOFF.md), [exact private receipt](publication-receipt.json), [hosted checks](WANDA_ITERATION10_HOSTED_QA.md), [source ZIP](quantum-image-search-deliverables.zip), [convergence chart](wanda-two-target-convergence.png).
+[Handoff](WANDA_HANDOFF.md), [exact private receipt](publication-receipt.json), [hosted checks](WANDA_ITERATION10_HOSTED_QA.md), `quantum-image-search-deliverables.zip` (local only), [convergence chart](wanda-two-target-convergence.png).
 
 [Schoolbus CAPTCHA](https://bus-search-quantum-lab.syrupyspool2.chatgpt.site) remains a separate unchanged private deployment. No contest submission occurred. Historical artwork/models/results remain preserved.
 

@@ -1,10 +1,228 @@
 {
   "schemaVersion": 1,
-  "preparedAtUtc": "2026-10-11T18:29:04.286669+00:00",
+  "preparedAtUtc": "2026-10-11T19:54:23.970510+00:00",
   "repository": "https://github.com/goesixteen/quantum-image-search",
-  "baselineCommit": "f31091d3ee7b8f3aaa647debe3c9fcd22d4acefa",
-  "publishedWandaSource": "002574d248d81237e542b0c954185213eda9208a",
-  "publishedApplicationIteration": 19,
+  "baselineCommit": "032615659c5967df8f025b63bdd610954d21b3ea",
+  "preservedExternalMerge": {
+    "sourceMergeCommit": "032615659c5967df8f025b63bdd610954d21b3ea",
+    "previousSyncCommit": "5ee1f25ffc0c80cd616135ddcd47e3294764ce6c",
+    "pullRequest": "https://github.com/goesixteen/quantum-image-search/pull/1",
+    "sourceBranch": "Andrew",
+    "sourceBranchCommit": "a85fce871f97d6428a15e2e65aa0b1add4196986",
+    "path": "qnn-playground",
+    "fileCount": 29,
+    "sourceTreeObjectSHA1": "75e3d7f1a84257bd2c5b71637f0c71544bbaa428",
+    "sourceFileManifestSHA256": "02eab171140a589cf8cacc802f6889e0fb24862e676091dc18ef78c0a642b675",
+    "files": [
+      {
+        "path": "qnn-playground/.gitignore",
+        "sha256": "790e3169bc19b046fe55ba1da6d13b976c28363c8c00462a2195fe5faf260910",
+        "bytes": 20
+      },
+      {
+        "path": "qnn-playground/DEVLOG.md",
+        "sha256": "d493ffee02cd6545fcb42704073f1bbef950495a449ba9a39aaeb8805cec6c3f",
+        "bytes": 40389
+      },
+      {
+        "path": "qnn-playground/LICENSE",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "bytes": 11358
+      },
+      {
+        "path": "qnn-playground/NOTICE",
+        "sha256": "70cfaf9463d6d73546a2a6f3482dc80b6b791d41478a07ed2a45f9f3aa132af2",
+        "bytes": 1136
+      },
+      {
+        "path": "qnn-playground/README.md",
+        "sha256": "5b972cdc75f7b036c8ec53f849f61eab48bb8777e781f144d05be3fad32c1b4b",
+        "bytes": 9030
+      },
+      {
+        "path": "qnn-playground/favicon.png",
+        "sha256": "35969b34af89f94328c15e663eba7cd4fa37ef224fd041bb992da8542f9d7d51",
+        "bytes": 239
+      },
+      {
+        "path": "qnn-playground/index.html",
+        "sha256": "8332983afea1def4818909e052f0a994371087d2913b90cd4a03002e7febb759",
+        "bytes": 15930
+      },
+      {
+        "path": "qnn-playground/package-lock.json",
+        "sha256": "cbb90d99fb0c335700b01298817f68d0a835f66dba00aafaba60895ad3db1088",
+        "bytes": 16477
+      },
+      {
+        "path": "qnn-playground/package.json",
+        "sha256": "445da09b0df729baaf4050c39457b764e3fe882e65cae7b624ab1992180dbbcf",
+        "bytes": 661
+      },
+      {
+        "path": "qnn-playground/scripts/build.mjs",
+        "sha256": "6e78b3d0c9d9033609be89410732f74176a019174c3867c969e203485dcf33c7",
+        "bytes": 2970
+      },
+      {
+        "path": "qnn-playground/scripts/smoke.mjs",
+        "sha256": "19c132600ae525836ff1e9c26f28775d9208d63bffa9e111d8467daff97b7775",
+        "bytes": 17785
+      },
+      {
+        "path": "qnn-playground/serve.mjs",
+        "sha256": "b7739c6b848df01d29bdd2b89619fa98719540f974a63f122476c6a5b1aa62da",
+        "bytes": 1240
+      },
+      {
+        "path": "qnn-playground/src/dataset.ts",
+        "sha256": "fe6a7bf6eea34d548497b70857e69d09ae77ccdba8922e0a3b58c9085dd0f182",
+        "bytes": 7077
+      },
+      {
+        "path": "qnn-playground/src/heatmap.ts",
+        "sha256": "54380527bfd9962b47a32577426e40902cf2a1ea8203b855bc43f5b83f7ffac5",
+        "bytes": 7269
+      },
+      {
+        "path": "qnn-playground/src/linechart.ts",
+        "sha256": "3ce780d9b9d3c8360ff340e43490a7eae093d003dede01f7bc1946d4b225381c",
+        "bytes": 3242
+      },
+      {
+        "path": "qnn-playground/src/playground.ts",
+        "sha256": "ef1b2c9e3b4a2ef6ed70c6d3d0b20125fa63ba82de35b7bdabc47a4d5d4b3ef8",
+        "bytes": 63859
+      },
+      {
+        "path": "qnn-playground/src/qnn.ts",
+        "sha256": "21b6dde71f41d54ed3af7c6f40a0dae10cc4ed60829f15c6e926978e87855984",
+        "bytes": 16858
+      },
+      {
+        "path": "qnn-playground/src/quantum/ansatz.js",
+        "sha256": "cc39e709b128938c0cba8ccead2cf68e86fce4f700ef1610e0ad3eb12c81f9b4",
+        "bytes": 4478
+      },
+      {
+        "path": "qnn-playground/src/quantum/circuit.js",
+        "sha256": "e6d156df9e7fbacfba49d7afcad3e97fe7fcdef1c40e3cc989691c0cbe0df07a",
+        "bytes": 18622
+      },
+      {
+        "path": "qnn-playground/src/quantum/coherent.js",
+        "sha256": "6d92075bcaa5c7b01273e1d668fda06cf11af7e4ddb1999d46327f4ad5d053c6",
+        "bytes": 3071
+      },
+      {
+        "path": "qnn-playground/src/quantumViews.ts",
+        "sha256": "f9a511630c1f641427d3c1582a15b416a59e13b4859cd2f56deccc1154bff6d8",
+        "bytes": 16810
+      },
+      {
+        "path": "qnn-playground/src/scenes.ts",
+        "sha256": "ab5670500a6a6d75d148541dceb03160c3dfd18154a4d6a016dc27b4dbc505fd",
+        "bytes": 14632
+      },
+      {
+        "path": "qnn-playground/src/search.ts",
+        "sha256": "fc1e9dfd9355646947b0ae1e2d762ff883c2c8bc3e0a18982d3a927a5679e989",
+        "bytes": 14588
+      },
+      {
+        "path": "qnn-playground/src/seedrandom.d.ts",
+        "sha256": "dfd8cdb5463bbe2386a583db1d80c7e518236ce42bb3be1f4e1ef6d983135b4b",
+        "bytes": 736
+      },
+      {
+        "path": "qnn-playground/src/state.ts",
+        "sha256": "df7cbd182d367e22d39e827e534394a0f1a68ba9edca3913b4f37a6d16e01bf0",
+        "bytes": 8131
+      },
+      {
+        "path": "qnn-playground/styles.css",
+        "sha256": "98697e8e7855f222b058d04f28dd65e7857aa9c3405d61721c0eb54eaa1829b2",
+        "bytes": 30928
+      },
+      {
+        "path": "qnn-playground/tests/qnn.test.mjs",
+        "sha256": "ce3bb81021a787bc2371224930856ed56a1e58690de4326d5baf87ee50a661a0",
+        "bytes": 7183
+      },
+      {
+        "path": "qnn-playground/tests/quantum.test.mjs",
+        "sha256": "e09e5c952b06f545dfe58a90f3745d92c941f6642b9403a1ff130a6f71efb52a",
+        "bytes": 9856
+      },
+      {
+        "path": "qnn-playground/tsconfig.json",
+        "sha256": "61a6a49dab40f5d5dd223544d65c64ba1311961a59a2bda971aafa727b0333df",
+        "bytes": 238
+      }
+    ],
+    "scope": "The independent PR #1 playground source was retained byte-for-byte. No install, build, runtime, scientific or recognition validation of this new project was performed."
+  },
+  "preparedExportRefresh": {
+    "previousPublishedWandaSource": "e40f28f25ca3876c06bf325ddf72a315cfc47e6c",
+    "previousManifestSHA256": "e72ef6eab5a6710872375d1fdb84e04186503dcf6d4a4de2c681b758705a795a",
+    "previousManifestFilesVerified": 1153,
+    "preparedFilesAndIndexByteIdentityVerified": true,
+    "ownedDirtyPathsVerified": [
+      "DELIVERABLES.md",
+      "GITHUB_EXPORT_MANIFEST.json",
+      "OVERNIGHT_RESOURCE_BUDGET.json",
+      "README.md",
+      "WANDA_HANDOFF.md",
+      "WANDA_ITERATION20_STATIC_QA.md",
+      "WANDA_ITERATION_BRIEF.md",
+      "archive/WANDA_HANDOFF-iteration19.md",
+      "archive/iteration19-before-crowd-theme/GITHUB_SYNC_RECEIPT.json",
+      "archive/iteration19-before-crowd-theme/github-private-sync-proof.png",
+      "archive/iteration19-before-crowd-theme/publication-receipt.json",
+      "archive/iteration19-before-crowd-theme/wanda-release-checks.json",
+      "archive/iteration20-first-static/wanda-pedestrians-found-hosted-proof.png",
+      "archive/iteration20-first-static/wanda-pedestrians-underhood-hosted-proof.png",
+      "archive/iteration20-rejected-crowd-theme/dist/assets/ui-crowd/provenance.json",
+      "archive/iteration20-rejected-crowd-theme/dist/crowd-cast.js",
+      "archive/iteration20-rejected-crowd-theme/dist/crowd-ui.css",
+      "archive/iteration20-rejected-crowd-theme/dist/crowd-ui.js",
+      "archive/iteration20-rejected-crowd-theme/docs/CROWD_CAST_ASSETS.md",
+      "archive/iteration20-rejected-crowd-theme/docs/WANDA_ITERATION20_QA.md",
+      "archive/iteration20-rejected-crowd-theme/pastel-red-pedestrian-first.png",
+      "archive/iteration20-rejected-crowd-theme/pastel-red-pedestrian-light.png",
+      "archive/iteration20-rejected-crowd-theme/wanda-crowd-found-hosted-proof.png",
+      "archive/iteration20-rejected-crowd-theme/wanda-crowd-hosted-proof.png",
+      "archive/iteration20-rejected-crowd-theme/wanda-crowd-phone-proof.png",
+      "archive/iteration20-rejected-crowd-theme/wanda-crowd-underhood-hosted-proof.png",
+      "archive/iteration20-rejected-crowd-theme/wanda-crowd-walk-hosted-proof.png",
+      "bus-search-lab/docs/NEXT_STEPS.md",
+      "bus-search-lab/docs/PROJECT_STATE.md",
+      "bus-search-lab/docs/RUN_LOG.md",
+      "pastel-blue-pedestrian.png",
+      "pastel-red-pedestrian.png",
+      "pastel-yellow-pedestrian.png",
+      "publication-receipt.json",
+      "waldo-search-lab/README.md",
+      "waldo-search-lab/dist/assets/ui-pedestrians/pedestrian-blue.png",
+      "waldo-search-lab/dist/assets/ui-pedestrians/pedestrian-red.png",
+      "waldo-search-lab/dist/assets/ui-pedestrians/pedestrian-yellow.png",
+      "waldo-search-lab/dist/assets/ui-pedestrians/provenance.json",
+      "waldo-search-lab/dist/index.html",
+      "waldo-search-lab/dist/pedestrian-crowds.css",
+      "waldo-search-lab/dist/pedestrian-crowds.js",
+      "waldo-search-lab/dist/wanda.css",
+      "waldo-search-lab/docs/PEDESTRIAN_ASSETS.md",
+      "waldo-search-lab/docs/WANDA_WORKLOG.md",
+      "wanda-pedestrians-found-hosted-proof.png",
+      "wanda-pedestrians-hosted-proof.png",
+      "wanda-pedestrians-phone-proof.png",
+      "wanda-pedestrians-underhood-hosted-proof.png",
+      "wanda-title-only-hosted-proof.png"
+    ],
+    "retainedTransferFailure": "The transfer verifier rejected a README link to GITHUB_SYNC_RECEIPT.json, which is intentionally local-only and excluded from the repository export. Root owns the README correction before refreshed transfer validation."
+  },
+  "publishedWandaSource": "66f66be39e50df251ffb7345486b9b006c7b25e4",
+  "publishedApplicationIteration": 20,
   "localDocumentationContinuation": null,
   "scope": "Current outputs tree; both demos, assets, models, training, tests, failures and documentation.",
   "excluded": [
@@ -28,8 +246,8 @@
   "removedObsoleteTrackedFiles": [
     "GITHUB_EXPORT_MANIFEST.json"
   ],
-  "fileCount": 1088,
-  "totalBytes": 263288991,
+  "fileCount": 1175,
+  "totalBytes": 271293182,
   "files": [
     {
       "path": ".gitattributes",
@@ -75,6 +293,161 @@
       "path": "archive/iteration18-before-speech-and-swing/wanda-release-checks.json",
       "sha256": "aab3b13e9c5526ad18a590ce9a5942fafe471006800606549b4013992148ca2c",
       "bytes": 1271
+    },
+    {
+      "path": "archive/iteration19-before-crowd-theme/github-private-sync-proof.png",
+      "sha256": "44531e7979e4ae205ed34c4641fa2ffbc85fb2840a34b0acf56cbc653fe1bd34",
+      "bytes": 142839
+    },
+    {
+      "path": "archive/iteration19-before-crowd-theme/GITHUB_SYNC_RECEIPT.json",
+      "sha256": "d1d820f488814de9ec2f3c9eae761da8c4c5929e41a90beb343dc72a3f080635",
+      "bytes": 6107
+    },
+    {
+      "path": "archive/iteration19-before-crowd-theme/publication-receipt.json",
+      "sha256": "f7c2d403a9957678df0379a8f3502ead8963cf89ced125d0a65d2b277bae6496",
+      "bytes": 7811
+    },
+    {
+      "path": "archive/iteration19-before-crowd-theme/wanda-release-checks.json",
+      "sha256": "d53a1f431e652177b9bd42bc5e5682d041a81878b00123a58aec9b5167bc249c",
+      "bytes": 1271
+    },
+    {
+      "path": "archive/iteration20-first-static/wanda-pedestrians-found-hosted-proof.png",
+      "sha256": "fc391e24f16e04a69250e40139a5471b65224f30f072e7d99387fe91bcd97123",
+      "bytes": 105614
+    },
+    {
+      "path": "archive/iteration20-first-static/wanda-pedestrians-underhood-hosted-proof.png",
+      "sha256": "367a5a714a0f594db7b6abb95914560cce3ce352e9f10cd496748021b10f9d45",
+      "bytes": 60107
+    },
+    {
+      "path": "archive/iteration20-rejected-crowd-theme/dist/assets/ui-crowd/provenance.json",
+      "sha256": "945585da826c5de815d799ac9de9ef4fdcabb83f24a4ff80ada9c0cf143eb762",
+      "bytes": 7074
+    },
+    {
+      "path": "archive/iteration20-rejected-crowd-theme/dist/crowd-cast.js",
+      "sha256": "63b5408412ec2b609081d2c1b461a2cdb21147c386fcc00ce708914b354a70aa",
+      "bytes": 1878
+    },
+    {
+      "path": "archive/iteration20-rejected-crowd-theme/dist/crowd-ui.css",
+      "sha256": "92858c639d0c235d98fd1b6138521d9358603a0e9bb6671a556eae6d0da461a0",
+      "bytes": 2965
+    },
+    {
+      "path": "archive/iteration20-rejected-crowd-theme/dist/crowd-ui.js",
+      "sha256": "a3a92ec13bed4a318a72ad1df77bb9c3828048fa52408efed0e22039f2f50030",
+      "bytes": 10652
+    },
+    {
+      "path": "archive/iteration20-rejected-crowd-theme/docs/CROWD_CAST_ASSETS.md",
+      "sha256": "a66e9ae9b99b57251627f99ca3045fb7e770be71cea791eb34eae5f8fe3a6d8c",
+      "bytes": 3877
+    },
+    {
+      "path": "archive/iteration20-rejected-crowd-theme/docs/WANDA_ITERATION20_QA.md",
+      "sha256": "4af3c74f4363fdad756cb89ce139743a281a2960336fe001d78e568f4c687cde",
+      "bytes": 4612
+    },
+    {
+      "path": "archive/iteration20-rejected-crowd-theme/pastel-red-pedestrian-first.png",
+      "sha256": "8ced1455964a8eef3101805411f68f6cf9eaa8fda4083e48a1930e4b65bb658a",
+      "bytes": 514260
+    },
+    {
+      "path": "archive/iteration20-rejected-crowd-theme/pastel-red-pedestrian-light.png",
+      "sha256": "807d286c7e77fb77548b8e18155176f93308e70d59f5c8758e7d7e773f891d02",
+      "bytes": 478693
+    },
+    {
+      "path": "archive/iteration20-rejected-crowd-theme/wanda-crowd-found-hosted-proof.png",
+      "sha256": "b600d9c02a40ec425d00d9000ed15411b7e06b09eec00cf9aa4f7930a20a5e26",
+      "bytes": 105852
+    },
+    {
+      "path": "archive/iteration20-rejected-crowd-theme/wanda-crowd-hosted-proof.png",
+      "sha256": "ab946b721d068699262c903615172f251862a0afa309264e9ca28f04a34c5428",
+      "bytes": 331489
+    },
+    {
+      "path": "archive/iteration20-rejected-crowd-theme/wanda-crowd-phone-proof.png",
+      "sha256": "f922347e18e3662fc489ac0acd26076e1d6918f7dc8cefb4f0885afdfbbee8de",
+      "bytes": 87947
+    },
+    {
+      "path": "archive/iteration20-rejected-crowd-theme/wanda-crowd-underhood-hosted-proof.png",
+      "sha256": "3d7ca07861316160a4774666223af081e104fb283ab1a49bd0ef0f3b871e061b",
+      "bytes": 61180
+    },
+    {
+      "path": "archive/iteration20-rejected-crowd-theme/wanda-crowd-walk-hosted-proof.png",
+      "sha256": "2f36a9c4f6404da4d8916e624e6c1d64a29c8f511740d768a24dadd3dce74213",
+      "bytes": 127405
+    },
+    {
+      "path": "archive/iteration20-staggered-static/DELIVERABLES.md",
+      "sha256": "f1e0755cc04bbcd4e3b31cdcb1d69e1ca9a5ebca66431ebb505804b3a92adff7",
+      "bytes": 5392
+    },
+    {
+      "path": "archive/iteration20-staggered-static/pedestrian-crowds.css",
+      "sha256": "278c5d46c12de8bd23d96c9fa2814a668b91fcf453e33bbc0ec85dbeb3937b1d",
+      "bytes": 1329
+    },
+    {
+      "path": "archive/iteration20-staggered-static/pedestrian-crowds.js",
+      "sha256": "b0e70c1d1685aa7b804f23edecaf6d26a3be0b9b6e5328e8f4ae420697df1d6d",
+      "bytes": 10582
+    },
+    {
+      "path": "archive/iteration20-staggered-static/publication-receipt.json",
+      "sha256": "b5aa318a01962df28177c622f7ddb4995d9b70366df5a6ab3051c507773b1213",
+      "bytes": 12382
+    },
+    {
+      "path": "archive/iteration20-staggered-static/README.md",
+      "sha256": "f015ce4433270b2c8b68cfb71b917c6a3be02dac7c144bbe55cb3890c7c566c3",
+      "bytes": 4184
+    },
+    {
+      "path": "archive/iteration20-staggered-static/wanda-pedestrians-found-hosted-proof.png",
+      "sha256": "3cd5a6fc90972f54a5d9e4cdefc5b2e758c3bd1139a1f7827afc558ce8601733",
+      "bytes": 91614
+    },
+    {
+      "path": "archive/iteration20-staggered-static/wanda-pedestrians-hosted-proof.png",
+      "sha256": "47cdbeb03868067914002dd75ba85f0f29cd28d5f65ba4eb8348904eef7536a5",
+      "bytes": 339519
+    },
+    {
+      "path": "archive/iteration20-staggered-static/wanda-pedestrians-phone-proof.png",
+      "sha256": "b881fb23ffa9a66b8c32c304107f3206f870792b2e2427685747c4985a43646e",
+      "bytes": 86409
+    },
+    {
+      "path": "archive/iteration20-staggered-static/wanda-pedestrians-underhood-hosted-proof.png",
+      "sha256": "d02f3bfc2ec02d5fcf5d8178336cd44c83eeb71ff1b82d39e24eec9e5734c09a",
+      "bytes": 72530
+    },
+    {
+      "path": "archive/iteration20-staggered-static/WANDA_HANDOFF.md",
+      "sha256": "ef7aef91b876fe789d3da15690e08db8fcad6d4c3a55f0bc49e20c00782e111a",
+      "bytes": 4513
+    },
+    {
+      "path": "archive/iteration20-staggered-static/WANDA_ITERATION20_STATIC_QA.md",
+      "sha256": "c54d9e6b0fd10fad2c7e745fb8add03c95c95bedbda0812f9973a0383843b692",
+      "bytes": 3526
+    },
+    {
+      "path": "archive/iteration20-staggered-static/WANDA_ITERATION_BRIEF.md",
+      "sha256": "e2a23738108a67716f59af2280c1ffcec6025af18133137295606059e028f2a9",
+      "bytes": 23431
     },
     {
       "path": "archive/publication-receipt-iteration08.json",
@@ -165,6 +538,11 @@
       "path": "archive/WANDA_HANDOFF-iteration18.md",
       "sha256": "07eeb3b0594f0d2e809a1b612d1947335192f77ede511dfb3c39a3e4b81d0358",
       "bytes": 6166
+    },
+    {
+      "path": "archive/WANDA_HANDOFF-iteration19.md",
+      "sha256": "33cd0ce8c1b77bdc49e48b04894d62724d8c6fd47055e853798d82fde4c96fcc",
+      "bytes": 7681
     },
     {
       "path": "bus-evidence-iteration03-proof.jpg",
@@ -468,8 +846,8 @@
     },
     {
       "path": "bus-search-lab/docs/NEXT_STEPS.md",
-      "sha256": "2c75b688f0d372b16754fa097afbc9933c641a41d9aca7e47daa971a9a3cb44b",
-      "bytes": 14461
+      "sha256": "577e27c27861e1f4d8f0feddde7f47bd80ab7958851e3b2ab837008c27e223c8",
+      "bytes": 16856
     },
     {
       "path": "bus-search-lab/docs/ORACLE_LESSON.md",
@@ -493,8 +871,8 @@
     },
     {
       "path": "bus-search-lab/docs/PROJECT_STATE.md",
-      "sha256": "29951e4f8bfc863154e0029eac77099404d8c8ede1ad014474c5eb689b25d401",
-      "bytes": 51894
+      "sha256": "7f0cbf78e97e922e8e1577571593377df7ebc7de5417e34052583692af88947e",
+      "bytes": 54289
     },
     {
       "path": "bus-search-lab/docs/QA.md",
@@ -518,8 +896,8 @@
     },
     {
       "path": "bus-search-lab/docs/RUN_LOG.md",
-      "sha256": "98f2ec2676b8e9c94c4ba3c371dcdd558f742d81dff1af0cdb1b4f2f5c57b288",
-      "bytes": 52599
+      "sha256": "1aad1ccbde1a315e3509a678409efa4b358835b6f543c4c02bb518c2bfd59b64",
+      "bytes": 54994
     },
     {
       "path": "bus-search-lab/docs/SIMULATOR.md",
@@ -1338,8 +1716,8 @@
     },
     {
       "path": "DELIVERABLES.md",
-      "sha256": "d4c93224edb718c3dea151748dd91b5bb3d8dba8d9f98cbfbc2f43b30d23533b",
-      "bytes": 6129
+      "sha256": "d7994345c1e003b44bf1fe29e38484f0b398dd098ed9bdbf842f1f2e4e5a82c8",
+      "bytes": 5734
     },
     {
       "path": "festival-depth-bands-preview.png",
@@ -1413,13 +1791,28 @@
     },
     {
       "path": "OVERNIGHT_RESOURCE_BUDGET.json",
-      "sha256": "a3f650e89891840c23012413b7d2408fbbd3348071afc9d3f8206e3ee72b97f8",
-      "bytes": 1163
+      "sha256": "7d436e075ca56c2f70e7061110acbf2de01822779843733b67716790672c84f3",
+      "bytes": 1420
+    },
+    {
+      "path": "pastel-blue-pedestrian.png",
+      "sha256": "acf54ce0bf379ab7084b013772575f7dd68804b989a8d93399a22157fd75e977",
+      "bytes": 504010
+    },
+    {
+      "path": "pastel-red-pedestrian.png",
+      "sha256": "dec0a388b558239df7d5108e9bc83098add8f462f1253551062ad9150094fad8",
+      "bytes": 496719
+    },
+    {
+      "path": "pastel-yellow-pedestrian.png",
+      "sha256": "3e65880860e3be5405f052692fca430890b510e98a7307def16fb96512ab6f51",
+      "bytes": 488423
     },
     {
       "path": "publication-receipt.json",
-      "sha256": "f7c2d403a9957678df0379a8f3502ead8963cf89ced125d0a65d2b277bae6496",
-      "bytes": 7811
+      "sha256": "a437db77e37e56914e0f1b8065329c3e399f97f9c30ce8f38d39a7e1ee542ee5",
+      "bytes": 20026
     },
     {
       "path": "qnn-default-proof.png",
@@ -1437,9 +1830,154 @@
       "bytes": 64066
     },
     {
+      "path": "qnn-playground/.gitignore",
+      "sha256": "790e3169bc19b046fe55ba1da6d13b976c28363c8c00462a2195fe5faf260910",
+      "bytes": 20
+    },
+    {
+      "path": "qnn-playground/DEVLOG.md",
+      "sha256": "d493ffee02cd6545fcb42704073f1bbef950495a449ba9a39aaeb8805cec6c3f",
+      "bytes": 40389
+    },
+    {
+      "path": "qnn-playground/favicon.png",
+      "sha256": "35969b34af89f94328c15e663eba7cd4fa37ef224fd041bb992da8542f9d7d51",
+      "bytes": 239
+    },
+    {
+      "path": "qnn-playground/index.html",
+      "sha256": "8332983afea1def4818909e052f0a994371087d2913b90cd4a03002e7febb759",
+      "bytes": 15930
+    },
+    {
+      "path": "qnn-playground/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "path": "qnn-playground/NOTICE",
+      "sha256": "70cfaf9463d6d73546a2a6f3482dc80b6b791d41478a07ed2a45f9f3aa132af2",
+      "bytes": 1136
+    },
+    {
+      "path": "qnn-playground/package-lock.json",
+      "sha256": "cbb90d99fb0c335700b01298817f68d0a835f66dba00aafaba60895ad3db1088",
+      "bytes": 16477
+    },
+    {
+      "path": "qnn-playground/package.json",
+      "sha256": "445da09b0df729baaf4050c39457b764e3fe882e65cae7b624ab1992180dbbcf",
+      "bytes": 661
+    },
+    {
+      "path": "qnn-playground/README.md",
+      "sha256": "5b972cdc75f7b036c8ec53f849f61eab48bb8777e781f144d05be3fad32c1b4b",
+      "bytes": 9030
+    },
+    {
+      "path": "qnn-playground/scripts/build.mjs",
+      "sha256": "6e78b3d0c9d9033609be89410732f74176a019174c3867c969e203485dcf33c7",
+      "bytes": 2970
+    },
+    {
+      "path": "qnn-playground/scripts/smoke.mjs",
+      "sha256": "19c132600ae525836ff1e9c26f28775d9208d63bffa9e111d8467daff97b7775",
+      "bytes": 17785
+    },
+    {
+      "path": "qnn-playground/serve.mjs",
+      "sha256": "b7739c6b848df01d29bdd2b89619fa98719540f974a63f122476c6a5b1aa62da",
+      "bytes": 1240
+    },
+    {
+      "path": "qnn-playground/src/dataset.ts",
+      "sha256": "fe6a7bf6eea34d548497b70857e69d09ae77ccdba8922e0a3b58c9085dd0f182",
+      "bytes": 7077
+    },
+    {
+      "path": "qnn-playground/src/heatmap.ts",
+      "sha256": "54380527bfd9962b47a32577426e40902cf2a1ea8203b855bc43f5b83f7ffac5",
+      "bytes": 7269
+    },
+    {
+      "path": "qnn-playground/src/linechart.ts",
+      "sha256": "3ce780d9b9d3c8360ff340e43490a7eae093d003dede01f7bc1946d4b225381c",
+      "bytes": 3242
+    },
+    {
+      "path": "qnn-playground/src/playground.ts",
+      "sha256": "ef1b2c9e3b4a2ef6ed70c6d3d0b20125fa63ba82de35b7bdabc47a4d5d4b3ef8",
+      "bytes": 63859
+    },
+    {
+      "path": "qnn-playground/src/qnn.ts",
+      "sha256": "21b6dde71f41d54ed3af7c6f40a0dae10cc4ed60829f15c6e926978e87855984",
+      "bytes": 16858
+    },
+    {
+      "path": "qnn-playground/src/quantum/ansatz.js",
+      "sha256": "cc39e709b128938c0cba8ccead2cf68e86fce4f700ef1610e0ad3eb12c81f9b4",
+      "bytes": 4478
+    },
+    {
+      "path": "qnn-playground/src/quantum/circuit.js",
+      "sha256": "e6d156df9e7fbacfba49d7afcad3e97fe7fcdef1c40e3cc989691c0cbe0df07a",
+      "bytes": 18622
+    },
+    {
+      "path": "qnn-playground/src/quantum/coherent.js",
+      "sha256": "6d92075bcaa5c7b01273e1d668fda06cf11af7e4ddb1999d46327f4ad5d053c6",
+      "bytes": 3071
+    },
+    {
+      "path": "qnn-playground/src/quantumViews.ts",
+      "sha256": "f9a511630c1f641427d3c1582a15b416a59e13b4859cd2f56deccc1154bff6d8",
+      "bytes": 16810
+    },
+    {
+      "path": "qnn-playground/src/scenes.ts",
+      "sha256": "ab5670500a6a6d75d148541dceb03160c3dfd18154a4d6a016dc27b4dbc505fd",
+      "bytes": 14632
+    },
+    {
+      "path": "qnn-playground/src/search.ts",
+      "sha256": "fc1e9dfd9355646947b0ae1e2d762ff883c2c8bc3e0a18982d3a927a5679e989",
+      "bytes": 14588
+    },
+    {
+      "path": "qnn-playground/src/seedrandom.d.ts",
+      "sha256": "dfd8cdb5463bbe2386a583db1d80c7e518236ce42bb3be1f4e1ef6d983135b4b",
+      "bytes": 736
+    },
+    {
+      "path": "qnn-playground/src/state.ts",
+      "sha256": "df7cbd182d367e22d39e827e534394a0f1a68ba9edca3913b4f37a6d16e01bf0",
+      "bytes": 8131
+    },
+    {
+      "path": "qnn-playground/styles.css",
+      "sha256": "98697e8e7855f222b058d04f28dd65e7857aa9c3405d61721c0eb54eaa1829b2",
+      "bytes": 30928
+    },
+    {
+      "path": "qnn-playground/tests/qnn.test.mjs",
+      "sha256": "ce3bb81021a787bc2371224930856ed56a1e58690de4326d5baf87ee50a661a0",
+      "bytes": 7183
+    },
+    {
+      "path": "qnn-playground/tests/quantum.test.mjs",
+      "sha256": "e09e5c952b06f545dfe58a90f3745d92c941f6642b9403a1ff130a6f71efb52a",
+      "bytes": 9856
+    },
+    {
+      "path": "qnn-playground/tsconfig.json",
+      "sha256": "61a6a49dab40f5d5dd223544d65c64ba1311961a59a2bda971aafa727b0333df",
+      "bytes": 238
+    },
+    {
       "path": "README.md",
-      "sha256": "b065fbf8a4cbef7d781bdcb34e78f1d93d61a686459768cc40b373d7f842ba7d",
-      "bytes": 4794
+      "sha256": "7d0ae705cc8ceef8d938c98ab46bc4e1966616d13eb9115cb02a969f994056eb",
+      "bytes": 4406
     },
     {
       "path": "soft-field-mobile-preview.png",
@@ -2352,6 +2890,26 @@
       "bytes": 2935047
     },
     {
+      "path": "waldo-search-lab/dist/assets/ui-pedestrians/pedestrian-blue.png",
+      "sha256": "acf54ce0bf379ab7084b013772575f7dd68804b989a8d93399a22157fd75e977",
+      "bytes": 504010
+    },
+    {
+      "path": "waldo-search-lab/dist/assets/ui-pedestrians/pedestrian-red.png",
+      "sha256": "dec0a388b558239df7d5108e9bc83098add8f462f1253551062ad9150094fad8",
+      "bytes": 496719
+    },
+    {
+      "path": "waldo-search-lab/dist/assets/ui-pedestrians/pedestrian-yellow.png",
+      "sha256": "3e65880860e3be5405f052692fca430890b510e98a7307def16fb96512ab6f51",
+      "bytes": 488423
+    },
+    {
+      "path": "waldo-search-lab/dist/assets/ui-pedestrians/provenance.json",
+      "sha256": "1a3dcd19dc87770e9665e849a712d47540da784ace538a63aac61e67c26119b7",
+      "bytes": 3593
+    },
+    {
       "path": "waldo-search-lab/dist/assets/wanda/beach-512.png",
       "sha256": "fce6b6ade6a36f9b1fc92bcaf11bc2f5ef874d740de872ae22095a629377226a",
       "bytes": 757579
@@ -2508,8 +3066,8 @@
     },
     {
       "path": "waldo-search-lab/dist/index.html",
-      "sha256": "1e5b14f23876c44867c45d59d6b44ed4e796d3115b8c33711208dca8b127259c",
-      "bytes": 52360
+      "sha256": "ecaeba1aa0db23c24a3ce361ffdbe92f7bc95a519e81a11591a1f62ce6679d61",
+      "bytes": 52596
     },
     {
       "path": "waldo-search-lab/dist/interaction-lifecycle.js",
@@ -2632,6 +3190,16 @@
       "bytes": 7052
     },
     {
+      "path": "waldo-search-lab/dist/pedestrian-crowds.css",
+      "sha256": "d7d8197cf7786cb8aa0db952dfde924afc76b50d15ba6603a7564de94774abbb",
+      "bytes": 1351
+    },
+    {
+      "path": "waldo-search-lab/dist/pedestrian-crowds.js",
+      "sha256": "fff6f41c054e8062221f6750dc9d93a20c5444fb7d591cdd0f50e4c52050af50",
+      "bytes": 15620
+    },
+    {
       "path": "waldo-search-lab/dist/qnn-localizer.js",
       "sha256": "6e3dfd5349fdc439629640d5aac3e0b467ccc2e362a0b9273d79584f5159a61a",
       "bytes": 10128
@@ -2703,8 +3271,8 @@
     },
     {
       "path": "waldo-search-lab/dist/wanda.css",
-      "sha256": "b68dee3ab2e269b844d74aed65990ef88425cae7ffd866251eec5f2fb94fc478",
-      "bytes": 41694
+      "sha256": "e5dc34e1547d11083931f1f7215d9090f69add5b4b4d063ada01ffa99cbe11a4",
+      "bytes": 42055
     },
     {
       "path": "waldo-search-lab/docs/archive/WANDA_LESSON_ITERATION10.md",
@@ -2765,6 +3333,11 @@
       "path": "waldo-search-lab/docs/OPEN_ART.md",
       "sha256": "e74854aeb78e518c0f3dbfa8ac4b79de4c82385726f40ec69a1c5075dea444f1",
       "bytes": 6868
+    },
+    {
+      "path": "waldo-search-lab/docs/PEDESTRIAN_ASSETS.md",
+      "sha256": "f0c71438b69c0418c61e1eaf8f1d0e6f0cb124b511d66cee5b3138652725bdca",
+      "bytes": 2632
     },
     {
       "path": "waldo-search-lab/docs/QA.md",
@@ -2883,8 +3456,8 @@
     },
     {
       "path": "waldo-search-lab/docs/WANDA_WORKLOG.md",
-      "sha256": "43e26d112a9003d8d429f179a736a039566f9d64646a24d89830eb4343dfd6ae",
-      "bytes": 24094
+      "sha256": "1cd283e72d25c08a9819839f97d7a614b868f92c1004590c8945383e77a08cac",
+      "bytes": 28003
     },
     {
       "path": "waldo-search-lab/LICENSE",
@@ -4998,8 +5571,8 @@
     },
     {
       "path": "waldo-search-lab/README.md",
-      "sha256": "bfb5668914e112403c0df2454969ea2ea527e56ebdb2a1b8da257bdcb060605d",
-      "bytes": 14038
+      "sha256": "40bd4a98a3724b4fc84e19fa462b0692cd3e913e6891f0e26ea0f88e49c3eccc",
+      "bytes": 14611
     },
     {
       "path": "waldo-search-lab/serve.mjs",
@@ -5312,6 +5885,71 @@
       "bytes": 201791
     },
     {
+      "path": "wanda-pedestrians-dense-dispersed-hosted-proof.jpg",
+      "sha256": "218cb88d9def978b95029a0078004b826718cbf3d4fa840bb9c4b1de4882e799",
+      "bytes": 251178
+    },
+    {
+      "path": "wanda-pedestrians-dense-entry-hosted-proof.jpg",
+      "sha256": "22b419a5b8b6ac8a3eb42a5514b0af6648a338a8f41ce6eb80694c3caef1b49c",
+      "bytes": 50983
+    },
+    {
+      "path": "wanda-pedestrians-dense-entry-preview.jpg",
+      "sha256": "644ba6b329b06db56599da6daa340d6bfaf4e0d2504e18d314c04cb4ab65a2c0",
+      "bytes": 110164
+    },
+    {
+      "path": "wanda-pedestrians-dense-found-hosted-proof.jpg",
+      "sha256": "f79d231ef92b70ec8eaf2216d7617512624683304decf867481b770f9daf9e82",
+      "bytes": 325539
+    },
+    {
+      "path": "wanda-pedestrians-dense-phone-proof.jpg",
+      "sha256": "32d81b29ed624aa582beb17d350ec19179d42d1d47f899c3f871838fa017a5b4",
+      "bytes": 107469
+    },
+    {
+      "path": "wanda-pedestrians-dense-underhood-hosted-proof.jpg",
+      "sha256": "8987a85f5c48b0d0f57150a6b192f55502bd7dcf70f06c3b4f5d8195f16c0fdb",
+      "bytes": 77065
+    },
+    {
+      "path": "wanda-pedestrians-dispersed-preview.jpg",
+      "sha256": "bee331ee3fbb3d96b3ab353adca95aa81b36444d07a4ddd7c7d7600ac1d74c6b",
+      "bytes": 114502
+    },
+    {
+      "path": "wanda-pedestrians-found-hosted-proof.png",
+      "sha256": "3cd5a6fc90972f54a5d9e4cdefc5b2e758c3bd1139a1f7827afc558ce8601733",
+      "bytes": 91614
+    },
+    {
+      "path": "wanda-pedestrians-hosted-proof.png",
+      "sha256": "47cdbeb03868067914002dd75ba85f0f29cd28d5f65ba4eb8348904eef7536a5",
+      "bytes": 339519
+    },
+    {
+      "path": "wanda-pedestrians-phone-preview-small.jpg",
+      "sha256": "e4b9e6e6add78b25d1221ae92574de3737bc9583163e80df4274a76898bc1ad3",
+      "bytes": 8450
+    },
+    {
+      "path": "wanda-pedestrians-phone-proof.png",
+      "sha256": "b881fb23ffa9a66b8c32c304107f3206f870792b2e2427685747c4985a43646e",
+      "bytes": 86409
+    },
+    {
+      "path": "wanda-pedestrians-underhood-hosted-proof.png",
+      "sha256": "d02f3bfc2ec02d5fcf5d8178336cd44c83eeb71ff1b82d39e24eec9e5734c09a",
+      "bytes": 72530
+    },
+    {
+      "path": "wanda-pedestrians-underhood-preview.jpg",
+      "sha256": "7e3adb4193b5a5b60dff1fd0a69dfd7ff8d1a926d288a3d8e116cad485f6a4cc",
+      "bytes": 69767
+    },
+    {
       "path": "wanda-predicate-proof.png",
       "sha256": "595375db13a72438867bba18a4c6cf62f9c284f5234e9ae5184099ea20377af2",
       "bytes": 91461
@@ -5372,6 +6010,11 @@
       "bytes": 185218
     },
     {
+      "path": "wanda-title-only-hosted-proof.png",
+      "sha256": "65176ae1032c648d7ed9b33f53b0eb2cc7b03b57e8557373c0336793ed896a99",
+      "bytes": 191205
+    },
+    {
       "path": "wanda-two-target-browser-proof.png",
       "sha256": "2e386fa6359c0e611744ac7dbedfaa1044368662201d98b3e6ce4fbd092170ba",
       "bytes": 158847
@@ -5413,8 +6056,8 @@
     },
     {
       "path": "WANDA_HANDOFF.md",
-      "sha256": "33cd0ce8c1b77bdc49e48b04894d62724d8c6fd47055e853798d82fde4c96fcc",
-      "bytes": 7681
+      "sha256": "7a58ed520d6937cadf5cae11eea48edbcefeef4fa0a34eee0a171832d3edcfb8",
+      "bytes": 7043
     },
     {
       "path": "WANDA_ITERATION10_HOSTED_QA.md",
@@ -5462,14 +6105,32 @@
       "bytes": 3007
     },
     {
+      "path": "WANDA_ITERATION20_DENSE_QA.md",
+      "sha256": "6138bbd234be110fdb9de800c583684d23859005583229a1c133018d5eed2ea8",
+      "bytes": 8553
+    },
+    {
+      "path": "WANDA_ITERATION20_STATIC_QA.md",
+      "sha256": "c54d9e6b0fd10fad2c7e745fb8add03c95c95bedbda0812f9973a0383843b692",
+      "bytes": 3526
+    },
+    {
       "path": "WANDA_ITERATION_BRIEF.md",
-      "sha256": "1f331c112580b41b03fc375c07ed8e82d76c9907df8f92af9264fb7345231ddc",
-      "bytes": 22310
+      "sha256": "0511bddf851419a20f2e206c423d46a4e06d785c3bca524aea2a0e3294e4da1c",
+      "bytes": 23675
     },
     {
       "path": "WANDA_QUICKSTART.md",
       "sha256": "fb237cdc84b1057a321381de867a8a809e06579d7050adc674a5988aa5a55a4b",
       "bytes": 4548
     }
-  ]
+  ],
+  "transferWhitespaceRepair": {
+    "files": [
+      "bus-search-lab/docs/PROJECT_STATE.md",
+      "bus-search-lab/docs/RUN_LOG.md",
+      "bus-search-lab/docs/NEXT_STEPS.md"
+    ],
+    "scope": "Own appended EOF blank lines removed; app source and independent playground source unchanged."
+  }
 }

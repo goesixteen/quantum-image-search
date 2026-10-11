@@ -119,3 +119,8 @@
   .wanda-site .play-board .scene-thumbnails { gap: 5px; }
   .wanda-site .play-board .scene-thumb span { font-size: 8px; }
 }
+
+.wanda-site .play-heading{display:block;padding-top:16px;}
+.wanda-site .play-heading .title-kicker{display:block;margin-bottom:8px;color:var(--ink);font-size:clamp(23px,2.7vw,35px);line-height:1.2;letter-spacing:-.9px}
+.wanda-site .play-heading .title-question{display:block}
+.wanda-site .play-heading .play-tag{display:block;margin:12px 0 0;color:var(--muted);font-size:clamp(14px,1.4vw,18px);line-height:1.55;letter-spacing:0;text-transform:none}

@@ -1,6 +1,27 @@
 # Where’s Wanda — direction for future iterations
 
-## Latest human steering — iteration 19
+## Latest human steering — iteration 20
+
+Keep **Quantum Vision: Where's Wanda?** and **Can you find Wanda using quantum
+crowd search?** Use dense overlapping compact groups of the existing red,
+yellow and blue pictogram PNGs at points of interest. On viewport entry the
+figures disperse slowly, with linear timing at a CONSTANT **28 CSS px/s**,
+settling at text-safe edges and corners. Preserve varied size/depth, Y positions,
+mixed left/right facing and stable seeded display variation where compatible
+with that motion. Keep labels and controls clear on desktop and narrow screens.
+This latest explicit user direction supersedes the earlier static-only
+instruction. The rejected animated photo-cutout theme remains historical.
+
+The three unchanged PNGs also exist as separate output files. They are
+decorative interface assets outside the image used for inference. Preserve the
+empty welcome, five map choices, hanging Wanda pickup, connected three-stage
+lesson, optional scientific details, frozen science, prior failures and the
+29 independently merged `qnn-playground` source files. No new recognition
+benchmark is authorized or claimed by this UI revision. Read current QA and
+the exact receipt before resuming. Staggered-static records are historical at
+`archive/iteration20-staggered-static`; zero agent resets have been consumed.
+
+## Previous human steering — iteration 19
 
 Keep the empty start, exactly five map thumbnails above the scene and the
 large right-hand Wanda portrait. The greeting **“Hi, I’m Wanda!”** belongs in

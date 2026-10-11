@@ -267,3 +267,64 @@ animation checks cover signs, lag, settling,1500 irregular samples and reduced
 motion. See WANDA_ITERATION19_QA.md and WANDA_HANGING_ASSET.md for failures,
 prompt and scope. Final responsive/hosted provenance follows in external records.
 No frozen science/art inference changes, reserved evaluation, submission or reset.
+
+## Iteration20 — title update, crowd theme rejected
+
+The user rejected the walking-people decorations after private review. The
+decorative modules, references and copied cast assets were removed; prior
+welcome, controls, spacing and explanation were restored. The requested
+Quantum Vision: Where's Wanda? title and question subheading are retained.
+The rejected private source74e899459f013bdbd3552ad40da7081b1cb58153 and its
+historical QA/proofs are preserved in external archive records, not presented
+as the current interface. After removal all147 tests and read-only frozen
+11/7/12 verification were rerun and passed. Actual local DOM has zero crowd
+groups/scripts, exact headings and empty welcome. No model, threshold, scene,
+reserved evaluation or contest submission change. New pastel-red pedestrian
+PNG is a separate requested asset; no integration is assumed.
+
+The user then requested darker red, yellow and blue versions and static crowds
+at important interface areas. Three original ImageGen edits were copied intact
+as transparent RGBA PNGs. The new static module uses inert sibling groups around
+nine key headings/actions, with compact sizing and reserved label space. There
+is no walking/hover animation; the rejected photo-cutout theme remains removed.
+All147 tests and frozen11/7/12 verification passed again after integration.
+Read PEDESTRIAN_ASSETS.md for exact prompts/hashes and the external current
+receipt/handoff for final browser checks and source identity. No inference or
+training changes, contest submission or usage reset occurred.
+
+Latest steering replaces straight rows with staggered Y positions, mixed
+left/right reflections and groups around corners/sides. Display geometry uses
+stable per-anchor seeds and measured text/control rectangles to choose clear
+placements; narrow layouts fall back to uneven upper tiers. Static only.
+All147 tests and frozen11/7/12 checks were rerun after this layout refinement.
+
+The latest user reference calls for dense overlapping crowds that disperse
+slowly when a point of interest enters the screen. The same three original
+pedestrian PNGs now form compact elliptical groups, with varied depths and
+left/right facing. Each straight path uses distance / 28 CSS pixels per second
+and linear timing; longer routes arrive later. Final positions use measured
+text/control bounds to gather around clear edges and corners. Movement cancels
+on exit, resizing or page hiding; viewport re-entry can replay it. Reduced
+motion parks the crowds immediately. This is newly requested pictogram motion,
+distinct from the rejected photographic cutout theme. The supplied stock
+image is a layout reference only; its pixels were not copied into the site.
+
+The frozen target, scenes, features, model, threshold and quantum math remain
+unchanged. Decorative PNGs stay outside the analyzed canvas. Final actual
+motion/browser checks and exact publication identity are recorded in the
+external iteration20 dense QA and publication receipt after validation.
+
+Final dense-module checks: all147 Node engineering tests passed after the last
+source adjustment. Read-only frozen verification passed (11 files,7 source
+contracts,12 pixel fixtures; model SHA unchanged). Actual local preview showed
+48 people dispersing from the main heading and36 from the explainer heading;
+three consecutive rendered samples moved along the same straight paths. All
+route durations derive from distance/28 with linear timing. At390/320 CSS px,
+the five map choices remain one row; the narrow320 view has no figure outside
+the viewport. The site reduced-animation checkbox parks every group. After
+the complete two-Enter keyboard placement, the decorated Find control returned
+Found Wanda at420,300; switching to Grover updated the lesson title and retained
+the decoration. An earlier check activated the tray without confirming placement,
+so it correctly searched an empty scene and returned No match; that was a QA
+interaction omission, not a changed recognition result. Console warnings/errors
+were empty. Hosted verification and publication records follow separately.

@@ -1,0 +1,70 @@
+/* Decorative scene people stay outside interactive elements and the search image. */
+.wanda-site .crowd-ui-host { position: relative; }
+.wanda-site .crowd-ui-heading-anchor { padding-top: var(--crowd-ui-clearance, 64px); }
+.wanda-site .crowd-ui-button-anchor { margin-top: var(--crowd-ui-clearance, 48px); }
+.wanda-site .explainer-footer.crowd-ui-host { align-items: flex-end; }
+.wanda-site .grover-guide-actions.crowd-ui-host { align-items: flex-end; }
+.wanda-site .circuit-toolbar.crowd-ui-host { align-items: flex-end; }
+.wanda-site .crowd-ui-group {
+  position: absolute;
+  z-index: 4;
+  pointer-events: none;
+  user-select: none;
+  visibility: hidden;
+  overflow: visible;
+  contain: layout style;
+}
+.wanda-site .crowd-ui-group.is-ready { visibility: visible; }
+.wanda-site .crowd-ui-person {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  pointer-events: none;
+  transition: transform 1.3s cubic-bezier(.24, .68, .22, 1);
+  will-change: auto;
+  filter: drop-shadow(0 2px 1px #16352920);
+}
+.wanda-site .crowd-ui-group.is-walking .crowd-ui-person { will-change: transform; }
+.wanda-site .crowd-ui-group.is-resetting .crowd-ui-person,
+.wanda-site .crowd-ui-group.is-still .crowd-ui-person { transition: none; }
+.wanda-site .crowd-ui-part {
+  position: absolute;
+  inset: 0;
+  display: block;
+  transform-origin: 50% var(--crowd-hip, 72%);
+}
+.wanda-site .crowd-ui-part img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  object-fit: fill;
+  pointer-events: none;
+  user-select: none;
+}
+.wanda-site .crowd-ui-upper { clip-path: inset(0 0 calc(100% - var(--crowd-hip, 72%) + 1%) 0); }
+.wanda-site .crowd-ui-leg-left { clip-path: inset(calc(var(--crowd-hip, 72%) - 1%) 48% 0 0); }
+.wanda-site .crowd-ui-leg-right { clip-path: inset(calc(var(--crowd-hip, 72%) - 1%) 0 0 48%); }
+.wanda-site .crowd-ui-group.is-walking:not(.is-still) .crowd-ui-upper { animation: crowd-ui-bob .28s 5; animation-delay: var(--crowd-step-delay, 0s); }
+.wanda-site .crowd-ui-group.is-walking:not(.is-still) .crowd-ui-leg-left { animation: crowd-ui-left-step .28s 5; animation-delay: var(--crowd-step-delay, 0s); }
+.wanda-site .crowd-ui-group.is-walking:not(.is-still) .crowd-ui-leg-right { animation: crowd-ui-right-step .28s 5; animation-delay: var(--crowd-step-delay, 0s); }
+@keyframes crowd-ui-bob {
+  0%, 100% { transform: translateY(0) rotate(-1.5deg); }
+  50% { transform: translateY(-2px) rotate(1.5deg); }
+}
+@keyframes crowd-ui-left-step {
+  0%, 100% { transform: translate(1px, -1px) rotate(6deg); }
+  50% { transform: translate(-1px, 1px) rotate(-6deg); }
+}
+@keyframes crowd-ui-right-step {
+  0%, 100% { transform: translate(-1px, 1px) rotate(-6deg); }
+  50% { transform: translate(1px, -1px) rotate(6deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wanda-site .crowd-ui-person { transition: none; }
+  .wanda-site .crowd-ui-group .crowd-ui-part { animation: none !important; }
+}

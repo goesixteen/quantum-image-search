@@ -1,19 +1,21 @@
 {
-  "recordedAtUtc": "2026-10-11T18:24:34.764287+00:00",
+  "recordedAtUtc": "2026-10-11T19:35:06.863478+00:00",
   "userInstruction": "At most one usage-limit reset tonight; preserve one for personal use.",
   "maximumAgentResets": 1,
   "minimumResetsToPreserve": 1,
   "agentResetsConsumed": 0,
   "lastObservedAvailableCount": 1,
-  "lastObservedWeeklyUsedPercent": 13,
+  "lastObservedWeeklyUsedPercent": 24,
   "ordinaryUsageAllowed": true,
   "resetPerformedThisRun": false,
   "nextRunRule": "Read this ledger and account limits before any reset. Never consume a reset if doing so leaves fewer than one available. Track only an actually successful reset. No credit purchase or account/billing changes. If reset is not callable, record the limit; do not claim it was used.",
   "resetApiObservation": "No callable reset operation was observed; no reset performed.",
   "previousObservation": {
-    "recordedAtUtc": "2026-10-11T17:53:41.705914+00:00",
+    "recordedAtUtc": "2026-10-11T18:24:34.764287+00:00",
     "availableCount": 1,
-    "weeklyUsedPercent": 7
+    "weeklyUsedPercent": 13
   },
-  "observationNote": "The observed balance changed from two resets/99% usage to one reset/0% usage between runs. The agent did not invoke a reset; the actor or cause is not established. Preserve the one remaining reset for the user."
+  "observationNote": "The observed balance changed from two resets/99% usage to one reset/0% usage between runs. The agent did not invoke a reset; the actor or cause is not established. Preserve the one remaining reset for the user.",
+  "latestWorkStepAtUtc": "2026-10-11T19:54:17.654314+00:00",
+  "latestWorkStepNote": "Dense pedestrian entry motion published privately. No account reset operation was performed; last observed usage/reset figures retain their earlier observation time."
 }

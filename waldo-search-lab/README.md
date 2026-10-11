@@ -1,4 +1,15 @@
-# Where’s Wanda — Quantum Unlocked
+# Quantum Vision: Where's Wanda? — Quantum Unlocked
+
+The heading asks “Can you find Wanda using quantum crowd search?” Dense crowds
+of darker pastel red, yellow and blue pedestrian pictograms gather over key
+headings and actions. On entering the viewport they disperse toward the edges
+at a steady 28 CSS pixels per second, revealing the labels. The existing welcome,
+drag-and-drop game and three-stage quantum explanation remain.
+
+Reduced-motion preferences park the figures immediately. The decorative groups
+do not intercept controls or enter the analyzed image. The previously rejected
+photographic cutout theme remains archived. Read
+[asset provenance](docs/PEDESTRIAN_ASSETS.md).
 
 The game opens with an empty Festival scene. Five map thumbnails sit in one row
 above it, and a large Wanda waits in the welcome card on the right. Drag her

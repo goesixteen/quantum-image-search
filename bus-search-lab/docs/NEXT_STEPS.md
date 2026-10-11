@@ -112,3 +112,39 @@ benchmark and deployment remain iteration 16, with its prior 147 passing tests.
 No contest submission or agent usage reset occurred. Next: privately time a
 spoken walkthrough and improve an observed comprehension gap while preserving
 the same three stages and frozen evidence.
+
+
+## Crowd iteration 20 — 2026-10-11T19:35:06.863478+00:00
+
+Quantum Vision: Where's Wanda? now uses darker red, yellow and blue pedestrian
+PNGs in static crowds with varied heights, mixed facing and safe heading/action
+corner placements. The rejected walking cutout theme was removed. Source
+`e40f28f25ca3876c06bf325ddf72a315cfc47e6c`, private deployment `appgdep_6acbe34696348191b0a2a94a7547952a`, succeeded.
+147 engineering tests and read-only frozen 11/7/12 verification passed after the
+final layout changes. Actual 320/390px layouts and local/hosted default420,300
+Find checks passed. Read current handoff, static QA and exact receipt for scope.
+Schoolbus deployment is unchanged. Independently merged PR#1's29 playground
+source files are preserved intact and were not built/runtime tested here.
+Next: seek concrete user feedback while preserving the current three-stage
+lesson, frozen detector, historical failures and private-only development.
+Zero agent resets consumed; one available at the latest observation is reserved
+for the user. No contest submission or billing change occurred.
+
+## Iteration20 continuation — dense viewport-entry crowds (2026-10-11T19:54:17.654314+00:00)
+
+Current owner-private Wanda source `66f66be39e50df251ffb7345486b9b006c7b25e4`,
+deployment `appgdep_6acbe87168448191aa180c8f25ef0e4e`, succeeded. The latest explicit
+user steering adds dense overlapping red/yellow/blue pictogram crowds, dispersing
+at constant28 CSS px/s on viewport entry. This supersedes static-only steering;
+the rejected photographic cutout theme remains archived. All147 engineering
+tests and frozen11/7/12 checks passed; actual desktop/phone/reduced-motion/search
+and hosted observations are in the current receipt and WANDA_ITERATION20_DENSE_QA.md.
+The existing schoolbus app and both Site identities remain. Its deployment is
+unchanged. No training or reserved evaluation was rerun, no contest work was
+submitted, and no usage reset was performed. Zero agent resets consumed;
+preserve the one last-observed available reset for the user.
+
+Resume from outputs/WANDA_ITERATION_BRIEF.md and publication-receipt.json;
+do not revive old static instructions or the rejected photographic theme.
+Private Git export/receipt and source ZIP are verified separately after sync.
+The independent merged qnn-playground29-file tree remains source-only scope.
