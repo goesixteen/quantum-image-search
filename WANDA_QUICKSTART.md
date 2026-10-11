@@ -32,9 +32,14 @@ interface. Starting this local preview does not publish or submit the project.
 ## Try the two experiences
 
 Choose one of five worlds, then drag Wanda or tap to place her. Arrow keys move
-her; Enter searches. Find Wanda becomes Stop search while it is working. Stop
-search or Escape stops that run and keeps the scene ready for another attempt.
-Start over restores Festival, the trained detector and the default placement.
+her; Enter searches. The map initially has no Wanda: drag the large portrait
+from its welcome box into the scene. The portrait disappears and the scene uses
+the usual 52px sprite. Activate the portrait and then tap/click the map for an
+alternative; keyboard users can activate it, then use arrow keys or Enter.
+Find Wanda becomes Stop search while it is working. Stop search or Escape stops
+that run and keeps the scene ready for another attempt. Start over restores
+Festival and the trained detector, with Wanda waiting in her box. Remove Wanda
+returns her to the box. The five map choices appear above the scene in one row.
 
 Look under the hood follows the same image through three stages:
 

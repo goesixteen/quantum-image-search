@@ -1,3 +1,35 @@
+# Current next step — build on iteration 18
+
+Read [the current handoff](../../WANDA_HANDOFF.md),
+[iteration brief](../../WANDA_ITERATION_BRIEF.md),
+[exact private receipt](../../publication-receipt.json) and
+[resource ledger](../../OVERNIGHT_RESOURCE_BUDGET.json). The empty welcome,
+five-choice map row and corrected cursor-following Wanda are published and
+actually hosted-checked. Keep them, the existing three technical stages and
+the same frozen trained QNN. No repeated training or reserved-test evaluation.
+
+1. Improve the next observed drag/place/find usability gap. Verify physical
+   touchscreen/pen behavior when available; responsive layout and keyboard
+   checks already pass but do not establish physical touch behavior.
+2. Privately time a spoken walkthrough including the new welcome/placement
+   intro. The iteration 17 tool-driven duration was not a two-minute human
+   presentation. Seek voluntary novice feedback without claiming learning
+   from engineering or heuristic checks.
+3. Preserve model/threshold, original test failures, renderer differences and
+   Park lookalike false accepts. Predeclare any future domain/model study
+   before freezing and a fresh reserve. Keep the schoolbus and both original
+   owner-private Site identities; record exact completed publication proofs.
+4. The user authorized synchronization to the existing private GitHub repo.
+   Read its receipt for the actual pushed commit. Do not submit a contest
+   entry or publish public source/video/Qollab materials. Zero agent resets
+   consumed; one account reset remains at the latest observation. Preserve
+   it for personal use; no billing changes.
+
+## Historical next-step plans
+
+Older “current” and future-tense plans below are retained for context; the
+published handoff and latest human steering take precedence.
+
 **Iteration 10 resumption:** Read the current Wanda handoff/receipt and latest human steering. The guided lesson, private deployment, actual two-copy experiment,420300default and emptyFestivalcheck are complete. Avoid repeating them unless code changes. Next priority: novice walkthrough/educational clarity and polish. Preserve frozen weights/reserved evidence; predeclare new renderer/generalization probes before a fresh version. Warm field is target-specific clue display, not generic person detection. No submission/public release.
 
 **Current priority:** the first two-part Wanda implementation is complete. Read [WANDA_HANDOFF.md](../../WANDA_HANDOFF.md) before the older plans below. Next: guided explanation/novice review, new-model Qiskit parity, prospectively frozen unseen-background evaluation. Preserve 298/300 reserved results, failures, owner-private Sites and the no-submission instruction.

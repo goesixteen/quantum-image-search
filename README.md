@@ -28,16 +28,22 @@ keyboard controls, optional engineering checks and reproduction instructions.
 
 ## Current version
 
-Where’s Wanda has five original crowd scenes, drag/place/find controls, a soft
-heat overlay, and one connected **Image + QNN → Grover interference →
-Measurement** explanation. Published application code is iteration 16,
-source `2f3f836e5d13df81f32abc040f101a2959c04ee0` in the separate Sites source
-repository. It has 147 passing engineering tests recorded in its QA. Iteration
-17 adds local rehearsal documentation; it is not a new application deployment.
-The schoolbus deployment is preserved separately.
+Where’s Wanda starts with an empty scene, five map thumbnails above it and a
+large welcome portrait on the right. Dragging shows a small cursor-following
+Wanda; dropping places her at the normal scene size. Find, Remove and Start
+over complete the loop. The soft overlay and connected **Image + QNN → Grover
+interference → Measurement** explanation remain.
 
-- [Current handoff](WANDA_HANDOFF.md) and [latest local continuation](WANDA_ITERATION17_HANDOFF.md)
-- [Private rehearsal script](WANDA_DEMO_REHEARSAL.md) and [deliverables overview](DELIVERABLES.md)
+Privately published application code is iteration 18, source
+`17bd16281b095f3ab664f9e0c1396dfa3ee0a028` in the separate Sites source repository.
+All 147 engineering tests and frozen verification pass. Actual hosted native
+dragging showed the corrected cursor preview; Find returned (420,300), and
+reset restored the portrait and five choices. The initial invisible-preview
+failure is retained in the source QA. No model, threshold, artwork or quantum
+math changed. The schoolbus deployment remains separate and unchanged.
+
+- [Current handoff](WANDA_HANDOFF.md) and [iteration 18 source QA](waldo-search-lab/docs/WANDA_ITERATION18_QA.md)
+- [Private rehearsal script](WANDA_DEMO_REHEARSAL.md), [historical rehearsal](WANDA_ITERATION17_HANDOFF.md) and [deliverables overview](DELIVERABLES.md)
 - [Exact private deployment receipt](publication-receipt.json)
 - [Crowd project](waldo-search-lab/README.md) and [schoolbus project](bus-search-lab/README.md)
 - [Quantum explanation and scope](waldo-search-lab/docs/WANDA_LESSON.md)

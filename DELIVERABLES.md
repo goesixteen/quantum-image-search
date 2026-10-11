@@ -1,21 +1,36 @@
 # Quantum image-search deliverables
 
-Current review: **iteration 16**. [Where’s Wanda](https://quantum-crowd-search.syrupyspool2.chatgpt.site)
-has five original crowd worlds and one connected **Image + QNN → Grover →
-Measurement** lesson. The latest private update makes QNN playback stop at each
-actual layer, shows the completed CNOT state and clarifies the trained inference
-and full-circuit score. The exact Grover guide and startup repair are preserved. **147 engineering
-tests pass**; the frozen recognition evidence and known Park failures are preserved.
+Current review: **iteration 18**. [Where’s Wanda](https://quantum-crowd-search.syrupyspool2.chatgpt.site)
+opens without Wanda, with five map choices in one row above the scene and a
+large inviting portrait in the right-hand box. Drag her into the map: a small
+Wanda follows the cursor, the portrait disappears, and Find uses the same
+trained QNN and Grover simulation. Remove/Start over restore the welcome flow.
+The connected **Image + QNN → Grover → Measurement** explanation is preserved.
 
-Latest local continuation: [iteration 17 rehearsal](WANDA_ITERATION17_HANDOFF.md)
-and [private demo script](WANDA_DEMO_REHEARSAL.md). Published code remains
-iteration 16. The tool-driven rehearsal took 237.405 seconds; a two-minute
-spoken presentation has not been tested.
+The first native preview was invisible for the user; the corrected explicit
+preview was actually observed during hosted dragging. Hosted Find returned
+(420,300), reset restored the portrait/five choices and console checks were
+empty. **147 engineering tests** and frozen verification pass. Models, math,
+artwork, historical recognition evidence and known Park failures are unchanged.
 
 Start with [the handoff](WANDA_HANDOFF.md), [quick-start](WANDA_QUICKSTART.md),
-[exact receipt](publication-receipt.json), [hosted checks](WANDA_ITERATION16_HOSTED_QA.md)
-or [source bundle](quantum-image-search-deliverables.zip). The separate schoolbus
-deployment is unchanged. Nothing has been submitted; no agent usage reset was used.
+[exact receipt](publication-receipt.json), [source QA](waldo-search-lab/docs/WANDA_ITERATION18_QA.md)
+or [source bundle](quantum-image-search-deliverables.zip). Source `17bd16281b095f3ab664f9e0c1396dfa3ee0a028`;
+private deployment `appgdep_6acbcbc430648191ac8d657a9523f362` succeeded. The
+[iteration 17 rehearsal](WANDA_ITERATION17_HANDOFF.md) is historical; its
+237.405-second tool-driven run did not establish a two-minute spoken demo.
+
+The [schoolbus demo](https://bus-search-quantum-lab.syrupyspool2.chatgpt.site)
+and both owner-private Site identities are unchanged. The user authorized
+development synchronization to the existing private GitHub repository;
+[its receipt](GITHUB_SYNC_RECEIPT.json) identifies the actual pushed commit.
+Nothing has been submitted. Zero agent resets were consumed; one remains at
+the latest account observation and is reserved for the user.
+
+## Historical increments
+
+The dated records below describe their original state, not the current welcome
+flow or latest publication. Read the handoff and exact receipt first.
 
 ## Historical iteration 10 notes
 

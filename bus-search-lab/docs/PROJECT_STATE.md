@@ -1,3 +1,40 @@
+**Current resumption point: crowd iteration 18.** The section immediately below
+supersedes older “latest” paragraphs retained as history. Read
+[the current Wanda handoff](../../WANDA_HANDOFF.md) and
+[exact receipt](../../publication-receipt.json) first.
+
+## Crowd iteration 18 — October 11, 2026
+
+Private source `17bd16281b095f3ab664f9e0c1396dfa3ee0a028`, deployment `appgdep_6acbcbc430648191ac8d657a9523f362`,
+version `appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_d3687cf4d9e481918e246734744dd103`: terminal succeeded on the original owner-private crowd
+Site. Empty Festival welcome, five thumbnails above the map and the large
+right-hand portrait are implemented. The first native preview was invisible
+for the user; the corrected explicit image actually follows the cursor during
+hosted drag. Hosted Find returned (420,300), Start over restored the greeting,
+portrait and five choices, and the error/warning console was empty. Local
+outside-drop, empty-scene abstention, keyboard and actual 320/390px layout
+checks passed. Physical touch/pen, multi-touch and novice learning are untested.
+
+147 Node tests and read-only frozen verification (11 files, seven contracts,
+12 fixtures) pass. The technical flow, model, threshold, scanner, artwork and
+Grover math are unchanged; no training, reserved-test rerun or new accuracy
+claim. Historical native 298/300, baseline 299/300, renderer differences and
+Park 40/46px false accepts retain their scopes. Read the current external
+WANDA_HANDOFF.md, publication receipt, quick-start and iteration 18 source QA.
+The schoolbus deployment and both Site identities are preserved. No contest
+submission or public source/video/Qollab publication. The user authorized
+private GitHub development synchronization; consult its exact receipt.
+
+Next: refine the published drag/place/find flow from observed usability,
+exercise physical touch/pen when available and privately time the new welcome
+intro. Preserve the same three-stage explanation and frozen evidence. Zero
+agent resets consumed; one remains at the latest observation. Preserve it for
+the user and read the resource ledger. The earlier two-to-one account change
+had an unknown actor/cause; no agent reset, purchase or billing change occurred.
+
+
+## Historical project state
+
 **Latest completed iteration 10, 2026-10-11T05:56:31.231419+00:00:** Wanda private source `65519a96792c5c162028de9047c8455e1b411555` is terminal-deployed. Six-step live lesson and actual window/cell/threshold/NMS bridge, build-only/peak/overshoot sampling, motion/keyboard/chart/speech fixes, current WandaQiskit companion and paired browser renderer audit are complete. Festival default420300 is verified. Two exact copies are accepted and converge at35versus50rounds, with half the mass each. Latest local+hosted absence test accepts0/4096 and abstains. 102Node/10WandaQiskit tests pass; frozen model staysd1f49aa… and native298/300 remains unmodified. Browser15/15target+0/5empty is a separate former-center diagnostic; no pixel parity. Both owner-private identities preserved; bus live revision unchanged; no submission. Read ../../WANDA_HANDOFF.md, ../../WANDA_ITERATION10_HOSTED_QA.md and ../../publication-receipt.json. Older entries below are history.
 
 # Persistent project state — read this first on every hourly run

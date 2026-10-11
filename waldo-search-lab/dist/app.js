@@ -15,7 +15,7 @@ const curve = $('convergence-curve'), curveCtx = curve.getContext('2d');
 const makeCanvas = (w=512,h=w) => { const c=document.createElement('canvas');c.width=w;c.height=h;return c; };
 const composite = makeCanvas(), targetLayer = makeCanvas(), occlusionMask = makeCanvas();
 const patch = makeCanvas(128), patchCtx = patch.getContext('2d',{willReadFrequently:true});
-const state = {ready:false,busy:false,sceneLoading:false,targetLoading:false,revision:0,sceneLoadRevision:0,targetLoadRevision:0,grid:64,mode:'current-qnn',size:52,cx:420,cy:300,present:true,
+const state = {ready:false,busy:false,sceneLoading:false,targetLoading:false,revision:0,sceneLoadRevision:0,targetLoadRevision:0,grid:64,mode:'current-qnn',size:52,cx:420,cy:300,present:false,
   snap:false,depth:'1000',view:'probability',threshold:.45,scores:null,matches:null,marks:[],trace:null,iteration:0,
   measurement:null,evaluation:null,sceneId:'wanda-festival',targetId:'wanda',background:null,target:null,layers:[],curatedArtwork:null,
   catalog:null,presets:null,bandPresets:null,model:null,currentModel:null,frame:null,animationMs:140,customPaths:[],tool:'move',pointer:null,
@@ -25,15 +25,16 @@ const pct=n=>(100*n).toFixed(2)+'%';
 const pause=ms=>new Promise(r=>setTimeout(r,ms));
 const frameYield=()=>new Promise(r=>requestAnimationFrame(r));
 const imageCache=new Map(),resetOwner=createLatestOperation();
+let trayDrag=null,keyboardPlacement=false;
 const motionPreference=window.matchMedia('(prefers-reduced-motion: reduce)');
 function reducedGameMotion(){return state.animationMs===0||motionPreference.matches||$('circuit-reduce-motion').checked;}
-function syncSearchButton(){const unavailable=!state.ready||state.sceneLoading||state.targetLoading;$('find').disabled=unavailable;$('find').textContent=state.busy?'Stop search':'Find Wanda';$('find').setAttribute('aria-busy',String(state.busy));}
+function syncSearchButton(){const unavailable=!state.ready||state.sceneLoading||state.targetLoading;$('find').disabled=unavailable;$('find').textContent=state.busy?'Stop search':'Find Wanda';$('find').setAttribute('aria-busy',String(state.busy));syncTargetTray();}
 let lastStatusTitle='';
 function loadImage(src) { if(imageCache.has(src))return imageCache.get(src);const p=new Promise((resolve,reject)=>{const i=new Image();i.onload=()=>resolve(i);i.onerror=()=>reject(Error('An image could not be loaded.'));i.src=src;});imageCache.set(src,p);p.catch(()=>{if(imageCache.get(src)===p)imageCache.delete(src);});return p; }
 function status(title,text) {
   const simple={'Reading the composite…':'Looking for Wanda…','Reading windows with the trained QNN…':'Reading visual clues…','Exploring visual candidates…':'Spotting possibilities…','Amplifying accepted addresses…':'Amplifying the search…','Target localized.':'Found Wanda.','No accepted location.':'No match found.'};
   $('result-title').textContent=simple[title]||title;
-  $('status').textContent=title==='Target localized.'&&state.evaluation?'Measured point '+Math.round(state.evaluation.point.x)+', '+Math.round(state.evaluation.point.y)+' · turn the heat map on or off to inspect the result.':title==='Ready to search.'?'Drag Wanda or tap anywhere to place her, then choose Find Wanda.':text;
+  $('status').textContent=title==='Target localized.'&&state.evaluation?'Measured point '+Math.round(state.evaluation.point.x)+', '+Math.round(state.evaluation.point.y)+' · turn the heat map on or off to inspect the result.':title==='Ready to search.'?(state.present?'Wanda is in the crowd. Move her around, then choose Find Wanda.':'Drag Wanda from her box into the scene, then choose Find Wanda.'):text;
   $('scene-status').textContent=title+' '+text;
   if(title!==lastStatusTitle||state.evaluation){$('search-announcer').textContent=$('result-title').textContent+' '+$('status').textContent;lastStatusTitle=title;}
 }
@@ -114,7 +115,9 @@ function syncControls() {
   $('tiny-target-note').hidden=state.mode!=='current-qnn'||state.size>=32;
   $('snap').checked=state.snap;$('depth-choice').value=state.depth;$('view-choice').value=state.view;
   $('threshold').value=state.threshold;$('threshold-value').textContent=Number(state.threshold.toFixed(6)).toString();
-  $('remove').textContent=state.present?'Remove Wanda':'Restore Wanda';
+  $('remove').textContent='Remove Wanda';$('remove').disabled=!state.ready||!state.present;
+  $('move').disabled=!state.ready||!state.present;
+  syncTargetTray();
   const evidenceLabel=state.mode==='template'?'Raw pixel resemblance':'QNN detection scores';for(const id of ['map-mode','view-choice'])$(id).querySelector('[value=evidence]').textContent=evidenceLabel;
   $('field-description').textContent='Soft peaks reveal '+(state.mode==='current-qnn'?'the trained Wanda QNN scores':state.mode==='qnn'?'the original QNN detector scores':'raw pixel resemblance across the scene')+'. Accepted addresses then gain simulated Grover probability. The curve and samples use exact rounds.';
   const spec=gridSpec(state.grid);$('grid-summary').textContent=spec.count.toLocaleString()+' cells · '+spec.cellWidth+' px · '+spec.qubits+' search qubits';
@@ -300,26 +303,26 @@ async function selectScene(id,{resetToken=null}={}) {
   $('scene-credit').textContent=entry.credit;$('scene-source').hidden=!entry.creditUrl;if(entry.creditUrl)$('scene-source').href=entry.creditUrl;$('layer-pack').hidden=!layers.length;$('layer-pack').href='assets/depth-bands/'+id+'/layers.zip';$('object-atlas-link').hidden=!bandPreset;$('object-atlas-link').href=bandPreset?.objectAtlas||'';$('object-atlas-image').src=bandPreset?.objectAtlas||'';$('band-summary').textContent=bandPreset?state.presets.backgrounds[id].layers.length+' curated objects · '+layers.length+' silhouette bands · '+bandPreset.bandHeight+' px foot levels':'No preset bands.';renderLayerList();refresh('World ready. Drag Wanda or tap to place her.',{preserveReset:resetToken!=null});return true;
   } catch(error) {if(token===state.sceneLoadRevision&&(resetToken==null||resetOwner.isCurrent(resetToken))){if(!state.ready)throw error;status('Scene unavailable.',error.message);}return false;} finally {if(token===state.sceneLoadRevision){state.sceneLoading=false;$('loading').hidden=state.ready;if(state.ready){syncControls();updateQuantum();}}}
 }
-async function selectTarget(id,{resetToken=null}={}) {
+async function selectTarget(id,{resetToken=null,placeTarget=true}={}) {
   if(resetToken==null)resetOwner.cancel();else if(!resetOwner.isCurrent(resetToken))return false;cancelPointer();
   resetSearch('Loading the selected target…');const token=++state.targetLoadRevision,entry=state.catalog.targets.find(t=>t.id===id);if(!entry)return false;
   state.targetLoading=true;syncSearchButton();updateQuantum();
   try {
   const image=await loadImage(entry.src);if(token!==state.targetLoadRevision||(resetToken!=null&&!resetOwner.isCurrent(resetToken)))return false;
-  state.targetId=id;state.target=normalizedTarget(image,id!=='legacy');state.present=true;$('target-image').src=entry.src;$('target-token-image').src=state.target.toDataURL?state.target.toDataURL('image/png'):entry.src;$('target-credit').textContent=entry.credit;
+  state.targetId=id;state.target=normalizedTarget(image,id!=='legacy');state.present=placeTarget;$('target-image').src=entry.src;$('target-token-image').src=state.target.toDataURL?state.target.toDataURL('image/png'):entry.src;$('target-credit').textContent=entry.credit;
   setOracle(defaultOracleForTarget());state.grid=state.mode==='qnn'?4:64;state.snap=state.mode==='qnn';state.depth='1000';
   if(state.mode==='qnn'){const s=512/state.grid;state.cx=(Math.floor(state.cx/s)+.5)*s;state.cy=(Math.floor(state.cy/s)+.5)*s;}
   refresh(state.mode==='current-qnn'?'Wanda QNN selected. Its trained scores will supply the search oracle.':state.mode==='qnn'?'Original explorer and its frozen QNN selected.':'This artwork uses the explicitly selected classical template comparison.',{preserveReset:resetToken!=null});return true;
   } catch(error) {if(token===state.targetLoadRevision&&(resetToken==null||resetOwner.isCurrent(resetToken))){if(!state.ready)throw error;status('Target unavailable.',error.message);}return false;} finally {if(token===state.targetLoadRevision){state.targetLoading=false;if(state.ready){syncControls();updateQuantum();}}}
 }
-function place(x,y) {const r=targetRect(),s=512/state.grid;state.cx=clamp(state.snap?(Math.floor(x/s)+.5)*s:x,r.width/2,512-r.width/2);state.cy=clamp(state.snap?(Math.floor(y/s)+.5)*s:y,r.height/2,512-r.height/2);state.present=true;refresh();}
+function place(x,y) {keyboardPlacement=false;const r=targetRect(),s=512/state.grid;state.cx=clamp(state.snap?(Math.floor(x/s)+.5)*s:x,r.width/2,512-r.width/2);state.cy=clamp(state.snap?(Math.floor(y/s)+.5)*s:y,r.height/2,512-r.height/2);state.present=true;refresh();}
 function localPoint(event) {const r=canvas.getBoundingClientRect();return{x:(event.clientX-r.left)*512/r.width,y:(event.clientY-r.top)*512/r.height};}
 function rebuildCustomLayer() {const existing=state.layers.filter(l=>l.id!=='custom');state.layers=[...existing,...createForegroundLayers(state.background,[{id:'custom',name:'Your foreground cutout',zIndex:40,enabled:true,paths:state.customPaths}])];}
-function cancelPointer(){const pointer=state.pointer;if(!pointer)return;state.pointer=null;if(canvas.hasPointerCapture(pointer.pointerId))canvas.releasePointerCapture(pointer.pointerId);if(pointer.tool!=='move')renderLayerList();if(state.ready)draw();}
+function cancelPointer(){cancelTrayDrag();const pointer=state.pointer;if(!pointer)return;state.pointer=null;if(canvas.hasPointerCapture(pointer.pointerId))canvas.releasePointerCapture(pointer.pointerId);if(pointer.tool!=='move')renderLayerList();if(state.ready)draw();}
 function endPointer(event){if(event&&state.pointer?.pointerId!==event.pointerId)return;cancelPointer();}
 canvas.addEventListener('pointerdown',event=>{
   if(!state.ready||state.sceneLoading||state.targetLoading||state.pointer||event.isPrimary===false||event.button>0)return;
-  event.preventDefault();canvas.focus();const point=localPoint(event);state.pointer=createPointerSession({pointerId:event.pointerId,tool:state.tool,point,center:{x:state.cx,y:state.cy},rect:targetRect(),radius:Number($('brush-size').value)});canvas.setPointerCapture(event.pointerId);
+  event.preventDefault();canvas.focus({preventScroll:true});const point=localPoint(event);state.pointer=createPointerSession({pointerId:event.pointerId,tool:state.tool,point,center:{x:state.cx,y:state.cy},rect:state.present?targetRect():{x:-1,y:-1,width:0,height:0},radius:Number($('brush-size').value)});canvas.setPointerCapture(event.pointerId);
   if(state.pointer.tool==='move'){const action=pointerAction(state.pointer,event.pointerId,point);place(action.x,action.y);}else{state.customPaths.push(state.pointer.path);rebuildCustomLayer();refresh();}
 });
 canvas.addEventListener('pointermove',event=>{
@@ -328,11 +331,57 @@ canvas.addEventListener('pointermove',event=>{
   if(action.type==='move')place(action.x,action.y);else{if(!state.customPaths.includes(action.path)){cancelPointer();return;}action.path.points.push(action.point);rebuildCustomLayer();refresh();}
 });
 canvas.addEventListener('pointerup',endPointer);canvas.addEventListener('pointercancel',endPointer);canvas.addEventListener('lostpointercapture',endPointer);
-canvas.addEventListener('keydown',event=>{if(event.key==='Escape'){if(state.busy){event.preventDefault();stopSearch();}else if(state.pointer){event.preventDefault();cancelPointer();}return;}if(!state.ready||state.sceneLoading||state.targetLoading)return;if(event.key==='Enter'){event.preventDefault();search();return;}const d={ArrowLeft:[-1,0],ArrowRight:[1,0],ArrowUp:[0,-1],ArrowDown:[0,1]}[event.key];if(d){event.preventDefault();const step=state.snap?512/state.grid:event.shiftKey?12:2;place(state.cx+d[0]*step,state.cy+d[1]*step);}});
-$('target-token').addEventListener('dragstart',event=>{event.dataTransfer.setData('application/x-atlas-target',state.targetId);event.dataTransfer.effectAllowed='copy';});
-canvas.addEventListener('dragover',event=>{event.preventDefault();canvas.classList.add('drop-ready');});
+canvas.addEventListener('keydown',event=>{if(event.key==='Escape'){if(state.busy){event.preventDefault();stopSearch();}else if(state.pointer||trayDrag){event.preventDefault();cancelPointer();}else if(keyboardPlacement){event.preventDefault();keyboardPlacement=false;$('target-token').focus();status('Ready to search.','');}return;}if(!state.ready||state.sceneLoading||state.targetLoading)return;if(event.key==='Enter'){event.preventDefault();if(keyboardPlacement&&!state.present)place(state.cx,state.cy);else search();return;}const d={ArrowLeft:[-1,0],ArrowRight:[1,0],ArrowUp:[0,-1],ArrowDown:[0,1]}[event.key];if(d){event.preventDefault();const step=state.snap?512/state.grid:event.shiftKey?12:2;place(state.cx+d[0]*step,state.cy+d[1]*step);}});
+
+// The welcome portrait and drag preview are interface artwork only. The search
+// still receives the final 512px composite, through the unchanged RGB scanner.
+function syncTargetTray(){
+  const tray=document.querySelector('.wanda-tray'),token=$('target-token');
+  tray.classList.toggle('is-placed',state.present);tray.classList.toggle('is-dragging',!!trayDrag);
+  token.hidden=state.present;token.disabled=!state.ready||state.sceneLoading||state.targetLoading||state.present;
+  $('wanda-greeting').textContent=state.present?'I’m in the scene!':'Hi, I’m Wanda!';
+  $('wanda-invitation').textContent=state.present?'Move me around, then let quantum crowd search find me!':'Drag me into the scene, and let quantum crowd search find me!';
+}
+function cancelTrayDrag(){
+  const prior=trayDrag;trayDrag=null;
+  const token=$('target-token');if(prior?.pointerId!=null&&token.hasPointerCapture(prior.pointerId))token.releasePointerCapture(prior.pointerId);
+  $('wanda-drag-ghost').classList.remove('is-visible');canvas.classList.remove('drop-ready');syncTargetTray();
+}
+function trayDragCurrent(){return trayDrag&&trayDrag.sceneRevision===state.sceneLoadRevision&&trayDrag.targetRevision===state.targetLoadRevision&&state.ready&&!state.sceneLoading&&!state.targetLoading&&!state.present;}
+function displayedTargetSize(){const r=targetRect(),bounds=canvas.getBoundingClientRect();return{width:Math.max(1,Math.round(r.width*bounds.width/512)),height:Math.max(1,Math.round(r.height*bounds.height/512))};}
+function updateTrayGhost(event){
+  const ghost=$('wanda-drag-ghost'),size=displayedTargetSize();ghost.style.width=size.width+'px';ghost.style.height=size.height+'px';ghost.style.left=(event.clientX-size.width/2)+'px';ghost.style.top=(event.clientY-size.height/2)+'px';ghost.querySelector('img').src=$('target-token-image').src;ghost.classList.add('is-visible');
+  const r=canvas.getBoundingClientRect(),inside=event.clientX>=r.left&&event.clientX<=r.right&&event.clientY>=r.top&&event.clientY<=r.bottom;canvas.classList.toggle('drop-ready',inside);return inside;
+}
+function armTrayPlacement(){if(!state.ready||state.sceneLoading||state.targetLoading||state.present)return;keyboardPlacement=true;canvas.focus({preventScroll:true});status('Pick a hiding spot.','Tap the scene to place Wanda. Or use arrow keys and Enter.');}
+$('target-token').addEventListener('dragstart',event=>{
+  if(!state.ready||state.sceneLoading||state.targetLoading||state.present){event.preventDefault();return;}
+  const image=makeCanvas(1,1);
+  trayDrag={kind:'native',sceneRevision:state.sceneLoadRevision,targetRevision:state.targetLoadRevision,image};
+  event.dataTransfer.setData('application/x-atlas-target',state.targetId);event.dataTransfer.effectAllowed='move';event.dataTransfer.setDragImage(image,0,0);updateTrayGhost(event);syncTargetTray();
+});
+$('target-token').addEventListener('drag',event=>{if(trayDrag?.kind==='native'&&trayDragCurrent()&&(event.clientX||event.clientY))updateTrayGhost(event);});
+window.addEventListener('dragover',event=>{if(trayDrag?.kind!=='native')return;if(trayDragCurrent())updateTrayGhost(event);else cancelTrayDrag();});
+$('target-token').addEventListener('dragend',cancelTrayDrag);
+$('target-token').addEventListener('pointerdown',event=>{
+  if(event.pointerType==='mouse'||event.isPrimary===false||event.button>0||!state.ready||state.sceneLoading||state.targetLoading||state.present)return;
+  event.preventDefault();trayDrag={kind:'pointer',pointerId:event.pointerId,sceneRevision:state.sceneLoadRevision,targetRevision:state.targetLoadRevision,startX:event.clientX,startY:event.clientY,moved:false};
+  $('target-token').setPointerCapture(event.pointerId);updateTrayGhost(event);syncTargetTray();
+});
+$('target-token').addEventListener('pointermove',event=>{
+  if(trayDrag?.kind!=='pointer'||trayDrag.pointerId!==event.pointerId)return;
+  if(!trayDragCurrent()){cancelTrayDrag();return;}event.preventDefault();trayDrag.moved ||= Math.hypot(event.clientX-trayDrag.startX,event.clientY-trayDrag.startY)>6;updateTrayGhost(event);
+});
+$('target-token').addEventListener('pointerup',event=>{
+  if(trayDrag?.kind!=='pointer'||trayDrag.pointerId!==event.pointerId)return;
+  event.preventDefault();const valid=trayDragCurrent(),inside=valid&&updateTrayGhost(event),moved=trayDrag.moved,point=inside?localPoint(event):null;
+  cancelTrayDrag();if(point){state.tool='move';$('editor-tool').value='move';place(point.x,point.y);canvas.focus({preventScroll:true});}else if(valid&&!moved)armTrayPlacement();
+});
+for(const name of ['pointercancel','lostpointercapture'])$('target-token').addEventListener(name,event=>{if(trayDrag?.pointerId===event.pointerId)cancelTrayDrag();});
+window.addEventListener('keydown',event=>{if(event.key==='Escape'&&trayDrag){event.preventDefault();cancelTrayDrag();}});
+canvas.addEventListener('dragover',event=>{if(![...event.dataTransfer.types].some(type=>type==='application/x-atlas-target'||type==='Files'))return;event.preventDefault();canvas.classList.add('drop-ready');});
 canvas.addEventListener('dragleave',()=>canvas.classList.remove('drop-ready'));
-canvas.addEventListener('drop',async event=>{event.preventDefault();canvas.classList.remove('drop-ready');const p=localPoint(event),sceneToken=state.sceneLoadRevision;try{if(event.dataTransfer.files.length){if(!await uploadTarget(event.dataTransfer.files[0]))return;}else if(!state.ready||state.sceneLoading||state.targetLoading)return;if(sceneToken!==state.sceneLoadRevision)return;state.tool='move';$('editor-tool').value='move';place(p.x,p.y);}catch(error){status('The image needs attention.',error.message);}});
+canvas.addEventListener('drop',async event=>{event.preventDefault();canvas.classList.remove('drop-ready');const p=localPoint(event),sceneToken=state.sceneLoadRevision;try{if(event.dataTransfer.files.length){if(!await uploadTarget(event.dataTransfer.files[0]))return;}else if(!trayDragCurrent()||trayDrag.kind!=='native'||event.dataTransfer.getData('application/x-atlas-target')!==state.targetId)return;if(sceneToken!==state.sceneLoadRevision)return;cancelTrayDrag();state.tool='move';$('editor-tool').value='move';place(p.x,p.y);canvas.focus({preventScroll:true});}catch(error){status('The image needs attention.',error.message);}});
 async function decodeFile(file) {if(!file||!/^image\/(png|jpeg|webp)$/.test(file.type))throw Error('Choose a PNG, JPEG or WebP image.');if(file.size>20*1024*1024)throw Error('Use an image smaller than 20 MB.');const url=URL.createObjectURL(file);try{return {image:await loadImage(url),url};}catch(error){URL.revokeObjectURL(url);imageCache.delete(url);throw error;}}
 function restoreUploadedTarget() {resetOwner.cancel();cancelPointer();state.targetLoadRevision++;state.targetLoading=false;state.targetId='custom';state.target=state.uploadedTarget;state.present=true;setOracle('template');state.grid=64;$('target-image').src=state.uploadedTargetUrl;$('target-token-image').src=state.uploadedTargetUrl;$('target-credit').textContent='Your image · browser only';refresh('Uploaded target: classical template comparison selected. The trained QNN is for the built-in striped person.');}
 async function uploadTarget(file) {
@@ -369,7 +418,7 @@ $('field-exposure').addEventListener('input',event=>{state.colorExposure=Number(
 $('snap').addEventListener('change',event=>{state.snap=event.target.checked;if(state.snap)place(state.cx,state.cy);});
 $('editor-tool').addEventListener('change',event=>{cancelPointer();state.tool=event.target.value;canvas.style.cursor=state.tool==='move'?'grab':'crosshair';});
 $('clear-custom').addEventListener('click',()=>{cancelPointer();state.customPaths=[];state.layers=state.layers.filter(l=>l.id!=='custom');renderLayerList();refresh();});
-$('move').addEventListener('click',()=>place(60+Math.random()*392,60+Math.random()*392));$('remove').addEventListener('click',()=>{state.present=!state.present;refresh();});
+$('move').addEventListener('click',()=>place(60+Math.random()*392,60+Math.random()*392));$('remove').addEventListener('click',()=>{cancelPointer();keyboardPlacement=false;state.present=false;refresh();});
 function stopSearch(){if(!state.busy)return;cancelPointer();refresh('Search stopped. Your image and placement are preserved.');status('Search stopped.','Choose Find Wanda to start a fresh search.');}
 $('find').addEventListener('click',()=>state.busy?stopSearch():search());$('measure').addEventListener('click',measure);
 $('replay').addEventListener('click',async()=>{if(!state.trace||state.busy)return;state.busy=true;syncSearchButton();updateQuantum();$('iteration').disabled=true;$('measure').disabled=true;$('replay').disabled=true;await animate(state.revision);});
@@ -392,18 +441,19 @@ window.addEventListener('wanda-lesson-request',event=>{
 });
 $('export-layers').addEventListener('click',()=>{const payload={version:2,size:512,targetDepthMode:state.depth==='auto'?'auto':'manual',depthConvention:'front-when-lower',targetDepthAnchorY:state.frame?.targetDepthAnchorY,layerDepths:state.frame?.layerDepths,cutoutRegistrations:state.layers.map(l=>({id:l.id,position:l.cutoutPosition,width:l.cutoutCanvas?.width,height:l.cutoutCanvas?.height,png:l.cutoutPNGDataURL?.startsWith('data:')?null:l.cutoutPNGDataURL,maskPNG:l.maskPNG||null})),background:state.sceneId,target:state.targetId,targetRect:targetRect(),targetZIndex:state.depth==='auto'?0:Number(state.depth),layers:serializeForegroundLayers(state.layers)};const url=URL.createObjectURL(new Blob([JSON.stringify(payload,null,2)],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download='search-atlas-layer-data.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
 async function resetDemo(){
-  await runLatestOperation(resetOwner,[token=>selectTarget('wanda',{resetToken:token}),token=>selectScene('wanda-festival',{resetToken:token})],()=>{
-    state.present=true;state.grid=64;state.size=52;state.depth='1000';setOracle('current-qnn');state.cx=420;state.cy=300;state.view='image';state.snap=false;state.tool='move';$('editor-tool').value='move';refresh('Trained Wanda QNN and a fully visible Wanda in Festival are restored.');
+  keyboardPlacement=false;
+  await runLatestOperation(resetOwner,[token=>selectTarget('wanda',{resetToken:token,placeTarget:false}),token=>selectScene('wanda-festival',{resetToken:token})],()=>{
+    state.present=false;state.grid=64;state.size=52;state.depth='1000';setOracle('current-qnn');state.cx=420;state.cy=300;state.view='image';state.snap=false;state.tool='move';$('editor-tool').value='move';refresh('Festival is ready. Wanda is waiting in her box.');
   });
 }
 $('reset-demo').addEventListener('click',resetDemo);
 $('toggle-heat').addEventListener('click',()=>{state.view=state.view==='image'?'field':'image';syncControls();draw();});
-$('target-token').addEventListener('click',()=>{if(!state.ready)return;if(!state.present){state.present=true;refresh('Wanda restored. Tap the scene or use arrow keys to place her.');}canvas.focus();});
+$('target-token').addEventListener('click',event=>{if(event.pointerType==='touch'||event.pointerType==='pen')return;armTrayPlacement();});
 async function initialize() {
   try {const [catalog,presets,bandPresets,model,currentModel,wandaModel]=await Promise.all([fetch('scene-catalog.json').then(r=>r.json()),fetch('foreground-presets.json').then(r=>r.json()),fetch('depth-band-presets.json').then(r=>r.json()),fetch('model/model.json').then(r=>r.json()),fetch('model/current-qnn.json').then(r=>{if(!r.ok)throw Error('The historical QNN checkpoint is unavailable.');return r.json();}),fetch('model/wanda-qnn.json').then(r=>{if(!r.ok)throw Error('The trained Wanda QNN checkpoint is unavailable.');return r.json();})]);state.catalog=catalog;state.presets=presets;state.bandPresets=bandPresets;state.model=model;state.currentModel=wandaModel;
     for(const [id,entries]of[['scene-choice',catalog.scenes],['target-choice',catalog.targets]])for(const entry of entries)$(id).add(new Option(entry.name,entry.id));
     for(const entry of catalog.scenes){const b=document.createElement('button');b.className='scene-thumb';b.dataset.scene=entry.id;b.setAttribute('aria-label','Choose '+entry.name);b.setAttribute('aria-pressed',String(entry.id===state.sceneId));const image=document.createElement('img');image.src=entry.src;image.alt='';const label=document.createElement('span');label.textContent=entry.name.split(' · ')[0];b.append(image,label);b.addEventListener('click',()=>selectScene(entry.id));$('scene-thumbnails').append(b);}
-    await selectTarget('wanda');await selectScene('wanda-festival');state.ready=true;for(const control of document.querySelectorAll('#experiment button,#experiment select,#experiment input'))control.disabled=false;$('loading').hidden=true;state.view='image';syncControls();refresh();
+    await selectTarget('wanda',{placeTarget:false});await selectScene('wanda-festival');state.ready=true;for(const control of document.querySelectorAll('#experiment button,#experiment select,#experiment input'))control.disabled=false;$('loading').hidden=true;state.view='image';syncControls();refresh();
     $('model-circuit').textContent=model.qubits+' qubits · '+model.layers+' layers';$('model-parameters').textContent=model.parameterCount;$('test-accuracy').textContent=pct(model.metrics.test.accuracy);$('test-count').textContent=model.metrics.test.n;
     const wandaMetrics=await fetch('model/wanda-qnn-metrics.json').then(r=>r.ok?r.json():null);renderWandaEvidence(wandaMetrics);
     const currentMetrics=await fetch('model/current-qnn-metrics.json').then(r=>{if(!r.ok)throw Error('The current QNN evidence record is unavailable.');return r.json();});

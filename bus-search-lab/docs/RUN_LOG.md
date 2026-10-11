@@ -283,3 +283,33 @@ benchmark and deployment remain iteration 16, with its prior 147 passing tests.
 No contest submission or agent usage reset occurred. Next: privately time a
 spoken walkthrough and improve an observed comprehension gap while preserving
 the same three stages and frozen evidence.
+
+
+## Crowd iteration 18 — October 11, 2026
+
+Private source `17bd16281b095f3ab664f9e0c1396dfa3ee0a028`, deployment `appgdep_6acbcbc430648191ac8d657a9523f362`,
+version `appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_d3687cf4d9e481918e246734744dd103`: terminal succeeded on the original owner-private crowd
+Site. Empty Festival welcome, five thumbnails above the map and the large
+right-hand portrait are implemented. The first native preview was invisible
+for the user; the corrected explicit image actually follows the cursor during
+hosted drag. Hosted Find returned (420,300), Start over restored the greeting,
+portrait and five choices, and the error/warning console was empty. Local
+outside-drop, empty-scene abstention, keyboard and actual 320/390px layout
+checks passed. Physical touch/pen, multi-touch and novice learning are untested.
+
+147 Node tests and read-only frozen verification (11 files, seven contracts,
+12 fixtures) pass. The technical flow, model, threshold, scanner, artwork and
+Grover math are unchanged; no training, reserved-test rerun or new accuracy
+claim. Historical native 298/300, baseline 299/300, renderer differences and
+Park 40/46px false accepts retain their scopes. Read the current external
+WANDA_HANDOFF.md, publication receipt, quick-start and iteration 18 source QA.
+The schoolbus deployment and both Site identities are preserved. No contest
+submission or public source/video/Qollab publication. The user authorized
+private GitHub development synchronization; consult its exact receipt.
+
+Next: refine the published drag/place/find flow from observed usability,
+exercise physical touch/pen when available and privately time the new welcome
+intro. Preserve the same three-stage explanation and frozen evidence. Zero
+agent resets consumed; one remains at the latest observation. Preserve it for
+the user and read the resource ledger. The earlier two-to-one account change
+had an unknown actor/cause; no agent reset, purchase or billing change occurred.

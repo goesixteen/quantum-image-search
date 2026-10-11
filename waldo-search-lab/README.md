@@ -1,5 +1,13 @@
 # Where’s Wanda — Quantum Unlocked
 
+The game opens with an empty Festival scene. Five map thumbnails sit in one row
+above it, and a large Wanda waits in the welcome card on the right. Drag her
+into the map to place the same 52px sprite; the portrait leaves the box. Dropping
+outside the map restores it. You can also activate Wanda, then click/tap the map
+or use arrow keys or Enter. Find Wanda stays in the right menu. Remove Wanda
+returns her to the box; Start over resets Festival to this empty welcome state.
+Changing worlds preserves an existing placement. The QNN and Grover are unchanged.
+
 [Open the owner-private Wanda site](https://quantum-crowd-search.syrupyspool2.chatgpt.site). Hide a small female red-and-white-striped PNG in one of five original crowded scenes, then watch a genuinely trained, simulated QNN build the predicate for Grover amplitude amplification. The play surface contains the game menu; the separate “Look under the hood” section connects the actual scene window to its features, quantum gates, reduced Bloch states, readout and Grover reflections.
 
 The frozen **Wanda** classifier completes **298/300 native-rendered reserved target scenes**, with **0/25 false detections on empty scenes**. Its matched same-feature logistic baseline completes **299/300**. All 60 default-height 52px reserved cases pass. These are disjoint placements of the same known PNG on five known backgrounds, at supplied heights 40/46/52/58/64px, fully visible and inside the frame. They do not establish unseen-person recognition, unknown-size detection, occlusion robustness or quantum advantage.

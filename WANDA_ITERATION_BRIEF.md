@@ -1,12 +1,30 @@
 # Where’s Wanda — direction for future iterations
 
-## Latest human steering — October11 overnight
+## Latest human steering — iteration 18
+
+The main game starts without Wanda. Keep exactly five map thumbnails in a row
+above the displayed map. The right-hand box shows a large Wanda and the greeting
+“Hi, I’m Wanda! Drag me into the scene, and let quantum crowd search find me!”
+She disappears from the box during dragging and appears at scene scale around
+the cursor. The user reported that the initial native drag preview was invisible;
+the privately published correction uses an explicit cursor-following image.
+Find stays in its right-hand menu position. Remove and Start over restore the
+empty welcome flow. Build on this version; do not restore automatic initial
+placement merely because earlier scripts assume it.
+
+## Continuing overnight direction
 
 Keep iterating overnight. The technical experience should become **one connected two- or three-stage interactive**, or at most two single-stage ones. Explain the actual image → trained QNN rotations/readout → Grover phase/diffusion/measurement clearly. Remove the repeated heatmap and standalone false-positive exercise from the primary flow; every technical detail need not have its own interactive. Keep benchmarks, caveats, provenance and detailed mathematical evidence in optional details. This direction supersedes the earlier six-step/scattered-card layout. Preserve scientific correctness and the same real run.
 
 The Park pilot should plant a realistic lookalike derived from the actual Wanda PNG. Retain failures and renderer differences; no invented heat or coordinate-fed inference. The curated artwork is chosen with score feedback after model freeze, so historical298/300 results remain scoped to the original unseeded scenes.
 
-The user authorizes **at most one usage-limit reset tonight**, leaving one for personal use. Read `OVERNIGHT_RESOURCE_BUDGET.json` every run for the current count and observation time. Zero agent resets have been consumed through iteration17; two resets were available at its start. The latest observation is99% weekly usage with ordinary usage still allowed. No callable reset operation was observed. Consult the ledger for the timestamp and current limits on resumption. Do not buy credits or claim a reset that was not actually performed. The existing hourly heartbeat remains active and contains these instructions.
+The user authorizes **at most one usage-limit reset tonight**, leaving one
+for personal use. Read `OVERNIGHT_RESOURCE_BUDGET.json` every run. Zero agent
+resets have been consumed; the latest observation has one remaining reset.
+The account’s earlier change from two to one had an unknown actor/cause.
+No callable reset operation was observed. Preserve the remaining reset; do not
+buy credits or claim an unperformed reset. The existing hourly heartbeat remains
+active.
 
 ## Current baseline — build on completed work
 
@@ -21,14 +39,16 @@ readiness replay, with 140 passing engineering tests. The actual first hosted
 cold-load failure and its repair remain recorded. Iteration 16 privately
 publishes bounded QNN layer playback, exact completed CNOT context, explicit
 next-layer continuation and clearer inference/full-score scope; 147 tests pass.
-The five-world game and the same three stages remain. Iteration17 adds a local
-private rehearsal script and actual browser dry-run; source/deployment stay16.
-Tool-driven duration237.405seconds is not a tested two-minute human presentation.
-Read WANDA_ITERATION17_HANDOFF.md and WANDA_DEMO_REHEARSAL.md, then the latest
-handoff and publication receipt for the exact completed revision. Do not restart
-training or reopen reserved tests merely because the original preparation plan
-below speaks in future tense. Preserve the historical failure evidence and the
-curated Park pilot's known 40px/46px false acceptances.
+The same three technical stages remain. Iteration 17 added a historical
+rehearsal script: its tool-driven 237.405 seconds did not prove a two-minute
+spoken presentation. Iteration 18 privately publishes the empty welcome,
+five-choice row and small cursor-following drag preview from source `17bd16281b095f3ab664f9e0c1396dfa3ee0a028`.
+The initial invisible native preview and its correction are documented. All
+147 engineering tests and frozen verification pass; hosted native dragging,
+Find (420,300), reset and the five choices were actually verified.
+Read the current handoff, receipt, source QA and quick-start before continuing.
+Preserve original failures and Park’s known 40px/46px false acceptances. No
+model/threshold change, training or reserved-test rerun occurred.
 
 
 Recorded October 10, 2026, America/New_York. This is the user's new product direction and supersedes older crowd-layout and foreground-segmentation priorities. Read it at the beginning of each iteration, alongside the current project state, model evidence and private publication receipt. Keep making sustained, documented improvements. Do not submit any work or publish contest materials.
@@ -93,7 +113,7 @@ Include same-size crowd distractors, near-center negatives, target-free scenes, 
 6. Connect the image, feature, circuit/readout and Grover step views into an approachable interactive lesson. Check understanding with simple questions or voluntary feedback without claiming measured learning from an untested quiz.
 7. Check desktop/mobile flow, reduced motion, keyboard accessibility, loading/cancellation, mathematical parity and reproducibility. Publish completed increments to the existing owner-private review Site and update the exact receipt/source ZIP when appropriate. Do not perform contest, public source/video or Qollab submission actions.
 
-Each iteration must record what changed, what was actually tested, results and failures, remaining work and where the next run should resume. Current implementation evidence and source baseline are in [the completed QNN handoff](CURRENT_QNN_HANDOFF.md) and [publication receipt](publication-receipt.json); this brief is a future plan, not a claim that the Wanda assets or new educational pipeline are already implemented.
+Each iteration must record what changed, what was actually tested, results and failures, remaining work and where the next run should resume. Current implementation evidence and source baseline are in [the completed QNN handoff](CURRENT_QNN_HANDOFF.md) and [publication receipt](publication-receipt.json); the older preparation order is historical where it describes completed work in future tense. The current handoff and receipt identify what is actually implemented and published.
 
 ## Iteration 10 completed state
 
@@ -132,4 +152,18 @@ The existing Play control now pauses at each actual 20-gate QNN layer boundary. 
 
 ## Private GitHub synchronization — October 11
 
-The user explicitly authorized pushing the current files to the existing private `goesixteen/quantum-image-search` repository. This is development sharing, not a contest submission. Current account observation is 0% weekly usage, ordinary usage allowed and one reset available; no agent reset was invoked. The change from the prior two-reset observation has an unknown actor or cause. Preserve the remaining reset. Read the resource ledger and GitHub synchronization receipt on resumption. Published application source remains iteration 16; iteration 17 is local rehearsal documentation.
+The user explicitly authorized pushing the current files to the existing private `goesixteen/quantum-image-search` repository. This is development sharing, not a contest submission. Consult the resource ledger for the latest observed percentage; one reset remains and no agent reset was invoked. The change from the prior two-reset observation has an unknown actor or cause. Preserve the remaining reset. Read the resource ledger and GitHub synchronization receipt on resumption. Published application source is now iteration 18; iteration 17 remains historical rehearsal documentation. Read the GitHub synchronization receipt for the actual remote commit, separately from the Sites source identity.
+
+
+## Iteration 18 completed state — October 11
+
+Empty welcome, five scene thumbnails above the map and right-hand portrait are
+privately published. The user’s invisible-preview report prompted the explicit
+cursor-following correction; actual hosted native drag, Find (420,300), reset
+and console checks pass. Exact source `17bd16281b095f3ab664f9e0c1396dfa3ee0a028`; deployment `appgdep_6acbcbc430648191ac8d657a9523f362` succeeded.
+The same three-stage explanation, frozen model/threshold and artwork remain.
+147 Node tests and frozen verification pass; this is engineering evidence,
+not new recognition accuracy. Next: observe the new flow’s usability, exercise
+physical touch/pen when available, and privately time its rehearsal intro.
+Preserve the remaining account reset, owner-private Sites and no-submission
+constraint.

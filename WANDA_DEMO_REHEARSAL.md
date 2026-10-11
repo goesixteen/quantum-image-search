@@ -2,7 +2,10 @@
 
 Draft for owner review. No contest submission, public video, source or Qollab
 project has been sent. Use the [private website](https://quantum-crowd-search.syrupyspool2.chatgpt.site/).
-The current release is iteration16, source `2f3f836e5d13df81f32abc040f101a2959c04ee0`.
+This script was rehearsed against iteration16, source `2f3f836e5d13df81f32abc040f101a2959c04ee0`.
+The later welcome interface starts empty. Place Wanda from her box near
+(420,300) before following the historical default-placement script below;
+the new introduction has not been included in the recorded rehearsal timing.
 The two-minute timings below are a proposed spoken script, not a measured
 presentation or a claim about learning outcomes.
 

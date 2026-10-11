@@ -227,3 +227,25 @@ recognition failures. Start usage93%, ordinaryAllowedtrue,2resets available,
 0agent resets consumed; no callable reset observed. Maximum1overnight reset,
 reserve1for personal use. No billing/purchase/submission/public contest material.
 Schoolbus private deployment unchanged.
+
+## Iteration 18 — empty scene and Wanda’s welcome box
+
+The user requested five map options above the map, an initially empty scene,
+and a large Wanda in a right-hand greeting box. The main interface now follows
+that flow. Native drag uses a scene-size preview, hides the portrait during
+the gesture, and inserts the existing 52px sprite on a valid map drop. Cancelled
+or outside drops restore the portrait. Remove/Start over return to the welcome
+state. Tap and keyboard placement remain available; captured touch/pen handlers
+guard against stale scene/target revisions. Find stays in the right menu.
+
+147 Node engineering tests pass; frozen verification preserves all 11 files,
+seven source contracts and 12 pixel fixtures. Actual desktop drag found Wanda
+at (420,300); empty Festival accepted 0/4096. All five map selections and
+keyboard activation/cancellation/reset were checked. Actual 320/390px layouts
+have no horizontal page overflow; 390px keyboard placement preserves Find’s
+document position. See WANDA_ITERATION18_QA.md for exact checks and retained
+automation failures. Physical touchscreen/pen and novice feedback remain untested.
+Model, threshold, artwork and quantum calculations are unchanged; no reserved
+test or new recognition claim. Private hosted receipt/checks follow publication.
+Preserve schoolbus, both Site identities and all historical model/failure scope.
+No contest submission, public source/video or Qollab publication; no agent reset.
