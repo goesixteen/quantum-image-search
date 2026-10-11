@@ -102,7 +102,7 @@ limitations under the License.
         <label for="readouts">Readout</label>
         <div class="select">
           <select id="readouts">
-            <option value="project">Hybrid: 7 &lang;Z&rang;s &rarr; sigmoid</option>
+            <option value="project">Hybrid: Z-strings &rarr; sigmoid</option>
             <option value="z0">Quantum only: &lang;Z&#8320;&rang;</option>
           </select>
         </div>
@@ -125,20 +125,13 @@ limitations under the License.
         <span>Data</span>
       </h4>
       <div class="ui-dataset">
-        <p>Which scene do you want to search?</p>
-        <div class="dataset-list">
-          <div class="dataset" title="School-bus CAPTCHA">
-            <canvas class="data-thumbnail" data-scene="bus"></canvas>
-          </div>
-          <div class="dataset" title="Crowd explorer">
-            <canvas class="data-thumbnail" data-scene="crowd"></canvas>
-          </div>
-        </div>
+        <p>Pick a world</p>
+        <div class="world-list" id="world-list"></div>
         <p class="scene-name"></p>
         <button class="basic-button" id="load-weights" title="Use the exact weights the demo site uses">
           Load demo weights
         </button>
-        <p class="patch-caption">Training patches <span class="patch-key"><b class="pos">&#10003;</b> target &nbsp;<b class="neg">&#10007;</b> not</span></p>
+        <p class="patch-caption">Training examples <span class="patch-key"><b class="pos">&#10003;</b> target &nbsp;<b class="neg">&#10007;</b> not</span></p>
         <div id="patch-strip"></div>
       </div>
       <div>
@@ -170,7 +163,7 @@ limitations under the License.
     <div class="column features">
       <h4>Features</h4>
       <p>Which pixel features do you feed in?</p>
-      <div id="network">
+      <div id="network-scroll"><div id="network">
         <svg id="svg" width="510" height="450">
           <defs>
             <marker id="markerArrow" markerWidth="7" markerHeight="13" refX="1" refY="6" orient="auto" markerUnits="userSpaceOnUse">
@@ -209,7 +202,7 @@ limitations under the License.
             Each feature sets a fixed <b>rotation angle</b>, &pi; &times; its value, on one qubit.
           </div>
         </div>
-      </div>
+      </div></div>
     </div>
 
     <!-- Hidden Layers Column -->
@@ -245,7 +238,7 @@ limitations under the License.
           <span id="accuracy-label" title="Training / test accuracy">Accuracy</span>
           <div class="value" id="accuracy"></div>
         </div>
-        <div class="output-stats train baseline-row" title="Logistic regression on the same 8 features and patches (the demos' classical baseline)">
+        <div class="output-stats train baseline-row" title="Logistic regression on the same 8 features and windows (the site's matched classical baseline)">
           <span>Classical baseline</span>
           <div class="value" id="baseline"></div>
         </div>
@@ -258,18 +251,16 @@ limitations under the License.
       <div id="square-info" aria-live="polite"></div>
       <div id="scene-legend"></div>
       <div id="compare-panel">
-        <b>Does the quantum part matter?</b> Train circuits with and without entanglement on the same patches and compare them with a classical baseline.
+        <b>Does the quantum part matter?</b> Train circuits with and without entanglement on the same windows and compare them with a classical baseline.
         <button class="basic-button small" id="compare-run">Compare (about 5 s)</button>
         <div id="compare-result"></div>
       </div>
       <div id="search-banner" aria-live="polite"></div>
       <div class="scene-controls">
         <label for="threshold">Threshold <span class="value"></span></label>
-        <input type="range" id="threshold" min="0.05" max="0.95" step="0.01">
-        <select id="grid-size" title="Regions per side">
-          <option value="4">4 &times; 4 squares</option>
-          <option value="8">8 &times; 8 squares</option>
-        </select>
+        <input type="range" id="threshold" min="0.05" max="0.99" step="any">
+        <select id="grid-size" title="Grover address grid (regions per side)"></select>
+        <select id="target-height" title="Wanda's height in pixels: supplied to the classifier, as on the site"></select>
         <button class="basic-button small" id="move-target">Move target</button>
         <button class="basic-button small" id="random-spot" title="Put the target anywhere, possibly across a border">Random spot</button>
         <button class="basic-button small" id="toggle-target">Remove target</button>
@@ -313,7 +304,7 @@ limitations under the License.
   <section id="article-text" class="about l--page">
     <div class="about-card">
       <h3>How it works</h3>
-      <p>Each square's 8 pixel features become fixed RY/RZ angles on 4 qubits (the demos’ register; use + / − above layer 1 for up to 6), followed by learned rotations and a CNOT ring, in every layer. The measured averages give a score. Squares above the threshold become the oracle of Grover's search. The artwork, features, circuit and (with <b>Load demo weights</b>) the trained weights are the bus and crowd demos' own; scores match them to ~10<sup>&minus;15</sup>.</p>
+      <p>8 pixel features of a Wanda-sized window become fixed RY/RZ angles on 4 qubits (the site’s register; the details view allows up to 6), followed by learned rotations and a CNOT ring, in every layer. The measured averages give a score. 4096 windows are scored and each square keeps its best, as on the site. Squares above the threshold, after the site's suppression of nearby duplicates, become the oracle of Grover's search. The artwork, features, circuit, scan and (with <b>Load demo weights</b>) the trained weights and threshold are the Where's Wanda site's own; scores match it to ~10<sup>&minus;15</sup>.</p>
     </div>
     <div class="about-card">
       <h3>Reading the picture</h3>
@@ -329,7 +320,7 @@ limitations under the License.
       <ul>
         <li>All squares are scored first, so the default search shows how Grover behaves, not a speed-up. The <b>coherent oracle</b> (details view) runs the classifier inside the search.</li>
         <li>A classical baseline matches the circuit on these tasks; <b>Compare</b> shows it.</li>
-        <li>Accuracy is on new patches from the same artwork. Everything is simulated.</li>
+        <li>Accuracy is on new windows from the same artwork and backgrounds. Everything is simulated.</li>
       </ul>
     </div>
     <div class="about-card">

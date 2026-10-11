@@ -26,14 +26,20 @@ import {shuffle} from "./dataset";
 import {AppendingLineChart} from "./linechart";
 import {QuantumViews, arcSpace} from "./quantumViews";
 import {SearchPanel, term} from "./search";
-import {SCENES, Scene, Patch, Placement, makeDataset, regionFeatures,
-    targetRegions} from "./scenes";
+import {WANDA, Scene, Patch, Placement, Candidate, wandaBackgrounds,
+    WANDA_HEIGHTS, WANDA_DEFAULT_HEIGHT} from "./scenes";
+import {Point, suppress} from "./scan";
 import * as d3 from 'd3';
 
 let mainWidth;
 
 
 const RECT_SIZE = 30;
+/**
+ * Narrowest spacing of a layer's entangling gates; the default 4 x 4
+ * circuit at its usual width is just above it, so it never scrolls.
+ */
+const MIN_GATE_PITCH = 12;
 const BIAS_SIZE = 5;
 /** Patches per dataset (half contain the target). */
 const NUM_PATCHES = 300;
@@ -41,6 +47,8 @@ const NUM_PATCHES = 300;
 const QUBIT_ROW = 82;
 /** The demos' register; 8 features need at least 4 qubits (2 angles each). */
 const DEMO_QUBITS = 4;
+/** The sites' circuit depth; the guided view always uses it. */
+const DEMO_LAYERS = 4;
 const qubits = () => state.networkShape[0];
 const TRAIN_BUDGET_MS = 25;
 /**
@@ -141,9 +149,6 @@ sanitizeState();
 function sanitizeState() {
   let num = (v: any, lo: number, hi: number, dflt: number) =>
       Number.isFinite(+v) ? Math.min(hi, Math.max(lo, +v)) : dflt;
-  if (!SCENES[state.scene]) {
-    state.scene = "bus";
-  }
   if (state.mode !== "explorer") {
     state.mode = "guided";
   }
@@ -152,7 +157,10 @@ function sanitizeState() {
   if (!(state.learningRate > 0)) {
     state.learningRate = 0.1;
   }
-  state.threshold = num(state.threshold, 0.01, 0.99, 0.5);
+  // Missing values (null) are filled in by the scene once it has loaded.
+  let opt = (v: any, lo: number, hi: number) =>
+      v == null || !Number.isFinite(+v) ? null : Math.min(hi, Math.max(lo, +v));
+  state.threshold = opt(state.threshold, 0.01, 0.99);
   state.noise = num(state.noise, 0, 50, 0);
   state.percTrainData = Math.round(num(state.percTrainData, 10, 90, 50) / 10)
       * 10;
@@ -163,16 +171,23 @@ function sanitizeState() {
   let q = Math.round(num(state.networkShape?.[0], nn.MIN_QUBITS,
       nn.MAX_QUBITS, DEMO_QUBITS));
   state.networkShape = d3.range(state.numHiddenLayers).map(() => q);
-  state.target = Number.isInteger(+state.target) ? +state.target : 27;
-  state.probe = Number.isInteger(+state.probe) && +state.probe >= 0 ?
-      +state.probe : 0;
+  if (state.mode !== "explorer" && !demoShape()) {
+    useDemoShape();  // Circuit size is a details-view setting.
+  }
+  state.target = state.target != null && Number.isInteger(+state.target) ?
+      +state.target : null;
+  state.probe = state.probe != null && Number.isInteger(+state.probe) &&
+      +state.probe >= 0 ? +state.probe : null;
+  state.height = WANDA_HEIGHTS.indexOf(+state.height) >= 0 ? +state.height :
+      WANDA_DEFAULT_HEIGHT;
   state.jitterX = num(state.jitterX, -0.4, 0.4, 0);
   state.jitterY = num(state.jitterY, -0.4, 0.4, 0);
   if (!Array.isArray(state.off)) {
     state.off = [];
   }
 }
-let scene: Scene = SCENES[state.scene];
+/** The one scene: Where's Wanda (older links to other scenes open it). */
+const scene: Scene = WANDA;
 
 /** Per node id: a grid x grid matrix [col][row] of its value per region. */
 let boundary: {[id: string]: number[][]} = {};
@@ -203,12 +218,18 @@ let accTest = 0;
 let raster = document.createElement("canvas");
 raster.width = raster.height = 512;
 let rasterCtx = raster.getContext("2d", {willReadFrequently: true});
-let placement: Placement = {targetCell: null, distractors: []};
+let placement: Placement = {targetCell: null};
+/** Per region: every window the scan scores there. */
+let regionCands: Candidate[][] = [];
+/** Per region: the best-scoring window's features, centre and score. */
 let regionFeats: number[][] = [];
+let bestPoints: Point[] = [];
 let scores: number[] = [];
 let moveMode = false;
 let measured: {region: number, verdict: string} = null;
-let demoModels: {[id: string]: nn.ProjectModel} = {};
+/** A running search's current round, drawn over the scene. */
+let searchFrame: {probabilities: ArrayLike<number>, round: number,
+    rounds: number} = null;
 
 let player = new Player();
 let views = new QuantumViews({
@@ -219,7 +240,8 @@ let views = new QuantumViews({
     drawScene();
   },
   network: () => network,
-  features: region => constructInput(regionFeats[region]),
+  features: region => constructInput(regionFeats[region] ||
+      regionCands[region][0].features),
   grid: () => state.grid,
   shots: () => state.shots,
   selectedNodeId: () => selectedNodeId,
@@ -228,10 +250,15 @@ let views = new QuantumViews({
 let search = new SearchPanel({
   marked: () => markedRegions(),
   regions: () => state.grid * state.grid,
-  truth: () => targetRegions(scene, state.grid, placement),
+  truth: () => scene.truth(state.grid, placement, bestPoints),
   target: () => scene.target,
   showMeasured: (region, verdict) => {
     measured = region == null ? null : {region, verdict};
+    searchFrame = null;
+    drawScene();
+  },
+  showRound: (probabilities, round, rounds) => {
+    searchFrame = probabilities && {probabilities, round, rounds};
     drawScene();
   },
   plain: () => guided(),
@@ -283,10 +310,9 @@ function renderGuide() {
   let trained = progress.trained || progress.weightsLoaded ||
       (!show && iter > 0 && accTest >= 0.85);
   let steps = [
-    {title: "Pick a picture", done: true,
-     text: `<b>${scene.title}</b>: find the ${scene.target}. ` +
-         (scene.id === "bus" ? "Yellow trucks and vans are decoys." :
-             "Recoloured look-alikes are decoys.")},
+    {title: "Pick a world", done: true,
+     text: `<b>${scene.title}</b>: find ${scene.target}. ` +
+         scene.decoys},
     {title: "Score every square", done: trained,
      text: `A ${qubits()}-qubit ${term("quantum circuit", "A program for a quantum " +
          `computer: ${qubits()} qubits that are rotated and linked step by step. ` +
@@ -295,7 +321,10 @@ function renderGuide() {
          (show ? ` <b>Training…</b> round ${iter} of ${SHOW_EPOCHS}: ` +
              `<b>${Math.round(100 * accTest)}%</b> correct.` +
              `<span class="train-bar"><span style="width:` +
-             `${Math.round(100 * iter / SHOW_EPOCHS)}%"></span></span>` :
+             `${Math.round(100 * iter / SHOW_EPOCHS)}%"></span></span>` +
+             `<span class="feed-caption">Learning from windows cut from ` +
+             `the five worlds (✓ Wanda, ✗ not), with the circuit's score ` +
+             `now:</span><span class="train-feed" id="train-feed"></span>` :
          trained ? ` Trained for ${iter} rounds: ` +
              `<b>${Math.round(100 * accTest)}%</b> correct on test ` +
              `squares (classical baseline: ${Math.round(100 * baselineAcc)}%).` :
@@ -304,7 +333,8 @@ function renderGuide() {
     {title: "Mark the likely squares", done: M > 0 && 2 * M <= N,
      text: `Squares at or above the ${term("threshold", "The cut-off " +
          "score: squares at or above it are marked as candidates.")} ` +
-         `(${state.threshold.toFixed(2)}) are marked: <b>${M} of ${N}</b>.`},
+         `(${fmt(state.threshold)}) are marked: <b>${M} of ${N}</b>.` +
+         " Of nearby marks, only the best is kept, as on the site."},
     {title: "Search", done: progress.searched,
      text: `${term("Grover's search", "A quantum search algorithm. When " +
          "the check runs inside a quantum computer, it needs only about the " +
@@ -374,14 +404,15 @@ function stepShow() {
     iter++;
     trainedAny = true;
   }
-  if (iter >= SHOW_EPOCHS) {
+  let done = iter >= SHOW_EPOCHS;
+  if (done) {
     show = null;
     progress.trained = true;
     player.pause();
   }
   if (trainedAny) {
     updateMetrics();
-    updateUI();
+    updateUI(false, !done);
   }
 }
 
@@ -390,10 +421,27 @@ function setMode(mode: string) {
   state.mode = mode;
   state.serialize(true);
   applyMode();
+  // The guided view has no qubit or layer buttons, so it always shows the
+  // sites' 4 x 4 circuit: a bigger one from the details view is rebuilt.
+  if (guided() && !demoShape()) {
+    useDemoShape();
+    reset();
+    return;
+  }
   // The guided view never starts from an untrained circuit: train it.
   if (guided() && iter === 0 && !progress.weightsLoaded) {
     startShow();
   }
+}
+
+/** Is the circuit the sites' size (4 qubits x 4 layers)? */
+function demoShape(): boolean {
+  return state.numHiddenLayers === DEMO_LAYERS && qubits() === DEMO_QUBITS;
+}
+
+function useDemoShape() {
+  state.numHiddenLayers = DEMO_LAYERS;
+  state.networkShape = d3.range(DEMO_LAYERS).map(() => DEMO_QUBITS);
 }
 
 function applyMode() {
@@ -401,7 +449,7 @@ function applyMode() {
   d3.select("body").classed("guided", g);
   d3.select("#mode-toggle").text(g ? "Show all details" : "Simpler view");
   d3.select(".column.data > .ui-dataset > p").text(g ?
-      "Pick a picture to search" : "Which scene do you want to search?");
+      "Pick a world to search" : "Which world do you want to search?");
   d3.select(".column.features > p").text(g ?
       "8 numbers measured from each square" :
       "Which pixel features do you feed in?");
@@ -421,8 +469,8 @@ function applyMode() {
       "Epoch");
   d3.select("label[for='threshold']").html(g ?
       `Score needed to be marked: <span class="value">` +
-      `${state.threshold.toFixed(2)}</span>` :
-      `Threshold <span class="value">${state.threshold.toFixed(2)}</span>`);
+      `${fmt(state.threshold)}</span>` :
+      `Threshold <span class="value">${fmt(state.threshold)}</span>`);
   d3.select("#colormap-label").html(g ?
       "Colors: orange = low, white = middle, blue = high." :
       "Colors: &lang;Z&rang; &minus;1&hellip;1; scores and features " +
@@ -440,7 +488,7 @@ function applyMode() {
 function renderSceneLegend() {
   d3.select("#scene-legend").html(
       `<span><i class="sw score"></i>blue = higher score (the circuit ` +
-      `thinks the ${scene.target} is there)</span>` +
+      `thinks ${scene.target} is there)</span>` +
       "<span><i class=\"sw marked\"></i>dashed = marked for the search</span>" +
       (guided() ? "<span><i class=\"sw probe\"></i>black frame = the " +
           "square you clicked (its score is below)</span>" :
@@ -452,14 +500,26 @@ function renderSceneLegend() {
 let lineChart = new AppendingLineChart(d3.select("#linechart"),
     ["#777", "black"]);
 
+/** A threshold as the sites show it: up to 4 decimals. */
+function fmt(t: number): string {
+  return String(+t.toFixed(4));
+}
+
+let marksCache: {scores: number[], threshold: number, marks: number[]} = null;
+
+/**
+ * Regions marked for the Grover oracle: score >= threshold, then the site's
+ * non-maximum suppression (scan.ts).
+ */
 function markedRegions(): number[] {
-  let out: number[] = [];
-  scores.forEach((s, i) => {
-    if (s >= state.threshold) {
-      out.push(i);
-    }
-  });
-  return out;
+  if (marksCache && marksCache.scores === scores &&
+      marksCache.threshold === state.threshold) {
+    return marksCache.marks;
+  }
+  let marks = suppress(scores, bestPoints, state.threshold,
+      scene.nmsRadius(placement));
+  marksCache = {scores, threshold: state.threshold, marks};
+  return marks;
 }
 
 /** The circuit input for a patch: switched-off features feed angle 0. */
@@ -480,6 +540,9 @@ function makeGUI() {
 
   player.onPlayPause(isPlaying => {
     d3.select("#play-pause-button").classed("playing", isPlaying);
+    if (!isPlaying && network && iter > 0) {
+      updateUI();  // Training paused: show the fully re-scored scene.
+    }
   });
 
   d3.select("#next-step-button").on("click", () => {
@@ -493,23 +556,20 @@ function makeGUI() {
     reset();
   });
 
-  let sceneThumbs = d3.selectAll("canvas[data-scene]");
-  sceneThumbs.on("click", function() {
-    let id = this.dataset.scene;
-    if (id === state.scene) {
-      return;
-    }
-    state.scene = id;
-    scene = SCENES[id];
-    state.grid = scene.defaultGrid;
-    state.off = [];
-    sceneThumbs.classed("selected", false);
-    d3.select(this).classed("selected", true);
-    placeScene(true);
-    generateData();
-    reset();
+  // Pick a world: the site's five backgrounds.
+  let worlds = d3.select("#world-list");
+  wandaBackgrounds.forEach(b => {
+    let item = worlds.append("button").attr({class: "world", type: "button",
+        "data-background": b.id, title: b.name});
+    item.append("canvas").attr({width: 100, height: 100});
+    item.append("span").text(b.name);
   });
-  d3.select(`canvas[data-scene=${state.scene}]`).classed("selected", true);
+  worlds.selectAll("button.world").on("click", function() {
+    state.background = (this as HTMLElement).dataset.background;
+    placeScene();
+    search.clear();
+    updateUI();
+  });
 
   d3.select("#load-weights").on("click", () => loadDemoWeights());
   // A real button (it used to be a caption that looked clickable but
@@ -606,13 +666,19 @@ function makeGUI() {
   d3.select("#threshold").on("input", function() {
     state.threshold = +this.value;
     d3.select("label[for='threshold'] .value")
-        .text(state.threshold.toFixed(2));
+        .text(fmt(state.threshold));
     state.serialize(true);
     search.clear();
     updateMetrics();
     updateUI();
-  }).property("value", state.threshold);
-  d3.select("label[for='threshold'] .value").text(state.threshold.toFixed(2));
+  });
+
+  d3.select("#target-height").on("change", function() {
+    state.height = +this.value;
+    placeScene();
+    search.clear();
+    updateUI();
+  });
 
   d3.select("#grid-size").on("change", function() {
     let old = state.grid;
@@ -622,11 +688,11 @@ function makeGUI() {
         Math.floor((cell % old) * state.grid / old);
     state.target = rescale(state.target);
     views.setProbe(rescale(views.probe));
-    placeScene(true);
+    placeScene();
     search.clear();
     drawNetwork(network);
     updateUI(true);
-  }).property("value", state.grid);
+  });
 
   d3.select("#move-target").on("click", () => {
     moveMode = !moveMode;
@@ -635,18 +701,18 @@ function makeGUI() {
   });
   d3.select("#random-spot").on("click", () => {
     // Anywhere, not just centred in a region: it may straddle a border,
-    // which is harder than the demos' default placement.
+    // which is harder than the site's default placement.
     state.target = Math.floor(Math.random() * state.grid * state.grid);
     state.jitterX = Math.round((Math.random() - 0.5) * 80) / 100;
     state.jitterY = Math.round((Math.random() - 0.5) * 80) / 100;
-    placeScene(false);
+    placeScene();
     search.clear();
     updateUI();
   });
   d3.select("#compare-run").on("click", () => runComparison());
   d3.select("#toggle-target").on("click", () => {
     state.target = state.target >= 0 ? -1 : views.probe;
-    placeScene(false);
+    placeScene();
     search.clear();
     updateUI();
   });
@@ -664,7 +730,7 @@ function makeGUI() {
       d3.select("#move-target").classed("active", false).text("Move target");
       state.target = region;
       state.jitterX = state.jitterY = 0;
-      placeScene(false);
+      placeScene();
       search.clear();
       updateUI();
     }
@@ -720,35 +786,67 @@ function makeGUI() {
 /* ------------------------------ The scene ------------------------------ */
 
 /**
- * Renders the scene and extracts every region's features (the slow part,
- * done only when the scene changes). `newDistractors` reshuffles the bus
- * scene's other vehicles.
+ * Renders the scene and extracts every window's features (the slow part,
+ * done only when the picture changes).
  */
-function placeScene(newDistractors: boolean) {
+function placeScene() {
   let cells = state.grid * state.grid;
   if (state.target >= cells) {
     state.target = cells - 1;
   }
-  // The probe square must exist in this grid (old URLs, or a scene switch
-  // from 8 x 8 to 4 x 4, can carry one that doesn't).
+  // The probe square must exist in this grid (old URLs can carry one that
+  // doesn't).
   if (views.probe >= cells) {
     views.probe = state.probe = cells - 1;
   }
-  if (newDistractors || !placement.distractors.length) {
-    placement.distractors = scene.randomDistractors(state.grid)
-        .filter(d => d.cell !== state.target);
-  }
   placement.targetCell = state.target >= 0 ? state.target : null;
   placement.jitter = {dx: state.jitterX, dy: state.jitterY};
-  placement.distractors = placement.distractors.filter(d =>
-      d.cell !== placement.targetCell);
+  placement.background = state.background;
+  placement.height = state.height;
+  d3.selectAll("#world-list button.world").classed("selected", function() {
+    return (this as HTMLElement).dataset.background === state.background;
+  });
   scene.render(rasterCtx, state.grid, placement);
-  regionFeats = regionFeatures(scene, raster, state.grid);
+  regionCands = scene.candidates(raster, state.grid, placement);
+  regionFeats = [];
+  bestPoints = regionCands.map(c => c[0].point);
   measured = null;
   d3.select("#toggle-target").text(state.target >= 0 ? "Remove target" :
       "Restore target");
   renderSceneLegend();
   state.serialize(true);
+}
+
+/**
+ * The site's defaults: its address grid, target square (420, 300), the
+ * threshold of its trained model, Festival and 52 px.
+ */
+function sceneDefaults() {
+  state.grid = scene.defaultGrid;
+  state.target = scene.defaultTarget;
+  state.jitterX = state.jitterY = 0;
+  views.probe = state.probe = scene.defaultTarget;
+  state.threshold = scene.model.threshold;
+  state.background = wandaBackgrounds.length ? wandaBackgrounds[0].id : null;
+  state.height = WANDA_DEFAULT_HEIGHT;
+  syncSceneControls();
+}
+
+/** Shows the site's options: address grids and Wanda's height. */
+function syncSceneControls() {
+  let qubitsFor = (g: number) => Math.log2(g * g);
+  let grid = d3.select("#grid-size");
+  grid.selectAll("option").remove();
+  scene.grids.forEach(g => grid.append("option").attr("value", g)
+      .text(`${g} × ${g} squares` + (g > 8 ? ` (${qubitsFor(g)} qubits)` : "")));
+  grid.property("value", state.grid);
+  let height = d3.select("#target-height");
+  height.selectAll("option").remove();
+  WANDA_HEIGHTS.forEach(h => height.append("option").attr("value", h)
+      .text(`Wanda ${h} px`));
+  height.property("value", state.height);
+  d3.select("#threshold").property("value", state.threshold);
+  d3.select("label[for='threshold'] .value").text(fmt(state.threshold));
 }
 
 /** Scene view: the image, each region's value, marks, probe and result. */
@@ -763,6 +861,9 @@ function drawScene() {
     let x = (i % g) * s, y = Math.floor(i / g) * s;
     // Hovering a box shows that node's map; otherwise the region scores,
     // as a blue wash whose strength is the score (the scene stays visible).
+    if (searchFrame) {
+      continue;  // A running search draws its probabilities below instead.
+    }
     if (selected) {
       let v = boundary[selectedNodeId][i % g][Math.floor(i / g)];
       let c = d3.rgb(colorScale(v) as any as string);
@@ -775,8 +876,14 @@ function drawScene() {
     }
     ctx.fillRect(x, y, s, s);
   }
-  ctx.strokeStyle = "rgba(255,255,255,0.7)";
-  ctx.lineWidth = 1;
+  if (searchFrame) {
+    drawSearchFrame(ctx, g, s, marked);
+  }
+  // Fine address grids (the Wanda site's 64 x 64) get faint lines, thinner
+  // marks and frames.
+  ctx.strokeStyle = g > 16 ? "rgba(255,255,255,0.16)" : "rgba(255,255,255,0.7)";
+  ctx.lineWidth = g > 16 ? 0.6 : 1;
+  let inset = Math.min(4, s / 6), frame = Math.max(1.5, Math.min(5, s / 6));
   for (let k = 1; k < g; k++) {
     ctx.beginPath();
     ctx.moveTo(k * s, 0); ctx.lineTo(k * s, 512);
@@ -784,11 +891,19 @@ function drawScene() {
     ctx.stroke();
   }
   // Marked for the Grover oracle (score >= threshold): dashed outline.
-  ctx.setLineDash([10, 5]);
+  ctx.setLineDash(s >= 32 ? [10, 5] : []);
   ctx.strokeStyle = "#0877bd";
-  ctx.lineWidth = guided() ? 6 : 3;
-  marked.forEach(i => ctx.strokeRect((i % g) * s + 4,
-      Math.floor(i / g) * s + 4, s - 8, s - 8));
+  ctx.lineWidth = Math.min(guided() ? 6 : 3, frame);
+  marked.forEach(i => {
+    if (s >= 16) {
+      ctx.strokeRect((i % g) * s + inset, Math.floor(i / g) * s + inset,
+          s - 2 * inset, s - 2 * inset);
+    } else {
+      // A tiny square: ring its best window's centre instead.
+      ctx.setLineDash([]);
+      drawMarker(ctx, bestPoints[i], "#0877bd", null);
+    }
+  });
   ctx.setLineDash([]);
   // Score labels on coarse grids.
   if (g <= 4 && !selected) {
@@ -804,9 +919,9 @@ function drawScene() {
   // target is here").
   let p = views.probe, px = (p % g) * s, py = Math.floor(p / g) * s;
   ctx.strokeStyle = "#111";
-  ctx.lineWidth = 5;
-  ctx.strokeRect(px + 2.5, py + 2.5, s - 5, s - 5);
-  if (!guided()) {
+  ctx.lineWidth = frame;
+  ctx.strokeRect(px + frame / 2, py + frame / 2, s - frame, s - frame);
+  if (!guided() && s >= 32) {
     ctx.font = `bold ${g <= 4 ? 18 : 13}px Roboto, sans-serif`;
     let tag = "inspecting", tw = ctx.measureText(tag).width + 10;
     ctx.fillStyle = "#111";
@@ -818,49 +933,191 @@ function drawScene() {
   // The clicked square's score, in words.
   if (scores[p] != null) {
     let sc = scores[p];
+    let many = regionCands[p] && regionCands[p].length > 1;
+    let isMarked = marked.has(p);
     d3.select("#square-info").html(`Square ${p} scores ` +
-        `<b>${sc.toFixed(2)}</b>: ` + (sc >= state.threshold ?
-            "marked, so the search may pick it." :
-            `below the threshold (${state.threshold.toFixed(2)}), so not ` +
+        `<b>${sc.toFixed(2)}</b>` + (many ? ` (its best of ` +
+            `${regionCands[p].length} windows)` : "") + ": " + (isMarked ?
+            "marked, so the search may pick it." : sc >= state.threshold ?
+            "above the threshold, but a nearby square scores higher, so " +
+            "only that one is marked." :
+            `below the threshold (${fmt(state.threshold)}), so not ` +
             "marked.") + " Click any square to check it.");
   }
   if (measured) {
     let m = measured.region, ok = measured.verdict === "found";
     ctx.strokeStyle = ok ? "#1b8a3a" : "#c0392b";
-    ctx.lineWidth = 8;
-    ctx.strokeRect((m % g) * s + 4, Math.floor(m / g) * s + 4, s - 8, s - 8);
     ctx.fillStyle = ctx.strokeStyle;
-    ctx.font = `bold ${g <= 4 ? 40 : 30}px Roboto, sans-serif`;
-    ctx.fillText(ok ? "✓" : "✗", (m % g) * s + s - (g <= 4 ? 44 : 30),
-        Math.floor(m / g) * s + (g <= 4 ? 44 : 32));
+    if (s >= 32) {
+      ctx.lineWidth = 8;
+      ctx.strokeRect((m % g) * s + 4, Math.floor(m / g) * s + 4, s - 8, s - 8);
+      ctx.font = `bold ${g <= 4 ? 40 : 30}px Roboto, sans-serif`;
+      ctx.fillText(ok ? "✓" : "✗", (m % g) * s + s - (g <= 4 ? 44 : 30),
+          Math.floor(m / g) * s + (g <= 4 ? 44 : 32));
+    } else {
+      // The measured address's point (its best window), as the site shows.
+      drawMarker(ctx, bestPoints[m], ok ? "#1b8a3a" : "#c0392b",
+          ok ? `✓ ${scene.target}` : "✗ not here");
+    }
+  }
+  if (searchFrame) {
+    drawRoundLabel(ctx);
   }
 }
 
-/** Data column: a preview of each scene and a strip of training patches. */
-function drawSceneThumbnails() {
-  for (let id in SCENES) {
-    let el = document.querySelector(`canvas[data-scene=${id}]`) as
-        HTMLCanvasElement;
-    el.width = el.height = 100;
-    let c = document.createElement("canvas");
-    c.width = c.height = 512;
-    SCENES[id].render(c.getContext("2d"), SCENES[id].defaultGrid,
-        {targetCell: SCENES[id].defaultGrid * 3 + 2, distractors:
-            SCENES[id].randomDistractors(SCENES[id].defaultGrid)});
-    el.getContext("2d").drawImage(c, 0, 0, 100, 100);
+/**
+ * A marker that stays visible on a busy picture at 64 x 64 addresses: a
+ * ring round the target-sized window with a white halo, crosshair ticks
+ * outside it, and an optional label tag. The scene canvas is 512 px drawn
+ * at about half size, so sizes here are doubled.
+ */
+function drawMarker(ctx: CanvasRenderingContext2D, pt: Point, color: string,
+    label: string | null) {
+  let r = Math.max(22, 0.62 * (placement.height ?? 52));
+  let ring = (width: number, stroke: string) => {
+    ctx.strokeStyle = stroke;
+    ctx.lineWidth = width;
+    ctx.beginPath();
+    ctx.arc(pt.x, pt.y, r, 0, 2 * Math.PI);
+    for (let [dx, dy] of [[1, 0], [-1, 0], [0, 1], [0, -1]]) {
+      ctx.moveTo(pt.x + dx * (r + 4), pt.y + dy * (r + 4));
+      ctx.lineTo(pt.x + dx * (r + 16), pt.y + dy * (r + 16));
+    }
+    ctx.stroke();
+  };
+  ctx.save();
+  ctx.setLineDash([]);
+  ring(label ? 12 : 10, "rgba(255,255,255,0.95)");
+  ring(label ? 6 : 5, color);
+  if (label) {
+    ctx.font = "bold 26px Roboto, sans-serif";
+    let w = ctx.measureText(label).width + 20, h = 36;
+    let x = Math.min(512 - w - 2, Math.max(2, pt.x - w / 2));
+    let y = pt.y - r - 22 - h >= 2 ? pt.y - r - 22 - h : pt.y + r + 22;
+    ctx.fillStyle = color;
+    ctx.strokeStyle = "rgba(255,255,255,0.95)";
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.rect(x, y, w, h);
+    ctx.fill();
+    ctx.stroke();
+    ctx.fillStyle = "#fff";
+    ctx.textBaseline = "middle";
+    ctx.fillText(label, x + 10, y + h / 2 + 1);
   }
-  d3.select(".scene-name").text(`${scene.title}: find the ${scene.target}.`);
+  ctx.restore();
+}
+
+/**
+ * One Grover round on the scene. Every square starts equally likely (an
+ * even blue wash over the whole picture); round by round the chance drains
+ * out of the other squares and gathers on the marked ones, which glow.
+ */
+function drawSearchFrame(ctx: CanvasRenderingContext2D, g: number,
+    s: number, marked: Set<number>) {
+  let p = searchFrame.probabilities, top = 0;
+  for (let i = 0; i < g * g; i++) {
+    top = Math.max(top, p[i]);
+  }
+  for (let i = 0; i < g * g; i++) {
+    let a = 0.5 * Math.sqrt(p[i] / (top || 1));
+    if (a > 0.01) {
+      ctx.fillStyle = `rgba(8,119,189,${a})`;
+      ctx.fillRect((i % g) * s, Math.floor(i / g) * s, s, s);
+    }
+  }
+  marked.forEach(i => {
+    let pt = bestPoints[i], r = 20 + 60 * Math.sqrt(p[i]);
+    let glow = ctx.createRadialGradient(pt.x, pt.y, 0, pt.x, pt.y, r);
+    glow.addColorStop(0, `rgba(255,214,10,${0.25 + 0.6 * p[i] / (top || 1)})`);
+    glow.addColorStop(1, "rgba(255,214,10,0)");
+    ctx.fillStyle = glow;
+    ctx.fillRect(pt.x - r, pt.y - r, 2 * r, 2 * r);
+  });
+}
+
+/** The running search's round counter, drawn last so nothing covers it. */
+function drawRoundLabel(ctx: CanvasRenderingContext2D) {
+  let label = `Grover round ${searchFrame.round} / ${searchFrame.rounds}`;
+  ctx.save();
+  ctx.font = "bold 22px Roboto, sans-serif";
+  let w = ctx.measureText(label).width + 20;
+  ctx.fillStyle = "rgba(0,0,0,0.7)";
+  ctx.fillRect(8, 8, w, 34);
+  ctx.fillStyle = "#fff";
+  ctx.textBaseline = "middle";
+  ctx.fillText(label, 18, 26);
+  ctx.restore();
+}
+
+/** Data column: a preview of each of the site's five worlds. */
+function drawSceneThumbnails() {
+  let c = document.createElement("canvas");
+  c.width = c.height = 512;
+  wandaBackgrounds.forEach(b => {
+    let el = document.querySelector(`#world-list [data-background=${b.id}] ` +
+        "canvas") as HTMLCanvasElement;
+    scene.render(c.getContext("2d"), scene.defaultGrid,
+        {targetCell: null, background: b.id});
+    el.getContext("2d").drawImage(c, 0, 0, 100, 100);
+  });
+  d3.select(".scene-name").text(`${scene.title}: find ${scene.target}.`);
+}
+
+/**
+ * The labelled windows the circuit is learning from right now: the next
+ * ones in this round's (shuffled) order (ranking pairs have no picture).
+ */
+function currentExamples(n: number): Patch[] {
+  let out: Patch[] = [];
+  for (let k = 0; k < trainData.length && out.length < n; k++) {
+    let p = trainData[(epochPos + k) % trainData.length];
+    if (p.canvas) {
+      out.push(p);
+    }
+  }
+  return out;
+}
+
+/** Training is running (paced guided run or the play button). */
+function training(): boolean {
+  return !!show || player.playing();
+}
+
+/**
+ * The guided view's step 2 feed: the windows being learned from now, cut
+ * from the five worlds, each with its label and the circuit's score.
+ */
+function drawTrainFeed() {
+  let feed = d3.select("#train-feed");
+  if (feed.empty()) {
+    return;
+  }
+  feed.selectAll("*").remove();
+  currentExamples(6).forEach(p => {
+    let score = nn.forwardProp(network, constructInput(p.features));
+    let cell = feed.append("span").attr("class",
+        `feed-item ${p.label ? "pos" : "neg"}`)
+        .attr("title", (p.label ? "Wanda" : "Not Wanda") +
+            `: the circuit scores it ${score.toFixed(2)}`);
+    let c = cell.append("canvas").attr({width: 30, height: 56}).node() as
+        HTMLCanvasElement;
+    c.getContext("2d").drawImage(p.canvas, 0, 0, 30, 56);
+    cell.append("b").html(p.label ? "&#10003;" : "&#10007;");
+    cell.append("small").text(score.toFixed(2));
+  });
 }
 
 function drawPatchStrip() {
   let strip = d3.select("#patch-strip");
   strip.selectAll("*").remove();
-  let pos = trainData.filter(p => p.label === 1).slice(0, 4);
-  let neg = trainData.filter(p => p.label === 0).slice(0, 4);
-  pos.concat(neg).forEach(p => {
+  let shown = trainData.filter(p => !p.pair && p.canvas);
+  let pos = shown.filter(p => p.label === 1).slice(0, 4);
+  let neg = shown.filter(p => p.label === 0).slice(0, 4);
+  (training() && network ? currentExamples(8) : pos.concat(neg)).forEach(p => {
     let cell = strip.append("div").attr("class", "patch")
-        .attr("title", p.label ? `Contains the ${scene.target}` :
-            `No ${scene.target}`);
+        .attr("title", p.label ? `Contains ${scene.target}` :
+            `Not ${scene.target}`);
     let c = cell.append("canvas").attr({width: 32, height: 32}).node() as
         HTMLCanvasElement;
     c.getContext("2d").drawImage(p.canvas, 0, 0, 32, 32);
@@ -869,17 +1126,9 @@ function drawPatchStrip() {
   });
 }
 
-/** Loads the scene demo's exact trained weights into the demos' circuit. */
+/** Loads the site's exact trained weights into the site's circuit. */
 async function loadDemoWeights() {
-  let forScene = scene;
-  let model = demoModels[forScene.id];
-  if (!model) {
-    model = await (await fetch(forScene.modelUrl)).json();
-    demoModels[forScene.id] = model;
-  }
-  if (scene !== forScene) {
-    return;  // The scene changed while downloading; those weights don't fit.
-  }
+  let model = scene.model;
   // The demos' scores are exact expectation values: "these scores match the
   // site" is only true without shot noise.
   state.shots = 0;
@@ -896,11 +1145,11 @@ async function loadDemoWeights() {
   reset(false);
   nn.loadWeights(network, model);
   state.threshold = model.threshold;
-  d3.select("#threshold").property("value", state.threshold);
-  d3.select("label[for='threshold'] .value").text(state.threshold.toFixed(2));
+  syncSceneControls();
   updateMetrics();
   updateUI();
-  let acc = (model as any).metrics?.test?.accuracy;
+  let acc = (model as any).metrics?.test?.accuracy ??
+      (model as any).metrics?.validation?.accuracy;
   progress.weightsLoaded = true;
   renderGuide();
   if (guided()) {
@@ -909,8 +1158,9 @@ async function loadDemoWeights() {
   d3.select("#readout-info").html(
       `<b>Demo weights loaded</b>: these are the exact parameters the ` +
       `${scene.title} site uses` + (acc ? ` (${(100 * acc).toFixed(1)}% ` +
-      "on its own held-out patches)" : "") + ", so these region scores " +
-      "match it. Press play to keep training from here.");
+      `on its own ${(model as any).metrics?.test ? "held-out" :
+          "validation"} windows)` : "") + ", so these region scores " +
+      "and marks match it. Press play to keep training from here.");
 }
 
 /* ------------------------------ The circuit ---------------------------- */
@@ -1015,10 +1265,11 @@ function drawNode(cx: number, cy: number, nodeId: string, isInput: boolean,
       let name = scene.featureNames[featureIndex];
       state.off = active ? state.off.concat([name]) :
           state.off.filter(f => f !== name);
-      state.serialize();
-      drawNetwork(network);
-      updateMetrics();
-      updateUI(true);
+      // Weights learned with the old inputs no longer fit, so start again
+      // (as TF Playground does), and compare against a baseline that sees
+      // the same features.
+      updateBaseline();
+      reset();
     });
     div.style("cursor", "pointer");
     div.classed(active ? "active" : "inactive", true);
@@ -1065,8 +1316,7 @@ function drawNetwork(network: nn.Node[][]): void {
   let padding = 3;
   let co = d3.select(".column.output").node() as HTMLDivElement;
   let cf = d3.select(".column.features").node() as HTMLDivElement;
-  let width = co.offsetLeft - cf.offsetLeft;
-  svg.attr("width", width);
+  let avail = co.offsetLeft - cf.offsetLeft;
 
   node2coord = {};
   let container = svg.append("g")
@@ -1076,8 +1326,21 @@ function drawNetwork(network: nn.Node[][]): void {
   let numQubits = network[1].length;
   let featureWidth = 118;
   let circuitStart = featureWidth + 60;
-  let circuitEnd = width - 22 - 16 - arcSpace(numQubits);
-  let segment = (circuitEnd - circuitStart) / (numLayers - 2);
+  // Each layer needs room for its gate box, the correlation arcs and its
+  // entangling ring. Squeezed into the space between the feature and output
+  // columns, deep or wide circuits drew their CNOTs and arcs on top of each
+  // other; instead each layer keeps a minimum width, and a circuit that no
+  // longer fits extends to the right and scrolls sideways (#network).
+  let ringSize = network[1].reduce((n, node) =>
+      n + node.outputs.filter(l => l.kind === "entangle").length, 0);
+  let tail = 22 + 16 + arcSpace(numQubits);
+  let minSegment = RECT_SIZE + (arcSpace(numQubits) - 8) + 28 +
+      ringSize * MIN_GATE_PITCH;
+  let segment = Math.max(minSegment,
+      (avail - tail - circuitStart) / (numLayers - 2));
+  let width = Math.max(avail, circuitStart + segment * (numLayers - 2) + tail);
+  let circuitEnd = width - tail;
+  svg.attr("width", width);
   let layerScale = (l: number) => circuitStart + (l - 1) * segment;
   let nodeIndexScale = (nodeIndex: number) => nodeIndex * (RECT_SIZE + 25);
   let rowY = (q: number) => q * QUBIT_ROW + RECT_SIZE / 2;
@@ -1199,12 +1462,12 @@ function drawNetwork(network: nn.Node[][]): void {
   d3.select("#network").append("div").attr("class", "circuit-legend")
       .style({top: `${numQubits * QUBIT_ROW + 12}px`,
           left: `${colX(1) + 120}px`,
-          width: `${Math.max(200, width - colX(1) - 140)}px`})
+          width: `${Math.max(200, avail - colX(1) - 140)}px`})
       .html(guided() ?
           `<b>In short:</b> ${numQubits} qubits mix` +
           " the square's 8 clues over " +
           "several rounds; the meters on the right turn them into the " +
-          "square's bus score.<br><b>How to read it</b> (left to right):" +
+          "square's score.<br><b>How to read it</b> (left to right):" +
           "<span class='key'><b>|0⟩</b> each line is one " +
           term("qubit", "A quantum bit. Unlike a normal bit it can be " +
               "partly 0 and partly 1 at once.") + ", starting at 0</span>" +
@@ -1229,7 +1492,25 @@ function drawNetwork(network: nn.Node[][]): void {
   maxY = Math.max(maxY, numQubits * QUBIT_ROW + 40);
 
   svg.attr("height", maxY);
-  let height = Math.max(
+  let net = document.getElementById("network");
+  let box = document.getElementById("network-scroll");
+  let scrolls = width > avail;
+  box.classList.toggle("scrolls", scrolls);
+  box.style.width = scrolls ? `${avail}px` : "";
+  box.style.height = "";
+  if (scrolls) {
+    // A scroll box needs an explicit height: everything the circuit holds
+    // (getBoundingClientRect also measures the SVG), plus the scrollbar.
+    let top = box.getBoundingClientRect().top;
+    // Callout text overflows its box, so measure the children's children.
+    let parts = net.querySelectorAll(":scope > div, :scope > div > *");
+    let bottom = Array.from(parts).reduce((b, el) => {
+      let r = el.getBoundingClientRect();
+      return r.height ? Math.max(b, r.bottom - top) : b;
+    }, maxY + 80);
+    box.style.height = `${Math.ceil(bottom) + 18}px`;
+  }
+  let height = scrolls ? getRelativeHeight(d3.select(box)) : Math.max(
     getRelativeHeight(calloutThumb),
     getRelativeHeight(calloutWeights),
     getRelativeHeight(d3.select("#network"))
@@ -1274,7 +1555,7 @@ function getRelativeHeight(selection) {
 
 /**
  * The qubit +/- control above layer 1. Every layer shares one register, so it
- * changes all layers at once: 4 (the demos', 2 features per qubit) up to
+ * changes all layers at once: 4 (the site's, 2 features per qubit) up to
  * MAX_QUBITS.
  */
 function addPlusMinusControl(x: number, layerIdx: number) {
@@ -1358,7 +1639,7 @@ function updateHoverCard(type: HoverType, nodeOrLink?: nn.Node | nn.Link,
           "the measurement (its gradient is always 0).";
     } else if (node.rzDead) {
       note += " Its RZ has no effect: an RZ just before measuring Z-strings " +
-          "never does (the demos' audit lists these slots too).";
+          "never does (the Wanda site's model freezes these slots at zero).";
     }
   }
   hovercard.selectAll(".field").remove();
@@ -1457,8 +1738,7 @@ async function runComparison() {
       let order = trainData.slice();
       shuffle(order);
       order.forEach((p, i) => {
-        nn.forwardProp(net, constructInput(p.features));
-        nn.backProp(net, p.label);
+        trainOn(net, p);
         if ((i + 1) % state.batchSize === 0 || i === order.length - 1) {
           nn.updateWeights(net, state.learningRate);
         }
@@ -1469,18 +1749,17 @@ async function runComparison() {
         await new Promise(r => setTimeout(r, 0));
       }
     }
-    let correct = testData.filter(p => (nn.forwardProp(net,
-        constructInput(p.features)) >= state.threshold ? 1 : 0) ===
-        p.label).length / Math.max(1, testData.length);
+    let correct = evaluate(net, testData).accuracy;
     results.push(`${entangler === "cnot" ? "With CNOT ring" :
         "No entanglement"}: <b>${Math.round(100 * correct)}%</b>`);
   }
   results.push(`Logistic regression (9 parameters, classical): ` +
       `<b>${Math.round(100 * baselineAcc)}%</b>`);
-  out.html(`Same ${trainData.length} training patches, ${epochs} epochs ` +
+  out.html(`Same ${labelled(trainData).length} training ` +
+      `windows, ${epochs} epochs ` +
       `each, ${state.numHiddenLayers} layers, ${state.readout === "project" ?
           "hybrid" : "quantum-only"} readout; test accuracy on ` +
-      `${testData.length} new patches:<br>${results.join("<br>")}<br>` +
+      `${labelled(testData).length} new ones:<br>${results.join("<br>")}<br>` +
       "If these are close, entanglement is not what makes this task work.");
   d3.select("#compare-run").property("disabled", false);
 }
@@ -1492,10 +1771,12 @@ function updateReadoutInfo() {
     return;
   }
   d3.select("#readout-info").html(
-      "Accuracy is on new patches made the same way with the same " +
+      "Accuracy is on new examples made the same way with the same " +
       "artwork (in-distribution), not on new pictures. " +
-      `Each region's patch is scored by the circuit; regions scoring at ` +
-      `least the threshold are <b>marked</b> (dashed) for the Grover ` +
+      "As on the site, 4096 Wanda-sized windows are scored and each " +
+      "region keeps its best; regions scoring at least the threshold, " +
+      "minus any within the site's suppression radius of a better one, " +
+      `are <b>marked</b> for the Grover ` +
       `oracle. Values are ` + (shots > 0 ? `estimated from ${shots} shots; ` +
           "gradients by parameter shift." :
           "exact; gradients by the adjoint method (simulator only).") +
@@ -1515,9 +1796,27 @@ function updateBoundary() {
     boundary[node.id] = d3.range(g).map(() => new Array(g));
   });
   scores = [];
-  regionFeats.forEach((features, r) => {
+  regionFeats = [];
+  bestPoints = [];
+  regionCands.forEach((cands, r) => {
     let col = r % g, row = Math.floor(r / g);
-    scores.push(nn.forwardProp(network, constructInput(features)));
+    // As the site's scan: an address scores its best window (the first on
+    // a tie), and a hit there is that window's centre.
+    let best = 0, bestScore = -1;
+    cands.forEach((c, k) => {
+      let sc = nn.forwardProp(network, constructInput(c.features));
+      if (sc > bestScore) {
+        best = k;
+        bestScore = sc;
+      }
+    });
+    if (best !== cands.length - 1) {
+      // Leave the best window's per-qubit values on the nodes.
+      nn.forwardProp(network, constructInput(cands[best].features));
+    }
+    scores.push(bestScore);
+    regionFeats.push(cands[best].features);
+    bestPoints.push(cands[best].point);
     nn.forEachNode(network, false, node => {
       // <Z> is -1..1 (orange..blue); features and scores are 0..1, shown
       // as white..blue so that 0 reads as "nothing", not as negative.
@@ -1529,15 +1828,19 @@ function updateBoundary() {
 /** Cross-entropy and accuracy (at the threshold) in one pass. */
 function evaluate(network: nn.Node[][], patches: Patch[]):
     {loss: number, accuracy: number} {
-  let loss = 0, correct = 0;
+  let loss = 0, correct = 0, n = 0;
   for (let p of patches) {
+    if (p.pair) {
+      continue;  // Ranking pairs train, but are not labelled examples.
+    }
+    n++;
     let score = nn.forwardProp(network, constructInput(p.features));
     loss += nn.bce(score, p.label);
     if ((score >= state.threshold ? 1 : 0) === p.label) {
       correct++;
     }
   }
-  let n = Math.max(1, patches.length);
+  n = Math.max(1, n);
   return {loss: loss / n, accuracy: correct / n};
 }
 
@@ -1549,15 +1852,30 @@ function updateMetrics() {
   accTest = test.accuracy;
 }
 
-function updateUI(firstStep = false) {
-  updateWeightsUI(network, d3.select("g.core"));
-  updateBiasesUI(network);
-  updateBoundary();
-  d3.select("#network").selectAll("div.canvas")
-      .each(function(data: {heatmap: HeatMap, id: string}) {
-    data.heatmap.updateBackground(boundary[data.id], false);
-  });
-  drawScene();
+/** While training runs, the scene is re-scored at most this often. */
+const SCENE_REFRESH_MS = 250;
+let lastSceneRefresh = 0;
+
+/**
+ * Redraws everything. `training` (called every round while training runs)
+ * re-scores the scene only every SCENE_REFRESH_MS: Where's Wanda scores 4096
+ * windows per refresh (about 25 ms at 4 qubits, 120 ms at 6 qubits x 6
+ * layers), which would otherwise stall every round.
+ */
+function updateUI(firstStep = false, training = false) {
+  let now = performance.now();
+  let rescore = !training || now - lastSceneRefresh >= SCENE_REFRESH_MS;
+  if (rescore) {
+    lastSceneRefresh = now;
+    updateWeightsUI(network, d3.select("g.core"));
+    updateBiasesUI(network);
+    updateBoundary();
+    d3.select("#network").selectAll("div.canvas")
+        .each(function(data: {heatmap: HeatMap, id: string}) {
+      data.heatmap.updateBackground(boundary[data.id], false);
+    });
+    drawScene();
+  }
 
   function zeroPad(n: number): string {
     let pad = "000000";
@@ -1575,9 +1893,31 @@ function updateUI(firstStep = false) {
   d3.select("#baseline").text(`${Math.round(100 * baselineAcc)}%`);
   d3.select("#iter-number").text(addCommas(zeroPad(iter)));
   lineChart.addDataPoint([lossTrain, lossTest]);
-  views.update();
-  search.refresh();
+  if (rescore) {
+    views.update();
+    search.refresh();
+    drawPatchStrip();  // While training: the windows being learned now.
+  }
   renderGuide();
+  drawTrainFeed();
+}
+
+/**
+ * Accumulates one example's gradient: cross-entropy for a labelled window,
+ * or the Wanda site's pairwise margin for a ranking pair (qnn.ts).
+ */
+function trainOn(net: nn.Node[][], patch: Patch) {
+  if (!patch.pair) {
+    nn.forwardProp(net, constructInput(patch.features));
+    nn.backProp(net, patch.label);
+    return;
+  }
+  let pos = constructInput(patch.features), neg = constructInput(patch.pair);
+  let g = nn.pairGradient(nn.forwardProp(net, pos), nn.forwardProp(net, neg));
+  nn.forwardProp(net, pos);
+  nn.backProp(net, 1, {bce: 0, dLogit: g.pos});
+  nn.forwardProp(net, neg);
+  nn.backProp(net, 0, {bce: 0, dLogit: g.neg});
 }
 
 /** Position within the current epoch, so one epoch can span frames. */
@@ -1592,9 +1932,7 @@ function trainSamples(deadline: number): boolean {
     shuffle(trainData);  // A fresh order every epoch (seeded, reproducible).
   }
   while (epochPos < trainData.length) {
-    let patch = trainData[epochPos];
-    nn.forwardProp(network, constructInput(patch.features));
-    nn.backProp(network, patch.label);
+    trainOn(network, trainData[epochPos]);
     epochPos++;
     if (epochPos % state.batchSize === 0) {
       nn.updateWeights(network, state.learningRate);
@@ -1614,7 +1952,7 @@ function trainSamples(deadline: number): boolean {
 function finishEpoch(): void {
   iter++;
   updateMetrics();
-  updateUI();
+  updateUI(false, player.playing());
 }
 
 /** One full epoch (the Step button). */
@@ -1629,6 +1967,7 @@ function oneStep(): void {
  */
 function reset(autoTrain = true) {
   lineChart.reset();
+  iter = 0;  // Before pausing: nothing to re-score for the old circuit.
   player.pause();
   state.numHiddenLayers = Math.min(nn.MAX_LAYERS,
       Math.max(1, state.numHiddenLayers));
@@ -1707,18 +2046,35 @@ function generateData(firstTime = false) {
     state.serialize();
   }
   Math.seedrandom(state.seed);
-  let data = makeDataset(scene, NUM_PATCHES, state.noise);
+  let data = scene.makeDataset(NUM_PATCHES, state.noise);
   shuffle(data);
   let splitIndex = Math.floor(data.length * state.percTrainData / 100);
   trainData = data.slice(0, splitIndex);
   testData = data.slice(splitIndex);
-  // The demos' classical baseline on the very same patches.
-  let logistic = nn.trainLogistic(trainData.map(p => p.features),
-      trainData.map(p => p.label));
-  baselineAcc = testData.filter(p => (logistic(p.features) >= 0.5 ? 1 : 0) ===
-      p.label).length / Math.max(1, testData.length);
+  updateBaseline();
   drawSceneThumbnails();
   drawPatchStrip();
+}
+
+/**
+ * The demos' classical baseline on the very same examples and active
+ * features (and, for Wanda, the same ranking pairs, as the site's matched
+ * logistic model).
+ */
+function updateBaseline() {
+  let examples = labelled(trainData);
+  let logistic = nn.trainLogistic(examples.map(p => constructInput(p.features)),
+      examples.map(p => p.label), undefined, undefined,
+      trainData.filter(p => p.pair).map(p => [constructInput(p.features),
+          constructInput(p.pair)]));
+  baselineAcc = labelled(testData).filter(p =>
+      (logistic(constructInput(p.features)) >= 0.5 ? 1 : 0) === p.label)
+      .length / Math.max(1, labelled(testData).length);
+}
+
+/** Labelled examples (not ranking pairs). */
+function labelled(patches: Patch[]): Patch[] {
+  return patches.filter(p => !p.pair);
 }
 
 /** Test accuracy of logistic regression on the same 8 features. */
@@ -1726,19 +2082,27 @@ let baselineAcc = 0;
 
 async function start() {
   d3.select("#readout-info").text("Loading the scenes…");
-  for (let id in SCENES) {
-    await SCENES[id].load();
+  await scene.load();
+  // Anything the URL did not set comes from the scene's site.
+  let urlGrid = state.grid, urlTarget = state.target, urlProbe = state.probe,
+      urlThreshold = state.threshold, urlBackground = state.background;
+  sceneDefaults();
+  if (scene.grids.indexOf(urlGrid) >= 0) {
+    state.grid = urlGrid;
+    state.target = urlTarget ?? state.target;
+    views.probe = state.probe = urlProbe ?? state.target;
   }
-  if (!Number.isInteger(state.grid) || [4, 8].indexOf(state.grid) < 0) {
-    state.grid = scene.defaultGrid;
+  state.threshold = urlThreshold ?? state.threshold;
+  if (wandaBackgrounds.some(b => b.id === urlBackground)) {
+    state.background = urlBackground;
   }
   if (state.seed == null) {
     state.seed = Math.random().toFixed(5);
   }
   makeGUI();
-  d3.select("#grid-size").property("value", state.grid);
+  syncSceneControls();
   Math.seedrandom(state.seed);
-  placeScene(true);
+  placeScene();
   generateData(true);
   reset();
   hideControls();

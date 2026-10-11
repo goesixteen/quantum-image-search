@@ -4,10 +4,10 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import * as nn from '../src/qnn.ts';
-import * as busQnn from '../../bus-search-lab/dist/qnn.js';
-import * as crowdQnn from '../../waldo-search-lab/dist/qnn.js';
+import * as wandaQnn from '../../waldo-search-lab/dist/qnn.js';
 
-const FEATURES = busQnn.FEATURE_NAMES;
+const WANDA_MODEL = JSON.parse(readFileSync(new URL('../../waldo-search-lab/dist/model/wanda-qnn.json', import.meta.url)));
+const FEATURES = WANDA_MODEL.featureNames;
 const spec = (over = {}) => ({ featureIds: FEATURES, qubits: 4, layers: 4, entangler: 'cnot', reupload: true, readout: 'project', shots: 0, ...over });
 const gates = net => net.slice(1, -1).flat();
 let seed = 11;
@@ -29,7 +29,7 @@ test('network shape and links mirror the demos\' circuit', () => {
 });
 
 test('the demos\' trained weights give exactly the demos\' scores', () => {
-  for (const [lab, file] of [[busQnn, '../../bus-search-lab/dist/model/model.json'], [crowdQnn, '../../waldo-search-lab/dist/model/model.json']]) {
+  for (const [lab, file] of [[wandaQnn, '../../waldo-search-lab/dist/model/wanda-qnn.json']]) {
     const model = JSON.parse(readFileSync(new URL(file, import.meta.url)));
     const net = nn.buildNetwork(spec({ featureIds: model.featureNames, layers: model.layers }));
     nn.loadWeights(net, model);
@@ -39,7 +39,7 @@ test('the demos\' trained weights give exactly the demos\' scores', () => {
     }
   }
   const wrong = nn.buildNetwork(spec({ readout: 'z0' }));
-  assert.throws(() => nn.loadWeights(wrong, JSON.parse(readFileSync(new URL('../../bus-search-lab/dist/model/model.json', import.meta.url)))));
+  assert.throws(() => nn.loadWeights(wrong, WANDA_MODEL));
 });
 
 test('dead gates: last-layer RZ with the demos\' readout; q0 too with <Z0> only', () => {
@@ -126,11 +126,11 @@ test('classifier block (coherent oracle) only with the quantum-only readout', ()
   assert.ok(Math.abs(re[0] ** 2 + im[0] ** 2 - 1) < 1e-12);
 });
 
-test('demo weights are refused by the wrong scene or a look-alike circuit', () => {
-  const bus = JSON.parse(readFileSync(new URL('../../bus-search-lab/dist/model/model.json', import.meta.url)));
-  const crowd = JSON.parse(readFileSync(new URL('../../waldo-search-lab/dist/model/model.json', import.meta.url)));
-  assert.throws(() => nn.loadWeights(nn.buildNetwork(spec({ featureIds: crowd.featureNames })), bus));
-  assert.throws(() => nn.loadWeights(nn.buildNetwork(spec({ reupload: false })), bus));
-  assert.throws(() => nn.loadWeights(nn.buildNetwork(spec({ entangler: 'cry' })), bus));
-  assert.throws(() => nn.loadWeights(nn.buildNetwork(spec({ qubits: 5 })), bus));
+test('demo weights are refused by other features or a look-alike circuit', () => {
+  const wanda = WANDA_MODEL;
+  assert.throws(() => nn.loadWeights(nn.buildNetwork(spec({ featureIds: FEATURES.map(f => f + '_other') })), wanda));
+  assert.throws(() => nn.loadWeights(nn.buildNetwork(spec({ reupload: false })), wanda));
+  assert.throws(() => nn.loadWeights(nn.buildNetwork(spec({ entangler: 'cry' })), wanda));
+  assert.throws(() => nn.loadWeights(nn.buildNetwork(spec({ qubits: 5 })), wanda));
+  nn.loadWeights(nn.buildNetwork(spec()), wanda); // the right circuit accepts them
 });

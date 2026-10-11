@@ -1,7 +1,8 @@
 # Quantum Image Search
 
-Private QHack development workspace with two interactive demos: **Where’s
-Wanda** and the **schoolbus CAPTCHA**. Both run locally using included artwork,
+Private QHack development workspace with two interactive demos, **Where’s
+Wanda** and the **schoolbus CAPTCHA**, and the **QNN Playground**, which opens
+up Where’s Wanda’s quantum pipeline. All run locally using included artwork,
 trained models and classical statevector simulators. Nothing has been submitted
 to the hackathon.
 
@@ -25,6 +26,15 @@ Open http://127.0.0.1:4173/ for the schoolbus demo. The static demos need no
 package installation, API key, Python or quantum hardware. Ctrl+C stops a
 server. See [Wanda’s quick start](WANDA_QUICKSTART.md) for alternate ports,
 keyboard controls, optional engineering checks and reproduction instructions.
+
+```text
+cd qnn-playground
+npm install
+npm run dev
+```
+
+Open http://127.0.0.1:4175/ for the QNN Playground. It needs a one-time
+`npm install` (build tools only) and reads the Where’s Wanda folder.
 
 ## Current version
 
@@ -62,6 +72,18 @@ The matched classical baseline scored 299/300. Retained failures, browser/native
 differences and the later curated Park lookalike have their own documented
 scope. No arbitrary-person recognition or end-to-end quantum runtime advantage
 is established.
+
+## QNN Playground
+
+[`qnn-playground/`](qnn-playground/README.md) lays Where’s Wanda’s pipeline out
+like the TensorFlow Neural Network Playground: window features → the 4-qubit,
+4-layer circuit → readout → marked addresses → Grover search. It is built from
+the Wanda site’s own artwork, scene catalog, compositor, feature extractor,
+scan, threshold, ground-truth rule and Grover simulator. Visitors can train the
+circuit live with the site’s recipe and objective, or load its exact weights.
+Its tests check that, with those weights, its scores match the site’s to about
+1e-15 and its scan gives the site’s `scanQNN()` scores and marks. It changes
+nothing in either demo. [Development log](qnn-playground/DEVLOG.md).
 
 ## Repository contents
 

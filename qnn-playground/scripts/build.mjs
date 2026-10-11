@@ -2,7 +2,7 @@
 // Produces the same dist/ layout upstream's index.html expects:
 //   bundle.js (src/playground.ts), bundle.css (MDL + styles.css),
 //   lib.js (MDL + seedrandom globals), index.html, favicon.png, and project/
-//   (the demos' artwork and trained models).
+//   (the Wanda site's artwork, scene catalog and trained model).
 // `--watch` rebuilds on change and serves dist/ via ../serve.mjs.
 import * as esbuild from 'esbuild';
 import { mkdir, readFile, writeFile, copyFile, watch as watchFs } from 'node:fs/promises';
@@ -19,21 +19,30 @@ async function concat(out, files) {
   await writeFile(path.join(dist, out), parts.join('\n'));
 }
 
-// The image-search demos' own artwork and trained weights, copied at build
-// time so the playground never drifts from them (single source of truth).
+// The Where's Wanda site's own artwork, catalog and trained weights, copied
+// at build time so the playground never drifts from it (single source of
+// truth). It follows the site's scene catalog: every built-in Wanda
+// background it lists (Park's curated, pre-rendered variant as the site
+// shows it) and the Wanda target.
+const WANDA = '../waldo-search-lab/dist/';
 const PROJECT_FILES = {
-  'project/bus/bus.png': '../bus-search-lab/dist/assets/bus.png',
-  'project/bus/car.png': '../bus-search-lab/dist/assets/car.png',
-  'project/bus/truck.png': '../bus-search-lab/dist/assets/truck.png',
-  'project/bus/van.png': '../bus-search-lab/dist/assets/van.png',
-  'project/bus/model.json': '../bus-search-lab/dist/model/model.json',
-  'project/crowd/crowd-captcha.png': '../waldo-search-lab/dist/assets/crowd-captcha.png',
-  'project/crowd/character.png': '../waldo-search-lab/dist/assets/character.png',
-  'project/crowd/model.json': '../waldo-search-lab/dist/model/model.json',
+  'project/wanda/scene-catalog.json': WANDA + 'scene-catalog.json',
+  'project/wanda/model/wanda-qnn.json': WANDA + 'model/wanda-qnn.json',
 };
 
+async function wandaFiles() {
+  const catalog = JSON.parse(await readFile(path.join(root, WANDA, 'scene-catalog.json'), 'utf8'));
+  const files = {};
+  for (const scene of catalog.scenes.filter(s => s.id.startsWith('wanda-'))) {
+    const src = scene.curatedArtwork?.preRenderedSrc ?? scene.src;
+    files['project/wanda/' + src] = WANDA + src;
+  }
+  for (const target of catalog.targets) files['project/wanda/' + target.src] = WANDA + target.src;
+  return files;
+}
+
 async function copyProject() {
-  for (const [to, from] of Object.entries(PROJECT_FILES)) {
+  for (const [to, from] of Object.entries({...PROJECT_FILES, ...await wandaFiles()})) {
     await mkdir(path.dirname(path.join(dist, to)), { recursive: true });
     await copyFile(path.join(root, from), path.join(dist, to));
   }

@@ -88,23 +88,32 @@ try {
   const trainedText = `/Trained for 120 rounds/.test(document.querySelectorAll('#guide .guide-steps li')[1].textContent)`;
   check(await waitFor(`document.querySelectorAll('#guide .guide-steps li').length === 4`), 'guided view shows the 4 steps');
   check(await evaluate(`/Training… round \\d+ of 120/.test(document.querySelector('#guide').textContent) && !!document.querySelector('#guide .train-bar') && !/Use the trained circuit/.test(document.body.textContent)`), 'first visit starts a training run (no pretrained shortcut)');
+  check(await evaluate(`document.querySelectorAll('#guide #train-feed .feed-item canvas').length === 6 && document.querySelectorAll('#guide .feed-item.pos').length + document.querySelectorAll('#guide .feed-item.neg').length === 6`), 'while training, step 2 shows the labelled windows being learned');
   check(await waitFor(trainedText, 10000) && await evaluate(`!document.querySelector('#play-pause-button').classList.contains('playing') && +document.querySelector('#iter-number').textContent.replace(/,/g, '') === 120`), 'the run stops by itself after 120 rounds and ticks step 2');
   check(await evaluate(`getComputedStyle(document.querySelector('.ui-entangler')).display === 'none' && getComputedStyle(document.querySelector('#statevector')).display === 'none'`), 'advanced controls and panels are hidden in the guided view');
   check(await evaluate(`(() => { window.scrollTo(0, 800); const scrolled = scrollY, top = document.querySelector('#top-controls').getBoundingClientRect().top; window.scrollTo(0, 0); return scrolled > 100 && Math.abs(top) < 1; })()`), 'top bar stays pinned to the top when scrolling');
   const layers = () => evaluate(`document.querySelector('#num-layers').textContent`);
-  const visible = await evaluate(`getComputedStyle(document.querySelector('#add-layers')).display !== 'none'`);
+  const shown = sel => evaluate(`(() => { const b = document.querySelector(${JSON.stringify(sel)}); return !!b && getComputedStyle(b).display !== 'none'; })()`);
+  check(!(await shown('#add-layers')) && !(await shown('#remove-layers')) && !(await shown('#network .qubit-control button')), 'circuit size buttons are hidden in the guided view');
+  await evaluate(`document.querySelector('#mode-toggle').click()`);
+  check(await shown('#add-layers') && await shown('#network .qubit-control button'), 'circuit size buttons show in the details view');
   await evaluate(`document.querySelector('#add-layers').click()`);
   const added = await layers();
-  const retrains = await evaluate(`/Training…/.test(document.querySelector('#guide').textContent)`);
-  await evaluate(`document.querySelector('#remove-layers').click()`);
-  check(visible && added === '5' && retrains && await layers() === '4', 'layer +/- buttons work in the guided view and retrain the circuit');
   await evaluate(`document.querySelector('#network .qubit-control button').click()`);
-  const fiveQubits = await evaluate(`document.querySelector('#network .qubit-control').textContent.includes('5 qubits') && [...document.querySelectorAll('#network .ket')].some(t => t.textContent === 'q4') && /networkShape=5,5,5,5/.test(location.hash)`);
-  await evaluate(`document.querySelectorAll('#network .qubit-control button')[1].click()`);
-  check(fiveQubits && await evaluate(`/networkShape=4,4,4,4/.test(location.hash)`), 'qubit +/- changes every layer');
+  const fiveQubits = await evaluate(`document.querySelector('#network .qubit-control').textContent.includes('5 qubits') && [...document.querySelectorAll('#network .ket')].some(t => t.textContent === 'q4') && /networkShape=5,5,5,5,5/.test(location.hash)`);
+  check(added === '5' && fiveQubits, 'details view: layer and qubit + change the whole circuit');
+  await evaluate(`document.querySelector('#mode-toggle').click()`);
+  check(await layers() === '4' && /networkShape=4,4,4,4(&|$)/.test(await evaluate('location.hash')) && await evaluate(`/Training…/.test(document.querySelector('#guide').textContent)`), "back in the guided view: the sites' 4 x 4 circuit, retrained");
+  await open('networkShape=6,6,6');
+  check(await waitFor(`document.querySelectorAll('#network g.bloch').length === 16`), 'a guided link with another circuit size opens the 4 x 4 circuit');
   check(await waitFor(trainedText, 10000) && await waitFor(stepsDone(3)), 'the circuit trains to the end again after the change');
   await evaluate(`[...document.querySelectorAll('#guide .step-action')].find(b => /search/i.test(b.textContent)).click()`);
-  check(await waitFor(`/Found the school bus/.test(document.querySelector('#search-banner').textContent)`), `the guide's search finds the bus (${(await text('#search-banner')).slice(0, 60)})`);
+  // A from-scratch circuit can mark a lookalike too, and the search can land
+  // there, so this checks that it measures; the site's weights must find her
+  // (below).
+  check(await waitFor(`/Searching… round \\d+ of \\d+/.test(document.querySelector('#search-banner').textContent)`, 3000), 'the search shows its rounds as they run');
+  check(await waitFor(`/Found Wanda|does not hold Wanda/.test(document.querySelector('#search-banner').textContent)`, 15000), `the guide's search measures a square (${(await text('#search-banner')).slice(0, 60)})`);
+  check(/Quantum advantage: Grover needs about √N checks instead of N/.test(await text('#search-banner')), 'the result states where the quantum advantage lies');
   check(await waitFor(`document.querySelectorAll('#guide .guide-steps li.done').length === 4`), 'all four steps ticked after searching');
   await evaluate(`document.querySelector('.play-caption').click()`);
   check(await waitFor(`+document.querySelector('#iter-number').textContent.replace(/,/g, '') > 20 && /Training/.test(document.querySelectorAll('#guide li')[1].textContent)`), '"Train it yourself" restarts and trains, with live progress in step 2');
@@ -113,36 +122,48 @@ try {
   check(await evaluate(`getComputedStyle(document.querySelector('#statevector')).display !== 'none' && /mode=explorer/.test(location.hash)`), '"Show all details" reveals the expert view');
   check(errors.length === 0, `no page errors ${errors.join(' | ')}`);
 
-  // Expert view: the bus scene, 8 x 8 regions, the demos' 4-qubit x 4-layer circuit.
+  // Expert view: Where's Wanda, 64 x 64 addresses, the site's 4-qubit x
+  // 4-layer circuit.
   await open('mode=explorer');
   check(await waitFor(`document.querySelectorAll('#network g.bloch').length === 16`), 'circuit drawn: a Bloch sphere under each of the 16 gates');
-  check(await count('#network g.node.inactive, #network g.node.active') === 8, 'the 8 pixel features of the bus demo');
+  check(await count('#network g.node.inactive, #network g.node.active') === 8, "the site's 8 window features");
   check(await count('#network .meter') === 4, 'hybrid readout measures all 4 qubits');
   check(await count('#readout-panel g.ro-row') === 7, 'readout panel lists the 7 observables');
   check(await count('#statevector g.amps rect') === 16, '16 amplitude bars for the 4-qubit classifier');
-  check(await count('#search-panel svg.grover-bars rect') === 64, 'Grover register spans the 64 regions');
+  check(await count('#search-panel svg.grover-bars rect') === 4096, 'Grover register spans the 4096 addresses (12 qubits), as on the site');
+  check(await count('#world-list button.world') === 5 && /Festival/.test(await text('#world-list .world.selected')), "the site's five worlds, Festival selected");
   check(errors.length === 0, `no page errors ${errors.join(' | ')}`);
 
-  // The demo's own weights: its scores, so the bus (region 27) is marked.
+  // The site's own weights, scan, threshold and NMS mark only the address
+  // at its default (420, 300), and the search finds her.
   await loadDemoWeights();
-  check(await evaluate(`document.querySelectorAll('#search-panel svg.grover-bars rect')[27].classList.contains('marked')`), 'demo weights mark the region holding the bus');
+  const marks = await evaluate(`[...document.querySelectorAll('#search-panel svg.grover-bars rect')].flatMap((r, i) => r.classList.contains('marked') ? [i] : [])`);
+  check(marks.length === 1 && marks[0] === 2420, `site weights mark Wanda's address 2420 only (marks ${marks.join(',')})`);
+  check(await evaluate(`Math.abs(+document.querySelector('#threshold').value - 0.9056472752971427) < 1e-12`), "the site's frozen threshold (0.9056) is used exactly");
   check(/Demo weights loaded/.test(await text('#readout-info')), 'demo weights explained');
   await evaluate(`document.querySelector('#grover-run').click()`);
-  check(await waitFor(`/Measured region/.test(document.querySelector('#search-panel .search-result').textContent)`), 'Grover search runs and measures a region');
-  check(/found the school bus/.test(await text('#search-panel .search-result')), `the measurement finds the bus (${(await text('#search-panel .search-result')).slice(0, 90)})`);
+  check(await waitFor(`/Measured region/.test(document.querySelector('#search-panel .search-result').textContent)`, 10000), 'Grover search over 4096 addresses measures one');
+  check(/found Wanda/.test(await text('#search-panel .search-result')), `the measurement finds Wanda (${(await text('#search-panel .search-result')).slice(0, 90)})`);
+  for (const bg of ['wanda-beach', 'wanda-park']) {
+    await evaluate(`document.querySelector('#world-list [data-background=${bg}]').click()`);
+    await sleep(800);
+    const m = await evaluate(`[...document.querySelectorAll('#search-panel svg.grover-bars rect')].flatMap((r, i) => r.classList.contains('marked') ? [i] : [])`);
+    check(m.includes(2420) && new RegExp('background=' + bg).test(await evaluate('location.hash')), `${bg}: site weights still mark Wanda (marks ${m.join(',')})`);
+  }
+  check(errors.length === 0, `no page errors ${errors.join(' | ')}`);
 
-  // Training from scratch (reset) learns the bus patches.
+  // Training from scratch (reset) learns the windows.
   await evaluate(`document.querySelector('#reset-button').click()`);
   const before = await loss();
   const worstDefault = await play(6000);
   const after = await loss();
   check(after < before * 0.5, `training lowers the loss (${before} -> ${after})`);
   const acc = await text('#accuracy');
-  check(+acc.split('/')[1].replace('%', '') >= 80, `held-out patch accuracy >= 80% (${acc})`);
-  check(worstDefault < 250, `page stays responsive while training (longest frame ${worstDefault} ms)`);
+  check(+acc.split('/')[1].replace('%', '') >= 80, `held-out window accuracy >= 80% (${acc})`);
+  check(worstDefault < 250, `page stays responsive while training, rescoring 4096 windows (longest frame ${worstDefault} ms)`);
 
   // Interactions: probe by keyboard (saved in the URL), click-to-edit a gate.
-  const moved = await evaluate(`(() => { const c = document.querySelector('#scene-canvas'); const before = document.querySelector('#statevector .sv-title').textContent; c.focus(); c.dispatchEvent(new KeyboardEvent('keydown', {key: 'ArrowRight', bubbles: true})); return before !== document.querySelector('#statevector .sv-title').textContent && /probe=28/.test(location.hash); })()`);
+  const moved = await evaluate(`(() => { const c = document.querySelector('#scene-canvas'); const before = document.querySelector('#statevector .sv-title').textContent; c.focus(); c.dispatchEvent(new KeyboardEvent('keydown', {key: 'ArrowRight', bubbles: true})); return before !== document.querySelector('#statevector .sv-title').textContent && /probe=2421/.test(location.hash); })()`);
   check(moved, 'arrow keys move the probe region, saved in the URL');
   const edit = await evaluate(`(() => {
     const gate = document.querySelector('#canvas-g16'); // q3 in layer 4 (ids g1..g16)
@@ -153,7 +174,7 @@ try {
     return shown + '|' + note;
   })()`);
   check(edit.startsWith('2|'), `clicking a gate opens its RY and RZ angles for editing (${edit.slice(0, 2)})`);
-  check(/RZ has no effect/.test(edit), "the last layer's dead RZ is explained (as in the demos' audit)");
+  check(/RZ has no effect/.test(edit), "the last layer's dead RZ is explained (the site's model freezes it)");
   check(errors.length === 0, `no page errors ${errors.join(' | ')}`);
 
   // Review fixes: shots reset on loading weights, slider mid-search cancels
@@ -178,24 +199,23 @@ try {
   check(errors.length === 0, `no page errors ${errors.join(' | ')}`);
 
   // Saved URLs whose probe square is outside the grid must still start, and
-  // switching from the 8 x 8 bus scene to the 4 x 4 crowd scene must not crash.
-  await open('scene=crowd&grid=4&probe=27&target=50');
-  check(await waitFor(`document.querySelectorAll('#network g.bloch').length === 16`) && !(await evaluate(`!!document.querySelector('.load-error')`)), 'starts with an out-of-range probe square in the URL');
-  await open('probe=60');
-  await waitFor(`document.querySelectorAll('#network g.bloch').length === 16`);
-  await evaluate(`document.querySelector('canvas[data-scene=crowd]').click()`);
-  await sleep(2000);
-  check(errors.length === 0 && /Square 15/.test(await text('#square-info')), 'switching to the 4 x 4 scene clamps the probe square');
+  // old links to the retired bus and crowd scenes open Where's Wanda.
+  for (const old of ['scene=crowd&grid=4&probe=27&target=50', 'scene=bus&grid=8&target=28']) {
+    await open(old);
+    check(await waitFor(`document.querySelectorAll('#network g.bloch').length === 16`) && !(await evaluate(`!!document.querySelector('.load-error')`)) && await count('#world-list button.world') === 5, `old link opens Where's Wanda (${old})`);
+  }
+  check(errors.length === 0, `no page errors ${errors.join(' | ')}`);
 
-  // Coherent oracle and the "does it matter?" comparison (crowd, quantum-only readout).
-  await open('mode=explorer&readout=z0&scene=crowd&grid=4&target=6&probe=6');
-  await waitFor(`document.querySelectorAll('#search-panel svg.grover-bars rect').length === 16`);
+  // Coherent oracle and the "does it matter?" comparison (Wanda on an 8 x 8
+  // address grid, quantum-only readout).
+  await open('mode=explorer&readout=z0&grid=8&target=38&probe=38');
+  await waitFor(`document.querySelectorAll('#search-panel svg.grover-bars rect').length === 64`);
   await evaluate(`(() => { const o = document.querySelector('#oracle-mode'); o.value = 'coherent'; o.dispatchEvent(new Event('change')); })()`);
   check(/classifier says "target"/.test(await text('#search-panel .search-stats')), 'coherent oracle runs the classifier inside the search');
   await evaluate(`document.querySelector('#grover-run').click()`);
   check(await waitFor(`/Measured region/.test(document.querySelector('#search-panel .search-result').textContent)`), 'coherent search measures a region');
   await evaluate(`document.querySelector('#compare-run').click()`);
-  check(await waitFor(`/Logistic regression/.test(document.querySelector('#compare-result').textContent)`, 60000), `comparison reports entangled vs not vs classical (${(await text('#compare-result')).replace(/\s+/g, ' ').slice(-120)})`);
+  check(await waitFor(`/Logistic regression/.test(document.querySelector('#compare-result').textContent)`, 60000), `comparison reports entangled vs not vs classical (${(await text('#compare-result')).replace(/\s+/g, ' ').slice(-220)})`);
   await open('mode=explorer');
   await waitFor(`document.querySelectorAll('#network g.bloch').length === 16`);
   await evaluate(`(() => { const o = document.querySelector('#oracle-mode'); o.value = 'coherent'; o.dispatchEvent(new Event('change')); })()`);
@@ -203,19 +223,36 @@ try {
   check(errors.length === 0, `no page errors ${errors.join(' | ')}`);
 
   // Pure <Z0> readout: one meter, and q0's last gate is dead (faded).
-  await open('readout=z0&networkShape=4,4');
+  await open('mode=explorer&readout=z0&networkShape=4,4');
   check(await waitFor(`document.querySelectorAll('#network .meter').length === 1`), 'quantum-only readout measures qubit 0 only');
   check(await count('#network g.node.unreachable') === 1, "q0's last gate is faded (cannot reach <Z0>)");
 
-  // Crowd scene with its demo weights.
-  await open('scene=crowd&grid=4&target=6&probe=6');
-  check(await waitFor(`document.querySelectorAll('#search-panel svg.grover-bars rect').length === 16`), 'crowd scene: 16 regions');
-  await loadDemoWeights();
-  check(await evaluate(`document.querySelectorAll('#search-panel svg.grover-bars rect')[6].classList.contains('marked')`), 'crowd demo weights mark the region holding the explorer');
+  // Bigger circuits on Wanda (4096 windows per scene refresh) stay usable,
+  // and keep correlation readouts.
+  await open('mode=explorer&networkShape=6,6,6,6,6,6');
+  await waitFor(`document.querySelectorAll('#network g.bloch').length === 36`, 15000);
+  check(await count('#readout-panel g.ro-row') === 10, '6 qubits: readout keeps singles, pairs and parity (10 Z-strings)');
+  const worst6 = await play(4000);
+  check(worst6 < 250, `Wanda, 6 qubits x 6 layers: page stays responsive while training (longest frame ${worst6} ms)`);
+  // Switching a feature off starts a fresh circuit and a matching baseline.
+  const baseBefore = await text('#baseline');
+  await evaluate(`document.querySelector('#network div.canvas.active').click()`);
+  await sleep(500);
+  check(/off=/.test(await evaluate('location.hash')) && await evaluate(`+document.querySelector('#iter-number').textContent.replace(/,/g, '') === 0`), 'switching a feature off resets the circuit');
+  console.log(`     (baseline with all features ${baseBefore}, with one off ${await text('#baseline')})`);
+  check(errors.length === 0, `no page errors ${errors.join(' | ')}`);
+
+  // Guided: trained from scratch with the site's recipe.
+  await open('');
+  check(await waitFor(trainedText, 20000), 'Wanda: the guided run trains to the end');
+  const wandaAcc = await text('#accuracy');
+  check(+wandaAcc.replace('%', '') >= 85, `Wanda: held-out window accuracy >= 85% after 120 rounds (${wandaAcc})`);
+  const wandaMarks = await evaluate(`document.querySelector('#guide').textContent.match(/marked: (\\d+) of 4096/)?.[1]`);
+  console.log(`     (from-scratch marks at the site threshold: ${wandaMarks})`);
   check(errors.length === 0, `no page errors ${errors.join(' | ')}`);
 
   // The largest circuit with shot-based (parameter-shift) training.
-  await open('networkShape=4,4,4,4,4,4&entangler=cry&shots=100');
+  await open('mode=explorer&networkShape=4,4,4,4,4,4&entangler=cry&shots=100');
   await waitFor(`document.querySelectorAll('#network g.bloch').length === 24`);
   const worstBig = await play(4000);
   check(worstBig < 400, `6 layers, CRY, 100 shots stays responsive (longest frame ${worstBig} ms)`);

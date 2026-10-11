@@ -494,6 +494,52 @@ g.column rect {
   width: 10%;
 }
 
+/* Pick a world: the Where's Wanda site's five backgrounds. */
+.data.column .world-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0;
+}
+
+.data.column .world {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  width: 40px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font: 10px/1.2 "Helvetica", "Arial", sans-serif;
+  color: #777;
+}
+
+.data.column .world canvas {
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(0,0,0,0.1);
+  border-radius: 3px;
+  opacity: 0.55;
+}
+
+.data.column .world:hover canvas,
+.data.column .world:focus-visible canvas {
+  border-color: #999;
+  opacity: 1;
+}
+
+.data.column .world.selected canvas {
+  border-color: #000;
+  opacity: 1;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+}
+
+.data.column .world.selected {
+  color: #000;
+}
+
 .data.column .dataset-list {
   margin: 20px 0 10px;
   overflow: hidden;
@@ -646,6 +692,27 @@ g.column rect {
   top: 110px;
   left: 0;
   z-index: 100;
+}
+
+/* A circuit wider than the space between the columns scrolls sideways in
+   #network-scroll. Its qubit control and layer labels sit up to 78px above
+   the gates, so the scroll box starts 80px higher than #network would and
+   holds it 80px down: nothing inside moves or is clipped. */
+#network-scroll {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+#network-scroll.scrolls {
+  top: 30px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+#network-scroll.scrolls #network {
+  top: 80px;
 }
 
 #network svg .main-label {
@@ -1490,6 +1557,9 @@ body.guided #colormap,
 body.guided #colormap-label,
 body.guided #network .reupload-tag,
 body.guided #load-weights,
+body.guided #add-layers,
+body.guided #remove-layers,
+body.guided #network .qubit-control .mdl-button,
 body.guided .callout.weights {
   display: none !important;
 }
@@ -1912,4 +1982,66 @@ body.guided .panels {
   display: block;
   height: 100%;
   background: #0877bd;
+}
+
+/* Guided step 2 while training: the windows being learned right now. */
+#guide .feed-caption {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #555;
+}
+
+#guide .train-feed {
+  display: flex;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+#guide .feed-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+#guide .feed-item canvas {
+  width: 30px;
+  height: 56px;
+  border: 2px solid #c0392b;
+  border-radius: 3px;
+  background: #fff;
+}
+
+#guide .feed-item.pos canvas {
+  border-color: #1b8a3a;
+}
+
+#guide .feed-item b {
+  color: #c0392b;
+}
+
+#guide .feed-item.pos b {
+  color: #1b8a3a;
+}
+
+#guide .feed-item small {
+  font-variant-numeric: tabular-nums;
+  color: #555;
+}
+
+/* A running search's progress, above the scene. */
+#search-banner.searching {
+  background: #eef5fb;
+  border-left: 4px solid #0877bd;
+}
+
+#search-banner .advantage,
+#search-panel .advantage {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #333;
 }

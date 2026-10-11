@@ -33,6 +33,36 @@ export function bce(score: number, label: number): number {
   return -(label * Math.log(s) + (1 - label) * Math.log(1 - s));
 }
 
+/** Inverse sigmoid of a score, clipped like bce. */
+export function logit(score: number): number {
+  let s = Math.min(1 - EPS, Math.max(EPS, score));
+  return Math.log(s / (1 - s));
+}
+
+/**
+ * Weights of one backProp call. Plain cross-entropy is {bce: 1}; a pairwise
+ * ranking step passes {bce: 0, dLogit} (see pairGradient).
+ */
+export interface LossTerms {
+  bce?: number;
+  dLogit?: number;
+}
+
+/**
+ * The Wanda site's pairwise margin term (waldo-search-lab/model/wanda-qnn
+ * protocol.json: pairMargin 1): weight * softplus(margin - z_pos + z_neg)
+ * over a target window and a nearby non-target window from the same
+ * composite, z being the logit. Returns dE/dz for each. The site's pair
+ * weight, 0.25, is realised by the dataset (one pair per four cross-entropy
+ * examples; scenes.ts), so each pair here has weight 1.
+ */
+export function pairGradient(scorePos: number, scoreNeg: number,
+    weight = 1, margin = 1): {pos: number, neg: number} {
+  let g = weight / (1 + Math.exp(-(margin - logit(scorePos) +
+      logit(scoreNeg))));
+  return {pos: -g, neg: g};
+}
+
 export class Node {
   id: string;
   /** 0 = feature, 1..L = gate column, L + 1 = readout. */
@@ -137,21 +167,33 @@ export class ReadoutLayer {
     return 1 / (1 + Math.exp(-Math.max(-40, Math.min(40, logit))));
   }
 
-  /** dE/d<O_k> for binary cross-entropy at this sample. */
-  dEdObs(obs: ArrayLike<number>, label: number): number[] {
-    let s = this.score(obs);
-    if (this.kind === "z0") {
-      let c = Math.min(1 - EPS, Math.max(EPS, s));
-      return [((c - label) / (c * (1 - c))) / 2];
-    }
-    return this.weights.map(w => (s - label) * w);
+  /**
+   * dE/d(logit) at this sample: `terms.bce` times binary cross-entropy's
+   * (score - label), plus `terms.dLogit`, an extra gradient on the logit
+   * (the Wanda site's pairwise ranking term; see pairGradient).
+   */
+  dEdLogit(obs: ArrayLike<number>, label: number, terms: LossTerms = {}):
+      number {
+    return (terms.bce ?? 1) * (this.score(obs) - label) + (terms.dLogit ?? 0);
   }
 
-  accumulate(obs: ArrayLike<number>, label: number) {
+  /** dE/d<O_k> (cross-entropy, plus any extra logit term) at this sample. */
+  dEdObs(obs: ArrayLike<number>, label: number, terms: LossTerms = {}):
+      number[] {
+    let g = this.dEdLogit(obs, label, terms);
+    if (this.kind === "z0") {
+      // score = (1 + <Z0>) / 2 and logit = log(s / (1 - s)).
+      let c = Math.min(1 - EPS, Math.max(EPS, this.score(obs)));
+      return [g / (2 * c * (1 - c))];
+    }
+    return this.weights.map(w => g * w);
+  }
+
+  accumulate(obs: ArrayLike<number>, label: number, terms: LossTerms = {}) {
     if (this.kind !== "project") {
       return;
     }
-    let delta = this.score(obs) - label;
+    let delta = this.dEdLogit(obs, label, terms);
     this.weights.forEach((_, k) => { this.accW[k] += delta * obs[k]; });
     this.accB += delta;
     this.n++;
@@ -310,7 +352,8 @@ export function forwardProp(network: Node[][], features: number[]): number {
  * patch. Exact mode uses the adjoint method (simulator only); with shots it
  * uses the parameter-shift rule on sampled measurements, as hardware would.
  */
-export function backProp(network: Node[][], label: number): void {
+export function backProp(network: Node[][], label: number,
+    terms: LossTerms = {}): void {
   let c = compiled.get(network);
   let x = c.lastInputs;
   let grad: Float64Array;
@@ -318,14 +361,14 @@ export function backProp(network: Node[][], label: number): void {
   if (c.shots > 0) {
     grad = parameterShiftGradient(c.circuit, c.params, x, (obs: number[]) => {
       obsUsed = obs;
-      return c.readout.dEdObs(obs, label);
+      return c.readout.dEdObs(obs, label, terms);
     }, c.shots).grad;
   } else {
     obsUsed = forward(c.circuit, c.params, x).observables;
     grad = adjointGradient(c.circuit, c.params, x,
-        c.readout.dEdObs(obsUsed, label)).grad;
+        c.readout.dEdObs(obsUsed, label, terms)).grad;
   }
-  c.readout.accumulate(obsUsed, label);
+  c.readout.accumulate(obsUsed, label, terms);
   let touched = new Set<Node>();
   c.owners.forEach((o, i) => {
     if ("link" in o) {
@@ -476,23 +519,32 @@ export function classifierBlock(network: Node[][]): {D: number,
 /**
  * The demos' classical baseline: logistic regression on the same 8
  * features (9 parameters), trained by full-batch gradient descent on the
- * same patches. Returns a scorer.
+ * same patches. Optional ranking `pairs` add the same pairwise margin term
+ * as the circuit's training (the Wanda site's matched logistic model uses
+ * the same pairs). Returns a scorer.
  */
 export function trainLogistic(xs: number[][], ys: number[],
-    epochs = 600, lr = 1.5): (x: number[]) => number {
+    epochs = 600, lr = 1.5, pairs: number[][][] = []):
+    (x: number[]) => number {
   let d = xs[0] ? xs[0].length : 0, w = new Array(d).fill(0), b = 0;
   let sig = (z: number) => 1 / (1 + Math.exp(-Math.max(-40, Math.min(40, z))));
+  let z = (x: number[]) => b + x.reduce((s, v, k) => s + v * w[k], 0);
+  let n = Math.max(1, xs.length + pairs.length);
   for (let e = 0; e < epochs; e++) {
     let gw = new Array(d).fill(0), gb = 0;
-    xs.forEach((x, n) => {
-      let err = sig(b + x.reduce((s, v, k) => s + v * w[k], 0)) - ys[n];
+    xs.forEach((x, i) => {
+      let err = sig(z(x)) - ys[i];
       x.forEach((v, k) => { gw[k] += err * v; });
       gb += err;
     });
-    w = w.map((v, k) => v - lr * gw[k] / xs.length);
-    b -= lr * gb / xs.length;
+    pairs.forEach(([pos, neg]) => {
+      let g = pairGradient(sig(z(pos)), sig(z(neg)));
+      pos.forEach((v, k) => { gw[k] += g.pos * v + g.neg * neg[k]; });
+    });
+    w = w.map((v, k) => v - lr * gw[k] / n);
+    b -= lr * gb / n;
   }
-  return x => sig(b + x.reduce((s, v, k) => s + v * w[k], 0));
+  return x => sig(z(x));
 }
 
 export function forEachNode(network: Node[][], ignoreInputs: boolean,

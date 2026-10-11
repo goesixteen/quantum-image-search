@@ -390,9 +390,43 @@ A second Claude review found the engineering solid and the simulator math correc
 - **Pausing or stepping ends the run;** play then trains on freely.
 - **The expert view still has "Load demo weights".** It is the proof that the scores match the demo sites.
 
+## Iteration 14: consolidated with the demo sites (2026-10-11)
+
+The playground was developed apart from the rest of the repository, and its second scene had fallen behind. An audit against the two sites found:
+
+- **The circuit already matched** both sites (same encoding, CNOT ring, 7 observables, sigmoid readout), and the bus scene used the bus site's features, artwork and weights (`model.json` is byte-identical to the site's `model-synthetic.json`).
+- **The "crowd explorer" scene was the retired pipeline.** It used the old OpenMoji explorer and crowd image, 128 px tile patches on a 4 × 4 grid, the legacy patch features of `waldo-search-lab/dist/qnn.js` and the legacy `model.json`. The Where's Wanda site's default detector is different: the five catalog backgrounds and `wanda.png`, Wanda-sized windows with eight window descriptors including her supplied height (`wanda-localizer.js`), 4096 window centres reduced to a 64 × 64 address grid by best score, a frozen 0.9056 threshold plus non-maximum suppression, point-tolerance ground truth, and `wanda-qnn.json` trained with weighted cross-entropy and a pairwise margin.
+- **Smaller drifts:** the bus ground truth used a 20%-overlap rule (the site uses the sprite's alpha), the default thresholds were 0.5 (the sites use their models' 0.28 and 0.9056), and the default targets were not the sites'.
+
+Changes, so that the playground now follows the sites:
+
+- **The crowd scene is replaced by Where's Wanda,** built from the site's own modules: its catalog, compositor (`scene-editor.js`), window features, scan geometry, suppression and point rule (`src/scan.ts` repeats `scanQNN()` around the playground's own trainable circuit). Background and Wanda's height (40–64 px) are selectable, as on the site; the address grid runs 4 × 4 … 64 × 64 with 64 × 64 (12 Grover qubits) by default. Old `scene=crowd` links open it.
+- **Live training follows the site's recipe:** composites at random spots and heights, windows on and near the 8 px lattice, six nearby windows 8–32 px away, recoloured decoys on every third composite, and harder background windows picked by a logistic teacher. The protocol's cross-entropy weights (0.5 / 0.25 / 0.25) become example counts, and its pairwise margin term is added to `qnn.ts` (`backProp` now takes an extra logit gradient; the logistic baseline takes the same pairs).
+- **Bus ground truth is the site's `regionsFromAlpha`;** defaults (grid, target square, threshold) come from each site; thresholds show four decimals so 0.9056 is not rounded.
+- **Fine grids draw differently:** faint grid lines, marks as rings round the best window, the measured address's point rather than a box.
+- **Tests:** a scene-level parity test runs the site's `scanQNN()` and the playground's scan on one of the site's own 512 × 512 corpus composites (decoded by a small PNG reader in `tests/png.mjs`) and requires the same scores, best points and marks on several grids and thresholds, including suppression; plus the pairwise gradient, the logit-term backpropagation and the inactive slots. `npm test`: 28 pass. `npm run smoke`: all checks pass, including the site weights marking only Wanda's address 2420 on Festival, Beach and Park, a 4096-address search finding her, from-scratch training reaching 96–97% held-out window accuracy, and frames under 100 ms while training re-scores 4096 windows.
+
+Measured in an offline check before wiring the UI: the playground's trainer on 60 positives from the site's own saved training vectors, 120 rounds, gave 98.9% accuracy, 98% precision and 84% recall at the site's threshold on the site's 6,467 validation windows. That is window accuracy, not the site's scene-level evaluation.
+
+## Iteration 15: review fixes, then Where's Wanda only (2026-10-11)
+
+From the user's review of the consolidated playground:
+
+- **Wanda's pixels now match the site exactly.** An end-to-end check drove the site's own Play flow (a real touch drag of Wanda to (420, 300) on Festival, then Find) and captured the image it analyses. The playground's image differed in 695 pixels, all inside Wanda's 15 × 52 box: its sprite canvas used `willReadFrequently`, which in Chrome resizes on the CPU, while the site's uses a plain context. With the site's canvas settings the two images are byte-identical, and the scores (0.978670), the single mark (2420) and the 50 Grover rounds agree.
+- **A clearer marker** on 64 × 64 grids: a ring the size of Wanda with a white halo and ticks, and a "✓ Wanda" / "✗ not here" tag on the measured address.
+- **Adding qubits no longer weakens the readout.** On 5 or 6 qubits the hybrid readout used to fall back to single-qubit ⟨Z⟩ only, dropping the correlations; on the site's validation windows a fifth qubit cut recall from about 83% to 78%. It now keeps the site's pattern on any register (singles, neighbouring pairs, full parity; exactly the site's 7 on 4 qubits), and 5–6 qubits recover to 80–89%.
+- **Training stays responsive with bigger circuits:** the 4096-window scene is re-scored at most four times a second while training (about 25 ms per refresh at 4 qubits, 120 ms at 6 × 6), and fully on pause.
+- **Switching a feature on or off** now starts a fresh circuit (retrained in the guided view), recomputes the baseline on the same active features and clears an old search; before, it kept weights trained with the other inputs and compared against a baseline that still used all 8.
+- **Deep or wide circuits keep their spacing.** Each layer keeps a minimum width; a circuit that no longer fits between the columns scrolls sideways in its own box, which holds the qubit control and layer labels too. The default 4 × 4 layout is unchanged.
+- **Circuit size is a details-view setting.** The guided view hides the qubit and layer buttons and always uses the site's 4 × 4 circuit.
+- **The school-bus CAPTCHA is removed** to focus on Where's Wanda. The Data column now picks among the site's five worlds; the Grover simulator is the Wanda site's copy of `quantum.js`; the bus model, art and parity tests are gone (the bus demo in `bus-search-lab/` is unchanged). Old `scene=bus` and `scene=crowd` links open Where's Wanda.
+- Also fixed: the training-example thumbnails were cropped with the wrong offset and showed empty space.
+
+`npm test`: 29 pass. `npm run smoke`: all checks pass.
+
 ## Verification
 
-- **Unit tests:** `npm test` runs 8 tests in [tests/quantum.test.mjs](tests/quantum.test.mjs):
+- **Unit tests:** `npm test` (28 tests since iteration 14; see also [tests/qnn.test.mjs](tests/qnn.test.mjs) and [tests/scan.test.mjs](tests/scan.test.mjs)). The original 8 in [tests/quantum.test.mjs](tests/quantum.test.mjs):
   - gate values and controlled gates
   - normalization for every entangler
   - adjoint *and* parameter-shift gradients vs finite differences, for every entangler, with and without re-uploading
