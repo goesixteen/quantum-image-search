@@ -1,37 +1,47 @@
-**Current resumption point: crowd iteration 18.** The section immediately below
+**Current resumption point: crowd iteration 19.** The section immediately below
 supersedes older “latest” paragraphs retained as history. Read
 [the current Wanda handoff](../../WANDA_HANDOFF.md) and
 [exact receipt](../../publication-receipt.json) first.
 
-## Crowd iteration 18 — October 11, 2026
+## Crowd iteration 19 — October 11, 2026
 
-Private source `17bd16281b095f3ab664f9e0c1396dfa3ee0a028`, deployment `appgdep_6acbcbc430648191ac8d657a9523f362`,
-version `appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_d3687cf4d9e481918e246734744dd103`: terminal succeeded on the original owner-private crowd
-Site. Empty Festival welcome, five thumbnails above the map and the large
-right-hand portrait are implemented. The first native preview was invisible
-for the user; the corrected explicit image actually follows the cursor during
-hosted drag. Hosted Find returned (420,300), Start over restored the greeting,
-portrait and five choices, and the error/warning console was empty. Local
-outside-drop, empty-scene abstention, keyboard and actual 320/390px layout
-checks passed. Physical touch/pen, multi-touch and novice learning are untested.
+Private source `002574d248d81237e542b0c954185213eda9208a`, deployment `appgdep_6acbd4091a308191aa1ede8ca65c2675`,
+version `appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_5daa63b3a8bc819181549750493a7a87`:
+terminal succeeded on the original owner-private crowd Site. The welcome
+greeting is a speech bubble; a UI-only raised-hand sprite shrinks for 190ms,
+hangs at the pointer and trails movement with a damped swing. Captured pointer
+events own the mouse/touch/pen gesture. Early release completes pickup before
+placing its rendered body center; outside release cancels, and dragging a
+placed target off-map restores the portrait. The placed message is plain text
+without bubble fill, outline, shadow or tail. The empty start, five-row picker,
+right-hand Find and three-stage lesson remain.
 
-147 Node tests and read-only frozen verification (11 files, seven contracts,
-12 fixtures) pass. The technical flow, model, threshold, scanner, artwork and
-Grover math are unchanged; no training, reserved-test rerun or new accuracy
-claim. Historical native 298/300, baseline 299/300, renderer differences and
-Park 40/46px false accepts retain their scopes. Read the current external
-WANDA_HANDOFF.md, publication receipt, quick-start and iteration 18 source QA.
-The schoolbus deployment and both Site identities are preserved. No contest
-submission or public source/video/Qollab publication. The user authorized
-private GitHub development synchronization; consult its exact receipt.
+147 Node tests and read-only frozen verification pass. Actual local mouse
+shrinking/rotation, searches at (284,260) and (300,228), keyboard/off-map
+removal, reduced animation and 320/390px no-overflow checks are documented.
+Actual hosted pickup shrank from 240.3px to 81.95px with changing rotation, hidden
+source and cleared ghost after early release; placed message is undecorated.
+The first arbitrary hosted placement abstained (No match found), retained
+without tuning. After reset, hosted keyboard placement was found at (420,300);
+dragging that target off-map restored the portrait and greeting bubble. The
+warning/error console was empty; empty welcome was restored for review. Read
+the current
+external handoff, publication receipt, iteration 19 source QA and hanging-asset
+provenance. Retained animation/tool failures remain in QA. Physical touch/pen,
+multi-touch, OS reduced-motion preference and novice learning remain untested.
 
-Next: refine the published drag/place/find flow from observed usability,
-exercise physical touch/pen when available and privately time the new welcome
-intro. Preserve the same three-stage explanation and frozen evidence. Zero
-agent resets consumed; one remains at the latest observation. Preserve it for
-the user and read the resource ledger. The earlier two-to-one account change
-had an unknown actor/cause; no agent reset, purchase or billing change occurred.
+The new pose never enters inference. The standing PNG, five scene assets,
+frozen model/threshold, reserved results and known Park/rendering failures are
+unchanged. No retraining, reserve rerun or new accuracy claim. Schoolbus and
+both owner-private Site identities remain unchanged. No contest or public
+source/video/Qollab publication. Ongoing private GitHub development sync is
+authorized; its receipt identifies the actual pushed commit separately.
 
+Next: improve the next observed gesture/usability gap, exercise physical touch
+when available and privately time a spoken intro. Preserve the same technical
+stages and frozen evidence. Zero agent resets consumed; one remains at the
+latest observation for the user. Read the resource ledger; the earlier account
+change had an unknown actor/cause. No agent reset or billing change occurred.
 
 ## Historical project state
 

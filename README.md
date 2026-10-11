@@ -28,21 +28,28 @@ keyboard controls, optional engineering checks and reproduction instructions.
 
 ## Current version
 
-Where’s Wanda starts with an empty scene, five map thumbnails above it and a
-large welcome portrait on the right. Dragging shows a small cursor-following
-Wanda; dropping places her at the normal scene size. Find, Remove and Start
-over complete the loop. The soft overlay and connected **Image + QNN → Grover
-interference → Measurement** explanation remain.
+Where’s Wanda starts empty, with five map thumbnails above the scene and a
+large portrait on the right. A speech bubble says “Hi, I’m Wanda!” Pick her
+up: she shrinks out of the box, hangs from the pointer by a raised hand, and
+swings behind mouse motion. Drop inside to place the original standing Wanda;
+drop outside to cancel. Dragging a placed target off-map returns her to the
+box. The placed message becomes plain text without the bubble outline.
+Find, Remove and Start over complete the loop. The soft overlay and
+connected **Image + QNN → Grover interference → Measurement** lesson remain.
 
-Privately published application code is iteration 18, source
-`17bd16281b095f3ab664f9e0c1396dfa3ee0a028` in the separate Sites source repository.
-All 147 engineering tests and frozen verification pass. Actual hosted native
-dragging showed the corrected cursor preview; Find returned (420,300), and
-reset restored the portrait and five choices. The initial invisible-preview
-failure is retained in the source QA. No model, threshold, artwork or quantum
-math changed. The schoolbus deployment remains separate and unchanged.
+Privately published application code is iteration 19, source
+`002574d248d81237e542b0c954185213eda9208a` in the separate Sites source repository.
+All 147 engineering tests and frozen verification pass. Actual local mouse,
+keyboard, reduced animation and 320/390px responsive checks are documented.
+Hosted pickup showed shrinking and rotation; its first arbitrary placement
+abstained, with the failure retained. A separate hosted keyboard default was
+found at (420,300), dragging off-map restored the welcome, and the console was
+empty. The hanging pose is UI-only;
+the trained standing PNG, model, threshold, scenes and quantum math are
+unchanged. The schoolbus deployment remains separate and unchanged.
 
-- [Current handoff](WANDA_HANDOFF.md) and [iteration 18 source QA](waldo-search-lab/docs/WANDA_ITERATION18_QA.md)
+- [Current handoff](WANDA_HANDOFF.md) and [iteration 19 source QA](waldo-search-lab/docs/WANDA_ITERATION19_QA.md)
+- [Hanging-pose provenance](waldo-search-lab/docs/WANDA_HANGING_ASSET.md)
 - [Private rehearsal script](WANDA_DEMO_REHEARSAL.md), [historical rehearsal](WANDA_ITERATION17_HANDOFF.md) and [deliverables overview](DELIVERABLES.md)
 - [Exact private deployment receipt](publication-receipt.json)
 - [Crowd project](waldo-search-lab/README.md) and [schoolbus project](bus-search-lab/README.md)

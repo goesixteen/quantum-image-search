@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "preparedAtUtc": "2026-10-11T17:55:13.972240+00:00",
+  "preparedAtUtc": "2026-10-11T18:29:04.286669+00:00",
   "repository": "https://github.com/goesixteen/quantum-image-search",
-  "baselineCommit": "00146e65220dacfbd1453ca2d3424b3924df59b8",
-  "publishedWandaSource": "17bd16281b095f3ab664f9e0c1396dfa3ee0a028",
-  "publishedApplicationIteration": 18,
+  "baselineCommit": "f31091d3ee7b8f3aaa647debe3c9fcd22d4acefa",
+  "publishedWandaSource": "002574d248d81237e542b0c954185213eda9208a",
+  "publishedApplicationIteration": 19,
   "localDocumentationContinuation": null,
   "scope": "Current outputs tree; both demos, assets, models, training, tests, failures and documentation.",
   "excluded": [
@@ -26,11 +26,10 @@
     "wanda-release-checks.json"
   ],
   "removedObsoleteTrackedFiles": [
-    "GITHUB_EXPORT_MANIFEST.json",
-    "wanda-release-checks.json"
+    "GITHUB_EXPORT_MANIFEST.json"
   ],
-  "fileCount": 1073,
-  "totalBytes": 260617216,
+  "fileCount": 1088,
+  "totalBytes": 263288991,
   "files": [
     {
       "path": ".gitattributes",
@@ -56,6 +55,26 @@
       "path": "archive/iteration16-before-welcome/wanda-release-checks.json",
       "sha256": "a80ee18b5f1f03b2b7a4248488516e35b59446d80e3b4c47eba88dbce33eeaca",
       "bytes": 1150
+    },
+    {
+      "path": "archive/iteration18-before-speech-and-swing/github-private-sync-proof.png",
+      "sha256": "063411ef491d4e9b4a463e326208d14ddde1a0b08b4bb468f9c2ba442396a73b",
+      "bytes": 140822
+    },
+    {
+      "path": "archive/iteration18-before-speech-and-swing/GITHUB_SYNC_RECEIPT.json",
+      "sha256": "7c2af82eec17c9537354b350199297680cbafa262263b96285ef7e34e9cf73ae",
+      "bytes": 4729
+    },
+    {
+      "path": "archive/iteration18-before-speech-and-swing/publication-receipt.json",
+      "sha256": "df3c025744281f79f94143bc1600346858742de4035e2eec039fa26e07641b31",
+      "bytes": 6394
+    },
+    {
+      "path": "archive/iteration18-before-speech-and-swing/wanda-release-checks.json",
+      "sha256": "aab3b13e9c5526ad18a590ce9a5942fafe471006800606549b4013992148ca2c",
+      "bytes": 1271
     },
     {
       "path": "archive/publication-receipt-iteration08.json",
@@ -141,6 +160,11 @@
       "path": "archive/WANDA_HANDOFF-iteration16.md",
       "sha256": "f21195209646984835889f1780d3075ea4fb634ea755dadd71950d536bb77e87",
       "bytes": 9155
+    },
+    {
+      "path": "archive/WANDA_HANDOFF-iteration18.md",
+      "sha256": "07eeb3b0594f0d2e809a1b612d1947335192f77ede511dfb3c39a3e4b81d0358",
+      "bytes": 6166
     },
     {
       "path": "bus-evidence-iteration03-proof.jpg",
@@ -444,8 +468,8 @@
     },
     {
       "path": "bus-search-lab/docs/NEXT_STEPS.md",
-      "sha256": "6748333c28a565e07d3c631311a9ebccb981c6ccc3ab8e47effde7868978b0d0",
-      "bytes": 14269
+      "sha256": "2c75b688f0d372b16754fa097afbc9933c641a41d9aca7e47daa971a9a3cb44b",
+      "bytes": 14461
     },
     {
       "path": "bus-search-lab/docs/ORACLE_LESSON.md",
@@ -469,8 +493,8 @@
     },
     {
       "path": "bus-search-lab/docs/PROJECT_STATE.md",
-      "sha256": "ce1ac3f5abc79e48c2bfe6b368566f4c1a0362f4ac0a66c324d4617d35efd802",
-      "bytes": 51253
+      "sha256": "29951e4f8bfc863154e0029eac77099404d8c8ede1ad014474c5eb689b25d401",
+      "bytes": 51894
     },
     {
       "path": "bus-search-lab/docs/QA.md",
@@ -494,8 +518,8 @@
     },
     {
       "path": "bus-search-lab/docs/RUN_LOG.md",
-      "sha256": "ba272f9a1bb87e57ca50aabbe4251196e7bb931d4ecca7da76e9d21f32aad80e",
-      "bytes": 49935
+      "sha256": "98f2ec2676b8e9c94c4ba3c371dcdd558f742d81dff1af0cdb1b4f2f5c57b288",
+      "bytes": 52599
     },
     {
       "path": "bus-search-lab/docs/SIMULATOR.md",
@@ -1314,8 +1338,8 @@
     },
     {
       "path": "DELIVERABLES.md",
-      "sha256": "1356f9d5b285d3082b9bcc8f9ac5c4f6377fc768b307f4d0aedcebf325c91632",
-      "bytes": 5729
+      "sha256": "d4c93224edb718c3dea151748dd91b5bb3d8dba8d9f98cbfbc2f43b30d23533b",
+      "bytes": 6129
     },
     {
       "path": "festival-depth-bands-preview.png",
@@ -1389,13 +1413,13 @@
     },
     {
       "path": "OVERNIGHT_RESOURCE_BUDGET.json",
-      "sha256": "eb663b9ae24dceae50332eba80524588dcd17d22fdedcc7551ae893010f6b6cf",
-      "bytes": 1162
+      "sha256": "a3f650e89891840c23012413b7d2408fbbd3348071afc9d3f8206e3ee72b97f8",
+      "bytes": 1163
     },
     {
       "path": "publication-receipt.json",
-      "sha256": "df3c025744281f79f94143bc1600346858742de4035e2eec039fa26e07641b31",
-      "bytes": 6394
+      "sha256": "f7c2d403a9957678df0379a8f3502ead8963cf89ced125d0a65d2b277bae6496",
+      "bytes": 7811
     },
     {
       "path": "qnn-default-proof.png",
@@ -1414,8 +1438,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "ef52fae432c9b63d837930f12e8b21f13ab8c95ceef0cfcb0050ec3db73949d0",
-      "bytes": 4289
+      "sha256": "b065fbf8a4cbef7d781bdcb34e78f1d93d61a686459768cc40b373d7f842ba7d",
+      "bytes": 4794
     },
     {
       "path": "soft-field-mobile-preview.png",
@@ -1454,8 +1478,8 @@
     },
     {
       "path": "waldo-search-lab/dist/app.js",
-      "sha256": "13690eb894aff4609ad7edf0a31b0e2ac568a1551ec5a055575d9626fb4730e5",
-      "bytes": 70049
+      "sha256": "ec0c0ec1caf47f8cebd2ae6d5d7c2759af54fdd935701797dd4a9541ba6b1e35",
+      "bytes": 73571
     },
     {
       "path": "waldo-search-lab/dist/assets/busy-art/magic-arena-source.jpg",
@@ -2423,6 +2447,11 @@
       "bytes": 703
     },
     {
+      "path": "waldo-search-lab/dist/assets/wanda/wanda-hanging-ui.png",
+      "sha256": "60ee00a4cab49fe80cfd1b14e6aea96efe8b59df2165480c31e90bf7f9e42aa7",
+      "bytes": 1146361
+    },
+    {
       "path": "waldo-search-lab/dist/assets/wanda/wanda.png",
       "sha256": "ae679a90fb94c8ad10a589fd6fa6a27404b7d519f6ad750557749a1595229777",
       "bytes": 1168423
@@ -2446,6 +2475,11 @@
       "path": "waldo-search-lab/dist/depth-bands.js",
       "sha256": "4bea891829c3954d859770336d88c36fab09f03f93ca5837b9c68bc7c6e159ad",
       "bytes": 4573
+    },
+    {
+      "path": "waldo-search-lab/dist/drag-pendulum.js",
+      "sha256": "78f34d484e8bd2cf1803a24994fc98389abf271eb17b26b937d6441e7344793f",
+      "bytes": 3727
     },
     {
       "path": "waldo-search-lab/dist/drawing-layout.js",
@@ -2474,8 +2508,8 @@
     },
     {
       "path": "waldo-search-lab/dist/index.html",
-      "sha256": "da9196bc2e237916b0456d61a00920c609a4d29cf39b6bd4d200f8c33e679763",
-      "bytes": 52271
+      "sha256": "1e5b14f23876c44867c45d59d6b44ed4e796d3115b8c33711208dca8b127259c",
+      "bytes": 52360
     },
     {
       "path": "waldo-search-lab/dist/interaction-lifecycle.js",
@@ -2669,8 +2703,8 @@
     },
     {
       "path": "waldo-search-lab/dist/wanda.css",
-      "sha256": "17ee406780b9b5d77d72361c311782224ff2517aa6ad54920d91c966231a196d",
-      "bytes": 40269
+      "sha256": "b68dee3ab2e269b844d74aed65990ef88425cae7ffd866251eec5f2fb94fc478",
+      "bytes": 41694
     },
     {
       "path": "waldo-search-lab/docs/archive/WANDA_LESSON_ITERATION10.md",
@@ -2679,8 +2713,8 @@
     },
     {
       "path": "waldo-search-lab/docs/ASSETS.md",
-      "sha256": "1a4dc85bc6a1cef07a9da692a3927b5a342478497e568d421f0f7b62b3f83dd6",
-      "bytes": 2413
+      "sha256": "02862b48bfdbff20d53386d75934563ff72ceecd4e382b79be00c61bf68bf0ed",
+      "bytes": 2725
     },
     {
       "path": "waldo-search-lab/docs/AUTO_DEPTH.md",
@@ -2778,6 +2812,11 @@
       "bytes": 7234
     },
     {
+      "path": "waldo-search-lab/docs/WANDA_HANGING_ASSET.md",
+      "sha256": "211bd51eeef77c707bc7423d617a2483e1f216243b579c96c463003ad6dcd728",
+      "bytes": 2134
+    },
+    {
       "path": "waldo-search-lab/docs/WANDA_ITERATION10_QA.md",
       "sha256": "8ea7823ccfe505e176b9e7dd37c2ec922dd9463fe74eb1ef2a1552efbd0848d7",
       "bytes": 6179
@@ -2818,6 +2857,11 @@
       "bytes": 4929
     },
     {
+      "path": "waldo-search-lab/docs/WANDA_ITERATION19_QA.md",
+      "sha256": "a0f95d78524d19ef98dc1471d2282f052d42ecb37392f9ecedac1f1716b18208",
+      "bytes": 4631
+    },
+    {
       "path": "waldo-search-lab/docs/WANDA_LESSON.md",
       "sha256": "cba53f948832d8df9d3718749e912a7db122b1975635dee065c0f669e37f7db0",
       "bytes": 7810
@@ -2839,8 +2883,8 @@
     },
     {
       "path": "waldo-search-lab/docs/WANDA_WORKLOG.md",
-      "sha256": "9acf95418a1142b0eb050fd11bf05ae04144adab2e96c3c34a30433de2430f39",
-      "bytes": 22951
+      "sha256": "43e26d112a9003d8d429f179a736a039566f9d64646a24d89830eb4343dfd6ae",
+      "bytes": 24094
     },
     {
       "path": "waldo-search-lab/LICENSE",
@@ -5078,6 +5122,16 @@
       "bytes": 175428
     },
     {
+      "path": "wanda-bubble-phone-proof.png",
+      "sha256": "1aa92a790be70d8f123e2b7f6b89c09acbff6a18b971edee82fe4648f7dd0c91",
+      "bytes": 115318
+    },
+    {
+      "path": "wanda-bubble-placed-hosted-proof.png",
+      "sha256": "215f1c677ee5a13a1ee79ab9bd41f1d94f3108600ec454e16e304135975f556d",
+      "bytes": 373864
+    },
+    {
       "path": "wanda-circuit-proof.png",
       "sha256": "5bbae86c454c673a18daa22126ea0489d9a8a1dfa5c325869b8ba382a04e4e1d",
       "bytes": 74477
@@ -5146,6 +5200,21 @@
       "path": "wanda-guided-round1-export.json",
       "sha256": "0adb3f06e9a1349286c6c380460d02d0824d9a2230faf200b277ce8fea3a8bcc",
       "bytes": 172216
+    },
+    {
+      "path": "wanda-hanging-hosted-abstention-proof.png",
+      "sha256": "1440b0ec9f19eeb6826281837ab0e5804aae108d9b22a3f6d2570a5152c10c6a",
+      "bytes": 184182
+    },
+    {
+      "path": "wanda-hanging-hosted-proof.png",
+      "sha256": "da384a06d8d00e78dc80b7097915b94692616380d877f7a6273c09f1c4f2de59",
+      "bytes": 222997
+    },
+    {
+      "path": "wanda-hanging-local-proof.png",
+      "sha256": "3d29bfbf213016cd4a49418be778beee143f6fc13773da8191f9afda7c2195cb",
+      "bytes": 222656
     },
     {
       "path": "wanda-interaction-game-hosted-proof.png",
@@ -5293,6 +5362,11 @@
       "bytes": 165030
     },
     {
+      "path": "wanda-shrink-local-proof.png",
+      "sha256": "7496d72be1563f227c426ec10d19828e4c819bada5077456f292f2cdbeea1255",
+      "bytes": 220829
+    },
+    {
       "path": "wanda-site-proof.png",
       "sha256": "b188da9d64400282342104a92c221d80cc96abb6acfd4aa7c341f2de7aed2ba5",
       "bytes": 185218
@@ -5339,8 +5413,8 @@
     },
     {
       "path": "WANDA_HANDOFF.md",
-      "sha256": "07eeb3b0594f0d2e809a1b612d1947335192f77ede511dfb3c39a3e4b81d0358",
-      "bytes": 6166
+      "sha256": "33cd0ce8c1b77bdc49e48b04894d62724d8c6fd47055e853798d82fde4c96fcc",
+      "bytes": 7681
     },
     {
       "path": "WANDA_ITERATION10_HOSTED_QA.md",
@@ -5389,8 +5463,8 @@
     },
     {
       "path": "WANDA_ITERATION_BRIEF.md",
-      "sha256": "f242832efb27f58f982deaee405b8c86134e641aaac36cfd5bbc18bc2c488081",
-      "bytes": 20442
+      "sha256": "1f331c112580b41b03fc375c07ed8e82d76c9907df8f92af9264fb7345231ddc",
+      "bytes": 22310
     },
     {
       "path": "WANDA_QUICKSTART.md",

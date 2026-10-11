@@ -1,7 +1,7 @@
 {
-  "recorded_at": "2026-10-11T17:53:41.705914+00:00",
-  "iteration": 18,
-  "work_step": "empty-welcome-and-explicit-cursor-preview",
+  "recorded_at": "2026-10-11T18:24:34.763285+00:00",
+  "iteration": 19,
+  "work_step": "speech-bubble-hanging-shrink-and-off-map-return",
   "bus": {
     "project_id": "appgprj_6ac9e65f76c48191b8d53784212b5f4c",
     "commit_sha": "2f616c21b832d8164b06c60a7ffc66499c20290f",
@@ -13,6 +13,15 @@
   },
   "crowd": {
     "project_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1",
+    "commit_sha": "002574d248d81237e542b0c954185213eda9208a",
+    "deployment_id": "appgdep_6acbd4091a308191aa1ede8ca65c2675",
+    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_5daa63b3a8bc819181549750493a7a87",
+    "status": "succeeded",
+    "url": "https://quantum-crowd-search.syrupyspool2.chatgpt.site",
+    "audience": "owner-private"
+  },
+  "previous_crowd_revision": {
+    "project_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1",
     "commit_sha": "17bd16281b095f3ab664f9e0c1396dfa3ee0a028",
     "deployment_id": "appgdep_6acbcbc430648191ac8d657a9523f362",
     "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_d3687cf4d9e481918e246734744dd103",
@@ -20,31 +29,23 @@
     "url": "https://quantum-crowd-search.syrupyspool2.chatgpt.site",
     "audience": "owner-private"
   },
-  "previous_crowd_revision": {
-    "project_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1",
-    "commit_sha": "2f3f836e5d13df81f32abc040f101a2959c04ee0",
-    "deployment_id": "appgdep_6acb6db2fa84819194c044f570f6c8db",
-    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_7277a3127a88819190d9eed676771a5a",
+  "initial_iteration19_revision": {
+    "commit_sha": "fc36e1462aff0c4e120872cef32c0ca77a40a47e",
+    "deployment_id": "appgdep_6acbd36dfe88819184901abe91438f36",
+    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_126aaea47c688191a4a6f7b8a347b8b9",
     "status": "succeeded",
-    "url": "https://quantum-crowd-search.syrupyspool2.chatgpt.site",
-    "audience": "owner-private"
-  },
-  "initial_iteration18_revision": {
-    "commit_sha": "20ceda2fdadafab8c9c8fd6761963b539676a048",
-    "deployment_id": "appgdep_6acbca29dbf08191af93b83aaef2b98b",
-    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_3dd7b19fdd148191ae79b4ff814aebf1",
-    "status": "succeeded",
-    "retained_ui_failure": "Placement passed, but user reported an invisible native drag preview. Replaced the detached drag canvas with an explicit fixed cursor-following image."
+    "superseded_reason": "Latest human steering removes the bubble outline/tail when the greeting changes to placed text; not a deployment failure."
   },
   "submission": {
     "status": "not-submitted",
     "instruction": "Do not submit any work. Keep iterating improvements.",
     "public_materials_published": false
   },
-  "browser_preview": "Five map choices above the scene; empty initial scene; large welcome portrait in the right menu. An explicit scene-size preview follows the cursor during dragging. Actual final hosted drag and Find locate Wanda at (420,300); Start over restores the welcome.",
+  "browser_preview": "Wanda speaks in a bubble, shrinks from portrait toward cursor, hangs from her raised hand with damped swing/lag, and returns when dragged off the map. Placed text has no bubble outline/tail.",
   "hosted_browser_proofs": [
-    "wanda-cursor-drag-hosted-proof.png",
-    "wanda-welcome-hosted-empty-proof.png"
+    "wanda-hanging-hosted-proof.png",
+    "wanda-bubble-placed-hosted-proof.png",
+    "wanda-hanging-hosted-abstention-proof.png"
   ],
   "current_qa": {
     "node_tests_passed": 147,
@@ -55,40 +56,50 @@
       "frozen_sources": 7,
       "pixel_fixtures": 12
     },
-    "static_checks": "JavaScript syntax, HTML nesting/unique IDs/selector ordering, CSS braces and Git diff checks passed. Technical-section HTML unchanged.",
+    "static_checks": "JavaScript syntax, CSS/markup layout checks, technical HTML preservation and Git whitespace checks passed.",
     "local_checks": [
-      "Fresh empty welcome and five choices",
-      "Real native drag to Festival and outside-map cancellation",
-      "Empty Festival: zero accepted out of 4096, No match found",
-      "All five background selections",
-      "Keyboard token activation, map placement and Escape",
-      "Remove/Start over restore portrait",
-      "Actual 320/390px viewport with no horizontal overflow",
-      "Find document Y unchanged on390px before/after placement",
-      "Explicit preview observed decoded17x61px during real native drag; successful placement afterward",
-      "No browser warnings/errors"
+      "Captured mouse pointer hides source portrait and renders raised-hand UI pose",
+      "Actual190ms shrink heights239.8 to103.8px during quick gesture; changing rotation matrices",
+      "Find returned284,260 and300,228 after actual drop",
+      "Keyboard420,300 placement followed by actual drag past right edge returns portrait",
+      "Actual390/320px no horizontal overflow and5choices in one row; phone bubble points right",
+      "Reduced animation gives constant70.76px preview and static orientation; actual outside release cancels",
+      "Final quick-release completion clears ghost and places target; placed greeting has transparent border/fill, no shadow or tail"
     ],
     "hosted_checks": [
-      "Fresh corrected deployment loaded with five choices and empty welcome",
-      "Actual real native drag: decoded13x45px preview follows cursor at hosted display scale",
-      "Drop hides source portrait and clears preview",
-      "Find returns Found Wanda / Measured point420,300",
-      "Start over restores Hi, I\u2019m Wanda! and visible portrait",
-      "No hosted warnings/errors"
+      "Actual captured mouse pickup: raised-hand pose, source opacity0, shrink240.35 to81.95px, changingrotation matrices",
+      "Quick release finishes owned190ms shrink, commitsplacement and clearsghost",
+      "Placed greeting has transparentborder and tailnone; plainmessage screenshot saved",
+      "First arbitraryhosted droppedtargetFind abstainedNoMatch; retainednegative, nofrozenmodel tuning",
+      "Resetkeyboarddefault420300 Find returnsFoundWanda420300",
+      "Actualcanvasdrag420300 beyondrightedge returnsportrait/greetingbubble21078borderandtailblock",
+      "No hostedconsoleerrors/warnings; restoredemptywelcome"
     ],
-    "scientific_scope": "UI regression only; model/threshold/scanner/compositing scale/quantum state simulation unchanged. No retraining or reserved-test rerun. Historical298/300 QNN versus299/300 baseline remains original known-art/supplied-size native evidence, not new accuracy.",
+    "physics_checks": {
+      "irregular_samples": 1500,
+      "finite_bounded": true,
+      "moving_angles": [
+        0.33883910132943684,
+        -0.33883910132943684
+      ],
+      "peak_absolute_angle": 0.4309283968007304,
+      "settled_angle": 0,
+      "reduced_angle": 0
+    },
+    "scientific_scope": "UI-only animation and new presentation pose. Standing target, backgrounds, model, threshold and quantum simulation unchanged. No retraining, reserved-test rerun or new recognition accuracy. Historical298/300 QNN and299/300 logistic retain original domain and rendering scope.",
     "retained_limits": [
-      "Physical touch/pen and multi-touch not exercised",
-      "OS reduced-motion preference and unfamiliar-user study not tested this iteration",
-      "Park40/46px lookalike false acceptances and native/browser differences retained",
-      "No arbitrary-person, occlusion, unknown-size, hardware or end-to-end quantum speedup claim"
+      "Physical touch/pen, multi-touch, OS motion preference and unfamiliar users not directly tested",
+      "Park40/46 lookalike false acceptances and native/browser differences retained",
+      "No arbitrary-person, unknown-size, occlusion, hardware or end-to-end speedup claim"
     ],
     "attempts_repairs": [
-      "Initial credential expired before packaging; renewed credential and successful helper publication followed",
-      "User reported invisible first native drag preview; explicit DOM preview corrected and independently observed during drag",
-      "Early viewport reads were desktop; only eventual actual320/390px widths counted as mobile checks",
-      "Nonfocusable body rejected Control+Home; supported screenshot API used afterward",
-      "Record inspection used a mistaken relative work path from the source checkout; corrected to workspace root without changing source"
+      "Native HTML drag showed stale source portrait painting beside the animated pose; switched mouse to captured pointer events and observed source opacity0 and empty source box",
+      "An intended outside cancellation probe actually ended inside map and placed the target; not counted as cancellation",
+      "Independent review caught interpolated geometry mismatch on quick release; ownedRAF finishes pickup then commits from actual rendered center",
+      "Review added releaseRequested guards to freeze released coordinates against same-pointer events",
+      "Several read commands used a wrong relative cwd or nonexistent catalog path; corrected without source/evidence changes",
+      "Two bookkeeping patches with stale contexts were rejected and reapplied correctly",
+      "A follow-up geometry read assumed a measured point after the arbitrarydrop; it raised on abstention. Retained negative proof and switched to controlleddefaultplacement before testingoff-map removal."
     ]
   },
   "owner_access_verified": {
@@ -100,13 +111,14 @@
   },
   "checks_performed_this_iteration": [
     "147 Node engineering tests",
-    "Syntax/static/diff checks",
-    "Read-only frozen verifier11/7/12",
-    "Local native dragging/cancellation/empty/scene/keyboard/mobile UI",
-    "Terminal-succeeded private deployment from exact helper-pushed17bd source",
-    "Final hosted cursor image, drop, Find420300 and reset"
+    "Read-only frozen11/7/12 verifier",
+    "Scratch bounded pendulum numerical checks",
+    "Actual local pickup, drop, Find, off-map removal, cancellation, reduced animation and320/390px layouts",
+    "Independent gesture/RAF/release geometry review",
+    "Private source-helper packaging and terminal-succeeded deployment",
+    "Final hosted shrink/drop/plainmessage/controlledFind/off-map return and console verification; firstarbitraryabstention retained"
   ],
-  "next_priority": "Review the new welcome on a physical touch device and seek an observed usability gap. Preserve the connected three-stage explainer and frozen evidence. Keep development private and do not submit.",
+  "next_priority": "Review physical touch pickup and continue the streamlined game/connected three-stage explanation. Preserve frozen evidence; no contest submission.",
   "overnight_reset_budget": {
     "maximum": 1,
     "agent_consumed": 0,
@@ -114,5 +126,12 @@
     "preserve_for_user": 1,
     "ledger": "OVERNIGHT_RESOURCE_BUDGET.json"
   },
-  "prior_evidence_receipt": "archive/iteration16-before-welcome/publication-receipt.json"
+  "prior_evidence_receipt": "archive/iteration18-before-speech-and-swing/publication-receipt.json",
+  "new_ui_asset": {
+    "path": "waldo-search-lab/dist/assets/wanda/wanda-hanging-ui.png",
+    "sha256": "60ee00a4cab49fe80cfd1b14e6aea96efe8b59df2165480c31e90bf7f9e42aa7",
+    "tool": "built-in ImageGen edit; transparent PNG copied intact",
+    "prompt_and_provenance": "waldo-search-lab/docs/WANDA_HANGING_ASSET.md",
+    "inference_input": false
+  }
 }

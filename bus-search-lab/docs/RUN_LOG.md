@@ -1,5 +1,46 @@
 # Hourly run log
 
+## Crowd iteration 19 — October 11, 2026
+
+Private source `002574d248d81237e542b0c954185213eda9208a`, deployment `appgdep_6acbd4091a308191aa1ede8ca65c2675`,
+version `appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_5daa63b3a8bc819181549750493a7a87`:
+terminal succeeded on the original owner-private crowd Site. The welcome
+greeting is a speech bubble; a UI-only raised-hand sprite shrinks for 190ms,
+hangs at the pointer and trails movement with a damped swing. Captured pointer
+events own the mouse/touch/pen gesture. Early release completes pickup before
+placing its rendered body center; outside release cancels, and dragging a
+placed target off-map restores the portrait. The placed message is plain text
+without bubble fill, outline, shadow or tail. The empty start, five-row picker,
+right-hand Find and three-stage lesson remain.
+
+147 Node tests and read-only frozen verification pass. Actual local mouse
+shrinking/rotation, searches at (284,260) and (300,228), keyboard/off-map
+removal, reduced animation and 320/390px no-overflow checks are documented.
+Actual hosted pickup shrank from 240.3px to 81.95px with changing rotation, hidden
+source and cleared ghost after early release; placed message is undecorated.
+The first arbitrary hosted placement abstained (No match found), retained
+without tuning. After reset, hosted keyboard placement was found at (420,300);
+dragging that target off-map restored the portrait and greeting bubble. The
+warning/error console was empty; empty welcome was restored for review. Read
+the current
+external handoff, publication receipt, iteration 19 source QA and hanging-asset
+provenance. Retained animation/tool failures remain in QA. Physical touch/pen,
+multi-touch, OS reduced-motion preference and novice learning remain untested.
+
+The new pose never enters inference. The standing PNG, five scene assets,
+frozen model/threshold, reserved results and known Park/rendering failures are
+unchanged. No retraining, reserve rerun or new accuracy claim. Schoolbus and
+both owner-private Site identities remain unchanged. No contest or public
+source/video/Qollab publication. Ongoing private GitHub development sync is
+authorized; its receipt identifies the actual pushed commit separately.
+
+Next: improve the next observed gesture/usability gap, exercise physical touch
+when available and privately time a spoken intro. Preserve the same technical
+stages and frozen evidence. Zero agent resets consumed; one remains at the
+latest observation for the user. Read the resource ledger; the earlier account
+change had an unknown actor/cause. No agent reset or billing change occurred.
+
+
 ## Latest steering — October 10, ~04:17 ET
 
 The user explicitly said: “dont submit any of the work” and “just keep iterating improvements.” No contest submission was made. Subsequent work continues on UX, training/evaluation, and fair comparisons. Submission and public submission-material publication are withheld for the user. Both existing Sites stay owner-private.

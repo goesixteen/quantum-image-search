@@ -7,6 +7,7 @@ import { buildCandidateField, buildSearchDisplayField, colorizeField } from './s
 import { scanQNN, extractWindowFeatures } from './wanda-localizer.js';
 import { composeCuratedScene } from './curated-scenes.js';
 import { createLatestOperation,runLatestOperation,createPointerSession,pointerAction } from './interaction-lifecycle.js';
+import { createDragPendulum,setDragPointer,stepDragPendulum } from './drag-pendulum.js';
 
 const $ = id => document.getElementById(id);
 const canvas = $('scene'), ctx = canvas.getContext('2d');
@@ -319,7 +320,13 @@ function place(x,y) {keyboardPlacement=false;const r=targetRect(),s=512/state.gr
 function localPoint(event) {const r=canvas.getBoundingClientRect();return{x:(event.clientX-r.left)*512/r.width,y:(event.clientY-r.top)*512/r.height};}
 function rebuildCustomLayer() {const existing=state.layers.filter(l=>l.id!=='custom');state.layers=[...existing,...createForegroundLayers(state.background,[{id:'custom',name:'Your foreground cutout',zIndex:40,enabled:true,paths:state.customPaths}])];}
 function cancelPointer(){cancelTrayDrag();const pointer=state.pointer;if(!pointer)return;state.pointer=null;if(canvas.hasPointerCapture(pointer.pointerId))canvas.releasePointerCapture(pointer.pointerId);if(pointer.tool!=='move')renderLayerList();if(state.ready)draw();}
-function endPointer(event){if(event&&state.pointer?.pointerId!==event.pointerId)return;cancelPointer();}
+function endPointer(event){
+  if(event&&state.pointer?.pointerId!==event.pointerId)return;
+  const pointer=state.pointer,point=event?.type==='pointerup'?localPoint(event):null;
+  const remove=pointer?.tool==='move'&&point&&(point.x<0||point.x>512||point.y<0||point.y>512);
+  cancelPointer();
+  if(remove){keyboardPlacement=false;state.present=false;refresh('Wanda’s back in her box. Drag her into the scene to hide her again.');}
+}
 canvas.addEventListener('pointerdown',event=>{
   if(!state.ready||state.sceneLoading||state.targetLoading||state.pointer||event.isPrimary===false||event.button>0)return;
   event.preventDefault();canvas.focus({preventScroll:true});const point=localPoint(event);state.pointer=createPointerSession({pointerId:event.pointerId,tool:state.tool,point,center:{x:state.cx,y:state.cy},rect:state.present?targetRect():{x:-1,y:-1,width:0,height:0},radius:Number($('brush-size').value)});canvas.setPointerCapture(event.pointerId);
@@ -344,44 +351,92 @@ function syncTargetTray(){
 }
 function cancelTrayDrag(){
   const prior=trayDrag;trayDrag=null;
+  if(prior?.frameId!=null)cancelAnimationFrame(prior.frameId);
   const token=$('target-token');if(prior?.pointerId!=null&&token.hasPointerCapture(prior.pointerId))token.releasePointerCapture(prior.pointerId);
   $('wanda-drag-ghost').classList.remove('is-visible');canvas.classList.remove('drop-ready');syncTargetTray();
 }
 function trayDragCurrent(){return trayDrag&&trayDrag.sceneRevision===state.sceneLoadRevision&&trayDrag.targetRevision===state.targetLoadRevision&&state.ready&&!state.sceneLoading&&!state.targetLoading&&!state.present;}
 function displayedTargetSize(){const r=targetRect(),bounds=canvas.getBoundingClientRect();return{width:Math.max(1,Math.round(r.width*bounds.width/512)),height:Math.max(1,Math.round(r.height*bounds.height/512))};}
+function renderTrayGhost(owner,now){
+  if(owner!==trayDrag)return;
+  const ghost=$('wanda-drag-ghost'),body=$('wanda-drag-body');
+  const pose=stepDragPendulum(owner.pendulum,now,{reducedMotion:reducedGameMotion()}),angle=owner.hanging?pose.angleRadians+.19:0;
+  // The raised hand is the fixed origin. Only the body swings; the image
+  // pasted into the canvas is still the original, frozen standing Wanda.
+  const progress=reducedGameMotion()?1:clamp((now-owner.pickupStart)/190,0,1),eased=1-(1-progress)**3;
+  const p=owner.preview,height=owner.pickupFrom.height+(p.height-owner.pickupFrom.height)*eased,width=height*p.width/p.height;
+  body.style.width=width+'px';body.style.height=height+'px';body.style.left=-p.anchorX*width+'px';body.style.top=-p.anchorY*height+'px';
+  const x=owner.pickupFrom.x+(pose.x-owner.pickupFrom.x)*eased,y=owner.pickupFrom.y+(pose.y-owner.pickupFrom.y)*eased;
+  ghost.style.left=x+'px';ghost.style.top=y+'px';owner.visualGeometry={x,y,width,height,angle};
+  body.style.transform='rotate('+angle+'rad)';owner.renderAngle=angle;
+}
+function animateTrayGhost(owner,now){
+  if(owner!==trayDrag)return;
+  if(!trayDragCurrent()){cancelTrayDrag();return;}
+  renderTrayGhost(owner,now);
+  if(owner.releaseRequested&&(reducedGameMotion()||now-owner.pickupStart>=190)){commitTrayDrop(owner);return;}
+  owner.frameId=requestAnimationFrame(time=>animateTrayGhost(owner,time));
+}
 function updateTrayGhost(event){
-  const ghost=$('wanda-drag-ghost'),size=displayedTargetSize();ghost.style.width=size.width+'px';ghost.style.height=size.height+'px';ghost.style.left=(event.clientX-size.width/2)+'px';ghost.style.top=(event.clientY-size.height/2)+'px';ghost.querySelector('img').src=$('target-token-image').src;ghost.classList.add('is-visible');
+  if(!trayDrag)return false;
+  const owner=trayDrag,ghost=$('wanda-drag-ghost'),body=$('wanda-drag-body'),now=performance.now();
+  if(!owner.pendulum){
+    const size=displayedTargetSize();owner.hanging=state.targetId==='wanda';
+    const height=owner.hanging?Math.max(56,size.height*1.16):size.height,width=owner.hanging?height*2/3:size.width;
+    owner.preview={width,height,anchorX:owner.hanging ? .315 : .5,anchorY:owner.hanging ? .019 : .5};
+    const p=owner.preview;
+    body.style.width=width+'px';body.style.height=height+'px';body.style.left=-p.anchorX*width+'px';body.style.top=-p.anchorY*height+'px';
+    body.style.transformOrigin=(p.anchorX*100)+'% '+(p.anchorY*100)+'%';
+    body.querySelector('img').src=owner.hanging?'assets/wanda/wanda-hanging-ui.png':$('target-token-image').src;
+    const portrait=$('target-token-image').getBoundingClientRect(),startHeight=Math.max(height,portrait.height*(owner.hanging?1.16:1)),startWidth=startHeight*width/height;
+    const dx=owner.hanging?(.5-p.anchorX)*startWidth:0,dy=owner.hanging?(.55-p.anchorY)*startHeight:0,angle=owner.hanging ? .19 : 0;
+    owner.pickupStart=now;owner.pickupFrom={height:startHeight,x:portrait.x+portrait.width/2-dx*Math.cos(angle)+dy*Math.sin(angle),y:portrait.y+portrait.height/2-dx*Math.sin(angle)-dy*Math.cos(angle)};
+    owner.pendulum=createDragPendulum({x:event.clientX,y:event.clientY,now});
+    renderTrayGhost(owner,now);owner.frameId=requestAnimationFrame(time=>animateTrayGhost(owner,time));
+  }else{setDragPointer(owner.pendulum,{x:event.clientX,y:event.clientY,now});renderTrayGhost(owner,now);}
+  ghost.classList.add('is-visible');
   const r=canvas.getBoundingClientRect(),inside=event.clientX>=r.left&&event.clientX<=r.right&&event.clientY>=r.top&&event.clientY<=r.bottom;canvas.classList.toggle('drop-ready',inside);return inside;
 }
-function armTrayPlacement(){if(!state.ready||state.sceneLoading||state.targetLoading||state.present)return;keyboardPlacement=true;canvas.focus({preventScroll:true});status('Pick a hiding spot.','Tap the scene to place Wanda. Or use arrow keys and Enter.');}
-$('target-token').addEventListener('dragstart',event=>{
-  if(!state.ready||state.sceneLoading||state.targetLoading||state.present){event.preventDefault();return;}
-  const image=makeCanvas(1,1);
-  trayDrag={kind:'native',sceneRevision:state.sceneLoadRevision,targetRevision:state.targetLoadRevision,image};
-  event.dataTransfer.setData('application/x-atlas-target',state.targetId);event.dataTransfer.effectAllowed='move';event.dataTransfer.setDragImage(image,0,0);updateTrayGhost(event);syncTargetTray();
-});
-$('target-token').addEventListener('drag',event=>{if(trayDrag?.kind==='native'&&trayDragCurrent()&&(event.clientX||event.clientY))updateTrayGhost(event);});
-window.addEventListener('dragover',event=>{if(trayDrag?.kind!=='native')return;if(trayDragCurrent())updateTrayGhost(event);else cancelTrayDrag();});
-$('target-token').addEventListener('dragend',cancelTrayDrag);
+function trayDropPoint(event){
+  if(!trayDrag?.hanging)return localPoint(event);
+  const p=trayDrag.preview,v=trayDrag.visualGeometry,angle=v.angle;
+  // Match the standing body's center to the dangling preview, rather than
+  // suddenly moving the character's center up to the held hand on release.
+  const dx=(.5-p.anchorX)*v.width,dy=(.55-p.anchorY)*v.height;
+  const x=v.x+dx*Math.cos(angle)-dy*Math.sin(angle),y=v.y+dx*Math.sin(angle)+dy*Math.cos(angle);
+  return localPoint({clientX:x,clientY:y});
+}
+function commitTrayDrop(owner){
+  if(owner!==trayDrag||!trayDragCurrent())return;
+  const point=trayDropPoint({clientX:owner.pendulum.x,clientY:owner.pendulum.y});
+  cancelTrayDrag();state.tool='move';$('editor-tool').value='move';place(point.x,point.y);canvas.focus({preventScroll:true});
+}
+function armTrayPlacement(){if(!state.ready||state.sceneLoading||state.targetLoading||state.present||trayDrag)return;keyboardPlacement=true;canvas.focus({preventScroll:true});status('Pick a hiding spot.','Tap the scene to place Wanda. Or use arrow keys and Enter.');}
 $('target-token').addEventListener('pointerdown',event=>{
-  if(event.pointerType==='mouse'||event.isPrimary===false||event.button>0||!state.ready||state.sceneLoading||state.targetLoading||state.present)return;
+  if(event.isPrimary===false||event.button>0||!state.ready||state.sceneLoading||state.targetLoading||state.present||trayDrag)return;
   event.preventDefault();trayDrag={kind:'pointer',pointerId:event.pointerId,sceneRevision:state.sceneLoadRevision,targetRevision:state.targetLoadRevision,startX:event.clientX,startY:event.clientY,moved:false};
   $('target-token').setPointerCapture(event.pointerId);updateTrayGhost(event);syncTargetTray();
 });
 $('target-token').addEventListener('pointermove',event=>{
-  if(trayDrag?.kind!=='pointer'||trayDrag.pointerId!==event.pointerId)return;
+  if(trayDrag?.kind!=='pointer'||trayDrag.pointerId!==event.pointerId||trayDrag.releaseRequested)return;
   if(!trayDragCurrent()){cancelTrayDrag();return;}event.preventDefault();trayDrag.moved ||= Math.hypot(event.clientX-trayDrag.startX,event.clientY-trayDrag.startY)>6;updateTrayGhost(event);
 });
 $('target-token').addEventListener('pointerup',event=>{
-  if(trayDrag?.kind!=='pointer'||trayDrag.pointerId!==event.pointerId)return;
-  event.preventDefault();const valid=trayDragCurrent(),inside=valid&&updateTrayGhost(event),moved=trayDrag.moved,point=inside?localPoint(event):null;
-  cancelTrayDrag();if(point){state.tool='move';$('editor-tool').value='move';place(point.x,point.y);canvas.focus({preventScroll:true});}else if(valid&&!moved)armTrayPlacement();
+  if(trayDrag?.kind!=='pointer'||trayDrag.pointerId!==event.pointerId||trayDrag.releaseRequested)return;
+  event.preventDefault();const valid=trayDragCurrent(),inside=valid&&updateTrayGhost(event),moved=trayDrag.moved,owner=trayDrag;
+  if(inside){
+    // A very quick release still finishes the short pickup before switching to
+    // the standing pose; its center therefore matches what was just rendered.
+    owner.releaseRequested=true;
+    if($('target-token').hasPointerCapture(event.pointerId))$('target-token').releasePointerCapture(event.pointerId);
+    if(reducedGameMotion()||performance.now()-owner.pickupStart>=190)commitTrayDrop(owner);
+  }else{cancelTrayDrag();if(valid&&!moved)armTrayPlacement();}
 });
-for(const name of ['pointercancel','lostpointercapture'])$('target-token').addEventListener(name,event=>{if(trayDrag?.pointerId===event.pointerId)cancelTrayDrag();});
+for(const name of ['pointercancel','lostpointercapture'])$('target-token').addEventListener(name,event=>{if(trayDrag?.pointerId===event.pointerId&&(name==='pointercancel'||!trayDrag.releaseRequested))cancelTrayDrag();});
 window.addEventListener('keydown',event=>{if(event.key==='Escape'&&trayDrag){event.preventDefault();cancelTrayDrag();}});
 canvas.addEventListener('dragover',event=>{if(![...event.dataTransfer.types].some(type=>type==='application/x-atlas-target'||type==='Files'))return;event.preventDefault();canvas.classList.add('drop-ready');});
 canvas.addEventListener('dragleave',()=>canvas.classList.remove('drop-ready'));
-canvas.addEventListener('drop',async event=>{event.preventDefault();canvas.classList.remove('drop-ready');const p=localPoint(event),sceneToken=state.sceneLoadRevision;try{if(event.dataTransfer.files.length){if(!await uploadTarget(event.dataTransfer.files[0]))return;}else if(!trayDragCurrent()||trayDrag.kind!=='native'||event.dataTransfer.getData('application/x-atlas-target')!==state.targetId)return;if(sceneToken!==state.sceneLoadRevision)return;cancelTrayDrag();state.tool='move';$('editor-tool').value='move';place(p.x,p.y);canvas.focus({preventScroll:true});}catch(error){status('The image needs attention.',error.message);}});
+canvas.addEventListener('drop',async event=>{event.preventDefault();canvas.classList.remove('drop-ready');const p=trayDragCurrent()?trayDropPoint(event):localPoint(event),sceneToken=state.sceneLoadRevision;try{if(event.dataTransfer.files.length){if(!await uploadTarget(event.dataTransfer.files[0]))return;}else if(!trayDragCurrent()||trayDrag.kind!=='native'||event.dataTransfer.getData('application/x-atlas-target')!==state.targetId)return;if(sceneToken!==state.sceneLoadRevision)return;cancelTrayDrag();state.tool='move';$('editor-tool').value='move';place(p.x,p.y);canvas.focus({preventScroll:true});}catch(error){status('The image needs attention.',error.message);}});
 async function decodeFile(file) {if(!file||!/^image\/(png|jpeg|webp)$/.test(file.type))throw Error('Choose a PNG, JPEG or WebP image.');if(file.size>20*1024*1024)throw Error('Use an image smaller than 20 MB.');const url=URL.createObjectURL(file);try{return {image:await loadImage(url),url};}catch(error){URL.revokeObjectURL(url);imageCache.delete(url);throw error;}}
 function restoreUploadedTarget() {resetOwner.cancel();cancelPointer();state.targetLoadRevision++;state.targetLoading=false;state.targetId='custom';state.target=state.uploadedTarget;state.present=true;setOracle('template');state.grid=64;$('target-image').src=state.uploadedTargetUrl;$('target-token-image').src=state.uploadedTargetUrl;$('target-credit').textContent='Your image · browser only';refresh('Uploaded target: classical template comparison selected. The trained QNN is for the built-in striped person.');}
 async function uploadTarget(file) {

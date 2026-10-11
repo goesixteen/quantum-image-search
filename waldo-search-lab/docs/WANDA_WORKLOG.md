@@ -249,3 +249,21 @@ Model, threshold, artwork and quantum calculations are unchanged; no reserved
 test or new recognition claim. Private hosted receipt/checks follow publication.
 Preserve schoolbus, both Site identities and all historical model/failure scope.
 No contest submission, public source/video or Qollab publication; no agent reset.
+
+## Iteration 19 — speech bubble and hanging pickup
+
+The user requested a speech bubble, a raised-hand cursor pose with swing/lag,
+animated shrink into the pointer, and removal by dragging off the map. The
+welcome now uses a bubble; a separate generated UI pose shrinks over190ms and
+rotates around its hand using damped motion. Mouse/touch/pen share pointer
+capture, avoiding native drag-image painting problems. The analyzed target is
+the unchanged standing PNG. A release outside cancels initial pickup; a placed
+Wanda dragged off the canvas returns to the welcome box. Keyboard remains.
+
+147 engineering tests and read-only frozen11/7/12 verification pass. Actual
+mouse shrinking/rotation/source hiding/drop and off-map removal were observed;
+the first dropped Festival target was found at284,260. Scratch numerical
+animation checks cover signs, lag, settling,1500 irregular samples and reduced
+motion. See WANDA_ITERATION19_QA.md and WANDA_HANGING_ASSET.md for failures,
+prompt and scope. Final responsive/hosted provenance follows in external records.
+No frozen science/art inference changes, reserved evaluation, submission or reset.

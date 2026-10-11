@@ -1,16 +1,19 @@
 # Where’s Wanda — direction for future iterations
 
-## Latest human steering — iteration 18
+## Latest human steering — iteration 19
 
-The main game starts without Wanda. Keep exactly five map thumbnails in a row
-above the displayed map. The right-hand box shows a large Wanda and the greeting
-“Hi, I’m Wanda! Drag me into the scene, and let quantum crowd search find me!”
-She disappears from the box during dragging and appears at scene scale around
-the cursor. The user reported that the initial native drag preview was invisible;
-the privately published correction uses an explicit cursor-following image.
-Find stays in its right-hand menu position. Remove and Start over restore the
-empty welcome flow. Build on this version; do not restore automatic initial
-placement merely because earlier scripts assume it.
+Keep the empty start, exactly five map thumbnails above the scene and the
+large right-hand Wanda portrait. The greeting **“Hi, I’m Wanda!”** belongs in
+a speech bubble. During pickup, use a raised-hand preview hanging from the
+pointer: it shrinks out of the box, trails mouse movement and swings. The
+190ms pickup must finish before an early-release placement commits the actual
+rendered center. Pointer events own mouse/touch/pen gestures; reduced animation
+skips shrink/swing. Dropping inside inserts the existing standing target;
+outside release cancels, and dragging a placed target off-map removes it.
+Find stays in the right-hand menu; Remove/Start over restore the welcome flow.
+The placed “I’m in the scene!” message is plain text without bubble decoration.
+The new pose is UI-only and does not replace the trained standing target or
+enter inference. Do not reintroduce automatic initial placement.
 
 ## Continuing overnight direction
 
@@ -46,6 +49,13 @@ five-choice row and small cursor-following drag preview from source `17bd16281b0
 The initial invisible native preview and its correction are documented. All
 147 engineering tests and frozen verification pass; hosted native dragging,
 Find (420,300), reset and the five choices were actually verified.
+Iteration 19 privately publishes the speech bubble and raised-hand animated
+pickup from source `002574d248d81237e542b0c954185213eda9208a`; deployment `appgdep_6acbd4091a308191aa1ede8ca65c2675` succeeded.
+All 147 engineering tests and frozen verification pass. Actual local mouse,
+keyboard, reduced animation and 320/390px layout observations are recorded;
+hosted pickup shrink/swing is verified, while its first arbitrary placement
+abstained and is retained. Separate hosted keyboard placement found (420,300);
+off-map dragging restored the welcome, and the warning/error console was empty.
 Read the current handoff, receipt, source QA and quick-start before continuing.
 Preserve original failures and Park’s known 40px/46px false acceptances. No
 model/threshold change, training or reserved-test rerun occurred.
@@ -152,7 +162,7 @@ The existing Play control now pauses at each actual 20-gate QNN layer boundary. 
 
 ## Private GitHub synchronization — October 11
 
-The user explicitly authorized pushing the current files to the existing private `goesixteen/quantum-image-search` repository. This is development sharing, not a contest submission. Consult the resource ledger for the latest observed percentage; one reset remains and no agent reset was invoked. The change from the prior two-reset observation has an unknown actor or cause. Preserve the remaining reset. Read the resource ledger and GitHub synchronization receipt on resumption. Published application source is now iteration 18; iteration 17 remains historical rehearsal documentation. Read the GitHub synchronization receipt for the actual remote commit, separately from the Sites source identity.
+The user explicitly authorized pushing the current files to the existing private `goesixteen/quantum-image-search` repository. This is development sharing, not a contest submission. Consult the resource ledger for the latest observed percentage; one reset remains and no agent reset was invoked. The change from the prior two-reset observation has an unknown actor or cause. Preserve the remaining reset. Read the resource ledger and GitHub synchronization receipt on resumption. Published application source is now iteration 19; iteration 17 remains historical rehearsal documentation. Read the GitHub synchronization receipt for the actual remote commit, separately from the Sites source identity.
 
 
 ## Iteration 18 completed state — October 11
@@ -167,3 +177,20 @@ not new recognition accuracy. Next: observe the new flow’s usability, exercise
 physical touch/pen when available, and privately time its rehearsal intro.
 Preserve the remaining account reset, owner-private Sites and no-submission
 constraint.
+
+
+## Iteration 19 completed state — October 11
+
+Speech bubble and UI-only raised-hand pickup are privately published from
+`002574d248d81237e542b0c954185213eda9208a`. The 190ms shrink, damped trailing swing, early-release
+geometry, pointer-capture ownership, off-map removal and reduced animation
+are implemented. Actual hosted pickup, plain placed-message styling, default
+Find (420,300), off-map removal and empty console were verified. The first
+arbitrary hosted placement abstained; retain that failure without model tuning.
+Source QA and the exact receipt retain individual successes and limits. The
+original standing PNG, five scenes, frozen model/threshold and three-stage
+explanation remain unchanged.
+147 Node tests and frozen verification pass, without new accuracy or training.
+Next: build on this gesture, exercise physical touch/pen when available and
+privately time the welcome intro. Preserve one remaining account reset and
+both owner-private Sites. No contest/public source/video/Qollab submission.

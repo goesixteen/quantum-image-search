@@ -1,31 +1,38 @@
 # Quantum image-search deliverables
 
-Current review: **iteration 18**. [Where’s Wanda](https://quantum-crowd-search.syrupyspool2.chatgpt.site)
-opens without Wanda, with five map choices in one row above the scene and a
-large inviting portrait in the right-hand box. Drag her into the map: a small
-Wanda follows the cursor, the portrait disappears, and Find uses the same
-trained QNN and Grover simulation. Remove/Start over restore the welcome flow.
-The connected **Image + QNN → Grover → Measurement** explanation is preserved.
+Current review: **iteration 19**. [Where’s Wanda](https://quantum-crowd-search.syrupyspool2.chatgpt.site)
+opens empty with five map choices above the scene. Its right-hand portrait
+says “Hi, I’m Wanda!” in a speech bubble. On pickup she shrinks toward the
+pointer, hangs by her raised hand and swings behind motion. Inside release
+places the original standing target; outside release cancels. The placed
+message is plain text, with speech-bubble decoration removed. Drag off-map,
+Remove or Start over return her to the box. The trained-QNN/Grover search and
+connected three-stage explanation are preserved.
 
-The first native preview was invisible for the user; the corrected explicit
-preview was actually observed during hosted dragging. Hosted Find returned
-(420,300), reset restored the portrait/five choices and console checks were
-empty. **147 engineering tests** and frozen verification pass. Models, math,
-artwork, historical recognition evidence and known Park failures are unchanged.
+**147 engineering tests** and frozen verification pass. Actual local mouse,
+keyboard, reduced animation and 320/390px checks are documented. Actual hosted
+pickup shrank and swung; its first arbitrary placement abstained and is retained
+as a recognition failure. The separate hosted default was found at (420,300);
+off-map dragging restored the welcome, and the warning/error console was empty.
+The new pose is interface artwork only;
+the trained standing PNG, scene artwork, model, threshold and quantum math
+remain unchanged. Historical recognition failures and Park false accepts
+retain their original scope.
 
 Start with [the handoff](WANDA_HANDOFF.md), [quick-start](WANDA_QUICKSTART.md),
-[exact receipt](publication-receipt.json), [source QA](waldo-search-lab/docs/WANDA_ITERATION18_QA.md)
-or [source bundle](quantum-image-search-deliverables.zip). Source `17bd16281b095f3ab664f9e0c1396dfa3ee0a028`;
-private deployment `appgdep_6acbcbc430648191ac8d657a9523f362` succeeded. The
-[iteration 17 rehearsal](WANDA_ITERATION17_HANDOFF.md) is historical; its
-237.405-second tool-driven run did not establish a two-minute spoken demo.
+[exact receipt](publication-receipt.json), [source QA](waldo-search-lab/docs/WANDA_ITERATION19_QA.md),
+[asset provenance](waldo-search-lab/docs/WANDA_HANGING_ASSET.md) or
+[source bundle](quantum-image-search-deliverables.zip). Source `002574d248d81237e542b0c954185213eda9208a`;
+private deployment `appgdep_6acbd4091a308191aa1ede8ca65c2675` succeeded. The
+[iteration 18 handoff](archive/WANDA_HANDOFF-iteration18.md) preserves the
+prior cursor correction; [iteration 17](WANDA_ITERATION17_HANDOFF.md) remains
+historical rehearsal evidence.
 
 The [schoolbus demo](https://bus-search-quantum-lab.syrupyspool2.chatgpt.site)
-and both owner-private Site identities are unchanged. The user authorized
-development synchronization to the existing private GitHub repository;
-[its receipt](GITHUB_SYNC_RECEIPT.json) identifies the actual pushed commit.
-Nothing has been submitted. Zero agent resets were consumed; one remains at
-the latest account observation and is reserved for the user.
+and both owner-private Site identities are preserved. Ongoing private GitHub
+development synchronization is authorized; [its receipt](GITHUB_SYNC_RECEIPT.json)
+identifies the commit actually pushed. Nothing has been submitted. Zero agent
+resets were consumed; one remains for the user at the latest observation.
 
 ## Historical increments
 

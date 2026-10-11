@@ -1,100 +1,126 @@
-# Where’s Wanda — iteration 18 handoff
+# Where’s Wanda — iteration 19 handoff
 
 [Open the owner-private website](https://quantum-crowd-search.syrupyspool2.chatgpt.site).
-The game now starts with an empty Festival scene. Exactly five named map
-thumbnails sit in one row above it, and a large Wanda portrait in the right-hand
-welcome box says: “Hi, I’m Wanda! Drag me into the scene, and let quantum crowd
-search find me!” Dragging hides that portrait and shows a small Wanda centered
-at the cursor; dropping into the map inserts the normal 52px sprite. Find
-remains in the right-hand menu. Remove returns her to the box; Start over
-restores the empty Festival scene.
+Wanda now says **“Hi, I’m Wanda!”** in a speech bubble pointing toward her
+portrait. Pick her up: a raised-hand sprite shrinks from the welcome box over
+190ms, hangs from the pointer by her hand, and trails horizontal motion with
+a damped swing. Release inside the map to place the existing standing Wanda;
+an early release finishes pickup before placing from the rendered body center.
+Release outside to cancel. Drag a placed Wanda off the map to return her to
+the box. Remove and Start over remain available. Once she is placed, “I’m in
+the scene!” is plain text, with the speech-bubble border, fill, shadow and tail
+removed.
 
-The existing connected **Image + QNN → Grover interference → Measurement**
-explanation is preserved, including exact layer playback and the Grover guide.
-No model, threshold, artwork, classifier inputs or quantum mathematics changed.
-The interface preview is never part of the analyzed image before a real drop.
+The empty Festival start, five named map thumbnails above it, right-hand Find
+menu and connected **Image + QNN → Grover interference → Measurement**
+explanation remain. The hanging pose is presentation-only artwork; the final
+scene uses the original standing PNG. No model, threshold, scene artwork,
+scanner input or quantum mathematics changed. The preview never enters
+classifier inference.
 
-## Actual checks and retained failure
+## Actual checks and retained failures
 
-- All **147 Node engineering tests** pass. JavaScript syntax, diff checks,
-  markup/selector/CSS checks and the read-only frozen verifier pass: 11 files,
-  seven source contracts and 12 pixel fixtures, including the metadata erratum.
-- Local native drag placed Wanda at (420,300); Find returned that point.
-  An outside-map drop restored the portrait without insertion. Empty Festival
-  accepted 0/4096 addresses and reported No match found. All five scenes work
-  with the empty welcome state.
-- Keyboard activation focuses the map before insertion; Escape returns focus
-  to the portrait, and map Enter places her. Remove and Start over restore the
-  welcome box. Actual 320px and 390px viewports keep all five choices on one
-  row without document overflow. Find’s menu position was unchanged by
-  placement in the 390px check.
-- The first private revision, source `20ceda2fdadafab8c9c8fd6761963b539676a048`,
-  deployment `appgdep_6acbca29dbf08191af93b83aaef2b98b`, placed successfully
-  but the user reported an invisible cursor preview. The detached native drag
-  canvas was replaced by an explicit fixed image updated by native drag and
-  document dragover events. This failure is retained, not counted as a pass.
-- The corrected local native gesture showed a decoded 17×61px preview at its
-  displayed scene scale. The final hosted native gesture showed a decoded
-  13×45px preview at the hosted display scale, then hid the source portrait
-  after the map drop. Hosted Find returned **Measured point 420,300 / Found
-  Wanda**. Start over restored the greeting, portrait and five choices. Local
-  and hosted error/warning consoles were empty.
+- All **147 Node engineering tests** pass. JavaScript syntax, diff checks and
+  the read-only frozen verifier pass: 11 files, seven source contracts and
+  12 pixel fixtures, including the metadata erratum.
+- Actual local mouse pickup hid the source portrait and showed the new pose
+  shrinking from 239.8px through 208.4/157.7px to 103.8px, with changing
+  rotation matrices. Two local searches returned measured (284,260) and
+  (300,228). Keyboard placement remains available. Dragging a placed target
+  from (420,300) past the right edge restored the portrait.
+- The latest plain placed-message styling was actually checked after a quick
+  pointer release: the 190ms pickup completed, preview hid and the message
+  had transparent fill/border with no tail.
+- Actual local 320px and 390px viewports keep five choices in one row without
+  horizontal document overflow. The mobile bubble points toward the portrait.
+  The explicit Reduce animations setting gave a constant 70.76px preview and
+  static orientation; an outside release cancelled, and the setting was reset.
+- Scratch numerical animation checks cover both directions, overshoot,
+  settling and 1,500 irregular/reversed samples. They check motion stability,
+  not recognition accuracy.
+- Actual hosted pointer pickup showed the source at opacity zero, preview
+  shrinking from 240.3px to 81.95px and changing rotation matrices. Early
+  release completed pickup and cleared the ghost; the placed message had
+  transparent border and no tail. The first arbitrary hosted placement
+  returned **No match found**. This retained abstention was not repaired by
+  model tuning or counted as successful recognition; see
+  [the actual failure proof](wanda-hanging-hosted-abstention-proof.png).
+- After reset, hosted keyboard placement at the remembered default was found
+  at **Measured point 420,300 / Found Wanda**. Dragging that placed target past
+  the map edge restored the visible portrait and greeting bubble. The hosted
+  warning/error console was empty, and the empty welcome was restored for
+  review. These individual checks do not erase the arbitrary-drop abstention.
+- Review caught a quick-release mismatch between interpolated preview and
+  placement geometry; the owned animation now completes the 190ms pickup
+  before committing its rendered center. Stale portrait painting during a
+  native HTML drag led to captured pointer events for mouse as well as
+  touch/pen. A probe ending inside the map was correctly counted as placement,
+  not cancellation. Read the source QA for retained development/tool failures.
 
-Read [the source QA](waldo-search-lab/docs/WANDA_ITERATION18_QA.md),
+Hosted post-release gesture, default-point, off-map and console checks are
+complete. A functioning pickup does not establish recognition at every
+arbitrary drop location. The exact receipt and proofs retain both success and
+abstention.
+
+Read [source QA](waldo-search-lab/docs/WANDA_ITERATION19_QA.md),
+[hanging-pose provenance](waldo-search-lab/docs/WANDA_HANGING_ASSET.md),
 [quick-start](WANDA_QUICKSTART.md) and [exact receipt](publication-receipt.json).
-The earlier body and its actual QNN/Grover checks are preserved in
-[iteration 16’s archived handoff](archive/WANDA_HANDOFF-iteration16.md).
-[Iteration 17’s rehearsal](WANDA_ITERATION17_HANDOFF.md) remains historical:
-its tool-driven 237.405-second run did not establish a two-minute spoken demo.
-The [rehearsal script](WANDA_DEMO_REHEARSAL.md) now notes the empty-start intro.
+[Iteration 18’s handoff](archive/WANDA_HANDOFF-iteration18.md) preserves the
+initial invisible native preview and its actual hosted correction. The
+[iteration 17 rehearsal](WANDA_ITERATION17_HANDOFF.md) remains historical;
+237.405 tool-driven seconds did not establish a two-minute spoken demo.
 
 ## Exact private release and scientific scope
 
-Source `17bd16281b095f3ab664f9e0c1396dfa3ee0a028`; version
-`appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_d3687cf4d9e481918e246734744dd103`; deployment
-`appgdep_6acbcbc430648191ac8d657a9523f362`: terminal **succeeded** on the existing crowd Site.
-Owner/custom access remains one user, zero groups and zero external visitors.
-The separate schoolbus deployment and both Site identities are preserved.
+Source `002574d248d81237e542b0c954185213eda9208a`; version
+`appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_5daa63b3a8bc819181549750493a7a87`; deployment
+`appgdep_6acbd4091a308191aa1ede8ca65c2675`: terminal **succeeded** on the original crowd
+Site. The separate schoolbus deployment and both owner-private Site identities
+are preserved. No contest, public source/video or Qollab publication/submission
+is authorized or performed.
+
+The earlier iteration 19 source `fc36e1462aff0c4e120872cef32c0ca77a40a47e`
+and deployment `appgdep_6acbd36dfe88819184901abe91438f36` also succeeded;
+they were superseded by the latest request for an undecorated placed message,
+not a failed deployment. The exact final identity above is current.
 
 The frozen Wanda model remains
 `d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88`,
 threshold `0.9056472752971427`. Historical native 298/300 versus the matched
-classical baseline’s 299/300 concerns the known PNG, five original unseeded
-scenes, supplied scales and fully visible placements. It is not new evidence
-for this interface. Original misses, renderer differences, and the curated
-Park lookalike’s 40/46px false acceptances are retained. No training, reserved
-test rerun or expanded accuracy claim occurred.
+classical baseline’s 299/300 concerns the known standing PNG, five original
+unseeded scenes, supplied scales and fully visible placements. Original misses,
+browser/native differences and curated Park 40/46px false acceptances retain
+their scopes. No training, reserved-test rerun or new accuracy claim occurred.
+No arbitrary-person recognition, unknown-scale detection, occlusion, hardware
+execution or end-to-end quantum speedup is established.
 
-Physical touchscreen/pen gestures, multi-touch, OS reduced-motion preference
-and unfamiliar-user learning were not tested in this step. Touch/pen handlers
-are implemented; actual responsive and keyboard checks do not prove physical
-touch behavior. The prior portable-startup proof remains the
-[iteration 14 package audit](WANDA_ITERATION14_PACKAGE_AUDIT.md), with its npm
-installation and cross-platform limits. No arbitrary-person recognition,
-unknown-scale detection, occlusion, quantum hardware or end-to-end quantum
-speedup is established.
+Physical touchscreen/pen, multi-touch, OS reduced-motion preference and
+unfamiliar-user learning remain untested. Captured pointer handlers and actual
+responsive/keyboard checks do not establish physical touch behavior. The prior
+portable-startup proof remains the [iteration 14 audit](WANDA_ITERATION14_PACKAGE_AUDIT.md).
 
 ## Resume here
 
-Build on this published empty-start drag/place/find loop. Keep the same three
-technical stages and address the next observed usability gap; check physical
-touch/pen behavior when available. Before privately rehearsing the old script,
-place Wanda near (420,300) and time the new welcome step. Preserve frozen
-evidence and predeclare any future domain/model study rather than reopening
-the existing reserve.
+Build on the published bubble and hanging pickup. Preserve the final standing
+target and same three technical stages. Check the next observed usability gap,
+physical touch/pen when available, and a privately timed spoken walkthrough
+including the welcome gesture. Preserve frozen evidence and predeclare future
+domain/model studies before new reserved testing.
 
-The user authorized synchronization to the existing private
-`goesixteen/quantum-image-search` repository. Read
-[its exact synchronization receipt](GITHUB_SYNC_RECEIPT.json) for the GitHub
-commit actually pushed; Sites and GitHub have separate histories. Source ZIP
-and publication records are refreshed separately by root after these docs.
-No contest, public source/video or Qollab publication/submission is authorized.
+The user authorized ongoing development synchronization to the existing
+private `goesixteen/quantum-image-search` repository. The repository snapshot
+and local bundle have separate records; consult
+[the exact GitHub receipt](GITHUB_SYNC_RECEIPT.json) for the commit actually
+pushed. Sites and GitHub have separate histories. No public contest materials.
 
 The hourly heartbeat remains active. Maximum one agent usage reset tonight;
 **zero agent resets consumed, one reset remaining at the latest observation**.
-The earlier account change from two to one had an unknown actor/cause. Preserve
+The earlier two-to-one account change had an unknown actor/cause. Preserve
 the remaining reset for the user and read
-[the resource ledger](OVERNIGHT_RESOURCE_BUDGET.json) at every resumption.
-No reset, purchase or billing change was performed by the agent.
+[the resource ledger](OVERNIGHT_RESOURCE_BUDGET.json) on resumption. No agent
+reset, purchase or billing change occurred.
 
-![Actual hosted Wanda cursor preview during native drag](wanda-cursor-drag-hosted-proof.png)
+![Actual hosted shrinking, hanging Wanda pickup](wanda-hanging-hosted-proof.png)
+
+[Placed-message proof](wanda-bubble-placed-hosted-proof.png) shows the
+undecorated text after placement.

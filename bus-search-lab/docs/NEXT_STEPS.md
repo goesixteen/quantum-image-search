@@ -1,29 +1,31 @@
-# Current next step — build on iteration 18
+# Current next step — build on iteration 19
 
 Read [the current handoff](../../WANDA_HANDOFF.md),
 [iteration brief](../../WANDA_ITERATION_BRIEF.md),
 [exact private receipt](../../publication-receipt.json) and
-[resource ledger](../../OVERNIGHT_RESOURCE_BUDGET.json). The empty welcome,
-five-choice map row and corrected cursor-following Wanda are published and
-actually hosted-checked. Keep them, the existing three technical stages and
-the same frozen trained QNN. No repeated training or reserved-test evaluation.
+[resource ledger](../../OVERNIGHT_RESOURCE_BUDGET.json). The speech bubble,
+raised-hand 190ms pickup and trailing swing are privately published. Actual
+hosted pickup, plain placed-message styling, default Find (420,300), off-map
+removal and empty console checks are complete. The first arbitrary hosted
+placement abstained; that failure remains documented. The final standing target, empty start,
+five-choice row, right menu, same three technical stages and frozen trained
+QNN remain. Do not repeat training or reserved-test evaluation.
 
-1. Improve the next observed drag/place/find usability gap. Verify physical
-   touchscreen/pen behavior when available; responsive layout and keyboard
-   checks already pass but do not establish physical touch behavior.
-2. Privately time a spoken walkthrough including the new welcome/placement
-   intro. The iteration 17 tool-driven duration was not a two-minute human
-   presentation. Seek voluntary novice feedback without claiming learning
-   from engineering or heuristic checks.
-3. Preserve model/threshold, original test failures, renderer differences and
-   Park lookalike false accepts. Predeclare any future domain/model study
-   before freezing and a fresh reserve. Keep the schoolbus and both original
-   owner-private Site identities; record exact completed publication proofs.
-4. The user authorized synchronization to the existing private GitHub repo.
-   Read its receipt for the actual pushed commit. Do not submit a contest
-   entry or publish public source/video/Qollab materials. Zero agent resets
-   consumed; one account reset remains at the latest observation. Preserve
-   it for personal use; no billing changes.
+1. Build on the new gesture and improve the next observed usability gap.
+   Physical touchscreen/pen and multi-touch checks are still needed when
+   available; responsive/keyboard checks do not establish physical touch.
+2. Privately time a spoken walkthrough including welcome/pickup. The old
+   tool-driven rehearsal did not establish a two-minute presentation. Seek
+   voluntary novice feedback without treating heuristic checks as learning.
+3. Preserve the standing PNG/model/threshold, historical reserve failures,
+   renderer differences and Park false accepts. Predeclare any future domain
+   or model study before a fresh freeze/reserve. Preserve schoolbus and both
+   owner-private Site identities; record exact completed publication proof.
+4. Ongoing synchronization to the existing private GitHub repo is authorized.
+   Consult its receipt for the actual remote commit, separate from Sites.
+   No contest entry or public source/video/Qollab publication. Zero agent
+   resets consumed; one remains for the user. Read the ledger; no billing
+   changes or claims of an unperformed reset.
 
 ## Historical next-step plans
 

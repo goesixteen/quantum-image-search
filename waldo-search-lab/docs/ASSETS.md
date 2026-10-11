@@ -15,3 +15,8 @@ The built-in ImageGen tool was used for both assets. The original tool-call prom
 The interface draws the full transparent character at 75% of one grid cell's height, preserving its natural aspect ratio. Every candidate crop is resampled to 128 by 128 for feature extraction. New placement seeds share these same artwork assets; measured performance must be described as controlled same-asset compositing unless independent artwork variants are held out.
 
 Original application code and documentation are released under MIT. Preserve this provenance record when distributing the supplied project assets.
+
+The current Wanda welcome uses a separate raised-hand UI pose generated from
+the existing Wanda PNG on October11. Its exact prompt, alpha checks and hash
+are in [WANDA_HANGING_ASSET.md](WANDA_HANGING_ASSET.md). It is only a drag preview;
+it does not replace the frozen standing target or enter model inference.

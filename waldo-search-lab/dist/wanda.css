@@ -64,8 +64,11 @@
 .wanda-site .play-menu { min-width: 0; }
 .wanda-site .wanda-tray { display: flex; flex-direction: column; align-items: stretch; gap: 14px; padding: 0 0 19px; border-bottom: 1px solid var(--line); text-align: center; }
 .wanda-site .wanda-welcome { min-width: 0; }
-.wanda-site .wanda-welcome h2 { margin: 9px 0 0; min-height: 1.2em; font-size: 25px; line-height: 1.2; letter-spacing: -.7px; }
-.wanda-site .wanda-welcome p { margin: 10px 0 0; min-height: 4.95em; font-size: 13px; line-height: 1.65; color: var(--muted); }
+.wanda-site .wanda-welcome h2.wanda-speech-bubble { position: relative; display: flex; justify-content: center; align-items: center; width: 100%; min-height: 52px; margin: 10px 0 0; padding: 10px 7px; background: #fffdf7; border: 1.5px solid #d24e45; border-radius: 20px; box-shadow: 0 3px 0 #d24e4510; color: var(--ink); font-size: 23px; line-height: 1.2; letter-spacing: -.6px; }
+.wanda-site .wanda-speech-bubble::after { content: ''; position: absolute; width: 13px; height: 13px; left: calc(50% - 7px); bottom: -8px; background: #fffdf7; border-right: 1.5px solid #d24e45; border-bottom: 1.5px solid #d24e45; transform: rotate(45deg) skew(-10deg, -10deg); }
+.wanda-site .wanda-tray.is-placed .wanda-welcome h2.wanda-speech-bubble { border-color: transparent; background: transparent; box-shadow: none; }
+.wanda-site .wanda-tray.is-placed .wanda-speech-bubble::after { display: none; }
+.wanda-site .wanda-tray .wanda-invitation { margin: 0; min-height: 4.95em; font-size: 13px; line-height: 1.65; color: var(--muted); }
 .wanda-site .wanda-tray .tray-portrait { display: grid; place-items: center; flex: 0 0 220px; width: 100%; height: 220px; min-height: 220px; background: #f3eee5; border: 1px solid #e5ddce; border-radius: 11px; }
 .wanda-site .tray-portrait .target-token { display: grid; place-items: center; flex: none; width: 100%; min-width: 0; height: 100%; min-height: 0; padding: 5px 14px; border: 0; border-radius: 10px; background: transparent; touch-action: none; user-select: none; -webkit-user-select: none; cursor: grab; }
 .wanda-site .tray-portrait .target-token:active { cursor: grabbing; }
@@ -75,12 +78,13 @@
 .wanda-site .wanda-tray.is-dragging .target-token { opacity: 0; }
 .wanda-site .wanda-tray.is-placed .target-token { visibility: hidden; }
 .wanda-site .wanda-tray.is-placed .tray-portrait { background: #f7f4ec; border-style: dashed; }
-.wanda-site #wanda-drag-ghost { position: fixed; left: -10000px; top: -10000px; z-index: 1000; visibility: hidden; opacity: 0; pointer-events: none; }
+.wanda-site #wanda-drag-ghost { position: fixed; left: -10000px; top: -10000px; width: 0; height: 0; overflow: visible; z-index: 1000; visibility: hidden; opacity: 0; pointer-events: none; }
 .wanda-site #wanda-drag-ghost.is-visible { visibility: visible; opacity: 1; }
+.wanda-site #wanda-drag-body { position: absolute; left: 0; top: 0; overflow: visible; will-change: transform; pointer-events: none; }
 .wanda-site #wanda-drag-ghost img { display: block; width: 100%; height: 100%; object-fit: contain; pointer-events: none; }
 @media (max-width: 900px) and (min-width: 651px) {
-  .wanda-site .wanda-welcome h2 { font-size: 23px; }
-  .wanda-site .wanda-welcome p { font-size: 12px; }
+  .wanda-site .wanda-welcome h2.wanda-speech-bubble { font-size: 22px; }
+  .wanda-site .wanda-tray .wanda-invitation { font-size: 12px; }
   .wanda-site .play-board .scene-thumbnails { gap: 7px; }
   .wanda-site .play-board .scene-thumb span { font-size: 10px; }
 }
@@ -93,12 +97,14 @@
   .wanda-site .play-board .scene-thumb span { display: block; font-size: 9px; margin-top: 4px; line-height: 1.4; }
   .wanda-site .play-menu { display: block; width: 100%; padding: 16px; }
   .wanda-site .wanda-tray { display: grid; grid-template-columns: minmax(0, 1fr) 91px; align-items: center; gap: 10px 13px; padding-bottom: 14px; border-bottom: 1px solid var(--line); text-align: left; }
-  .wanda-site .wanda-welcome h2 { font-size: 23px; margin-top: 7px; }
-  .wanda-site .wanda-welcome p { min-height: 6.4em; font-size: 12px; line-height: 1.6; margin-top: 8px; }
-  .wanda-site .wanda-tray .tray-portrait { grid-column: 2; grid-row: 1 / span 2; width: 91px; height: 132px; min-height: 132px; }
+  .wanda-site .wanda-welcome { grid-column: 1; grid-row: 1; }
+  .wanda-site .wanda-welcome h2.wanda-speech-bubble { min-height: 54px; margin-top: 8px; padding: 10px 6px; font-size: 21px; }
+  .wanda-site .wanda-speech-bubble::after { left: auto; right: -8px; top: calc(50% - 7px); bottom: auto; border-bottom: 0; border-top: 1.5px solid #d24e45; transform: rotate(45deg) skew(-10deg, -10deg); }
+  .wanda-site .wanda-tray .wanda-invitation { grid-column: 1; grid-row: 2; min-height: 6.4em; font-size: 12px; line-height: 1.6; }
+  .wanda-site .wanda-tray .tray-portrait { grid-column: 2; grid-row: 1 / span 2; align-self: start; margin-top: 22px; width: 91px; height: 132px; min-height: 132px; }
   .wanda-site .tray-portrait .target-token { width: 100%; min-width: 0; height: 100%; padding: 5px 7px; }
   .wanda-site .tray-portrait #target-token-image { height: 122px; max-height: 122px; max-width: 100%; }
-  .wanda-site .wanda-tray .wanda-controls-help { grid-column: 1; font-size: 9px; line-height: 1.6; }
+  .wanda-site .wanda-tray .wanda-controls-help { grid-column: 1 / -1; grid-row: 3; font-size: 9px; line-height: 1.6; }
   .wanda-site .find-wrap .menu-step { display: block; margin: 15px 0 8px; font-size: 9px; }
   .wanda-site .wanda-find { padding: 13px; font-size: 14px; }
   .wanda-site .play-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px 12px; padding: 10px 0 0; }
@@ -107,8 +113,8 @@
 @media (max-width: 360px) {
   .wanda-site .play-menu { padding: 13px; }
   .wanda-site .wanda-tray { grid-template-columns: minmax(0, 1fr) 77px; gap: 9px 10px; }
-  .wanda-site .wanda-welcome h2 { font-size: 21px; }
-  .wanda-site .wanda-welcome p { font-size: 11px; }
+  .wanda-site .wanda-welcome h2.wanda-speech-bubble { font-size: 19px; letter-spacing: -.5px; }
+  .wanda-site .wanda-tray .wanda-invitation { font-size: 11px; }
   .wanda-site .wanda-tray .tray-portrait { width: 77px; }
   .wanda-site .play-board .scene-thumbnails { gap: 5px; }
   .wanda-site .play-board .scene-thumb span { font-size: 8px; }
