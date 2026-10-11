@@ -1,6 +1,6 @@
 /* Grover search over the scene's regions: the last step of the project's
 pipeline. Two oracles:
-  list      (the demos') every region is scored first, classically; the
+  list      (the site's) every region is scored first, classically; the
             regions above the threshold are marked. Once that list exists the
             answer is already known, so this shows how amplification behaves,
             never a speed-up.
@@ -9,13 +9,14 @@ pipeline. Two oracles:
             classifier is then uncomputed (quantum/coherent.js). This is the
             setting where Grover could matter - and an uncertain classifier
             visibly degrades it.
-Uses the demos' Grover simulator (bus-search-lab/dist/quantum.js) for the
-list oracle. Ground truth is looked at only after measuring, as in the demos.
+Uses the Where's Wanda site's Grover simulator (waldo-search-lab/dist/
+quantum.js) for the
+list oracle. Ground truth is looked at only after measuring, as on the site.
 ==============================================================================*/
 
 import * as d3 from "d3";
 import {simulateGrover, recommendIterations, sample, bitstring}
-    from "../../bus-search-lab/dist/quantum.js";
+    from "../../waldo-search-lab/dist/quantum.js";
 import {coherentAmplification, recommendedRounds}
     from "./quantum/coherent.js";
 
@@ -40,9 +41,16 @@ export interface SearchContext {
   regions(): number;
   /** Regions the target really overlaps; read only after a measurement. */
   truth(): Set<number>;
+  /** The target, as used in sentences ("Wanda"). */
   target(): string;
   /** Show the measured region on the scene (null clears it). */
   showMeasured(region: number | null, verdict: string): void;
+  /**
+   * Show one round of a running search on the scene: every region's chance
+   * of being measured (null clears it).
+   */
+  showRound?(probabilities: ArrayLike<number> | null, round: number,
+      rounds: number): void;
   /** True in the guided (plain-language) view. */
   plain(): boolean;
   coherent(): CoherentOracle;
@@ -59,6 +67,18 @@ const GROVER_PLAIN = "A quantum search algorithm. When the check for 'is " +
     "the square root of N checks instead of N. Here every square was " +
     "already scored one by one, so this step shows how the search behaves, " +
     "not a speed-up.";
+
+/**
+ * Where Grover's advantage over classical search lies, stated for this run:
+ * real when the check runs on quantum hardware, not realized here because
+ * every square was scored first.
+ */
+const ADVANTAGE = (N: number, rounds: number) =>
+    `<span class="advantage"><b>Quantum advantage:</b> Grover needs about ` +
+    `√N checks instead of N, here ${rounds} rounds for ${N} squares, when ` +
+    "the check itself runs on a quantum computer; this demo scores every " +
+    "square first on a classical simulator, so it shows the speed-up rather " +
+    "than achieving it.</span>";
 
 type Oracle = "list" | "coherent";
 
@@ -84,7 +104,7 @@ export class SearchPanel {
         this.clear();
         this.refresh();
       })
-      .html("<option value='list'>List: regions scored first (demos)" +
+      .html("<option value='list'>List: regions scored first (the site)" +
           "</option><option value='coherent'>Coherent: classifier inside " +
           "the search</option>");
     let row = panel.append("div").attr("class", "search-row");
@@ -276,9 +296,30 @@ export class SearchPanel {
     this.measured = null;
     this.ctx.showMeasured(null, "");
     let reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let banner = d3.select("#search-banner");
+    let markedChance = (k: number) => coherent ? 0 :
+        marked.reduce((t, i) => t + history[k][i], 0);
+    let wait = (ms: number) => new Promise(r => setTimeout(r, ms));
     for (let k = 0; k <= rounds && !reduced; k++) {
       this.render(k, history);
-      await new Promise(r => setTimeout(r, 180));
+      if (this.ctx.showRound) {
+        this.ctx.showRound(history[k], k, rounds);
+      }
+      banner.attr("class", "searching").html(coherent ?
+          `<b>Searching…</b> round ${k} of ${rounds}.` :
+          `<b>Searching…</b> round ${k} of ${rounds}: the ${marked.length} ` +
+          `marked square${marked.length === 1 ? "" : "s"} now hold ` +
+          `<b>${(100 * markedChance(k)).toFixed(1)}%</b> of the chance ` +
+          `(${(100 * markedChance(0)).toFixed(2)}% at the start).`);
+      // About 4 s in all: many rounds (64 x 64 addresses) step faster.
+      await wait(Math.min(180, 4000 / Math.max(1, rounds)));
+      if (token !== this.runToken) {
+        return;
+      }
+    }
+    if (!reduced) {
+      banner.html("<b>Measuring…</b> the register collapses to one square.");
+      await wait(600);
       if (token !== this.runToken) {
         return;
       }
@@ -301,19 +342,20 @@ export class SearchPanel {
         `search-result ${hit ? "good" : "bad"}`).html(
         `Measured region ${this.measured} ` +
         `|${bitstring(this.measured, Math.log2(N))}⟩: ` + (hit ?
-            `<b>found the ${what}</b>.` : coherent ?
-            `<b>not the ${what}</b>.` : isMarked ?
-            `a <b>false positive</b>: the QNN marked it, but there is no ` +
-            `${what} there. Grover amplifies the classifier's mistakes too.` :
+            `<b>found ${what}</b>.` : coherent ?
+            `<b>not ${what}</b>.` : isMarked ?
+            `a <b>false positive</b>: the QNN marked it, but ` +
+            `${what} is not there. Grover amplifies the classifier's mistakes too.` :
             `an <b>unmarked</b> region; measurement is probabilistic.`) +
-        ` True-target probability was ${(100 * targetMass).toFixed(1)}%.`);
+        ` True-target probability was ${(100 * targetMass).toFixed(1)}%. ` +
+        ADVANTAGE(N, rounds));
     d3.select("#search-banner").attr("class", hit ? "good" : "bad").html(
-        hit ? `<b>✓ Found the ${what}</b> in square ${this.measured}.` :
-        isMarked && !coherent ? `<b>✗ No ${what} in square ` +
-            `${this.measured}.</b> The circuit marked it by mistake, and the ` +
+        (hit ? `<b>✓ Found ${what}</b> in square ${this.measured}.` :
+        isMarked && !coherent ? `<b>✗ Square ${this.measured} does not hold ` +
+            `${what}.</b> The circuit marked it by mistake, and the ` +
             "search trusts the marks." :
-        `<b>✗ Missed:</b> square ${this.measured} has no ${what}. ` +
-            "Searches are random; try again.");
+        `<b>✗ Missed:</b> square ${this.measured} does not hold ${what}. ` +
+            "Searches are random; try again.") + " " + ADVANTAGE(N, rounds));
     this.ctx.showMeasured(this.measured, verdict);
     this.render(rounds, history);
     if (this.ctx.onSearched) {

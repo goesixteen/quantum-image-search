@@ -2,7 +2,7 @@
  * Statevector simulator for the QNN playground: gates, measurement, gradients.
  * Plain ES module with no dependencies so it runs in the browser bundle, in
  * `node --test`, and in any bare JS engine. Qubit 0 is the least significant
- * basis bit, matching ../../../bus-search-lab/dist/qnn.js.
+ * basis bit, matching ../../../waldo-search-lab/dist/qnn.js.
  *
  * A circuit is an ordered op list on `nQubits` qubits, starting from |0...0>:
  *   {type: 'rx'|'ry'|'rz', target, control, terms}  rotation; angle = sum over

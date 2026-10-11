@@ -83,12 +83,13 @@ export class State {
 
   private static PROPS: Property[] = [
     {name: "mode", type: Type.STRING},
-    {name: "scene", type: Type.STRING},
     {name: "grid", type: Type.NUMBER},
     {name: "target", type: Type.NUMBER},
     {name: "jitterX", type: Type.NUMBER},
     {name: "jitterY", type: Type.NUMBER},
     {name: "probe", type: Type.NUMBER},
+    {name: "background", type: Type.STRING},
+    {name: "height", type: Type.NUMBER},
     {name: "threshold", type: Type.NUMBER},
     {name: "off", type: Type.ARRAY_STRING},
     {name: "entangler", type: Type.OBJECT, keyMap: entanglers},
@@ -108,19 +109,23 @@ export class State {
   [key: string]: any;
   /** "guided" (simple, step by step) or "explorer" (every detail). */
   mode = "guided";
-  /** Which image-search scene: "bus" or "crowd". */
-  scene = "bus";
-  /** Regions per side of the scene grid (4 or 8). */
-  grid = 8;
-  /** Region holding the target; -1 = removed. */
-  target = 27;
+  /** Regions per side of the address grid (null = the scene's default). */
+  grid: number = null;
+  /** Region holding the target; -1 = removed (null = the site's default). */
+  target: number = null;
   /** Target offset from its region's centre, in region widths (-0.4..0.4). */
   jitterX = 0;
   jitterY = 0;
   /** Region whose classifier state the quantum views show. */
-  probe = 27;
-  /** Score at or above which a region is marked for the Grover oracle. */
-  threshold = 0.5;
+  probe: number = null;
+  /** Wanda scene: catalog background id and supplied target height (px). */
+  background: string = null;
+  height: number = null;
+  /**
+   * Score at or above which a region is marked for the Grover oracle
+   * (null = the site model's threshold).
+   */
+  threshold: number = null;
   /** Feature names switched off (their encoding angle becomes 0). */
   off: string[] = [];
   learningRate = 0.1;

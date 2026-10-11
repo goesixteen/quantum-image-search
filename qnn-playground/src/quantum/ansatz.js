@@ -1,6 +1,6 @@
 /**
- * Builds the image-search classifier circuit used by the bus and crowd demos
- * (../../../bus-search-lab/dist/qnn.js, ../../../waldo-search-lab/dist/qnn.js).
+ * Builds the image-search classifier circuit of the Where's Wanda site
+ * (../../../waldo-search-lab/dist/qnn.js).
  *
  * 8 pixel features f_0..f_7 in [0, 1] drive 4 qubits. For each layer
  * l = 1..L (inputs re-uploaded every layer, or only in layer 1):
@@ -23,6 +23,19 @@ export const ENTANGLERS = ['cnot', 'cry', 'none'];
 export const READOUTS = ['project', 'z0'];
 /** The demos' observables, in the order of their `readout` weights. */
 export const PROJECT_OBSERVABLES = [0b0001, 0b0010, 0b0100, 0b1000, 0b0011, 0b1100, 0b1111];
+
+/**
+ * The hybrid readout's Z-strings for any register, in the demos' pattern:
+ * every single Z, neighbouring pairs (Z0Z1, Z2Z3, ...) and the full parity.
+ * On 4 qubits this is exactly PROJECT_OBSERVABLES; extra qubits keep the
+ * correlations instead of dropping to single-qubit values only.
+ */
+export function projectObservables(qubits) {
+  const out = Array.from({ length: qubits }, (_, q) => 1 << q);
+  for (let q = 0; q + 1 < qubits; q += 2) out.push((1 << q) | (1 << (q + 1)));
+  if (qubits > 2) out.push((1 << qubits) - 1);
+  return out;
+}
 
 /** Ordered (control, target) pairs of the entangling ring on n qubits. */
 export function ringPairs(n) {
@@ -80,8 +93,7 @@ export function compileNetwork({ numFeatures, qubits, layers, entangler, reuploa
       }
     }
   }
-  const observables = readout === 'project' && qubits === 4 ? PROJECT_OBSERVABLES :
-    readout === 'project' ? Array.from({ length: qubits }, (_, q) => 1 << q) : [0b1];
+  const observables = readout === 'project' ? projectObservables(qubits) : [0b1];
   const circuit = { nQubits: qubits, nParams: params.length, ops, observables };
   return { circuit: validateCircuit(circuit), params, encodings, fixedLinks };
 }

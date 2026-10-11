@@ -6,8 +6,7 @@ import {
   entanglement, hermitianEigenvalues, sampleCounts, sampleObservables, deadParameters,
 } from '../src/quantum/circuit.js';
 import { compileNetwork, ENTANGLERS, PROJECT_OBSERVABLES } from '../src/quantum/ansatz.js';
-import * as busQnn from '../../bus-search-lab/dist/qnn.js';
-import * as crowdQnn from '../../waldo-search-lab/dist/qnn.js';
+import * as wandaQnn from '../../waldo-search-lab/dist/qnn.js';
 
 const close = (a, b, tol = 1e-9) => assert.ok(Math.abs(a - b) <= tol, `${a} vs ${b}`);
 const rot = (type, target, param, control = -1) => ({ type, target, control, terms: [{ param, input: -1 }] });
@@ -36,7 +35,7 @@ test('fixed encoding terms: angle = scale * feature, no parameter', () => {
 });
 
 test('parity: same 7 observables as the demos for their trained weights', () => {
-  for (const [name, lab, file] of [['bus', busQnn, '../../bus-search-lab/dist/model/model.json'], ['crowd', crowdQnn, '../../waldo-search-lab/dist/model/model.json']]) {
+  for (const [name, lab, file] of [['wanda', wandaQnn, '../../waldo-search-lab/dist/model/wanda-qnn.json']]) {
     const model = JSON.parse(readFileSync(new URL(file, import.meta.url)));
     const { circuit } = compileNetwork({ numFeatures: 8, qubits: 4, layers: model.layers, entangler: 'cnot', reupload: true, readout: 'project' });
     assert.equal(circuit.nParams, model.theta.length, name);
@@ -130,7 +129,7 @@ test('dead parameters match the demos\' own audit', () => {
 
 test('coherent amplification: a confident classifier gives exactly Grover', async () => {
   const { coherentAmplification } = await import('../src/quantum/coherent.js');
-  const { simulateGrover } = await import('../../bus-search-lab/dist/quantum.js');
+  const { simulateGrover } = await import('../../waldo-search-lab/dist/quantum.js');
   const { applyCircuit } = await import('../src/quantum/circuit.js');
   // 16 regions, a 1-qubit "classifier" that flips its qubit (rejects) for
   // unmarked regions and leaves |0> (accepts) for marked ones.
@@ -160,5 +159,16 @@ test('coherent amplification: an uncertain classifier degrades the search', asyn
     const res = coherentAmplification({ N: 16, D: 2, rounds: 3, accept: a => (a & 1) === 0,
       applyBlock: (i, re, im, inv) => applyCircuit(c, [t * (i % 3)], [], re, im, inv) });
     close(res.history[3].probabilities.reduce((x, y) => x + y, 0), 1, 1e-12);
+  }
+});
+
+test('hybrid readout keeps the demos\' pattern on every register size', async () => {
+  const { projectObservables } = await import('../src/quantum/ansatz.js');
+  assert.deepEqual(projectObservables(4), PROJECT_OBSERVABLES);
+  assert.deepEqual(projectObservables(5), [1, 2, 4, 8, 16, 0b11, 0b1100, 0b11111]);
+  assert.deepEqual(projectObservables(6), [1, 2, 4, 8, 16, 32, 0b11, 0b1100, 0b110000, 0b111111]);
+  for (const q of [5, 6]) {
+    const { circuit } = compileNetwork({ numFeatures: 8, qubits: q, layers: 2, entangler: 'cnot', reupload: true, readout: 'project' });
+    assert.ok(circuit.observables.some(m => (m & (m - 1)) !== 0), `${q} qubits keep correlations`);
   }
 });

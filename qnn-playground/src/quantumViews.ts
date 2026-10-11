@@ -220,8 +220,8 @@ export class QuantumViews {
         `<b>Readout</b> for ${this.regionLabel()}: measure all ` +
         `${network[1].length} qubits, estimate ${ro.labels.length} ` +
         "Z-string averages, then a <b>classical</b> sigmoid " +
-        (ro.labels.length === 7 ? "(the demos' hybrid model)." :
-            "(the demos' hybrid model uses 7 on 4 qubits).") :
+        (ro.labels.length === 7 ? "(the Wanda site's hybrid model)." :
+            "(the Wanda site's model uses 7 on 4 qubits).") :
         `<b>Readout</b> for ${this.regionLabel()}: measure qubit 0 only; ` +
         "the score is (1 + ⟨Z₀⟩) / 2, with no classical layer.");
     let rows = ro.labels.map((label, k) => ({label, v: obs[k],
