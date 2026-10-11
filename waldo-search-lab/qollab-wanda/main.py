@@ -40,7 +40,6 @@ Design constraints
 * **Labels are used only for grading.** Ground-truth labels in ``scene.json``
   are read only after scoring, oracle construction and sampling.
 """
-from __future__ import annotations
 
 import argparse
 import json
