@@ -93,7 +93,7 @@
   },
   "oracleConstruction": "local Qiskit QNN expectations + classical sigmoid/threshold; compiled phase-flip oracle on fixture rows",
   "scope": "First16 fixed-order reserved test windows from multiple example scenes. Grover addresses index this fixture table, not one CAPTCHA image. Threshold-only compilation; cross-scene NMS is inapplicable. Numerical circuit companion, not whole-scene accuracy or quantum-advantage evidence.",
-  "createdAtUtc": "2026-10-11T21:15:47.807471+00:00",
+  "createdAtUtc": "2026-10-11T21:52:12.927585+00:00",
   "qiskitVersion": "2.5.2",
   "numpyVersion": "2.5.4",
   "testsPassed": 12,
@@ -137,6 +137,6 @@
     "test_qiskit.py": "9cff68b40476285d49496e759d839c86f46485e98994221d2d21983189aeecf0",
     "validate_local.py": "a21014ab65247f539cad92b665c09af90a1415994b2212e744a18c5a837a906c",
     "prepare_package.py": "a5bbb8206eca3bf33dee05a478a91fdbc74f6e646faf85441481e197b9d7ec5c",
-    "requirements.txt": "f267371b3ae710bcc7816eb0b9f410fb44073489c3d23e98e835f518c52ad165"
+    "requirements.txt": "644264957011b4d903c49c5c370f839e2a79c0de1798e17265b01e60d175fcae"
   }
 }

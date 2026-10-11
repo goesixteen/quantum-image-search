@@ -1,4 +1,4 @@
-# Quantum Vision: Where's Wanda? — Quantum Unlocked
+# QuantumVision: Where's Wanda? — Quantum Unlocked
 
 The heading asks “Can you find Wanda using quantum crowd search?” Ten original
 clip-art people stand in compact groups on the top-right edges of the map frame,

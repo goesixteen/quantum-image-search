@@ -1,7 +1,8 @@
-# Quantum Vision: Where's Wanda?
+# QuantumVision: Where's Wanda?
 
-**A trained quantum neural network decides where Wanda might be, and Grover's
-algorithm amplifies those places before a single measurement picks one.**
+**A quantum crowd searcher. A trained quantum neural network decides where
+Wanda might be in a crowd, and Grover's algorithm amplifies those places
+before a single measurement picks one.**
 Built with Qiskit; runs on Qollab's free simulators, local and IonQ.
 
 This README is the source for the project's Qollab.xyz page. It covers what
@@ -96,7 +97,7 @@ How the program fits Qollab's runtime:
 ### Locally
 
 ```sh
-python -m pip install -r requirements.txt   # qiskit>=2.5.2,<3, numpy>=2
+python -m pip install -r requirements.txt   # qiskit 2.x, numpy (tested with Qiskit 2.5.2)
 python main.py                              # recommended Grover rounds, 2048 shots
 python main.py --shots 4096 --iterations 0  # no amplification: see the uniform baseline
 python main.py --iterations 3               # overshoot: amplification rotates past the peak
@@ -179,7 +180,7 @@ repository under `waldo-search-lab/model/`.
 ## Companion interactive website
 
 The parent repository (`waldo-search-lab/`) contains the interactive
-**Quantum Vision: Where's Wanda?** page. Visitors place Wanda in a crowd, watch
+**QuantumVision: Where's Wanda?** page. Visitors place Wanda in a crowd, watch
 the QNN score every region and see the Grover search animate round by round.
 It also includes a **QNN Playground**, modelled on the TensorFlow Neural
 Network Playground, for training the classifier live. The page is static HTML

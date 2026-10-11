@@ -61,7 +61,7 @@ Iteration 22 replaces the entire old under-the-hood section with the latest
 QNN Playground inline on the same page, styled red/light. Entire former under-the-hood interface replaced inline by the latest Git QNN playground, with red accents and light panels; accepted picture-puzzle top styling and compact 4/3/3 clip-art groups preserved.
 
 The accepted top styling remains: warm paper texture, illustrated scene cards, painted map frame and soft menu shadows. Ten original clip-art people appear once each in static top-right edge clusters: map frame four, Wanda card three and Find button three. No people decorate the heading, world picker, sides, bottom or technical section. The five-scene empty welcome, speech bubble and hanging Wanda pickup remain.
-The requested heading **Quantum Vision: Where's Wanda?** and subheading
+The requested heading **QuantumVision: Where's Wanda?** and subheading
 **Can you find Wanda using quantum crowd search?** remain.
 
 Private source `ca6290523fb8d1c07b00e0491e42c2c037a3eb36`; deployment `appgdep_6acbfa0430248191809d2cfba2c4087d`, succeeded.
