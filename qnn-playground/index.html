@@ -1,0 +1,350 @@
+<!doctype html>
+<!-- Modified 2026 for the QNN playground: titles, meta and attribution, quantum controls and text,
+     hover card, accuracy; header, article and scroll button replaced by a compact strip;
+     regression and analytics removed. See NOTICE. -->
+<!-- Copyright 2016 Google Inc. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+==============================================================================-->
+<html>
+<head lang="en">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1024">
+  <meta name="keywords" content="quantum machine learning,quantum neural network,parameterized circuit">
+  <meta name="description" content="The quantum image search, as a playground: a QNN scores image regions and Grover search finds the target. Built on the TensorFlow Playground.">
+  <meta name="author" content="quantum-image-search team; based on the TensorFlow Playground by Daniel Smilkov and Shan Carter">
+  <title>A Quantum Neural Network Playground</title>
+  <link rel="stylesheet" href="bundle.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Material+Icons" rel="stylesheet" type="text/css">
+  <script src="lib.js"></script>
+</head>
+<body>
+
+  <!-- Top Controls -->
+  <div id="top-controls">
+    <div class="container l--page">
+      <div class="timeline-controls">
+        <button class="mdl-button mdl-js-button mdl-button--icon ui-resetButton" id="reset-button" title="Reset the network">
+          <i class="material-icons">replay</i>
+        </button>
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored ui-playButton" id="play-pause-button" title="Run/Pause">
+          <i class="material-icons">play_arrow</i>
+          <i class="material-icons">pause</i>
+        </button>
+        <button class="mdl-button mdl-js-button mdl-button--icon ui-stepButton" id="next-step-button" title="Step">
+          <i class="material-icons">skip_next</i>
+        </button>
+      </div>
+      <div class="control">
+        <span class="label">Epoch</span>
+        <span class="value" id="iter-number"></span>
+      </div>
+      <div class="control ui-learningRate">
+        <label for="learningRate">Learning rate</label>
+        <div class="select">
+          <select id="learningRate">
+            <option value="0.00001">0.00001</option>
+            <option value="0.0001">0.0001</option>
+            <option value="0.001">0.001</option>
+            <option value="0.003">0.003</option>
+            <option value="0.01">0.01</option>
+            <option value="0.03">0.03</option>
+            <option value="0.1">0.1</option>
+            <option value="0.3">0.3</option>
+            <option value="1">1</option>
+            <option value="3">3</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+      </div>
+      <div class="control ui-entangler">
+        <label for="entanglers">Entangler</label>
+        <div class="select">
+          <select id="entanglers">
+            <option value="cnot">CNOT ring</option>
+            <option value="cry">CRY ring (trainable)</option>
+            <option value="none">None</option>
+          </select>
+        </div>
+      </div>
+      <div class="control ui-shots">
+        <label for="shots">Measurement shots</label>
+        <div class="select">
+          <select id="shots">
+            <option value="0">&infin; (exact)</option>
+            <option value="1000">1000</option>
+            <option value="100">100</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+      </div>
+      <div class="control ui-reupload">
+        <label for="reupload">Data re-uploading</label>
+        <div class="select">
+          <select id="reupload">
+            <option value="true">Every layer</option>
+            <option value="false">First layer only</option>
+          </select>
+        </div>
+      </div>
+      <div class="control ui-readout">
+        <label for="readouts">Readout</label>
+        <div class="select">
+          <select id="readouts">
+            <option value="project">Hybrid: 7 &lang;Z&rang;s &rarr; sigmoid</option>
+            <option value="z0">Quantum only: &lang;Z&#8320;&rang;</option>
+          </select>
+        </div>
+      </div>
+      <div class="control ui-mode">
+        <button class="mode-toggle" id="mode-toggle"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Guided steps (simple view) -->
+  <div id="guide" class="l--page"></div>
+
+  <!-- Main Part -->
+  <div id="main-part" class="l--page">
+
+    <!--  Data Column-->
+    <div class="column data">
+      <h4>
+        <span>Data</span>
+      </h4>
+      <div class="ui-dataset">
+        <p>Which scene do you want to search?</p>
+        <div class="dataset-list">
+          <div class="dataset" title="School-bus CAPTCHA">
+            <canvas class="data-thumbnail" data-scene="bus"></canvas>
+          </div>
+          <div class="dataset" title="Crowd explorer">
+            <canvas class="data-thumbnail" data-scene="crowd"></canvas>
+          </div>
+        </div>
+        <p class="scene-name"></p>
+        <button class="basic-button" id="load-weights" title="Use the exact weights the demo site uses">
+          Load demo weights
+        </button>
+        <p class="patch-caption">Training patches <span class="patch-key"><b class="pos">&#10003;</b> target &nbsp;<b class="neg">&#10007;</b> not</span></p>
+        <div id="patch-strip"></div>
+      </div>
+      <div>
+        <div class="ui-percTrainData">
+          <label for="percTrainData">Ratio of training to test data:&nbsp;&nbsp;<span class="value">XX</span>%</label>
+          <p class="slider">
+            <input class="mdl-slider mdl-js-slider" type="range" id="percTrainData" min="10" max="90" step="10">
+          </p>
+        </div>
+        <div class="ui-noise">
+          <label for="noise">Noise:&nbsp;&nbsp;<span class="value">XX</span></label>
+          <p class="slider">
+            <input class="mdl-slider mdl-js-slider" type="range" id="noise" min="0" max="50" step="5">
+          </p>
+        </div>
+        <div class="ui-batchSize">
+          <label for="batchSize">Batch size:&nbsp;&nbsp;<span class="value">XX</span></label>
+          <p class="slider">
+            <input class="mdl-slider mdl-js-slider" type="range" id="batchSize" min="1" max="30" step="1">
+          </p>
+        </div>
+          <button class="basic-button" id="data-regen-button" title="Regenerate data">
+            Regenerate
+          </button>
+      </div>
+    </div>
+
+    <!-- Features Column -->
+    <div class="column features">
+      <h4>Features</h4>
+      <p>Which pixel features do you feed in?</p>
+      <div id="network">
+        <svg id="svg" width="510" height="450">
+          <defs>
+            <marker id="markerArrow" markerWidth="7" markerHeight="13" refX="1" refY="6" orient="auto" markerUnits="userSpaceOnUse">
+              <path d="M2,11 L7,6 L2,2" />
+            </marker>
+          </defs>
+        </svg>
+        <!-- Hover card -->
+        <div id="hovercard">
+          <div class="hint"></div>
+          <div class="gate"></div>
+        </div>
+        <div class="callout thumbnail">
+          <svg viewBox="0 0 30 30">
+            <defs>
+              <marker id="arrow" markerWidth="5" markerHeight="5" refx="5" refy="2.5" orient="auto" markerUnits="userSpaceOnUse">
+                <path d="M0,0 L5,2.5 L0,5 z"/>
+              </marker>
+            </defs>
+            <path d="M12,30C5,20 2,15 12,0" marker-end="url(#arrow)">
+          </svg>
+          <div class="label">
+            This box is &lang;Z&rang; of one <b>qubit</b> for every region of the scene; the sphere below is its state for the probe region. Hover to enlarge; click to edit.
+          </div>
+        </div>
+        <div class="callout weights">
+          <svg viewBox="0 0 30 30">
+            <defs>
+              <marker id="arrow" markerWidth="5" markerHeight="5" refx="5" refy="2.5" orient="auto" markerUnits="userSpaceOnUse">
+                <path d="M0,0 L5,2.5 L0,5 z"/>
+              </marker>
+            </defs>
+            <path d="M12,30C5,20 2,15 12,0" marker-end="url(#arrow)">
+          </svg>
+          <div class="label">
+            Each feature sets a fixed <b>rotation angle</b>, &pi; &times; its value, on one qubit.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hidden Layers Column -->
+    <div class="column hidden-layers">
+      <h4>
+        <div class="ui-numHiddenLayers">
+          <button id="add-layers" class="mdl-button mdl-js-button mdl-button--icon">
+            <i class="material-icons">add</i>
+          </button>
+          <button id="remove-layers" class="mdl-button mdl-js-button mdl-button--icon">
+            <i class="material-icons">remove</i>
+          </button>
+        </div>
+        <span id="num-layers"></span>
+        <span id="layers-label"></span>
+      </h4>
+      <div class="bracket"></div>
+    </div>
+
+    <!-- Output Column -->
+    <div class="column output">
+      <h4>Output</h4>
+      <div class="metrics">
+        <div class="output-stats loss ui-percTrainData">
+          <span>Test loss</span>
+          <div class="value" id="loss-test"></div>
+        </div>
+        <div class="output-stats loss train">
+          <span>Training loss</span>
+          <div class="value" id="loss-train"></div>
+        </div>
+        <div class="output-stats train">
+          <span id="accuracy-label" title="Training / test accuracy">Accuracy</span>
+          <div class="value" id="accuracy"></div>
+        </div>
+        <div class="output-stats train baseline-row" title="Logistic regression on the same 8 features and patches (the demos' classical baseline)">
+          <span>Classical baseline</span>
+          <div class="value" id="baseline"></div>
+        </div>
+        <div id="linechart"></div>
+      </div>
+      <div id="scene-view">
+        <canvas id="scene-canvas" width="512" height="512" tabindex="0"
+            aria-label="Scene. Each region is scored by the quantum classifier. Click a region, or use the arrow keys, to inspect its quantum state."></canvas>
+      </div>
+      <div id="square-info" aria-live="polite"></div>
+      <div id="scene-legend"></div>
+      <div id="compare-panel">
+        <b>Does the quantum part matter?</b> Train circuits with and without entanglement on the same patches and compare them with a classical baseline.
+        <button class="basic-button small" id="compare-run">Compare (about 5 s)</button>
+        <div id="compare-result"></div>
+      </div>
+      <div id="search-banner" aria-live="polite"></div>
+      <div class="scene-controls">
+        <label for="threshold">Threshold <span class="value"></span></label>
+        <input type="range" id="threshold" min="0.05" max="0.95" step="0.01">
+        <select id="grid-size" title="Regions per side">
+          <option value="4">4 &times; 4 squares</option>
+          <option value="8">8 &times; 8 squares</option>
+        </select>
+        <button class="basic-button small" id="move-target">Move target</button>
+        <button class="basic-button small" id="random-spot" title="Put the target anywhere, possibly across a border">Random spot</button>
+        <button class="basic-button small" id="toggle-target">Remove target</button>
+      </div>
+      <div style="float:left;margin-top:20px">
+        <div style="display:flex; align-items:center;">
+
+          <!-- Gradient color scale -->
+          <div class="label" id="colormap-label" style="width:105px; margin-right: 10px">
+            Colors: &lang;Z&rang; &minus;1&hellip;1; scores and features 0&hellip;1 (blue = high); angles &minus;&pi;&hellip;&pi;.
+          </div>
+          <svg width="150" height="30" id="colormap">
+            <defs>
+              <linearGradient id="gradient" x1="0%" y1="100%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f59322" stop-opacity="1"></stop>
+                <stop offset="50%" stop-color="#e8eaeb" stop-opacity="1"></stop>
+                <stop offset="100%" stop-color="#0877bd" stop-opacity="1"></stop>
+              </linearGradient>
+            </defs>
+            <g class="core" transform="translate(3, 0)">
+              <rect width="144" height="10" style="fill: url('#gradient');"></rect>
+            </g>
+          </svg>
+        </div>
+        <br/>
+        <div style="display:flex;">
+          <label class="ui-discretize mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="discretize">
+            <input type="checkbox" id="discretize" class="mdl-checkbox__input" checked>
+            <span class="mdl-checkbox__label label">Show only marked squares</span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Search, readout, state and comparison: one row of cards -->
+  <section id="panels" class="panels l--page"></section>
+
+  <!-- About: one compact strip instead of the template's long article -->
+  <section id="article-text" class="about l--page">
+    <div class="about-card">
+      <h3>How it works</h3>
+      <p>Each square's 8 pixel features become fixed RY/RZ angles on 4 qubits (the demos’ register; use + / − above layer 1 for up to 6), followed by learned rotations and a CNOT ring, in every layer. The measured averages give a score. Squares above the threshold become the oracle of Grover's search. The artwork, features, circuit and (with <b>Load demo weights</b>) the trained weights are the bus and crowd demos' own; scores match them to ~10<sup>&minus;15</sup>.</p>
+    </div>
+    <div class="about-card">
+      <h3>Reading the picture</h3>
+      <ul>
+        <li><b>Boxes</b>: one qubit's value for every square (blue +1 / orange &minus;1).</li>
+        <li><b>Scene</b>: blue = score, dashed = marked, frame = the square you're inspecting.</li>
+        <li><b>Spheres, arcs</b> (details view): the qubits for that square; solid arc = entangled pair.</li>
+        <li><b>Faded</b> gates can't affect the result.</li>
+      </ul>
+    </div>
+    <div class="about-card">
+      <h3>Honest scorecard</h3>
+      <ul>
+        <li>All squares are scored first, so the default search shows how Grover behaves, not a speed-up. The <b>coherent oracle</b> (details view) runs the classifier inside the search.</li>
+        <li>A classical baseline matches the circuit on these tasks; <b>Compare</b> shows it.</li>
+        <li>Accuracy is on new patches from the same artwork. Everything is simulated.</li>
+      </ul>
+    </div>
+    <div class="about-card">
+      <h3>Credits</h3>
+      <p>A fork of the <a href="https://github.com/tensorflow/playground">TensorFlow Playground</a> by Daniel Smilkov and Shan Carter (Apache&nbsp;2.0), with a quantum engine and image-search pipeline by the quantum-image-search team. Background: Schuld &amp; Petruccione, <a href="https://link.springer.com/book/10.1007/978-3-030-83098-4"><i>Machine Learning with Quantum Computers</i></a>; P&eacute;rez-Salinas et al., <a href="https://quantum-journal.org/papers/q-2020-02-06-226/">data re-uploading</a>.</p>
+      <details class="lesson">
+        <summary>Tailor the controls for a lesson</summary>
+        <p>Untick controls to hide them, then save <a class="hide-controls-link" href="#">this link</a>.</p>
+        <div class="hide-controls"></div>
+      </details>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <script src="bundle.js"></script>
+
+</body>
+</html>
