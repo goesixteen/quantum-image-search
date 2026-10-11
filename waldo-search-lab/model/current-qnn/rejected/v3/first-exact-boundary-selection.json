@@ -1,0 +1,278 @@
+{
+  "primary": "complete validation-scene hits under unchanged false-point budget",
+  "tieBreak": "lower validation source-weighted BCE, smaller seed, earlier step",
+  "candidates": [
+    {
+      "seed": 202610107,
+      "step": 1000,
+      "weightedBCE": 0.19906956629630615,
+      "sceneValidation": {
+        "targetScenes": 150,
+        "absenceScenes": 21,
+        "completeHits": 51,
+        "completeHitRate": 0.34,
+        "targetFalsePointScenes": 0,
+        "targetFalsePointRate": 0.0,
+        "targetEmptyOracles": 99,
+        "targetCoverage": 0.34,
+        "absenceFalsePointScenes": 0,
+        "absenceAcceptedPoints": 0,
+        "threshold": 0.9959609921689017,
+        "bySize": {
+          "24": {
+            "n": 17,
+            "completeHits": 2,
+            "anyFalse": 0,
+            "emptyOracles": 15
+          },
+          "52": {
+            "n": 36,
+            "completeHits": 13,
+            "anyFalse": 0,
+            "emptyOracles": 23
+          },
+          "80": {
+            "n": 37,
+            "completeHits": 22,
+            "anyFalse": 0,
+            "emptyOracles": 15
+          },
+          "112": {
+            "n": 21,
+            "completeHits": 2,
+            "anyFalse": 0,
+            "emptyOracles": 19
+          }
+        },
+        "feasible": true
+      }
+    },
+    {
+      "seed": 202610107,
+      "step": 2000,
+      "weightedBCE": 0.18652895764843735,
+      "sceneValidation": {
+        "targetScenes": 150,
+        "absenceScenes": 21,
+        "completeHits": 44,
+        "completeHitRate": 0.29333333333333333,
+        "targetFalsePointScenes": 0,
+        "targetFalsePointRate": 0.0,
+        "targetEmptyOracles": 106,
+        "targetCoverage": 0.29333333333333333,
+        "absenceFalsePointScenes": 0,
+        "absenceAcceptedPoints": 0,
+        "threshold": 0.9981180468057599,
+        "bySize": {
+          "24": {
+            "n": 17,
+            "completeHits": 1,
+            "anyFalse": 0,
+            "emptyOracles": 16
+          },
+          "52": {
+            "n": 36,
+            "completeHits": 11,
+            "anyFalse": 0,
+            "emptyOracles": 25
+          },
+          "80": {
+            "n": 37,
+            "completeHits": 22,
+            "anyFalse": 0,
+            "emptyOracles": 15
+          },
+          "112": {
+            "n": 21,
+            "completeHits": 1,
+            "anyFalse": 0,
+            "emptyOracles": 20
+          }
+        },
+        "feasible": true
+      }
+    },
+    {
+      "seed": 202610109,
+      "step": 1000,
+      "weightedBCE": 0.1923833416518683,
+      "sceneValidation": {
+        "targetScenes": 150,
+        "absenceScenes": 21,
+        "completeHits": 94,
+        "completeHitRate": 0.6266666666666667,
+        "targetFalsePointScenes": 1,
+        "targetFalsePointRate": 0.006666666666666667,
+        "targetEmptyOracles": 55,
+        "targetCoverage": 0.6266666666666667,
+        "absenceFalsePointScenes": 0,
+        "absenceAcceptedPoints": 0,
+        "threshold": 0.9930373609761557,
+        "bySize": {
+          "24": {
+            "n": 17,
+            "completeHits": 14,
+            "anyFalse": 0,
+            "emptyOracles": 3
+          },
+          "52": {
+            "n": 36,
+            "completeHits": 23,
+            "anyFalse": 0,
+            "emptyOracles": 13
+          },
+          "80": {
+            "n": 37,
+            "completeHits": 25,
+            "anyFalse": 0,
+            "emptyOracles": 12
+          },
+          "112": {
+            "n": 21,
+            "completeHits": 10,
+            "anyFalse": 0,
+            "emptyOracles": 11
+          }
+        },
+        "feasible": true
+      }
+    },
+    {
+      "seed": 202610109,
+      "step": 2000,
+      "weightedBCE": 0.1878280357917408,
+      "sceneValidation": {
+        "targetScenes": 150,
+        "absenceScenes": 21,
+        "completeHits": 77,
+        "completeHitRate": 0.5133333333333333,
+        "targetFalsePointScenes": 1,
+        "targetFalsePointRate": 0.006666666666666667,
+        "targetEmptyOracles": 72,
+        "targetCoverage": 0.5133333333333333,
+        "absenceFalsePointScenes": 0,
+        "absenceAcceptedPoints": 0,
+        "threshold": 0.9981760889585399,
+        "bySize": {
+          "24": {
+            "n": 17,
+            "completeHits": 14,
+            "anyFalse": 0,
+            "emptyOracles": 3
+          },
+          "52": {
+            "n": 36,
+            "completeHits": 17,
+            "anyFalse": 1,
+            "emptyOracles": 18
+          },
+          "80": {
+            "n": 37,
+            "completeHits": 21,
+            "anyFalse": 0,
+            "emptyOracles": 16
+          },
+          "112": {
+            "n": 21,
+            "completeHits": 4,
+            "anyFalse": 0,
+            "emptyOracles": 17
+          }
+        },
+        "feasible": true
+      }
+    },
+    {
+      "seed": 202610110,
+      "step": 1000,
+      "weightedBCE": 0.21149160388666552,
+      "sceneValidation": {
+        "targetScenes": 150,
+        "absenceScenes": 21,
+        "completeHits": 72,
+        "completeHitRate": 0.48,
+        "targetFalsePointScenes": 1,
+        "targetFalsePointRate": 0.006666666666666667,
+        "targetEmptyOracles": 77,
+        "targetCoverage": 0.48,
+        "absenceFalsePointScenes": 0,
+        "absenceAcceptedPoints": 0,
+        "threshold": 0.9930710929585107,
+        "bySize": {
+          "24": {
+            "n": 17,
+            "completeHits": 3,
+            "anyFalse": 0,
+            "emptyOracles": 14
+          },
+          "52": {
+            "n": 36,
+            "completeHits": 18,
+            "anyFalse": 1,
+            "emptyOracles": 17
+          },
+          "80": {
+            "n": 37,
+            "completeHits": 24,
+            "anyFalse": 0,
+            "emptyOracles": 13
+          },
+          "112": {
+            "n": 21,
+            "completeHits": 8,
+            "anyFalse": 0,
+            "emptyOracles": 13
+          }
+        },
+        "feasible": true
+      }
+    },
+    {
+      "seed": 202610110,
+      "step": 2000,
+      "weightedBCE": 0.19898661308830207,
+      "sceneValidation": {
+        "targetScenes": 150,
+        "absenceScenes": 21,
+        "completeHits": 64,
+        "completeHitRate": 0.4266666666666667,
+        "targetFalsePointScenes": 1,
+        "targetFalsePointRate": 0.006666666666666667,
+        "targetEmptyOracles": 85,
+        "targetCoverage": 0.4266666666666667,
+        "absenceFalsePointScenes": 0,
+        "absenceAcceptedPoints": 0,
+        "threshold": 0.9963944224489641,
+        "bySize": {
+          "24": {
+            "n": 17,
+            "completeHits": 4,
+            "anyFalse": 0,
+            "emptyOracles": 13
+          },
+          "52": {
+            "n": 36,
+            "completeHits": 11,
+            "anyFalse": 0,
+            "emptyOracles": 25
+          },
+          "80": {
+            "n": 37,
+            "completeHits": 20,
+            "anyFalse": 0,
+            "emptyOracles": 17
+          },
+          "112": {
+            "n": 21,
+            "completeHits": 10,
+            "anyFalse": 0,
+            "emptyOracles": 11
+          }
+        },
+        "feasible": true
+      }
+    }
+  ],
+  "selectedSeed": 202610109,
+  "selectedStep": 1000
+}

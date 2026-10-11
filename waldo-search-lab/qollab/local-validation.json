@@ -1,0 +1,59 @@
+{
+  "status": "V3 diagnostic and frozen trained-checkpoint parity verified",
+  "createdAt": "2026-10-11T02:13:12.507867+00:00",
+  "featureVersion": "current-qnn-window-v3",
+  "qiskitVersion": "2.5.2",
+  "testsPassed": 9,
+  "testsSkipped": 0,
+  "trainedCheckpointPending": false,
+  "fixtureCandidates": 16,
+  "maxReadoutError": 7.216449660063518e-16,
+  "maxScoreError": 3.3306690738754696e-16,
+  "maxOracleMatrixError": 1.1116099371267112e-15,
+  "maxDiffuserMatrixError": 1.112220904202983e-15,
+  "trainedCheckpoint": {
+    "modelSHA256": "9c5a25af8a37eb8482f09e49631418e63c05c47d0317fd0a2a5ead9b6c63465a",
+    "heldoutFixtureSHA256": "c1cbfeb07ef9959efb6d10f761740d4c99d424263bc507650584569766182b28",
+    "maxReadoutErrorVsSavedNumPy": 1.4432899320127035e-15,
+    "maxScoreErrorVsSavedNumPy": 4.163336342344337e-16,
+    "maxDistributionErrorVsAnalyticGrover": 1.609823385706477e-15,
+    "threshold": 0.967190378886187,
+    "learnedMarkedIndices": [
+      1,
+      9,
+      10
+    ],
+    "iterations": 1,
+    "idealPredicateMass": 0.949218749999996,
+    "idealTrueLabelMass": 0.953124999999996,
+    "observedPredicateFraction": 0.951416015625,
+    "observedTrueLabelFraction": 0.954345703125,
+    "backendJobsSubmitted": 1,
+    "circuitsInJob": 1
+  },
+  "controlledDiagnosticSampling": {
+    "note": "Median threshold used ONLY for numerical sampling test; not trained threshold or performance evidence",
+    "backendJobs": 1,
+    "shots": 4096,
+    "marks": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      12,
+      15
+    ],
+    "idealPredicateMass": 0.5624999999999997,
+    "observedPredicateFraction": 0.571044921875
+  },
+  "sourceSHA256": {
+    "main.py": "0b9376e5ae05b8d124a964ea4da3eb89d711ecc8e3e9b28f05e4603ea2b530e1",
+    "diagnostic-model.json": "3803869950b7b30938f91ddcc9790f964ad6e7543a707e643b883a4e92045936",
+    "diagnostic-scene.json": "288fd88b601f18024d73490cc664ae1503061e40f82efa41658e92f545358c20",
+    "test_qiskit.py": "0b75a774e867869953414dbb9c11ce23f6b895c21683907f8dba7e8e9f61a1ac"
+  },
+  "scope": "Local Qiskit SDK only; no Qollab/IonQ run, uploads, API keys, test-set threshold tuning or advantage claim. Compiled hybrid oracle, not coherent QNN sigmoid threshold."
+}

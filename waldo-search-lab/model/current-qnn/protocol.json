@@ -1,0 +1,102 @@
+{
+  "version": 4,
+  "status": "Declared before v3b clean-front vector generation/fitting; mixed V3 checkpoint preserved and unpromoted; all reserved tests and independent audit unread.",
+  "featureVersion": "current-qnn-window-v3",
+  "scope": "Same three known scenes and same OpenMoji artwork; primary train/validation/test foreground is always front per new user scope. Prior mixed V3 validation is a secondary inspected diagnostic, not fresh evaluation.",
+  "inferenceInputs": [
+    "final composite RGB",
+    "candidate window center on fixed 64 by 64 lattice",
+    "supplied rendered target width and height"
+  ],
+  "forbiddenInferenceInputs": [
+    "clean background reference",
+    "target reference pixels",
+    "renderer true center",
+    "truth alpha",
+    "foreground masks",
+    "template score or gate"
+  ],
+  "scenes": [
+    "legacy",
+    "magic-arena",
+    "qualicity-queue"
+  ],
+  "targetHeightRange": [
+    24,
+    112
+  ],
+  "targetWidth": "Half-up rounded targetHeight times trimmed PNG aspect ratio; minimum one pixel",
+  "targetScenes": {
+    "train": 600,
+    "validation": 150,
+    "test": 250
+  },
+  "splitSeeds": {
+    "train": 202610104,
+    "validation": 202610105,
+    "test": 202610106
+  },
+  "centerPartition": "(floor(actualCenterX/8)+3*floor(actualCenterY/8)) modulo 10: train0..6, validation7, test8..9. Target centers are disjoint across partitions.",
+  "rendering": "Native Canvas trim alpha>16 and high-quality resize; same registered background/object bands; target manual zIndex1000 above every layer. Numeric RGB only enters features.",
+  "positiveConstruction": "Always-front target, alpha visibility1 relative to in-frame raster. Keep frame clipping as a separately reported stratum. Two positive windows within6.657px and six near negatives per draw. Disjoint center partitions and original seeds unchanged; auto-band retry sequence changes because draws no longer occlude.",
+  "negativeConstruction": "Nearby off-center windows at8..32px, background windows, entirely absent scenes, and explicit solid-red/blue-stripe decoys. Near-target windows are not relabeled positive outside6.657px. Fully hidden cases are negative where generated.",
+  "trainingAbsenceHeights": [
+    24,
+    36,
+    52,
+    80,
+    112
+  ],
+  "validationAbsenceHeights": [
+    24,
+    36,
+    52,
+    64,
+    80,
+    96,
+    112
+  ],
+  "learning": "Four-qubit exact differentiable statevector circuit; four data-reuploading layers,32 exported learned angle slots,7 Z-observable readouts,bias. Final4RZ slots fixed0;28angles+8readout slots optimized with Adam. Source-group BCE weights:positive.5,nearby/decoy.25,background.25. Add weight.25 mean softplus(1-positiveLogit+negativeLogit) over7200 pairs from the SAMEtraining image,2positive times6nearby windows per600 target scenes. Matched logistic uses identical rows,labels,weights,pairs,margin and pair-loss weight.",
+  "classifierThreshold": "Validation-only complete-scene selection:zero21absencefalse,at most1/150targetfalsepointscenes,max complete hits across all150. Stable adjacent-critical midpoints at least1e-12from boundaries. All-reject remains a failure and empty oracles count in denominator.",
+  "pipeline": "Fixed4096 learned windows; aggregate max QNN score into selected Grover addresses. Threshold learned scores, stable descending score/index order, suppress candidates at distance at mostmax(12px,0.35timesTargetWidth). No feature gate, template fallback, or postselection from ground truth.",
+  "matchedBaseline": "Logistic over exact same8vectors/labels/source weights/pairwise objective. DeclaredL2 values0,1e-5,.001,.01 (4candidates), selected by SAMEcomplete-scene criterion and safety budget; tie lower source-weighted validation BCE then smaller L2. Different search budgets/parameter counts are explicit; no quantum advantage claimed.",
+  "quantumContribution": "Record trained angle changes; compare frozen learned model against zero-quantum-angle ablation using identical readout and against matched logistic baseline. FinalRZ are inactive slots, not independent degrees of freedom.",
+  "parity": "Exact RGBA fixtures/features supplied to Python and browser JavaScript; compare feature vectors and trained statevector probabilities before any promotion. Independent renderer/browser evaluation follows frozen candidate.",
+  "limitations": "Known scale is supplied and explicitly encoded; fixed-pixel centroid alignment helps registration. Targets below20percent visible were excluded from positive construction; independent audit retains such failures. Same3background identities and sameOpenMoji target only; known-background negatives overlap composited evaluation pixels, target centers partition-disjoint. Curated foreground silhouettes approximate sourceobjects. No arbitrarytarget support, unknownscale estimation, unseen-background generalization, hardware timing or quantum speed advantage. Primary clean-front corpus addresses current user scope; layer occlusion remains optional and its older failures are retained.",
+  "featureRevision": "Continuous fixed-art palette features: red-white line projection with perpendicular Gaussian sigma35; blue/yellow/black RGB Gaussians sigma40. DC-removed shirt Fourier magnitude at period40/580 times supplied height; left/right cross-spectrum phase coherence; red-white balance; yellow head plus black annulus evidence; separated blue leg-lobe morphology; horizontal/vertical color centroids in fixed6px units; explicit supplied height. Correct nominal red y=-.147H,blue y=+.178H. These are declared classical style/geometry priors, not reference-image comparisons or acceptance gates.",
+  "v1Failure": "Exact validation frontier QNN and logistic completeHits0 under the unchanged false-point budget; held-out scene test and independent audit were not read.",
+  "windowGeometryV2": "24columns by48rows nearest-floor RGB sampling; W=max(targetWidth+16,ceil1.6width),H=targetHeight+16. Torso.18-.52H,lower.52-.98H. Yellowhead Gaussian fixed6px aroundy=-.44H. Horizontalred+bluecentroid fixed6px alignment; verticalred/blue centroids expected-.16H,+.25H. Colorpresence d/(d+.03); explicitheight(H-24)/88.",
+  "trainingNegativeCoverage": "Reuse EXACT51264 V2b mined/random background coordinates (89integer heights24..112 times3knownscenes times192windows) and freshly encode V3 vectors. Prior selection scanned all2868 train-partition lattice centers per scene/height; top64 by archivedV2QNN/logistic max score plus128random,seed202610108. No re-mining or selection on evaluation data. Foreground600 training scenes,centers,neighbor offsets and labels unchanged.",
+  "additionalOptimization": "Exactly3 starts202610107/202610109/202610110,1000Adam updates each; save500/1000(sixcheckpoints). Same scene constraint and tie breaks. No independent/test scoring before usablefreeze.",
+  "defaultRegression": "After stable selection,52px center(280,350) fullyvisible over3scenes plus3empty counterparts. Known training center regression only. No threshold change from outcomes; no special default-coordinate training rows.",
+  "selectionSearchBudget": {
+    "qnn": 6,
+    "logistic": 4,
+    "validationTargetScenes": 150,
+    "validationAbsenceScenes": 21,
+    "testScenesReadBeforeFreeze": 0,
+    "independentScenesReadBeforeFreeze": 0
+  },
+  "lowSizeLimit": "24px target has stripe period about1.655px, near or beyond raster Nyquist; continuous memberships may improve antialias robustness but resolution loses information. Report measured size strata without claiming arbitrary-size invariance.",
+  "browserRasterPolicy": "Before V3 fitting root editor explicitly requests imageSmoothingQuality=high to match the native training request. Rasterizers may still differ; browser QA is separate. The previously frozen independent audit keeps its default-smoothing native renderer, unchanged and unread. No browser or audit scores were used for this source-level change.",
+  "thresholdNumericStability": "Before any V3 scene selection: final candidates use interval midpoints between adjacent decision-changing critical values, at least1e-12 from every such boundary where possible. Tiny intervals without this margin are skipped. Preserve exact nextafter native frontier separately; final acceptance remains score>=threshold. Report selected critical margin and minimum score gap; no independent/browser outcomes read for this rule.",
+  "frontDefaultRegression": "User scope steering before V3 selection: separately grade always-front,fully-visible52px target at(280,350) on3scenes and3empty counterparts AFTERstable selection; this is a known training-center regression, not held-out accuracy. Existing mixed occlusion protocol/selection and everytargetscene denominator remain intact. Report mixed validation visibility strata; no threshold alteration from regression.",
+  "fitRevision": "v3b-clean-front-scene-selected",
+  "targetDepthMode": "always-front",
+  "primaryVsSecondary": "Primary safe-threshold/checkpoint selection uses150 clean-front validation scenes plus21absences. Prior mixed150 validation composites are already inspected and may only be reported as secondary diagnostics at the frozen clean-front model/threshold; never substitute for fresh test or claim independent identities.",
+  "v3Failure": "Mixed V3 trained QNN94/150 complete,57/70fullyvisible,zero21absencefalse and1falsepointscene; threshold.9930900033313339. Front default passes Arena only, Festival/Queue safely abstain. Preserved candidate-v3; no reserved test or independent audit scored.",
+  "optimization": {
+    "seeds": [
+      202610107,
+      202610109,
+      202610110
+    ],
+    "updatesPerSeed": 1000,
+    "checkpoints": [
+      500,
+      1000
+    ],
+    "learningRate": ".025*(.45+.55*(1-step/1000))",
+    "reason": "Declared before clean-front fit; mixed V3 selected an earlier checkpoint. Six candidate search budget unchanged."
+  }
+}

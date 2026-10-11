@@ -1,0 +1,8 @@
+{
+  "scope": "Decoded native prebaked and actual browser final pixels, not PNG encoded bytes",
+  "decodedRGBAEqual": true,
+  "differentPixels": 0,
+  "maximumChannelError": 0,
+  "nativePNG": "lower-walkway-h50-scan52-final.png",
+  "browserPNG": "browser-baked-coral-absent-h52.png"
+}

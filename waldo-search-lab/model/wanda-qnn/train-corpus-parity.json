@@ -1,0 +1,9 @@
+{
+  "split": "train",
+  "nativeCompositeRows": 17,
+  "maxFeatureError": 4.996003610813204e-16,
+  "featureVersion": "wanda-window-v1",
+  "featuresSHA256": "1b12fe15832ed9c5a0fa0ce2158a62f8bccfbdcf13f121c38542290ddef36576",
+  "featureSourceSHA256": "b9f3de6a53ce4bdb74f45d2b2687147b80090a8da50432d19b13db9e5c5994a0",
+  "passed": true
+}

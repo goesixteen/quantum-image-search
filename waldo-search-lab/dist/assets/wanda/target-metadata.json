@@ -1,0 +1,33 @@
+{
+  "name": "wanda",
+  "sourcePath": "C:\\Users\\henri\\.codex\\generated_images\\01a124ab-7497-7900-a0b8-11bc007254b5\\exec-6ec00e94-1515-4db7-b836-aed9d3b35296.png",
+  "projectPath": "outputs\\waldo-search-lab\\dist\\assets\\wanda\\wanda.png",
+  "size": [
+    1024,
+    1536
+  ],
+  "mode": "RGBA",
+  "sha256": "ae679a90fb94c8ad10a589fd6fa6a27404b7d519f6ad750557749a1595229777",
+  "alphaMin": 0,
+  "alphaMax": 254,
+  "alphaNonzeroBounds": [
+    113,
+    19,
+    970,
+    1517
+  ],
+  "alphaGT16Bounds": [
+    285,
+    21,
+    725,
+    1514
+  ],
+  "alphaGT32Bounds": [
+    285,
+    22,
+    725,
+    1514
+  ],
+  "transparentPixelCount": 1106593,
+  "opaquePixelCount": 0
+}

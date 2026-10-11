@@ -1,0 +1,18 @@
+{
+  "version": "burgundy-plum-v2-curation",
+  "scope": "Model-guided artwork curation, not independent accuracy, validation, or retraining",
+  "recordedBeforeScoring": true,
+  "frozenModelSHA256": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88",
+  "assetSHA256": "346f8d943c649a514eba18b58a3937fa24654de11e4671195e9cff8de90097a8",
+  "asset": "dist/assets/wanda/lookalikes/burgundy-plum-v2.png",
+  "primary": {"id":"lower-walkway","x":169,"y":400,"height":50},
+  "anchors": [{"id":"lower-walkway","x":169,"y":400},{"id":"lower-center","x":308,"y":394}],
+  "artHeights": [44,46,48,50,52],
+  "detectorSizes": [40,46,52,58,64],
+  "detectorWidths": "round(height*440/1493), original Wanda alpha>16 aspect",
+  "scan": "Entire4096 fixed64x64lattice; finalRGB plus declared scanW/H only; frozenmodel/NMS/threshold",
+  "order": "Primary height50 allfive scan sizes first. Then allother art heights at52 at the two fixed anchors. Allfive-size verification for atmost one alternative preferred candidate. No phase search.",
+  "selectionPreference": "Plausible whole person with52px local maximum in(.375,.85) and allfive scenes below frozen threshold; prefer primary if suitable, otherwise score nearest.65 with stable earlier-probe tie break",
+  "renderer": "ActualcomposeCuratedScene on unchanged normalizedPark512 nativehigh-staged base; sourcePNG nevermodified",
+  "limitations": "Model-guided art curation; no heldout claim. Chromium can differ from native rasterizer; actualbrowser verification required. Single-feature counterfactuals do not establish rendered outfit outcomes."
+}

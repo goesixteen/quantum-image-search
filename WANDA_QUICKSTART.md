@@ -1,0 +1,79 @@
+# Where’s Wanda — quick start
+
+Use the [owner-private website](https://quantum-crowd-search.syrupyspool2.chatgpt.site)
+for the current review version. No contest submission has been made. The
+[publication receipt](publication-receipt.json) identifies its exact source and
+deployment; [the handoff](WANDA_HANDOFF.md) identifies the latest completed checks.
+
+## Run the downloaded source
+
+Extract `quantum-image-search-deliverables.zip` into a folder you control. Open a
+terminal in its `waldo-search-lab` folder. With modern Node.js installed, run:
+
+```text
+node serve.mjs
+```
+
+Open the printed local URL, normally `http://127.0.0.1:4174/`. Keep that terminal
+running. Ctrl+C stops this preview. The static game needs no package installation,
+API key, hosted account, Python or quantum hardware. Its scene images and trained
+model are included. Optional source links can require internet access.
+
+If port 4174 is already occupied, reuse the existing preview or choose another:
+
+```text
+node serve.mjs --port 4178
+```
+
+Alternatively, `node serve.mjs --port 0` selects a free local port; open the exact
+URL printed by the server. The server binds only to this computer's loopback
+interface. Starting this local preview does not publish or submit the project.
+
+## Try the two experiences
+
+Choose one of five worlds, then drag Wanda or tap to place her. Arrow keys move
+her; Enter searches. Find Wanda becomes Stop search while it is working. Stop
+search or Escape stops that run and keeps the scene ready for another attempt.
+Start over restores Festival, the trained detector and the default placement.
+
+Look under the hood follows the same image through three stages:
+
+1. **Image + QNN:** read the image, inspect a window and choose Play this layer.
+   It pauses after each actual layer; continue through all four, or use the slider.
+   Reduce animations uses gate stepping and removes prolonged search animation.
+   The visible score is the completed circuit readout; spheres show the current
+   gate's reduced qubit states.
+2. **Grover interference:** Start at round 0, Phase flip, Reflect, then Complete
+   one round. Reflection is a preview; the completed round is the saved state.
+   Watch one round walks those exact steps for you, with pause/resume. Restart
+   preview keeps the saved round. Reduce animations turns playback into stepping.
+   The first peak and past-peak controls expose amplification and overshoot.
+3. **Measurement:** inspect any exact outcome or sample the saved distribution.
+   A classifier-accepted address and the independent target check are different
+   claims. Empty accepted sets abstain rather than manufacture an answer.
+
+Changing tabs preserves the run. Editing the image or supplied size invalidates
+it. Advanced controls and evidence are optional; the game's soft field is a
+display, not a map of semantic person probabilities.
+
+## Engineering checks and model reproduction
+
+The live page needs no dependencies, but the complete engineering suite uses a
+pinned native Canvas development dependency. In `waldo-search-lab`, follow the
+dependency installation and test commands in its [README](waldo-search-lab/README.md).
+Read the current QA for the actual test count rather than a historical count.
+
+Read-only Python model verification has separate numerical/image dependencies
+documented in [the frozen model package](waldo-search-lab/model/wanda-qnn/README.md).
+Training is optional and is not needed to use the website. Preserve the frozen
+checkpoint and declared protocols; do not relabel an opened test as new evidence.
+
+The historical 298/300 native Wanda result applies to the original five unseeded
+backgrounds, the known PNG, supplied heights and fully visible placements. The
+curated Park artwork has known 40px/46px false acceptances. This browser simulation
+does not establish arbitrary-person recognition, hardware execution or an
+end-to-end quantum speedup.
+
+The separate [schoolbus site](https://bus-search-quantum-lab.syrupyspool2.chatgpt.site)
+and its source folder remain included. Both hosted Site identities and private
+audiences are preserved. Do not submit or publish public contest materials.

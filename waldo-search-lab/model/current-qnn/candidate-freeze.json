@@ -1,0 +1,22 @@
+{
+  "phase": "before held-out full-scene test and independent audit",
+  "files": {
+    "current-qnn.json": "9c5a25af8a37eb8482f09e49631418e63c05c47d0317fd0a2a5ead9b6c63465a",
+    "current-logistic.json": "c73409c9565a69aac73345c4cd16cdf765da051a7173b53222fe764ae5f85d21",
+    "validation-threshold-frontier.json": "d53f8e08fe7db867183bbbb4ef4d4b5b5299e4f50a3decbbf0807d8d67ad99b0",
+    "feature-collisions.json": "91cdb2ff9e6b2fbde8352cc4701bf409669755c37850b5bece550e4a914b3910",
+    "quantum-contribution.json": "b48e8ba94ae5105cac0c2a524260ca8a67d2424e708891d0719e91a3c7a05b32",
+    "trained-parity-fixtures.json": "f1953dc8b04a6dcfadfffe463dab3fe029c65ea821fc1e72133547d19c954a02",
+    "checkpoint-selection.json": "82e76d3634c9ecbc984120a8abc1f91b21bbf64b92191481ea4ffdca3c46ffd8",
+    "training-pairs.json": "a7131c2221fd882beb2a0e423c098fb8d9b90590a488e43e41f186440312e8f7",
+    "training-objective-verification.json": "b615537be41e0616557cfdf59e838734ab925bd18f94fb4278b5fcc26787c85a"
+  },
+  "sourceFiles": {
+    "protocol.json": "77863afddce0fd9a4f1b280cd222c86f636c019df66c3d8ee6b9299cfd3c2e32",
+    "build-corpus.mjs": "4924157712b6248fd8ef1d979d60638922b8b272e8e71eb727e61b1553482d27",
+    "train_current_qnn.py": "69fdfe358e821d891d99e070c5159dd9374bab6e7163b276f2aafe7350059391",
+    "default-regression.mjs": "691a40d9f2de7a5ef03fbc4bfe645efc31c212accf703ca6e45f4c6b80204576",
+    "verify-training-objective.py": "b730bccb78b5f4d6519411434cc17142303d196c976a691ba2c33cb632f4123d"
+  },
+  "elapsedSeconds": 281.8327224254608
+}

@@ -1,0 +1,608 @@
+{
+  "recordedAtUtc": "2026-10-11T05:36:49.241Z",
+  "browser": "Codex Chromium-backed in-app browser",
+  "url": "http://127.0.0.1:4174/",
+  "scope": "20 declared engineering probes; browser image exported through visible Save analyzed image control. Rectangles use declared renderer contract, not hidden DOM state. No fitting.",
+  "cases": [
+    {
+      "id": "wanda-festival-h52-absent",
+      "sceneID": "wanda-festival",
+      "targetID": "wanda",
+      "targetPresent": false,
+      "height": 52,
+      "width": 15,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "targetRect": {
+        "x": 269,
+        "y": 322,
+        "width": 15,
+        "height": 52
+      },
+      "grid": 64,
+      "depth": 1000,
+      "geometryEvidence": "Start over fixed default center; visible slider; declared width and rectangle contract",
+      "observedDOM": {
+        "exportEnabled": true,
+        "height": 52,
+        "hrefLength": 1090702,
+        "sceneID": "wanda-festival",
+        "targetPresent": false
+      },
+      "recordedAtUtc": "2026-10-11T05:38:10.064Z",
+      "imageSHA256": "7a876c419040c183fac8d9c355fda3a5158e39dafc3d80900ad2d3d01a12a9bf"
+    },
+    {
+      "id": "wanda-beach-h52-absent",
+      "sceneID": "wanda-beach",
+      "targetID": "wanda",
+      "targetPresent": false,
+      "height": 52,
+      "width": 15,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "targetRect": {
+        "x": 269,
+        "y": 322,
+        "width": 15,
+        "height": 52
+      },
+      "grid": 64,
+      "depth": 1000,
+      "geometryEvidence": "Start over fixed default center; visible slider; declared width and rectangle contract",
+      "observedDOM": {
+        "exportEnabled": true,
+        "height": 52,
+        "hrefLength": 1070842,
+        "sceneID": "wanda-beach",
+        "targetPresent": false
+      },
+      "recordedAtUtc": "2026-10-11T05:38:10.199Z",
+      "imageSHA256": "7be05610adcc01bc85bc0c015b3633cfc50e76904318100e481b3987990e1fc3"
+    },
+    {
+      "id": "wanda-market-h52-absent",
+      "sceneID": "wanda-market",
+      "targetID": "wanda",
+      "targetPresent": false,
+      "height": 52,
+      "width": 15,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "targetRect": {
+        "x": 269,
+        "y": 322,
+        "width": 15,
+        "height": 52
+      },
+      "grid": 64,
+      "depth": 1000,
+      "geometryEvidence": "Start over fixed default center; visible slider; declared width and rectangle contract",
+      "observedDOM": {
+        "exportEnabled": true,
+        "height": 52,
+        "hrefLength": 1107690,
+        "sceneID": "wanda-market",
+        "targetPresent": false
+      },
+      "recordedAtUtc": "2026-10-11T05:38:10.350Z",
+      "imageSHA256": "bbe19b3b39dad7f299a3e10511a15903fa9497a28a417b1222f5f67b24fd4744"
+    },
+    {
+      "id": "wanda-park-h52-absent",
+      "sceneID": "wanda-park",
+      "targetID": "wanda",
+      "targetPresent": false,
+      "height": 52,
+      "width": 15,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "targetRect": {
+        "x": 269,
+        "y": 322,
+        "width": 15,
+        "height": 52
+      },
+      "grid": 64,
+      "depth": 1000,
+      "geometryEvidence": "Start over fixed default center; visible slider; declared width and rectangle contract",
+      "observedDOM": {
+        "exportEnabled": true,
+        "height": 52,
+        "hrefLength": 1106558,
+        "sceneID": "wanda-park",
+        "targetPresent": false
+      },
+      "recordedAtUtc": "2026-10-11T05:38:10.486Z",
+      "imageSHA256": "38d493afc64359ed014fb8a2d11706b96f3dea7c99a6555f364f20604ad5b54e"
+    },
+    {
+      "id": "wanda-fairground-h52-absent",
+      "sceneID": "wanda-fairground",
+      "targetID": "wanda",
+      "targetPresent": false,
+      "height": 52,
+      "width": 15,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "targetRect": {
+        "x": 269,
+        "y": 322,
+        "width": 15,
+        "height": 52
+      },
+      "grid": 64,
+      "depth": 1000,
+      "geometryEvidence": "Start over fixed default center; visible slider; declared width and rectangle contract",
+      "observedDOM": {
+        "exportEnabled": true,
+        "height": 52,
+        "hrefLength": 1072074,
+        "sceneID": "wanda-fairground",
+        "targetPresent": false
+      },
+      "recordedAtUtc": "2026-10-11T05:38:10.615Z",
+      "imageSHA256": "a5f63ee46e31be3408604eb309bdcf5764a929a69a01c51833476217431d46c0"
+    },
+    {
+      "id": "wanda-festival-h52-default",
+      "sceneID": "wanda-festival",
+      "targetID": "wanda",
+      "targetPresent": true,
+      "height": 52,
+      "width": 15,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "targetRect": {
+        "x": 269,
+        "y": 322,
+        "width": 15,
+        "height": 52
+      },
+      "grid": 64,
+      "depth": 1000,
+      "geometryEvidence": "Start over fixed default center; visible slider; declared width and rectangle contract",
+      "observedDOM": {
+        "exportEnabled": true,
+        "height": 52,
+        "hrefLength": 1090650,
+        "sceneID": "wanda-festival",
+        "targetPresent": true
+      },
+      "recordedAtUtc": "2026-10-11T05:38:17.954Z",
+      "imageSHA256": "707811b0ccef53c063ee3f951c78a6f2a726c92121a47c6c845b524f3d867a7a"
+    },
+    {
+      "id": "wanda-beach-h52-default",
+      "sceneID": "wanda-beach",
+      "targetID": "wanda",
+      "targetPresent": true,
+      "height": 52,
+      "width": 15,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "targetRect": {
+        "x": 269,
+        "y": 322,
+        "width": 15,
+        "height": 52
+      },
+      "grid": 64,
+      "depth": 1000,
+      "geometryEvidence": "Start over fixed default center; visible slider; declared width and rectangle contract",
+      "observedDOM": {
+        "exportEnabled": true,
+        "height": 52,
+        "hrefLength": 1070942,
+        "sceneID": "wanda-beach",
+        "targetPresent": true
+      },
+      "recordedAtUtc": "2026-10-11T05:38:18.170Z",
+      "imageSHA256": "cd530139e4ec7db27e41edbb46d05c0ab8d7cc411b815b5e04f5eabb2a97e158"
+    },
+    {
+      "id": "wanda-market-h52-default",
+      "sceneID": "wanda-market",
+      "targetID": "wanda",
+      "targetPresent": true,
+      "height": 52,
+      "width": 15,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "targetRect": {
+        "x": 269,
+        "y": 322,
+        "width": 15,
+        "height": 52
+      },
+      "grid": 64,
+      "depth": 1000,
+      "geometryEvidence": "Start over fixed default center; visible slider; declared width and rectangle contract",
+      "observedDOM": {
+        "exportEnabled": true,
+        "height": 52,
+        "hrefLength": 1107710,
+        "sceneID": "wanda-market",
+        "targetPresent": true
+      },
+      "recordedAtUtc": "2026-10-11T05:38:18.337Z",
+      "imageSHA256": "1113741b483ee389eb4f36a079a4545f4373c3f628b7451ffbb2871e9b37c160"
+    },
+    {
+      "id": "wanda-park-h52-default",
+      "sceneID": "wanda-park",
+      "targetID": "wanda",
+      "targetPresent": true,
+      "height": 52,
+      "width": 15,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "targetRect": {
+        "x": 269,
+        "y": 322,
+        "width": 15,
+        "height": 52
+      },
+      "grid": 64,
+      "depth": 1000,
+      "geometryEvidence": "Start over fixed default center; visible slider; declared width and rectangle contract",
+      "observedDOM": {
+        "exportEnabled": true,
+        "height": 52,
+        "hrefLength": 1106554,
+        "sceneID": "wanda-park",
+        "targetPresent": true
+      },
+      "recordedAtUtc": "2026-10-11T05:38:18.488Z",
+      "imageSHA256": "548c63863bd191744bc46e85569bc4c3271b828f5fa3a878583390d88d2728c2"
+    },
+    {
+      "id": "wanda-fairground-h52-default",
+      "sceneID": "wanda-fairground",
+      "targetID": "wanda",
+      "targetPresent": true,
+      "height": 52,
+      "width": 15,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "targetRect": {
+        "x": 269,
+        "y": 322,
+        "width": 15,
+        "height": 52
+      },
+      "grid": 64,
+      "depth": 1000,
+      "geometryEvidence": "Start over fixed default center; visible slider; declared width and rectangle contract",
+      "observedDOM": {
+        "exportEnabled": true,
+        "height": 52,
+        "hrefLength": 1072294,
+        "sceneID": "wanda-fairground",
+        "targetPresent": true
+      },
+      "recordedAtUtc": "2026-10-11T05:38:18.648Z",
+      "imageSHA256": "7f8ad90cbf7f536949fa7aeb7250d49b7cf0de809c5577e00eda4f4c632196e8"
+    },
+    {
+      "id": "wanda-festival-h40-default",
+      "sceneID": "wanda-festival",
+      "targetID": "wanda",
+      "targetPresent": true,
+      "height": 40,
+      "width": 12,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "targetRect": {
+        "x": 270,
+        "y": 328,
+        "width": 12,
+        "height": 40
+      },
+      "grid": 64,
+      "depth": 1000,
+      "geometryEvidence": "Start over fixed default center; visible slider; declared width and rectangle contract",
+      "observedDOM": {
+        "exportEnabled": true,
+        "height": 40,
+        "hrefLength": 1090674,
+        "sceneID": "wanda-festival",
+        "targetPresent": true
+      },
+      "recordedAtUtc": "2026-10-11T05:38:24.918Z",
+      "imageSHA256": "a2e4fa8f122f5431745379960f33aad0ea6ae6d3b914fd0c8a6f3626c33860a9"
+    },
+    {
+      "id": "wanda-beach-h40-default",
+      "sceneID": "wanda-beach",
+      "targetID": "wanda",
+      "targetPresent": true,
+      "height": 40,
+      "width": 12,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "targetRect": {
+        "x": 270,
+        "y": 328,
+        "width": 12,
+        "height": 40
+      },
+      "grid": 64,
+      "depth": 1000,
+      "geometryEvidence": "Start over fixed default center; visible slider; declared width and rectangle contract",
+      "observedDOM": {
+        "exportEnabled": true,
+        "height": 40,
+        "hrefLength": 1070946,
+        "sceneID": "wanda-beach",
+        "targetPresent": true
+      },
+      "recordedAtUtc": "2026-10-11T05:38:25.102Z",
+      "imageSHA256": "c1ade6c95721697d5f508783a05b8560087f2bba8eb296ad0c7f80e43175bf03"
+    },
+    {
+      "id": "wanda-market-h40-default",
+      "sceneID": "wanda-market",
+      "targetID": "wanda",
+      "targetPresent": true,
+      "height": 40,
+      "width": 12,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "targetRect": {
+        "x": 270,
+        "y": 328,
+        "width": 12,
+        "height": 40
+      },
+      "grid": 64,
+      "depth": 1000,
+      "geometryEvidence": "Start over fixed default center; visible slider; declared width and rectangle contract",
+      "observedDOM": {
+        "exportEnabled": true,
+        "height": 40,
+        "hrefLength": 1107706,
+        "sceneID": "wanda-market",
+        "targetPresent": true
+      },
+      "recordedAtUtc": "2026-10-11T05:38:25.303Z",
+      "imageSHA256": "3947d2aab91d0073b4be53daae0e8f2ccb08200e8086a010e7e7e4e22118fafe"
+    },
+    {
+      "id": "wanda-park-h40-default",
+      "sceneID": "wanda-park",
+      "targetID": "wanda",
+      "targetPresent": true,
+      "height": 40,
+      "width": 12,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "targetRect": {
+        "x": 270,
+        "y": 328,
+        "width": 12,
+        "height": 40
+      },
+      "grid": 64,
+      "depth": 1000,
+      "geometryEvidence": "Start over fixed default center; visible slider; declared width and rectangle contract",
+      "observedDOM": {
+        "exportEnabled": true,
+        "height": 40,
+        "hrefLength": 1106590,
+        "sceneID": "wanda-park",
+        "targetPresent": true
+      },
+      "recordedAtUtc": "2026-10-11T05:38:25.498Z",
+      "imageSHA256": "68c09fbec20309177552ea7608b1beda6b4f628c99d4ec34b841c1283eb2dff6"
+    },
+    {
+      "id": "wanda-fairground-h40-default",
+      "sceneID": "wanda-fairground",
+      "targetID": "wanda",
+      "targetPresent": true,
+      "height": 40,
+      "width": 12,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "targetRect": {
+        "x": 270,
+        "y": 328,
+        "width": 12,
+        "height": 40
+      },
+      "grid": 64,
+      "depth": 1000,
+      "geometryEvidence": "Start over fixed default center; visible slider; declared width and rectangle contract",
+      "observedDOM": {
+        "exportEnabled": true,
+        "height": 40,
+        "hrefLength": 1072310,
+        "sceneID": "wanda-fairground",
+        "targetPresent": true
+      },
+      "recordedAtUtc": "2026-10-11T05:38:25.678Z",
+      "imageSHA256": "3e4334b3557c5150077a9313408ba454a3c609af11cc2274238da2f3f68863b7"
+    },
+    {
+      "id": "wanda-festival-h64-default",
+      "sceneID": "wanda-festival",
+      "targetID": "wanda",
+      "targetPresent": true,
+      "height": 64,
+      "width": 19,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "targetRect": {
+        "x": 267,
+        "y": 316,
+        "width": 19,
+        "height": 64
+      },
+      "grid": 64,
+      "depth": 1000,
+      "geometryEvidence": "Start over fixed default center; visible slider; declared width and rectangle contract",
+      "observedDOM": {
+        "exportEnabled": true,
+        "height": 64,
+        "hrefLength": 1090562,
+        "sceneID": "wanda-festival",
+        "targetPresent": true
+      },
+      "recordedAtUtc": "2026-10-11T05:38:30.452Z",
+      "imageSHA256": "167a2027125c56f40c4f8a50a52f7c82a312b578723fa8070db95bbb6c249afe"
+    },
+    {
+      "id": "wanda-beach-h64-default",
+      "sceneID": "wanda-beach",
+      "targetID": "wanda",
+      "targetPresent": true,
+      "height": 64,
+      "width": 19,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "targetRect": {
+        "x": 267,
+        "y": 316,
+        "width": 19,
+        "height": 64
+      },
+      "grid": 64,
+      "depth": 1000,
+      "geometryEvidence": "Start over fixed default center; visible slider; declared width and rectangle contract",
+      "observedDOM": {
+        "exportEnabled": true,
+        "height": 64,
+        "hrefLength": 1070894,
+        "sceneID": "wanda-beach",
+        "targetPresent": true
+      },
+      "recordedAtUtc": "2026-10-11T05:38:30.588Z",
+      "imageSHA256": "da0710773bffeb1ee1b23b0c1cd7662216796b665fee364aa3dd718a08a21f4e"
+    },
+    {
+      "id": "wanda-market-h64-default",
+      "sceneID": "wanda-market",
+      "targetID": "wanda",
+      "targetPresent": true,
+      "height": 64,
+      "width": 19,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "targetRect": {
+        "x": 267,
+        "y": 316,
+        "width": 19,
+        "height": 64
+      },
+      "grid": 64,
+      "depth": 1000,
+      "geometryEvidence": "Start over fixed default center; visible slider; declared width and rectangle contract",
+      "observedDOM": {
+        "exportEnabled": true,
+        "height": 64,
+        "hrefLength": 1107642,
+        "sceneID": "wanda-market",
+        "targetPresent": true
+      },
+      "recordedAtUtc": "2026-10-11T05:38:30.730Z",
+      "imageSHA256": "d477be05c04470400fe03999907098faa2799897b267187bbdbd7df207aeeb79"
+    },
+    {
+      "id": "wanda-park-h64-default",
+      "sceneID": "wanda-park",
+      "targetID": "wanda",
+      "targetPresent": true,
+      "height": 64,
+      "width": 19,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "targetRect": {
+        "x": 267,
+        "y": 316,
+        "width": 19,
+        "height": 64
+      },
+      "grid": 64,
+      "depth": 1000,
+      "geometryEvidence": "Start over fixed default center; visible slider; declared width and rectangle contract",
+      "observedDOM": {
+        "exportEnabled": true,
+        "height": 64,
+        "hrefLength": 1106458,
+        "sceneID": "wanda-park",
+        "targetPresent": true
+      },
+      "recordedAtUtc": "2026-10-11T05:38:30.879Z",
+      "imageSHA256": "f52e7170fc1fd49a2ce385ed034bf62cba302d3b1cbd259599a996ae66e3e69c"
+    },
+    {
+      "id": "wanda-fairground-h64-default",
+      "sceneID": "wanda-fairground",
+      "targetID": "wanda",
+      "targetPresent": true,
+      "height": 64,
+      "width": 19,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "targetRect": {
+        "x": 267,
+        "y": 316,
+        "width": 19,
+        "height": 64
+      },
+      "grid": 64,
+      "depth": 1000,
+      "geometryEvidence": "Start over fixed default center; visible slider; declared width and rectangle contract",
+      "observedDOM": {
+        "exportEnabled": true,
+        "height": 64,
+        "hrefLength": 1072370,
+        "sceneID": "wanda-fairground",
+        "targetPresent": true
+      },
+      "recordedAtUtc": "2026-10-11T05:38:31.025Z",
+      "imageSHA256": "8d02894afeea3609219d0f8f7b925f1a65fd95e98c8e39d5562f14d637d2cbce"
+    }
+  ]
+}

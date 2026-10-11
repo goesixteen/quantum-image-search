@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "recordedAtUtc": "2026-10-11T06:26:10.440715+00:00",
+  "generationTool": "Built-in image_gen.imagegen, edit from the actual local Wanda PNG, transparent_background=true",
+  "modelVersion": "Not exposed by tool; no version claim",
+  "origin": "Original fictional AI-generated cutout variants commissioned for this project",
+  "licenseNote": "No public-domain or Creative Commons status is asserted. Preserve generated-art disclosure and original source/provenance. No third-party artwork supplied.",
+  "displayEdits": "The game alpha>16 trims, high-quality resizes once and integer-composites the original generated PNG; files are not repainted.",
+  "curationScope": "Model-guided artwork curation after original model freeze; not reserved accuracy, retraining or general person recognition. Rejected variants and scans retained in the curation report.",
+  "assets": [
+    {
+      "path": "assets/wanda/lookalikes/coral-denim-v1.png",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "bytes": 1155076,
+      "sha256": "ee6a0c0c4b8bdd9913279692c205d6ca8081fbcb53b2d938c6cde885784c64c0",
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "alphaGreaterThan16Bounds": [
+        285,
+        21,
+        726,
+        1515
+      ],
+      "savedSourcePixelsAltered": false,
+      "generatedOriginalPath": "C:/Users/henri/.codex/generated_images/01a124aa-1559-7223-b74a-9c8f72700b0a/exec-2f149169-eb07-49a7-96b4-6ea03aff7cf9.png",
+      "exactPrompt": "Edit target: the attached original Wanda PNG, used as the actual cutout sprite in an original picture-puzzle demo. Create ONE full-body transparent PNG of a lookalike bystander based very closely on this sprite. Keep the original female character's pose, facial features, dark-brown bob haircut, skin tone, narrow silhouette, long legs, shoes, outlines, scale/proportions and EXACT sweater stripe count, widths and placement. Change ONLY the sweater red to slightly muted warm coral red, approximately RGB(222,60,50), and the trousers from saturated blue to slightly muted denim-blue, approximately RGB(48,109,163). Keep the off-white stripes unchanged, approximately RGB(249,244,242). The result should look like a believable close cousin of Wanda with a subtly different outfit, drawn in the identical clean clip-art style. Original standing front view, arms down, no accessories, no hat, no scene, no text, no frame, no ground/shadow/glow or backdrop. Entire person including shoes fully visible, generous transparent padding, actual alpha transparency. Preserve geometry tightly rather than inventing a new character or changing clothing design.",
+      "referencePath": "assets/wanda/wanda.png",
+      "referenceSHA256": "ae679a90fb94c8ad10a589fd6fa6a27404b7d519f6ad750557749a1595229777"
+    },
+    {
+      "path": "assets/wanda/lookalikes/burgundy-plum-v2.png",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "bytes": 1131613,
+      "sha256": "346f8d943c649a514eba18b58a3937fa24654de11e4671195e9cff8de90097a8",
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "alphaGreaterThan16Bounds": [
+        285,
+        21,
+        726,
+        1516
+      ],
+      "savedSourcePixelsAltered": false,
+      "generatedOriginalPath": "C:/Users/henri/.codex/generated_images/01a124aa-1559-7223-b74a-9c8f72700b0a/exec-30deb918-a711-4f2a-9f8f-ae05dfdb2963.png",
+      "exactPrompt": "Edit the attached original Wanda transparent cutout PNG into ONE lookalike bystander for an original illustrated crowd puzzle. Preserve the same fictional female character face, dark-brown bob haircut, skin tone, front-facing standing pose with arms down, narrow body silhouette, long legs, shoes, black outlines and clean clip-art style. Keep exactly the same horizontal sweater stripe count, widths and placement, with the off-white bands unchanged. Make the colored sweater stripes a visibly different MUTED BURGUNDY (approximately RGB 145,55,80), instead of Wanda's bright red. Change the long trousers to dark PLUM-BROWN (approximately RGB 83,55,72), with NO blue trousers or blue accents. The result should look plausibly similar to Wanda in silhouette and striped sweater, but clearly a different outfit; do not change the original character anatomy or add details. Full body including shoes in frame, same proportions as source, generous actual alpha-transparent padding. No scene, backdrop, shadow, glow, accessories, text, hat or frame. Preserve the original geometry closely.",
+      "referencePath": "assets/wanda/wanda.png",
+      "referenceSHA256": "ae679a90fb94c8ad10a589fd6fa6a27404b7d519f6ad750557749a1595229777"
+    },
+    {
+      "path": "assets/wanda/lookalikes/brick-cream-v3.png",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "bytes": 1163965,
+      "sha256": "bc210c7be5025d03915b081d5f54e4600df326e03eec176eab35ac0cc8260d7d",
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "alphaGreaterThan16Bounds": [
+        284,
+        18,
+        726,
+        1515
+      ],
+      "savedSourcePixelsAltered": false,
+      "generatedOriginalPath": "C:/Users/henri/.codex/generated_images/01a124aa-1559-7223-b74a-9c8f72700b0a/exec-5e6233d4-ae92-4583-8724-99982082aaee.png",
+      "exactPrompt": "Edit the attached original Wanda transparent cutout PNG into ONE lookalike bystander for an original illustrated crowd puzzle. Preserve the same fictional female character face, dark-brown bob haircut, skin tone, front-facing standing pose with arms down, narrow body silhouette, long legs, shoes, black outlines and clean clip-art style. Preserve exactly the original horizontal sweater stripe count, widths and placement. Change the colored sweater stripes from bright saturated red to MUTED BRICK RED, approximately RGB(190,58,55). Change the white sweater bands to WARM PALE CREAM, approximately RGB(240,225,205), visibly warmer and dimmer than the original white. Change the trousers to slightly muted DENIM BLUE, approximately RGB(48,109,163). Keep the original sweater design and body geometry, but give the outfit a visibly muted and warm palette, so this is a plausible near-match bystander instead of an exact Wanda copy. Full body including shoes, original proportions, generous actual alpha-transparent padding. No scene, background, shadow, glow, accessories, text, hat or frame. Only the three clothing colors should change.",
+      "referencePath": "assets/wanda/wanda.png",
+      "referenceSHA256": "ae679a90fb94c8ad10a589fd6fa6a27404b7d519f6ad750557749a1595229777"
+    }
+  ],
+  "derivedScene": {
+    "path": "assets/wanda/lookalikes/park-coral-v1-512.png",
+    "sha256": "586ca63a9e04fc4bc96253deca174dca31f009230390ce7c42d25f7bc9f79a08",
+    "basePath": "assets/wanda/park-512.png",
+    "baseSHA256": "d20ea478a665eac1221fafcf3079dff71e9d9a40ca56846546628216452ceabd",
+    "spritePath": "assets/wanda/lookalikes/coral-denim-v1.png",
+    "requestedCenter": [
+      169,
+      400
+    ],
+    "displayHeight": 50,
+    "registeredRectangle": [
+      162,
+      375,
+      15,
+      50
+    ],
+    "renderer": "Native Canvas composeCuratedScene: alpha>16 trim, high-quality resize once, integer paste. Generated source PNGs and original Park preserved.",
+    "whyPreRendered": "Browser high-quality resize changed fine stripe features; pre-rendered512px scene preserves final art pixels. Actual Chromium export is decodedRGBA-identical to native finalist.",
+    "inferenceContract": "Pre-rendered scene RGB and supplied Wanda size only. Rendering coordinates are not QNN or Grover inputs."
+  },
+  "selectedVariant": "coral-denim-v1.png",
+  "selectionLimit": "Useful near-match at default supplied52px. Supplied40/46 falsely accept it. Burgundy/plum and brick/cream trials retained; noall-size-safe recommendation."
+}

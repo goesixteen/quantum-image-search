@@ -1,0 +1,31 @@
+{
+  "version": "wanda-chromium-native-diagnostic-v2",
+  "roles": {
+    "native": "Canonical existing high-quality native-canvas recipe",
+    "browser": "PNG from visible Save analyzed image link, before display overlays"
+  },
+  "candidateFrozenBeforeEvaluation": true,
+  "modelSHA256": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88",
+  "threshold": 0.9056472752971427,
+  "sceneIDs": ["wanda-festival", "wanda-beach", "wanda-market", "wanda-park", "wanda-fairground"],
+  "heights": [40, 52, 64],
+  "requestedCenter": [276, 348],
+  "targetDepth": 1000,
+  "foregroundLayers": [],
+  "targetCases": 15,
+  "absenceCases": 5,
+  "caseStates": ["present at heights40/52/64 for each scene", "absent at supplied height52 for each scene"],
+  "grid": 64,
+  "scanWindows": 4096,
+  "latticeCenters": "(4+8*column,4+8*row), row-major, 64 rows and columns",
+  "pointTolerancePixels": 6.657,
+  "completeHit": "At least one accepted point within tolerance of actual rendered center, and no accepted point outside tolerance. Abstention is a failure.",
+  "absenceClean": "No accepted points anywhere in the full scene. Each accepted point in an absent scene is false.",
+  "amendment": "Five52pxabsences added on parent direction before any Chromium captures/scores were read. Prior15case work records retained; original frozen298/300 results unchanged.",
+  "nms": "Descending learned score/index tie-break; suppress point if distance <= max(12,0.35*targetWidth) from a previously retained point",
+  "comparison": ["Decoded final RGBA", "Decoded normalized background outside target rectangle", "All 4096 eight-feature vectors", "All 4096 frozen model scores", "Pre-NMS threshold crossings", "Accepted points and strict grader outcomes"],
+  "selfTest": "Native PNG compared to itself and saved native-JS scores independently recomputed in NumPy; never described as Chromium evidence",
+  "selectionForbidden": "No fitting, feature revision, threshold selection, or test-result rewriting using these diagnostics",
+  "scope": "Fixed same-art/same-background engineering regression probes, separate from the frozen reserved 298/300 native scene result",
+  "decision": "Record quantitative caveats if backend differences preserve accepted points; otherwise report the regression and evaluate any future renderer remedy separately. No post-evaluation threshold tuning."
+}

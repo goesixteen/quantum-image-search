@@ -1,0 +1,69 @@
+{
+  "version": 2,
+  "status": "v2 predeclared before regenerating/fitting; v1 failure retained",
+  "featureVersion": "current-qnn-window-v2",
+  "scope": "Current striped OpenMoji PNG over three already inspected current scene identities, native Canvas composite data. This is same-asset scale/position/occlusion evaluation, not unseen-identity recognition.",
+  "inferenceInputs": [
+    "final composite RGB",
+    "candidate window center on fixed 64 by 64 lattice",
+    "supplied rendered target width and height"
+  ],
+  "forbiddenInferenceInputs": [
+    "clean background reference",
+    "target reference pixels",
+    "renderer true center",
+    "truth alpha",
+    "foreground masks",
+    "template score or gate"
+  ],
+  "scenes": [
+    "legacy",
+    "magic-arena",
+    "qualicity-queue"
+  ],
+  "targetHeightRange": [
+    24,
+    112
+  ],
+  "targetWidth": "Half-up rounded targetHeight times trimmed PNG aspect ratio; minimum one pixel",
+  "targetScenes": {
+    "train": 600,
+    "validation": 150,
+    "test": 250
+  },
+  "splitSeeds": {
+    "train": 202610104,
+    "validation": 202610105,
+    "test": 202610106
+  },
+  "centerPartition": "(floor(actualCenterX/8)+3*floor(actualCenterY/8)) modulo 10: train0..6, validation7, test8..9. Target centers are disjoint across partitions.",
+  "rendering": "Native Canvas target PNG trimming at alpha greater than16, high-quality resize, actual registered whole-object depth-band PNGs above target under front-when-lower/equal-depth-foreground-front policy. Native source bytes and dimensions are hashed before corpus generation.",
+  "positiveConstruction": "A target scene has visible alpha mass at least0.20. Its nearest lattice window and an additional center jitter within4px are positive when distance from actual raster center is at most6.657px. Retain observed partials; retry unsignalable draws and report attempts.",
+  "negativeConstruction": "Nearby off-center windows at8..32px, background windows, entirely absent scenes, and explicit solid-red/blue-stripe decoys. Near-target windows are not relabeled positive outside6.657px. Fully hidden cases are negative where generated.",
+  "trainingAbsenceHeights": [
+    24,
+    36,
+    52,
+    80,
+    112
+  ],
+  "validationAbsenceHeights": [
+    24,
+    36,
+    52,
+    64,
+    80,
+    96,
+    112
+  ],
+  "learning": "Existing exact differentiable four-qubit circuit, four data-reuploading layers,32 exported angles/seven Pauli-Z readouts/bias. Freeze final4RZ at0;28 quantum-angle slots plus8 classical slots optimized with Adam. Checkpoint by validation cross-entropy; no test checkpoint/threshold selection. V2 source-group objective puts0.5weight onpositive windows,0.25on nearby negative/decoy windows,0.25on background negatives; both quantum and matched logistic use identical source weights. Validation checkpoint selection uses this source-group weighted BCE.",
+  "classifierThreshold": "Select on validation full-scene native data only. Require zero marks in all declared empty validation scenes and false-point scenes at most1percent of150 target scenes; among feasible thresholds maximize correct localization with no false points, using every150 target scenes as denominator. Report no feasible/usable operating point rather than silently weakening constraint. The exact validation critical-score frontier includes the highest true/false accepted score per scene and nextafter values above them; all-reject is explicit.",
+  "pipeline": "Fixed4096 learned windows; aggregate max QNN score into selected Grover addresses. Threshold learned scores, stable descending score/index order, suppress candidates at distance at mostmax(12px,0.35timesTargetWidth). No feature gate, template fallback, or postselection from ground truth.",
+  "matchedBaseline": "Logistic classifier fitted to the exact same feature vectors and labels. Regularization selected by validation cross-entropy and threshold with the same scene protocol. No claim of QNN advantage from a poorer baseline.",
+  "quantumContribution": "Record trained angle changes; compare frozen learned model against zero-quantum-angle ablation using identical readout and against matched logistic baseline. FinalRZ are inactive slots, not independent degrees of freedom.",
+  "parity": "Exact RGBA fixtures/features supplied to Python and browser JavaScript; compare feature vectors and trained statevector probabilities before any promotion. Independent renderer/browser evaluation follows frozen candidate.",
+  "limitations": "Known target scale is supplied, and the fixed representation has no size feature: fixed-pixel center labels can be ambiguous across scales. Targets below20percent visible were not positive construction; independent audit must retain such failures rather than claim coverage. Curated occluders approximate source silhouettes. No scale estimation, arbitrary uploaded-target support, hardware timing, or quantum speed advantage established.",
+  "featureRevision": "Raw unsaturated torso red/white and lower blue density; smoothly bounded stripe transitions; local yellow head evidence; RGB-derived horizontal/vertical centroid alignment in fixed6px units; explicit supplied height normalization. No reference template or true placement in inference.",
+  "v1Failure": "Exact validation frontier QNN and logistic completeHits0 under the unchanged false-point budget; held-out scene test and independent audit were not read.",
+  "windowGeometryV2": "24columns by48rows nearest-floor RGB sampling; W=max(targetWidth+16,ceil1.6width),H=targetHeight+16. Torso.18-.52H,lower.52-.98H. Yellowhead Gaussian fixed6px aroundy=-.44H. Horizontalred+bluecentroid fixed6px alignment; verticalred/blue centroids expected-.16H,+.25H. Colorpresence d/(d+.03); explicitheight(H-24)/88."
+}

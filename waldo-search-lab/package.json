@@ -3,5 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "scripts": { "dev": "node serve.mjs", "check": "node --check dist/app.js" }
+  "scripts": { "dev": "node serve.mjs", "check": "node --check dist/app.js" },
+  "devDependencies": { "@napi-rs/canvas": "0.1.100" }
 }

@@ -1,0 +1,2571 @@
+{
+  "recordedAtUtc": "2026-10-11T06:26:36.239Z",
+  "protocol": {
+    "version": "brick-cream-v3-curation",
+    "scope": "Model-guided artwork curation, not independent accuracy, validation, or retraining",
+    "recordedBeforeScoring": true,
+    "frozenModelSHA256": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88",
+    "assetSHA256": "bc210c7be5025d03915b081d5f54e4600df326e03eec176eab35ac0cc8260d7d",
+    "asset": "dist/assets/wanda/lookalikes/brick-cream-v3.png",
+    "primary": {
+      "id": "lower-walkway",
+      "x": 169,
+      "y": 400,
+      "height": 50
+    },
+    "anchors": [
+      {
+        "id": "lower-walkway",
+        "x": 169,
+        "y": 400
+      },
+      {
+        "id": "lower-center",
+        "x": 308,
+        "y": 394
+      }
+    ],
+    "artHeights": [
+      44,
+      46,
+      48,
+      50,
+      52
+    ],
+    "detectorSizes": [
+      40,
+      46,
+      52,
+      58,
+      64
+    ],
+    "detectorWidths": "round(height*440/1493), original Wanda alpha>16 aspect",
+    "scan": "Entire4096 fixed64x64lattice; finalRGB plus declared scanW/H only; frozenmodel/NMS/threshold",
+    "order": "Primary height50 allfive scan sizes first. Then allother art heights at52 at the two fixed anchors. Allfive-size verification for atmost one alternative preferred candidate. No phase search.",
+    "selectionPreference": "Plausible whole person with52px local maximum in(.375,.85) and allfive scenes below frozen threshold; prefer primary if suitable, otherwise score nearest.65 with stable earlier-probe tie break",
+    "renderer": "ActualcomposeCuratedScene on unchanged normalizedPark512 nativehigh-staged base; sourcePNG nevermodified",
+    "limitations": "Model-guided art curation; no heldout claim. Chromium can differ from native rasterizer; actualbrowser verification required. Single-feature counterfactuals do not establish rendered outfit outcomes."
+  },
+  "sourceHashes": {
+    "model": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88",
+    "asset": "bc210c7be5025d03915b081d5f54e4600df326e03eec176eab35ac0cc8260d7d",
+    "background": "d20ea478a665eac1221fafcf3079dff71e9d9a40ca56846546628216452ceabd",
+    "curatedScene": "510cdcf3fc33fc56330775fb0f92ecc36cc3887d7d4ad3f5ad9eca4951b44bad",
+    "features": "bc9292a9dbc9ada24611916118e297aeb06d3d2eb8a5961c31f968162c26decf"
+  },
+  "rows": [
+    {
+      "id": "v3-lower-walkway-h50-scan40",
+      "anchor": {
+        "id": "lower-walkway",
+        "x": 169,
+        "y": 400,
+        "height": 50
+      },
+      "height": 50,
+      "scanHeight": 40,
+      "scanWidth": 12,
+      "placements": [
+        {
+          "id": "lower-walkway",
+          "requestedCenter": {
+            "x": 169,
+            "y": 400
+          },
+          "center": {
+            "x": 169.5,
+            "y": 400
+          },
+          "rectangle": {
+            "x": 162,
+            "y": 375,
+            "width": 15,
+            "height": 50
+          },
+          "trimBounds": {
+            "x": 284,
+            "y": 18,
+            "width": 442,
+            "height": 1497
+          },
+          "sourceDimensions": {
+            "width": 1024,
+            "height": 1536
+          },
+          "rendererOnly": true
+        }
+      ],
+      "maximum": {
+        "index": 3221,
+        "x": 172,
+        "y": 404,
+        "score": 0.9925804166043962,
+        "features": [
+          0.13771926280899563,
+          0.015610900601618868,
+          0.5313310259734038,
+          0.09591095822211337,
+          0,
+          0.9184986753970221,
+          0.865062620665253,
+          0
+        ]
+      },
+      "localPeaks": [
+        {
+          "index": 3221,
+          "x": 172,
+          "y": 404,
+          "score": 0.9925804166043962,
+          "features": [
+            0.13771926280899563,
+            0.015610900601618868,
+            0.5313310259734038,
+            0.09591095822211337,
+            0,
+            0.9184986753970221,
+            0.865062620665253,
+            0
+          ]
+        }
+      ],
+      "topRaw": [
+        {
+          "index": 3221,
+          "x": 172,
+          "y": 404,
+          "score": 0.9925804166043962,
+          "features": [
+            0.13771926280899563,
+            0.015610900601618868,
+            0.5313310259734038,
+            0.09591095822211337,
+            0,
+            0.9184986753970221,
+            0.865062620665253,
+            0
+          ]
+        },
+        {
+          "index": 3220,
+          "x": 164,
+          "y": 404,
+          "score": 0.7702403028677808
+        },
+        {
+          "index": 1994,
+          "x": 84,
+          "y": 252,
+          "score": 0.33325735373561133
+        },
+        {
+          "index": 589,
+          "x": 108,
+          "y": 76,
+          "score": 0.2829657492642983
+        },
+        {
+          "index": 590,
+          "x": 116,
+          "y": 76,
+          "score": 0.1472147598383909
+        },
+        {
+          "index": 2699,
+          "x": 92,
+          "y": 340,
+          "score": 0.13859122085894443
+        },
+        {
+          "index": 3156,
+          "x": 164,
+          "y": 396,
+          "score": 0.12999443120004375
+        },
+        {
+          "index": 690,
+          "x": 404,
+          "y": 84,
+          "score": 0.12821655101753626
+        }
+      ],
+      "marks": [
+        3221
+      ],
+      "scanMs": 1040.9279000000001,
+      "PNG": "v3-lower-walkway-h50-scan40.png",
+      "PNG_SHA256": "10160013c8fc38a1642ba214cd735d9c8044f813dbf2813fb44436d8e9cabe24"
+    },
+    {
+      "id": "v3-lower-walkway-h50-scan46",
+      "anchor": {
+        "id": "lower-walkway",
+        "x": 169,
+        "y": 400,
+        "height": 50
+      },
+      "height": 50,
+      "scanHeight": 46,
+      "scanWidth": 14,
+      "placements": [
+        {
+          "id": "lower-walkway",
+          "requestedCenter": {
+            "x": 169,
+            "y": 400
+          },
+          "center": {
+            "x": 169.5,
+            "y": 400
+          },
+          "rectangle": {
+            "x": 162,
+            "y": 375,
+            "width": 15,
+            "height": 50
+          },
+          "trimBounds": {
+            "x": 284,
+            "y": 18,
+            "width": 442,
+            "height": 1497
+          },
+          "sourceDimensions": {
+            "width": 1024,
+            "height": 1536
+          },
+          "rendererOnly": true
+        }
+      ],
+      "maximum": {
+        "index": 3221,
+        "x": 172,
+        "y": 404,
+        "score": 0.9821515169554644,
+        "features": [
+          0.17013301177496026,
+          0.022752398896376196,
+          0.5362132908191449,
+          0.14729222573325998,
+          0,
+          0.9150398861969615,
+          0.8485972980522569,
+          0.25
+        ]
+      },
+      "localPeaks": [
+        {
+          "index": 3221,
+          "x": 172,
+          "y": 404,
+          "score": 0.9821515169554644,
+          "features": [
+            0.17013301177496026,
+            0.022752398896376196,
+            0.5362132908191449,
+            0.14729222573325998,
+            0,
+            0.9150398861969615,
+            0.8485972980522569,
+            0.25
+          ]
+        }
+      ],
+      "topRaw": [
+        {
+          "index": 3221,
+          "x": 172,
+          "y": 404,
+          "score": 0.9821515169554644,
+          "features": [
+            0.17013301177496026,
+            0.022752398896376196,
+            0.5362132908191449,
+            0.14729222573325998,
+            0,
+            0.9150398861969615,
+            0.8485972980522569,
+            0.25
+          ]
+        },
+        {
+          "index": 3157,
+          "x": 172,
+          "y": 396,
+          "score": 0.5448530540255176
+        },
+        {
+          "index": 2429,
+          "x": 492,
+          "y": 300,
+          "score": 0.44194176951785
+        },
+        {
+          "index": 3558,
+          "x": 308,
+          "y": 444,
+          "score": 0.3930686830338117
+        },
+        {
+          "index": 3933,
+          "x": 236,
+          "y": 492,
+          "score": 0.29817954300635835
+        },
+        {
+          "index": 2493,
+          "x": 492,
+          "y": 308,
+          "score": 0.25762682550114896
+        },
+        {
+          "index": 3934,
+          "x": 244,
+          "y": 492,
+          "score": 0.2438535448018619
+        },
+        {
+          "index": 3241,
+          "x": 332,
+          "y": 404,
+          "score": 0.21180369216313047
+        }
+      ],
+      "marks": [
+        3221
+      ],
+      "scanMs": 1025.5424999999998,
+      "PNG": "v3-lower-walkway-h50-scan46.png",
+      "PNG_SHA256": "10160013c8fc38a1642ba214cd735d9c8044f813dbf2813fb44436d8e9cabe24"
+    },
+    {
+      "id": "v3-lower-walkway-h50-scan52",
+      "anchor": {
+        "id": "lower-walkway",
+        "x": 169,
+        "y": 400,
+        "height": 50
+      },
+      "height": 50,
+      "scanHeight": 52,
+      "scanWidth": 15,
+      "placements": [
+        {
+          "id": "lower-walkway",
+          "requestedCenter": {
+            "x": 169,
+            "y": 400
+          },
+          "center": {
+            "x": 169.5,
+            "y": 400
+          },
+          "rectangle": {
+            "x": 162,
+            "y": 375,
+            "width": 15,
+            "height": 50
+          },
+          "trimBounds": {
+            "x": 284,
+            "y": 18,
+            "width": 442,
+            "height": 1497
+          },
+          "sourceDimensions": {
+            "width": 1024,
+            "height": 1536
+          },
+          "rendererOnly": true
+        }
+      ],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "localPeaks": [
+        {
+          "index": 3157,
+          "x": 172,
+          "y": 396,
+          "score": 0.02343179648724801,
+          "features": [
+            0.1289695250938071,
+            0.014573715042169488,
+            0.44553175528561567,
+            0.12524768761821606,
+            0.012943520541893627,
+            0.8542154780805873,
+            0.764221122783415,
+            0.5
+          ]
+        }
+      ],
+      "topRaw": [
+        {
+          "index": 2651,
+          "x": 220,
+          "y": 332,
+          "score": 0.3225199875314755
+        },
+        {
+          "index": 2379,
+          "x": 92,
+          "y": 300,
+          "score": 0.1711007778738258
+        },
+        {
+          "index": 2493,
+          "x": 492,
+          "y": 308,
+          "score": 0.16016824724358023
+        },
+        {
+          "index": 3390,
+          "x": 500,
+          "y": 420,
+          "score": 0.14422097148496485
+        },
+        {
+          "index": 2652,
+          "x": 228,
+          "y": 332,
+          "score": 0.11838494156674582
+        },
+        {
+          "index": 3717,
+          "x": 44,
+          "y": 468,
+          "score": 0.10763449286198022
+        },
+        {
+          "index": 4059,
+          "x": 220,
+          "y": 508,
+          "score": 0.08926491883492584
+        },
+        {
+          "index": 319,
+          "x": 508,
+          "y": 36,
+          "score": 0.08916759674286379
+        }
+      ],
+      "marks": [],
+      "scanMs": 1030.9213,
+      "PNG": "v3-lower-walkway-h50-scan52.png",
+      "PNG_SHA256": "10160013c8fc38a1642ba214cd735d9c8044f813dbf2813fb44436d8e9cabe24"
+    },
+    {
+      "id": "v3-lower-walkway-h50-scan58",
+      "anchor": {
+        "id": "lower-walkway",
+        "x": 169,
+        "y": 400,
+        "height": 50
+      },
+      "height": 50,
+      "scanHeight": 58,
+      "scanWidth": 17,
+      "placements": [
+        {
+          "id": "lower-walkway",
+          "requestedCenter": {
+            "x": 169,
+            "y": 400
+          },
+          "center": {
+            "x": 169.5,
+            "y": 400
+          },
+          "rectangle": {
+            "x": 162,
+            "y": 375,
+            "width": 15,
+            "height": 50
+          },
+          "trimBounds": {
+            "x": 284,
+            "y": 18,
+            "width": 442,
+            "height": 1497
+          },
+          "sourceDimensions": {
+            "width": 1024,
+            "height": 1536
+          },
+          "rendererOnly": true
+        }
+      ],
+      "maximum": {
+        "index": 3282,
+        "x": 148,
+        "y": 412,
+        "score": 0.20004353367231648
+      },
+      "localPeaks": [
+        {
+          "index": 3159,
+          "x": 188,
+          "y": 396,
+          "score": 0.010130820435971868,
+          "features": [
+            0.021696573678188027,
+            0.0004525191903317656,
+            0.2602690790550128,
+            0.1050753775421474,
+            0.0004561713634682936,
+            0.5556065446400722,
+            0.5134051414506776,
+            0.75
+          ]
+        }
+      ],
+      "topRaw": [
+        {
+          "index": 3282,
+          "x": 148,
+          "y": 412,
+          "score": 0.20004353367231648
+        },
+        {
+          "index": 2795,
+          "x": 348,
+          "y": 348,
+          "score": 0.13684002670267484
+        },
+        {
+          "index": 1793,
+          "x": 12,
+          "y": 228,
+          "score": 0.134556519981047
+        },
+        {
+          "index": 2432,
+          "x": 4,
+          "y": 308,
+          "score": 0.11664960546648726
+        },
+        {
+          "index": 2428,
+          "x": 484,
+          "y": 300,
+          "score": 0.11631134416126644
+        },
+        {
+          "index": 2677,
+          "x": 428,
+          "y": 332,
+          "score": 0.10349785175502656
+        },
+        {
+          "index": 2423,
+          "x": 444,
+          "y": 300,
+          "score": 0.09340475335355551
+        },
+        {
+          "index": 683,
+          "x": 348,
+          "y": 84,
+          "score": 0.08690898366912077
+        }
+      ],
+      "marks": [],
+      "scanMs": 1031.1755999999996,
+      "PNG": "v3-lower-walkway-h50-scan58.png",
+      "PNG_SHA256": "10160013c8fc38a1642ba214cd735d9c8044f813dbf2813fb44436d8e9cabe24"
+    },
+    {
+      "id": "v3-lower-walkway-h50-scan64",
+      "anchor": {
+        "id": "lower-walkway",
+        "x": 169,
+        "y": 400,
+        "height": 50
+      },
+      "height": 50,
+      "scanHeight": 64,
+      "scanWidth": 19,
+      "placements": [
+        {
+          "id": "lower-walkway",
+          "requestedCenter": {
+            "x": 169,
+            "y": 400
+          },
+          "center": {
+            "x": 169.5,
+            "y": 400
+          },
+          "rectangle": {
+            "x": 162,
+            "y": 375,
+            "width": 15,
+            "height": 50
+          },
+          "trimBounds": {
+            "x": 284,
+            "y": 18,
+            "width": 442,
+            "height": 1497
+          },
+          "sourceDimensions": {
+            "width": 1024,
+            "height": 1536
+          },
+          "rendererOnly": true
+        }
+      ],
+      "maximum": {
+        "index": 2738,
+        "x": 404,
+        "y": 340,
+        "score": 0.231635245313214
+      },
+      "localPeaks": [
+        {
+          "index": 3156,
+          "x": 164,
+          "y": 396,
+          "score": 0.04745077051500818,
+          "features": [
+            0.07214877202987771,
+            0.0016344899622388036,
+            0.2666413263803961,
+            0.037608122101767456,
+            0.30886530483192,
+            0.8935555941770513,
+            0.7585483601609617,
+            1
+          ]
+        }
+      ],
+      "topRaw": [
+        {
+          "index": 2738,
+          "x": 404,
+          "y": 340,
+          "score": 0.231635245313214
+        },
+        {
+          "index": 2610,
+          "x": 404,
+          "y": 324,
+          "score": 0.20694015629726614
+        },
+        {
+          "index": 3214,
+          "x": 116,
+          "y": 404,
+          "score": 0.20466349968173603
+        },
+        {
+          "index": 2677,
+          "x": 428,
+          "y": 332,
+          "score": 0.1637607774411245
+        },
+        {
+          "index": 2613,
+          "x": 428,
+          "y": 324,
+          "score": 0.12092516483193695
+        },
+        {
+          "index": 3282,
+          "x": 148,
+          "y": 412,
+          "score": 0.11534364068163847
+        },
+        {
+          "index": 588,
+          "x": 100,
+          "y": 76,
+          "score": 0.11523078726008998
+        },
+        {
+          "index": 2795,
+          "x": 348,
+          "y": 348,
+          "score": 0.11243925289564921
+        }
+      ],
+      "marks": [],
+      "scanMs": 1030.4840999999997,
+      "PNG": "v3-lower-walkway-h50-scan64.png",
+      "PNG_SHA256": "10160013c8fc38a1642ba214cd735d9c8044f813dbf2813fb44436d8e9cabe24"
+    },
+    {
+      "id": "v3-lower-walkway-h44-scan52",
+      "anchor": {
+        "id": "lower-walkway",
+        "x": 169,
+        "y": 400
+      },
+      "height": 44,
+      "scanHeight": 52,
+      "scanWidth": 15,
+      "placements": [
+        {
+          "id": "lower-walkway",
+          "requestedCenter": {
+            "x": 169,
+            "y": 400
+          },
+          "center": {
+            "x": 169.5,
+            "y": 400
+          },
+          "rectangle": {
+            "x": 163,
+            "y": 378,
+            "width": 13,
+            "height": 44
+          },
+          "trimBounds": {
+            "x": 284,
+            "y": 18,
+            "width": 442,
+            "height": 1497
+          },
+          "sourceDimensions": {
+            "width": 1024,
+            "height": 1536
+          },
+          "rendererOnly": true
+        }
+      ],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "localPeaks": [
+        {
+          "index": 3283,
+          "x": 156,
+          "y": 412,
+          "score": 0.014758872327730122,
+          "features": [
+            0.0022772296417092786,
+            0.0000033291107986806397,
+            0.05916760039484465,
+            0.10372042544660078,
+            0.0037684698909035324,
+            0.6282683843594209,
+            0.43342956451974207,
+            0.5
+          ]
+        }
+      ],
+      "topRaw": [
+        {
+          "index": 2651,
+          "x": 220,
+          "y": 332,
+          "score": 0.3225199875314755
+        },
+        {
+          "index": 2379,
+          "x": 92,
+          "y": 300,
+          "score": 0.1711007778738258
+        },
+        {
+          "index": 2493,
+          "x": 492,
+          "y": 308,
+          "score": 0.16016824724358023
+        },
+        {
+          "index": 3390,
+          "x": 500,
+          "y": 420,
+          "score": 0.14422097148496485
+        },
+        {
+          "index": 2652,
+          "x": 228,
+          "y": 332,
+          "score": 0.11838494156674582
+        },
+        {
+          "index": 3717,
+          "x": 44,
+          "y": 468,
+          "score": 0.10763449286198022
+        },
+        {
+          "index": 4059,
+          "x": 220,
+          "y": 508,
+          "score": 0.08926491883492584
+        },
+        {
+          "index": 319,
+          "x": 508,
+          "y": 36,
+          "score": 0.08916759674286379
+        }
+      ],
+      "marks": [],
+      "scanMs": 1017.5882000000001
+    },
+    {
+      "id": "v3-lower-walkway-h46-scan52",
+      "anchor": {
+        "id": "lower-walkway",
+        "x": 169,
+        "y": 400
+      },
+      "height": 46,
+      "scanHeight": 52,
+      "scanWidth": 15,
+      "placements": [
+        {
+          "id": "lower-walkway",
+          "requestedCenter": {
+            "x": 169,
+            "y": 400
+          },
+          "center": {
+            "x": 169,
+            "y": 400
+          },
+          "rectangle": {
+            "x": 162,
+            "y": 377,
+            "width": 14,
+            "height": 46
+          },
+          "trimBounds": {
+            "x": 284,
+            "y": 18,
+            "width": 442,
+            "height": 1497
+          },
+          "sourceDimensions": {
+            "width": 1024,
+            "height": 1536
+          },
+          "rendererOnly": true
+        }
+      ],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "localPeaks": [
+        {
+          "index": 3283,
+          "x": 156,
+          "y": 412,
+          "score": 0.013850551878387263,
+          "features": [
+            0.00845852050310481,
+            0.000038409017359466184,
+            0.05505497827258097,
+            0.0991049992853322,
+            0.003768470308311047,
+            0.6403793274293232,
+            0.42938417525799705,
+            0.5
+          ]
+        }
+      ],
+      "topRaw": [
+        {
+          "index": 2651,
+          "x": 220,
+          "y": 332,
+          "score": 0.3225199875314755
+        },
+        {
+          "index": 2379,
+          "x": 92,
+          "y": 300,
+          "score": 0.1711007778738258
+        },
+        {
+          "index": 2493,
+          "x": 492,
+          "y": 308,
+          "score": 0.16016824724358023
+        },
+        {
+          "index": 3390,
+          "x": 500,
+          "y": 420,
+          "score": 0.14422097148496485
+        },
+        {
+          "index": 2652,
+          "x": 228,
+          "y": 332,
+          "score": 0.11838494156674582
+        },
+        {
+          "index": 3717,
+          "x": 44,
+          "y": 468,
+          "score": 0.10763449286198022
+        },
+        {
+          "index": 4059,
+          "x": 220,
+          "y": 508,
+          "score": 0.08926491883492584
+        },
+        {
+          "index": 319,
+          "x": 508,
+          "y": 36,
+          "score": 0.08916759674286379
+        }
+      ],
+      "marks": [],
+      "scanMs": 1011.3314
+    },
+    {
+      "id": "v3-lower-walkway-h48-scan52",
+      "anchor": {
+        "id": "lower-walkway",
+        "x": 169,
+        "y": 400
+      },
+      "height": 48,
+      "scanHeight": 52,
+      "scanWidth": 15,
+      "placements": [
+        {
+          "id": "lower-walkway",
+          "requestedCenter": {
+            "x": 169,
+            "y": 400
+          },
+          "center": {
+            "x": 169,
+            "y": 400
+          },
+          "rectangle": {
+            "x": 162,
+            "y": 376,
+            "width": 14,
+            "height": 48
+          },
+          "trimBounds": {
+            "x": 284,
+            "y": 18,
+            "width": 442,
+            "height": 1497
+          },
+          "sourceDimensions": {
+            "width": 1024,
+            "height": 1536
+          },
+          "rendererOnly": true
+        }
+      ],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "localPeaks": [
+        {
+          "index": 3157,
+          "x": 172,
+          "y": 396,
+          "score": 0.01571923071341655,
+          "features": [
+            0.1379712479898884,
+            0.012635201841864974,
+            0.40498739274507156,
+            0.09951603692715671,
+            0,
+            0.8195365685247085,
+            0.7544848541768372,
+            0.5
+          ]
+        }
+      ],
+      "topRaw": [
+        {
+          "index": 2651,
+          "x": 220,
+          "y": 332,
+          "score": 0.3225199875314755
+        },
+        {
+          "index": 2379,
+          "x": 92,
+          "y": 300,
+          "score": 0.1711007778738258
+        },
+        {
+          "index": 2493,
+          "x": 492,
+          "y": 308,
+          "score": 0.16016824724358023
+        },
+        {
+          "index": 3390,
+          "x": 500,
+          "y": 420,
+          "score": 0.14422097148496485
+        },
+        {
+          "index": 2652,
+          "x": 228,
+          "y": 332,
+          "score": 0.11838494156674582
+        },
+        {
+          "index": 3717,
+          "x": 44,
+          "y": 468,
+          "score": 0.10763449286198022
+        },
+        {
+          "index": 4059,
+          "x": 220,
+          "y": 508,
+          "score": 0.08926491883492584
+        },
+        {
+          "index": 319,
+          "x": 508,
+          "y": 36,
+          "score": 0.08916759674286379
+        }
+      ],
+      "marks": [],
+      "scanMs": 1015.9103999999998
+    },
+    {
+      "id": "v3-lower-walkway-h52-scan52",
+      "anchor": {
+        "id": "lower-walkway",
+        "x": 169,
+        "y": 400
+      },
+      "height": 52,
+      "scanHeight": 52,
+      "scanWidth": 15,
+      "placements": [
+        {
+          "id": "lower-walkway",
+          "requestedCenter": {
+            "x": 169,
+            "y": 400
+          },
+          "center": {
+            "x": 169.5,
+            "y": 400
+          },
+          "rectangle": {
+            "x": 162,
+            "y": 374,
+            "width": 15,
+            "height": 52
+          },
+          "trimBounds": {
+            "x": 284,
+            "y": 18,
+            "width": 442,
+            "height": 1497
+          },
+          "sourceDimensions": {
+            "width": 1024,
+            "height": 1536
+          },
+          "rendererOnly": true
+        }
+      ],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "localPeaks": [
+        {
+          "index": 3157,
+          "x": 172,
+          "y": 396,
+          "score": 0.05753485240549872,
+          "features": [
+            0.14145217479672956,
+            0.017115509343483874,
+            0.45958905381230875,
+            0.14013610156677483,
+            0.024838677496094363,
+            0.8617664558504835,
+            0.7734918646432006,
+            0.5
+          ]
+        }
+      ],
+      "topRaw": [
+        {
+          "index": 2651,
+          "x": 220,
+          "y": 332,
+          "score": 0.3225199875314755
+        },
+        {
+          "index": 2379,
+          "x": 92,
+          "y": 300,
+          "score": 0.1711007778738258
+        },
+        {
+          "index": 2493,
+          "x": 492,
+          "y": 308,
+          "score": 0.16016824724358023
+        },
+        {
+          "index": 3390,
+          "x": 500,
+          "y": 420,
+          "score": 0.14422097148496485
+        },
+        {
+          "index": 2652,
+          "x": 228,
+          "y": 332,
+          "score": 0.11838494156674582
+        },
+        {
+          "index": 3717,
+          "x": 44,
+          "y": 468,
+          "score": 0.10763449286198022
+        },
+        {
+          "index": 4059,
+          "x": 220,
+          "y": 508,
+          "score": 0.08926491883492584
+        },
+        {
+          "index": 319,
+          "x": 508,
+          "y": 36,
+          "score": 0.08916759674286379
+        }
+      ],
+      "marks": [],
+      "scanMs": 1010.4061000000002
+    },
+    {
+      "id": "v3-lower-center-h44-scan52",
+      "anchor": {
+        "id": "lower-center",
+        "x": 308,
+        "y": 394
+      },
+      "height": 44,
+      "scanHeight": 52,
+      "scanWidth": 15,
+      "placements": [
+        {
+          "id": "lower-center",
+          "requestedCenter": {
+            "x": 308,
+            "y": 394
+          },
+          "center": {
+            "x": 308.5,
+            "y": 394
+          },
+          "rectangle": {
+            "x": 302,
+            "y": 372,
+            "width": 13,
+            "height": 44
+          },
+          "trimBounds": {
+            "x": 284,
+            "y": 18,
+            "width": 442,
+            "height": 1497
+          },
+          "sourceDimensions": {
+            "width": 1024,
+            "height": 1536
+          },
+          "rendererOnly": true
+        }
+      ],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "localPeaks": [
+        {
+          "index": 2982,
+          "x": 308,
+          "y": 372,
+          "score": 0.04305203453059118,
+          "features": [
+            0.00023725291783090714,
+            0,
+            0.008835308484411039,
+            0.05651836174412563,
+            0.0007959565556077045,
+            0.13994482622183865,
+            0.07507882974179492,
+            0.5
+          ]
+        }
+      ],
+      "topRaw": [
+        {
+          "index": 2651,
+          "x": 220,
+          "y": 332,
+          "score": 0.3225199875314755
+        },
+        {
+          "index": 2379,
+          "x": 92,
+          "y": 300,
+          "score": 0.1711007778738258
+        },
+        {
+          "index": 2493,
+          "x": 492,
+          "y": 308,
+          "score": 0.16016824724358023
+        },
+        {
+          "index": 3390,
+          "x": 500,
+          "y": 420,
+          "score": 0.14422097148496485
+        },
+        {
+          "index": 2652,
+          "x": 228,
+          "y": 332,
+          "score": 0.11838494156674582
+        },
+        {
+          "index": 3717,
+          "x": 44,
+          "y": 468,
+          "score": 0.10763449286198022
+        },
+        {
+          "index": 4059,
+          "x": 220,
+          "y": 508,
+          "score": 0.08926491883492584
+        },
+        {
+          "index": 319,
+          "x": 508,
+          "y": 36,
+          "score": 0.08916759674286379
+        }
+      ],
+      "marks": [],
+      "scanMs": 1018.0897000000004
+    },
+    {
+      "id": "v3-lower-center-h46-scan52",
+      "anchor": {
+        "id": "lower-center",
+        "x": 308,
+        "y": 394
+      },
+      "height": 46,
+      "scanHeight": 52,
+      "scanWidth": 15,
+      "placements": [
+        {
+          "id": "lower-center",
+          "requestedCenter": {
+            "x": 308,
+            "y": 394
+          },
+          "center": {
+            "x": 308,
+            "y": 394
+          },
+          "rectangle": {
+            "x": 301,
+            "y": 371,
+            "width": 14,
+            "height": 46
+          },
+          "trimBounds": {
+            "x": 284,
+            "y": 18,
+            "width": 442,
+            "height": 1497
+          },
+          "sourceDimensions": {
+            "width": 1024,
+            "height": 1536
+          },
+          "rendererOnly": true
+        }
+      ],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "localPeaks": [
+        {
+          "index": 3174,
+          "x": 308,
+          "y": 396,
+          "score": 0.05791082307276791,
+          "features": [
+            0.05850166920309238,
+            0.0034031702429307407,
+            0.6163929509021729,
+            0.23494655393636482,
+            0.4538487378076522,
+            0.9103719211823494,
+            0.8046788643332072,
+            0.5
+          ]
+        }
+      ],
+      "topRaw": [
+        {
+          "index": 2651,
+          "x": 220,
+          "y": 332,
+          "score": 0.3225199875314755
+        },
+        {
+          "index": 2379,
+          "x": 92,
+          "y": 300,
+          "score": 0.1711007778738258
+        },
+        {
+          "index": 2493,
+          "x": 492,
+          "y": 308,
+          "score": 0.16016824724358023
+        },
+        {
+          "index": 3390,
+          "x": 500,
+          "y": 420,
+          "score": 0.14422097148496485
+        },
+        {
+          "index": 2652,
+          "x": 228,
+          "y": 332,
+          "score": 0.11838494156674582
+        },
+        {
+          "index": 3717,
+          "x": 44,
+          "y": 468,
+          "score": 0.10763449286198022
+        },
+        {
+          "index": 4059,
+          "x": 220,
+          "y": 508,
+          "score": 0.08926491883492584
+        },
+        {
+          "index": 319,
+          "x": 508,
+          "y": 36,
+          "score": 0.08916759674286379
+        }
+      ],
+      "marks": [],
+      "scanMs": 1015.9809000000005
+    },
+    {
+      "id": "v3-lower-center-h48-scan52",
+      "anchor": {
+        "id": "lower-center",
+        "x": 308,
+        "y": 394
+      },
+      "height": 48,
+      "scanHeight": 52,
+      "scanWidth": 15,
+      "placements": [
+        {
+          "id": "lower-center",
+          "requestedCenter": {
+            "x": 308,
+            "y": 394
+          },
+          "center": {
+            "x": 308,
+            "y": 394
+          },
+          "rectangle": {
+            "x": 301,
+            "y": 370,
+            "width": 14,
+            "height": 48
+          },
+          "trimBounds": {
+            "x": 284,
+            "y": 18,
+            "width": 442,
+            "height": 1497
+          },
+          "sourceDimensions": {
+            "width": 1024,
+            "height": 1536
+          },
+          "rendererOnly": true
+        }
+      ],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "localPeaks": [
+        {
+          "index": 3174,
+          "x": 308,
+          "y": 396,
+          "score": 0.23481464290323634,
+          "features": [
+            0.10579958185887826,
+            0.011175731928248294,
+            0.6354450609699434,
+            0.2401808005150458,
+            0.47620384016807116,
+            0.9136971231867389,
+            0.8193996952118126,
+            0.5
+          ]
+        }
+      ],
+      "topRaw": [
+        {
+          "index": 2651,
+          "x": 220,
+          "y": 332,
+          "score": 0.3225199875314755
+        },
+        {
+          "index": 3174,
+          "x": 308,
+          "y": 396,
+          "score": 0.23481464290323634,
+          "features": [
+            0.10579958185887826,
+            0.011175731928248294,
+            0.6354450609699434,
+            0.2401808005150458,
+            0.47620384016807116,
+            0.9136971231867389,
+            0.8193996952118126,
+            0.5
+          ]
+        },
+        {
+          "index": 2379,
+          "x": 92,
+          "y": 300,
+          "score": 0.1711007778738258
+        },
+        {
+          "index": 2493,
+          "x": 492,
+          "y": 308,
+          "score": 0.16016824724358023
+        },
+        {
+          "index": 3390,
+          "x": 500,
+          "y": 420,
+          "score": 0.14422097148496485
+        },
+        {
+          "index": 2652,
+          "x": 228,
+          "y": 332,
+          "score": 0.11838494156674582
+        },
+        {
+          "index": 3717,
+          "x": 44,
+          "y": 468,
+          "score": 0.10763449286198022
+        },
+        {
+          "index": 4059,
+          "x": 220,
+          "y": 508,
+          "score": 0.08926491883492584
+        }
+      ],
+      "marks": [],
+      "scanMs": 1017.1152000000002
+    },
+    {
+      "id": "v3-lower-center-h50-scan52",
+      "anchor": {
+        "id": "lower-center",
+        "x": 308,
+        "y": 394
+      },
+      "height": 50,
+      "scanHeight": 52,
+      "scanWidth": 15,
+      "placements": [
+        {
+          "id": "lower-center",
+          "requestedCenter": {
+            "x": 308,
+            "y": 394
+          },
+          "center": {
+            "x": 308.5,
+            "y": 394
+          },
+          "rectangle": {
+            "x": 301,
+            "y": 369,
+            "width": 15,
+            "height": 50
+          },
+          "trimBounds": {
+            "x": 284,
+            "y": 18,
+            "width": 442,
+            "height": 1497
+          },
+          "sourceDimensions": {
+            "width": 1024,
+            "height": 1536
+          },
+          "rendererOnly": true
+        }
+      ],
+      "maximum": {
+        "index": 3174,
+        "x": 308,
+        "y": 396,
+        "score": 0.32539544990093067,
+        "features": [
+          0.16010742514557152,
+          0.025238478184452084,
+          0.6537205892134417,
+          0.2655903034696799,
+          0.39756195372161196,
+          0.9135550739822036,
+          0.8361010875169193,
+          0.5
+        ]
+      },
+      "localPeaks": [
+        {
+          "index": 3174,
+          "x": 308,
+          "y": 396,
+          "score": 0.32539544990093067,
+          "features": [
+            0.16010742514557152,
+            0.025238478184452084,
+            0.6537205892134417,
+            0.2655903034696799,
+            0.39756195372161196,
+            0.9135550739822036,
+            0.8361010875169193,
+            0.5
+          ]
+        }
+      ],
+      "topRaw": [
+        {
+          "index": 3174,
+          "x": 308,
+          "y": 396,
+          "score": 0.32539544990093067,
+          "features": [
+            0.16010742514557152,
+            0.025238478184452084,
+            0.6537205892134417,
+            0.2655903034696799,
+            0.39756195372161196,
+            0.9135550739822036,
+            0.8361010875169193,
+            0.5
+          ]
+        },
+        {
+          "index": 2651,
+          "x": 220,
+          "y": 332,
+          "score": 0.3225199875314755
+        },
+        {
+          "index": 2379,
+          "x": 92,
+          "y": 300,
+          "score": 0.1711007778738258
+        },
+        {
+          "index": 2493,
+          "x": 492,
+          "y": 308,
+          "score": 0.16016824724358023
+        },
+        {
+          "index": 3390,
+          "x": 500,
+          "y": 420,
+          "score": 0.14422097148496485
+        },
+        {
+          "index": 2652,
+          "x": 228,
+          "y": 332,
+          "score": 0.11838494156674582
+        },
+        {
+          "index": 3717,
+          "x": 44,
+          "y": 468,
+          "score": 0.10763449286198022
+        },
+        {
+          "index": 4059,
+          "x": 220,
+          "y": 508,
+          "score": 0.08926491883492584
+        }
+      ],
+      "marks": [],
+      "scanMs": 1036.3140999999996
+    },
+    {
+      "id": "v3-lower-center-h52-scan52",
+      "anchor": {
+        "id": "lower-center",
+        "x": 308,
+        "y": 394
+      },
+      "height": 52,
+      "scanHeight": 52,
+      "scanWidth": 15,
+      "placements": [
+        {
+          "id": "lower-center",
+          "requestedCenter": {
+            "x": 308,
+            "y": 394
+          },
+          "center": {
+            "x": 308.5,
+            "y": 394
+          },
+          "rectangle": {
+            "x": 301,
+            "y": 368,
+            "width": 15,
+            "height": 52
+          },
+          "trimBounds": {
+            "x": 284,
+            "y": 18,
+            "width": 442,
+            "height": 1497
+          },
+          "sourceDimensions": {
+            "width": 1024,
+            "height": 1536
+          },
+          "rendererOnly": true
+        }
+      ],
+      "maximum": {
+        "index": 3174,
+        "x": 308,
+        "y": 396,
+        "score": 0.412579299573469,
+        "features": [
+          0.1678726694889297,
+          0.027818985700686243,
+          0.6297153838696768,
+          0.26880377951499024,
+          0.4230093544308336,
+          0.9212033519884435,
+          0.8488519007871194,
+          0.5
+        ]
+      },
+      "localPeaks": [
+        {
+          "index": 3174,
+          "x": 308,
+          "y": 396,
+          "score": 0.412579299573469,
+          "features": [
+            0.1678726694889297,
+            0.027818985700686243,
+            0.6297153838696768,
+            0.26880377951499024,
+            0.4230093544308336,
+            0.9212033519884435,
+            0.8488519007871194,
+            0.5
+          ]
+        }
+      ],
+      "topRaw": [
+        {
+          "index": 3174,
+          "x": 308,
+          "y": 396,
+          "score": 0.412579299573469,
+          "features": [
+            0.1678726694889297,
+            0.027818985700686243,
+            0.6297153838696768,
+            0.26880377951499024,
+            0.4230093544308336,
+            0.9212033519884435,
+            0.8488519007871194,
+            0.5
+          ]
+        },
+        {
+          "index": 2651,
+          "x": 220,
+          "y": 332,
+          "score": 0.3225199875314755
+        },
+        {
+          "index": 2379,
+          "x": 92,
+          "y": 300,
+          "score": 0.1711007778738258
+        },
+        {
+          "index": 2493,
+          "x": 492,
+          "y": 308,
+          "score": 0.16016824724358023
+        },
+        {
+          "index": 3390,
+          "x": 500,
+          "y": 420,
+          "score": 0.14422097148496485
+        },
+        {
+          "index": 2652,
+          "x": 228,
+          "y": 332,
+          "score": 0.11838494156674582
+        },
+        {
+          "index": 3717,
+          "x": 44,
+          "y": 468,
+          "score": 0.10763449286198022
+        },
+        {
+          "index": 4059,
+          "x": 220,
+          "y": 508,
+          "score": 0.08926491883492584
+        }
+      ],
+      "marks": [],
+      "scanMs": 1018.4458000000013
+    },
+    {
+      "id": "v3-lower-center-h52-scan40-final",
+      "anchor": {
+        "id": "lower-center",
+        "x": 308,
+        "y": 394
+      },
+      "height": 52,
+      "scanHeight": 40,
+      "scanWidth": 12,
+      "placements": [
+        {
+          "id": "lower-center",
+          "requestedCenter": {
+            "x": 308,
+            "y": 394
+          },
+          "center": {
+            "x": 308.5,
+            "y": 394
+          },
+          "rectangle": {
+            "x": 301,
+            "y": 368,
+            "width": 15,
+            "height": 52
+          },
+          "trimBounds": {
+            "x": 284,
+            "y": 18,
+            "width": 442,
+            "height": 1497
+          },
+          "sourceDimensions": {
+            "width": 1024,
+            "height": 1536
+          },
+          "rendererOnly": true
+        }
+      ],
+      "maximum": {
+        "index": 3110,
+        "x": 308,
+        "y": 388,
+        "score": 0.5774214443757908,
+        "features": [
+          0.06282288413371358,
+          0.0037098635230273158,
+          0.5291582082829175,
+          0.22304613996181338,
+          0.31917300691675776,
+          0.9100563484952903,
+          0.7507253742499786,
+          0
+        ]
+      },
+      "localPeaks": [
+        {
+          "index": 3110,
+          "x": 308,
+          "y": 388,
+          "score": 0.5774214443757908,
+          "features": [
+            0.06282288413371358,
+            0.0037098635230273158,
+            0.5291582082829175,
+            0.22304613996181338,
+            0.31917300691675776,
+            0.9100563484952903,
+            0.7507253742499786,
+            0
+          ]
+        }
+      ],
+      "topRaw": [
+        {
+          "index": 3110,
+          "x": 308,
+          "y": 388,
+          "score": 0.5774214443757908,
+          "features": [
+            0.06282288413371358,
+            0.0037098635230273158,
+            0.5291582082829175,
+            0.22304613996181338,
+            0.31917300691675776,
+            0.9100563484952903,
+            0.7507253742499786,
+            0
+          ]
+        },
+        {
+          "index": 3174,
+          "x": 308,
+          "y": 396,
+          "score": 0.35598336413347725
+        },
+        {
+          "index": 1994,
+          "x": 84,
+          "y": 252,
+          "score": 0.33325735373561133
+        },
+        {
+          "index": 589,
+          "x": 108,
+          "y": 76,
+          "score": 0.2829657492642983
+        },
+        {
+          "index": 590,
+          "x": 116,
+          "y": 76,
+          "score": 0.1472147598383909
+        },
+        {
+          "index": 2699,
+          "x": 92,
+          "y": 340,
+          "score": 0.13859122085894443
+        },
+        {
+          "index": 690,
+          "x": 404,
+          "y": 84,
+          "score": 0.12821655101753626
+        },
+        {
+          "index": 652,
+          "x": 100,
+          "y": 84,
+          "score": 0.10997817125217454
+        }
+      ],
+      "marks": [],
+      "scanMs": 1007.9380000000001,
+      "PNG": "v3-lower-center-h52-scan40-final.png",
+      "PNG_SHA256": "3077e3dd1e256427c25b9b0170bcc977df41cc5337ab07ed9e72719f71717db7"
+    },
+    {
+      "id": "v3-lower-center-h52-scan46-final",
+      "anchor": {
+        "id": "lower-center",
+        "x": 308,
+        "y": 394
+      },
+      "height": 52,
+      "scanHeight": 46,
+      "scanWidth": 14,
+      "placements": [
+        {
+          "id": "lower-center",
+          "requestedCenter": {
+            "x": 308,
+            "y": 394
+          },
+          "center": {
+            "x": 308.5,
+            "y": 394
+          },
+          "rectangle": {
+            "x": 301,
+            "y": 368,
+            "width": 15,
+            "height": 52
+          },
+          "trimBounds": {
+            "x": 284,
+            "y": 18,
+            "width": 442,
+            "height": 1497
+          },
+          "sourceDimensions": {
+            "width": 1024,
+            "height": 1536
+          },
+          "rendererOnly": true
+        }
+      ],
+      "maximum": {
+        "index": 3174,
+        "x": 308,
+        "y": 396,
+        "score": 0.9855115401602578,
+        "features": [
+          0.20435246033622276,
+          0.04161359052539949,
+          0.6522593063367164,
+          0.2115672470121662,
+          0.49044781764102696,
+          0.9269750243563699,
+          0.8550788430647464,
+          0.25
+        ]
+      },
+      "localPeaks": [
+        {
+          "index": 3174,
+          "x": 308,
+          "y": 396,
+          "score": 0.9855115401602578,
+          "features": [
+            0.20435246033622276,
+            0.04161359052539949,
+            0.6522593063367164,
+            0.2115672470121662,
+            0.49044781764102696,
+            0.9269750243563699,
+            0.8550788430647464,
+            0.25
+          ]
+        }
+      ],
+      "topRaw": [
+        {
+          "index": 3174,
+          "x": 308,
+          "y": 396,
+          "score": 0.9855115401602578,
+          "features": [
+            0.20435246033622276,
+            0.04161359052539949,
+            0.6522593063367164,
+            0.2115672470121662,
+            0.49044781764102696,
+            0.9269750243563699,
+            0.8550788430647464,
+            0.25
+          ]
+        },
+        {
+          "index": 3110,
+          "x": 308,
+          "y": 388,
+          "score": 0.5639728256268585
+        },
+        {
+          "index": 2429,
+          "x": 492,
+          "y": 300,
+          "score": 0.44194176951785
+        },
+        {
+          "index": 3558,
+          "x": 308,
+          "y": 444,
+          "score": 0.3930686830338117
+        },
+        {
+          "index": 3933,
+          "x": 236,
+          "y": 492,
+          "score": 0.29817954300635835
+        },
+        {
+          "index": 2493,
+          "x": 492,
+          "y": 308,
+          "score": 0.25762682550114896
+        },
+        {
+          "index": 3934,
+          "x": 244,
+          "y": 492,
+          "score": 0.2438535448018619
+        },
+        {
+          "index": 3241,
+          "x": 332,
+          "y": 404,
+          "score": 0.21180369216313047
+        }
+      ],
+      "marks": [
+        3174
+      ],
+      "scanMs": 1014.5452000000005,
+      "PNG": "v3-lower-center-h52-scan46-final.png",
+      "PNG_SHA256": "3077e3dd1e256427c25b9b0170bcc977df41cc5337ab07ed9e72719f71717db7"
+    },
+    {
+      "id": "v3-lower-center-h52-scan52-final",
+      "anchor": {
+        "id": "lower-center",
+        "x": 308,
+        "y": 394
+      },
+      "height": 52,
+      "scanHeight": 52,
+      "scanWidth": 15,
+      "placements": [
+        {
+          "id": "lower-center",
+          "requestedCenter": {
+            "x": 308,
+            "y": 394
+          },
+          "center": {
+            "x": 308.5,
+            "y": 394
+          },
+          "rectangle": {
+            "x": 301,
+            "y": 368,
+            "width": 15,
+            "height": 52
+          },
+          "trimBounds": {
+            "x": 284,
+            "y": 18,
+            "width": 442,
+            "height": 1497
+          },
+          "sourceDimensions": {
+            "width": 1024,
+            "height": 1536
+          },
+          "rendererOnly": true
+        }
+      ],
+      "maximum": {
+        "index": 3174,
+        "x": 308,
+        "y": 396,
+        "score": 0.412579299573469,
+        "features": [
+          0.1678726694889297,
+          0.027818985700686243,
+          0.6297153838696768,
+          0.26880377951499024,
+          0.4230093544308336,
+          0.9212033519884435,
+          0.8488519007871194,
+          0.5
+        ]
+      },
+      "localPeaks": [
+        {
+          "index": 3174,
+          "x": 308,
+          "y": 396,
+          "score": 0.412579299573469,
+          "features": [
+            0.1678726694889297,
+            0.027818985700686243,
+            0.6297153838696768,
+            0.26880377951499024,
+            0.4230093544308336,
+            0.9212033519884435,
+            0.8488519007871194,
+            0.5
+          ]
+        }
+      ],
+      "topRaw": [
+        {
+          "index": 3174,
+          "x": 308,
+          "y": 396,
+          "score": 0.412579299573469,
+          "features": [
+            0.1678726694889297,
+            0.027818985700686243,
+            0.6297153838696768,
+            0.26880377951499024,
+            0.4230093544308336,
+            0.9212033519884435,
+            0.8488519007871194,
+            0.5
+          ]
+        },
+        {
+          "index": 2651,
+          "x": 220,
+          "y": 332,
+          "score": 0.3225199875314755
+        },
+        {
+          "index": 2379,
+          "x": 92,
+          "y": 300,
+          "score": 0.1711007778738258
+        },
+        {
+          "index": 2493,
+          "x": 492,
+          "y": 308,
+          "score": 0.16016824724358023
+        },
+        {
+          "index": 3390,
+          "x": 500,
+          "y": 420,
+          "score": 0.14422097148496485
+        },
+        {
+          "index": 2652,
+          "x": 228,
+          "y": 332,
+          "score": 0.11838494156674582
+        },
+        {
+          "index": 3717,
+          "x": 44,
+          "y": 468,
+          "score": 0.10763449286198022
+        },
+        {
+          "index": 4059,
+          "x": 220,
+          "y": 508,
+          "score": 0.08926491883492584
+        }
+      ],
+      "marks": [],
+      "scanMs": 1010.2885000000024,
+      "PNG": "v3-lower-center-h52-scan52-final.png",
+      "PNG_SHA256": "3077e3dd1e256427c25b9b0170bcc977df41cc5337ab07ed9e72719f71717db7"
+    },
+    {
+      "id": "v3-lower-center-h52-scan58-final",
+      "anchor": {
+        "id": "lower-center",
+        "x": 308,
+        "y": 394
+      },
+      "height": 52,
+      "scanHeight": 58,
+      "scanWidth": 17,
+      "placements": [
+        {
+          "id": "lower-center",
+          "requestedCenter": {
+            "x": 308,
+            "y": 394
+          },
+          "center": {
+            "x": 308.5,
+            "y": 394
+          },
+          "rectangle": {
+            "x": 301,
+            "y": 368,
+            "width": 15,
+            "height": 52
+          },
+          "trimBounds": {
+            "x": 284,
+            "y": 18,
+            "width": 442,
+            "height": 1497
+          },
+          "sourceDimensions": {
+            "width": 1024,
+            "height": 1536
+          },
+          "rendererOnly": true
+        }
+      ],
+      "maximum": {
+        "index": 3282,
+        "x": 148,
+        "y": 412,
+        "score": 0.1941006073297674
+      },
+      "localPeaks": [
+        {
+          "index": 3174,
+          "x": 308,
+          "y": 396,
+          "score": 0.15264519719536157,
+          "features": [
+            0.09513200542402356,
+            0.009002304550426478,
+            0.6375233234539383,
+            0.22207537065670546,
+            0.25945997775396007,
+            0.9028367074211525,
+            0.8076894508058661,
+            0.75
+          ]
+        }
+      ],
+      "topRaw": [
+        {
+          "index": 3282,
+          "x": 148,
+          "y": 412,
+          "score": 0.1941006073297674
+        },
+        {
+          "index": 3174,
+          "x": 308,
+          "y": 396,
+          "score": 0.15264519719536157,
+          "features": [
+            0.09513200542402356,
+            0.009002304550426478,
+            0.6375233234539383,
+            0.22207537065670546,
+            0.25945997775396007,
+            0.9028367074211525,
+            0.8076894508058661,
+            0.75
+          ]
+        },
+        {
+          "index": 2795,
+          "x": 348,
+          "y": 348,
+          "score": 0.13684002670267484
+        },
+        {
+          "index": 1793,
+          "x": 12,
+          "y": 228,
+          "score": 0.134556519981047
+        },
+        {
+          "index": 3108,
+          "x": 292,
+          "y": 388,
+          "score": 0.11819112352931119
+        },
+        {
+          "index": 2432,
+          "x": 4,
+          "y": 308,
+          "score": 0.11664960546648726
+        },
+        {
+          "index": 2428,
+          "x": 484,
+          "y": 300,
+          "score": 0.11631134416126644
+        },
+        {
+          "index": 2677,
+          "x": 428,
+          "y": 332,
+          "score": 0.10349785175502656
+        }
+      ],
+      "marks": [],
+      "scanMs": 1014.7625999999982,
+      "PNG": "v3-lower-center-h52-scan58-final.png",
+      "PNG_SHA256": "3077e3dd1e256427c25b9b0170bcc977df41cc5337ab07ed9e72719f71717db7"
+    },
+    {
+      "id": "v3-lower-center-h52-scan64-final",
+      "anchor": {
+        "id": "lower-center",
+        "x": 308,
+        "y": 394
+      },
+      "height": 52,
+      "scanHeight": 64,
+      "scanWidth": 19,
+      "placements": [
+        {
+          "id": "lower-center",
+          "requestedCenter": {
+            "x": 308,
+            "y": 394
+          },
+          "center": {
+            "x": 308.5,
+            "y": 394
+          },
+          "rectangle": {
+            "x": 301,
+            "y": 368,
+            "width": 15,
+            "height": 52
+          },
+          "trimBounds": {
+            "x": 284,
+            "y": 18,
+            "width": 442,
+            "height": 1497
+          },
+          "sourceDimensions": {
+            "width": 1024,
+            "height": 1536
+          },
+          "rendererOnly": true
+        }
+      ],
+      "maximum": {
+        "index": 2738,
+        "x": 404,
+        "y": 340,
+        "score": 0.231635245313214
+      },
+      "localPeaks": [
+        {
+          "index": 3172,
+          "x": 292,
+          "y": 396,
+          "score": 0.16012439073217044,
+          "features": [
+            0.006637367202295692,
+            0,
+            0.47305188263768644,
+            0.026336082151678007,
+            0.0018953072421405521,
+            0.39052811499328993,
+            0.645248407278938,
+            1
+          ]
+        }
+      ],
+      "topRaw": [
+        {
+          "index": 2738,
+          "x": 404,
+          "y": 340,
+          "score": 0.231635245313214
+        },
+        {
+          "index": 2610,
+          "x": 404,
+          "y": 324,
+          "score": 0.20694015629726614
+        },
+        {
+          "index": 3214,
+          "x": 116,
+          "y": 404,
+          "score": 0.20466349968173603
+        },
+        {
+          "index": 2677,
+          "x": 428,
+          "y": 332,
+          "score": 0.1637607774411245
+        },
+        {
+          "index": 3172,
+          "x": 292,
+          "y": 396,
+          "score": 0.16012439073217044,
+          "features": [
+            0.006637367202295692,
+            0,
+            0.47305188263768644,
+            0.026336082151678007,
+            0.0018953072421405521,
+            0.39052811499328993,
+            0.645248407278938,
+            1
+          ]
+        },
+        {
+          "index": 3282,
+          "x": 148,
+          "y": 412,
+          "score": 0.14065047814253856
+        },
+        {
+          "index": 2613,
+          "x": 428,
+          "y": 324,
+          "score": 0.12092516483193695
+        },
+        {
+          "index": 3175,
+          "x": 316,
+          "y": 396,
+          "score": 0.11587531849146675
+        }
+      ],
+      "marks": [],
+      "scanMs": 1016.6293000000005,
+      "PNG": "v3-lower-center-h52-scan64-final.png",
+      "PNG_SHA256": "3077e3dd1e256427c25b9b0170bcc977df41cc5337ab07ed9e72719f71717db7"
+    }
+  ],
+  "primaryChecks": {
+    "allFiveClear": false,
+    "defaultLocalPeak": {
+      "index": 3157,
+      "x": 172,
+      "y": 396,
+      "score": 0.02343179648724801,
+      "features": [
+        0.1289695250938071,
+        0.014573715042169488,
+        0.44553175528561567,
+        0.12524768761821606,
+        0.012943520541893627,
+        0.8542154780805873,
+        0.764221122783415,
+        0.5
+      ]
+    },
+    "checks": [
+      {
+        "id": "v3-lower-walkway-h50-scan40",
+        "height": 40,
+        "maximum": 0.9925804166043962,
+        "marks": [
+          3221
+        ]
+      },
+      {
+        "id": "v3-lower-walkway-h50-scan46",
+        "height": 46,
+        "maximum": 0.9821515169554644,
+        "marks": [
+          3221
+        ]
+      },
+      {
+        "id": "v3-lower-walkway-h50-scan52",
+        "height": 52,
+        "maximum": 0.3225199875314755,
+        "marks": []
+      },
+      {
+        "id": "v3-lower-walkway-h50-scan58",
+        "height": 58,
+        "maximum": 0.20004353367231648,
+        "marks": []
+      },
+      {
+        "id": "v3-lower-walkway-h50-scan64",
+        "height": 64,
+        "maximum": 0.231635245313214,
+        "marks": []
+      }
+    ]
+  },
+  "alternativeChecks": [
+    {
+      "id": "v3-lower-center-h52-scan40-final",
+      "height": 40,
+      "maximum": 0.5774214443757908,
+      "marks": []
+    },
+    {
+      "id": "v3-lower-center-h52-scan46-final",
+      "height": 46,
+      "maximum": 0.9855115401602578,
+      "marks": [
+        3174
+      ]
+    },
+    {
+      "id": "v3-lower-center-h52-scan52-final",
+      "height": 52,
+      "maximum": 0.412579299573469,
+      "marks": []
+    },
+    {
+      "id": "v3-lower-center-h52-scan58-final",
+      "height": 58,
+      "maximum": 0.1941006073297674,
+      "marks": []
+    },
+    {
+      "id": "v3-lower-center-h52-scan64-final",
+      "height": 64,
+      "maximum": 0.231635245313214,
+      "marks": []
+    }
+  ]
+}

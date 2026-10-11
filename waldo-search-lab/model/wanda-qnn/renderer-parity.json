@@ -1,0 +1,4596 @@
+{
+  "recordedAtUtc": "2026-10-11T05:06:21.398Z",
+  "scope": "Engineering parity to the already opened frozen reserved corpus; no fresh statistical holdout and no learning/threshold/grading changes",
+  "sourceHashes": {
+    "sceneEditor": "645d3799f9eb27ac39b81aa4c9a8659cea551e00a699560046cb36eb13ff61ae",
+    "app": "79823bfa00db4641d1740feb3e39789342ec2116fd22cf5b10613edb1c40b968",
+    "features": "bc9292a9dbc9ada24611916118e297aeb06d3d2eb8a5961c31f968162c26decf",
+    "predictor": "c881e6a815c7e5e1b4013a241d7b36ff78f3c21ac49ef0f47f2f8005979e972e",
+    "frozenModel": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88",
+    "frozenGenerator": "27316676e237a74b800d68c51d68d2f9a96da94f42be35188595d329ce45b691"
+  },
+  "sceneEditorWasAmongSevenFrozenSourceFiles": false,
+  "canonicalRenderContract": {
+    "background": "Normalized512PNG→512basecanvas, smoothingEnabled=true,quality=high, five-argument drawImage(im,0,0,512,512)",
+    "target": "alpha>16trim→known-size raster, high quality; resized raster copied at integer rectangle position with targetSmoothing=false",
+    "composition": "Actual compositeLayeredScene, no foreground layers, manual depth1000; intermediate transparent target/alpha canvases retained",
+    "differenceFromPriorProduction": "Prior generic background path disabled1:1smoothing; prior renderTarget reapplied high-quality1:1target resampling"
+  },
+  "frames": 325,
+  "targetFrames": 300,
+  "absenceFrames": 25,
+  "comparedRGBAChannels": 340787200,
+  "totalDifferentRGBAChannels": 0,
+  "maximumPixelError": 0,
+  "selectedPointFeatureChecks": 325,
+  "maxFeatureError": 0,
+  "maxScoreError": 1.3322676295501878e-15,
+  "wholeLatticeChecks": [
+    {
+      "id": "test-22",
+      "windowCount": 4096,
+      "featureValues": 32768,
+      "maxFeatureError": 0
+    },
+    {
+      "id": "test-204",
+      "windowCount": 4096,
+      "featureValues": 32768,
+      "maxFeatureError": 0
+    }
+  ],
+  "passed": true,
+  "consequence": "Identical RGB and fixed feature/scorer/threshold/NMS imply identical4096score fields and the original frozen298/300complete,1incorrect,1abstention,0/25absence results under this exact native renderer. This is an engineering identity proof, not a new model-performance selection.",
+  "rows": [
+    {
+      "id": "test-0",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        468,
+        116
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-1",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        388,
+        220
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-2",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        212,
+        36
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-3",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        124,
+        412
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-4",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        212,
+        108
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-5",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        28,
+        420
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-6",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        428,
+        180
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-7",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        60,
+        460
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-8",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        12,
+        292
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-9",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        412,
+        132
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-10",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        36,
+        364
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-11",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        236,
+        164
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-12",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        252,
+        316
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-13",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        196,
+        468
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-14",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        460,
+        60
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-15",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        228,
+        404
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-16",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        436,
+        444
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-17",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        428,
+        100
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-18",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        436,
+        68
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-19",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        308,
+        164
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-20",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        172,
+        212
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-21",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        316,
+        268
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-22",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        324,
+        116
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-23",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        404,
+        340
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-24",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        28,
+        100
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-25",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        60,
+        356
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-26",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        116,
+        284
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-27",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        204,
+        252
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-28",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        476,
+        236
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-29",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        236,
+        460
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-30",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        164,
+        52
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-31",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        164,
+        108
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-32",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        132,
+        252
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-33",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        492,
+        316
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-34",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        308,
+        460
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-35",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        12,
+        76
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-36",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        196,
+        444
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-37",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        364,
+        468
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 1.1102230246251565e-16
+    },
+    {
+      "id": "test-38",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        172,
+        52
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-39",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        428,
+        204
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-40",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        20,
+        316
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-41",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        252,
+        76
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-42",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        148,
+        380
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-43",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        60,
+        196
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-44",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        12,
+        476
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-45",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        276,
+        204
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-46",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        380,
+        196
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-47",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        20,
+        420
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-48",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        124,
+        412
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-49",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        396,
+        244
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-50",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        92,
+        476
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 1.1102230246251565e-16
+    },
+    {
+      "id": "test-51",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        284,
+        332
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-52",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        484,
+        132
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-53",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        76,
+        268
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-54",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        452,
+        252
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-55",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        124,
+        332
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-56",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        148,
+        220
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-57",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        452,
+        36
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-58",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        44,
+        252
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-59",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        100,
+        76
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-60",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        500,
+        476
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-61",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        28,
+        180
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-62",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        60,
+        276
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-63",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        468,
+        84
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-64",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        156,
+        484
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-65",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        444,
+        308
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-66",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        228,
+        140
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-67",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        436,
+        444
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-68",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        284,
+        388
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-69",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        236,
+        252
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-70",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        380,
+        460
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-71",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        124,
+        388
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-72",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        428,
+        44
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-73",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        364,
+        332
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-74",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        284,
+        92
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-75",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        124,
+        228
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-76",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        236,
+        324
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 1.1102230246251565e-16
+    },
+    {
+      "id": "test-77",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        76,
+        108
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-78",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        60,
+        36
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-79",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        356,
+        68
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-80",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        428,
+        204
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-81",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        444,
+        148
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-82",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        76,
+        428
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-83",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        132,
+        252
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-84",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        148,
+        300
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-85",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        396,
+        164
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-86",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        36,
+        44
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-87",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        444,
+        388
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-88",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        220,
+        60
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-89",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        236,
+        244
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-90",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        156,
+        164
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-91",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        468,
+        404
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-92",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        284,
+        60
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-93",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        76,
+        244
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-94",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        116,
+        284
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-95",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        20,
+        420
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-96",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        500,
+        260
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-97",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        140,
+        300
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-98",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        284,
+        468
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-99",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        260,
+        396
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-100",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        260,
+        452
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-101",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        68,
+        484
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-102",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        284,
+        148
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-103",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        476,
+        188
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-104",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        212,
+        276
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-105",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        316,
+        348
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-106",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        460,
+        36
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-107",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        420,
+        396
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-108",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        68,
+        428
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-109",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        28,
+        260
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-110",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        92,
+        156
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-111",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        156,
+        404
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-112",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        428,
+        284
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-113",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        460,
+        300
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-114",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        164,
+        348
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-115",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        364,
+        148
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-116",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        492,
+        236
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-117",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        188,
+        180
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-118",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        52,
+        196
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-119",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        116,
+        148
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-120",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        52,
+        196
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-121",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        236,
+        84
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-122",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        132,
+        196
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-123",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        204,
+        412
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-124",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        220,
+        196
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-125",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        404,
+        108
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-126",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        348,
+        180
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-127",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        220,
+        436
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-128",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        444,
+        228
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-129",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        228,
+        60
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-130",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        156,
+        244
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-131",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        20,
+        180
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-132",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        388,
+        460
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-133",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        164,
+        452
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-134",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        300,
+        276
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-135",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        228,
+        132
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-136",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        404,
+        292
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-137",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        140,
+        436
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-138",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        276,
+        444
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-139",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        196,
+        68
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-140",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        196,
+        364
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-141",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        20,
+        396
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-142",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        268,
+        44
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-143",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        20,
+        236
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-144",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        372,
+        356
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-145",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        220,
+        172
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-146",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        124,
+        68
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-147",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        260,
+        260
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 1.1102230246251565e-16
+    },
+    {
+      "id": "test-148",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        260,
+        396
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-149",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        116,
+        444
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-150",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        348,
+        204
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-151",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        140,
+        36
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-152",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        132,
+        332
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 1.1102230246251565e-16
+    },
+    {
+      "id": "test-153",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        332,
+        396
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-154",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        100,
+        180
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-155",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        76,
+        172
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-156",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        372,
+        116
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-157",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        148,
+        220
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-158",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        116,
+        228
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-159",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        68,
+        220
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-160",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        172,
+        212
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-161",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        364,
+        228
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-162",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        164,
+        188
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-163",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        436,
+        204
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-164",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        260,
+        76
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-165",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        212,
+        92
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-166",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        276,
+        204
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-167",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        364,
+        92
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-168",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        316,
+        244
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-169",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        396,
+        164
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-170",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        84,
+        372
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-171",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        44,
+        468
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-172",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        276,
+        204
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-173",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        380,
+        356
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-174",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        436,
+        44
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-175",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        28,
+        100
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-176",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        148,
+        84
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-177",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        52,
+        332
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-178",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        332,
+        132
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-179",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        164,
+        28
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-180",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        108,
+        100
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-181",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        412,
+        396
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-182",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        492,
+        156
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-183",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        492,
+        476
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-184",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        236,
+        268
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-185",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        100,
+        76
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-186",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        132,
+        252
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-187",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        220,
+        36
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-188",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        380,
+        132
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-189",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        148,
+        460
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-190",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        284,
+        124
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-191",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        340,
+        396
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-192",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        236,
+        348
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-193",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        20,
+        100
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-194",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        340,
+        236
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-195",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        148,
+        84
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-196",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        308,
+        324
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-197",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        428,
+        204
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-198",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        484,
+        348
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-199",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        380,
+        140
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-200",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        220,
+        140
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-201",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        476,
+        244
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-202",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        388,
+        244
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-203",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        356,
+        148
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-204",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        140,
+        300
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 3.3306690738754696e-16
+    },
+    {
+      "id": "test-205",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        484,
+        292
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-206",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        452,
+        172
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-207",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        412,
+        316
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-208",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        500,
+        100
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-209",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        364,
+        92
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-210",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        284,
+        308
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-211",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        460,
+        196
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-212",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        420,
+        316
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-213",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        60,
+        196
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-214",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        372,
+        172
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-215",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        340,
+        420
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-216",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        348,
+        180
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-217",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        140,
+        356
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-218",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        140,
+        116
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-219",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        404,
+        52
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-220",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        420,
+        420
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-221",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        348,
+        260
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-222",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        316,
+        188
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 3.3306690738754696e-16
+    },
+    {
+      "id": "test-223",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        220,
+        220
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-224",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        364,
+        172
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-225",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        276,
+        308
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-226",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        60,
+        460
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-227",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        236,
+        84
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-228",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        188,
+        340
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-229",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        420,
+        396
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-230",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        76,
+        484
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-231",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        436,
+        308
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-232",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        76,
+        156
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-233",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        260,
+        84
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-234",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        276,
+        124
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-235",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        76,
+        404
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-236",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        188,
+        252
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-237",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        340,
+        396
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-238",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        100,
+        180
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-239",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        28,
+        204
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-240",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        244,
+        220
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-241",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        156,
+        348
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-242",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        268,
+        260
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-243",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        324,
+        460
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-244",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        316,
+        348
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-245",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        476,
+        404
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-246",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        452,
+        412
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-247",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        132,
+        332
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-248",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        180,
+        468
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-249",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        332,
+        236
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-250",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        444,
+        276
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-251",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        172,
+        292
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-252",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        76,
+        428
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-253",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        132,
+        324
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-254",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        460,
+        276
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-255",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        452,
+        356
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-256",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        268,
+        52
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-257",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        156,
+        164
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-258",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        436,
+        44
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-259",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        244,
+        28
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-260",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        452,
+        332
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-261",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        244,
+        52
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-262",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        396,
+        244
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-263",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        420,
+        316
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-264",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        324,
+        132
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-265",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        452,
+        196
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-266",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        492,
+        372
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-267",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        332,
+        396
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-268",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        220,
+        116
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-269",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        76,
+        404
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-270",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        252,
+        372
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-271",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        340,
+        156
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-272",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        460,
+        380
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-273",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        52,
+        276
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-274",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        220,
+        36
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-275",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        100,
+        420
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-276",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        212,
+        356
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-277",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        228,
+        60
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-278",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        180,
+        180
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-279",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        324,
+        428
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-280",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        276,
+        228
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-281",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        172,
+        292
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-282",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        444,
+        252
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-283",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        220,
+        324
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-284",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        124,
+        92
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-285",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        276,
+        284
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-286",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        324,
+        108
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-287",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        492,
+        156
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-288",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        476,
+        268
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-289",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        212,
+        92
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-290",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        388,
+        84
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-291",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        36,
+        44
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-292",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        252,
+        236
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-293",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        340,
+        156
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-294",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        92,
+        212
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-295",
+      "kind": "target",
+      "scene": "wanda-festival",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        412,
+        156
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-296",
+      "kind": "target",
+      "scene": "wanda-beach",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        316,
+        428
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-297",
+      "kind": "target",
+      "scene": "wanda-market",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        356,
+        44
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-298",
+      "kind": "target",
+      "scene": "wanda-park",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        68,
+        380
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-299",
+      "kind": "target",
+      "scene": "wanda-fairground",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        292,
+        356
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    },
+    {
+      "id": "test-empty-wanda-festival-h40",
+      "kind": "absent",
+      "scene": "wanda-festival",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        188,
+        420
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-empty-wanda-festival-h46",
+      "kind": "absent",
+      "scene": "wanda-festival",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        12,
+        108
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 1.3322676295501878e-15
+    },
+    {
+      "id": "test-empty-wanda-festival-h52",
+      "kind": "absent",
+      "scene": "wanda-festival",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        4,
+        28
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 1.1102230246251565e-15
+    },
+    {
+      "id": "test-empty-wanda-festival-h58",
+      "kind": "absent",
+      "scene": "wanda-festival",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        84,
+        396
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-empty-wanda-festival-h64",
+      "kind": "absent",
+      "scene": "wanda-festival",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        332,
+        476
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-empty-wanda-beach-h40",
+      "kind": "absent",
+      "scene": "wanda-beach",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        164,
+        292
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 6.661338147750939e-16
+    },
+    {
+      "id": "test-empty-wanda-beach-h46",
+      "kind": "absent",
+      "scene": "wanda-beach",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        292,
+        276
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 6.661338147750939e-16
+    },
+    {
+      "id": "test-empty-wanda-beach-h52",
+      "kind": "absent",
+      "scene": "wanda-beach",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        508,
+        148
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 3.885780586188048e-16
+    },
+    {
+      "id": "test-empty-wanda-beach-h58",
+      "kind": "absent",
+      "scene": "wanda-beach",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        508,
+        148
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 1.1102230246251565e-16
+    },
+    {
+      "id": "test-empty-wanda-beach-h64",
+      "kind": "absent",
+      "scene": "wanda-beach",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        500,
+        428
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-empty-wanda-market-h40",
+      "kind": "absent",
+      "scene": "wanda-market",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        444,
+        348
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-empty-wanda-market-h46",
+      "kind": "absent",
+      "scene": "wanda-market",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        460,
+        252
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 5.551115123125783e-16
+    },
+    {
+      "id": "test-empty-wanda-market-h52",
+      "kind": "absent",
+      "scene": "wanda-market",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        36,
+        44
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-empty-wanda-market-h58",
+      "kind": "absent",
+      "scene": "wanda-market",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        4,
+        372
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.7755575615628914e-16
+    },
+    {
+      "id": "test-empty-wanda-market-h64",
+      "kind": "absent",
+      "scene": "wanda-market",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        188,
+        380
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 4.996003610813204e-16
+    },
+    {
+      "id": "test-empty-wanda-park-h40",
+      "kind": "absent",
+      "scene": "wanda-park",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        84,
+        252
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 3.3306690738754696e-16
+    },
+    {
+      "id": "test-empty-wanda-park-h46",
+      "kind": "absent",
+      "scene": "wanda-park",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        492,
+        300
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 7.771561172376096e-16
+    },
+    {
+      "id": "test-empty-wanda-park-h52",
+      "kind": "absent",
+      "scene": "wanda-park",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        220,
+        332
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 6.106226635438361e-16
+    },
+    {
+      "id": "test-empty-wanda-park-h58",
+      "kind": "absent",
+      "scene": "wanda-park",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        148,
+        412
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 3.0531133177191805e-16
+    },
+    {
+      "id": "test-empty-wanda-park-h64",
+      "kind": "absent",
+      "scene": "wanda-park",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        404,
+        340
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 1.6653345369377348e-16
+    },
+    {
+      "id": "test-empty-wanda-fairground-h40",
+      "kind": "absent",
+      "scene": "wanda-fairground",
+      "height": 40,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        140,
+        300
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 3.3306690738754696e-16
+    },
+    {
+      "id": "test-empty-wanda-fairground-h46",
+      "kind": "absent",
+      "scene": "wanda-fairground",
+      "height": 46,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        292,
+        476
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 2.220446049250313e-16
+    },
+    {
+      "id": "test-empty-wanda-fairground-h52",
+      "kind": "absent",
+      "scene": "wanda-fairground",
+      "height": 52,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        292,
+        476
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 1.942890293094024e-16
+    },
+    {
+      "id": "test-empty-wanda-fairground-h58",
+      "kind": "absent",
+      "scene": "wanda-fairground",
+      "height": 58,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        108,
+        412
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 1.1102230246251565e-16
+    },
+    {
+      "id": "test-empty-wanda-fairground-h64",
+      "kind": "absent",
+      "scene": "wanda-fairground",
+      "height": 64,
+      "differentRGBAChannels": 0,
+      "maxPixelError": 0,
+      "checkedPoint": [
+        300,
+        492
+      ],
+      "maxFeatureError": 0,
+      "scoreError": 0
+    }
+  ]
+}

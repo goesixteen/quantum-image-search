@@ -1,0 +1,5 @@
+{
+  "reason": "Two seeds completed and allfour checkpoint weights saved before concurrent validation-field renderer finished. Selection resumed from exact checkpoints; no retraining.",
+  "trainingHistory": "22exactrecords restored from emitted training log",
+  "checkpointCount": 4
+}

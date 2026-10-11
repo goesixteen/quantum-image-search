@@ -1,0 +1,500 @@
+{
+  "version": 1,
+  "scene": "qualicity-queue",
+  "sceneSize": 512,
+  "bandHeight": 16,
+  "alphaThreshold": 32,
+  "depthConvention": "front-when-lower",
+  "depthTieBreak": "foreground-front",
+  "method": "Whole supplied transparent object PNGs grouped by floor((alphaBottom-1)/bandHeight). Each full-scene row uses maximum member bottom; silhouettes are never horizontally sliced. Known authored masks, not semantic segmentation or automatic ground removal.",
+  "objectAtlas": {
+    "path": "assets/depth-bands/qualicity-queue/objects-only.png",
+    "sha256": "6e8603281fde1ce7b02d3e602ff0619c2c9225ca31fb4940906934b014eb9df8",
+    "width": 512,
+    "height": 512
+  },
+  "sourceObjects": [
+    {
+      "id": "queue-blonde-woman",
+      "png": "assets/layers/qualicity-queue/queue-blonde-woman.png",
+      "sha256": "81ca34b8864b3c2e009daa285b6d481cf04b031db0de448a82eeb0baf4d5eb0c",
+      "maskPNG": "assets/layers/qualicity-queue/queue-blonde-woman-mask.png",
+      "maskSHA256": "446e490667397e4e97e634b85d7af9737480e48614d9830790a460608d3116a6",
+      "position": {
+        "x": 322,
+        "y": 127
+      }
+    },
+    {
+      "id": "queue-curly-woman",
+      "png": "assets/layers/qualicity-queue/queue-curly-woman.png",
+      "sha256": "13d96cf9f9c02fa9b38ae330cb395058b92eb6ce52b45a0479d0ceb491ae931a",
+      "maskPNG": "assets/layers/qualicity-queue/queue-curly-woman-mask.png",
+      "maskSHA256": "d3a18b915350d323d813c322ab88087844cfe88976588d245651a1a55784518a",
+      "position": {
+        "x": 360,
+        "y": 124
+      }
+    },
+    {
+      "id": "queue-right-woman",
+      "png": "assets/layers/qualicity-queue/queue-right-woman.png",
+      "sha256": "4b7a15603e19cdd5ccacfe6fa0e0a9d031ee461f2e78604c7d3e7a2250353408",
+      "maskPNG": "assets/layers/qualicity-queue/queue-right-woman-mask.png",
+      "maskSHA256": "14993dffd23cd977e069d1f92d5ca4414cf29cec27135d42f5d40e5e7f7a9ba5",
+      "position": {
+        "x": 403,
+        "y": 134
+      }
+    },
+    {
+      "id": "queue-robot",
+      "png": "assets/layers/qualicity-queue/queue-robot.png",
+      "sha256": "7d19f80abb9895612933edaf232595c04934f16f87be93245575c9260b6db9f3",
+      "maskPNG": "assets/layers/qualicity-queue/queue-robot-mask.png",
+      "maskSHA256": "655badce28350e88fc80a8b8c8ff868beb3da573e58507dc8f67aec615b3c691",
+      "position": {
+        "x": 221,
+        "y": 200
+      }
+    },
+    {
+      "id": "queue-green-hat",
+      "png": "assets/layers/qualicity-queue/queue-green-hat.png",
+      "sha256": "e08c611d556a0e73f93d364f4908fcbf9514e51416fd81eeb497a2e26848213e",
+      "maskPNG": "assets/layers/qualicity-queue/queue-green-hat-mask.png",
+      "maskSHA256": "1274fbe4e3d6b356d51ce1cda3a61e7242c875b493b3f7489b6c27002d79e763",
+      "position": {
+        "x": 255,
+        "y": 274
+      }
+    },
+    {
+      "id": "queue-foreground-witch",
+      "png": "assets/layers/qualicity-queue/queue-foreground-witch.png",
+      "sha256": "315dcb9201a5452cd21319769a51f3c512bab72b76ce6e91b20cedc2fdaefb29",
+      "maskPNG": "assets/layers/qualicity-queue/queue-foreground-witch-mask.png",
+      "maskSHA256": "1a26857d0f000c3e29a6517ea76236fb2fee23104dd88349d1af81308a3c5d06",
+      "position": {
+        "x": 250,
+        "y": 384
+      }
+    },
+    {
+      "id": "queue-court-guest",
+      "png": "assets/layers/qualicity-queue/queue-court-guest.png",
+      "sha256": "5d19f2d5e15e1734fdb99052a835ab121c87de30a9bc0f3beb8f4f1b69fff6a3",
+      "maskPNG": "assets/layers/qualicity-queue/queue-court-guest-mask.png",
+      "maskSHA256": "7119d76f5fff9b6c4de6e207db6c39a53a0e0d5910894b4cd117176820a437a1",
+      "position": {
+        "x": 123,
+        "y": 372
+      }
+    },
+    {
+      "id": "queue-moustached-guest",
+      "png": "assets/layers/qualicity-queue/queue-moustached-guest.png",
+      "sha256": "5ca2c1b17f97e174b32a8d45e784d0932f3ed6a09aea6c1dd9bbe2c5f06247d6",
+      "maskPNG": "assets/layers/qualicity-queue/queue-moustached-guest-mask.png",
+      "maskSHA256": "c647d873fe50c8c16eb49ec37a9b0e97d85f86241a8b84a8eecf292f23c3b016",
+      "position": {
+        "x": 69,
+        "y": 274
+      }
+    },
+    {
+      "id": "queue-left-witch",
+      "png": "assets/layers/qualicity-queue/queue-left-witch.png",
+      "sha256": "2f5b5b7bfec18e0a8de63149b6f027ba23f7ed40a911cf85841c0fbabfc657fe",
+      "maskPNG": "assets/layers/qualicity-queue/queue-left-witch-mask.png",
+      "maskSHA256": "c3663f38b1a6f4499a09b90a50e73d5a73af250925a6404d81d82e05524b1481",
+      "position": {
+        "x": 0,
+        "y": 179
+      }
+    },
+    {
+      "id": "queue-brass-post",
+      "png": "assets/layers/qualicity-queue/queue-brass-post.png",
+      "sha256": "b86b6f181f96e0ae04e66509f12e42c00dfbbfb3b1dc45b2ff7a2f42518d1870",
+      "maskPNG": "assets/layers/qualicity-queue/queue-brass-post-mask.png",
+      "maskSHA256": "e3a8a2ddac0bc730a261d2b96eef7b36aadba0b757666df10be87a72880bee16",
+      "position": {
+        "x": 368,
+        "y": 289
+      }
+    }
+  ],
+  "objects": [
+    {
+      "id": "queue-blonde-woman",
+      "name": "Blonde guest in red gown",
+      "depthAnchorY": 286,
+      "level": 17,
+      "bounds": {
+        "x": 322,
+        "y": 127,
+        "width": 36,
+        "height": 159
+      }
+    },
+    {
+      "id": "queue-curly-woman",
+      "name": "Curly-haired guest in rose gown",
+      "depthAnchorY": 288,
+      "level": 17,
+      "bounds": {
+        "x": 360,
+        "y": 124,
+        "width": 50,
+        "height": 164
+      }
+    },
+    {
+      "id": "queue-right-woman",
+      "name": "Dark-haired guest in red cape",
+      "depthAnchorY": 283,
+      "level": 17,
+      "bounds": {
+        "x": 403,
+        "y": 134,
+        "width": 38,
+        "height": 149
+      }
+    },
+    {
+      "id": "queue-robot",
+      "name": "Robot guard and control console",
+      "depthAnchorY": 295,
+      "level": 18,
+      "bounds": {
+        "x": 221,
+        "y": 200,
+        "width": 85,
+        "height": 95
+      }
+    },
+    {
+      "id": "queue-green-hat",
+      "name": "Green-hatted bearded guest",
+      "depthAnchorY": 433,
+      "level": 27,
+      "bounds": {
+        "x": 255,
+        "y": 274,
+        "width": 76,
+        "height": 159
+      }
+    },
+    {
+      "id": "queue-foreground-witch",
+      "name": "Foreground witch in purple cloak",
+      "depthAnchorY": 512,
+      "level": 31,
+      "bounds": {
+        "x": 250,
+        "y": 384,
+        "width": 69,
+        "height": 128
+      }
+    },
+    {
+      "id": "queue-court-guest",
+      "name": "Pale-collared court guest and fan",
+      "depthAnchorY": 512,
+      "level": 31,
+      "bounds": {
+        "x": 123,
+        "y": 372,
+        "width": 93,
+        "height": 140
+      }
+    },
+    {
+      "id": "queue-moustached-guest",
+      "name": "Moustached guest in pale coat",
+      "depthAnchorY": 387,
+      "level": 24,
+      "bounds": {
+        "x": 69,
+        "y": 274,
+        "width": 60,
+        "height": 113
+      }
+    },
+    {
+      "id": "queue-left-witch",
+      "name": "Left queue witch and broad hat",
+      "depthAnchorY": 307,
+      "level": 19,
+      "bounds": {
+        "x": 0,
+        "y": 179,
+        "width": 79,
+        "height": 128
+      }
+    },
+    {
+      "id": "queue-brass-post",
+      "name": "Central-right brass barrier post",
+      "depthAnchorY": 395,
+      "level": 24,
+      "bounds": {
+        "x": 368,
+        "y": 289,
+        "width": 23,
+        "height": 106
+      }
+    }
+  ],
+  "bands": [
+    {
+      "id": "depth-band-17",
+      "name": "Depth row 18",
+      "enabled": true,
+      "zIndex": 17,
+      "paths": [],
+      "level": 17,
+      "depthRange": {
+        "start": 272,
+        "endExclusive": 288
+      },
+      "memberIDs": [
+        "queue-blonde-woman",
+        "queue-curly-woman",
+        "queue-right-woman"
+      ],
+      "memberDepthAnchors": [
+        {
+          "id": "queue-blonde-woman",
+          "y": 286
+        },
+        {
+          "id": "queue-curly-woman",
+          "y": 288
+        },
+        {
+          "id": "queue-right-woman",
+          "y": 283
+        }
+      ],
+      "depthAnchorY": 288,
+      "bounds": {
+        "x": 322,
+        "y": 124,
+        "width": 119,
+        "height": 164
+      },
+      "cutoutPNG": "assets/depth-bands/qualicity-queue/depth-band-17.png",
+      "maskPNG": "assets/depth-bands/qualicity-queue/depth-band-17-mask.png",
+      "cutoutPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sha256": "df8edba5a369c7ed183712476271f1da48b9064e468dc7a0cb3e8dca818befc9",
+      "maskSHA256": "a0bce7a2ff6dc3c7d391b3db91d2b8639843623a393adcbef3e36e374d6d96c0",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "depth-band-18",
+      "name": "Depth row 19",
+      "enabled": true,
+      "zIndex": 18,
+      "paths": [],
+      "level": 18,
+      "depthRange": {
+        "start": 288,
+        "endExclusive": 304
+      },
+      "memberIDs": [
+        "queue-robot"
+      ],
+      "memberDepthAnchors": [
+        {
+          "id": "queue-robot",
+          "y": 295
+        }
+      ],
+      "depthAnchorY": 295,
+      "bounds": {
+        "x": 221,
+        "y": 200,
+        "width": 85,
+        "height": 95
+      },
+      "cutoutPNG": "assets/depth-bands/qualicity-queue/depth-band-18.png",
+      "maskPNG": "assets/depth-bands/qualicity-queue/depth-band-18-mask.png",
+      "cutoutPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sha256": "01324594654814d651f60e6acbf32f17bcca910569df16c1e0219ecefdebe020",
+      "maskSHA256": "655badce28350e88fc80a8b8c8ff868beb3da573e58507dc8f67aec615b3c691",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "depth-band-19",
+      "name": "Depth row 20",
+      "enabled": true,
+      "zIndex": 19,
+      "paths": [],
+      "level": 19,
+      "depthRange": {
+        "start": 304,
+        "endExclusive": 320
+      },
+      "memberIDs": [
+        "queue-left-witch"
+      ],
+      "memberDepthAnchors": [
+        {
+          "id": "queue-left-witch",
+          "y": 307
+        }
+      ],
+      "depthAnchorY": 307,
+      "bounds": {
+        "x": 0,
+        "y": 179,
+        "width": 79,
+        "height": 128
+      },
+      "cutoutPNG": "assets/depth-bands/qualicity-queue/depth-band-19.png",
+      "maskPNG": "assets/depth-bands/qualicity-queue/depth-band-19-mask.png",
+      "cutoutPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sha256": "7e32e7ee99cb37c51b9cb8772af90a897652fa2b40b23128f3b636b58a3f1002",
+      "maskSHA256": "c3663f38b1a6f4499a09b90a50e73d5a73af250925a6404d81d82e05524b1481",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "depth-band-24",
+      "name": "Depth row 25",
+      "enabled": true,
+      "zIndex": 24,
+      "paths": [],
+      "level": 24,
+      "depthRange": {
+        "start": 384,
+        "endExclusive": 400
+      },
+      "memberIDs": [
+        "queue-moustached-guest",
+        "queue-brass-post"
+      ],
+      "memberDepthAnchors": [
+        {
+          "id": "queue-moustached-guest",
+          "y": 387
+        },
+        {
+          "id": "queue-brass-post",
+          "y": 395
+        }
+      ],
+      "depthAnchorY": 395,
+      "bounds": {
+        "x": 69,
+        "y": 274,
+        "width": 322,
+        "height": 121
+      },
+      "cutoutPNG": "assets/depth-bands/qualicity-queue/depth-band-24.png",
+      "maskPNG": "assets/depth-bands/qualicity-queue/depth-band-24-mask.png",
+      "cutoutPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sha256": "0fc12bcb258d9621fe1c099985724e45c82ac9b94d164a3b99783c41d7d4035e",
+      "maskSHA256": "60ac3917454cd0a929caecba942f6c5d07e1ed73a13728958bd60ac08be26c85",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "depth-band-27",
+      "name": "Depth row 28",
+      "enabled": true,
+      "zIndex": 27,
+      "paths": [],
+      "level": 27,
+      "depthRange": {
+        "start": 432,
+        "endExclusive": 448
+      },
+      "memberIDs": [
+        "queue-green-hat"
+      ],
+      "memberDepthAnchors": [
+        {
+          "id": "queue-green-hat",
+          "y": 433
+        }
+      ],
+      "depthAnchorY": 433,
+      "bounds": {
+        "x": 255,
+        "y": 274,
+        "width": 76,
+        "height": 159
+      },
+      "cutoutPNG": "assets/depth-bands/qualicity-queue/depth-band-27.png",
+      "maskPNG": "assets/depth-bands/qualicity-queue/depth-band-27-mask.png",
+      "cutoutPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sha256": "be6d1807041af0459a265c0db8d0f73aed75bb0c5b4086eef38537e9165e7d24",
+      "maskSHA256": "1274fbe4e3d6b356d51ce1cda3a61e7242c875b493b3f7489b6c27002d79e763",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "depth-band-31",
+      "name": "Depth row 32",
+      "enabled": true,
+      "zIndex": 31,
+      "paths": [],
+      "level": 31,
+      "depthRange": {
+        "start": 496,
+        "endExclusive": 512
+      },
+      "memberIDs": [
+        "queue-foreground-witch",
+        "queue-court-guest"
+      ],
+      "memberDepthAnchors": [
+        {
+          "id": "queue-foreground-witch",
+          "y": 512
+        },
+        {
+          "id": "queue-court-guest",
+          "y": 512
+        }
+      ],
+      "depthAnchorY": 512,
+      "bounds": {
+        "x": 123,
+        "y": 372,
+        "width": 196,
+        "height": 140
+      },
+      "cutoutPNG": "assets/depth-bands/qualicity-queue/depth-band-31.png",
+      "maskPNG": "assets/depth-bands/qualicity-queue/depth-band-31-mask.png",
+      "cutoutPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sha256": "0e18f02b67663de793be93a1c3fe346a0445bd8f71e409896f4038679b3e4302",
+      "maskSHA256": "31b318accae6afc085ee0b4b18dfe7a754e90cba13ecc9e8217cb47242de9239",
+      "width": 512,
+      "height": 512
+    }
+  ]
+}

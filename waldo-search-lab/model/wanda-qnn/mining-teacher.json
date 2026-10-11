@@ -1,0 +1,47 @@
+{
+  "kind": "logistic",
+  "featureVersion": "wanda-window-v1",
+  "featureNames": [
+    "sweater_stripe_fourier",
+    "sweater_cross_phase",
+    "sweater_red_white_balance",
+    "warm_face_brown_hair",
+    "blue_trouser_morphology",
+    "body_horizontal_alignment_px",
+    "body_vertical_alignment_px",
+    "supplied_wanda_height"
+  ],
+  "coefficients": [
+    6.247181386799391,
+    1.4938653364675034,
+    6.062157981642121,
+    2.038305496618732,
+    0.9953076483376242,
+    2.8598869812319863,
+    4.9760741065981104,
+    -0.8909364396995444
+  ],
+  "bias": -9.989602929913227,
+  "regularization": 0.001,
+  "trainingOnly": true,
+  "dataFeatureSHA256": "d0d90c1f754a7393ef96f04f482ef49abcc89798b19b4a60e21d96cfe0c05e12",
+  "dataLabelSHA256": "bf25129d406fdd127390569445a3f49b4444d18415ca50d21599fc11e065de7e",
+  "sourceObjective": {
+    "positiveBCEWeight": 0.5,
+    "nearDecoyBCEWeight": 0.25,
+    "backgroundBCEWeight": 0.25,
+    "pairWeight": 0.25,
+    "pairMargin": 1,
+    "pairs": "two positives\u00c3\u2014six nearby negatives from each identical training composite"
+  },
+  "history": [
+    0.25311221648650756,
+    0.16193764859728463,
+    0.1345235835457479,
+    0.1306190687624635,
+    0.13051955218002603,
+    0.13051947426974156,
+    0.13051947426968846,
+    0.13051947426968846
+  ]
+}

@@ -1,0 +1,107 @@
+[
+  {
+    "step": 1,
+    "validationBalancedBCE": 0.6731383906051184,
+    "elapsedSeconds": 0.5490000247955322
+  },
+  {
+    "step": 100,
+    "validationBalancedBCE": 0.3178111182964122,
+    "elapsedSeconds": 5.370833873748779
+  },
+  {
+    "step": 200,
+    "validationBalancedBCE": 0.29479656974781265,
+    "elapsedSeconds": 10.158210754394531
+  },
+  {
+    "step": 300,
+    "validationBalancedBCE": 0.28062435040826017,
+    "elapsedSeconds": 14.95928168296814
+  },
+  {
+    "step": 400,
+    "validationBalancedBCE": 0.27236087428995215,
+    "elapsedSeconds": 19.810455560684204
+  },
+  {
+    "step": 500,
+    "validationBalancedBCE": 0.2620298234478445,
+    "elapsedSeconds": 24.622931480407715
+  },
+  {
+    "step": 600,
+    "validationBalancedBCE": 0.2682808676931344,
+    "elapsedSeconds": 29.46271014213562
+  },
+  {
+    "step": 700,
+    "validationBalancedBCE": 0.2694609525856661,
+    "elapsedSeconds": 34.288047313690186
+  },
+  {
+    "step": 800,
+    "validationBalancedBCE": 0.2766175600331982,
+    "elapsedSeconds": 39.15310001373291
+  },
+  {
+    "step": 900,
+    "validationBalancedBCE": 0.27145201357722204,
+    "elapsedSeconds": 43.811851501464844
+  },
+  {
+    "step": 1000,
+    "validationBalancedBCE": 0.2691116541450827,
+    "elapsedSeconds": 48.51226305961609
+  },
+  {
+    "step": 1100,
+    "validationBalancedBCE": 0.27672503010343447,
+    "elapsedSeconds": 53.16200494766235
+  },
+  {
+    "step": 1200,
+    "validationBalancedBCE": 0.2775203453172437,
+    "elapsedSeconds": 57.80527973175049
+  },
+  {
+    "step": 1300,
+    "validationBalancedBCE": 0.27985780384706016,
+    "elapsedSeconds": 62.49904823303223
+  },
+  {
+    "step": 1400,
+    "validationBalancedBCE": 0.2737498428493921,
+    "elapsedSeconds": 67.21973729133606
+  },
+  {
+    "step": 1500,
+    "validationBalancedBCE": 0.2845151010716132,
+    "elapsedSeconds": 71.98466610908508
+  },
+  {
+    "step": 1600,
+    "validationBalancedBCE": 0.2666630911272681,
+    "elapsedSeconds": 76.65438055992126
+  },
+  {
+    "step": 1700,
+    "validationBalancedBCE": 0.27476204720685293,
+    "elapsedSeconds": 81.35431051254272
+  },
+  {
+    "step": 1800,
+    "validationBalancedBCE": 0.2734725490234884,
+    "elapsedSeconds": 86.05871152877808
+  },
+  {
+    "step": 1900,
+    "validationBalancedBCE": 0.2739800616382334,
+    "elapsedSeconds": 90.73865842819214
+  },
+  {
+    "step": 2000,
+    "validationBalancedBCE": 0.26648418922770134,
+    "elapsedSeconds": 95.41575956344604
+  }
+]

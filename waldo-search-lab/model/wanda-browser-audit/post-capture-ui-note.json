@@ -1,0 +1,26 @@
+{
+  "recordedAtUtc": "2026-10-11T05:44:11.810113+00:00",
+  "capturedAppSHA256": "87d5a7664d234ccf0142e4fa5a5e2a429477d119561d27d9b0da5b2abe7ea60e",
+  "postCaptureObservedAppSHA256": "78703662a600dd3b6da89c93899281897d43076e2be1173edc277582efc96e7e",
+  "capturedUnderhoodSHA256": "0ea9cf3acb49485bd4d1825abf59a24ef8347337c05b655e2449665cc91bf706",
+  "postCaptureObservedUnderhoodSHA256": "afa039eaf1d30a995f2ea3844edccea11ab036b8b0ec04f113edc8e81dc77f45",
+  "sourceOfChangeDescription": "Parent reports UI-only fixes after capture: invalidate stale measurement lesson DOM, rerender lesson when loading ends, display-only faint-clue scorePower boost.",
+  "unchangedSourceHashesVerified": {
+    "model": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88",
+    "featuresJS": "bc9292a9dbc9ada24611916118e297aeb06d3d2eb8a5961c31f968162c26decf",
+    "circuitJS": "c881e6a815c7e5e1b4013a241d7b36ff78f3c21ac49ef0f47f2f8005979e972e",
+    "sceneEditor": "645d3799f9eb27ac39b81aa4c9a8659cea551e00a699560046cb36eb13ff61ae"
+  },
+  "interpretation": "The20PNGcaptures came from87d5a766... source. They are not represented as captures of later UI bytes. This note is separate from the unchanged historic report.",
+  "laterDefaultSteering": {
+    "newDefaultRequestedCenter": [
+      420,
+      300
+    ],
+    "capturedFormerDefaultRequestedCenter": [
+      276,
+      348
+    ],
+    "coverage": "The20capturediagnostics remainat276,348, not a regression of newdefault420,300."
+  }
+}

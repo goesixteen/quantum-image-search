@@ -1,0 +1,89 @@
+{
+  "records": [
+    {
+      "id": "wanda-festival",
+      "ready": true,
+      "original": "festival.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSHA256": "bcabf4cbf2559220aa6ada6c53807e8364c98edd431f21983b7cb8f7a7ec0b1b",
+      "normalized": "festival-512.png",
+      "normalizedDimensions": [
+        512,
+        512
+      ],
+      "normalizedSHA256": "369f59e8c4b83ebe9d36febc42e85fe29dd650da56e7ad9f9b27f0c8363bda56",
+      "normalization": "@napi-rs/canvas0.1.100, full-square drawImage to512×512, imageSmoothingEnabled=true,imageSmoothingQuality=high; numeric RGBA, no AI image edit"
+    },
+    {
+      "id": "wanda-beach",
+      "ready": true,
+      "original": "beach.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSHA256": "346c31f378afea982e6722eb2ed54b8e5a1e4e1731fd99a022c530150dd64516",
+      "normalized": "beach-512.png",
+      "normalizedDimensions": [
+        512,
+        512
+      ],
+      "normalizedSHA256": "fce6b6ade6a36f9b1fc92bcaf11bc2f5ef874d740de872ae22095a629377226a",
+      "normalization": "@napi-rs/canvas0.1.100, full-square drawImage to512×512, imageSmoothingEnabled=true,imageSmoothingQuality=high; numeric RGBA, no AI image edit"
+    },
+    {
+      "id": "wanda-market",
+      "ready": true,
+      "original": "market.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSHA256": "045f854bb57524834958c0ffa9566385df8d821b57b3fd8678f57fdb316b399f",
+      "normalized": "market-512.png",
+      "normalizedDimensions": [
+        512,
+        512
+      ],
+      "normalizedSHA256": "746b7ba03b5a25a91041e4d287125b4ea1d3187cc0f7712086697ddf1dd429fa",
+      "normalization": "@napi-rs/canvas0.1.100, full-square drawImage to512×512, imageSmoothingEnabled=true,imageSmoothingQuality=high; numeric RGBA, no AI image edit"
+    },
+    {
+      "id": "wanda-park",
+      "ready": true,
+      "original": "park.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSHA256": "3bb4ede549bec7fedd65b1ff750a8d8c9e2e94d0124b814688921c59cabb17bf",
+      "normalized": "park-512.png",
+      "normalizedDimensions": [
+        512,
+        512
+      ],
+      "normalizedSHA256": "d20ea478a665eac1221fafcf3079dff71e9d9a40ca56846546628216452ceabd",
+      "normalization": "@napi-rs/canvas0.1.100, full-square drawImage to512×512, imageSmoothingEnabled=true,imageSmoothingQuality=high; numeric RGBA, no AI image edit"
+    },
+    {
+      "id": "wanda-fairground",
+      "ready": true,
+      "original": "fairground.png",
+      "originalDimensions": [
+        1254,
+        1254
+      ],
+      "originalSHA256": "98a2e98d5aa1d7971f4d50ee6508b1d9d6be63611a72fc388a7a71eaeaa51b97",
+      "normalized": "fairground-512.png",
+      "normalizedDimensions": [
+        512,
+        512
+      ],
+      "normalizedSHA256": "71a3c458f4ff642ffccdae332b8819fc935bbee8c026bfce27c59251467fb61d",
+      "normalization": "@napi-rs/canvas0.1.100, full-square drawImage to512×512, imageSmoothingEnabled=true,imageSmoothingQuality=high; numeric RGBA, no AI image edit"
+    }
+  ]
+}

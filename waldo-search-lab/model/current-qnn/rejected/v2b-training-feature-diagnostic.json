@@ -1,0 +1,122 @@
+{
+  "scope": "Training rows only; marginal descriptor overlap, not model performance or causal attribution.",
+  "featureVersion": "current-qnn-window-v2",
+  "n": 56264,
+  "positives": 1200,
+  "featuresSha256": "325ea0d0c43a5b43a7a4b229ddfdd034dea5d8b3b9bcb2b0418714d1a287c5ef",
+  "labelsSha256": "ecaababdc4db350301a841160d98c63d328f89881decbf3fab98c7284e2c2cf7",
+  "records": [
+    {
+      "feature": "torso_red_density",
+      "positive_quantiles": [
+        0.07738095238095237,
+        0.25595238095238093,
+        0.39880952380952384
+      ],
+      "negative_quantiles": [
+        0.0,
+        0.07738095238095237,
+        0.5795454545454546
+      ],
+      "negative_fraction_above_positive_median": 0.2424088333575476
+    },
+    {
+      "feature": "torso_white_density",
+      "positive_quantiles": [
+        0.05357142857142857,
+        0.23717948717948723,
+        0.3630952380952381
+      ],
+      "negative_quantiles": [
+        0.0,
+        0.017857142857142856,
+        0.5638621794871771
+      ],
+      "negative_fraction_above_positive_median": 0.24482420456196427
+    },
+    {
+      "feature": "stripe_transition_evidence",
+      "positive_quantiles": [
+        0.06280486654720363,
+        0.4711553051377242,
+        0.5797665369649806
+      ],
+      "negative_quantiles": [
+        0.0,
+        0.0,
+        0.26279863481228666
+      ],
+      "negative_fraction_above_positive_median": 0.006628650297835246
+    },
+    {
+      "feature": "lower_blue_density",
+      "positive_quantiles": [
+        0.05701754385964912,
+        0.23684210526315785,
+        0.5570512820512822
+      ],
+      "negative_quantiles": [
+        0.0,
+        0.03703703703703704,
+        0.8842592592592592
+      ],
+      "negative_fraction_above_positive_median": 0.2971633008862415
+    },
+    {
+      "feature": "yellow_head_alignment",
+      "positive_quantiles": [
+        0.0,
+        0.1266571405135225,
+        0.5958834836687001
+      ],
+      "negative_quantiles": [
+        0.0,
+        0.05252446096390244,
+        0.8482960317765784
+      ],
+      "negative_fraction_above_positive_median": 0.3590549179137004
+    },
+    {
+      "feature": "horizontal_color_alignment_px",
+      "positive_quantiles": [
+        0.4365287834608516,
+        0.8176552066701541,
+        0.9415474944274805
+      ],
+      "negative_quantiles": [
+        0.0025781904203313337,
+        0.7201855858284059,
+        0.9547067906259027
+      ],
+      "negative_fraction_above_positive_median": 0.35638529710881883
+    },
+    {
+      "feature": "vertical_color_alignment_px",
+      "positive_quantiles": [
+        0.3777810442837838,
+        0.6454853493489499,
+        0.8374038683738749
+      ],
+      "negative_quantiles": [
+        0.0003761939137658594,
+        0.42981704581325264,
+        0.8430750889310211
+      ],
+      "negative_fraction_above_positive_median": 0.1773027749527822
+    },
+    {
+      "feature": "supplied_target_height",
+      "positive_quantiles": [
+        0.045454545454545456,
+        0.5340909090909091,
+        0.9545454545454546
+      ],
+      "negative_quantiles": [
+        0.045454545454545456,
+        0.5,
+        0.9545454545454546
+      ],
+      "negative_fraction_above_positive_median": 0.474992735725701
+    }
+  ]
+}

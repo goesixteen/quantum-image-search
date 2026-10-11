@@ -1,0 +1,19 @@
+{
+  "recordedAtUtc": "2026-10-11T16:59:45.558581+00:00",
+  "userInstruction": "At most one usage-limit reset tonight; preserve one for personal use.",
+  "maximumAgentResets": 1,
+  "minimumResetsToPreserve": 1,
+  "agentResetsConsumed": 0,
+  "lastObservedAvailableCount": 1,
+  "lastObservedWeeklyUsedPercent": 0,
+  "ordinaryUsageAllowed": true,
+  "resetPerformedThisRun": false,
+  "nextRunRule": "Read this ledger and account limits before any reset. Never consume a reset if doing so leaves fewer than one available. Track only an actually successful reset. No credit purchase or account/billing changes. If reset is not callable, record the limit; do not claim it was used.",
+  "resetApiObservation": "No callable reset operation was observed; no reset performed.",
+  "previousObservation": {
+    "recordedAtUtc": "2026-10-11T12:01:03Z",
+    "availableCount": 2,
+    "weeklyUsedPercent": 99
+  },
+  "observationNote": "The observed balance changed from two resets/99% usage to one reset/0% usage between runs. The agent did not invoke a reset; the actor or cause is not established. Preserve the one remaining reset for the user."
+}

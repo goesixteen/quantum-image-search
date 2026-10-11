@@ -1,0 +1,81 @@
+{
+  "thetaChangeMean": 0.5817374844496228,
+  "thetaChangeMax": 1.5749551274415001,
+  "optimizedQuantumSlots": 28,
+  "exportedAngleSlots": 32,
+  "inactiveFinalRZSlots": [
+    25,
+    27,
+    29,
+    31
+  ],
+  "trainedValidation": {
+    "n": 6467,
+    "threshold": 0.9056472752971427,
+    "accuracy": 0.998144425545075,
+    "precision": 0.9974358974358974,
+    "recall": 0.9725,
+    "f1": 0.9848101265822785,
+    "true_positive": 389,
+    "false_positive": 1,
+    "false_negative": 11,
+    "true_negative": 6066,
+    "bce": 0.012680663355846269,
+    "balanced_bce": 0.014348083248589303
+  },
+  "zeroThetaSameReadout": {
+    "meanPredictionChange": 0.08789036685734831,
+    "maxPredictionChange": 0.9844477830680651,
+    "metrics": {
+      "n": 6467,
+      "threshold": 0.9056472752971427,
+      "accuracy": 0.9395391990103603,
+      "precision": 1.0,
+      "recall": 0.0225,
+      "f1": 0.044009779951100246,
+      "true_positive": 9,
+      "false_positive": 0,
+      "false_negative": 391,
+      "true_negative": 6067,
+      "bce": 0.15064273424612057,
+      "balanced_bce": 0.7807957451421086
+    }
+  },
+  "initialThetaSameReadout": {
+    "meanPredictionChange": 0.2549653268450489,
+    "maxPredictionChange": 0.9979228684457955,
+    "metrics": {
+      "n": 6467,
+      "threshold": 0.9056472752971427,
+      "accuracy": 0.8866553270449977,
+      "precision": 0.03361344537815126,
+      "recall": 0.03,
+      "f1": 0.031704095112285335,
+      "true_positive": 12,
+      "false_positive": 345,
+      "false_negative": 388,
+      "true_negative": 5722,
+      "bce": 0.5525919581047635,
+      "balanced_bce": 1.0536225273086113
+    }
+  },
+  "fixedInitialQuantumRefittedReadout": {
+    "validationBalancedBCE": 0.29924158081833657,
+    "metricsAtHalf": {
+      "n": 6467,
+      "threshold": 0.5,
+      "accuracy": 0.8715014689964434,
+      "precision": 0.30741733690795353,
+      "recall": 0.86,
+      "f1": 0.4529295589203423,
+      "true_positive": 344,
+      "false_positive": 775,
+      "false_negative": 56,
+      "true_negative": 5292,
+      "bce": 0.2833484706787954,
+      "balanced_bce": 0.29924158081833657
+    },
+    "regularization": 0.0001
+  },
+  "warning": "Participation/change does not establish a quantum advantage; the matched classical model and whole-scene audit are reported separately."
+}

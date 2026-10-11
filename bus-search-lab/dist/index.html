@@ -7,6 +7,7 @@
   <title>Quantum CAPTCHA — Hide the bus. Let qubits find it.</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="oracle-quality.css">
+  <link rel="stylesheet" href="quick-tour.css">
 </head>
 <body>
   <header class="site-header"><a class="brand" href="#"><span class="brand-mark" aria-hidden="true">Q<span>C</span></span><span>QUANTUM CAPTCHA<span class="brand-sub">LEARN WHAT. SEARCH WHERE.</span></span></a><nav aria-label="Main"><a href="#lab">The challenge</a><a href="#science">How it works</a><a href="#evidence">The evidence</a><a class="compare-nav" href="compare.html">Compare demos</a><a class="repo-link" href="https://arxiv.org/abs/quant-ph/9605043" target="_blank" rel="noreferrer">Grover’s paper ↗</a></nav></header>
@@ -16,6 +17,7 @@
     <h1>Hide the bus.<br>Let <em>qubits find it.</em></h1>
     <p class="hero-copy">Can quantum search solve an image CAPTCHA? Place a schoolbus in the scene, challenge a trained quantum model, and watch Grover amplify its answer.</p>
     <div class="hero-bottom"><a href="#lab" class="text-link">Build your CAPTCHA <span>↓</span></a><span class="hero-note">4 classifier qubits · up to 6 search qubits · runs in your browser</span></div>
+    <a class="tour-hero-link" data-open-tour href="#quick-tour">Try the short guided tour ↓</a>
     <div class="orbit-art" aria-hidden="true"><div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div><div class="orbit-bus">▰<span>●&nbsp;&nbsp;&nbsp;●</span></div><span class="orbit-label">|bus⟩</span><div class="orbit-dot d1"></div><div class="orbit-dot d2"></div></div>
   </section>
   <section class="lab-section" id="lab">
@@ -27,11 +29,12 @@
         <label class="photo-scene-picker" id="street-picker" hidden>Street setting <select id="photo-background" aria-label="Street setting"><option value="covington">Covington · demo street</option><option value="emeryville" id="street-emeryville" disabled>Emeryville · unseen stress test</option><option value="custom" disabled>Uploaded background</option></select></label>
         <div class="captcha-prompt"><span>Find the image regions containing a</span><strong>schoolbus</strong><small>Move the bus to create a new challenge.</small></div>
         <div class="canvas-wrap"><canvas id="scene" width="512" height="512" tabindex="0" aria-label="Interactive captcha. Click or drag to place the schoolbus; arrow keys move it; Enter starts the search." role="img"></canvas><div class="canvas-hint" id="canvas-hint">Click anywhere or drag the bus</div></div>
+        <details class="quick-tour" id="quick-tour" ><summary>Take a 90-second tour ↓</summary><p>Step 1 restores the supplied images and settings. Then search and try an honest failure case. These actions use the same frozen model as the main experiment.</p><div class="tour-actions"><button data-tour-step="restore" aria-pressed="false" disabled>1. Restore demo</button><button data-tour-step="search" aria-pressed="false" disabled>2. Run search</button><button data-tour-step="challenge" aria-pressed="false" disabled>3. Empty street</button></div><p data-tour-feedback role="status" aria-live="polite">Begin with Restore demo, or explore the image directly.</p></details>
         <div class="scene-action"><button class="primary-button" id="run-scene" disabled><span>Loading trained model…</span><span aria-hidden="true">→</span></button><p class="scene-result" id="scene-result">Preparing the local simulator.</p><a class="scene-result-link" href="#search-results">Inspect probabilities ↓</a></div>
         <div class="scene-toolbar"><button class="small-button" id="shuffle">↻ New scene</button><button class="small-button" id="random-bus">↗ Move bus</button><label class="small-button upload-label" for="upload">＋ Upload a bus<input id="upload" type="file" accept="image/*"></label></div>
         <div class="bus-tray"><button id="bus-token" draggable="true" class="bus-token"><img id="bus-token-image" src="assets/bus.png" alt="Draggable schoolbus" draggable="false"><span>Drag this bus into the scene</span></button><label class="quiet-button upload-label" for="upload-street">Upload a background<input id="upload-street" type="file" accept="image/*"></label></div>
         <div class="scene-options"><label>Search space <select id="grid-size"><option value="8">8 × 8 regions</option><option value="4">4 × 4 regions</option></select></label><label class="toggle"><input id="snap" type="checkbox" checked> Snap to region</label><label class="toggle"><input id="heatmap" type="checkbox"> QNN heatmap</label></div>
-        <div class="scene-secondary"><button id="restore-bus" class="quiet-button">Use demo bus</button><button id="toggle-bus" class="quiet-button">Remove bus</button><span>Test the detector’s limits</span></div>
+        <div class="scene-secondary"><button class="quiet-button" id="reset-demo">Reset demo</button><button id="restore-bus" class="quiet-button">Use demo bus</button><button id="toggle-bus" class="quiet-button">Remove bus</button><span>Test the detector’s limits</span></div>
         <p class="scene-footnote" id="scene-footnote">Original synthetic bus artwork is included. Uploaded images stay in your browser.</p>
         <a id="unseen-report" class="unseen-report" href="model/unseen-audit.json" download hidden>Offline independent photo audit ↓</a>
         <p class="photo-credit" id="photo-credit" hidden>Street: <a id="street-attribution" href="https://commons.wikimedia.org/wiki/File:Covington,_Va_-_Main_Street.jpg" target="_blank" rel="noreferrer">Jarek Tuszyński / CC BY-SA 3.0</a>. Bus: <a id="bus-attribution" href="https://commons.wikimedia.org/wiki/File:Blue_Bird_A3FE_school_bus_Tacoma.jpg" target="_blank" rel="noreferrer">SupportPDX / CC BY 2.0</a><span id="bus-edit-note">, AI-assisted cutout.</span></p>

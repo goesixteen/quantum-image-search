@@ -1,0 +1,17 @@
+{
+  "phase": "before corpus/fitting; no validation/test scores read",
+  "recordedAtUtc": "2026-10-11T04:29:01.647945+00:00",
+  "files": {
+    "dist/wanda-localizer.js": "bc9292a9dbc9ada24611916118e297aeb06d3d2eb8a5961c31f968162c26decf",
+    "model/wanda_features.py": "b9f3de6a53ce4bdb74f45d2b2687147b80090a8da50432d19b13db9e5c5994a0",
+    "model/qnn_core.py": "8d4fdd3e80d651e92ca6cf6f3450cf1048934762d9add9de612b3d06dabc4005",
+    "dist/qnn.js": "c881e6a815c7e5e1b4013a241d7b36ff78f3c21ac49ef0f47f2f8005979e972e",
+    "model/wanda-qnn/protocol.json": "27dfd349204b9d0bf977b9a24693c331e12ed90bbcabc160872da169f942a9a8",
+    "model/wanda-qnn/build-corpus.mjs": "de1fd24e3b453ee26477e7ac190806e52683ac4e81a99146572fe21d305e0f1d",
+    "model/wanda-qnn/train.py": "e924b4350d5bc177442e72ac4e35f0b24d3b7bd74b8202c502e499c8f5721331",
+    "model/wanda-qnn/parity.mjs": "c93af17f70ce9876b424ef7c556d1e551ff1cc1e62cec1613f7aa847e5b547e5",
+    "model/wanda-qnn/verify.py": "9d34e321aaeb5e29f273bf1103988657309090f8af29fed1aade19a0cebf87df",
+    "tests/wanda-qnn.test.mjs": "e96fbb8a825548900de53dea02e15f00b0cfbe3bd78757791c55ddbd15368503"
+  },
+  "scope": "New Wanda assets only; current-qnn checkpoints remain unchanged"
+}

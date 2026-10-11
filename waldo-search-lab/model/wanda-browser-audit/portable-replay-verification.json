@@ -1,0 +1,8 @@
+{
+  "portableProjectRootReplayPassed": true,
+  "nativePNGHashesMatched": 20,
+  "nativeFullScoreHashesMatched": 20,
+  "pairedFeatureScoreDecisionRowsMatched": 20,
+  "sourceReportSHA256": "5a10c4a3d5027a6329251429ae771185658db65a1162dce35702689268ae7b8a",
+  "note": "Replay uses new work output; packaged historical report remains unchanged. Timings/source observation timestamps are expected to differ."
+}

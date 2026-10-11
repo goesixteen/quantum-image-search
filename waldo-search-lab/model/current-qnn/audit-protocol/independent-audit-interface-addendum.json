@@ -1,0 +1,10 @@
+{
+  "recordedAtUtc": "2026-10-11T01:09:14Z",
+  "clockSource": "clock.curr_time",
+  "originalProtocolSHA256": "4a113cef7f0dcd84f61845dae60703db5952e0355d95bf7256d79fb58fb6eb90",
+  "originalHarnessSHA256": "32533cde013a641028680e363f099bfbcb54481ff04e7cf4deb3730406dc4275",
+  "currentHarnessSHA256": "d37c949ad2126eb3a0636c7e429aef30ed91051a9f178ea00b4d3edd015e1ad3",
+  "change": "Source-only API contract clarification: inclusive <= NMS radius and threshold >= acceptance, matching stable localizer. Added boundary fixture. No geometry, visibility, seed, assets, outcomes or threshold selection changed.",
+  "candidateModelRead": false,
+  "modelScoresRead": false
+}

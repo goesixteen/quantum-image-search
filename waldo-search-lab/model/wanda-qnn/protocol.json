@@ -1,0 +1,93 @@
+{
+  "experiment": "Wanda same-art fully-visible QNN location oracle",
+  "featureVersion": "wanda-window-v1",
+  "fitRevision": "wanda-v1-front-discrete-sizes",
+  "scenes": [
+    "wanda-festival",
+    "wanda-beach",
+    "wanda-market",
+    "wanda-park",
+    "wanda-fairground"
+  ],
+  "heights": [
+    40,
+    46,
+    52,
+    58,
+    64
+  ],
+  "targetScenes": {
+    "train": 800,
+    "validation": 200,
+    "test": 300
+  },
+  "splitSeeds": {
+    "train": 2026101101,
+    "validation": 2026101102,
+    "test": 2026101103
+  },
+  "centerPartition": "(floor(cx/8)+3*floor(cy/8))%10: train0..6; validation7; test8..9, checked after integer rectangle placement",
+  "placement": "Always front; inside-frame targets. Same five background identities and same Wanda PNG in every split; new seeded centers, not unseen identities.",
+  "rendering": "Native @napi-rs/canvas; source art normalized512 with high smoothing, saved PNG pixels drawn1:1; alpha>16 target trim, target resized with high smoothing, integer rectangle origin.",
+  "targetDepthMode": "always-front",
+  "windowCorpus": "Two positives nearest8px lattice and center jitter\u00c2\u00b14; six nearby negatives at8..32px; one solid-red or blue-stripe altered-art decoy everythird composite. Truth enters labels only.",
+  "absenceSamplesPerSceneHeight": 192,
+  "mining": {
+    "seed": 2026101104,
+    "teacher": "training-only same-feature logistic L2=.001; same BCE and pairwise objective",
+    "topPerSceneHeight": 64,
+    "randomAdditionalPerSceneHeight": 128,
+    "role": "All train-role background centers; may overlap the known background pixels used by evaluation. No validation or test scores used to mine."
+  },
+  "optimization": {
+    "seeds": [
+      2026101105,
+      2026101106
+    ],
+    "updatesPerSeed": 1000,
+    "checkpoints": [
+      500,
+      1000
+    ],
+    "candidateCount": 4,
+    "batch": "64positives+32near/decoy+32background plus32trainingpairs",
+    "learningRate": ".025*(.45+.55*(1-step/1000))",
+    "inactiveRZSlots": [
+      25,
+      27,
+      29,
+      31
+    ]
+  },
+  "objective": {
+    "positiveBCEWeight": 0.5,
+    "nearDecoyBCEWeight": 0.25,
+    "backgroundBCEWeight": 0.25,
+    "pairWeight": 0.25,
+    "pairMargin": 1,
+    "pairs": "two positives\u00c3\u2014six nearby negatives from each identical training composite"
+  },
+  "matchedLogistic": {
+    "L2Choices": [
+      0,
+      1e-05,
+      0.001,
+      0.01
+    ],
+    "selection": "identical data, source-weighted BCE, pairwise term and scene-validation criterion"
+  },
+  "inference": "Final opaque composite RGB + supplied target width/height + model. Fixed64\u00c3\u201464 center grid; learned sigmoid QNN score>=threshold; stable greedy NMS radius=max(12,.35*width). No template, clean background, target mask, placement/truth, feature gate, argmax forcing or fallback.",
+  "correctPointTolerancePx": 6.657,
+  "thresholdSelection": {
+    "absenceFalseScenes": 0,
+    "maximumTargetFalsePointSceneRate": 0.01,
+    "primary": "maximize completeHits among ALL200target validation scenes; complete=atleastone correct point and zero false points",
+    "thresholds": "midpoints between decision-changing critical score values, critical margin>=1e-12",
+    "tieBreak": "lower source-weighted validation BCE, smaller seed, earlier checkpoint",
+    "abstention": "counts as failure; coverage/empty oracles reported"
+  },
+  "preTestRegression": "Allfive scene defaults: fully-visible Wanda52px atcenter(276,348), plus absence52px. Known-scene regression, not heldout evidence.",
+  "freeze": "Feature/source/protocol/renderer/model/threshold/default/parity hashes frozen before any reserved test scores. No fitting or threshold changes after test opening.",
+  "scope": "Same generated Wanda and five generated background identities; selected heights40/46/52/58/64, primarily52. No arbitrary size, unseen photograph, unseen female identity, occlusion or quantum advantage claim.",
+  "protocolRecordedAtUtc": "2026-10-11T04:29:01.647945+00:00"
+}

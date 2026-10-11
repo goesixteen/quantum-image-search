@@ -1,0 +1,299 @@
+{
+  "version": "wanda-park-curation-v1",
+  "recordedAtUtc": "2026-10-11T06:35:45.506365+00:00",
+  "scope": "Explicit model-guided artwork curation and engineering checks, not retraining, independent accuracy, or unseen-background generalization. Historical298/300 native same-art benchmark remains unchanged.",
+  "frozenModelSHA256": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88",
+  "featureVersion": "wanda-window-v1",
+  "threshold": 0.9056472752971427,
+  "corpus": {
+    "nativeCurationScans": 113,
+    "coralScans": 80,
+    "burgundyScans": 14,
+    "brickScans": 19,
+    "nativePositiveRegressions": 1,
+    "actualBrowserScoringChecks": 11,
+    "counterfactualFeatureRows": 18,
+    "counterfactualInterventions": 37,
+    "counterfactualComparisons": 684
+  },
+  "pilot": {
+    "sceneId": "wanda-park",
+    "asset": "dist/assets/wanda/lookalikes/coral-denim-v1.png",
+    "sourceSHA256": "ee6a0c0c4b8bdd9913279692c205d6ca8081fbcb53b2d938c6cde885784c64c0",
+    "requestedCenter": {
+      "x": 169,
+      "y": 400
+    },
+    "artHeight": 50,
+    "actualPlacement": {
+      "id": "coral-walkway-pilot",
+      "requestedCenter": {
+        "x": 169,
+        "y": 400
+      },
+      "center": {
+        "x": 169.5,
+        "y": 400
+      },
+      "rectangle": {
+        "x": 162,
+        "y": 375,
+        "width": 15,
+        "height": 50
+      },
+      "trimBounds": {
+        "x": 285,
+        "y": 21,
+        "width": 441,
+        "height": 1494
+      },
+      "sourceDimensions": {
+        "width": 1024,
+        "height": 1536
+      },
+      "rendererOnly": true
+    },
+    "prebakedAsset": "dist/assets/wanda/lookalikes/park-coral-v1-512.png",
+    "prebakedAssetSHA256": "586ca63a9e04fc4bc96253deca174dca31f009230390ce7c42d25f7bc9f79a08",
+    "status": "Verified actual Chromium52px pilot, explicitly conditional on supplied52px detector size",
+    "validAcrossAllFiveSuppliedSizes": false,
+    "knownFalseAcceptanceSizes": [
+      40,
+      46
+    ],
+    "default52NativePeak": 0.7020770671355234,
+    "default52ActualBrowserPeak": 0.7020770671355234,
+    "nativeAbsenceChecks": [
+      {
+        "suppliedHeight": 40,
+        "maximumScore": 0.9998092646459517,
+        "maximumPoint": {
+          "x": 172,
+          "y": 404
+        },
+        "marks": [
+          3221
+        ],
+        "anyFalseAcceptance": true
+      },
+      {
+        "suppliedHeight": 46,
+        "maximumScore": 0.9998964056580023,
+        "maximumPoint": {
+          "x": 172,
+          "y": 404
+        },
+        "marks": [
+          3221
+        ],
+        "anyFalseAcceptance": true
+      },
+      {
+        "suppliedHeight": 52,
+        "maximumScore": 0.7020770671355234,
+        "maximumPoint": {
+          "x": 172,
+          "y": 396
+        },
+        "marks": [],
+        "anyFalseAcceptance": false
+      },
+      {
+        "suppliedHeight": 58,
+        "maximumScore": 0.1836430615840328,
+        "maximumPoint": {
+          "x": 148,
+          "y": 412
+        },
+        "marks": [],
+        "anyFalseAcceptance": false
+      },
+      {
+        "suppliedHeight": 64,
+        "maximumScore": 0.231635245313214,
+        "maximumPoint": {
+          "x": 404,
+          "y": 340
+        },
+        "marks": [],
+        "anyFalseAcceptance": false
+      }
+    ],
+    "actualBrowserAbsenceChecks": [
+      {
+        "suppliedHeight": 40,
+        "maximumScore": 0.9998092646459517,
+        "maximumPoint": {
+          "x": 172,
+          "y": 404
+        },
+        "marks": [
+          3221
+        ],
+        "anyFalseAcceptance": true
+      },
+      {
+        "suppliedHeight": 46,
+        "maximumScore": 0.9998964056580023,
+        "maximumPoint": {
+          "x": 172,
+          "y": 404
+        },
+        "marks": [
+          3221
+        ],
+        "anyFalseAcceptance": true
+      },
+      {
+        "suppliedHeight": 52,
+        "maximumScore": 0.7020770671355234,
+        "maximumPoint": {
+          "x": 172,
+          "y": 396
+        },
+        "marks": [],
+        "anyFalseAcceptance": false
+      },
+      {
+        "suppliedHeight": 58,
+        "maximumScore": 0.1836430615840328,
+        "maximumPoint": {
+          "x": 148,
+          "y": 412
+        },
+        "marks": [],
+        "anyFalseAcceptance": false
+      },
+      {
+        "suppliedHeight": 64,
+        "maximumScore": 0.231635245313214,
+        "maximumPoint": {
+          "x": 404,
+          "y": 340
+        },
+        "marks": [],
+        "anyFalseAcceptance": false
+      }
+    ]
+  },
+  "variants": [
+    {
+      "id": "coral-denim-v1",
+      "scans": 80,
+      "decision": "Chosen only for a52px curated Park pilot; falsely accepted at40/46. Dynamic browser rendering suppressed the moderate52px peak; exact native prebaked background fixed pixel parity without changing model."
+    },
+    {
+      "id": "burgundy-plum-v2",
+      "scans": 14,
+      "decision": "Primary art height50 was below threshold at all5 supplied sizes, but local52px scores .01947\u2013.04921 were weaker than background. Not chosen."
+    },
+    {
+      "id": "brick-cream-v3",
+      "scans": 19,
+      "decision": "Lower-center art height52 gave moderate .4125793 native52px peak, but falsely accepted at supplied46(.9855115). Not chosen."
+    }
+  ],
+  "positiveNative": {
+    "marks": [
+      2420
+    ],
+    "completeHit": true,
+    "targetPeak": {
+      "index": 2420,
+      "x": 420,
+      "y": 300,
+      "score": 0.9892106882889656,
+      "features": [
+        0.3865161733648703,
+        0.14906834771126215,
+        0.8196030021772803,
+        0.23597636822694698,
+        0.5194167050730079,
+        0.9360577516106139,
+        0.8827828771580709,
+        0.5
+      ]
+    },
+    "decoyPeak": {
+      "index": 3157,
+      "x": 172,
+      "y": 396,
+      "score": 0.7020770671355234,
+      "features": [
+        0.18467828821469204,
+        0.03185009210452895,
+        0.5389819125015917,
+        0.125419852893475,
+        0.01439581323430228,
+        0.84996076139641,
+        0.7704442228885456,
+        0.5
+      ]
+    }
+  },
+  "positiveActualBrowser": {
+    "marks": [
+      2420
+    ],
+    "completeHit": true,
+    "targetPeak": {
+      "index": 2420,
+      "x": 420,
+      "y": 300,
+      "score": 0.9933728169957108,
+      "features": [
+        0.29601359686712914,
+        0.08728347414408073,
+        0.781805908540155,
+        0.16665776063717647,
+        0.5316469482334367,
+        0.9278723131629614,
+        0.8709378578426128,
+        0.5
+      ]
+    },
+    "decoyPeak": {
+      "index": 3157,
+      "x": 172,
+      "y": 396,
+      "score": 0.7020770671355234,
+      "features": [
+        0.18467828821469204,
+        0.03185009210452895,
+        0.5389819125015917,
+        0.125419852893475,
+        0.01439581323430228,
+        0.84996076139641,
+        0.7704442228885456,
+        0.5
+      ]
+    },
+    "trueCenterErrorPx": 0.5
+  },
+  "renderer": {
+    "dynamicBrowser52LocalPeak": 0.12772205387926142,
+    "native52LocalPeak": 0.7020770671355234,
+    "bakedAbsentDecodedRGBAIdentical": true,
+    "positiveActualVsNativePixelDifferences": 625,
+    "positiveDifferencesOutsideTrueTarget": 0,
+    "policy": "The authored lookalike is baked into a new full512px opaque background using native composeCuratedScene; browser copies this derived artwork1:1. Normal Wanda remains draggable and browser-resized. Original Park asset is unchanged.",
+    "observedAppSHA256AtPackaging": "8b4e2082e85c4d459232e963d65bea88c069384ba24c427bae1844e06cc8cdea",
+    "appHashMeaning": "Observed current source hash, not a retroactively asserted hash for earlier dynamic capture."
+  },
+  "replay": {
+    "rows": 113,
+    "maxScoreError": 0,
+    "maxFeatureError": 0,
+    "exactMarks": true,
+    "exactTopEightAndLocalPeaks": true,
+    "archivedPNGChecks": 45
+  },
+  "limitations": [
+    "Model-guided placement/color/height selection cannot be cited as independent accuracy.",
+    "Supplied-size40/46 produces a false oracle; Grover amplifies that incorrect acceptance too.",
+    "Only one fixed positive browser placement and one absent browser frame of the final pilot were checked.",
+    "Stored QNN sigmoid output is a detector score, not a calibrated probability of identity.",
+    "Single-feature interventions may not correspond to any renderable outfit and are not causal attribution.",
+    "Frozen historical metrics describe original scenes, not this newly curated artwork."
+  ]
+}

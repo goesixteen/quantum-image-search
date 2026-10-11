@@ -1,0 +1,13 @@
+{
+  "scope": "ActualChrome/nativepositive, frozen52geometry, no training",
+  "differentPixels": 625,
+  "differencesOutsideTargetRectangle": 0,
+  "maxChannelDifference": 181,
+  "meanTargetRGBDifference": 22.635470085470086,
+  "targetRectangleXYWH": [
+    413,
+    274,
+    15,
+    52
+  ]
+}

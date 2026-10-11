@@ -1,0 +1,16 @@
+{
+  "scope": "Model-guided artwork curation of a new Park lookalike, not independent accuracy or held-out evaluation",
+  "frozenModelSHA256": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88",
+  "assetSHA256": "ee6a0c0c4b8bdd9913279692c205d6ca8081fbcb53b2d938c6cde885784c64c0",
+  "initialHeights": [42,44,46,48,50,52,54],
+  "anchors": [{"id":"lower-walkway","x":169,"y":400},{"id":"right-walkway","x":402,"y":410},{"id":"middle-right","x":463,"y":278},{"id":"lower-center","x":308,"y":394},{"id":"left-stand","x":114,"y":338},{"id":"central-walkway","x":240,"y":224}],
+  "initialDetectorSize": {"width":15,"height":52},
+  "scan": "All4096 RGB-only windows on the fixed64x64lattice; frozen QNN and threshold",
+  "selectionPreference": "Natural-looking placement with local learned score0.4..0.8, greater than original Chromium background max0.37455, and no accepted decoy at frozen threshold",
+  "phaseFollowup": "May inspect +/-2px phases around at most two promising placements; retain all outcomes",
+  "finalAbsenceSizes": [40,46,52,58,64],
+  "finalDetectorWidths": "round(height*440/1493), original Wanda trim aspect",
+  "finalRenderer": "composeCuratedScene over canonical native-high staged Park512canvas; no pixel editing",
+  "forbidden": "No fitting, feature edits, source PNG edits, threshold adjustment, reserve-test claims, or placement metadata as inference inputs",
+  "backendLimit": "Native canvas and Chromium filtering differ; root must inspect actual browser final composite before integration"
+}

@@ -1,0 +1,107 @@
+{
+  "phase": "Allfive backgrounds final, before any corpus/fitting; default changed uniformlyto(276,348) byroot beforefitting",
+  "recordedAtUtc": "2026-10-11T04:32:12.099442+00:00",
+  "files": {
+    "dist/wanda-localizer.js": "bc9292a9dbc9ada24611916118e297aeb06d3d2eb8a5961c31f968162c26decf",
+    "model/wanda_features.py": "b9f3de6a53ce4bdb74f45d2b2687147b80090a8da50432d19b13db9e5c5994a0",
+    "model/qnn_core.py": "8d4fdd3e80d651e92ca6cf6f3450cf1048934762d9add9de612b3d06dabc4005",
+    "dist/qnn.js": "c881e6a815c7e5e1b4013a241d7b36ff78f3c21ac49ef0f47f2f8005979e972e",
+    "model/wanda-qnn/protocol.json": "e7d6c9a0ba102bc4317ac0f2ec599143b0492291f2ad5af5e72d49387c08e761",
+    "model/wanda-qnn/build-corpus.mjs": "27316676e237a74b800d68c51d68d2f9a96da94f42be35188595d329ce45b691",
+    "model/wanda-qnn/train.py": "40e745903522924adfc1343a4bd7fd399639d0221a82ceb84117d562fd475526",
+    "model/wanda-qnn/parity.mjs": "c93af17f70ce9876b424ef7c556d1e551ff1cc1e62cec1613f7aa847e5b547e5",
+    "model/wanda-qnn/verify.py": "9d34e321aaeb5e29f273bf1103988657309090f8af29fed1aade19a0cebf87df",
+    "model/wanda-qnn/release.py": "39927757b0ec460c776dfb40255f9a15e9a29061337eed56dcfebb2856ebc699",
+    "model/wanda-qnn/normalize-backgrounds.mjs": "87f90c68cb71569f3f7dfb96e2800d70722583de530f5710004a6ae84dbf2464",
+    "tests/wanda-qnn.test.mjs": "e96fbb8a825548900de53dea02e15f00b0cfbe3bd78757791c55ddbd15368503"
+  },
+  "assets": {
+    "records": [
+      {
+        "id": "wanda-festival",
+        "ready": true,
+        "original": "festival.png",
+        "originalDimensions": [
+          1254,
+          1254
+        ],
+        "originalSHA256": "bcabf4cbf2559220aa6ada6c53807e8364c98edd431f21983b7cb8f7a7ec0b1b",
+        "normalized": "festival-512.png",
+        "normalizedDimensions": [
+          512,
+          512
+        ],
+        "normalizedSHA256": "369f59e8c4b83ebe9d36febc42e85fe29dd650da56e7ad9f9b27f0c8363bda56",
+        "normalization": "@napi-rs/canvas0.1.100, full-square drawImage to512\u00c3\u2014512, imageSmoothingEnabled=true,imageSmoothingQuality=high; numeric RGBA, no AI image edit"
+      },
+      {
+        "id": "wanda-beach",
+        "ready": true,
+        "original": "beach.png",
+        "originalDimensions": [
+          1254,
+          1254
+        ],
+        "originalSHA256": "346c31f378afea982e6722eb2ed54b8e5a1e4e1731fd99a022c530150dd64516",
+        "normalized": "beach-512.png",
+        "normalizedDimensions": [
+          512,
+          512
+        ],
+        "normalizedSHA256": "fce6b6ade6a36f9b1fc92bcaf11bc2f5ef874d740de872ae22095a629377226a",
+        "normalization": "@napi-rs/canvas0.1.100, full-square drawImage to512\u00c3\u2014512, imageSmoothingEnabled=true,imageSmoothingQuality=high; numeric RGBA, no AI image edit"
+      },
+      {
+        "id": "wanda-market",
+        "ready": true,
+        "original": "market.png",
+        "originalDimensions": [
+          1254,
+          1254
+        ],
+        "originalSHA256": "045f854bb57524834958c0ffa9566385df8d821b57b3fd8678f57fdb316b399f",
+        "normalized": "market-512.png",
+        "normalizedDimensions": [
+          512,
+          512
+        ],
+        "normalizedSHA256": "746b7ba03b5a25a91041e4d287125b4ea1d3187cc0f7712086697ddf1dd429fa",
+        "normalization": "@napi-rs/canvas0.1.100, full-square drawImage to512\u00c3\u2014512, imageSmoothingEnabled=true,imageSmoothingQuality=high; numeric RGBA, no AI image edit"
+      },
+      {
+        "id": "wanda-park",
+        "ready": true,
+        "original": "park.png",
+        "originalDimensions": [
+          1254,
+          1254
+        ],
+        "originalSHA256": "3bb4ede549bec7fedd65b1ff750a8d8c9e2e94d0124b814688921c59cabb17bf",
+        "normalized": "park-512.png",
+        "normalizedDimensions": [
+          512,
+          512
+        ],
+        "normalizedSHA256": "d20ea478a665eac1221fafcf3079dff71e9d9a40ca56846546628216452ceabd",
+        "normalization": "@napi-rs/canvas0.1.100, full-square drawImage to512\u00c3\u2014512, imageSmoothingEnabled=true,imageSmoothingQuality=high; numeric RGBA, no AI image edit"
+      },
+      {
+        "id": "wanda-fairground",
+        "ready": true,
+        "original": "fairground.png",
+        "originalDimensions": [
+          1254,
+          1254
+        ],
+        "originalSHA256": "98a2e98d5aa1d7971f4d50ee6508b1d9d6be63611a72fc388a7a71eaeaa51b97",
+        "normalized": "fairground-512.png",
+        "normalizedDimensions": [
+          512,
+          512
+        ],
+        "normalizedSHA256": "71a3c458f4ff642ffccdae332b8819fc935bbee8c026bfce27c59251467fb61d",
+        "normalization": "@napi-rs/canvas0.1.100, full-square drawImage to512\u00c3\u2014512, imageSmoothingEnabled=true,imageSmoothingQuality=high; numeric RGBA, no AI image edit"
+      }
+    ]
+  }
+}

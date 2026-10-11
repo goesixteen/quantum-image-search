@@ -1,0 +1,34 @@
+{
+  "scope": "Same five scene assets and same target; disjoint reserved center partitions. Window metrics are separate from complete-scene search.",
+  "modelSHA256": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88",
+  "dataFeaturesSHA256": "36cf8b885b23026f46a10c663204fb0c48fa6fc6e7210fb2ee8cf00e5298434f",
+  "dataLabelsSHA256": "d8c48f7320274c86bc929d310634f469c9120f9f5c144d7c558d9eb919aa6725",
+  "qnn": {
+    "n": 7300,
+    "threshold": 0.9056472752971427,
+    "accuracy": 0.9976712328767123,
+    "precision": 0.9982905982905983,
+    "recall": 0.9733333333333334,
+    "f1": 0.9856540084388186,
+    "true_positive": 584,
+    "false_positive": 1,
+    "false_negative": 16,
+    "true_negative": 6699,
+    "bce": 0.013887912488271923,
+    "balanced_bce": 0.015623897191142266
+  },
+  "logistic": {
+    "n": 7300,
+    "threshold": 0.9701052364870355,
+    "accuracy": 0.9979452054794521,
+    "precision": 0.9932546374367622,
+    "recall": 0.9816666666666667,
+    "f1": 0.9874266554903605,
+    "true_positive": 589,
+    "false_positive": 4,
+    "false_negative": 11,
+    "true_negative": 6696,
+    "bce": 0.006199516498112605,
+    "balanced_bce": 0.005376129505854369
+  }
+}

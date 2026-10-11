@@ -1,0 +1,18 @@
+{
+  "scope": "Circuit/feature lesson verification, separate from detector whole-scene accuracy",
+  "modelSHA256": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88",
+  "test": "tests/wanda-trace-parity.test.mjs",
+  "testSHA256": "121655abc58ef975f80b6a167794e71f39e95b2841218fbb35e9c79c43641ab6",
+  "documentation": "docs/QNN_TRACE.md",
+  "documentationSHA256": "4666af838181cb1c2631d617b03a0e930d98bc11cce980465de8c9d5c3d56318",
+  "testsPassed": 3,
+  "fixedRows": 28,
+  "nativeRGBPNGs": 15,
+  "physicalGateFrames": 4508,
+  "maxFeatureError": 0,
+  "maxReadoutError": 6.38378239159465e-16,
+  "maxSigmoidError": 7.632783294297951e-17,
+  "maxNormPurityIdentityError": 2.1094237467877974e-15,
+  "minimumLocalPurity": 0.500454779832012,
+  "reportedBy": "grover_core independent trace test owner"
+}

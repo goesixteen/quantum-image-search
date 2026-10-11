@@ -1,0 +1,20 @@
+{
+  "lockedAtUtc": "2026-10-10T10:00:19.127997+00:00",
+  "iteration": 4,
+  "status": "reserve-identities-unreleased-awaiting-v4-exact-freeze",
+  "historicalManifestSha256": "7a7845c16ce3316a82f2f191bfd9cf8d17c40bc00f69efb9c67b584dbd3e6549",
+  "historicalPrimaryReleaseSha256": "9797f3e2927183d4d22f336e9e488c54841de0f4b7dfcf5072f9d649f05e2a3c",
+  "reserveIds": [
+    "street-c",
+    "bus-c"
+  ],
+  "reserveFilesSha256": {
+    "street-c-source.jpg": "e612ccfc805651b138bc1e5f276a049d625ad48524b76b800b18895500edc751",
+    "street-c-512.png": "0a103b2a2012074ea096293360f4afa6174159d695054030451c2a389e621c1e",
+    "bus-c-source.jpg": "409e2eb4c48ce033d2c50c3483f66ce352bed37c91924f2c048a3bd2a21ed436",
+    "bus-c-roi.png": "3b93a6294c82ed40db1d5dd388ecef1cf1c8ec7ee9b54dc7bfdc8e5b15333f6c",
+    "bus-c-bbox.svg": "f8f6e9bc4ea60058b62b83179db1f61701d131d88427bbe47f26b849ddda8660"
+  },
+  "modelImportsOrScoring": false,
+  "historicalRecordsModified": false
+}

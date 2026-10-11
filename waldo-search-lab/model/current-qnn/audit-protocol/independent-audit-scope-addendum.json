@@ -1,0 +1,10 @@
+{
+  "recordedAtUtc": "2026-10-11T01:50:45Z",
+  "clockSource": "clock.curr_time",
+  "originalProtocolSHA256": "4a113cef7f0dcd84f61845dae60703db5952e0355d95bf7256d79fb58fb6eb90",
+  "previousHarnessSHA256": "fff02812e6bc1559703441fc8680c98287652a23e9d20a939483ce1758684d8c",
+  "currentHarnessSHA256": "a1b8342c1085ea4b9ad6dd2068593f4756d394fcd5ce42be53c615a85c749c10",
+  "change": "Report text only: explicitly describe these as independent predefined same-art engineering probes, including known defaults, not all strict training-coordinate holdouts. Preserve the original immutable protocol wording separately as originalProtocolScope. No cases, seeds, assets, rasterization, visibility, geometry, threshold, grading or scoring changes.",
+  "candidateModelRead": false,
+  "independentModelScoresRead": false
+}

@@ -1,0 +1,151 @@
+{
+  "version": 2,
+  "scene": "qualicity-queue",
+  "sceneSize": 512,
+  "sceneSource": "assets/busy-art/qualicity-queue.png",
+  "method": "Native vector masks isolate unchanged source RGB; cropped PNGs register back into the 512px scene at their recorded positions.",
+  "depthConvention": "front-when-lower",
+  "alphaThreshold": 32,
+  "layers": [
+    {
+      "id": "queue-blonde-woman",
+      "name": "Blonde guest in red gown",
+      "png": "assets/layers/qualicity-queue/queue-blonde-woman.png",
+      "maskPNG": "assets/layers/qualicity-queue/queue-blonde-woman-mask.png",
+      "position": {
+        "x": 322,
+        "y": 127
+      },
+      "width": 36,
+      "height": 159,
+      "depthAnchorY": 286,
+      "sha256": "81ca34b8864b3c2e009daa285b6d481cf04b031db0de448a82eeb0baf4d5eb0c"
+    },
+    {
+      "id": "queue-curly-woman",
+      "name": "Curly-haired guest in rose gown",
+      "png": "assets/layers/qualicity-queue/queue-curly-woman.png",
+      "maskPNG": "assets/layers/qualicity-queue/queue-curly-woman-mask.png",
+      "position": {
+        "x": 360,
+        "y": 124
+      },
+      "width": 50,
+      "height": 164,
+      "depthAnchorY": 288,
+      "sha256": "13d96cf9f9c02fa9b38ae330cb395058b92eb6ce52b45a0479d0ceb491ae931a"
+    },
+    {
+      "id": "queue-right-woman",
+      "name": "Dark-haired guest in red cape",
+      "png": "assets/layers/qualicity-queue/queue-right-woman.png",
+      "maskPNG": "assets/layers/qualicity-queue/queue-right-woman-mask.png",
+      "position": {
+        "x": 403,
+        "y": 134
+      },
+      "width": 38,
+      "height": 149,
+      "depthAnchorY": 283,
+      "sha256": "4b7a15603e19cdd5ccacfe6fa0e0a9d031ee461f2e78604c7d3e7a2250353408"
+    },
+    {
+      "id": "queue-robot",
+      "name": "Robot guard and control console",
+      "png": "assets/layers/qualicity-queue/queue-robot.png",
+      "maskPNG": "assets/layers/qualicity-queue/queue-robot-mask.png",
+      "position": {
+        "x": 221,
+        "y": 200
+      },
+      "width": 85,
+      "height": 95,
+      "depthAnchorY": 295,
+      "sha256": "7d19f80abb9895612933edaf232595c04934f16f87be93245575c9260b6db9f3"
+    },
+    {
+      "id": "queue-green-hat",
+      "name": "Green-hatted bearded guest",
+      "png": "assets/layers/qualicity-queue/queue-green-hat.png",
+      "maskPNG": "assets/layers/qualicity-queue/queue-green-hat-mask.png",
+      "position": {
+        "x": 255,
+        "y": 274
+      },
+      "width": 76,
+      "height": 159,
+      "depthAnchorY": 433,
+      "sha256": "e08c611d556a0e73f93d364f4908fcbf9514e51416fd81eeb497a2e26848213e"
+    },
+    {
+      "id": "queue-foreground-witch",
+      "name": "Foreground witch in purple cloak",
+      "png": "assets/layers/qualicity-queue/queue-foreground-witch.png",
+      "maskPNG": "assets/layers/qualicity-queue/queue-foreground-witch-mask.png",
+      "position": {
+        "x": 250,
+        "y": 384
+      },
+      "width": 69,
+      "height": 128,
+      "depthAnchorY": 512,
+      "sha256": "315dcb9201a5452cd21319769a51f3c512bab72b76ce6e91b20cedc2fdaefb29"
+    },
+    {
+      "id": "queue-court-guest",
+      "name": "Pale-collared court guest and fan",
+      "png": "assets/layers/qualicity-queue/queue-court-guest.png",
+      "maskPNG": "assets/layers/qualicity-queue/queue-court-guest-mask.png",
+      "position": {
+        "x": 123,
+        "y": 372
+      },
+      "width": 93,
+      "height": 140,
+      "depthAnchorY": 512,
+      "sha256": "5d19f2d5e15e1734fdb99052a835ab121c87de30a9bc0f3beb8f4f1b69fff6a3"
+    },
+    {
+      "id": "queue-moustached-guest",
+      "name": "Moustached guest in pale coat",
+      "png": "assets/layers/qualicity-queue/queue-moustached-guest.png",
+      "maskPNG": "assets/layers/qualicity-queue/queue-moustached-guest-mask.png",
+      "position": {
+        "x": 69,
+        "y": 274
+      },
+      "width": 60,
+      "height": 113,
+      "depthAnchorY": 387,
+      "sha256": "5ca2c1b17f97e174b32a8d45e784d0932f3ed6a09aea6c1dd9bbe2c5f06247d6"
+    },
+    {
+      "id": "queue-left-witch",
+      "name": "Left queue witch and broad hat",
+      "png": "assets/layers/qualicity-queue/queue-left-witch.png",
+      "maskPNG": "assets/layers/qualicity-queue/queue-left-witch-mask.png",
+      "position": {
+        "x": 0,
+        "y": 179
+      },
+      "width": 79,
+      "height": 128,
+      "depthAnchorY": 307,
+      "sha256": "2f5b5b7bfec18e0a8de63149b6f027ba23f7ed40a911cf85841c0fbabfc657fe"
+    },
+    {
+      "id": "queue-brass-post",
+      "name": "Central-right brass barrier post",
+      "png": "assets/layers/qualicity-queue/queue-brass-post.png",
+      "maskPNG": "assets/layers/qualicity-queue/queue-brass-post-mask.png",
+      "position": {
+        "x": 368,
+        "y": 289
+      },
+      "width": 23,
+      "height": 106,
+      "depthAnchorY": 395,
+      "sha256": "b86b6f181f96e0ae04e66509f12e42c00dfbbfb3b1dc45b2ff7a2f42518d1870"
+    }
+  ]
+}

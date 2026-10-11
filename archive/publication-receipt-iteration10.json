@@ -1,0 +1,151 @@
+{
+  "recorded_at": "2026-10-11T05:56:31.231419+00:00",
+  "iteration": 10,
+  "work_step": "guided-live-wanda-oracle-browser-audit-and-two-copy-experiment",
+  "bus": {
+    "project_id": "appgprj_6ac9e65f76c48191b8d53784212b5f4c",
+    "commit_sha": "2f616c21b832d8164b06c60a7ffc66499c20290f",
+    "deployment_id": "appgdep_6aca06d97cf4819191d7cd98c5a80355",
+    "version_id": "appgprj_6ac9e65f76c48191b8d53784212b5f4c~appgver_3d2d9fda24e08191bfc638a1664a844a",
+    "status": "succeeded",
+    "url": "https://bus-search-quantum-lab.syrupyspool2.chatgpt.site",
+    "audience": "owner-private"
+  },
+  "crowd": {
+    "project_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1",
+    "commit_sha": "65519a96792c5c162028de9047c8455e1b411555",
+    "deployment_id": "appgdep_6acb244d71b08191bf46732484430aed",
+    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_7c0d24a67e80819196f2bf0aba9c8ef4",
+    "status": "succeeded",
+    "url": "https://quantum-crowd-search.syrupyspool2.chatgpt.site",
+    "audience": "owner-private"
+  },
+  "previous_crowd_revision": {
+    "project_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1",
+    "commit_sha": "5a339e2ff0348701e2572d1c796cedd0ec541571",
+    "deployment_id": "appgdep_6acb19743c2481918564fe48c63919e7",
+    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_3ca447cfc82c8191a8fb9e047a170d3e",
+    "status": "succeeded",
+    "url": "https://quantum-crowd-search.syrupyspool2.chatgpt.site",
+    "audience": "owner-private"
+  },
+  "submission": {
+    "status": "not-submitted",
+    "instruction": "Do not submit any work. Keep iterating improvements.",
+    "public_materials_published": false
+  },
+  "browser_preview": "Guided build/phase/reflection/peak/overshoot/measurement, empty oracle, display boost, keyboard/motion/milestones, loading readiness and stale-result clearing, scene cancellation, mobile guide; new default420300; two-copy real browser upload and exact raw-image replay. Hosted new default sample and absentFestival checked.",
+  "hosted_browser_proofs": [
+    "wanda-two-target-hosted-proof.png",
+    "wanda-absent-hosted-proof.png"
+  ],
+  "current_qa": {
+    "node_tests_passed": 102,
+    "frozen_model_sha256": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88",
+    "frozen_verifier": {
+      "passed": true,
+      "frozen_files": 11,
+      "frozen_sources": 7,
+      "pixel_fixtures": 12
+    },
+    "scope": "Known Wanda PNG, five known backgrounds, disjoint center partitions and seeded placements, supplied40/46/52/58/64px heights, front and inside frame. No unseen-person, unknown-size, occlusion or quantum-advantage claim.",
+    "reserved_qnn": {
+      "complete_hits": 298,
+      "target_scenes": 300,
+      "wrong_point_scenes": 1,
+      "abstentions": 1,
+      "empty_false_detections": 0,
+      "empty_scenes": 25
+    },
+    "reserved_logistic": {
+      "complete_hits": 299,
+      "target_scenes": 300,
+      "wrong_point_scenes": 0,
+      "abstentions": 1,
+      "empty_false_detections": 0,
+      "empty_scenes": 25
+    },
+    "actual_state_trace": {
+      "fixed_cases": 28,
+      "raster_fixtures": 15,
+      "gate_frames": 4508,
+      "max_expectation_error": 6.38e-16,
+      "max_score_error": 7.63e-17
+    },
+    "canonical_native_renderer": {
+      "frames": 325,
+      "compared_rgba_channels": 340787200,
+      "different_rgba_channels": 0,
+      "max_feature_error": 0,
+      "max_score_error": 1.33e-15,
+      "full_failure_lattices": 2,
+      "scope": "Engineering parity to opened frozen corpus; not a new holdout or Chromium byte-parity claim"
+    },
+    "descriptive_metadata_erratum": "waldo-search-lab/model/wanda-qnn/metadata-erratum.json",
+    "qiskit_wanda_tests_passed": 10,
+    "browser_rendering_audit": {
+      "targets": 15,
+      "browser_complete": 15,
+      "native_complete": 13,
+      "empty_scenes": 5,
+      "browser_empty_false_points": 0,
+      "native_empty_false_points": 0,
+      "equal_predicate_pairs": 18,
+      "pairs": 20,
+      "identical_pixel_pairs": 0,
+      "center": [
+        276,
+        348
+      ],
+      "scope": "Former-default known-center engineering diagnostic, not reserved accuracy; frozen weights unchanged."
+    },
+    "two_wanda": {
+      "accepted_points": [
+        [
+          420,
+          300
+        ],
+        [
+          276,
+          348
+        ]
+      ],
+      "peak_round_one": 50,
+      "peak_round_two": 35,
+      "combined_peak_probability": 0.9999968477766265,
+      "per_copy_peak_probability": 0.4999984238883132,
+      "seeded_draws": 10000,
+      "counts": [
+        4987,
+        5013
+      ],
+      "scope": "Controlled same-art native and actual browser-image experiment, not reserved accuracy."
+    },
+    "latest_absence_check": {
+      "world": "Festival",
+      "height": 52,
+      "accepted": 0,
+      "scanned": 4096,
+      "result": "No match found",
+      "round": 0,
+      "sampling_disabled": true,
+      "strongest_background_score_displayed_percent": 42.57,
+      "threshold_percent": 90.56472752971428,
+      "where": "Actual local and terminal-deployed private Chromium page"
+    }
+  },
+  "next_work": [
+    "Improve the educational story and verify it with unfamiliar users before cosmetic expansion",
+    "Audit Chromium versus native raster behavior and port the new Wanda circuit into the existing Qiskit companion",
+    "Broaden to separately held-out background identities and explain learned features versus supplied size",
+    "Keep frozen298/300 results and retained failures; no reserved-test tuning",
+    "Maintain both owner-private Sites and no contest submission"
+  ],
+  "owner_access_verified": {
+    "role": "owner",
+    "mode": "custom",
+    "allowed_users": 1,
+    "allowed_groups": 0,
+    "external_visitors": 0
+  }
+}

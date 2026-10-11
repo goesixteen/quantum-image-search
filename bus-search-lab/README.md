@@ -2,9 +2,9 @@
 
 Hide a bus in an image challenge. A trained four-qubit variational classifier recognizes image patches; Grover's algorithm amplifies the model's marked regions and samples a candidate location. The site centers on the interactive CAPTCHA, with the math and evaluation available afterward.
 
-This is the first of two requested deliverables. The second, [Find the Explorer / Search Atlas](../waldo-search-lab/README.md), uses an original crowd-search scene and its own trained detector. Both websites have been built, tested, and deployed so the user can compare their narratives and interactions.
+This is the first of two requested deliverables. The second, [Find the Explorer / Search Atlas](../waldo-search-lab/README.md), now has a layered crowd editor using public-domain paintings and an attributed open figure, with a separately labelled classical known-template matcher and fine center addresses. Its original trained QNN is preserved as a separate mode. Earlier versions of both review websites were tested and deployed; the resumed crowd source awaits final browser/private-deployment evidence.
 
-Open the owner-private [Quantum CAPTCHA](https://bus-search-quantum-lab.syrupyspool2.chatgpt.site) and [Search Atlas](https://quantum-crowd-search.syrupyspool2.chatgpt.site) sites. The new local [two-demo comparison](dist/compare.html) and shared constructed-oracle lesson distinguish accepted-set confidence from true-target probability. The final private update awaits its external receipt in root QA. Public Qollab/video materials remain withheld.
+Open the owner-private [Quantum CAPTCHA](https://bus-search-quantum-lab.syrupyspool2.chatgpt.site) and [Search Atlas](https://quantum-crowd-search.syrupyspool2.chatgpt.site) sites. The [two-demo comparison](dist/compare.html) and shared constructed-oracle lesson distinguish accepted-set confidence from true-target probability. Iteration 03's updates succeeded; the current resumed editor's private update is pending its new receipt. Read [LAYERED_SEARCH_HANDOFF.md](../LAYERED_SEARCH_HANDOFF.md) for current scope. Public Qollab/video materials remain withheld.
 
 **Current instruction: keep iterating; do not submit any work.** Qollab uploads, public source/video publication, and contest submission are withheld. SDK experiments and project/video drafts stay local unless the user later explicitly authorizes external actions. Existing review sites remain private.
 
@@ -68,6 +68,6 @@ The local `qollab/` package contains the exact top-level files a future authoriz
 
 ## Continue the hourly work
 
-Read [PROJECT_STATE.md](docs/PROJECT_STATE.md) first, then [RUN_LOG.md](docs/RUN_LOG.md). Preserve both private Site identities. Next is **v4 local representation/ranking and foreground variation**, with matched models and scene-constrained validation. Keep c assets reserved until feature/model/threshold/renderer/protocol freeze; inspected a/b assets are diagnostic. The expanded crowd audit and comparison page are complete at their declared scope. Keep drafts/SDK preparation local and external submissions withheld. Restart preview servers only when development requires them.
+Read [PROJECT_STATE.md](docs/PROJECT_STATE.md), [RUN_LOG.md](docs/RUN_LOG.md) and [NEXT_STEPS.md](docs/NEXT_STEPS.md). The latest user priority is the **layered crowd editor**, its fine amplitude maps, new known targets and foreground occlusion. Finish actual browser/private-receipt checks and a declared new-art/size/occlusion audit. Saved v4 candidates fail useful coverage and remain unpromoted. Preserve both Site identities and trained checkpoints; keep c reserved until a later verified freeze. SDK/drafts remain local and submissions withheld. Restart preview servers only when development needs them.
 
 Code is MIT licensed. Third-party photographs retain the licenses recorded in [ASSETS.md](docs/ASSETS.md); the bus extraction prompt/provenance is in [IMAGE_EDIT.md](docs/IMAGE_EDIT.md).

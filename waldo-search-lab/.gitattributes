@@ -1,0 +1,25 @@
+# Keep hashed release evidence byte-identical across Windows and Unix checkouts.
+* whitespace=trailing-space,space-before-tab,cr-at-eol
+model/current-qnn/** -text
+model/current-qnn-audit.json -text
+model/audit-current-qnn.mjs -text
+model/qnn_localizer_features.py -text
+dist/qnn-localizer.js -text
+dist/model/current-qnn*.json -text
+dist/model/model.json -text
+dist/qnn.js -text
+tests/*qnn* -text
+qollab/** -text
+model/wanda-qnn/** -text
+model/wanda_features.py -text
+dist/wanda-localizer.js -text
+dist/qnn-trace.js -text
+dist/model/wanda-qnn*.json -text
+dist/scene-editor.js -text
+dist/app.js -text
+dist/lesson-model.js -text
+qollab-wanda/** -text
+model/wanda-browser-audit/** -text
+dist/model/wanda-browser-audit.json -text
+model/wanda-two-target-experiment/** -text
+dist/model/wanda-two-target*.json -text

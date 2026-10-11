@@ -1,0 +1,7934 @@
+{
+  "qnn": {
+    "summary": {
+      "targetScenes": 150,
+      "absenceScenes": 21,
+      "completeHits": 137,
+      "completeHitRate": 0.9133333333333333,
+      "targetFalsePointScenes": 1,
+      "targetFalsePointRate": 0.006666666666666667,
+      "targetEmptyOracles": 12,
+      "targetCoverage": 0.9133333333333333,
+      "absenceFalsePointScenes": 0,
+      "absenceAcceptedPoints": 0,
+      "threshold": 0.967190378886187,
+      "bySizeRanges": {
+        "24-35": {
+          "n": 23,
+          "completeHits": 21,
+          "completeHitRate": 0.9130434782608695,
+          "anyFalse": 0,
+          "emptyOracles": 2
+        },
+        "36-63": {
+          "n": 56,
+          "completeHits": 53,
+          "completeHitRate": 0.9464285714285714,
+          "anyFalse": 0,
+          "emptyOracles": 3
+        },
+        "64-91": {
+          "n": 44,
+          "completeHits": 38,
+          "completeHitRate": 0.8636363636363636,
+          "anyFalse": 0,
+          "emptyOracles": 6
+        },
+        "92-112": {
+          "n": 27,
+          "completeHits": 25,
+          "completeHitRate": 0.9259259259259259,
+          "anyFalse": 1,
+          "emptyOracles": 1
+        }
+      },
+      "byVisibility": {
+        "20-50%": {
+          "n": 0,
+          "completeHits": 0,
+          "completeHitRate": 0.0,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        },
+        "50-90%": {
+          "n": 0,
+          "completeHits": 0,
+          "completeHitRate": 0.0,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        },
+        "90-below100%": {
+          "n": 0,
+          "completeHits": 0,
+          "completeHitRate": 0.0,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        },
+        "100%": {
+          "n": 150,
+          "completeHits": 137,
+          "completeHitRate": 0.9133333333333333,
+          "anyFalse": 1,
+          "emptyOracles": 12
+        }
+      },
+      "byFrameClipping": {
+        "inside": {
+          "n": 140,
+          "completeHits": 128,
+          "completeHitRate": 0.9142857142857143,
+          "anyFalse": 1,
+          "emptyOracles": 11
+        },
+        "clipped": {
+          "n": 10,
+          "completeHits": 9,
+          "completeHitRate": 0.9,
+          "anyFalse": 0,
+          "emptyOracles": 1
+        }
+      },
+      "minimumCriticalScoreMargin": 0.00045198280161506954,
+      "minimumFullScoreGap": 6.245598716125844e-05,
+      "feasible": true
+    },
+    "records": [
+      {
+        "id": "validation-0",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 61,
+        "width": 21,
+        "center": [
+          129.5,
+          376.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9872003250798858,
+        "bestPoint": [
+          132.0,
+          380.0
+        ],
+        "bestPointError": 4.301162633521313
+      },
+      {
+        "id": "validation-1",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 76,
+        "width": 26,
+        "center": [
+          386,
+          349
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9988240489427225,
+        "bestPoint": [
+          388.0,
+          348.0
+        ],
+        "bestPointError": 2.23606797749979
+      },
+      {
+        "id": "validation-2",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 44,
+        "width": 15,
+        "center": [
+          322.5,
+          399
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9993037039638911,
+        "bestPoint": [
+          324.0,
+          396.0
+        ],
+        "bestPointError": 3.3541019662496847
+      },
+      {
+        "id": "validation-3",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 47,
+        "width": 16,
+        "center": [
+          341,
+          280.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9995125544094485,
+        "bestPoint": [
+          340.0,
+          284.0
+        ],
+        "bestPointError": 3.640054944640259
+      },
+      {
+        "id": "validation-4",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 36,
+        "width": 12,
+        "center": [
+          26,
+          471
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9971118691290626,
+        "bestPoint": [
+          28.0,
+          468.0
+        ],
+        "bestPointError": 3.605551275463989
+      },
+      {
+        "id": "validation-5",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 34,
+        "width": 12,
+        "center": [
+          35,
+          11
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.999493695765433,
+        "bestPoint": [
+          36.0,
+          12.0
+        ],
+        "bestPointError": 1.4142135623730951
+      },
+      {
+        "id": "validation-6",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 70,
+        "width": 24,
+        "center": [
+          282,
+          355
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.997740971371835,
+        "bestPoint": [
+          284.0,
+          356.0
+        ],
+        "bestPointError": 2.23606797749979
+      },
+      {
+        "id": "validation-7",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 75,
+        "width": 26,
+        "center": [
+          65,
+          431.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9737668683149349,
+        "bestPoint": [
+          68.0,
+          428.0
+        ],
+        "bestPointError": 4.6097722286464435
+      },
+      {
+        "id": "validation-8",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 33,
+        "width": 11,
+        "center": [
+          255.5,
+          260.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9988572962759541,
+        "bestPoint": [
+          252.0,
+          260.0
+        ],
+        "bestPointError": 3.5355339059327378
+      },
+      {
+        "id": "validation-9",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 60,
+        "width": 21,
+        "center": [
+          227.5,
+          28
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9982763584707501,
+        "bestPoint": [
+          228.0,
+          28.0
+        ],
+        "bestPointError": 0.5
+      },
+      {
+        "id": "validation-10",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 43,
+        "width": 15,
+        "center": [
+          131.5,
+          377.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9996251445848469,
+        "bestPoint": [
+          132.0,
+          380.0
+        ],
+        "bestPointError": 2.5495097567963922
+      },
+      {
+        "id": "validation-11",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 33,
+        "width": 11,
+        "center": [
+          350.5,
+          469.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9981954060326877,
+        "bestPoint": [
+          348.0,
+          468.0
+        ],
+        "bestPointError": 2.9154759474226504
+      },
+      {
+        "id": "validation-12",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 49,
+        "width": 17,
+        "center": [
+          258.5,
+          444.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9962205512438267,
+        "bestPoint": [
+          260.0,
+          444.0
+        ],
+        "bestPointError": 1.5811388300841898
+      },
+      {
+        "id": "validation-13",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 91,
+        "width": 31,
+        "center": [
+          222.5,
+          487.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9892157597242979,
+        "bestPoint": [
+          220.0,
+          484.0
+        ],
+        "bestPointError": 4.301162633521313
+      },
+      {
+        "id": "validation-14",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 66,
+        "width": 23,
+        "center": [
+          381.5,
+          327
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9807430908599539,
+        "bestPoint": [
+          380.0,
+          332.0
+        ],
+        "bestPointError": 5.220153254455275
+      },
+      {
+        "id": "validation-15",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 37,
+        "width": 13,
+        "center": [
+          291.5,
+          376.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9881613714965184,
+        "bestPoint": [
+          292.0,
+          372.0
+        ],
+        "bestPointError": 4.527692569068709
+      },
+      {
+        "id": "validation-16",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 48,
+        "width": 17,
+        "center": [
+          134.5,
+          303
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9817843447648152,
+        "bestPoint": [
+          132.0,
+          308.0
+        ],
+        "bestPointError": 5.5901699437494745
+      },
+      {
+        "id": "validation-17",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 43,
+        "width": 15,
+        "center": [
+          149.5,
+          424.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.999778111931596,
+        "bestPoint": [
+          148.0,
+          420.0
+        ],
+        "bestPointError": 4.743416490252569
+      },
+      {
+        "id": "validation-18",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 33,
+        "width": 11,
+        "center": [
+          338.5,
+          367.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.999837266298021,
+        "bestPoint": [
+          340.0,
+          364.0
+        ],
+        "bestPointError": 3.8078865529319543
+      },
+      {
+        "id": "validation-19",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 36,
+        "width": 12,
+        "center": [
+          261,
+          441
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9993407480950437,
+        "bestPoint": [
+          260.0,
+          444.0
+        ],
+        "bestPointError": 3.1622776601683795
+      },
+      {
+        "id": "validation-20",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 36,
+        "width": 12,
+        "center": [
+          23,
+          280
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.8705514770519741,
+        "bestPoint": [
+          20.0,
+          284.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-21",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 62,
+        "width": 21,
+        "center": [
+          83.5,
+          233
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9985541960468461,
+        "bestPoint": [
+          84.0,
+          236.0
+        ],
+        "bestPointError": 3.0413812651491097
+      },
+      {
+        "id": "validation-22",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 82,
+        "width": 28,
+        "center": [
+          296,
+          324
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9859272057564135,
+        "bestPoint": [
+          300.0,
+          324.0
+        ],
+        "bestPointError": 4.0
+      },
+      {
+        "id": "validation-23",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 67,
+        "width": 23,
+        "center": [
+          46.5,
+          354.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9951620298667008,
+        "bestPoint": [
+          44.0,
+          356.0
+        ],
+        "bestPointError": 2.9154759474226504
+      },
+      {
+        "id": "validation-24",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 89,
+        "width": 31,
+        "center": [
+          463.5,
+          327.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9688739820031227,
+        "bestPoint": [
+          460.0,
+          324.0
+        ],
+        "bestPointError": 4.949747468305833
+      },
+      {
+        "id": "validation-25",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 60,
+        "width": 21,
+        "center": [
+          468.5,
+          27
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9986719340963153,
+        "bestPoint": [
+          468.0,
+          28.0
+        ],
+        "bestPointError": 1.118033988749895
+      },
+      {
+        "id": "validation-26",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 57,
+        "width": 20,
+        "center": [
+          269,
+          390.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9952028588721341,
+        "bestPoint": [
+          268.0,
+          388.0
+        ],
+        "bestPointError": 2.692582403567252
+      },
+      {
+        "id": "validation-27",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 45,
+        "width": 16,
+        "center": [
+          231,
+          429.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9900430797585077,
+        "bestPoint": [
+          228.0,
+          428.0
+        ],
+        "bestPointError": 3.3541019662496847
+      },
+      {
+        "id": "validation-28",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 88,
+        "width": 30,
+        "center": [
+          19,
+          440
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9976249958272073,
+        "bestPoint": [
+          20.0,
+          436.0
+        ],
+        "bestPointError": 4.123105625617661
+      },
+      {
+        "id": "validation-29",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 43,
+        "width": 15,
+        "center": [
+          499.5,
+          446.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9894191462081524,
+        "bestPoint": [
+          500.0,
+          452.0
+        ],
+        "bestPointError": 5.522680508593631
+      },
+      {
+        "id": "validation-30",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 86,
+        "width": 30,
+        "center": [
+          370,
+          219
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9988134429755857,
+        "bestPoint": [
+          372.0,
+          220.0
+        ],
+        "bestPointError": 2.23606797749979
+      },
+      {
+        "id": "validation-31",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 31,
+        "width": 11,
+        "center": [
+          151.5,
+          30.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9985121353320968,
+        "bestPoint": [
+          148.0,
+          28.0
+        ],
+        "bestPointError": 4.301162633521313
+      },
+      {
+        "id": "validation-32",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 73,
+        "width": 25,
+        "center": [
+          314.5,
+          450.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9986279680080818,
+        "bestPoint": [
+          316.0,
+          452.0
+        ],
+        "bestPointError": 2.1213203435596424
+      },
+      {
+        "id": "validation-33",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 48,
+        "width": 17,
+        "center": [
+          76.5,
+          289
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9978226170206264,
+        "bestPoint": [
+          76.0,
+          292.0
+        ],
+        "bestPointError": 3.0413812651491097
+      },
+      {
+        "id": "validation-34",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 35,
+        "width": 12,
+        "center": [
+          139,
+          324.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.995133278664044,
+        "bestPoint": [
+          140.0,
+          324.0
+        ],
+        "bestPointError": 1.118033988749895
+      },
+      {
+        "id": "validation-35",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 93,
+        "width": 32,
+        "center": [
+          191,
+          305.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9976658525001684,
+        "bestPoint": [
+          188.0,
+          308.0
+        ],
+        "bestPointError": 3.905124837953327
+      },
+      {
+        "id": "validation-36",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 90,
+        "width": 31,
+        "center": [
+          319.5,
+          51
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9799582578857714,
+        "bestPoint": [
+          316.0,
+          52.0
+        ],
+        "bestPointError": 3.640054944640259
+      },
+      {
+        "id": "validation-37",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 37,
+        "width": 13,
+        "center": [
+          237.5,
+          448.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9818469764668811,
+        "bestPoint": [
+          236.0,
+          444.0
+        ],
+        "bestPointError": 4.743416490252569
+      },
+      {
+        "id": "validation-38",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 75,
+        "width": 26,
+        "center": [
+          293,
+          219.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9956512859180918,
+        "bestPoint": [
+          292.0,
+          220.0
+        ],
+        "bestPointError": 1.118033988749895
+      },
+      {
+        "id": "validation-39",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 77,
+        "width": 27,
+        "center": [
+          70.5,
+          31.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9988575194235665,
+        "bestPoint": [
+          68.0,
+          28.0
+        ],
+        "bestPointError": 4.301162633521313
+      },
+      {
+        "id": "validation-40",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 36,
+        "width": 12,
+        "center": [
+          109,
+          309
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.990826434442788,
+        "bestPoint": [
+          108.0,
+          308.0
+        ],
+        "bestPointError": 1.4142135623730951
+      },
+      {
+        "id": "validation-41",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 47,
+        "width": 16,
+        "center": [
+          183,
+          124.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9951034434013233,
+        "bestPoint": [
+          180.0,
+          124.0
+        ],
+        "bestPointError": 3.0413812651491097
+      },
+      {
+        "id": "validation-42",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 103,
+        "width": 36,
+        "center": [
+          289,
+          140.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9951535123966515,
+        "bestPoint": [
+          292.0,
+          140.0
+        ],
+        "bestPointError": 3.0413812651491097
+      },
+      {
+        "id": "validation-43",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 79,
+        "width": 27,
+        "center": [
+          278.5,
+          488.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.990669144105282,
+        "bestPoint": [
+          276.0,
+          484.0
+        ],
+        "bestPointError": 5.1478150704935
+      },
+      {
+        "id": "validation-44",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 33,
+        "width": 11,
+        "center": [
+          408.5,
+          256.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9958078662587002,
+        "bestPoint": [
+          412.0,
+          252.0
+        ],
+        "bestPointError": 5.70087712549569
+      },
+      {
+        "id": "validation-45",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 109,
+        "width": 38,
+        "center": [
+          425,
+          305.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9854590348758743,
+        "bestPoint": [
+          428.0,
+          308.0
+        ],
+        "bestPointError": 3.905124837953327
+      },
+      {
+        "id": "validation-46",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 45,
+        "width": 16,
+        "center": [
+          27,
+          465.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9997320973735445,
+        "bestPoint": [
+          28.0,
+          468.0
+        ],
+        "bestPointError": 2.692582403567252
+      },
+      {
+        "id": "validation-47",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 39,
+        "width": 13,
+        "center": [
+          182.5,
+          121.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9845713352836313,
+        "bestPoint": [
+          180.0,
+          124.0
+        ],
+        "bestPointError": 3.5355339059327378
+      },
+      {
+        "id": "validation-48",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 80,
+        "width": 28,
+        "center": [
+          242,
+          76
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.9520638248623094,
+        "bestPoint": [
+          244.0,
+          76.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-49",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 45,
+        "width": 16,
+        "center": [
+          34,
+          8.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9786494476510514,
+        "bestPoint": [
+          36.0,
+          12.0
+        ],
+        "bestPointError": 4.031128874149275
+      },
+      {
+        "id": "validation-50",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 58,
+        "width": 20,
+        "center": [
+          433,
+          253
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9917857589079314,
+        "bestPoint": [
+          436.0,
+          252.0
+        ],
+        "bestPointError": 3.1622776601683795
+      },
+      {
+        "id": "validation-51",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 111,
+        "width": 38,
+        "center": [
+          434,
+          328.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9774175814899397,
+        "bestPoint": [
+          436.0,
+          324.0
+        ],
+        "bestPointError": 4.924428900898052
+      },
+      {
+        "id": "validation-52",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 72,
+        "width": 25,
+        "center": [
+          346.5,
+          309
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9982889889199935,
+        "bestPoint": [
+          348.0,
+          308.0
+        ],
+        "bestPointError": 1.8027756377319946
+      },
+      {
+        "id": "validation-53",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 31,
+        "width": 11,
+        "center": [
+          498.5,
+          364.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.995365586279237,
+        "bestPoint": [
+          500.0,
+          364.0
+        ],
+        "bestPointError": 1.5811388300841898
+      },
+      {
+        "id": "validation-54",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 36,
+        "width": 12,
+        "center": [
+          256,
+          447
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.8732860678873156,
+        "bestPoint": [
+          252.0,
+          444.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-55",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 64,
+        "width": 22,
+        "center": [
+          303,
+          322
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.9430461826607475,
+        "bestPoint": [
+          300.0,
+          324.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-56",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 47,
+        "width": 16,
+        "center": [
+          277,
+          252.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9990248149421118,
+        "bestPoint": [
+          276.0,
+          252.0
+        ],
+        "bestPointError": 1.118033988749895
+      },
+      {
+        "id": "validation-57",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 31,
+        "width": 11,
+        "center": [
+          266.5,
+          145.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9995791762949787,
+        "bestPoint": [
+          268.0,
+          140.0
+        ],
+        "bestPointError": 5.70087712549569
+      },
+      {
+        "id": "validation-58",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 65,
+        "width": 22,
+        "center": [
+          43,
+          435.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9989102027454626,
+        "bestPoint": [
+          44.0,
+          436.0
+        ],
+        "bestPointError": 1.118033988749895
+      },
+      {
+        "id": "validation-59",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 56,
+        "width": 19,
+        "center": [
+          386.5,
+          345
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9974593528803612,
+        "bestPoint": [
+          388.0,
+          348.0
+        ],
+        "bestPointError": 3.3541019662496847
+      },
+      {
+        "id": "validation-60",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 90,
+        "width": 31,
+        "center": [
+          286.5,
+          358
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9979557690649563,
+        "bestPoint": [
+          284.0,
+          356.0
+        ],
+        "bestPointError": 3.2015621187164243
+      },
+      {
+        "id": "validation-61",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 33,
+        "width": 11,
+        "center": [
+          226.5,
+          351.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9992140014545456,
+        "bestPoint": [
+          228.0,
+          348.0
+        ],
+        "bestPointError": 3.8078865529319543
+      },
+      {
+        "id": "validation-62",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 40,
+        "width": 14,
+        "center": [
+          302,
+          404
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.9657884238176497,
+        "bestPoint": [
+          308.0,
+          404.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-63",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 61,
+        "width": 21,
+        "center": [
+          194.5,
+          333.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9915787864588032,
+        "bestPoint": [
+          196.0,
+          332.0
+        ],
+        "bestPointError": 2.1213203435596424
+      },
+      {
+        "id": "validation-64",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 87,
+        "width": 30,
+        "center": [
+          139,
+          322.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9980787137903947,
+        "bestPoint": [
+          140.0,
+          324.0
+        ],
+        "bestPointError": 1.8027756377319946
+      },
+      {
+        "id": "validation-65",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 68,
+        "width": 23,
+        "center": [
+          131.5,
+          383
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9969741039434452,
+        "bestPoint": [
+          132.0,
+          388.0
+        ],
+        "bestPointError": 5.024937810560445
+      },
+      {
+        "id": "validation-66",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 39,
+        "width": 13,
+        "center": [
+          307.5,
+          110.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9952279087762196,
+        "bestPoint": [
+          308.0,
+          108.0
+        ],
+        "bestPointError": 2.5495097567963922
+      },
+      {
+        "id": "validation-67",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 79,
+        "width": 27,
+        "center": [
+          87.5,
+          79.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9718755770794756,
+        "bestPoint": [
+          92.0,
+          76.0
+        ],
+        "bestPointError": 5.70087712549569
+      },
+      {
+        "id": "validation-68",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 98,
+        "width": 34,
+        "center": [
+          287,
+          196
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9930042474743688,
+        "bestPoint": [
+          284.0,
+          196.0
+        ],
+        "bestPointError": 3.0
+      },
+      {
+        "id": "validation-69",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 76,
+        "width": 26,
+        "center": [
+          243,
+          152
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9987364166136251,
+        "bestPoint": [
+          244.0,
+          156.0
+        ],
+        "bestPointError": 4.123105625617661
+      },
+      {
+        "id": "validation-70",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 44,
+        "width": 15,
+        "center": [
+          292.5,
+          297
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9979445948586707,
+        "bestPoint": [
+          292.0,
+          300.0
+        ],
+        "bestPointError": 3.0413812651491097
+      },
+      {
+        "id": "validation-71",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 34,
+        "width": 12,
+        "center": [
+          476,
+          212
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.8513601695954075,
+        "bestPoint": [
+          476.0,
+          212.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-72",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 39,
+        "width": 13,
+        "center": [
+          276.5,
+          328.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9978286685179631,
+        "bestPoint": [
+          276.0,
+          324.0
+        ],
+        "bestPointError": 4.527692569068709
+      },
+      {
+        "id": "validation-73",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 106,
+        "width": 37,
+        "center": [
+          366.5,
+          275
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.987446587044159,
+        "bestPoint": [
+          364.0,
+          276.0
+        ],
+        "bestPointError": 2.692582403567252
+      },
+      {
+        "id": "validation-74",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 29,
+        "width": 10,
+        "center": [
+          300,
+          404.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.6745483798565126,
+        "bestPoint": [
+          300.0,
+          404.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-75",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 87,
+        "width": 30,
+        "center": [
+          132,
+          222.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9962707830310329,
+        "bestPoint": [
+          132.0,
+          220.0
+        ],
+        "bestPointError": 2.5
+      },
+      {
+        "id": "validation-76",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 36,
+        "width": 12,
+        "center": [
+          294,
+          382
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9956418570403281,
+        "bestPoint": [
+          292.0,
+          380.0
+        ],
+        "bestPointError": 2.8284271247461903
+      },
+      {
+        "id": "validation-77",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 55,
+        "width": 19,
+        "center": [
+          11.5,
+          180.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9900495473870885,
+        "bestPoint": [
+          12.0,
+          180.0
+        ],
+        "bestPointError": 0.7071067811865476
+      },
+      {
+        "id": "validation-78",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 47,
+        "width": 16,
+        "center": [
+          264,
+          224.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9877251704801273,
+        "bestPoint": [
+          260.0,
+          228.0
+        ],
+        "bestPointError": 5.315072906367325
+      },
+      {
+        "id": "validation-79",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 38,
+        "width": 13,
+        "center": [
+          75.5,
+          52
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9991344907433984,
+        "bestPoint": [
+          76.0,
+          52.0
+        ],
+        "bestPointError": 0.5
+      },
+      {
+        "id": "validation-80",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 69,
+        "width": 24,
+        "center": [
+          268,
+          471.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.9469024573379806,
+        "bestPoint": [
+          268.0,
+          468.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-81",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 33,
+        "width": 11,
+        "center": [
+          450.5,
+          383.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9998111164176804,
+        "bestPoint": [
+          452.0,
+          380.0
+        ],
+        "bestPointError": 3.8078865529319543
+      },
+      {
+        "id": "validation-82",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 102,
+        "width": 35,
+        "center": [
+          301.5,
+          323
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9945939096805687,
+        "bestPoint": [
+          300.0,
+          324.0
+        ],
+        "bestPointError": 1.8027756377319946
+      },
+      {
+        "id": "validation-83",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 55,
+        "width": 19,
+        "center": [
+          353.5,
+          491.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9890073933718425,
+        "bestPoint": [
+          356.0,
+          492.0
+        ],
+        "bestPointError": 2.5495097567963922
+      },
+      {
+        "id": "validation-84",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 101,
+        "width": 35,
+        "center": [
+          385.5,
+          347.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.997068687423111,
+        "bestPoint": [
+          388.0,
+          348.0
+        ],
+        "bestPointError": 2.5495097567963922
+      },
+      {
+        "id": "validation-85",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 61,
+        "width": 21,
+        "center": [
+          426.5,
+          468.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9935906493248527,
+        "bestPoint": [
+          428.0,
+          468.0
+        ],
+        "bestPointError": 1.5811388300841898
+      },
+      {
+        "id": "validation-86",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 91,
+        "width": 31,
+        "center": [
+          311.5,
+          348.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9776827791965087,
+        "bestPoint": [
+          316.0,
+          348.0
+        ],
+        "bestPointError": 4.527692569068709
+      },
+      {
+        "id": "validation-87",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 35,
+        "width": 12,
+        "center": [
+          358,
+          168.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9950231835184311,
+        "bestPoint": [
+          356.0,
+          164.0
+        ],
+        "bestPointError": 4.924428900898052
+      },
+      {
+        "id": "validation-88",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 101,
+        "width": 35,
+        "center": [
+          125.5,
+          275.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 0,
+        "falsePoints": 1,
+        "completeHit": false,
+        "emptyOracle": false,
+        "maxScore": 0.9889292872659524,
+        "bestPoint": [
+          124.0,
+          268.0
+        ],
+        "bestPointError": 7.648529270389178
+      },
+      {
+        "id": "validation-89",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 76,
+        "width": 26,
+        "center": [
+          424,
+          388
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.9394739541607838,
+        "bestPoint": [
+          420.0,
+          388.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-90",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 59,
+        "width": 20,
+        "center": [
+          81,
+          155.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9980946453195018,
+        "bestPoint": [
+          84.0,
+          156.0
+        ],
+        "bestPointError": 3.0413812651491097
+      },
+      {
+        "id": "validation-91",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 47,
+        "width": 16,
+        "center": [
+          357,
+          10.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9995040694571136,
+        "bestPoint": [
+          356.0,
+          12.0
+        ],
+        "bestPointError": 1.8027756377319946
+      },
+      {
+        "id": "validation-92",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 80,
+        "width": 28,
+        "center": [
+          86,
+          312
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9981764567033748,
+        "bestPoint": [
+          84.0,
+          308.0
+        ],
+        "bestPointError": 4.47213595499958
+      },
+      {
+        "id": "validation-93",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 87,
+        "width": 30,
+        "center": [
+          247,
+          236.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9986637101892604,
+        "bestPoint": [
+          244.0,
+          236.0
+        ],
+        "bestPointError": 3.0413812651491097
+      },
+      {
+        "id": "validation-94",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 34,
+        "width": 12,
+        "center": [
+          55,
+          299
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9994208414647736,
+        "bestPoint": [
+          52.0,
+          300.0
+        ],
+        "bestPointError": 3.1622776601683795
+      },
+      {
+        "id": "validation-95",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 32,
+        "width": 11,
+        "center": [
+          158.5,
+          212
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9993713678588818,
+        "bestPoint": [
+          156.0,
+          212.0
+        ],
+        "bestPointError": 2.5
+      },
+      {
+        "id": "validation-96",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 86,
+        "width": 30,
+        "center": [
+          264,
+          67
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.8493386733044033,
+        "bestPoint": [
+          268.0,
+          68.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-97",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 99,
+        "width": 34,
+        "center": [
+          21,
+          443.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9949101677520732,
+        "bestPoint": [
+          20.0,
+          444.0
+        ],
+        "bestPointError": 1.118033988749895
+      },
+      {
+        "id": "validation-98",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 103,
+        "width": 36,
+        "center": [
+          257,
+          204.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9903273384752682,
+        "bestPoint": [
+          260.0,
+          204.0
+        ],
+        "bestPointError": 3.0413812651491097
+      },
+      {
+        "id": "validation-99",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 24,
+        "width": 8,
+        "center": [
+          409,
+          418
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9884758490344011,
+        "bestPoint": [
+          412.0,
+          420.0
+        ],
+        "bestPointError": 3.605551275463989
+      },
+      {
+        "id": "validation-100",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 101,
+        "width": 35,
+        "center": [
+          134.5,
+          302.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9965066627808864,
+        "bestPoint": [
+          132.0,
+          300.0
+        ],
+        "bestPointError": 3.5355339059327378
+      },
+      {
+        "id": "validation-101",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 32,
+        "width": 11,
+        "center": [
+          204.5,
+          115
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9977100672085318,
+        "bestPoint": [
+          204.0,
+          116.0
+        ],
+        "bestPointError": 1.118033988749895
+      },
+      {
+        "id": "validation-102",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 86,
+        "width": 30,
+        "center": [
+          168,
+          16
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.2697110978736676,
+        "bestPoint": [
+          52.0,
+          484.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-103",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 110,
+        "width": 38,
+        "center": [
+          303,
+          87
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.9616233953215075,
+        "bestPoint": [
+          300.0,
+          84.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-104",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 95,
+        "width": 33,
+        "center": [
+          418.5,
+          202.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9963326007719552,
+        "bestPoint": [
+          420.0,
+          204.0
+        ],
+        "bestPointError": 2.1213203435596424
+      },
+      {
+        "id": "validation-105",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 48,
+        "width": 17,
+        "center": [
+          221.5,
+          407
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9951771494690727,
+        "bestPoint": [
+          220.0,
+          412.0
+        ],
+        "bestPointError": 5.220153254455275
+      },
+      {
+        "id": "validation-106",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 26,
+        "width": 9,
+        "center": [
+          269.5,
+          304
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9880397398218861,
+        "bestPoint": [
+          268.0,
+          300.0
+        ],
+        "bestPointError": 4.272001872658765
+      },
+      {
+        "id": "validation-107",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 94,
+        "width": 32,
+        "center": [
+          205,
+          116
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9944475250670266,
+        "bestPoint": [
+          204.0,
+          116.0
+        ],
+        "bestPointError": 1.0
+      },
+      {
+        "id": "validation-108",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 47,
+        "width": 16,
+        "center": [
+          81,
+          153.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9986030546172165,
+        "bestPoint": [
+          84.0,
+          156.0
+        ],
+        "bestPointError": 3.905124837953327
+      },
+      {
+        "id": "validation-109",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 47,
+        "width": 16,
+        "center": [
+          88,
+          339.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.967642361687802,
+        "bestPoint": [
+          84.0,
+          340.0
+        ],
+        "bestPointError": 4.031128874149275
+      },
+      {
+        "id": "validation-110",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 55,
+        "width": 19,
+        "center": [
+          242.5,
+          238.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9983233200684959,
+        "bestPoint": [
+          244.0,
+          236.0
+        ],
+        "bestPointError": 2.9154759474226504
+      },
+      {
+        "id": "validation-111",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 54,
+        "width": 19,
+        "center": [
+          373.5,
+          299
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9853619445200024,
+        "bestPoint": [
+          372.0,
+          300.0
+        ],
+        "bestPointError": 1.8027756377319946
+      },
+      {
+        "id": "validation-112",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 97,
+        "width": 33,
+        "center": [
+          16.5,
+          444.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.994275792592407,
+        "bestPoint": [
+          20.0,
+          444.0
+        ],
+        "bestPointError": 3.5355339059327378
+      },
+      {
+        "id": "validation-113",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 45,
+        "width": 16,
+        "center": [
+          16,
+          284.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9985112460127038,
+        "bestPoint": [
+          12.0,
+          284.0
+        ],
+        "bestPointError": 4.031128874149275
+      },
+      {
+        "id": "validation-114",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 112,
+        "width": 39,
+        "center": [
+          162.5,
+          395
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9836859796268452,
+        "bestPoint": [
+          164.0,
+          396.0
+        ],
+        "bestPointError": 1.8027756377319946
+      },
+      {
+        "id": "validation-115",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 42,
+        "width": 14,
+        "center": [
+          369,
+          377
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9971266166034414,
+        "bestPoint": [
+          372.0,
+          380.0
+        ],
+        "bestPointError": 4.242640687119285
+      },
+      {
+        "id": "validation-116",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 80,
+        "width": 28,
+        "center": [
+          156,
+          453
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.996534534056901,
+        "bestPoint": [
+          156.0,
+          452.0
+        ],
+        "bestPointError": 1.0
+      },
+      {
+        "id": "validation-117",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 80,
+        "width": 28,
+        "center": [
+          409,
+          180
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9967791280445684,
+        "bestPoint": [
+          412.0,
+          180.0
+        ],
+        "bestPointError": 3.0
+      },
+      {
+        "id": "validation-118",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 104,
+        "width": 36,
+        "center": [
+          478,
+          373
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.994967455706927,
+        "bestPoint": [
+          476.0,
+          372.0
+        ],
+        "bestPointError": 2.23606797749979
+      },
+      {
+        "id": "validation-119",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 44,
+        "width": 15,
+        "center": [
+          136.5,
+          405
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9915193353259237,
+        "bestPoint": [
+          140.0,
+          404.0
+        ],
+        "bestPointError": 3.640054944640259
+      },
+      {
+        "id": "validation-120",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 104,
+        "width": 36,
+        "center": [
+          94,
+          97
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9966966469055328,
+        "bestPoint": [
+          92.0,
+          100.0
+        ],
+        "bestPointError": 3.605551275463989
+      },
+      {
+        "id": "validation-121",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 26,
+        "width": 9,
+        "center": [
+          381.5,
+          160
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9934752694514423,
+        "bestPoint": [
+          380.0,
+          156.0
+        ],
+        "bestPointError": 4.272001872658765
+      },
+      {
+        "id": "validation-122",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 69,
+        "width": 24,
+        "center": [
+          262,
+          361.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9865419322895733,
+        "bestPoint": [
+          260.0,
+          356.0
+        ],
+        "bestPointError": 5.852349955359813
+      },
+      {
+        "id": "validation-123",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 103,
+        "width": 36,
+        "center": [
+          29,
+          225.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9938913871635049,
+        "bestPoint": [
+          28.0,
+          220.0
+        ],
+        "bestPointError": 5.5901699437494745
+      },
+      {
+        "id": "validation-124",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 87,
+        "width": 30,
+        "center": [
+          124,
+          272.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9944918888997919,
+        "bestPoint": [
+          124.0,
+          276.0
+        ],
+        "bestPointError": 3.5
+      },
+      {
+        "id": "validation-125",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 103,
+        "width": 36,
+        "center": [
+          233,
+          52.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9956485625102132,
+        "bestPoint": [
+          236.0,
+          52.0
+        ],
+        "bestPointError": 3.0413812651491097
+      },
+      {
+        "id": "validation-126",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 72,
+        "width": 25,
+        "center": [
+          332.5,
+          336
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9991320970125419,
+        "bestPoint": [
+          332.0,
+          340.0
+        ],
+        "bestPointError": 4.031128874149275
+      },
+      {
+        "id": "validation-127",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 36,
+        "width": 12,
+        "center": [
+          244,
+          315
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.995670897688662,
+        "bestPoint": [
+          244.0,
+          316.0
+        ],
+        "bestPointError": 1.0
+      },
+      {
+        "id": "validation-128",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 104,
+        "width": 36,
+        "center": [
+          270,
+          229
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9941035802434172,
+        "bestPoint": [
+          268.0,
+          228.0
+        ],
+        "bestPointError": 2.23606797749979
+      },
+      {
+        "id": "validation-129",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 49,
+        "width": 17,
+        "center": [
+          59.5,
+          484.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9678893968737071,
+        "bestPoint": [
+          60.0,
+          484.0
+        ],
+        "bestPointError": 0.7071067811865476
+      },
+      {
+        "id": "validation-130",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 69,
+        "width": 24,
+        "center": [
+          347,
+          310.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9984095362028317,
+        "bestPoint": [
+          348.0,
+          316.0
+        ],
+        "bestPointError": 5.5901699437494745
+      },
+      {
+        "id": "validation-131",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 110,
+        "width": 38,
+        "center": [
+          313,
+          131
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9726144183519845,
+        "bestPoint": [
+          316.0,
+          132.0
+        ],
+        "bestPointError": 3.1622776601683795
+      },
+      {
+        "id": "validation-132",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 109,
+        "width": 38,
+        "center": [
+          342,
+          284.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9920992661509399,
+        "bestPoint": [
+          340.0,
+          284.0
+        ],
+        "bestPointError": 2.0615528128088303
+      },
+      {
+        "id": "validation-133",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 72,
+        "width": 25,
+        "center": [
+          445.5,
+          358
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.998709157298852,
+        "bestPoint": [
+          444.0,
+          356.0
+        ],
+        "bestPointError": 2.5
+      },
+      {
+        "id": "validation-134",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 54,
+        "width": 19,
+        "center": [
+          139.5,
+          480
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9989859806691155,
+        "bestPoint": [
+          140.0,
+          484.0
+        ],
+        "bestPointError": 4.031128874149275
+      },
+      {
+        "id": "validation-135",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 34,
+        "width": 12,
+        "center": [
+          445,
+          277
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9996962987606861,
+        "bestPoint": [
+          444.0,
+          276.0
+        ],
+        "bestPointError": 1.4142135623730951
+      },
+      {
+        "id": "validation-136",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 53,
+        "width": 18,
+        "center": [
+          133,
+          382.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9985355398907965,
+        "bestPoint": [
+          132.0,
+          380.0
+        ],
+        "bestPointError": 2.692582403567252
+      },
+      {
+        "id": "validation-137",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 42,
+        "width": 14,
+        "center": [
+          156,
+          52
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9991615425468,
+        "bestPoint": [
+          156.0,
+          52.0
+        ],
+        "bestPointError": 0.0
+      },
+      {
+        "id": "validation-138",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 70,
+        "width": 24,
+        "center": [
+          242,
+          312
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9980333024955881,
+        "bestPoint": [
+          244.0,
+          316.0
+        ],
+        "bestPointError": 4.47213595499958
+      },
+      {
+        "id": "validation-139",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 73,
+        "width": 25,
+        "center": [
+          41.5,
+          356.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9983390837531344,
+        "bestPoint": [
+          44.0,
+          356.0
+        ],
+        "bestPointError": 2.5495097567963922
+      },
+      {
+        "id": "validation-140",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 52,
+        "width": 18,
+        "center": [
+          376,
+          241
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9951153068076353,
+        "bestPoint": [
+          380.0,
+          244.0
+        ],
+        "bestPointError": 5.0
+      },
+      {
+        "id": "validation-141",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 60,
+        "width": 21,
+        "center": [
+          298.5,
+          407
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9985498023033319,
+        "bestPoint": [
+          300.0,
+          404.0
+        ],
+        "bestPointError": 3.3541019662496847
+      },
+      {
+        "id": "validation-142",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 25,
+        "width": 9,
+        "center": [
+          140.5,
+          325.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.990438632841883,
+        "bestPoint": [
+          140.0,
+          324.0
+        ],
+        "bestPointError": 1.5811388300841898
+      },
+      {
+        "id": "validation-143",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 104,
+        "width": 36,
+        "center": [
+          74,
+          289
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9966149405873466,
+        "bestPoint": [
+          76.0,
+          292.0
+        ],
+        "bestPointError": 3.605551275463989
+      },
+      {
+        "id": "validation-144",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 88,
+        "width": 30,
+        "center": [
+          333,
+          341
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.99413239003979,
+        "bestPoint": [
+          332.0,
+          340.0
+        ],
+        "bestPointError": 1.4142135623730951
+      },
+      {
+        "id": "validation-145",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 101,
+        "width": 35,
+        "center": [
+          391.5,
+          264.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9743747061034345,
+        "bestPoint": [
+          388.0,
+          260.0
+        ],
+        "bestPointError": 5.70087712549569
+      },
+      {
+        "id": "validation-146",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 33,
+        "width": 11,
+        "center": [
+          277.5,
+          408.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9958213690829936,
+        "bestPoint": [
+          276.0,
+          404.0
+        ],
+        "bestPointError": 4.743416490252569
+      },
+      {
+        "id": "validation-147",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 90,
+        "width": 31,
+        "center": [
+          415.5,
+          179
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9804062367326781,
+        "bestPoint": [
+          412.0,
+          180.0
+        ],
+        "bestPointError": 3.640054944640259
+      },
+      {
+        "id": "validation-148",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 99,
+        "width": 34,
+        "center": [
+          340,
+          287.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9941115951776285,
+        "bestPoint": [
+          340.0,
+          284.0
+        ],
+        "bestPointError": 3.5
+      },
+      {
+        "id": "validation-149",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 89,
+        "width": 31,
+        "center": [
+          465.5,
+          106.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9951821249442078,
+        "bestPoint": [
+          468.0,
+          108.0
+        ],
+        "bestPointError": 2.9154759474226504
+      },
+      {
+        "id": "validation-empty-legacy-h24",
+        "scene": "legacy",
+        "kind": "absent",
+        "height": 24,
+        "width": 8,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.9667383960845719,
+        "bestPoint": [
+          468.0,
+          76.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-legacy-h36",
+        "scene": "legacy",
+        "kind": "absent",
+        "height": 36,
+        "width": 12,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.7153551234544976,
+        "bestPoint": [
+          292.0,
+          292.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-legacy-h52",
+        "scene": "legacy",
+        "kind": "absent",
+        "height": 52,
+        "width": 18,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.3380324319583857,
+        "bestPoint": [
+          484.0,
+          308.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-legacy-h64",
+        "scene": "legacy",
+        "kind": "absent",
+        "height": 64,
+        "width": 22,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.34697795203647713,
+        "bestPoint": [
+          452.0,
+          308.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-legacy-h80",
+        "scene": "legacy",
+        "kind": "absent",
+        "height": 80,
+        "width": 28,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.24427742418654236,
+        "bestPoint": [
+          452.0,
+          308.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-legacy-h96",
+        "scene": "legacy",
+        "kind": "absent",
+        "height": 96,
+        "width": 33,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.3872985695491778,
+        "bestPoint": [
+          52.0,
+          492.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-legacy-h112",
+        "scene": "legacy",
+        "kind": "absent",
+        "height": 112,
+        "width": 39,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.2762932895679045,
+        "bestPoint": [
+          52.0,
+          492.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-magic-arena-h24",
+        "scene": "magic-arena",
+        "kind": "absent",
+        "height": 24,
+        "width": 8,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.7949590055032894,
+        "bestPoint": [
+          468.0,
+          340.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-magic-arena-h36",
+        "scene": "magic-arena",
+        "kind": "absent",
+        "height": 36,
+        "width": 12,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.276254652357834,
+        "bestPoint": [
+          420.0,
+          460.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-magic-arena-h52",
+        "scene": "magic-arena",
+        "kind": "absent",
+        "height": 52,
+        "width": 18,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.07777346269085178,
+        "bestPoint": [
+          212.0,
+          116.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-magic-arena-h64",
+        "scene": "magic-arena",
+        "kind": "absent",
+        "height": 64,
+        "width": 22,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.09893702313894813,
+        "bestPoint": [
+          476.0,
+          348.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-magic-arena-h80",
+        "scene": "magic-arena",
+        "kind": "absent",
+        "height": 80,
+        "width": 28,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.04812363450848965,
+        "bestPoint": [
+          284.0,
+          372.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-magic-arena-h96",
+        "scene": "magic-arena",
+        "kind": "absent",
+        "height": 96,
+        "width": 33,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.08815861177627299,
+        "bestPoint": [
+          284.0,
+          380.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-magic-arena-h112",
+        "scene": "magic-arena",
+        "kind": "absent",
+        "height": 112,
+        "width": 39,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.20291994671169827,
+        "bestPoint": [
+          292.0,
+          380.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-qualicity-queue-h24",
+        "scene": "qualicity-queue",
+        "kind": "absent",
+        "height": 24,
+        "width": 8,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.5986595396231961,
+        "bestPoint": [
+          308.0,
+          436.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-qualicity-queue-h36",
+        "scene": "qualicity-queue",
+        "kind": "absent",
+        "height": 36,
+        "width": 12,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.4189253396691831,
+        "bestPoint": [
+          308.0,
+          428.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-qualicity-queue-h52",
+        "scene": "qualicity-queue",
+        "kind": "absent",
+        "height": 52,
+        "width": 18,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.1648422344507854,
+        "bestPoint": [
+          324.0,
+          412.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-qualicity-queue-h64",
+        "scene": "qualicity-queue",
+        "kind": "absent",
+        "height": 64,
+        "width": 22,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.08862463394122687,
+        "bestPoint": [
+          332.0,
+          404.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-qualicity-queue-h80",
+        "scene": "qualicity-queue",
+        "kind": "absent",
+        "height": 80,
+        "width": 28,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.07803546889781261,
+        "bestPoint": [
+          332.0,
+          396.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-qualicity-queue-h96",
+        "scene": "qualicity-queue",
+        "kind": "absent",
+        "height": 96,
+        "width": 33,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.13900059629671033,
+        "bestPoint": [
+          324.0,
+          412.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-qualicity-queue-h112",
+        "scene": "qualicity-queue",
+        "kind": "absent",
+        "height": 112,
+        "width": 39,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.12268654274374732,
+        "bestPoint": [
+          332.0,
+          404.0
+        ],
+        "bestPointError": null
+      }
+    ]
+  },
+  "logistic": {
+    "summary": {
+      "targetScenes": 150,
+      "absenceScenes": 21,
+      "completeHits": 132,
+      "completeHitRate": 0.88,
+      "targetFalsePointScenes": 0,
+      "targetFalsePointRate": 0.0,
+      "targetEmptyOracles": 18,
+      "targetCoverage": 0.88,
+      "absenceFalsePointScenes": 0,
+      "absenceAcceptedPoints": 0,
+      "threshold": 0.9928998922444161,
+      "bySizeRanges": {
+        "24-35": {
+          "n": 23,
+          "completeHits": 21,
+          "completeHitRate": 0.9130434782608695,
+          "anyFalse": 0,
+          "emptyOracles": 2
+        },
+        "36-63": {
+          "n": 56,
+          "completeHits": 43,
+          "completeHitRate": 0.7678571428571429,
+          "anyFalse": 0,
+          "emptyOracles": 13
+        },
+        "64-91": {
+          "n": 44,
+          "completeHits": 42,
+          "completeHitRate": 0.9545454545454546,
+          "anyFalse": 0,
+          "emptyOracles": 2
+        },
+        "92-112": {
+          "n": 27,
+          "completeHits": 26,
+          "completeHitRate": 0.9629629629629629,
+          "anyFalse": 0,
+          "emptyOracles": 1
+        }
+      },
+      "byVisibility": {
+        "20-50%": {
+          "n": 0,
+          "completeHits": 0,
+          "completeHitRate": 0.0,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        },
+        "50-90%": {
+          "n": 0,
+          "completeHits": 0,
+          "completeHitRate": 0.0,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        },
+        "90-below100%": {
+          "n": 0,
+          "completeHits": 0,
+          "completeHitRate": 0.0,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        },
+        "100%": {
+          "n": 150,
+          "completeHits": 132,
+          "completeHitRate": 0.88,
+          "anyFalse": 0,
+          "emptyOracles": 18
+        }
+      },
+      "byFrameClipping": {
+        "inside": {
+          "n": 140,
+          "completeHits": 124,
+          "completeHitRate": 0.8857142857142857,
+          "anyFalse": 0,
+          "emptyOracles": 16
+        },
+        "clipped": {
+          "n": 10,
+          "completeHits": 8,
+          "completeHitRate": 0.8,
+          "anyFalse": 0,
+          "emptyOracles": 2
+        }
+      },
+      "minimumCriticalScoreMargin": 0.00016629688461022862,
+      "minimumFullScoreGap": 9.726694501788202e-05,
+      "feasible": true
+    },
+    "records": [
+      {
+        "id": "validation-0",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 61,
+        "width": 21,
+        "center": [
+          129.5,
+          376.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.9910583002352907,
+        "bestPoint": [
+          132.0,
+          372.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-1",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 76,
+        "width": 26,
+        "center": [
+          386,
+          349
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999999281777843,
+        "bestPoint": [
+          388.0,
+          348.0
+        ],
+        "bestPointError": 2.23606797749979
+      },
+      {
+        "id": "validation-2",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 44,
+        "width": 15,
+        "center": [
+          322.5,
+          399
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999997784499612,
+        "bestPoint": [
+          324.0,
+          396.0
+        ],
+        "bestPointError": 3.3541019662496847
+      },
+      {
+        "id": "validation-3",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 47,
+        "width": 16,
+        "center": [
+          341,
+          280.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9998522852015825,
+        "bestPoint": [
+          340.0,
+          284.0
+        ],
+        "bestPointError": 3.640054944640259
+      },
+      {
+        "id": "validation-4",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 36,
+        "width": 12,
+        "center": [
+          26,
+          471
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.9917797743983902,
+        "bestPoint": [
+          28.0,
+          468.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-5",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 34,
+        "width": 12,
+        "center": [
+          35,
+          11
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999999670875555,
+        "bestPoint": [
+          36.0,
+          12.0
+        ],
+        "bestPointError": 1.4142135623730951
+      },
+      {
+        "id": "validation-6",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 70,
+        "width": 24,
+        "center": [
+          282,
+          355
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999646993861531,
+        "bestPoint": [
+          284.0,
+          356.0
+        ],
+        "bestPointError": 2.23606797749979
+      },
+      {
+        "id": "validation-7",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 75,
+        "width": 26,
+        "center": [
+          65,
+          431.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.9922665904309275,
+        "bestPoint": [
+          68.0,
+          428.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-8",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 33,
+        "width": 11,
+        "center": [
+          255.5,
+          260.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9975327535466716,
+        "bestPoint": [
+          252.0,
+          260.0
+        ],
+        "bestPointError": 3.5355339059327378
+      },
+      {
+        "id": "validation-9",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 60,
+        "width": 21,
+        "center": [
+          227.5,
+          28
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999999754298233,
+        "bestPoint": [
+          228.0,
+          28.0
+        ],
+        "bestPointError": 0.5
+      },
+      {
+        "id": "validation-10",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 43,
+        "width": 15,
+        "center": [
+          131.5,
+          377.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999989412439524,
+        "bestPoint": [
+          132.0,
+          380.0
+        ],
+        "bestPointError": 2.5495097567963922
+      },
+      {
+        "id": "validation-11",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 33,
+        "width": 11,
+        "center": [
+          350.5,
+          469.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9997751133842891,
+        "bestPoint": [
+          348.0,
+          468.0
+        ],
+        "bestPointError": 2.9154759474226504
+      },
+      {
+        "id": "validation-12",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 49,
+        "width": 17,
+        "center": [
+          258.5,
+          444.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999991344740362,
+        "bestPoint": [
+          260.0,
+          444.0
+        ],
+        "bestPointError": 1.5811388300841898
+      },
+      {
+        "id": "validation-13",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 91,
+        "width": 31,
+        "center": [
+          222.5,
+          487.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9987668933668357,
+        "bestPoint": [
+          220.0,
+          484.0
+        ],
+        "bestPointError": 4.301162633521313
+      },
+      {
+        "id": "validation-14",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 66,
+        "width": 23,
+        "center": [
+          381.5,
+          327
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9965034884570952,
+        "bestPoint": [
+          380.0,
+          332.0
+        ],
+        "bestPointError": 5.220153254455275
+      },
+      {
+        "id": "validation-15",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 37,
+        "width": 13,
+        "center": [
+          291.5,
+          376.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.9913494437816744,
+        "bestPoint": [
+          292.0,
+          372.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-16",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 48,
+        "width": 17,
+        "center": [
+          134.5,
+          303
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.9594504270060549,
+        "bestPoint": [
+          132.0,
+          300.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-17",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 43,
+        "width": 15,
+        "center": [
+          149.5,
+          424.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999915482374866,
+        "bestPoint": [
+          148.0,
+          420.0
+        ],
+        "bestPointError": 4.743416490252569
+      },
+      {
+        "id": "validation-18",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 33,
+        "width": 11,
+        "center": [
+          338.5,
+          367.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999968080257726,
+        "bestPoint": [
+          340.0,
+          364.0
+        ],
+        "bestPointError": 3.8078865529319543
+      },
+      {
+        "id": "validation-19",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 36,
+        "width": 12,
+        "center": [
+          261,
+          441
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9997130492591206,
+        "bestPoint": [
+          260.0,
+          444.0
+        ],
+        "bestPointError": 3.1622776601683795
+      },
+      {
+        "id": "validation-20",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 36,
+        "width": 12,
+        "center": [
+          23,
+          280
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.4938022299771167,
+        "bestPoint": [
+          20.0,
+          284.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-21",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 62,
+        "width": 21,
+        "center": [
+          83.5,
+          233
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9998930205378936,
+        "bestPoint": [
+          84.0,
+          228.0
+        ],
+        "bestPointError": 5.024937810560445
+      },
+      {
+        "id": "validation-22",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 82,
+        "width": 28,
+        "center": [
+          296,
+          324
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9998966462289705,
+        "bestPoint": [
+          300.0,
+          324.0
+        ],
+        "bestPointError": 4.0
+      },
+      {
+        "id": "validation-23",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 67,
+        "width": 23,
+        "center": [
+          46.5,
+          354.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999579725758145,
+        "bestPoint": [
+          44.0,
+          356.0
+        ],
+        "bestPointError": 2.9154759474226504
+      },
+      {
+        "id": "validation-24",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 89,
+        "width": 31,
+        "center": [
+          463.5,
+          327.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9995173768500113,
+        "bestPoint": [
+          460.0,
+          324.0
+        ],
+        "bestPointError": 4.949747468305833
+      },
+      {
+        "id": "validation-25",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 60,
+        "width": 21,
+        "center": [
+          468.5,
+          27
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999956406471461,
+        "bestPoint": [
+          468.0,
+          28.0
+        ],
+        "bestPointError": 1.118033988749895
+      },
+      {
+        "id": "validation-26",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 57,
+        "width": 20,
+        "center": [
+          269,
+          390.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999142972995809,
+        "bestPoint": [
+          268.0,
+          388.0
+        ],
+        "bestPointError": 2.692582403567252
+      },
+      {
+        "id": "validation-27",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 45,
+        "width": 16,
+        "center": [
+          231,
+          429.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9967807061434769,
+        "bestPoint": [
+          236.0,
+          428.0
+        ],
+        "bestPointError": 5.220153254455275
+      },
+      {
+        "id": "validation-28",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 88,
+        "width": 30,
+        "center": [
+          19,
+          440
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.99997681011741,
+        "bestPoint": [
+          20.0,
+          436.0
+        ],
+        "bestPointError": 4.123105625617661
+      },
+      {
+        "id": "validation-29",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 43,
+        "width": 15,
+        "center": [
+          499.5,
+          446.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9940161286020064,
+        "bestPoint": [
+          500.0,
+          452.0
+        ],
+        "bestPointError": 5.522680508593631
+      },
+      {
+        "id": "validation-30",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 86,
+        "width": 30,
+        "center": [
+          370,
+          219
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999997967083418,
+        "bestPoint": [
+          372.0,
+          220.0
+        ],
+        "bestPointError": 2.23606797749979
+      },
+      {
+        "id": "validation-31",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 31,
+        "width": 11,
+        "center": [
+          151.5,
+          30.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9977653826217211,
+        "bestPoint": [
+          148.0,
+          28.0
+        ],
+        "bestPointError": 4.301162633521313
+      },
+      {
+        "id": "validation-32",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 73,
+        "width": 25,
+        "center": [
+          314.5,
+          450.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999931863058714,
+        "bestPoint": [
+          316.0,
+          452.0
+        ],
+        "bestPointError": 2.1213203435596424
+      },
+      {
+        "id": "validation-33",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 48,
+        "width": 17,
+        "center": [
+          76.5,
+          289
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999976490295724,
+        "bestPoint": [
+          76.0,
+          284.0
+        ],
+        "bestPointError": 5.024937810560445
+      },
+      {
+        "id": "validation-34",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 35,
+        "width": 12,
+        "center": [
+          139,
+          324.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9984311185081799,
+        "bestPoint": [
+          140.0,
+          324.0
+        ],
+        "bestPointError": 1.118033988749895
+      },
+      {
+        "id": "validation-35",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 93,
+        "width": 32,
+        "center": [
+          191,
+          305.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999838362411105,
+        "bestPoint": [
+          188.0,
+          308.0
+        ],
+        "bestPointError": 3.905124837953327
+      },
+      {
+        "id": "validation-36",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 90,
+        "width": 31,
+        "center": [
+          319.5,
+          51
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9986733696380039,
+        "bestPoint": [
+          316.0,
+          52.0
+        ],
+        "bestPointError": 3.640054944640259
+      },
+      {
+        "id": "validation-37",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 37,
+        "width": 13,
+        "center": [
+          237.5,
+          448.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.9836688096367365,
+        "bestPoint": [
+          236.0,
+          444.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-38",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 75,
+        "width": 26,
+        "center": [
+          293,
+          219.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999930296242077,
+        "bestPoint": [
+          292.0,
+          220.0
+        ],
+        "bestPointError": 1.118033988749895
+      },
+      {
+        "id": "validation-39",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 77,
+        "width": 27,
+        "center": [
+          70.5,
+          31.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999662747626384,
+        "bestPoint": [
+          68.0,
+          28.0
+        ],
+        "bestPointError": 4.301162633521313
+      },
+      {
+        "id": "validation-40",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 36,
+        "width": 12,
+        "center": [
+          109,
+          309
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9978009119121527,
+        "bestPoint": [
+          108.0,
+          308.0
+        ],
+        "bestPointError": 1.4142135623730951
+      },
+      {
+        "id": "validation-41",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 47,
+        "width": 16,
+        "center": [
+          183,
+          124.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.9847136722501524,
+        "bestPoint": [
+          180.0,
+          124.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-42",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 103,
+        "width": 36,
+        "center": [
+          289,
+          140.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.99998892482139,
+        "bestPoint": [
+          292.0,
+          140.0
+        ],
+        "bestPointError": 3.0413812651491097
+      },
+      {
+        "id": "validation-43",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 79,
+        "width": 27,
+        "center": [
+          278.5,
+          488.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9995209793383387,
+        "bestPoint": [
+          276.0,
+          492.0
+        ],
+        "bestPointError": 4.301162633521313
+      },
+      {
+        "id": "validation-44",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 33,
+        "width": 11,
+        "center": [
+          408.5,
+          256.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.9875644408803318,
+        "bestPoint": [
+          412.0,
+          252.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-45",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 109,
+        "width": 38,
+        "center": [
+          425,
+          305.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9980076287071773,
+        "bestPoint": [
+          428.0,
+          308.0
+        ],
+        "bestPointError": 3.905124837953327
+      },
+      {
+        "id": "validation-46",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 45,
+        "width": 16,
+        "center": [
+          27,
+          465.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.999997396386969,
+        "bestPoint": [
+          28.0,
+          468.0
+        ],
+        "bestPointError": 2.692582403567252
+      },
+      {
+        "id": "validation-47",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 39,
+        "width": 13,
+        "center": [
+          182.5,
+          121.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.9235474392077373,
+        "bestPoint": [
+          180.0,
+          116.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-48",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 80,
+        "width": 28,
+        "center": [
+          242,
+          76
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999864588948248,
+        "bestPoint": [
+          244.0,
+          76.0
+        ],
+        "bestPointError": 2.0
+      },
+      {
+        "id": "validation-49",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 45,
+        "width": 16,
+        "center": [
+          34,
+          8.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.8674158600132793,
+        "bestPoint": [
+          36.0,
+          12.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-50",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 58,
+        "width": 20,
+        "center": [
+          433,
+          253
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.999499249546971,
+        "bestPoint": [
+          436.0,
+          252.0
+        ],
+        "bestPointError": 3.1622776601683795
+      },
+      {
+        "id": "validation-51",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 111,
+        "width": 38,
+        "center": [
+          434,
+          328.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9981900322909032,
+        "bestPoint": [
+          436.0,
+          324.0
+        ],
+        "bestPointError": 4.924428900898052
+      },
+      {
+        "id": "validation-52",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 72,
+        "width": 25,
+        "center": [
+          346.5,
+          309
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999990155145537,
+        "bestPoint": [
+          348.0,
+          308.0
+        ],
+        "bestPointError": 1.8027756377319946
+      },
+      {
+        "id": "validation-53",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 31,
+        "width": 11,
+        "center": [
+          498.5,
+          364.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.999999880115274,
+        "bestPoint": [
+          500.0,
+          364.0
+        ],
+        "bestPointError": 1.5811388300841898
+      },
+      {
+        "id": "validation-54",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 36,
+        "width": 12,
+        "center": [
+          256,
+          447
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.9850391914112708,
+        "bestPoint": [
+          260.0,
+          444.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-55",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 64,
+        "width": 22,
+        "center": [
+          303,
+          322
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9979808910551732,
+        "bestPoint": [
+          308.0,
+          324.0
+        ],
+        "bestPointError": 5.385164807134504
+      },
+      {
+        "id": "validation-56",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 47,
+        "width": 16,
+        "center": [
+          277,
+          252.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999991813982663,
+        "bestPoint": [
+          276.0,
+          252.0
+        ],
+        "bestPointError": 1.118033988749895
+      },
+      {
+        "id": "validation-57",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 31,
+        "width": 11,
+        "center": [
+          266.5,
+          145.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.999834127509042,
+        "bestPoint": [
+          268.0,
+          140.0
+        ],
+        "bestPointError": 5.70087712549569
+      },
+      {
+        "id": "validation-58",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 65,
+        "width": 22,
+        "center": [
+          43,
+          435.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999716600133094,
+        "bestPoint": [
+          44.0,
+          436.0
+        ],
+        "bestPointError": 1.118033988749895
+      },
+      {
+        "id": "validation-59",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 56,
+        "width": 19,
+        "center": [
+          386.5,
+          345
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9995934072819794,
+        "bestPoint": [
+          388.0,
+          348.0
+        ],
+        "bestPointError": 3.3541019662496847
+      },
+      {
+        "id": "validation-60",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 90,
+        "width": 31,
+        "center": [
+          286.5,
+          358
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999546041460902,
+        "bestPoint": [
+          284.0,
+          356.0
+        ],
+        "bestPointError": 3.2015621187164243
+      },
+      {
+        "id": "validation-61",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 33,
+        "width": 11,
+        "center": [
+          226.5,
+          351.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999967070388457,
+        "bestPoint": [
+          228.0,
+          348.0
+        ],
+        "bestPointError": 3.8078865529319543
+      },
+      {
+        "id": "validation-62",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 40,
+        "width": 14,
+        "center": [
+          302,
+          404
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999948409984044,
+        "bestPoint": [
+          300.0,
+          404.0
+        ],
+        "bestPointError": 2.0
+      },
+      {
+        "id": "validation-63",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 61,
+        "width": 21,
+        "center": [
+          194.5,
+          333.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999921485587109,
+        "bestPoint": [
+          196.0,
+          332.0
+        ],
+        "bestPointError": 2.1213203435596424
+      },
+      {
+        "id": "validation-64",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 87,
+        "width": 30,
+        "center": [
+          139,
+          322.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999995054383618,
+        "bestPoint": [
+          140.0,
+          324.0
+        ],
+        "bestPointError": 1.8027756377319946
+      },
+      {
+        "id": "validation-65",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 68,
+        "width": 23,
+        "center": [
+          131.5,
+          383
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999980513533238,
+        "bestPoint": [
+          132.0,
+          380.0
+        ],
+        "bestPointError": 3.0413812651491097
+      },
+      {
+        "id": "validation-66",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 39,
+        "width": 13,
+        "center": [
+          307.5,
+          110.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9981201256646084,
+        "bestPoint": [
+          308.0,
+          108.0
+        ],
+        "bestPointError": 2.5495097567963922
+      },
+      {
+        "id": "validation-67",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 79,
+        "width": 27,
+        "center": [
+          87.5,
+          79.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9998125264869335,
+        "bestPoint": [
+          92.0,
+          76.0
+        ],
+        "bestPointError": 5.70087712549569
+      },
+      {
+        "id": "validation-68",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 98,
+        "width": 34,
+        "center": [
+          287,
+          196
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999990733780091,
+        "bestPoint": [
+          284.0,
+          196.0
+        ],
+        "bestPointError": 3.0
+      },
+      {
+        "id": "validation-69",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 76,
+        "width": 26,
+        "center": [
+          243,
+          152
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999612482849087,
+        "bestPoint": [
+          244.0,
+          156.0
+        ],
+        "bestPointError": 4.123105625617661
+      },
+      {
+        "id": "validation-70",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 44,
+        "width": 15,
+        "center": [
+          292.5,
+          297
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9996556534287355,
+        "bestPoint": [
+          292.0,
+          300.0
+        ],
+        "bestPointError": 3.0413812651491097
+      },
+      {
+        "id": "validation-71",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 34,
+        "width": 12,
+        "center": [
+          476,
+          212
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999999999970044,
+        "bestPoint": [
+          476.0,
+          212.0
+        ],
+        "bestPointError": 0.0
+      },
+      {
+        "id": "validation-72",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 39,
+        "width": 13,
+        "center": [
+          276.5,
+          328.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9997785297682237,
+        "bestPoint": [
+          276.0,
+          324.0
+        ],
+        "bestPointError": 4.527692569068709
+      },
+      {
+        "id": "validation-73",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 106,
+        "width": 37,
+        "center": [
+          366.5,
+          275
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9986358720287911,
+        "bestPoint": [
+          364.0,
+          276.0
+        ],
+        "bestPointError": 2.692582403567252
+      },
+      {
+        "id": "validation-74",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 29,
+        "width": 10,
+        "center": [
+          300,
+          404.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999999999982847,
+        "bestPoint": [
+          300.0,
+          404.0
+        ],
+        "bestPointError": 0.5
+      },
+      {
+        "id": "validation-75",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 87,
+        "width": 30,
+        "center": [
+          132,
+          222.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999989082533343,
+        "bestPoint": [
+          132.0,
+          220.0
+        ],
+        "bestPointError": 2.5
+      },
+      {
+        "id": "validation-76",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 36,
+        "width": 12,
+        "center": [
+          294,
+          382
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9993232158534047,
+        "bestPoint": [
+          292.0,
+          380.0
+        ],
+        "bestPointError": 2.8284271247461903
+      },
+      {
+        "id": "validation-77",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 55,
+        "width": 19,
+        "center": [
+          11.5,
+          180.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999999466180927,
+        "bestPoint": [
+          12.0,
+          180.0
+        ],
+        "bestPointError": 0.7071067811865476
+      },
+      {
+        "id": "validation-78",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 47,
+        "width": 16,
+        "center": [
+          264,
+          224.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.9367144435278915,
+        "bestPoint": [
+          260.0,
+          228.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-79",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 38,
+        "width": 13,
+        "center": [
+          75.5,
+          52
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999687913956251,
+        "bestPoint": [
+          76.0,
+          52.0
+        ],
+        "bestPointError": 0.5
+      },
+      {
+        "id": "validation-80",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 69,
+        "width": 24,
+        "center": [
+          268,
+          471.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9998752493313715,
+        "bestPoint": [
+          268.0,
+          468.0
+        ],
+        "bestPointError": 3.5
+      },
+      {
+        "id": "validation-81",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 33,
+        "width": 11,
+        "center": [
+          450.5,
+          383.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999944399814338,
+        "bestPoint": [
+          452.0,
+          380.0
+        ],
+        "bestPointError": 3.8078865529319543
+      },
+      {
+        "id": "validation-82",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 102,
+        "width": 35,
+        "center": [
+          301.5,
+          323
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999988480813522,
+        "bestPoint": [
+          300.0,
+          324.0
+        ],
+        "bestPointError": 1.8027756377319946
+      },
+      {
+        "id": "validation-83",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 55,
+        "width": 19,
+        "center": [
+          353.5,
+          491.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9994734008644334,
+        "bestPoint": [
+          356.0,
+          492.0
+        ],
+        "bestPointError": 2.5495097567963922
+      },
+      {
+        "id": "validation-84",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 101,
+        "width": 35,
+        "center": [
+          385.5,
+          347.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999969891469475,
+        "bestPoint": [
+          388.0,
+          348.0
+        ],
+        "bestPointError": 2.5495097567963922
+      },
+      {
+        "id": "validation-85",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 61,
+        "width": 21,
+        "center": [
+          426.5,
+          468.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999999869217269,
+        "bestPoint": [
+          428.0,
+          468.0
+        ],
+        "bestPointError": 1.5811388300841898
+      },
+      {
+        "id": "validation-86",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 91,
+        "width": 31,
+        "center": [
+          311.5,
+          348.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999415335662155,
+        "bestPoint": [
+          308.0,
+          348.0
+        ],
+        "bestPointError": 3.5355339059327378
+      },
+      {
+        "id": "validation-87",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 35,
+        "width": 12,
+        "center": [
+          358,
+          168.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9930661891290263,
+        "bestPoint": [
+          356.0,
+          164.0
+        ],
+        "bestPointError": 4.924428900898052
+      },
+      {
+        "id": "validation-88",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 101,
+        "width": 35,
+        "center": [
+          125.5,
+          275.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999998843039554,
+        "bestPoint": [
+          124.0,
+          276.0
+        ],
+        "bestPointError": 1.5811388300841898
+      },
+      {
+        "id": "validation-89",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 76,
+        "width": 26,
+        "center": [
+          424,
+          388
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9976358660369177,
+        "bestPoint": [
+          420.0,
+          388.0
+        ],
+        "bestPointError": 4.0
+      },
+      {
+        "id": "validation-90",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 59,
+        "width": 20,
+        "center": [
+          81,
+          155.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999187552316811,
+        "bestPoint": [
+          84.0,
+          156.0
+        ],
+        "bestPointError": 3.0413812651491097
+      },
+      {
+        "id": "validation-91",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 47,
+        "width": 16,
+        "center": [
+          357,
+          10.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.999847168820164,
+        "bestPoint": [
+          356.0,
+          12.0
+        ],
+        "bestPointError": 1.8027756377319946
+      },
+      {
+        "id": "validation-92",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 80,
+        "width": 28,
+        "center": [
+          86,
+          312
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999216717437518,
+        "bestPoint": [
+          84.0,
+          308.0
+        ],
+        "bestPointError": 4.47213595499958
+      },
+      {
+        "id": "validation-93",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 87,
+        "width": 30,
+        "center": [
+          247,
+          236.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999987712305107,
+        "bestPoint": [
+          244.0,
+          236.0
+        ],
+        "bestPointError": 3.0413812651491097
+      },
+      {
+        "id": "validation-94",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 34,
+        "width": 12,
+        "center": [
+          55,
+          299
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9998852385197631,
+        "bestPoint": [
+          52.0,
+          300.0
+        ],
+        "bestPointError": 3.1622776601683795
+      },
+      {
+        "id": "validation-95",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 32,
+        "width": 11,
+        "center": [
+          158.5,
+          212
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999080555145659,
+        "bestPoint": [
+          156.0,
+          212.0
+        ],
+        "bestPointError": 2.5
+      },
+      {
+        "id": "validation-96",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 86,
+        "width": 30,
+        "center": [
+          264,
+          67
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999878814763105,
+        "bestPoint": [
+          260.0,
+          68.0
+        ],
+        "bestPointError": 4.123105625617661
+      },
+      {
+        "id": "validation-97",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 99,
+        "width": 34,
+        "center": [
+          21,
+          443.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999999892769392,
+        "bestPoint": [
+          20.0,
+          444.0
+        ],
+        "bestPointError": 1.118033988749895
+      },
+      {
+        "id": "validation-98",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 103,
+        "width": 36,
+        "center": [
+          257,
+          204.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999751398364666,
+        "bestPoint": [
+          260.0,
+          204.0
+        ],
+        "bestPointError": 3.0413812651491097
+      },
+      {
+        "id": "validation-99",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 24,
+        "width": 8,
+        "center": [
+          409,
+          418
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9939111668525522,
+        "bestPoint": [
+          412.0,
+          420.0
+        ],
+        "bestPointError": 3.605551275463989
+      },
+      {
+        "id": "validation-100",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 101,
+        "width": 35,
+        "center": [
+          134.5,
+          302.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999113440159284,
+        "bestPoint": [
+          132.0,
+          300.0
+        ],
+        "bestPointError": 3.5355339059327378
+      },
+      {
+        "id": "validation-101",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 32,
+        "width": 11,
+        "center": [
+          204.5,
+          115
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999999853089607,
+        "bestPoint": [
+          204.0,
+          116.0
+        ],
+        "bestPointError": 1.118033988749895
+      },
+      {
+        "id": "validation-102",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 86,
+        "width": 30,
+        "center": [
+          168,
+          16
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.1318155210305189,
+        "bestPoint": [
+          164.0,
+          20.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-103",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 110,
+        "width": 38,
+        "center": [
+          303,
+          87
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.9898490563163898,
+        "bestPoint": [
+          300.0,
+          84.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-104",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 95,
+        "width": 33,
+        "center": [
+          418.5,
+          202.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.999999862899201,
+        "bestPoint": [
+          420.0,
+          204.0
+        ],
+        "bestPointError": 2.1213203435596424
+      },
+      {
+        "id": "validation-105",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 48,
+        "width": 17,
+        "center": [
+          221.5,
+          407
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.9920599658883771,
+        "bestPoint": [
+          220.0,
+          412.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-106",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 26,
+        "width": 9,
+        "center": [
+          269.5,
+          304
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.9900700532449812,
+        "bestPoint": [
+          268.0,
+          300.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-107",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 94,
+        "width": 32,
+        "center": [
+          205,
+          116
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999999956022527,
+        "bestPoint": [
+          204.0,
+          116.0
+        ],
+        "bestPointError": 1.0
+      },
+      {
+        "id": "validation-108",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 47,
+        "width": 16,
+        "center": [
+          81,
+          153.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9998879796496573,
+        "bestPoint": [
+          84.0,
+          156.0
+        ],
+        "bestPointError": 3.905124837953327
+      },
+      {
+        "id": "validation-109",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 47,
+        "width": 16,
+        "center": [
+          88,
+          339.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9938861752233433,
+        "bestPoint": [
+          84.0,
+          340.0
+        ],
+        "bestPointError": 4.031128874149275
+      },
+      {
+        "id": "validation-110",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 55,
+        "width": 19,
+        "center": [
+          242.5,
+          238.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999636477780506,
+        "bestPoint": [
+          244.0,
+          236.0
+        ],
+        "bestPointError": 2.9154759474226504
+      },
+      {
+        "id": "validation-111",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 54,
+        "width": 19,
+        "center": [
+          373.5,
+          299
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.996538449535715,
+        "bestPoint": [
+          372.0,
+          300.0
+        ],
+        "bestPointError": 1.8027756377319946
+      },
+      {
+        "id": "validation-112",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 97,
+        "width": 33,
+        "center": [
+          16.5,
+          444.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999908744151803,
+        "bestPoint": [
+          20.0,
+          444.0
+        ],
+        "bestPointError": 3.5355339059327378
+      },
+      {
+        "id": "validation-113",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 45,
+        "width": 16,
+        "center": [
+          16,
+          284.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9996224126558689,
+        "bestPoint": [
+          12.0,
+          284.0
+        ],
+        "bestPointError": 4.031128874149275
+      },
+      {
+        "id": "validation-114",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 112,
+        "width": 39,
+        "center": [
+          162.5,
+          395
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.999995852157439,
+        "bestPoint": [
+          164.0,
+          396.0
+        ],
+        "bestPointError": 1.8027756377319946
+      },
+      {
+        "id": "validation-115",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 42,
+        "width": 14,
+        "center": [
+          369,
+          377
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9981138572440795,
+        "bestPoint": [
+          372.0,
+          380.0
+        ],
+        "bestPointError": 4.242640687119285
+      },
+      {
+        "id": "validation-116",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 80,
+        "width": 28,
+        "center": [
+          156,
+          453
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999965273563391,
+        "bestPoint": [
+          156.0,
+          452.0
+        ],
+        "bestPointError": 1.0
+      },
+      {
+        "id": "validation-117",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 80,
+        "width": 28,
+        "center": [
+          409,
+          180
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.999999912753479,
+        "bestPoint": [
+          412.0,
+          180.0
+        ],
+        "bestPointError": 3.0
+      },
+      {
+        "id": "validation-118",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 104,
+        "width": 36,
+        "center": [
+          478,
+          373
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999995548754005,
+        "bestPoint": [
+          476.0,
+          372.0
+        ],
+        "bestPointError": 2.23606797749979
+      },
+      {
+        "id": "validation-119",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 44,
+        "width": 15,
+        "center": [
+          136.5,
+          405
+        ],
+        "visibleFraction": 1,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.9801039977763801,
+        "bestPoint": [
+          140.0,
+          404.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-120",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 104,
+        "width": 36,
+        "center": [
+          94,
+          97
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999970191336582,
+        "bestPoint": [
+          92.0,
+          100.0
+        ],
+        "bestPointError": 3.605551275463989
+      },
+      {
+        "id": "validation-121",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 26,
+        "width": 9,
+        "center": [
+          381.5,
+          160
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9944470547909456,
+        "bestPoint": [
+          380.0,
+          156.0
+        ],
+        "bestPointError": 4.272001872658765
+      },
+      {
+        "id": "validation-122",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 69,
+        "width": 24,
+        "center": [
+          262,
+          361.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.997334650068123,
+        "bestPoint": [
+          260.0,
+          356.0
+        ],
+        "bestPointError": 5.852349955359813
+      },
+      {
+        "id": "validation-123",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 103,
+        "width": 36,
+        "center": [
+          29,
+          225.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999991526483191,
+        "bestPoint": [
+          28.0,
+          228.0
+        ],
+        "bestPointError": 2.692582403567252
+      },
+      {
+        "id": "validation-124",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 87,
+        "width": 30,
+        "center": [
+          124,
+          272.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999822433240535,
+        "bestPoint": [
+          124.0,
+          276.0
+        ],
+        "bestPointError": 3.5
+      },
+      {
+        "id": "validation-125",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 103,
+        "width": 36,
+        "center": [
+          233,
+          52.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999887100673501,
+        "bestPoint": [
+          236.0,
+          52.0
+        ],
+        "bestPointError": 3.0413812651491097
+      },
+      {
+        "id": "validation-126",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 72,
+        "width": 25,
+        "center": [
+          332.5,
+          336
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999990903607273,
+        "bestPoint": [
+          332.0,
+          340.0
+        ],
+        "bestPointError": 4.031128874149275
+      },
+      {
+        "id": "validation-127",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 36,
+        "width": 12,
+        "center": [
+          244,
+          315
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999560397772294,
+        "bestPoint": [
+          244.0,
+          316.0
+        ],
+        "bestPointError": 1.0
+      },
+      {
+        "id": "validation-128",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 104,
+        "width": 36,
+        "center": [
+          270,
+          229
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999990586455965,
+        "bestPoint": [
+          268.0,
+          228.0
+        ],
+        "bestPointError": 2.23606797749979
+      },
+      {
+        "id": "validation-129",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 49,
+        "width": 17,
+        "center": [
+          59.5,
+          484.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999998603063189,
+        "bestPoint": [
+          60.0,
+          484.0
+        ],
+        "bestPointError": 0.7071067811865476
+      },
+      {
+        "id": "validation-130",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 69,
+        "width": 24,
+        "center": [
+          347,
+          310.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999999583477943,
+        "bestPoint": [
+          348.0,
+          308.0
+        ],
+        "bestPointError": 2.692582403567252
+      },
+      {
+        "id": "validation-131",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 110,
+        "width": 38,
+        "center": [
+          313,
+          131
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9986151842844961,
+        "bestPoint": [
+          308.0,
+          132.0
+        ],
+        "bestPointError": 5.0990195135927845
+      },
+      {
+        "id": "validation-132",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 109,
+        "width": 38,
+        "center": [
+          342,
+          284.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999849157304697,
+        "bestPoint": [
+          340.0,
+          284.0
+        ],
+        "bestPointError": 2.0615528128088303
+      },
+      {
+        "id": "validation-133",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 72,
+        "width": 25,
+        "center": [
+          445.5,
+          358
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999897675023308,
+        "bestPoint": [
+          444.0,
+          356.0
+        ],
+        "bestPointError": 2.5
+      },
+      {
+        "id": "validation-134",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 54,
+        "width": 19,
+        "center": [
+          139.5,
+          480
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999973208037424,
+        "bestPoint": [
+          140.0,
+          476.0
+        ],
+        "bestPointError": 4.031128874149275
+      },
+      {
+        "id": "validation-135",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 34,
+        "width": 12,
+        "center": [
+          445,
+          277
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999999512956611,
+        "bestPoint": [
+          444.0,
+          276.0
+        ],
+        "bestPointError": 1.4142135623730951
+      },
+      {
+        "id": "validation-136",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 53,
+        "width": 18,
+        "center": [
+          133,
+          382.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999999286543892,
+        "bestPoint": [
+          132.0,
+          380.0
+        ],
+        "bestPointError": 2.692582403567252
+      },
+      {
+        "id": "validation-137",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 42,
+        "width": 14,
+        "center": [
+          156,
+          52
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999999774549672,
+        "bestPoint": [
+          156.0,
+          52.0
+        ],
+        "bestPointError": 0.0
+      },
+      {
+        "id": "validation-138",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 70,
+        "width": 24,
+        "center": [
+          242,
+          312
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9998450546364755,
+        "bestPoint": [
+          244.0,
+          316.0
+        ],
+        "bestPointError": 4.47213595499958
+      },
+      {
+        "id": "validation-139",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 73,
+        "width": 25,
+        "center": [
+          41.5,
+          356.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999984774406696,
+        "bestPoint": [
+          44.0,
+          356.0
+        ],
+        "bestPointError": 2.5495097567963922
+      },
+      {
+        "id": "validation-140",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 52,
+        "width": 18,
+        "center": [
+          376,
+          241
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9974863009286175,
+        "bestPoint": [
+          372.0,
+          244.0
+        ],
+        "bestPointError": 5.0
+      },
+      {
+        "id": "validation-141",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 60,
+        "width": 21,
+        "center": [
+          298.5,
+          407
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999975521264892,
+        "bestPoint": [
+          300.0,
+          404.0
+        ],
+        "bestPointError": 3.3541019662496847
+      },
+      {
+        "id": "validation-142",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 25,
+        "width": 9,
+        "center": [
+          140.5,
+          325.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999973807338004,
+        "bestPoint": [
+          140.0,
+          324.0
+        ],
+        "bestPointError": 1.5811388300841898
+      },
+      {
+        "id": "validation-143",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 104,
+        "width": 36,
+        "center": [
+          74,
+          289
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999964666300757,
+        "bestPoint": [
+          76.0,
+          292.0
+        ],
+        "bestPointError": 3.605551275463989
+      },
+      {
+        "id": "validation-144",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 88,
+        "width": 30,
+        "center": [
+          333,
+          341
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9999986181358076,
+        "bestPoint": [
+          332.0,
+          340.0
+        ],
+        "bestPointError": 1.4142135623730951
+      },
+      {
+        "id": "validation-145",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 101,
+        "width": 35,
+        "center": [
+          391.5,
+          264.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9989531095054625,
+        "bestPoint": [
+          388.0,
+          260.0
+        ],
+        "bestPointError": 5.70087712549569
+      },
+      {
+        "id": "validation-146",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 33,
+        "width": 11,
+        "center": [
+          277.5,
+          408.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.999655754903165,
+        "bestPoint": [
+          276.0,
+          404.0
+        ],
+        "bestPointError": 4.743416490252569
+      },
+      {
+        "id": "validation-147",
+        "scene": "legacy",
+        "kind": "target",
+        "height": 90,
+        "width": 31,
+        "center": [
+          415.5,
+          179
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9985426029217662,
+        "bestPoint": [
+          412.0,
+          180.0
+        ],
+        "bestPointError": 3.640054944640259
+      },
+      {
+        "id": "validation-148",
+        "scene": "magic-arena",
+        "kind": "target",
+        "height": 99,
+        "width": 34,
+        "center": [
+          340,
+          287.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9998511322808492,
+        "bestPoint": [
+          340.0,
+          284.0
+        ],
+        "bestPointError": 3.5
+      },
+      {
+        "id": "validation-149",
+        "scene": "qualicity-queue",
+        "kind": "target",
+        "height": 89,
+        "width": 31,
+        "center": [
+          465.5,
+          106.5
+        ],
+        "visibleFraction": 1,
+        "accepted": 1,
+        "correctPoints": 1,
+        "falsePoints": 0,
+        "completeHit": true,
+        "emptyOracle": false,
+        "maxScore": 0.9988567555473684,
+        "bestPoint": [
+          468.0,
+          108.0
+        ],
+        "bestPointError": 2.9154759474226504
+      },
+      {
+        "id": "validation-empty-legacy-h24",
+        "scene": "legacy",
+        "kind": "absent",
+        "height": 24,
+        "width": 8,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.9927335953598058,
+        "bestPoint": [
+          476.0,
+          308.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-legacy-h36",
+        "scene": "legacy",
+        "kind": "absent",
+        "height": 36,
+        "width": 12,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.9422845145486144,
+        "bestPoint": [
+          476.0,
+          308.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-legacy-h52",
+        "scene": "legacy",
+        "kind": "absent",
+        "height": 52,
+        "width": 18,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.15727912847109612,
+        "bestPoint": [
+          380.0,
+          420.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-legacy-h64",
+        "scene": "legacy",
+        "kind": "absent",
+        "height": 64,
+        "width": 22,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.02022088676233489,
+        "bestPoint": [
+          468.0,
+          308.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-legacy-h80",
+        "scene": "legacy",
+        "kind": "absent",
+        "height": 80,
+        "width": 28,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.0010130461143092572,
+        "bestPoint": [
+          460.0,
+          308.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-legacy-h96",
+        "scene": "legacy",
+        "kind": "absent",
+        "height": 96,
+        "width": 33,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 5.836178866956583e-05,
+        "bestPoint": [
+          460.0,
+          308.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-legacy-h112",
+        "scene": "legacy",
+        "kind": "absent",
+        "height": 112,
+        "width": 39,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 1.2187305278981577e-06,
+        "bestPoint": [
+          460.0,
+          308.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-magic-arena-h24",
+        "scene": "magic-arena",
+        "kind": "absent",
+        "height": 24,
+        "width": 8,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.9685729854037854,
+        "bestPoint": [
+          468.0,
+          340.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-magic-arena-h36",
+        "scene": "magic-arena",
+        "kind": "absent",
+        "height": 36,
+        "width": 12,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.10607483962137904,
+        "bestPoint": [
+          468.0,
+          332.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-magic-arena-h52",
+        "scene": "magic-arena",
+        "kind": "absent",
+        "height": 52,
+        "width": 18,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.008656571055507704,
+        "bestPoint": [
+          212.0,
+          116.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-magic-arena-h64",
+        "scene": "magic-arena",
+        "kind": "absent",
+        "height": 64,
+        "width": 22,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.011431072557390414,
+        "bestPoint": [
+          476.0,
+          348.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-magic-arena-h80",
+        "scene": "magic-arena",
+        "kind": "absent",
+        "height": 80,
+        "width": 28,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 4.548876444531592e-05,
+        "bestPoint": [
+          468.0,
+          356.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-magic-arena-h96",
+        "scene": "magic-arena",
+        "kind": "absent",
+        "height": 96,
+        "width": 33,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 8.44981056767563e-07,
+        "bestPoint": [
+          212.0,
+          124.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-magic-arena-h112",
+        "scene": "magic-arena",
+        "kind": "absent",
+        "height": 112,
+        "width": 39,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 5.3588171858633925e-08,
+        "bestPoint": [
+          476.0,
+          356.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-qualicity-queue-h24",
+        "scene": "qualicity-queue",
+        "kind": "absent",
+        "height": 24,
+        "width": 8,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.6736445439475476,
+        "bestPoint": [
+          308.0,
+          436.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-qualicity-queue-h36",
+        "scene": "qualicity-queue",
+        "kind": "absent",
+        "height": 36,
+        "width": 12,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.17364221104166297,
+        "bestPoint": [
+          324.0,
+          412.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-qualicity-queue-h52",
+        "scene": "qualicity-queue",
+        "kind": "absent",
+        "height": 52,
+        "width": 18,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.008223721948976886,
+        "bestPoint": [
+          380.0,
+          356.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-qualicity-queue-h64",
+        "scene": "qualicity-queue",
+        "kind": "absent",
+        "height": 64,
+        "width": 22,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 0.0009224902116996768,
+        "bestPoint": [
+          332.0,
+          404.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-qualicity-queue-h80",
+        "scene": "qualicity-queue",
+        "kind": "absent",
+        "height": 80,
+        "width": 28,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 4.3015103205558886e-05,
+        "bestPoint": [
+          332.0,
+          404.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-qualicity-queue-h96",
+        "scene": "qualicity-queue",
+        "kind": "absent",
+        "height": 96,
+        "width": 33,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 1.8326489395786842e-06,
+        "bestPoint": [
+          324.0,
+          412.0
+        ],
+        "bestPointError": null
+      },
+      {
+        "id": "validation-empty-qualicity-queue-h112",
+        "scene": "qualicity-queue",
+        "kind": "absent",
+        "height": 112,
+        "width": 39,
+        "center": null,
+        "visibleFraction": 0,
+        "accepted": 0,
+        "correctPoints": 0,
+        "falsePoints": 0,
+        "completeHit": false,
+        "emptyOracle": true,
+        "maxScore": 1.5167671717149346e-07,
+        "bestPoint": [
+          332.0,
+          404.0
+        ],
+        "bestPointError": null
+      }
+    ]
+  }
+}

@@ -1,3 +1,4 @@
+import { mountQuickTour } from './quick-tour.js';
 import { createUniformState, probabilities, simulateGrover, recommendIterations, sample, bitstring } from './quantum.js';
 import * as qnn from './qnn.js';
 import { regionsFromAlpha } from './ground-truth.js';
@@ -323,6 +324,18 @@ $('upload-street').addEventListener('change',async event=>{
   catch{setResult('The background could not be decoded. Try a PNG or JPEG.','warning');}
   finally{URL.revokeObjectURL(url);}
 });
+function resetDemo() {
+  if (!modelReady || running) return false;
+  $('heatmap').checked=false;
+  if (photoModel?.readyForDemo && defaultStreet && realSprite) {
+    chooseScene('photo'); chooseStreet('covington');
+  } else chooseScene('illustrated');
+  manualRounds=false; invalidate();
+  setResult('The supplied demo and default model settings are restored. Place the bus or run the search.');
+  return true;
+}
+$('reset-demo').addEventListener('click',resetDemo);
+
 async function init() {
   createDistractors();renderScene();renderBars();
   try {
@@ -339,6 +352,15 @@ async function init() {
     try{emeryvilleStreet=await image('assets/emeryville-street.png');$('street-emeryville').disabled=false;}catch{/* Optional independent street experiment. */}
     try{[photoModel,streetPhoto,realSprite]=await Promise.all([fetch('model/model-photo.json').then(r=>{if(!r.ok)throw Error('Photo model not ready');return r.json();}),image('assets/street-captcha.png'),image('assets/real-schoolbus.png')]);defaultStreet=streetPhoto;if(photoModel.readyForDemo===true){$('scene-photo').disabled=false;chooseScene('photo');}}catch{/* Photo experiment is enabled once its trained weights are validated. */}
     modelReady=true;setRunControls();setResult('Drag the bus to make your challenge, then press Solve CAPTCHA.');
+    mountQuickTour($('quick-tour'), {
+      restore: () => resetDemo() ? 'The original challenge is restored. Drag the bus, or continue with Run search.' : 'Let the current search finish, then restore the demo.',
+      search: async () => { await run(); return 'Inspect the accepted-set probability and the separately evaluated true-target probability. One sampled region is a separate outcome.'; },
+      challenge: emeryvilleStreet && photoModel?.readyForDemo ? async () => {
+        if(!resetDemo()) return 'Let the current search finish first.';
+        chooseStreet('emeryville'); hasBus=false; $('toggle-bus').textContent='Restore bus'; $('heatmap').checked=true; invalidate(); await run();
+        return 'This unfamiliar street contains no inserted bus. Every accepted region is a false positive; amplification follows those mistakes. Restore demo to return.';
+      } : null,
+    });
   } catch(error){console.error(error);modelReady=false;setRunControls('Model unavailable');setPhase(0,'Model unavailable','The simulator needs its trained model and bus sprite.');setResult(`Unable to load: ${error.message}. Serve this folder over HTTP rather than opening a file URL.`, 'warning');}
 }
 init();

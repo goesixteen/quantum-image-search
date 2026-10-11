@@ -1,0 +1,77 @@
+{
+  "scope": "Actual Chromium-rendered curated artwork engineering diagnostic; no retraining or heldout claim",
+  "sourcePNG": "browser-baked-coral-absent-h52.png",
+  "sourcePNG_SHA256": "7d7608a44c3eaaaa82a423accd042f23cf2483b74cf553e2380feb21f479b5ac",
+  "rows": [
+    {
+      "height": 40,
+      "width": 12,
+      "maximum": {
+        "index": 3221,
+        "x": 172,
+        "y": 404,
+        "score": 0.9998092646459517
+      },
+      "marks": [
+        3221
+      ],
+      "scanMs": 1032.2831
+    },
+    {
+      "height": 46,
+      "width": 14,
+      "maximum": {
+        "index": 3221,
+        "x": 172,
+        "y": 404,
+        "score": 0.9998964056580023
+      },
+      "marks": [
+        3221
+      ],
+      "scanMs": 1012.0761
+    },
+    {
+      "height": 52,
+      "width": 15,
+      "maximum": {
+        "index": 3157,
+        "x": 172,
+        "y": 396,
+        "score": 0.7020770671355234
+      },
+      "marks": [],
+      "scanMs": 1033.3174000000004
+    },
+    {
+      "height": 58,
+      "width": 17,
+      "maximum": {
+        "index": 3282,
+        "x": 148,
+        "y": 412,
+        "score": 0.1836430615840328
+      },
+      "marks": [],
+      "scanMs": 1015.2937999999995
+    },
+    {
+      "height": 64,
+      "width": 19,
+      "maximum": {
+        "index": 2738,
+        "x": 404,
+        "y": 340,
+        "score": 0.231635245313214
+      },
+      "marks": [],
+      "scanMs": 1014.7902999999997
+    }
+  ],
+  "summary": {
+    "rows": 5,
+    "maxScoreError": 0,
+    "maxFeatureError": 0,
+    "exactPeaksAndMarks": true
+  }
+}

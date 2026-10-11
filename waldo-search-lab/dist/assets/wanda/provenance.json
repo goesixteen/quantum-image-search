@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "generationSessionStartUtc": "2026-10-11T04:16:07Z",
+  "finalBackgroundsReleasedAtUtc": "2026-10-11T04:31:24Z",
+  "clockSource": "clock.curr_time",
+  "generationTool": "image_gen.imagegen built-in, no CLI/API fallback",
+  "modelVersion": "Not exposed by the returned tool metadata; no model/version claim",
+  "origin": "Original AI-generated game artwork commissioned for this project, distinct from historical human-licensed and generated scene assets. Only initial AI drafts were image references for scale correction.",
+  "licenseNote": "No third-party photography or licensed artwork supplied in these generation calls. This manifest does not assert public-domain or Creative Commons status for generated output. Preserve the AI-generation disclosure and the separate attribution/license records for historical assets.",
+  "promptRecord": "assets/wanda/generation-prompts.json",
+  "normalizedBackgroundRecord": "assets/wanda/normalization.json",
+  "normalizationNote": "Trainer creates named*-512.png numeric derivatives with native Canvas high-smoothing full-square resize, retaining these untouched1254square originals. See normalizer and per-file hashes in normalization.json.",
+  "assets": [
+    {
+      "id": "wanda",
+      "path": "assets/wanda/wanda.png",
+      "generatedOriginalPath": "C:\\Users\\henri\\.codex\\generated_images\\01a124ab-7497-7900-a0b8-11bc007254b5\\exec-6ec00e94-1515-4db7-b836-aed9d3b35296.png",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGBA",
+      "bytes": 1168423,
+      "sha256": "ae679a90fb94c8ad10a589fd6fa6a27404b7d519f6ad750557749a1595229777",
+      "savedSourcePixelsAltered": false,
+      "visuallyInspected": true,
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "alphaNonzeroBounds": [
+        113,
+        19,
+        970,
+        1517
+      ],
+      "alphaGreaterThan16Bounds": [
+        285,
+        21,
+        725,
+        1514
+      ],
+      "alphaGreaterThan32Bounds": [
+        285,
+        22,
+        725,
+        1514
+      ],
+      "trimmedAspectAtAlpha16": 0.29470864032150035,
+      "displayHeightDefault": 52,
+      "roundedTrimmedDisplayWidthAt52": 15,
+      "subject": "Original fictional adult woman, front view, dark brown bob, warm tan skin, broad red/white horizontal sweater bands, blue trousers, arms down; generated transparent alpha retained."
+    },
+    {
+      "id": "wanda-festival",
+      "path": "assets/wanda/festival.png",
+      "generatedOriginalPath": "C:\\Users\\henri\\.codex\\generated_images\\01a124ab-7497-7900-a0b8-11bc007254b5\\exec-661d1dc0-0b53-4402-9d12-1aba4dbe3a40.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "bytes": 3979398,
+      "sha256": "bcabf4cbf2559220aa6ada6c53807e8364c98edd431f21983b7cb8f7a7ec0b1b",
+      "savedSourcePixelsAltered": false,
+      "visuallyInspected": true,
+      "sceneRenderSize": 512,
+      "sourceCrop": "Full square; no source crop",
+      "visualReview": "Dense crowd after scale correction, broadly consistent small upright figures; target-like color distractors but no exact target outfit identified. This is a manual visual check, not an exhaustive annotated-person audit."
+    },
+    {
+      "id": "wanda-beach",
+      "path": "assets/wanda/beach.png",
+      "generatedOriginalPath": "C:\\Users\\henri\\.codex\\generated_images\\01a124ab-7497-7900-a0b8-11bc007254b5\\exec-064e13d3-a215-45a8-8f31-44acddd94c4c.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "bytes": 3817601,
+      "sha256": "346c31f378afea982e6722eb2ed54b8e5a1e4e1731fd99a022c530150dd64516",
+      "savedSourcePixelsAltered": false,
+      "visuallyInspected": true,
+      "sceneRenderSize": 512,
+      "sourceCrop": "Full square; no source crop",
+      "visualReview": "Dense crowd after scale correction, broadly consistent small upright figures; target-like color distractors but no exact target outfit identified. This is a manual visual check, not an exhaustive annotated-person audit."
+    },
+    {
+      "id": "wanda-market",
+      "path": "assets/wanda/market.png",
+      "generatedOriginalPath": "C:\\Users\\henri\\.codex\\generated_images\\01a124ab-7497-7900-a0b8-11bc007254b5\\exec-ca2053bc-b55d-4e9a-82b0-61572ae4d758.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "bytes": 4214216,
+      "sha256": "045f854bb57524834958c0ffa9566385df8d821b57b3fd8678f57fdb316b399f",
+      "savedSourcePixelsAltered": false,
+      "visuallyInspected": true,
+      "sceneRenderSize": 512,
+      "sourceCrop": "Full square; no source crop",
+      "visualReview": "Dense crowd after scale correction, broadly consistent small upright figures; target-like color distractors but no exact target outfit identified. This is a manual visual check, not an exhaustive annotated-person audit."
+    },
+    {
+      "id": "wanda-park",
+      "path": "assets/wanda/park.png",
+      "generatedOriginalPath": "C:\\Users\\henri\\.codex\\generated_images\\01a124ab-7497-7900-a0b8-11bc007254b5\\exec-96523937-eec9-4611-8abf-37a4552016eb.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "bytes": 4188331,
+      "sha256": "3bb4ede549bec7fedd65b1ff750a8d8c9e2e94d0124b814688921c59cabb17bf",
+      "savedSourcePixelsAltered": false,
+      "visuallyInspected": true,
+      "sceneRenderSize": 512,
+      "sourceCrop": "Full square; no source crop",
+      "visualReview": "Dense crowd after scale correction, broadly consistent small upright figures; target-like color distractors but no exact target outfit identified. This is a manual visual check, not an exhaustive annotated-person audit."
+    },
+    {
+      "id": "wanda-fairground",
+      "path": "assets/wanda/fairground.png",
+      "generatedOriginalPath": "C:\\Users\\henri\\.codex\\generated_images\\01a124ab-7497-7900-a0b8-11bc007254b5\\exec-6eb72002-d36b-40f6-b645-5c2f85125949.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "bytes": 3841864,
+      "sha256": "98a2e98d5aa1d7971f4d50ee6508b1d9d6be63611a72fc388a7a71eaeaa51b97",
+      "savedSourcePixelsAltered": false,
+      "visuallyInspected": true,
+      "sceneRenderSize": 512,
+      "sourceCrop": "Full square; no source crop",
+      "visualReview": "Dense crowd after scale correction, broadly consistent small upright figures; target-like color distractors but no exact target outfit identified. This is a manual visual check, not an exhaustive annotated-person audit."
+    }
+  ]
+}

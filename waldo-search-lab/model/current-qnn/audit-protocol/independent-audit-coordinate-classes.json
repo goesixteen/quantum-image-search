@@ -1,0 +1,27 @@
+{
+  "scope": "Geometry-only classification using the declared training center-partition rule. This does not establish exact corpus membership, independence of scene identities, or model performance.",
+  "partitionRule": "(floor(centerX/8)+3*floor(centerY/8)) modulo 10: train0..6, validation7, test8..9",
+  "all": {
+    "train-coordinate-class": 589,
+    "test-coordinate-class": 167,
+    "validation-coordinate-class": 84
+  },
+  "byKind": {
+    "band-crossing": {
+      "train-coordinate-class": 382,
+      "validation-coordinate-class": 55,
+      "test-coordinate-class": 103
+    },
+    "clean-default-coordinate": {
+      "train-coordinate-class": 12
+    },
+    "clean-seeded": {
+      "test-coordinate-class": 64,
+      "train-coordinate-class": 195,
+      "validation-coordinate-class": 29
+    }
+  },
+  "autoBandedRegression": {
+    "train-coordinate-class": 3
+  }
+}

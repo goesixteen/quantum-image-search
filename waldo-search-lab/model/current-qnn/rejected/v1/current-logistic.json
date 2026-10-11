@@ -1,0 +1,112 @@
+{
+  "kind": "logistic",
+  "featureVersion": "current-qnn-window-v1",
+  "featureNames": [
+    "torso_red",
+    "torso_white",
+    "stripe_transitions",
+    "stripe_contrast",
+    "stripe_coherence",
+    "lower_blue",
+    "vertical_color_order",
+    "central_color_concentration"
+  ],
+  "coefficients": [
+    -0.24121168225350897,
+    -3.100473393979537,
+    8.133751910413855,
+    -1.2541395877564494,
+    3.7522499271905434,
+    2.0127112396943194,
+    -0.4569264167068867,
+    -0.5237650531232435
+  ],
+  "bias": -3.7006259363749976,
+  "regularization": 0.0001,
+  "trainingObjective": "class-balanced BCE plus L2 on weights",
+  "hyperparameterValidation": [
+    {
+      "l2": 0.0001,
+      "balancedBCE": 0.19393385343605057
+    },
+    {
+      "l2": 0.001,
+      "balancedBCE": 0.20312238052357678
+    },
+    {
+      "l2": 0.01,
+      "balancedBCE": 0.24513647739764957
+    }
+  ],
+  "threshold": 0.9999,
+  "sceneValidation": {
+    "targetScenes": 150,
+    "absenceScenes": 21,
+    "completeHits": 0,
+    "completeHitRate": 0.0,
+    "targetFalsePointScenes": 0,
+    "targetFalsePointRate": 0.0,
+    "targetEmptyOracles": 150,
+    "targetCoverage": 0.0,
+    "absenceFalsePointScenes": 0,
+    "absenceAcceptedPoints": 0,
+    "threshold": 0.9999,
+    "bySize": {
+      "24": {
+        "n": 17,
+        "completeHits": 0,
+        "anyFalse": 0,
+        "emptyOracles": 17
+      },
+      "52": {
+        "n": 36,
+        "completeHits": 0,
+        "anyFalse": 0,
+        "emptyOracles": 36
+      },
+      "80": {
+        "n": 37,
+        "completeHits": 0,
+        "anyFalse": 0,
+        "emptyOracles": 37
+      },
+      "112": {
+        "n": 21,
+        "completeHits": 0,
+        "anyFalse": 0,
+        "emptyOracles": 21
+      }
+    },
+    "feasible": true
+  },
+  "metrics": {
+    "train": {
+      "n": 48020,
+      "threshold": 0.9999,
+      "accuracy": 0.9750104123281966,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positive": 0,
+      "false_positive": 0,
+      "false_negative": 1200,
+      "true_negative": 46820,
+      "bce": 0.1716687469464774,
+      "balanced_bce": 0.18688739344731745
+    },
+    "validation": {
+      "n": 9839,
+      "threshold": 0.9999,
+      "accuracy": 0.9695090964528915,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positive": 0,
+      "false_positive": 0,
+      "false_negative": 300,
+      "true_negative": 9539,
+      "bce": 0.1785885692673599,
+      "balanced_bce": 0.19393385343605057
+    }
+  }
+}

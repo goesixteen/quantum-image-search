@@ -1,0 +1,27 @@
+{
+  "phase": "usable default/parity-checked candidate, before any reserved test scores",
+  "files": {
+    "wanda-qnn.json": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88",
+    "wanda-logistic.json": "a6372e79d4f75d8adb38aa44505f48d0c7fb73ec6fd037abab31d851f4a204ee",
+    "validation-threshold-frontier.json": "aa0a393655de586e5fd571a70cdf6c8e3dc6ac9305c3bf346610ba60c04a605c",
+    "feature-collisions.json": "52070b81a27fe44dadbccc8bb27e6866d9a84d843491f4da2c33b8860f51562e",
+    "quantum-contribution.json": "212831e072df0089febc7d91e5028c1d313832575e5e182dd20fc6bdffc60be2",
+    "trained-parity-fixtures.json": "0df1d36eb45b3c7086182be347a36190c1e8c45de2f18b4de5fd9f4843f32326",
+    "checkpoint-selection.json": "e9264087811eb6899ffa101cf29966eb261adda5873f9c2cba3d53e97ed14206",
+    "training-pairs.json": "34bcb05303ef28b16c45db49604758c906881e223fd8d6e29e7a5ba138b28ff7",
+    "default-regression.json": "b74ae87a18d6ee32d258ae351afd3a01340757dcf5ab0ca728d5cc1fec1eeed0",
+    "parity-verification.json": "6828eb77300652e98a8e7b6d1e100e2e761fafe1219249cf85d66666175ec8eb",
+    "pixel-parity-fixtures.json": "bf740c7c6613f6d412130ef3f273b33d5c40ab4dba439d211fea1200e7077f2f"
+  },
+  "sourceFiles": {
+    "protocol.json": "e7d6c9a0ba102bc4317ac0f2ec599143b0492291f2ad5af5e72d49387c08e761",
+    "build-corpus.mjs": "27316676e237a74b800d68c51d68d2f9a96da94f42be35188595d329ce45b691",
+    "train.py": "40e745903522924adfc1343a4bd7fd399639d0221a82ceb84117d562fd475526",
+    "verify.py": "9d34e321aaeb5e29f273bf1103988657309090f8af29fed1aade19a0cebf87df",
+    "release.py": "39927757b0ec460c776dfb40255f9a15e9a29061337eed56dcfebb2856ebc699",
+    "normalize-backgrounds.mjs": "87f90c68cb71569f3f7dfb96e2800d70722583de530f5710004a6ae84dbf2464",
+    "parity.mjs": "c93af17f70ce9876b424ef7c556d1e551ff1cc1e62cec1613f7aa847e5b547e5"
+  },
+  "elapsedSeconds": 81.49451279640198,
+  "frozenAtUtc": "2026-10-11T04:39:15.976203+00:00"
+}

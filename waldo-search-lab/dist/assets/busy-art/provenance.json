@@ -1,0 +1,94 @@
+{
+  "status": "used-in-interactive",
+  "sourcesUnchanged": true,
+  "catalogEdited": true,
+  "scenes": [
+    {
+      "path": "magic-arena-source.jpg",
+      "sourcePage": "https://www.peppercarrot.com/en/webcomic-sources/ep21_The-Magic-Contest.html",
+      "observedDownloadUrl": "https://www.peppercarrot.com/0_sources/ep21_The-Magic-Contest/hi-res/gfx-only/gfx_Pepper-and-Carrot_by-David-Revoy_E21P03.jpg",
+      "resolvedUrl": "https://www.peppercarrot.com/0_sources/ep21_The-Magic-Contest/hi-res/gfx-only/gfx_Pepper-and-Carrot_by-David-Revoy_E21P03.jpg",
+      "bytes": 3323581,
+      "sha256": "64b5708f3f0d3f8798b6c8ef2ca3f829da5eac948af35186fc83daac9d7fbdd2",
+      "dimensions": [
+        2481,
+        3503
+      ],
+      "downloadedAtUtc": "2026-10-10T18:42:04.157277+00:00",
+      "artist": "David Revoy",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "kind": "Official artwork-only rendering, unchanged JPEG",
+      "imageGenerationUsed": false,
+      "localRasterEdits": false,
+      "id": "magic-arena",
+      "name": "Komona Magic Arena",
+      "source": "magic-arena-source.jpg",
+      "episode": 21,
+      "page": 3,
+      "crop": {
+        "x": 103,
+        "y": 103,
+        "width": 2278,
+        "height": 1786
+      },
+      "preview": "magic-arena-512-preview.png",
+      "coverCropFor512": {
+        "x": 349,
+        "y": 103,
+        "width": 1786,
+        "height": 1786
+      },
+      "previewSHA256": "379adca27715dffd8daf0bd1c115f33c11fc29d28358bc603424d8f6703d86e2",
+      "previewBytes": 593906,
+      "sourceFileUnchanged": true,
+      "method": "Native @napi-rs/canvas source-rectangle crop with center-cover512 rendering; no generative editing",
+      "suggestedVisibleCredit": "Artwork by David Revoy / Pepper&Carrot, CC BY 4.0. Display crop from Episode 21 page 3.",
+      "stagedAbsolutePath": "C:\\Users\\henri\\Documents\\Codex\\2026-10-10\\new-chat\\work\\busy-scenes\\magic-arena-source.jpg"
+    },
+    {
+      "path": "qualicity-queue-source.jpg",
+      "sourcePage": "https://www.peppercarrot.com/en/webcomic-sources/ep27_Coriander-s-Invention.html",
+      "observedDownloadUrl": "https://www.peppercarrot.com/0_sources/ep27_Coriander-s-Invention/hi-res/gfx-only/gfx_Pepper-and-Carrot_by-David-Revoy_E27P06.jpg",
+      "resolvedUrl": "https://www.peppercarrot.com/0_sources/ep27_Coriander-s-Invention/hi-res/gfx-only/gfx_Pepper-and-Carrot_by-David-Revoy_E27P06.jpg",
+      "bytes": 2008871,
+      "sha256": "13d9454416707e9e0b4e6a5a099a6cf3a3d7fcb6f117c9ece98b2c66e12842ce",
+      "dimensions": [
+        2481,
+        3503
+      ],
+      "downloadedAtUtc": "2026-10-10T18:42:58.585175+00:00",
+      "artist": "David Revoy",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "kind": "Official artwork-only rendering, unchanged JPEG",
+      "imageGenerationUsed": false,
+      "localRasterEdits": false,
+      "id": "qualicity-queue",
+      "name": "Qualicity Coronation Queue",
+      "source": "qualicity-queue-source.jpg",
+      "episode": 27,
+      "page": 6,
+      "crop": {
+        "x": 103,
+        "y": 1731,
+        "width": 2278,
+        "height": 1671
+      },
+      "preview": "qualicity-queue-512-preview.png",
+      "coverCropFor512": {
+        "x": 406.5,
+        "y": 1731,
+        "width": 1671,
+        "height": 1671
+      },
+      "previewSHA256": "8eb027c991a6e04803e81bd7f461d0cd3e8494fb4b250792e75325a3157e1bd8",
+      "previewBytes": 476759,
+      "sourceFileUnchanged": true,
+      "method": "Native @napi-rs/canvas source-rectangle crop with center-cover512 rendering; no generative editing",
+      "suggestedVisibleCredit": "Artwork by David Revoy / Pepper&Carrot, CC BY 4.0. Display crop from Episode 27 page 6.",
+      "stagedAbsolutePath": "C:\\Users\\henri\\Documents\\Codex\\2026-10-10\\new-chat\\work\\busy-scenes\\qualicity-queue-source.jpg"
+    }
+  ],
+  "modifications": "Declared panel center-cover crops to512x512; later source-pixel foreground isolation. No generative edits."
+}

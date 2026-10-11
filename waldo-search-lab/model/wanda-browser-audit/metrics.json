@@ -1,0 +1,77 @@
+{
+  "kind": "Fixed known-scene browser/native engineering diagnostic",
+  "scope": "Five same-art worlds at former default center(276,348), heights40/52/64, fully visible target; five absences at52. New420,300 default was set after capture and is not covered by this20-case audit. Not fresh holdout accuracy or generalization.",
+  "modelSHA256": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88",
+  "threshold": 0.9056472752971427,
+  "grid": 64,
+  "native": {
+    "completeHits": 13,
+    "targetScenes": 15,
+    "incorrectPointScenes": 0,
+    "abstentions": 2,
+    "cleanAbsences": 5,
+    "absenceScenes": 5,
+    "falseAbsenceScenes": 0
+  },
+  "browser": {
+    "completeHits": 15,
+    "targetScenes": 15,
+    "incorrectPointScenes": 0,
+    "abstentions": 0,
+    "cleanAbsences": 5,
+    "absenceScenes": 5,
+    "falseAbsenceScenes": 0
+  },
+  "comparison": {
+    "acceptedSetsEqual": 18,
+    "cases": 20,
+    "byteIdenticalFrames": 0,
+    "scoreWindowsPerBackend": 81920,
+    "maxFeatureDifference": 0.14245546342230098,
+    "maxScoreDifference": 0.6946573544056012,
+    "maxRGBChannelDifference": 206,
+    "preNMSThresholdFlips": 4,
+    "changedAcceptedSetCases": [
+      "wanda-beach-h40-default",
+      "wanda-fairground-h40-default"
+    ],
+    "nativeJSToNumPyMaxScoreError": 6.217248937900877e-15,
+    "browserOutsideTargetPixelsDifferentFromNormalizedPNG": 0
+  },
+  "timings": {
+    "nativeMedianScanMs": 1014.3575499999997,
+    "offlineComparisonTotalMs": 39975.000500446185,
+    "offlineComparisonMedianMs": 1991.7564500356093,
+    "browserLiveInferenceTimingMeasured": false,
+    "note": "Native reference scan and offline Python comparison timings on this workstation, not browser performance or a quantum speedup."
+  },
+  "retainedOriginalBenchmark": {
+    "renderer": "native canvas",
+    "completeHits": 298,
+    "targetScenes": 300,
+    "absenceFalseScenes": 0,
+    "absenceScenes": 25,
+    "unchanged": true
+  },
+  "conclusion": "Retain backend sensitivity caveat. All declared browser probes pass, but pixels, scores, and two accepted predicates differ; no renderer remedy or threshold tuning was applied.",
+  "byHeight": [
+    {
+      "height": 40,
+      "targetScenes": 5,
+      "nativeCompleteHits": 3,
+      "browserCompleteHits": 5
+    },
+    {
+      "height": 52,
+      "targetScenes": 5,
+      "nativeCompleteHits": 5,
+      "browserCompleteHits": 5
+    },
+    {
+      "height": 64,
+      "targetScenes": 5,
+      "nativeCompleteHits": 5,
+      "browserCompleteHits": 5
+    }
+  ]
+}

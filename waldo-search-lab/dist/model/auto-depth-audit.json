@@ -1,0 +1,5454 @@
+{
+  "version": 1,
+  "description": "Three sequential, declared engineering protocols. Original Festival was tested first. Same52px reference and fixed threshold.45. No new training or holdout claim.",
+  "protocols": [
+    {
+      "version": 1,
+      "description": "Automatic depth integration, fixed 52px striped target; each object crossed at declared anchors -6,0,+6 plus 25 predefined clean placements. No threshold adjustment.",
+      "startedAt": "2026-10-10T18:48:32.264Z",
+      "sceneIds": [
+        "legacy"
+      ],
+      "grid": 64,
+      "threshold": 0.45,
+      "detectorInputs": [
+        "final composite RGBA",
+        "fixed-size reference RGBA",
+        "declared clean background RGBA"
+      ],
+      "results": [
+        {
+          "id": "legacy",
+          "source": "assets/crowd-captcha.png",
+          "layers": 12,
+          "probes": [
+            {
+              "kind": "object-crossing",
+              "object": "festival-fountain",
+              "cx": 287,
+              "cy": 321,
+              "footDelta": -6,
+              "rect": {
+                "x": 278,
+                "y": 295,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 347,
+              "visibleFraction": 0.1259059754679947,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-fountain",
+              "cx": 287,
+              "cy": 327,
+              "footDelta": 0,
+              "rect": {
+                "x": 278,
+                "y": 301,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 353,
+              "visibleFraction": 0.21688782737395745,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-fountain",
+              "cx": 287,
+              "cy": 333,
+              "footDelta": 6,
+              "rect": {
+                "x": 278,
+                "y": 307,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 359,
+              "visibleFraction": 1,
+              "marks": [
+                2659
+              ],
+              "points": [
+                {
+                  "x": 287,
+                  "y": 333,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-cafe-umbrella",
+              "cx": 468,
+              "cy": 345,
+              "footDelta": -6,
+              "rect": {
+                "x": 459,
+                "y": 319,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 371,
+              "visibleFraction": 0.5839849581075673,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-cafe-umbrella",
+              "cx": 468,
+              "cy": 351,
+              "footDelta": 0,
+              "rect": {
+                "x": 459,
+                "y": 325,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 377,
+              "visibleFraction": 0.7211024792443482,
+              "marks": [
+                2810
+              ],
+              "points": [
+                {
+                  "x": 468,
+                  "y": 351,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-cafe-umbrella",
+              "cx": 468,
+              "cy": 357,
+              "footDelta": 6,
+              "rect": {
+                "x": 459,
+                "y": 331,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 383,
+              "visibleFraction": 1,
+              "marks": [
+                2874
+              ],
+              "points": [
+                {
+                  "x": 468,
+                  "y": 357,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-green-cart",
+              "cx": 453,
+              "cy": 249,
+              "footDelta": -6,
+              "rect": {
+                "x": 444,
+                "y": 223,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 275,
+              "visibleFraction": 0.3536940931352309,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "festival-green-cart",
+                "festival-blue-walker",
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-green-cart",
+              "cx": 453,
+              "cy": 255,
+              "footDelta": 0,
+              "rect": {
+                "x": 444,
+                "y": 229,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 281,
+              "visibleFraction": 0.2973124051147516,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "festival-green-cart",
+                "festival-blue-walker",
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-green-cart",
+              "cx": 453,
+              "cy": 261,
+              "footDelta": 6,
+              "rect": {
+                "x": 444,
+                "y": 235,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 287,
+              "visibleFraction": 1,
+              "marks": [
+                2104
+              ],
+              "points": [
+                {
+                  "x": 453,
+                  "y": 261,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-teal-cart",
+              "cx": 381,
+              "cy": 420,
+              "footDelta": -6,
+              "rect": {
+                "x": 372,
+                "y": 394,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 446,
+              "visibleFraction": 0.46849650949328897,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-teal-cart",
+              "cx": 381,
+              "cy": 426,
+              "footDelta": 0,
+              "rect": {
+                "x": 372,
+                "y": 400,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 452,
+              "visibleFraction": 0.4218272596187439,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-teal-cart",
+              "cx": 381,
+              "cy": 432,
+              "footDelta": 6,
+              "rect": {
+                "x": 372,
+                "y": 406,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 458,
+              "visibleFraction": 1,
+              "marks": [
+                3503
+              ],
+              "points": [
+                {
+                  "x": 381,
+                  "y": 432,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-accordionist",
+              "cx": 291.5,
+              "cy": 221,
+              "footDelta": -6,
+              "rect": {
+                "x": 283,
+                "y": 195,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 247,
+              "visibleFraction": 0.13730808565239763,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "festival-accordionist",
+                "festival-bass-player",
+                "festival-green-cart",
+                "festival-blue-walker",
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-accordionist",
+              "cx": 291.5,
+              "cy": 227,
+              "footDelta": 0,
+              "rect": {
+                "x": 283,
+                "y": 201,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 253,
+              "visibleFraction": 0.08723408309883311,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "festival-accordionist",
+                "festival-bass-player",
+                "festival-green-cart",
+                "festival-blue-walker",
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-accordionist",
+              "cx": 291.5,
+              "cy": 233,
+              "footDelta": 6,
+              "rect": {
+                "x": 283,
+                "y": 207,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 259,
+              "visibleFraction": 0.9774054005983726,
+              "marks": [
+                1892
+              ],
+              "points": [
+                {
+                  "x": 292,
+                  "y": 233,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-green-cart",
+                "festival-blue-walker",
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-bass-player",
+              "cx": 258,
+              "cy": 225,
+              "footDelta": -6,
+              "rect": {
+                "x": 249,
+                "y": 199,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 251,
+              "visibleFraction": 0.06095523639528162,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "festival-accordionist",
+                "festival-bass-player",
+                "festival-green-cart",
+                "festival-blue-walker",
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-bass-player",
+              "cx": 258,
+              "cy": 231,
+              "footDelta": 0,
+              "rect": {
+                "x": 249,
+                "y": 205,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 257,
+              "visibleFraction": 0.10789762874221068,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "festival-bass-player",
+                "festival-green-cart",
+                "festival-blue-walker",
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-bass-player",
+              "cx": 258,
+              "cy": 237,
+              "footDelta": 6,
+              "rect": {
+                "x": 249,
+                "y": 211,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 263,
+              "visibleFraction": 1,
+              "marks": [
+                1888
+              ],
+              "points": [
+                {
+                  "x": 258,
+                  "y": 237,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-green-cart",
+                "festival-blue-walker",
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-blue-shopper",
+              "cx": 163.5,
+              "cy": 438,
+              "footDelta": -6,
+              "rect": {
+                "x": 155,
+                "y": 412,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 464,
+              "visibleFraction": 0.07106150787349057,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-blue-shopper",
+              "cx": 163.5,
+              "cy": 444,
+              "footDelta": 0,
+              "rect": {
+                "x": 155,
+                "y": 418,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 470,
+              "visibleFraction": 0.15610409904273093,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-blue-shopper",
+              "cx": 163.5,
+              "cy": 450,
+              "footDelta": 6,
+              "rect": {
+                "x": 155,
+                "y": 424,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 476,
+              "visibleFraction": 1,
+              "marks": [
+                3604
+              ],
+              "points": [
+                {
+                  "x": 164,
+                  "y": 450,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-navy-coat-woman",
+              "cx": 214.5,
+              "cy": 446,
+              "footDelta": -6,
+              "rect": {
+                "x": 206,
+                "y": 420,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 472,
+              "visibleFraction": 0.2541749509296372,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-navy-coat-woman",
+              "cx": 214.5,
+              "cy": 452,
+              "footDelta": 0,
+              "rect": {
+                "x": 206,
+                "y": 426,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 478,
+              "visibleFraction": 0.19125690002350296,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-navy-coat-woman",
+              "cx": 214.5,
+              "cy": 458,
+              "footDelta": 6,
+              "rect": {
+                "x": 206,
+                "y": 432,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 484,
+              "visibleFraction": 1,
+              "marks": [
+                3674
+              ],
+              "points": [
+                {
+                  "x": 215,
+                  "y": 458,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": []
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-pale-suit-man",
+              "cx": 287.5,
+              "cy": 384,
+              "footDelta": -6,
+              "rect": {
+                "x": 279,
+                "y": 358,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 410,
+              "visibleFraction": 0.40964383492031226,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-pale-suit-man",
+              "cx": 287.5,
+              "cy": 390,
+              "footDelta": 0,
+              "rect": {
+                "x": 279,
+                "y": 364,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 416,
+              "visibleFraction": 0.3534527114154497,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-pale-suit-man",
+              "cx": 287.5,
+              "cy": 396,
+              "footDelta": 6,
+              "rect": {
+                "x": 279,
+                "y": 370,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 422,
+              "visibleFraction": 1,
+              "marks": [
+                3172
+              ],
+              "points": [
+                {
+                  "x": 288,
+                  "y": 396,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-green-dress-woman",
+              "cx": 319.5,
+              "cy": 329,
+              "footDelta": -6,
+              "rect": {
+                "x": 311,
+                "y": 303,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 355,
+              "visibleFraction": 0.37240752856879694,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-green-dress-woman",
+              "cx": 319.5,
+              "cy": 335,
+              "footDelta": 0,
+              "rect": {
+                "x": 311,
+                "y": 309,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 361,
+              "visibleFraction": 0.3205866846220788,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-green-dress-woman",
+              "cx": 319.5,
+              "cy": 341,
+              "footDelta": 6,
+              "rect": {
+                "x": 311,
+                "y": 315,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 367,
+              "visibleFraction": 1,
+              "marks": [
+                2728
+              ],
+              "points": [
+                {
+                  "x": 320,
+                  "y": 341,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-yellow-dancer",
+              "cx": 367,
+              "cy": 210,
+              "footDelta": -6,
+              "rect": {
+                "x": 358,
+                "y": 184,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 236,
+              "visibleFraction": 0.5699657619086942,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "festival-yellow-dancer",
+                "festival-accordionist",
+                "festival-bass-player",
+                "festival-green-cart",
+                "festival-blue-walker",
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-yellow-dancer",
+              "cx": 367,
+              "cy": 216,
+              "footDelta": 0,
+              "rect": {
+                "x": 358,
+                "y": 190,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 242,
+              "visibleFraction": 0.46511716541635173,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "festival-yellow-dancer",
+                "festival-accordionist",
+                "festival-bass-player",
+                "festival-green-cart",
+                "festival-blue-walker",
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-yellow-dancer",
+              "cx": 367,
+              "cy": 222,
+              "footDelta": 6,
+              "rect": {
+                "x": 358,
+                "y": 196,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 248,
+              "visibleFraction": 0.9427861802613274,
+              "marks": [
+                1773
+              ],
+              "points": [
+                {
+                  "x": 367,
+                  "y": 222,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-accordionist",
+                "festival-bass-player",
+                "festival-green-cart",
+                "festival-blue-walker",
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-blue-walker",
+              "cx": 375.5,
+              "cy": 249,
+              "footDelta": -6,
+              "rect": {
+                "x": 367,
+                "y": 223,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 275,
+              "visibleFraction": 0.23279361227743653,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "festival-green-cart",
+                "festival-blue-walker",
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-blue-walker",
+              "cx": 375.5,
+              "cy": 255,
+              "footDelta": 0,
+              "rect": {
+                "x": 367,
+                "y": 229,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 281,
+              "visibleFraction": 0.2344451714127818,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "festival-green-cart",
+                "festival-blue-walker",
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "festival-blue-walker",
+              "cx": 375.5,
+              "cy": 261,
+              "footDelta": 6,
+              "rect": {
+                "x": 367,
+                "y": 235,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 287,
+              "visibleFraction": 1,
+              "marks": [
+                2095
+              ],
+              "points": [
+                {
+                  "x": 376,
+                  "y": 261,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 64,
+              "cy": 64,
+              "rect": {
+                "x": 55,
+                "y": 38,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 90,
+              "visibleFraction": 1,
+              "marks": [
+                520
+              ],
+              "points": [
+                {
+                  "x": 64,
+                  "y": 64,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-yellow-dancer",
+                "festival-accordionist",
+                "festival-bass-player",
+                "festival-green-cart",
+                "festival-blue-walker",
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 160,
+              "cy": 64,
+              "rect": {
+                "x": 151,
+                "y": 38,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 90,
+              "visibleFraction": 1,
+              "marks": [
+                532
+              ],
+              "points": [
+                {
+                  "x": 160,
+                  "y": 64,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-yellow-dancer",
+                "festival-accordionist",
+                "festival-bass-player",
+                "festival-green-cart",
+                "festival-blue-walker",
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 256,
+              "cy": 64,
+              "rect": {
+                "x": 247,
+                "y": 38,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 90,
+              "visibleFraction": 1,
+              "marks": [
+                544
+              ],
+              "points": [
+                {
+                  "x": 256,
+                  "y": 64,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-yellow-dancer",
+                "festival-accordionist",
+                "festival-bass-player",
+                "festival-green-cart",
+                "festival-blue-walker",
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 352,
+              "cy": 64,
+              "rect": {
+                "x": 343,
+                "y": 38,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 90,
+              "visibleFraction": 1,
+              "marks": [
+                556
+              ],
+              "points": [
+                {
+                  "x": 352,
+                  "y": 64,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-yellow-dancer",
+                "festival-accordionist",
+                "festival-bass-player",
+                "festival-green-cart",
+                "festival-blue-walker",
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 448,
+              "cy": 64,
+              "rect": {
+                "x": 439,
+                "y": 38,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 90,
+              "visibleFraction": 1,
+              "marks": [
+                568
+              ],
+              "points": [
+                {
+                  "x": 448,
+                  "y": 64,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-yellow-dancer",
+                "festival-accordionist",
+                "festival-bass-player",
+                "festival-green-cart",
+                "festival-blue-walker",
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 64,
+              "cy": 160,
+              "rect": {
+                "x": 55,
+                "y": 134,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 186,
+              "visibleFraction": 1,
+              "marks": [
+                1288
+              ],
+              "points": [
+                {
+                  "x": 64,
+                  "y": 160,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-yellow-dancer",
+                "festival-accordionist",
+                "festival-bass-player",
+                "festival-green-cart",
+                "festival-blue-walker",
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 160,
+              "cy": 160,
+              "rect": {
+                "x": 151,
+                "y": 134,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 186,
+              "visibleFraction": 1,
+              "marks": [
+                1300
+              ],
+              "points": [
+                {
+                  "x": 160,
+                  "y": 160,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-yellow-dancer",
+                "festival-accordionist",
+                "festival-bass-player",
+                "festival-green-cart",
+                "festival-blue-walker",
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 256,
+              "cy": 160,
+              "rect": {
+                "x": 247,
+                "y": 134,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 186,
+              "visibleFraction": 1,
+              "marks": [
+                1312
+              ],
+              "points": [
+                {
+                  "x": 256,
+                  "y": 160,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-yellow-dancer",
+                "festival-accordionist",
+                "festival-bass-player",
+                "festival-green-cart",
+                "festival-blue-walker",
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 352,
+              "cy": 160,
+              "rect": {
+                "x": 343,
+                "y": 134,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 186,
+              "visibleFraction": 1,
+              "marks": [
+                1324
+              ],
+              "points": [
+                {
+                  "x": 352,
+                  "y": 160,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-yellow-dancer",
+                "festival-accordionist",
+                "festival-bass-player",
+                "festival-green-cart",
+                "festival-blue-walker",
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 448,
+              "cy": 160,
+              "rect": {
+                "x": 439,
+                "y": 134,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 186,
+              "visibleFraction": 1,
+              "marks": [
+                1336
+              ],
+              "points": [
+                {
+                  "x": 448,
+                  "y": 160,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-yellow-dancer",
+                "festival-accordionist",
+                "festival-bass-player",
+                "festival-green-cart",
+                "festival-blue-walker",
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 64,
+              "cy": 256,
+              "rect": {
+                "x": 55,
+                "y": 230,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 282,
+              "visibleFraction": 1,
+              "marks": [
+                2056
+              ],
+              "points": [
+                {
+                  "x": 64,
+                  "y": 256,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 160,
+              "cy": 256,
+              "rect": {
+                "x": 151,
+                "y": 230,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 282,
+              "visibleFraction": 1,
+              "marks": [
+                2068
+              ],
+              "points": [
+                {
+                  "x": 160,
+                  "y": 256,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 256,
+              "cy": 256,
+              "rect": {
+                "x": 247,
+                "y": 230,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 282,
+              "visibleFraction": 1,
+              "marks": [
+                2080
+              ],
+              "points": [
+                {
+                  "x": 256,
+                  "y": 256,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 352,
+              "cy": 256,
+              "rect": {
+                "x": 343,
+                "y": 230,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 282,
+              "visibleFraction": 1,
+              "marks": [
+                2092
+              ],
+              "points": [
+                {
+                  "x": 352,
+                  "y": 256,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 448,
+              "cy": 256,
+              "rect": {
+                "x": 439,
+                "y": 230,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 282,
+              "visibleFraction": 1,
+              "marks": [
+                2104
+              ],
+              "points": [
+                {
+                  "x": 448,
+                  "y": 256,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-fountain",
+                "festival-green-dress-woman",
+                "festival-cafe-umbrella",
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 64,
+              "cy": 352,
+              "rect": {
+                "x": 55,
+                "y": 326,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 378,
+              "visibleFraction": 1,
+              "marks": [
+                2824
+              ],
+              "points": [
+                {
+                  "x": 64,
+                  "y": 352,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 160,
+              "cy": 352,
+              "rect": {
+                "x": 151,
+                "y": 326,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 378,
+              "visibleFraction": 1,
+              "marks": [
+                2836
+              ],
+              "points": [
+                {
+                  "x": 160,
+                  "y": 352,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 256,
+              "cy": 352,
+              "rect": {
+                "x": 247,
+                "y": 326,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 378,
+              "visibleFraction": 1,
+              "marks": [
+                2848
+              ],
+              "points": [
+                {
+                  "x": 256,
+                  "y": 352,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 352,
+              "cy": 352,
+              "rect": {
+                "x": 343,
+                "y": 326,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 378,
+              "visibleFraction": 1,
+              "marks": [
+                2860
+              ],
+              "points": [
+                {
+                  "x": 352,
+                  "y": 352,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 448,
+              "cy": 352,
+              "rect": {
+                "x": 439,
+                "y": 326,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 378,
+              "visibleFraction": 1,
+              "marks": [
+                2872
+              ],
+              "points": [
+                {
+                  "x": 448,
+                  "y": 352,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-pale-suit-man",
+                "festival-teal-cart",
+                "festival-blue-shopper",
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 64,
+              "cy": 448,
+              "rect": {
+                "x": 55,
+                "y": 422,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 474,
+              "visibleFraction": 1,
+              "marks": [
+                3592
+              ],
+              "points": [
+                {
+                  "x": 64,
+                  "y": 448,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 160,
+              "cy": 448,
+              "rect": {
+                "x": 151,
+                "y": 422,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 474,
+              "visibleFraction": 1,
+              "marks": [
+                3604
+              ],
+              "points": [
+                {
+                  "x": 160,
+                  "y": 448,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 256,
+              "cy": 448,
+              "rect": {
+                "x": 247,
+                "y": 422,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 474,
+              "visibleFraction": 1,
+              "marks": [
+                3616
+              ],
+              "points": [
+                {
+                  "x": 256,
+                  "y": 448,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 352,
+              "cy": 448,
+              "rect": {
+                "x": 343,
+                "y": 422,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 474,
+              "visibleFraction": 1,
+              "marks": [
+                3628
+              ],
+              "points": [
+                {
+                  "x": 352,
+                  "y": 448,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-navy-coat-woman"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 448,
+              "cy": 448,
+              "rect": {
+                "x": 439,
+                "y": 422,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 474,
+              "visibleFraction": 1,
+              "marks": [
+                3640
+              ],
+              "points": [
+                {
+                  "x": 448,
+                  "y": 448,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "festival-navy-coat-woman"
+              ]
+            }
+          ],
+          "emptyExact": true,
+          "summary": {
+            "probes": 61,
+            "hits": 38,
+            "falsePoints": 0,
+            "misses": 23
+          }
+        }
+      ],
+      "completedAt": "2026-10-10T18:48:41.044Z"
+    },
+    {
+      "version": 1,
+      "description": "Automatic depth integration, fixed 52px striped target; each object crossed at declared anchors -6,0,+6 plus 25 predefined clean placements. No threshold adjustment.",
+      "startedAt": "2026-10-10T18:52:47.827Z",
+      "sceneIds": [
+        "magic-arena"
+      ],
+      "grid": 64,
+      "threshold": 0.45,
+      "detectorInputs": [
+        "final composite RGBA",
+        "fixed-size reference RGBA",
+        "declared clean background RGBA"
+      ],
+      "results": [
+        {
+          "id": "magic-arena",
+          "source": "assets/busy-art/magic-arena.png",
+          "layers": 10,
+          "probes": [
+            {
+              "kind": "object-crossing",
+              "object": "arena-covered-podium",
+              "cx": 288,
+              "cy": 299,
+              "footDelta": -6,
+              "rect": {
+                "x": 279,
+                "y": 273,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 325,
+              "visibleFraction": 0,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "arena-left-entrance",
+                "arena-covered-podium",
+                "arena-green-contestant",
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-covered-podium",
+              "cx": 288,
+              "cy": 305,
+              "footDelta": 0,
+              "rect": {
+                "x": 279,
+                "y": 279,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 331,
+              "visibleFraction": 0.007317677399683663,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "arena-covered-podium",
+                "arena-green-contestant",
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-covered-podium",
+              "cx": 288,
+              "cy": 311,
+              "footDelta": 6,
+              "rect": {
+                "x": 279,
+                "y": 285,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 337,
+              "visibleFraction": 1,
+              "marks": [
+                2468
+              ],
+              "points": [
+                {
+                  "x": 288,
+                  "y": 311,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-green-contestant",
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-right-stall",
+              "cx": 485.5,
+              "cy": 430,
+              "footDelta": -6,
+              "rect": {
+                "x": 477,
+                "y": 404,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 456,
+              "visibleFraction": 0.47876793688503244,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-right-stall",
+              "cx": 485.5,
+              "cy": 436,
+              "footDelta": 0,
+              "rect": {
+                "x": 477,
+                "y": 410,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 462,
+              "visibleFraction": 0.4830937513895329,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-right-stall",
+              "cx": 485.5,
+              "cy": 442,
+              "footDelta": 6,
+              "rect": {
+                "x": 477,
+                "y": 416,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 468,
+              "visibleFraction": 1,
+              "marks": [
+                3580
+              ],
+              "points": [
+                {
+                  "x": 486,
+                  "y": 442,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-left-entrance",
+              "cx": 87,
+              "cy": 298,
+              "footDelta": -6,
+              "rect": {
+                "x": 78,
+                "y": 272,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 324,
+              "visibleFraction": 0.030807930024709867,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "arena-left-entrance",
+                "arena-covered-podium",
+                "arena-green-contestant",
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-left-entrance",
+              "cx": 87,
+              "cy": 304,
+              "footDelta": 0,
+              "rect": {
+                "x": 78,
+                "y": 278,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 330,
+              "visibleFraction": 0.12306656418530494,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "arena-left-entrance",
+                "arena-covered-podium",
+                "arena-green-contestant",
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-left-entrance",
+              "cx": 87,
+              "cy": 310,
+              "footDelta": 6,
+              "rect": {
+                "x": 78,
+                "y": 284,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 336,
+              "visibleFraction": 1,
+              "marks": [
+                2442
+              ],
+              "points": [
+                {
+                  "x": 87,
+                  "y": 310,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-green-contestant",
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-brass-tuba",
+              "cx": 28.5,
+              "cy": 471,
+              "footDelta": -6,
+              "rect": {
+                "x": 20,
+                "y": 445,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 497,
+              "visibleFraction": 0.3001835771500441,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-brass-tuba",
+              "cx": 28.5,
+              "cy": 477,
+              "footDelta": 0,
+              "rect": {
+                "x": 20,
+                "y": 451,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 503,
+              "visibleFraction": 0.3525252974394481,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-brass-tuba",
+              "cx": 28.5,
+              "cy": 483,
+              "footDelta": 6,
+              "rect": {
+                "x": 20,
+                "y": 457,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 509,
+              "visibleFraction": 1,
+              "marks": [
+                3843
+              ],
+              "points": [
+                {
+                  "x": 29,
+                  "y": 483,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": []
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-purple-contestant",
+              "cx": 139.5,
+              "cy": 377,
+              "footDelta": -6,
+              "rect": {
+                "x": 131,
+                "y": 351,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 403,
+              "visibleFraction": 0.7940442236719242,
+              "marks": [
+                3025
+              ],
+              "points": [
+                {
+                  "x": 140,
+                  "y": 377,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-purple-contestant",
+              "cx": 139.5,
+              "cy": 383,
+              "footDelta": 0,
+              "rect": {
+                "x": 131,
+                "y": 357,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 409,
+              "visibleFraction": 0.7022238878972477,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-purple-contestant",
+              "cx": 139.5,
+              "cy": 389,
+              "footDelta": 6,
+              "rect": {
+                "x": 131,
+                "y": 363,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 415,
+              "visibleFraction": 1,
+              "marks": [
+                3089
+              ],
+              "points": [
+                {
+                  "x": 140,
+                  "y": 389,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-green-contestant",
+              "cx": 133,
+              "cy": 318,
+              "footDelta": -6,
+              "rect": {
+                "x": 124,
+                "y": 292,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 344,
+              "visibleFraction": 0.8764887852782559,
+              "marks": [
+                2512
+              ],
+              "points": [
+                {
+                  "x": 133,
+                  "y": 318,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-green-contestant",
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-green-contestant",
+              "cx": 133,
+              "cy": 324,
+              "footDelta": 0,
+              "rect": {
+                "x": 124,
+                "y": 298,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 350,
+              "visibleFraction": 0.7961404333437085,
+              "marks": [
+                2576
+              ],
+              "points": [
+                {
+                  "x": 133,
+                  "y": 324,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-green-contestant",
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-green-contestant",
+              "cx": 133,
+              "cy": 330,
+              "footDelta": 6,
+              "rect": {
+                "x": 124,
+                "y": 304,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 356,
+              "visibleFraction": 1,
+              "marks": [
+                2640
+              ],
+              "points": [
+                {
+                  "x": 133,
+                  "y": 330,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-red-rear-contestant",
+              "cx": 204.5,
+              "cy": 290,
+              "footDelta": -6,
+              "rect": {
+                "x": 196,
+                "y": 264,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 316,
+              "visibleFraction": 0.8465193391222599,
+              "marks": [
+                2329
+              ],
+              "points": [
+                {
+                  "x": 205,
+                  "y": 290,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-red-rear-contestant",
+                "arena-left-entrance",
+                "arena-covered-podium",
+                "arena-green-contestant",
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-red-rear-contestant",
+              "cx": 204.5,
+              "cy": 296,
+              "footDelta": 0,
+              "rect": {
+                "x": 196,
+                "y": 270,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 322,
+              "visibleFraction": 0.7983890946279864,
+              "marks": [
+                2393
+              ],
+              "points": [
+                {
+                  "x": 205,
+                  "y": 296,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-red-rear-contestant",
+                "arena-left-entrance",
+                "arena-covered-podium",
+                "arena-green-contestant",
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-red-rear-contestant",
+              "cx": 204.5,
+              "cy": 302,
+              "footDelta": 6,
+              "rect": {
+                "x": 196,
+                "y": 276,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 328,
+              "visibleFraction": 1,
+              "marks": [
+                2393
+              ],
+              "points": [
+                {
+                  "x": 205,
+                  "y": 302,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-left-entrance",
+                "arena-covered-podium",
+                "arena-green-contestant",
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-gold-contestant",
+              "cx": 239.5,
+              "cy": 328,
+              "footDelta": -6,
+              "rect": {
+                "x": 231,
+                "y": 302,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 354,
+              "visibleFraction": 0.7903091591658356,
+              "marks": [
+                2654
+              ],
+              "points": [
+                {
+                  "x": 240,
+                  "y": 328,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-gold-contestant",
+              "cx": 239.5,
+              "cy": 334,
+              "footDelta": 0,
+              "rect": {
+                "x": 231,
+                "y": 308,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 360,
+              "visibleFraction": 0.7344102345849187,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-gold-contestant",
+              "cx": 239.5,
+              "cy": 340,
+              "footDelta": 6,
+              "rect": {
+                "x": 231,
+                "y": 314,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 366,
+              "visibleFraction": 1,
+              "marks": [
+                2718
+              ],
+              "points": [
+                {
+                  "x": 240,
+                  "y": 340,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-brown-contestant",
+              "cx": 345,
+              "cy": 328,
+              "footDelta": -6,
+              "rect": {
+                "x": 336,
+                "y": 302,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 354,
+              "visibleFraction": 0.886550591702821,
+              "marks": [
+                2667
+              ],
+              "points": [
+                {
+                  "x": 345,
+                  "y": 328,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-brown-contestant",
+              "cx": 345,
+              "cy": 334,
+              "footDelta": 0,
+              "rect": {
+                "x": 336,
+                "y": 308,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 360,
+              "visibleFraction": 0.8323730999129756,
+              "marks": [
+                2667
+              ],
+              "points": [
+                {
+                  "x": 345,
+                  "y": 334,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-brown-contestant",
+              "cx": 345,
+              "cy": 340,
+              "footDelta": 6,
+              "rect": {
+                "x": 336,
+                "y": 314,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 366,
+              "visibleFraction": 1,
+              "marks": [
+                2731
+              ],
+              "points": [
+                {
+                  "x": 345,
+                  "y": 340,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-red-front-contestant",
+              "cx": 297,
+              "cy": 380,
+              "footDelta": -6,
+              "rect": {
+                "x": 288,
+                "y": 354,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 406,
+              "visibleFraction": 0.7993165086039878,
+              "marks": [
+                3045
+              ],
+              "points": [
+                {
+                  "x": 297,
+                  "y": 380,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-red-front-contestant",
+              "cx": 297,
+              "cy": 386,
+              "footDelta": 0,
+              "rect": {
+                "x": 288,
+                "y": 360,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 412,
+              "visibleFraction": 0.7163066056013263,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "arena-red-front-contestant",
+              "cx": 297,
+              "cy": 392,
+              "footDelta": 6,
+              "rect": {
+                "x": 288,
+                "y": 366,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 418,
+              "visibleFraction": 1,
+              "marks": [
+                3173
+              ],
+              "points": [
+                {
+                  "x": 297,
+                  "y": 392,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 64,
+              "cy": 64,
+              "rect": {
+                "x": 55,
+                "y": 38,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 90,
+              "visibleFraction": 1,
+              "marks": [
+                520
+              ],
+              "points": [
+                {
+                  "x": 64,
+                  "y": 64,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-red-rear-contestant",
+                "arena-left-entrance",
+                "arena-covered-podium",
+                "arena-green-contestant",
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 160,
+              "cy": 64,
+              "rect": {
+                "x": 151,
+                "y": 38,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 90,
+              "visibleFraction": 1,
+              "marks": [
+                532
+              ],
+              "points": [
+                {
+                  "x": 160,
+                  "y": 64,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-red-rear-contestant",
+                "arena-left-entrance",
+                "arena-covered-podium",
+                "arena-green-contestant",
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 256,
+              "cy": 64,
+              "rect": {
+                "x": 247,
+                "y": 38,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 90,
+              "visibleFraction": 1,
+              "marks": [
+                544
+              ],
+              "points": [
+                {
+                  "x": 256,
+                  "y": 64,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-red-rear-contestant",
+                "arena-left-entrance",
+                "arena-covered-podium",
+                "arena-green-contestant",
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 352,
+              "cy": 64,
+              "rect": {
+                "x": 343,
+                "y": 38,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 90,
+              "visibleFraction": 1,
+              "marks": [
+                556
+              ],
+              "points": [
+                {
+                  "x": 352,
+                  "y": 64,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-red-rear-contestant",
+                "arena-left-entrance",
+                "arena-covered-podium",
+                "arena-green-contestant",
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 448,
+              "cy": 64,
+              "rect": {
+                "x": 439,
+                "y": 38,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 90,
+              "visibleFraction": 1,
+              "marks": [
+                568
+              ],
+              "points": [
+                {
+                  "x": 448,
+                  "y": 64,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-red-rear-contestant",
+                "arena-left-entrance",
+                "arena-covered-podium",
+                "arena-green-contestant",
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 64,
+              "cy": 160,
+              "rect": {
+                "x": 55,
+                "y": 134,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 186,
+              "visibleFraction": 1,
+              "marks": [
+                1288
+              ],
+              "points": [
+                {
+                  "x": 64,
+                  "y": 160,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-red-rear-contestant",
+                "arena-left-entrance",
+                "arena-covered-podium",
+                "arena-green-contestant",
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 160,
+              "cy": 160,
+              "rect": {
+                "x": 151,
+                "y": 134,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 186,
+              "visibleFraction": 1,
+              "marks": [
+                1300
+              ],
+              "points": [
+                {
+                  "x": 160,
+                  "y": 160,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-red-rear-contestant",
+                "arena-left-entrance",
+                "arena-covered-podium",
+                "arena-green-contestant",
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 256,
+              "cy": 160,
+              "rect": {
+                "x": 247,
+                "y": 134,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 186,
+              "visibleFraction": 1,
+              "marks": [
+                1312
+              ],
+              "points": [
+                {
+                  "x": 256,
+                  "y": 160,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-red-rear-contestant",
+                "arena-left-entrance",
+                "arena-covered-podium",
+                "arena-green-contestant",
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 352,
+              "cy": 160,
+              "rect": {
+                "x": 343,
+                "y": 134,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 186,
+              "visibleFraction": 1,
+              "marks": [
+                1324
+              ],
+              "points": [
+                {
+                  "x": 352,
+                  "y": 160,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-red-rear-contestant",
+                "arena-left-entrance",
+                "arena-covered-podium",
+                "arena-green-contestant",
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 448,
+              "cy": 160,
+              "rect": {
+                "x": 439,
+                "y": 134,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 186,
+              "visibleFraction": 1,
+              "marks": [
+                1336
+              ],
+              "points": [
+                {
+                  "x": 448,
+                  "y": 160,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-red-rear-contestant",
+                "arena-left-entrance",
+                "arena-covered-podium",
+                "arena-green-contestant",
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 64,
+              "cy": 256,
+              "rect": {
+                "x": 55,
+                "y": 230,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 282,
+              "visibleFraction": 0.07539367452851163,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "arena-red-rear-contestant",
+                "arena-left-entrance",
+                "arena-covered-podium",
+                "arena-green-contestant",
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 160,
+              "cy": 256,
+              "rect": {
+                "x": 151,
+                "y": 230,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 282,
+              "visibleFraction": 1,
+              "marks": [
+                2068
+              ],
+              "points": [
+                {
+                  "x": 160,
+                  "y": 256,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-red-rear-contestant",
+                "arena-left-entrance",
+                "arena-covered-podium",
+                "arena-green-contestant",
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 256,
+              "cy": 256,
+              "rect": {
+                "x": 247,
+                "y": 230,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 282,
+              "visibleFraction": 0.9829381237017792,
+              "marks": [
+                2080
+              ],
+              "points": [
+                {
+                  "x": 256,
+                  "y": 256,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-red-rear-contestant",
+                "arena-left-entrance",
+                "arena-covered-podium",
+                "arena-green-contestant",
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 352,
+              "cy": 256,
+              "rect": {
+                "x": 343,
+                "y": 230,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 282,
+              "visibleFraction": 1,
+              "marks": [
+                2092
+              ],
+              "points": [
+                {
+                  "x": 352,
+                  "y": 256,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-red-rear-contestant",
+                "arena-left-entrance",
+                "arena-covered-podium",
+                "arena-green-contestant",
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 448,
+              "cy": 256,
+              "rect": {
+                "x": 439,
+                "y": 230,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 282,
+              "visibleFraction": 1,
+              "marks": [
+                2104
+              ],
+              "points": [
+                {
+                  "x": 448,
+                  "y": 256,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-red-rear-contestant",
+                "arena-left-entrance",
+                "arena-covered-podium",
+                "arena-green-contestant",
+                "arena-gold-contestant",
+                "arena-brown-contestant",
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 64,
+              "cy": 352,
+              "rect": {
+                "x": 55,
+                "y": 326,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 378,
+              "visibleFraction": 1,
+              "marks": [
+                2824
+              ],
+              "points": [
+                {
+                  "x": 64,
+                  "y": 352,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 160,
+              "cy": 352,
+              "rect": {
+                "x": 151,
+                "y": 326,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 378,
+              "visibleFraction": 1,
+              "marks": [
+                2836
+              ],
+              "points": [
+                {
+                  "x": 160,
+                  "y": 352,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 256,
+              "cy": 352,
+              "rect": {
+                "x": 247,
+                "y": 326,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 378,
+              "visibleFraction": 1,
+              "marks": [
+                2848
+              ],
+              "points": [
+                {
+                  "x": 256,
+                  "y": 352,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 352,
+              "cy": 352,
+              "rect": {
+                "x": 343,
+                "y": 326,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 378,
+              "visibleFraction": 1,
+              "marks": [
+                2860
+              ],
+              "points": [
+                {
+                  "x": 352,
+                  "y": 352,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 448,
+              "cy": 352,
+              "rect": {
+                "x": 439,
+                "y": 326,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 378,
+              "visibleFraction": 1,
+              "marks": [
+                2872
+              ],
+              "points": [
+                {
+                  "x": 448,
+                  "y": 352,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-purple-contestant",
+                "arena-red-front-contestant",
+                "arena-right-stall",
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 64,
+              "cy": 448,
+              "rect": {
+                "x": 55,
+                "y": 422,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 474,
+              "visibleFraction": 1,
+              "marks": [
+                3592
+              ],
+              "points": [
+                {
+                  "x": 64,
+                  "y": 448,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 160,
+              "cy": 448,
+              "rect": {
+                "x": 151,
+                "y": 422,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 474,
+              "visibleFraction": 1,
+              "marks": [
+                3604
+              ],
+              "points": [
+                {
+                  "x": 160,
+                  "y": 448,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 256,
+              "cy": 448,
+              "rect": {
+                "x": 247,
+                "y": 422,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 474,
+              "visibleFraction": 1,
+              "marks": [
+                3616
+              ],
+              "points": [
+                {
+                  "x": 256,
+                  "y": 448,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 352,
+              "cy": 448,
+              "rect": {
+                "x": 343,
+                "y": 422,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 474,
+              "visibleFraction": 1,
+              "marks": [
+                3628
+              ],
+              "points": [
+                {
+                  "x": 352,
+                  "y": 448,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-brass-tuba"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 448,
+              "cy": 448,
+              "rect": {
+                "x": 439,
+                "y": 422,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 474,
+              "visibleFraction": 1,
+              "marks": [
+                3640
+              ],
+              "points": [
+                {
+                  "x": 448,
+                  "y": 448,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "arena-brass-tuba"
+              ]
+            }
+          ],
+          "emptyExact": true,
+          "summary": {
+            "probes": 55,
+            "hits": 43,
+            "falsePoints": 0,
+            "misses": 12
+          }
+        }
+      ],
+      "completedAt": "2026-10-10T18:52:55.653Z"
+    },
+    {
+      "version": 1,
+      "description": "Automatic depth integration, fixed 52px striped target; each object crossed at declared anchors -6,0,+6 plus 25 predefined clean placements. No threshold adjustment.",
+      "startedAt": "2026-10-10T18:55:21.195Z",
+      "sceneIds": [
+        "qualicity-queue"
+      ],
+      "grid": 64,
+      "threshold": 0.45,
+      "detectorInputs": [
+        "final composite RGBA",
+        "fixed-size reference RGBA",
+        "declared clean background RGBA"
+      ],
+      "results": [
+        {
+          "id": "qualicity-queue",
+          "source": "assets/busy-art/qualicity-queue.png",
+          "layers": 10,
+          "probes": [
+            {
+              "kind": "object-crossing",
+              "object": "queue-blonde-woman",
+              "cx": 340,
+              "cy": 254,
+              "footDelta": -6,
+              "rect": {
+                "x": 331,
+                "y": 228,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 280,
+              "visibleFraction": 0,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "queue-right-woman",
+                "queue-blonde-woman",
+                "queue-curly-woman",
+                "queue-robot",
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "queue-blonde-woman",
+              "cx": 340,
+              "cy": 260,
+              "footDelta": 0,
+              "rect": {
+                "x": 331,
+                "y": 234,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 286,
+              "visibleFraction": 0.004039967731075356,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "queue-blonde-woman",
+                "queue-curly-woman",
+                "queue-robot",
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "queue-blonde-woman",
+              "cx": 340,
+              "cy": 266,
+              "footDelta": 6,
+              "rect": {
+                "x": 331,
+                "y": 240,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 292,
+              "visibleFraction": 1,
+              "marks": [
+                2154
+              ],
+              "points": [
+                {
+                  "x": 340,
+                  "y": 266,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-robot",
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "queue-curly-woman",
+              "cx": 385,
+              "cy": 256,
+              "footDelta": -6,
+              "rect": {
+                "x": 376,
+                "y": 230,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 282,
+              "visibleFraction": 0,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "queue-right-woman",
+                "queue-blonde-woman",
+                "queue-curly-woman",
+                "queue-robot",
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "queue-curly-woman",
+              "cx": 385,
+              "cy": 262,
+              "footDelta": 0,
+              "rect": {
+                "x": 376,
+                "y": 236,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 288,
+              "visibleFraction": 0.01672521232063115,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "queue-curly-woman",
+                "queue-robot",
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "queue-curly-woman",
+              "cx": 385,
+              "cy": 268,
+              "footDelta": 6,
+              "rect": {
+                "x": 376,
+                "y": 242,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 294,
+              "visibleFraction": 0.9659207124572023,
+              "marks": [
+                2160
+              ],
+              "points": [
+                {
+                  "x": 385,
+                  "y": 268,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-robot",
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "queue-right-woman",
+              "cx": 422,
+              "cy": 251,
+              "footDelta": -6,
+              "rect": {
+                "x": 413,
+                "y": 225,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 277,
+              "visibleFraction": 0.031671822495505854,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "queue-right-woman",
+                "queue-blonde-woman",
+                "queue-curly-woman",
+                "queue-robot",
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "queue-right-woman",
+              "cx": 422,
+              "cy": 257,
+              "footDelta": 0,
+              "rect": {
+                "x": 413,
+                "y": 231,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 283,
+              "visibleFraction": 0.049838972984303835,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "queue-right-woman",
+                "queue-blonde-woman",
+                "queue-curly-woman",
+                "queue-robot",
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "queue-right-woman",
+              "cx": 422,
+              "cy": 263,
+              "footDelta": 6,
+              "rect": {
+                "x": 413,
+                "y": 237,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 289,
+              "visibleFraction": 1,
+              "marks": [
+                2100
+              ],
+              "points": [
+                {
+                  "x": 422,
+                  "y": 263,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-robot",
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "queue-robot",
+              "cx": 263.5,
+              "cy": 263,
+              "footDelta": -6,
+              "rect": {
+                "x": 255,
+                "y": 237,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 289,
+              "visibleFraction": 0.34653521949856125,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "queue-robot",
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "queue-robot",
+              "cx": 263.5,
+              "cy": 269,
+              "footDelta": 0,
+              "rect": {
+                "x": 255,
+                "y": 243,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 295,
+              "visibleFraction": 0.2968677545783125,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "queue-robot",
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "queue-robot",
+              "cx": 263.5,
+              "cy": 275,
+              "footDelta": 6,
+              "rect": {
+                "x": 255,
+                "y": 249,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 301,
+              "visibleFraction": 1,
+              "marks": [
+                2209
+              ],
+              "points": [
+                {
+                  "x": 264,
+                  "y": 275,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "queue-green-hat",
+              "cx": 293,
+              "cy": 401,
+              "footDelta": -6,
+              "rect": {
+                "x": 284,
+                "y": 375,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 427,
+              "visibleFraction": 0,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "queue-green-hat",
+              "cx": 293,
+              "cy": 407,
+              "footDelta": 0,
+              "rect": {
+                "x": 284,
+                "y": 381,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 433,
+              "visibleFraction": 0.0018865887046059444,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "queue-green-hat",
+              "cx": 293,
+              "cy": 413,
+              "footDelta": 6,
+              "rect": {
+                "x": 284,
+                "y": 387,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 439,
+              "visibleFraction": 0.16382196192520979,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "queue-foreground-witch",
+              "cx": 284.5,
+              "cy": 480,
+              "footDelta": -6,
+              "rect": {
+                "x": 276,
+                "y": 454,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 506,
+              "visibleFraction": 0,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "queue-foreground-witch",
+              "cx": 284.5,
+              "cy": 486,
+              "footDelta": 0,
+              "rect": {
+                "x": 276,
+                "y": 460,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 512,
+              "visibleFraction": 0,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "queue-court-guest",
+              "cx": 169.5,
+              "cy": 480,
+              "footDelta": -6,
+              "rect": {
+                "x": 161,
+                "y": 454,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 506,
+              "visibleFraction": 0.014825919314984087,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "queue-court-guest",
+              "cx": 169.5,
+              "cy": 486,
+              "footDelta": 0,
+              "rect": {
+                "x": 161,
+                "y": 460,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 512,
+              "visibleFraction": 0.0008575403202754293,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "queue-moustached-guest",
+              "cx": 99,
+              "cy": 355,
+              "footDelta": -6,
+              "rect": {
+                "x": 90,
+                "y": 329,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 381,
+              "visibleFraction": 0.027803362828485584,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "queue-moustached-guest",
+              "cx": 99,
+              "cy": 361,
+              "footDelta": 0,
+              "rect": {
+                "x": 90,
+                "y": 335,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 387,
+              "visibleFraction": 0.09443742178914671,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "queue-moustached-guest",
+              "cx": 99,
+              "cy": 367,
+              "footDelta": 6,
+              "rect": {
+                "x": 90,
+                "y": 341,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 393,
+              "visibleFraction": 1,
+              "marks": [
+                2892
+              ],
+              "points": [
+                {
+                  "x": 99,
+                  "y": 367,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "queue-left-witch",
+              "cx": 39.5,
+              "cy": 275,
+              "footDelta": -6,
+              "rect": {
+                "x": 31,
+                "y": 249,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 301,
+              "visibleFraction": 0,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "queue-left-witch",
+              "cx": 39.5,
+              "cy": 281,
+              "footDelta": 0,
+              "rect": {
+                "x": 31,
+                "y": 255,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 307,
+              "visibleFraction": 0.01245656717081568,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "queue-left-witch",
+              "cx": 39.5,
+              "cy": 287,
+              "footDelta": 6,
+              "rect": {
+                "x": 31,
+                "y": 261,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 313,
+              "visibleFraction": 1,
+              "marks": [
+                2245
+              ],
+              "points": [
+                {
+                  "x": 40,
+                  "y": 287,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "queue-brass-post",
+              "cx": 379.5,
+              "cy": 363,
+              "footDelta": -6,
+              "rect": {
+                "x": 371,
+                "y": 337,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 389,
+              "visibleFraction": 0.5182084394671816,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "queue-brass-post",
+              "cx": 379.5,
+              "cy": 369,
+              "footDelta": 0,
+              "rect": {
+                "x": 371,
+                "y": 343,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 395,
+              "visibleFraction": 0.46187756865086677,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "object-crossing",
+              "object": "queue-brass-post",
+              "cx": 379.5,
+              "cy": 375,
+              "footDelta": 6,
+              "rect": {
+                "x": 371,
+                "y": 349,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 401,
+              "visibleFraction": 1,
+              "marks": [
+                2991
+              ],
+              "points": [
+                {
+                  "x": 380,
+                  "y": 375,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 64,
+              "cy": 64,
+              "rect": {
+                "x": 55,
+                "y": 38,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 90,
+              "visibleFraction": 1,
+              "marks": [
+                520
+              ],
+              "points": [
+                {
+                  "x": 64,
+                  "y": 64,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-right-woman",
+                "queue-blonde-woman",
+                "queue-curly-woman",
+                "queue-robot",
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 160,
+              "cy": 64,
+              "rect": {
+                "x": 151,
+                "y": 38,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 90,
+              "visibleFraction": 1,
+              "marks": [
+                532
+              ],
+              "points": [
+                {
+                  "x": 160,
+                  "y": 64,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-right-woman",
+                "queue-blonde-woman",
+                "queue-curly-woman",
+                "queue-robot",
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 256,
+              "cy": 64,
+              "rect": {
+                "x": 247,
+                "y": 38,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 90,
+              "visibleFraction": 1,
+              "marks": [
+                544
+              ],
+              "points": [
+                {
+                  "x": 256,
+                  "y": 64,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-right-woman",
+                "queue-blonde-woman",
+                "queue-curly-woman",
+                "queue-robot",
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 352,
+              "cy": 64,
+              "rect": {
+                "x": 343,
+                "y": 38,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 90,
+              "visibleFraction": 1,
+              "marks": [
+                556
+              ],
+              "points": [
+                {
+                  "x": 352,
+                  "y": 64,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-right-woman",
+                "queue-blonde-woman",
+                "queue-curly-woman",
+                "queue-robot",
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 448,
+              "cy": 64,
+              "rect": {
+                "x": 439,
+                "y": 38,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 90,
+              "visibleFraction": 1,
+              "marks": [
+                568
+              ],
+              "points": [
+                {
+                  "x": 448,
+                  "y": 64,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-right-woman",
+                "queue-blonde-woman",
+                "queue-curly-woman",
+                "queue-robot",
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 64,
+              "cy": 160,
+              "rect": {
+                "x": 55,
+                "y": 134,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 186,
+              "visibleFraction": 1,
+              "marks": [
+                1288
+              ],
+              "points": [
+                {
+                  "x": 64,
+                  "y": 160,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-right-woman",
+                "queue-blonde-woman",
+                "queue-curly-woman",
+                "queue-robot",
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 160,
+              "cy": 160,
+              "rect": {
+                "x": 151,
+                "y": 134,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 186,
+              "visibleFraction": 1,
+              "marks": [
+                1300
+              ],
+              "points": [
+                {
+                  "x": 160,
+                  "y": 160,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-right-woman",
+                "queue-blonde-woman",
+                "queue-curly-woman",
+                "queue-robot",
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 256,
+              "cy": 160,
+              "rect": {
+                "x": 247,
+                "y": 134,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 186,
+              "visibleFraction": 1,
+              "marks": [
+                1312
+              ],
+              "points": [
+                {
+                  "x": 256,
+                  "y": 160,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-right-woman",
+                "queue-blonde-woman",
+                "queue-curly-woman",
+                "queue-robot",
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 352,
+              "cy": 160,
+              "rect": {
+                "x": 343,
+                "y": 134,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 186,
+              "visibleFraction": 0.5900385575536597,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "queue-right-woman",
+                "queue-blonde-woman",
+                "queue-curly-woman",
+                "queue-robot",
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 448,
+              "cy": 160,
+              "rect": {
+                "x": 439,
+                "y": 134,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 186,
+              "visibleFraction": 0.996906502696488,
+              "marks": [
+                1336
+              ],
+              "points": [
+                {
+                  "x": 448,
+                  "y": 160,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-right-woman",
+                "queue-blonde-woman",
+                "queue-curly-woman",
+                "queue-robot",
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 64,
+              "cy": 256,
+              "rect": {
+                "x": 55,
+                "y": 230,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 282,
+              "visibleFraction": 0.8112013822279532,
+              "marks": [
+                2056
+              ],
+              "points": [
+                {
+                  "x": 64,
+                  "y": 256,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-right-woman",
+                "queue-blonde-woman",
+                "queue-curly-woman",
+                "queue-robot",
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 160,
+              "cy": 256,
+              "rect": {
+                "x": 151,
+                "y": 230,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 282,
+              "visibleFraction": 1,
+              "marks": [
+                2068
+              ],
+              "points": [
+                {
+                  "x": 160,
+                  "y": 256,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-right-woman",
+                "queue-blonde-woman",
+                "queue-curly-woman",
+                "queue-robot",
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 256,
+              "cy": 256,
+              "rect": {
+                "x": 247,
+                "y": 230,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 282,
+              "visibleFraction": 0.2915446524420843,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "queue-right-woman",
+                "queue-blonde-woman",
+                "queue-curly-woman",
+                "queue-robot",
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 352,
+              "cy": 256,
+              "rect": {
+                "x": 343,
+                "y": 230,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 282,
+              "visibleFraction": 0.37710811995401045,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "queue-right-woman",
+                "queue-blonde-woman",
+                "queue-curly-woman",
+                "queue-robot",
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 448,
+              "cy": 256,
+              "rect": {
+                "x": 439,
+                "y": 230,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 282,
+              "visibleFraction": 1,
+              "marks": [
+                2104
+              ],
+              "points": [
+                {
+                  "x": 448,
+                  "y": 256,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-right-woman",
+                "queue-blonde-woman",
+                "queue-curly-woman",
+                "queue-robot",
+                "queue-left-witch",
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 64,
+              "cy": 352,
+              "rect": {
+                "x": 55,
+                "y": 326,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 378,
+              "visibleFraction": 0.9419413442420932,
+              "marks": [
+                2824
+              ],
+              "points": [
+                {
+                  "x": 64,
+                  "y": 352,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 160,
+              "cy": 352,
+              "rect": {
+                "x": 151,
+                "y": 326,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 378,
+              "visibleFraction": 0.9523207581926861,
+              "marks": [
+                2836
+              ],
+              "points": [
+                {
+                  "x": 160,
+                  "y": 352,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 256,
+              "cy": 352,
+              "rect": {
+                "x": 247,
+                "y": 326,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 378,
+              "visibleFraction": 1,
+              "marks": [
+                2848
+              ],
+              "points": [
+                {
+                  "x": 256,
+                  "y": 352,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 352,
+              "cy": 352,
+              "rect": {
+                "x": 343,
+                "y": 326,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 378,
+              "visibleFraction": 1,
+              "marks": [
+                2860
+              ],
+              "points": [
+                {
+                  "x": 352,
+                  "y": 352,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 448,
+              "cy": 352,
+              "rect": {
+                "x": 439,
+                "y": 326,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 378,
+              "visibleFraction": 1,
+              "marks": [
+                2872
+              ],
+              "points": [
+                {
+                  "x": 448,
+                  "y": 352,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-moustached-guest",
+                "queue-brass-post",
+                "queue-green-hat",
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 64,
+              "cy": 448,
+              "rect": {
+                "x": 55,
+                "y": 422,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 474,
+              "visibleFraction": 1,
+              "marks": [
+                3592
+              ],
+              "points": [
+                {
+                  "x": 64,
+                  "y": 448,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 160,
+              "cy": 448,
+              "rect": {
+                "x": 151,
+                "y": 422,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 474,
+              "visibleFraction": 0,
+              "marks": [],
+              "points": [],
+              "falsePoints": 0,
+              "found": false,
+              "occluding": [
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 256,
+              "cy": 448,
+              "rect": {
+                "x": 247,
+                "y": 422,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 474,
+              "visibleFraction": 0.7433159496147421,
+              "marks": [
+                3616
+              ],
+              "points": [
+                {
+                  "x": 256,
+                  "y": 448,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 352,
+              "cy": 448,
+              "rect": {
+                "x": 343,
+                "y": 422,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 474,
+              "visibleFraction": 1,
+              "marks": [
+                3628
+              ],
+              "points": [
+                {
+                  "x": 352,
+                  "y": 448,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            },
+            {
+              "kind": "fixed-placement",
+              "cx": 448,
+              "cy": 448,
+              "rect": {
+                "x": 439,
+                "y": 422,
+                "width": 18,
+                "height": 52
+              },
+              "foot": 474,
+              "visibleFraction": 1,
+              "marks": [
+                3640
+              ],
+              "points": [
+                {
+                  "x": 448,
+                  "y": 448,
+                  "error": 0
+                }
+              ],
+              "falsePoints": 0,
+              "found": true,
+              "occluding": [
+                "queue-foreground-witch",
+                "queue-court-guest"
+              ]
+            }
+          ],
+          "emptyExact": true,
+          "summary": {
+            "probes": 53,
+            "hits": 28,
+            "falsePoints": 0,
+            "misses": 25
+          }
+        }
+      ],
+      "completedAt": "2026-10-10T18:55:28.797Z"
+    }
+  ],
+  "summary": {
+    "probes": 169,
+    "hits": 109,
+    "misses": 60,
+    "falsePoints": 0,
+    "visibleAboveOnePercentAlphaMass": 157,
+    "belowVisibilityGate": 12
+  }
+}

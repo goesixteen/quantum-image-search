@@ -1,0 +1,50 @@
+[
+  {
+    "path": "dist/model/wanda-qnn.json",
+    "sha256": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88"
+  },
+  {
+    "path": "dist/wanda-localizer.js",
+    "sha256": "bc9292a9dbc9ada24611916118e297aeb06d3d2eb8a5961c31f968162c26decf"
+  },
+  {
+    "path": "dist/qnn.js",
+    "sha256": "c881e6a815c7e5e1b4013a241d7b36ff78f3c21ac49ef0f47f2f8005979e972e"
+  },
+  {
+    "path": "dist/curated-scenes.js",
+    "sha256": "510cdcf3fc33fc56330775fb0f92ecc36cc3887d7d4ad3f5ad9eca4951b44bad"
+  },
+  {
+    "path": "dist/scene-editor.js",
+    "sha256": "645d3799f9eb27ac39b81aa4c9a8659cea551e00a699560046cb36eb13ff61ae"
+  },
+  {
+    "path": "dist/assets/wanda/park-512.png",
+    "sha256": "d20ea478a665eac1221fafcf3079dff71e9d9a40ca56846546628216452ceabd"
+  },
+  {
+    "path": "dist/assets/wanda/wanda.png",
+    "sha256": "ae679a90fb94c8ad10a589fd6fa6a27404b7d519f6ad750557749a1595229777"
+  },
+  {
+    "path": "dist/assets/wanda/lookalikes/park-coral-v1-512.png",
+    "sha256": "586ca63a9e04fc4bc96253deca174dca31f009230390ce7c42d25f7bc9f79a08"
+  },
+  {
+    "path": "dist/assets/wanda/lookalikes/coral-denim-v1.png",
+    "sha256": "ee6a0c0c4b8bdd9913279692c205d6ca8081fbcb53b2d938c6cde885784c64c0"
+  },
+  {
+    "path": "dist/assets/wanda/lookalikes/burgundy-plum-v2.png",
+    "sha256": "346f8d943c649a514eba18b58a3937fa24654de11e4671195e9cff8de90097a8"
+  },
+  {
+    "path": "dist/assets/wanda/lookalikes/brick-cream-v3.png",
+    "sha256": "bc210c7be5025d03915b081d5f54e4600df326e03eec176eab35ac0cc8260d7d"
+  },
+  {
+    "path": "model/qnn_core.py",
+    "sha256": "8d4fdd3e80d651e92ca6cf6f3450cf1048934762d9add9de612b3d06dabc4005"
+  }
+]

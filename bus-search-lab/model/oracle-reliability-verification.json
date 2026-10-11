@@ -1,0 +1,17 @@
+{
+  "verification": "PASS",
+  "directBinomialConfigurations": 35,
+  "largePMFConfigurations": 4,
+  "weightedStatevectorEnsembles": 12,
+  "actualStatevectorOracles": 889,
+  "allTrueAndFullOracleClosedFormChecks": 17,
+  "maximumDirectPMFError": 1.887379141862766e-15,
+  "maximumScenarioStatevectorError": 2.220446049250313e-16,
+  "maximumExpectedTrueMassError": 7.771561172376096e-16,
+  "sourceSha256": {
+    "module": "3482c052829186d398525f293080810689fae633c0376138f371d7389fb12df5",
+    "test": "c5b076e6e58a8b54332ef5d1e397eca5c30808f08d40e30815889a4a38ae5a8f",
+    "quantum": "6351b467e1c063cacba23b3a22a0cfdf48e1816d1edbc387ff4ea4d3669f5943"
+  },
+  "coverage": "Exact direct binomial weights; actual oracle/diffuser statevectors; empty/no-output, absent/all-true/full-marked cases; known-M round selection; nonempty-conditioned expectation; validation rejects invalid probabilities."
+}

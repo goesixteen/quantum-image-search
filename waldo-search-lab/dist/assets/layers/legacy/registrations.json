@@ -1,0 +1,347 @@
+{
+  "version": 2,
+  "scene": "legacy",
+  "sceneSize": 512,
+  "sceneSource": "assets/crowd-captcha.png",
+  "method": "Native vector masks isolate unchanged source RGB; cropped PNGs register back into the 512px scene at their recorded positions.",
+  "depthConvention": "front-when-lower",
+  "alphaThreshold": 32,
+  "layers": [
+    {
+      "id": "festival-fountain",
+      "name": "Fountain basin and pedestal",
+      "png": "assets/layers/legacy/festival-fountain.png",
+      "maskPNG": "assets/layers/legacy/festival-fountain-mask.png",
+      "position": {
+        "x": 237,
+        "y": 255
+      },
+      "width": 100,
+      "height": 98,
+      "depthAnchorY": 353,
+      "sha256": "50939a2eedb6f9b949a88ec2e34848ec94b15b8ad83547afb64f7bf155c38ecf"
+    },
+    {
+      "id": "festival-cafe-umbrella",
+      "name": "Blue café umbrella and pole",
+      "png": "assets/layers/legacy/festival-cafe-umbrella.png",
+      "maskPNG": "assets/layers/legacy/festival-cafe-umbrella-mask.png",
+      "position": {
+        "x": 426,
+        "y": 309
+      },
+      "width": 84,
+      "height": 68,
+      "depthAnchorY": 377,
+      "sha256": "da42a54ec0c88107f279be010523299dbcc9a6f2a70e753018606f3b22670ab1"
+    },
+    {
+      "id": "festival-green-cart",
+      "name": "Green-canopy drinks cart",
+      "png": "assets/layers/legacy/festival-green-cart.png",
+      "maskPNG": "assets/layers/legacy/festival-green-cart-mask.png",
+      "position": {
+        "x": 419,
+        "y": 198
+      },
+      "width": 68,
+      "height": 83,
+      "depthAnchorY": 281,
+      "sha256": "d2abe8c04c0c10453091db52190e23db27e6ad1d83e03199fdf20ea06ba78704"
+    },
+    {
+      "id": "festival-teal-cart",
+      "name": "Teal-canopy juice cart",
+      "png": "assets/layers/legacy/festival-teal-cart.png",
+      "maskPNG": "assets/layers/legacy/festival-teal-cart-mask.png",
+      "position": {
+        "x": 355,
+        "y": 381
+      },
+      "width": 52,
+      "height": 71,
+      "depthAnchorY": 452,
+      "sha256": "d571a3ca3ad20c99cb4c8ad097a9917ebf56b1807476e812d4dcd17fff179a6f"
+    },
+    {
+      "id": "festival-accordionist",
+      "name": "Accordion player",
+      "png": "assets/layers/legacy/festival-accordionist.png",
+      "maskPNG": "assets/layers/legacy/festival-accordionist-mask.png",
+      "position": {
+        "x": 279,
+        "y": 200
+      },
+      "width": 25,
+      "height": 53,
+      "depthAnchorY": 253,
+      "sha256": "c377278e41ed0c3ce98547093e37979595f933a8021d392bd4e50bae491c07bb"
+    },
+    {
+      "id": "festival-bass-player",
+      "name": "Double-bass player and instrument",
+      "png": "assets/layers/legacy/festival-bass-player.png",
+      "maskPNG": "assets/layers/legacy/festival-bass-player-mask.png",
+      "position": {
+        "x": 237,
+        "y": 191
+      },
+      "width": 42,
+      "height": 66,
+      "depthAnchorY": 257,
+      "sha256": "2330a9f59886fe90a4fe26bdf896ed50fc0dbcaf99b2bda036fa67c1954b3535"
+    },
+    {
+      "id": "festival-blue-shopper",
+      "name": "Foreground shopper in blue shirt and shorts",
+      "png": "assets/layers/legacy/festival-blue-shopper.png",
+      "maskPNG": "assets/layers/legacy/festival-blue-shopper-mask.png",
+      "position": {
+        "x": 151,
+        "y": 411
+      },
+      "width": 25,
+      "height": 59,
+      "depthAnchorY": 470,
+      "sha256": "a4815e6c9c46807f3d7c9d32d2c3cb7d82684ceab7b15754e263fa859ffdddd4"
+    },
+    {
+      "id": "festival-navy-coat-woman",
+      "name": "Foreground woman in navy coat",
+      "png": "assets/layers/legacy/festival-navy-coat-woman.png",
+      "maskPNG": "assets/layers/legacy/festival-navy-coat-woman-mask.png",
+      "position": {
+        "x": 203,
+        "y": 431
+      },
+      "width": 23,
+      "height": 47,
+      "depthAnchorY": 478,
+      "sha256": "48c4e113c20d8d7064b0f04d16118373b65c756e327258ce6b7a45c1676c2f15"
+    },
+    {
+      "id": "festival-pale-suit-man",
+      "name": "Man in a pale suit near the bicycle",
+      "png": "assets/layers/legacy/festival-pale-suit-man.png",
+      "maskPNG": "assets/layers/legacy/festival-pale-suit-man-mask.png",
+      "position": {
+        "x": 279,
+        "y": 370
+      },
+      "width": 17,
+      "height": 46,
+      "depthAnchorY": 416,
+      "sha256": "c9644d51bd6e698f4fe12987fe8819bcddd78de06a2c91fabeda4222c0ec4c12"
+    },
+    {
+      "id": "festival-green-dress-woman",
+      "name": "Woman in green by the fountain",
+      "png": "assets/layers/legacy/festival-green-dress-woman.png",
+      "maskPNG": "assets/layers/legacy/festival-green-dress-woman-mask.png",
+      "position": {
+        "x": 307,
+        "y": 315
+      },
+      "width": 25,
+      "height": 46,
+      "depthAnchorY": 361,
+      "sha256": "1da6ea105b4f620cf3d4bb354c64c9a06f62761c99a76bcb76921c1b9cd0e2c4"
+    },
+    {
+      "id": "festival-yellow-dancer",
+      "name": "Yellow-shirt dancer",
+      "png": "assets/layers/legacy/festival-yellow-dancer.png",
+      "maskPNG": "assets/layers/legacy/festival-yellow-dancer-mask.png",
+      "position": {
+        "x": 348,
+        "y": 202
+      },
+      "width": 38,
+      "height": 40,
+      "depthAnchorY": 242,
+      "sha256": "86c2ebf4cf1e07d12d9a65095171a7134b7e0fd7802ecec399da278871039503"
+    },
+    {
+      "id": "festival-blue-walker",
+      "name": "Man in blue walking beside the drinks cart",
+      "png": "assets/layers/legacy/festival-blue-walker.png",
+      "maskPNG": "assets/layers/legacy/festival-blue-walker-mask.png",
+      "position": {
+        "x": 362,
+        "y": 226
+      },
+      "width": 27,
+      "height": 55,
+      "depthAnchorY": 281,
+      "sha256": "5d1ef9419adc3187b4aa6af935382eba8de8b45e1f603ddef2740b46bf1706e1"
+    },
+    {
+      "id": "festival-extra-blue-market-canopy",
+      "name": "Large blue market canopy",
+      "png": "assets/layers/legacy/festival-extra-blue-market-canopy.png",
+      "maskPNG": "assets/layers/legacy/festival-extra-blue-market-canopy-mask.png",
+      "position": {
+        "x": 184,
+        "y": 85
+      },
+      "width": 87,
+      "height": 36,
+      "depthAnchorY": 121,
+      "sha256": "cd04b3d74585346e4bac76344fe1d63968014d1b3fc57fe522966c6a4c02c6f5"
+    },
+    {
+      "id": "festival-extra-yellow-market-canopy",
+      "name": "Yellow striped market canopy",
+      "png": "assets/layers/legacy/festival-extra-yellow-market-canopy.png",
+      "maskPNG": "assets/layers/legacy/festival-extra-yellow-market-canopy-mask.png",
+      "position": {
+        "x": 136,
+        "y": 73
+      },
+      "width": 75,
+      "height": 29,
+      "depthAnchorY": 102,
+      "sha256": "6b71a37839feaeabe3e8f29bfc6051a25090fe4083bfd4d916b978c4d7da3eb9"
+    },
+    {
+      "id": "festival-extra-cream-upper-canopy",
+      "name": "Cream canopy above central stall",
+      "png": "assets/layers/legacy/festival-extra-cream-upper-canopy.png",
+      "maskPNG": "assets/layers/legacy/festival-extra-cream-upper-canopy-mask.png",
+      "position": {
+        "x": 242,
+        "y": 106
+      },
+      "width": 89,
+      "height": 39,
+      "depthAnchorY": 145,
+      "sha256": "6e0335ada03cfc851768b420af5e435c0ce6c8188fa3a45b0b0ddee84f1ea0f6"
+    },
+    {
+      "id": "festival-extra-teal-left-canopy",
+      "name": "Teal canopy on the left",
+      "png": "assets/layers/legacy/festival-extra-teal-left-canopy.png",
+      "maskPNG": "assets/layers/legacy/festival-extra-teal-left-canopy-mask.png",
+      "position": {
+        "x": 58,
+        "y": 156
+      },
+      "width": 86,
+      "height": 36,
+      "depthAnchorY": 192,
+      "sha256": "cd66831de514ee93c64cf464da2a9e9b6f7c3bc995d9af2deb8b9c4c0170abea"
+    },
+    {
+      "id": "festival-extra-cream-front-canopy",
+      "name": "Foreground cream market canopy",
+      "png": "assets/layers/legacy/festival-extra-cream-front-canopy.png",
+      "maskPNG": "assets/layers/legacy/festival-extra-cream-front-canopy-mask.png",
+      "position": {
+        "x": 79,
+        "y": 373
+      },
+      "width": 96,
+      "height": 47,
+      "depthAnchorY": 420,
+      "sha256": "e45fe34ffce621b7cbae2bbd3d949d58838c9587269ef0371d3663f6e3445221"
+    },
+    {
+      "id": "festival-extra-seated-blue-visitor",
+      "name": "Seated visitor in blue at fountain",
+      "png": "assets/layers/legacy/festival-extra-seated-blue-visitor.png",
+      "maskPNG": "assets/layers/legacy/festival-extra-seated-blue-visitor-mask.png",
+      "position": {
+        "x": 226,
+        "y": 312
+      },
+      "width": 26,
+      "height": 40,
+      "depthAnchorY": 352,
+      "sha256": "ed043dacca3e7baa5aa1eaa776821467ac80436775efc31fac7c100f399ddbbf"
+    },
+    {
+      "id": "festival-extra-seated-white-visitor",
+      "name": "Seated visitor in white vest",
+      "png": "assets/layers/legacy/festival-extra-seated-white-visitor.png",
+      "maskPNG": "assets/layers/legacy/festival-extra-seated-white-visitor-mask.png",
+      "position": {
+        "x": 249,
+        "y": 317
+      },
+      "width": 25,
+      "height": 39,
+      "depthAnchorY": 356,
+      "sha256": "1bdcdedad3b98016858712556d45c6b2ae1b5b54db4b12d76844ba6b16fe9b10"
+    },
+    {
+      "id": "festival-extra-white-dress-child",
+      "name": "Child in white dress at fountain",
+      "png": "assets/layers/legacy/festival-extra-white-dress-child.png",
+      "maskPNG": "assets/layers/legacy/festival-extra-white-dress-child-mask.png",
+      "position": {
+        "x": 268,
+        "y": 325
+      },
+      "width": 18,
+      "height": 39,
+      "depthAnchorY": 364,
+      "sha256": "fa96651f6a1b1c9a2e71e266f515327a57820d10174092bdb5c60b9da93c228d"
+    },
+    {
+      "id": "festival-extra-green-cyclist",
+      "name": "Green-jacket cyclist",
+      "png": "assets/layers/legacy/festival-extra-green-cyclist.png",
+      "maskPNG": "assets/layers/legacy/festival-extra-green-cyclist-mask.png",
+      "position": {
+        "x": 311,
+        "y": 366
+      },
+      "width": 23,
+      "height": 51,
+      "depthAnchorY": 417,
+      "sha256": "196ef76bc2c1a01044e252bb55a991bf19ca78d5668d7449712e739dfa814711"
+    },
+    {
+      "id": "festival-extra-lower-yellow-visitor",
+      "name": "Yellow-shirt visitor near bicycle",
+      "png": "assets/layers/legacy/festival-extra-lower-yellow-visitor.png",
+      "maskPNG": "assets/layers/legacy/festival-extra-lower-yellow-visitor-mask.png",
+      "position": {
+        "x": 242,
+        "y": 354
+      },
+      "width": 36,
+      "height": 51,
+      "depthAnchorY": 405,
+      "sha256": "9d2112f71272ce9860303beb5de8150694d7f6b1004ad6a2467a0ebce09d165e"
+    },
+    {
+      "id": "festival-extra-coral-dress-visitor",
+      "name": "Coral-dress visitor beside fountain",
+      "png": "assets/layers/legacy/festival-extra-coral-dress-visitor.png",
+      "maskPNG": "assets/layers/legacy/festival-extra-coral-dress-visitor-mask.png",
+      "position": {
+        "x": 333,
+        "y": 352
+      },
+      "width": 17,
+      "height": 44,
+      "depthAnchorY": 396,
+      "sha256": "0de38fd083fa86f56a0c3acf3d1aa692da9aa216687c5eef556dd07a084d18d2"
+    },
+    {
+      "id": "festival-extra-blue-skirt-visitor",
+      "name": "Visitor in brown jacket and blue skirt",
+      "png": "assets/layers/legacy/festival-extra-blue-skirt-visitor.png",
+      "maskPNG": "assets/layers/legacy/festival-extra-blue-skirt-visitor-mask.png",
+      "position": {
+        "x": 242,
+        "y": 417
+      },
+      "width": 25,
+      "height": 52,
+      "depthAnchorY": 469,
+      "sha256": "06de225afaddb3fb6e3476637e1a201b96b3a5db5ebe9010229d84a8216e6e44"
+    }
+  ]
+}

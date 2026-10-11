@@ -1,0 +1,25 @@
+{
+  "n": 51264,
+  "binaryFile": "background-selection.u16",
+  "binarySHA256": "648a9a19567f10bc6e83de1fb87a336d1c3d7dad2c419d6feceb881e9f6b9551",
+  "format": "little-endian uint16 [sceneIndex,height,column,row] per selected window; fixed64 lattice center4+8index",
+  "sceneIDs": [
+    "legacy",
+    "magic-arena",
+    "qualicity-queue"
+  ],
+  "negativeMining": {
+    "seed": 202610108,
+    "heightRange": [
+      24,
+      112
+    ],
+    "topPerSceneHeight": 64,
+    "randomAdditionalPerSceneHeight": 128,
+    "scannedCentersPerSceneHeight": 2868,
+    "teacherQNNHash": "e817b0911dafd0d3fe88b6d956b474d65f1d02aa9dbf337ccd43244c17c0e3c9",
+    "teacherLogisticHash": "0794d1cac213ac2890a4631bfd4b375859be20038b845b5066b5184f7002a9bf",
+    "ranking": "maximum of training-v2 QNN and logistic scores; training-partition background windows only; no validation/test/audit examples scored for mining"
+  },
+  "sourceV2bMetadataSHA256": "e0db57a17b4ee039b7c5618216e6413322c1706177ae5a6268e2748a681b9095"
+}

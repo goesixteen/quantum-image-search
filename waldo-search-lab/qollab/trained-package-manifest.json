@@ -1,0 +1,33 @@
+{
+  "packagedAtUtc": "2026-10-11T02:12:38.916056+00:00",
+  "featureVersion": "current-qnn-window-v3",
+  "modelSHA256": "9c5a25af8a37eb8482f09e49631418e63c05c47d0317fd0a2a5ead9b6c63465a",
+  "heldoutFixtureSHA256": "c1cbfeb07ef9959efb6d10f761740d4c99d424263bc507650584569766182b28",
+  "sceneSHA256": "20aa0a4c977f7ce1f06cd8759a29005d122fed2175433bbd01999c6088946ae2",
+  "pixelFixtures": {
+    "fixtures/test-0.png": "d43fd4cac17db19e62287a78e9b2290fba8a9935c5ac482ba5cfec12ee759b85",
+    "fixtures/test-0-blue-stripes.png": "87ac17155a3b219806f32d9dd40cfccaa7815bb1b0df77d462e7149fe1d41afd",
+    "fixtures/test-1.png": "02e2fcf1fc1d1400b23b2d526e75354ce3cef51f1100c183576377ca63393c14"
+  },
+  "rows": 16,
+  "selectedRowIndices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "split": "test",
+  "scope": "Local-only exact-checkpoint circuit companion; no training, threshold changes, contest upload or hardware execution."
+}

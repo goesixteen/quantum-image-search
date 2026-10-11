@@ -1,0 +1,572 @@
+{
+  "primary": "complete validation-scene hits under unchanged false-point budget",
+  "tieBreak": "lower validation source-weighted BCE, smaller seed, earlier step",
+  "candidates": [
+    {
+      "seed": 2026101105,
+      "step": 500,
+      "weightedBCE": 0.030927205951653446,
+      "sceneValidation": {
+        "targetScenes": 200,
+        "absenceScenes": 25,
+        "completeHits": 197,
+        "completeHitRate": 0.985,
+        "targetFalsePointScenes": 0,
+        "targetFalsePointRate": 0.0,
+        "targetEmptyOracles": 3,
+        "targetCoverage": 0.985,
+        "absenceFalsePointScenes": 0,
+        "absenceAcceptedPoints": 0,
+        "threshold": 0.8940792527887775,
+        "bySizeRanges": {
+          "40-40": {
+            "n": 40,
+            "completeHits": 37,
+            "completeHitRate": 0.925,
+            "anyFalse": 0,
+            "emptyOracles": 3
+          },
+          "46-46": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "52-52": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "58-58": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "64-64": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          }
+        },
+        "byScene": {
+          "wanda-beach": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "wanda-fairground": {
+            "n": 40,
+            "completeHits": 39,
+            "completeHitRate": 0.975,
+            "anyFalse": 0,
+            "emptyOracles": 1
+          },
+          "wanda-festival": {
+            "n": 40,
+            "completeHits": 39,
+            "completeHitRate": 0.975,
+            "anyFalse": 0,
+            "emptyOracles": 1
+          },
+          "wanda-market": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "wanda-park": {
+            "n": 40,
+            "completeHits": 39,
+            "completeHitRate": 0.975,
+            "anyFalse": 0,
+            "emptyOracles": 1
+          }
+        },
+        "byVisibility": {
+          "20-50%": {
+            "n": 0,
+            "completeHits": 0,
+            "completeHitRate": 0.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "50-90%": {
+            "n": 0,
+            "completeHits": 0,
+            "completeHitRate": 0.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "90-below100%": {
+            "n": 0,
+            "completeHits": 0,
+            "completeHitRate": 0.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "100%": {
+            "n": 200,
+            "completeHits": 197,
+            "completeHitRate": 0.985,
+            "anyFalse": 0,
+            "emptyOracles": 3
+          }
+        },
+        "byFrameClipping": {
+          "inside": {
+            "n": 200,
+            "completeHits": 197,
+            "completeHitRate": 0.985,
+            "anyFalse": 0,
+            "emptyOracles": 3
+          },
+          "clipped": {
+            "n": 0,
+            "completeHits": 0,
+            "completeHitRate": 0.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          }
+        },
+        "minimumCriticalScoreMargin": 0.006577086860920178,
+        "minimumFullScoreGap": 0.0013088621943970757,
+        "feasible": true
+      }
+    },
+    {
+      "seed": 2026101105,
+      "step": 1000,
+      "weightedBCE": 0.018410798205692424,
+      "sceneValidation": {
+        "targetScenes": 200,
+        "absenceScenes": 25,
+        "completeHits": 200,
+        "completeHitRate": 1.0,
+        "targetFalsePointScenes": 0,
+        "targetFalsePointRate": 0.0,
+        "targetEmptyOracles": 0,
+        "targetCoverage": 1.0,
+        "absenceFalsePointScenes": 0,
+        "absenceAcceptedPoints": 0,
+        "threshold": 0.9056472752971427,
+        "bySizeRanges": {
+          "40-40": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "46-46": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "52-52": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "58-58": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "64-64": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          }
+        },
+        "byScene": {
+          "wanda-beach": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "wanda-fairground": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "wanda-festival": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "wanda-market": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "wanda-park": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          }
+        },
+        "byVisibility": {
+          "20-50%": {
+            "n": 0,
+            "completeHits": 0,
+            "completeHitRate": 0.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "50-90%": {
+            "n": 0,
+            "completeHits": 0,
+            "completeHitRate": 0.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "90-below100%": {
+            "n": 0,
+            "completeHits": 0,
+            "completeHitRate": 0.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "100%": {
+            "n": 200,
+            "completeHits": 200,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          }
+        },
+        "byFrameClipping": {
+          "inside": {
+            "n": 200,
+            "completeHits": 200,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "clipped": {
+            "n": 0,
+            "completeHits": 0,
+            "completeHitRate": 0.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          }
+        },
+        "minimumCriticalScoreMargin": 0.025932700743291237,
+        "minimumFullScoreGap": 0.00022484439047520954,
+        "feasible": true
+      }
+    },
+    {
+      "seed": 2026101106,
+      "step": 500,
+      "weightedBCE": 0.03279811683819912,
+      "sceneValidation": {
+        "targetScenes": 200,
+        "absenceScenes": 25,
+        "completeHits": 197,
+        "completeHitRate": 0.985,
+        "targetFalsePointScenes": 1,
+        "targetFalsePointRate": 0.005,
+        "targetEmptyOracles": 2,
+        "targetCoverage": 0.985,
+        "absenceFalsePointScenes": 0,
+        "absenceAcceptedPoints": 0,
+        "threshold": 0.8989435125321019,
+        "bySizeRanges": {
+          "40-40": {
+            "n": 40,
+            "completeHits": 39,
+            "completeHitRate": 0.975,
+            "anyFalse": 0,
+            "emptyOracles": 1
+          },
+          "46-46": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "52-52": {
+            "n": 40,
+            "completeHits": 39,
+            "completeHitRate": 0.975,
+            "anyFalse": 0,
+            "emptyOracles": 1
+          },
+          "58-58": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "64-64": {
+            "n": 40,
+            "completeHits": 39,
+            "completeHitRate": 0.975,
+            "anyFalse": 1,
+            "emptyOracles": 0
+          }
+        },
+        "byScene": {
+          "wanda-beach": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "wanda-fairground": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "wanda-festival": {
+            "n": 40,
+            "completeHits": 39,
+            "completeHitRate": 0.975,
+            "anyFalse": 0,
+            "emptyOracles": 1
+          },
+          "wanda-market": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "wanda-park": {
+            "n": 40,
+            "completeHits": 38,
+            "completeHitRate": 0.95,
+            "anyFalse": 1,
+            "emptyOracles": 1
+          }
+        },
+        "byVisibility": {
+          "20-50%": {
+            "n": 0,
+            "completeHits": 0,
+            "completeHitRate": 0.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "50-90%": {
+            "n": 0,
+            "completeHits": 0,
+            "completeHitRate": 0.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "90-below100%": {
+            "n": 0,
+            "completeHits": 0,
+            "completeHitRate": 0.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "100%": {
+            "n": 200,
+            "completeHits": 197,
+            "completeHitRate": 0.985,
+            "anyFalse": 1,
+            "emptyOracles": 2
+          }
+        },
+        "byFrameClipping": {
+          "inside": {
+            "n": 200,
+            "completeHits": 197,
+            "completeHitRate": 0.985,
+            "anyFalse": 1,
+            "emptyOracles": 2
+          },
+          "clipped": {
+            "n": 0,
+            "completeHits": 0,
+            "completeHitRate": 0.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          }
+        },
+        "minimumCriticalScoreMargin": 0.021853488081070238,
+        "minimumFullScoreGap": 0.00011083665413280652,
+        "feasible": true
+      }
+    },
+    {
+      "seed": 2026101106,
+      "step": 1000,
+      "weightedBCE": 0.02319223835186062,
+      "sceneValidation": {
+        "targetScenes": 200,
+        "absenceScenes": 25,
+        "completeHits": 199,
+        "completeHitRate": 0.995,
+        "targetFalsePointScenes": 1,
+        "targetFalsePointRate": 0.005,
+        "targetEmptyOracles": 0,
+        "targetCoverage": 0.995,
+        "absenceFalsePointScenes": 0,
+        "absenceAcceptedPoints": 0,
+        "threshold": 0.8762910507409089,
+        "bySizeRanges": {
+          "40-40": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "46-46": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "52-52": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "58-58": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "64-64": {
+            "n": 40,
+            "completeHits": 39,
+            "completeHitRate": 0.975,
+            "anyFalse": 1,
+            "emptyOracles": 0
+          }
+        },
+        "byScene": {
+          "wanda-beach": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "wanda-fairground": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "wanda-festival": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "wanda-market": {
+            "n": 40,
+            "completeHits": 40,
+            "completeHitRate": 1.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "wanda-park": {
+            "n": 40,
+            "completeHits": 39,
+            "completeHitRate": 0.975,
+            "anyFalse": 1,
+            "emptyOracles": 0
+          }
+        },
+        "byVisibility": {
+          "20-50%": {
+            "n": 0,
+            "completeHits": 0,
+            "completeHitRate": 0.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "50-90%": {
+            "n": 0,
+            "completeHits": 0,
+            "completeHitRate": 0.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "90-below100%": {
+            "n": 0,
+            "completeHits": 0,
+            "completeHitRate": 0.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          },
+          "100%": {
+            "n": 200,
+            "completeHits": 199,
+            "completeHitRate": 0.995,
+            "anyFalse": 1,
+            "emptyOracles": 0
+          }
+        },
+        "byFrameClipping": {
+          "inside": {
+            "n": 200,
+            "completeHits": 199,
+            "completeHitRate": 0.995,
+            "anyFalse": 1,
+            "emptyOracles": 0
+          },
+          "clipped": {
+            "n": 0,
+            "completeHits": 0,
+            "completeHitRate": 0.0,
+            "anyFalse": 0,
+            "emptyOracles": 0
+          }
+        },
+        "minimumCriticalScoreMargin": 0.008607791639508311,
+        "minimumFullScoreGap": 0.002027109484916023,
+        "feasible": true
+      }
+    }
+  ],
+  "selectedSeed": 2026101105,
+  "selectedStep": 1000
+}

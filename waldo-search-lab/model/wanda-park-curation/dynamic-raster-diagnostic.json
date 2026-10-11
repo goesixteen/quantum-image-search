@@ -1,0 +1,25 @@
+{
+  "browserAgainstOriginalChangedRGBPixels": 606,
+  "changeBBoxXYXY": [
+    162,
+    375,
+    177,
+    425
+  ],
+  "expectedCuratedRectangleXYWH": [
+    162,
+    375,
+    15,
+    50
+  ],
+  "nativeVsBrowserRGBMax": 194.0,
+  "nativeVsBrowserDecoyRectRGBMean": 23.71688888888889,
+  "alphaNativeRange": [
+    255,
+    255
+  ],
+  "alphaBrowserRange": [
+    255,
+    255
+  ]
+}

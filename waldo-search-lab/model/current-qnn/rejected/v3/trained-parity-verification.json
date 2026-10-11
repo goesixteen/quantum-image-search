@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "split": "validation",
+  "n": 16,
+  "featureMaxError": 0,
+  "quantumReadoutMaxError": 1.7763568394002505e-15,
+  "scoreMaxError": 8.326672684688674e-16,
+  "modelSHA256": "e95a75e862a74916660b5fe2e5b24994362828ea41452e3c47a5f7d32f8d7777",
+  "fixtureSHA256": "f2afe6ffb40c5ad9bad309b66ebc4fef54b918aa59422633c1d17bc13d5ef5a4",
+  "featureJSSHA256": "6e3dfd5349fdc439629640d5aac3e0b467ccc2e362a0b9273d79584f5159a61a",
+  "qnnJSSHA256": "c881e6a815c7e5e1b4013a241d7b36ff78f3c21ac49ef0f47f2f8005979e972e"
+}

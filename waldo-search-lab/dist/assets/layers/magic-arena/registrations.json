@@ -1,0 +1,151 @@
+{
+  "version": 2,
+  "scene": "magic-arena",
+  "sceneSize": 512,
+  "sceneSource": "assets/busy-art/magic-arena.png",
+  "method": "Native vector masks isolate unchanged source RGB; cropped PNGs register back into the 512px scene at their recorded positions.",
+  "depthConvention": "front-when-lower",
+  "alphaThreshold": 32,
+  "layers": [
+    {
+      "id": "arena-covered-podium",
+      "name": "Cloth-covered central podium",
+      "png": "assets/layers/magic-arena/arena-covered-podium.png",
+      "maskPNG": "assets/layers/magic-arena/arena-covered-podium-mask.png",
+      "position": {
+        "x": 256,
+        "y": 259
+      },
+      "width": 64,
+      "height": 72,
+      "depthAnchorY": 331,
+      "sha256": "84426456eafd0c3d7b72903e53bd5efcf80661bce638b882b81a8bba110bb7f6"
+    },
+    {
+      "id": "arena-right-stall",
+      "name": "Right red-striped awning and stall",
+      "png": "assets/layers/magic-arena/arena-right-stall.png",
+      "maskPNG": "assets/layers/magic-arena/arena-right-stall-mask.png",
+      "position": {
+        "x": 459,
+        "y": 304
+      },
+      "width": 53,
+      "height": 158,
+      "depthAnchorY": 462,
+      "sha256": "1a35015dd12415cca8e6bdae80414845afa2df264a182e754c08d9c6e627597c"
+    },
+    {
+      "id": "arena-left-entrance",
+      "name": "Left stone entrance and gate",
+      "png": "assets/layers/magic-arena/arena-left-entrance.png",
+      "maskPNG": "assets/layers/magic-arena/arena-left-entrance-mask.png",
+      "position": {
+        "x": 47,
+        "y": 234
+      },
+      "width": 80,
+      "height": 96,
+      "depthAnchorY": 330,
+      "sha256": "277b728d57db2b5d8621cdfcbecd3d591c28c8c497d5b3eab4968fe6dc8adc4e"
+    },
+    {
+      "id": "arena-brass-tuba",
+      "name": "Foreground brass tuba",
+      "png": "assets/layers/magic-arena/arena-brass-tuba.png",
+      "maskPNG": "assets/layers/magic-arena/arena-brass-tuba-mask.png",
+      "position": {
+        "x": 6,
+        "y": 436
+      },
+      "width": 45,
+      "height": 67,
+      "depthAnchorY": 503,
+      "sha256": "dd4458775183ce0f731f8a580bf46d4fcec5e966bcb34baecf723c89ab7b1944"
+    },
+    {
+      "id": "arena-purple-contestant",
+      "name": "Purple foreground contestant",
+      "png": "assets/layers/magic-arena/arena-purple-contestant.png",
+      "maskPNG": "assets/layers/magic-arena/arena-purple-contestant-mask.png",
+      "position": {
+        "x": 133,
+        "y": 375
+      },
+      "width": 13,
+      "height": 34,
+      "depthAnchorY": 409,
+      "sha256": "5cf4c1c36f07d645ebedf3dc45512eb851f639e7ced1acede7c7ed0543bffb49"
+    },
+    {
+      "id": "arena-green-contestant",
+      "name": "Green contestant near entrance",
+      "png": "assets/layers/magic-arena/arena-green-contestant.png",
+      "maskPNG": "assets/layers/magic-arena/arena-green-contestant-mask.png",
+      "position": {
+        "x": 127,
+        "y": 322
+      },
+      "width": 12,
+      "height": 28,
+      "depthAnchorY": 350,
+      "sha256": "1f578b69655b3d583ae371e7d8d3c8802819122538efdaa20b504235c74234c1"
+    },
+    {
+      "id": "arena-red-rear-contestant",
+      "name": "Red contestant behind podium",
+      "png": "assets/layers/magic-arena/arena-red-rear-contestant.png",
+      "maskPNG": "assets/layers/magic-arena/arena-red-rear-contestant-mask.png",
+      "position": {
+        "x": 199,
+        "y": 291
+      },
+      "width": 11,
+      "height": 31,
+      "depthAnchorY": 322,
+      "sha256": "5953f71c33a6b3991ddd4030ab0963456ea08fcd125f81068885d78bb6e50e93"
+    },
+    {
+      "id": "arena-gold-contestant",
+      "name": "Gold contestant holding a prop",
+      "png": "assets/layers/magic-arena/arena-gold-contestant.png",
+      "maskPNG": "assets/layers/magic-arena/arena-gold-contestant-mask.png",
+      "position": {
+        "x": 232,
+        "y": 333
+      },
+      "width": 15,
+      "height": 27,
+      "depthAnchorY": 360,
+      "sha256": "ff6171d21d1255f41eeb9c61d8746ec447b47d5e6ca7bb31b7f005eabae1f108"
+    },
+    {
+      "id": "arena-brown-contestant",
+      "name": "Brown contestant on right",
+      "png": "assets/layers/magic-arena/arena-brown-contestant.png",
+      "maskPNG": "assets/layers/magic-arena/arena-brown-contestant-mask.png",
+      "position": {
+        "x": 339,
+        "y": 334
+      },
+      "width": 12,
+      "height": 26,
+      "depthAnchorY": 360,
+      "sha256": "d1c4ede0502551e7d15c9706b5613ed226548e68b16406364ade2b6a57874b9a"
+    },
+    {
+      "id": "arena-red-front-contestant",
+      "name": "Red foreground contestant",
+      "png": "assets/layers/magic-arena/arena-red-front-contestant.png",
+      "maskPNG": "assets/layers/magic-arena/arena-red-front-contestant-mask.png",
+      "position": {
+        "x": 291,
+        "y": 381
+      },
+      "width": 12,
+      "height": 31,
+      "depthAnchorY": 412,
+      "sha256": "b2ebf5c3d124abdc9cb1a79e5e41285b2cb81b5e5ecd7445bda60404b7414c3f"
+    }
+  ]
+}

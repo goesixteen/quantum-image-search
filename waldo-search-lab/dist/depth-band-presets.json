@@ -1,0 +1,1140 @@
+{
+  "version": 1,
+  "backgrounds": {
+    "legacy": {
+      "bandHeight": 16,
+      "alphaThreshold": 32,
+      "objectAtlas": "assets/depth-bands/legacy/objects-only.png",
+      "registration": "assets/depth-bands/legacy/registrations.json",
+      "layers": [
+        {
+          "id": "depth-band-6",
+          "name": "Depth row 7",
+          "enabled": true,
+          "zIndex": 6,
+          "paths": [],
+          "level": 6,
+          "depthRange": {
+            "start": 96,
+            "endExclusive": 112
+          },
+          "memberIDs": [
+            "festival-extra-yellow-market-canopy"
+          ],
+          "memberDepthAnchors": [
+            {
+              "id": "festival-extra-yellow-market-canopy",
+              "y": 102
+            }
+          ],
+          "depthAnchorY": 102,
+          "bounds": {
+            "x": 136,
+            "y": 73,
+            "width": 75,
+            "height": 29
+          },
+          "cutoutPNG": "assets/depth-bands/legacy/depth-band-6.png",
+          "maskPNG": "assets/depth-bands/legacy/depth-band-6-mask.png",
+          "cutoutPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sha256": "6a0d8addc2a99e1dc6a67fdfa771199cbd0a0f8f77bcc8d12c6f0f847b88df64",
+          "maskSHA256": "7ddfaaba3fd36bbfb7de048895a44dac306542bf2b768e4bc61bb544cf3fbe4f",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "id": "depth-band-7",
+          "name": "Depth row 8",
+          "enabled": true,
+          "zIndex": 7,
+          "paths": [],
+          "level": 7,
+          "depthRange": {
+            "start": 112,
+            "endExclusive": 128
+          },
+          "memberIDs": [
+            "festival-extra-blue-market-canopy"
+          ],
+          "memberDepthAnchors": [
+            {
+              "id": "festival-extra-blue-market-canopy",
+              "y": 121
+            }
+          ],
+          "depthAnchorY": 121,
+          "bounds": {
+            "x": 184,
+            "y": 85,
+            "width": 87,
+            "height": 36
+          },
+          "cutoutPNG": "assets/depth-bands/legacy/depth-band-7.png",
+          "maskPNG": "assets/depth-bands/legacy/depth-band-7-mask.png",
+          "cutoutPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sha256": "f7e42aa2ca61e3f01b53709350f908510e6cc932cb8ff11841d7fb88a16fcb40",
+          "maskSHA256": "e9b6d6ffbb3f400fa812aa1dfba84e1775733f179cb52359f08099453f1e79b2",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "id": "depth-band-9",
+          "name": "Depth row 10",
+          "enabled": true,
+          "zIndex": 9,
+          "paths": [],
+          "level": 9,
+          "depthRange": {
+            "start": 144,
+            "endExclusive": 160
+          },
+          "memberIDs": [
+            "festival-extra-cream-upper-canopy"
+          ],
+          "memberDepthAnchors": [
+            {
+              "id": "festival-extra-cream-upper-canopy",
+              "y": 145
+            }
+          ],
+          "depthAnchorY": 145,
+          "bounds": {
+            "x": 242,
+            "y": 106,
+            "width": 89,
+            "height": 39
+          },
+          "cutoutPNG": "assets/depth-bands/legacy/depth-band-9.png",
+          "maskPNG": "assets/depth-bands/legacy/depth-band-9-mask.png",
+          "cutoutPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sha256": "74fca0fd05c4d8f4d837a6daa65f3111c1f6955344d6dc9d2d40e10eff3e42a1",
+          "maskSHA256": "1d21d4d8bd711fd818a749af5bc3c066a494a80a3b05fdf08fd70a1b060bea6c",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "id": "depth-band-11",
+          "name": "Depth row 12",
+          "enabled": true,
+          "zIndex": 11,
+          "paths": [],
+          "level": 11,
+          "depthRange": {
+            "start": 176,
+            "endExclusive": 192
+          },
+          "memberIDs": [
+            "festival-extra-teal-left-canopy"
+          ],
+          "memberDepthAnchors": [
+            {
+              "id": "festival-extra-teal-left-canopy",
+              "y": 192
+            }
+          ],
+          "depthAnchorY": 192,
+          "bounds": {
+            "x": 58,
+            "y": 156,
+            "width": 86,
+            "height": 36
+          },
+          "cutoutPNG": "assets/depth-bands/legacy/depth-band-11.png",
+          "maskPNG": "assets/depth-bands/legacy/depth-band-11-mask.png",
+          "cutoutPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sha256": "c3057cd6546120a798a6ec748037d5c5983a4ace4e5e6b23f3ad8f8df292c350",
+          "maskSHA256": "d892ace0e4cd9b8038fa72f288563b14005bdc81b5ab132bc1e0b738a8d3fbf1",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "id": "depth-band-15",
+          "name": "Depth row 16",
+          "enabled": true,
+          "zIndex": 15,
+          "paths": [],
+          "level": 15,
+          "depthRange": {
+            "start": 240,
+            "endExclusive": 256
+          },
+          "memberIDs": [
+            "festival-accordionist",
+            "festival-yellow-dancer"
+          ],
+          "memberDepthAnchors": [
+            {
+              "id": "festival-accordionist",
+              "y": 253
+            },
+            {
+              "id": "festival-yellow-dancer",
+              "y": 242
+            }
+          ],
+          "depthAnchorY": 253,
+          "bounds": {
+            "x": 279,
+            "y": 200,
+            "width": 107,
+            "height": 53
+          },
+          "cutoutPNG": "assets/depth-bands/legacy/depth-band-15.png",
+          "maskPNG": "assets/depth-bands/legacy/depth-band-15-mask.png",
+          "cutoutPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sha256": "c4db4bcff970f54e6d0d7d44a5d45b361f8a164be1b2925ad115ce5a46f083ae",
+          "maskSHA256": "32a2853e1bcc1a0d20c14d85bbbabc67f163e032e22de2bf36f6cbd0633b78be",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "id": "depth-band-16",
+          "name": "Depth row 17",
+          "enabled": true,
+          "zIndex": 16,
+          "paths": [],
+          "level": 16,
+          "depthRange": {
+            "start": 256,
+            "endExclusive": 272
+          },
+          "memberIDs": [
+            "festival-bass-player"
+          ],
+          "memberDepthAnchors": [
+            {
+              "id": "festival-bass-player",
+              "y": 257
+            }
+          ],
+          "depthAnchorY": 257,
+          "bounds": {
+            "x": 237,
+            "y": 191,
+            "width": 42,
+            "height": 66
+          },
+          "cutoutPNG": "assets/depth-bands/legacy/depth-band-16.png",
+          "maskPNG": "assets/depth-bands/legacy/depth-band-16-mask.png",
+          "cutoutPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sha256": "014cefa05d864971ee55083cc1afd6145fc7f275967024ab99bf66903aadbd71",
+          "maskSHA256": "298e2afbbfb164c68bce6aeed60dc047db9e0a8c66bbb2d94450f1cf742393a4",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "id": "depth-band-17",
+          "name": "Depth row 18",
+          "enabled": true,
+          "zIndex": 17,
+          "paths": [],
+          "level": 17,
+          "depthRange": {
+            "start": 272,
+            "endExclusive": 288
+          },
+          "memberIDs": [
+            "festival-green-cart",
+            "festival-blue-walker"
+          ],
+          "memberDepthAnchors": [
+            {
+              "id": "festival-green-cart",
+              "y": 281
+            },
+            {
+              "id": "festival-blue-walker",
+              "y": 281
+            }
+          ],
+          "depthAnchorY": 281,
+          "bounds": {
+            "x": 362,
+            "y": 198,
+            "width": 125,
+            "height": 83
+          },
+          "cutoutPNG": "assets/depth-bands/legacy/depth-band-17.png",
+          "maskPNG": "assets/depth-bands/legacy/depth-band-17-mask.png",
+          "cutoutPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sha256": "49063810e8d05e89716641f7f26daa7d2ec3a11b36cf2b0b8030f6eba1a02822",
+          "maskSHA256": "41c97f5e7658c489f7fbc1899a669fed1b8e79931c4f0149642355def8c9e7c0",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "id": "depth-band-21",
+          "name": "Depth row 22",
+          "enabled": true,
+          "zIndex": 21,
+          "paths": [],
+          "level": 21,
+          "depthRange": {
+            "start": 336,
+            "endExclusive": 352
+          },
+          "memberIDs": [
+            "festival-extra-seated-blue-visitor"
+          ],
+          "memberDepthAnchors": [
+            {
+              "id": "festival-extra-seated-blue-visitor",
+              "y": 352
+            }
+          ],
+          "depthAnchorY": 352,
+          "bounds": {
+            "x": 226,
+            "y": 312,
+            "width": 26,
+            "height": 40
+          },
+          "cutoutPNG": "assets/depth-bands/legacy/depth-band-21.png",
+          "maskPNG": "assets/depth-bands/legacy/depth-band-21-mask.png",
+          "cutoutPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sha256": "f0481ff090f580ca79939b449d82a1530666b6e6af0c6fd5a8b9112960241bcb",
+          "maskSHA256": "87c4b56138c127d275c3a4b9f29d5bfd464eb2fb0e87945d086e23a89a36d74d",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "id": "depth-band-22",
+          "name": "Depth row 23",
+          "enabled": true,
+          "zIndex": 22,
+          "paths": [],
+          "level": 22,
+          "depthRange": {
+            "start": 352,
+            "endExclusive": 368
+          },
+          "memberIDs": [
+            "festival-fountain",
+            "festival-green-dress-woman",
+            "festival-extra-seated-white-visitor",
+            "festival-extra-white-dress-child"
+          ],
+          "memberDepthAnchors": [
+            {
+              "id": "festival-fountain",
+              "y": 353
+            },
+            {
+              "id": "festival-green-dress-woman",
+              "y": 361
+            },
+            {
+              "id": "festival-extra-seated-white-visitor",
+              "y": 356
+            },
+            {
+              "id": "festival-extra-white-dress-child",
+              "y": 364
+            }
+          ],
+          "depthAnchorY": 364,
+          "bounds": {
+            "x": 237,
+            "y": 255,
+            "width": 100,
+            "height": 109
+          },
+          "cutoutPNG": "assets/depth-bands/legacy/depth-band-22.png",
+          "maskPNG": "assets/depth-bands/legacy/depth-band-22-mask.png",
+          "cutoutPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sha256": "79f97f12b7bb9d2279d995b2f5ef97e473e062c6042eb6d7d0051fb8a57539f3",
+          "maskSHA256": "77a017e0d74550d3eccb88ef7e8395b8e255a3a306e7300d1746bce87a504127",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "id": "depth-band-23",
+          "name": "Depth row 24",
+          "enabled": true,
+          "zIndex": 23,
+          "paths": [],
+          "level": 23,
+          "depthRange": {
+            "start": 368,
+            "endExclusive": 384
+          },
+          "memberIDs": [
+            "festival-cafe-umbrella"
+          ],
+          "memberDepthAnchors": [
+            {
+              "id": "festival-cafe-umbrella",
+              "y": 377
+            }
+          ],
+          "depthAnchorY": 377,
+          "bounds": {
+            "x": 426,
+            "y": 309,
+            "width": 84,
+            "height": 68
+          },
+          "cutoutPNG": "assets/depth-bands/legacy/depth-band-23.png",
+          "maskPNG": "assets/depth-bands/legacy/depth-band-23-mask.png",
+          "cutoutPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sha256": "1bd9cc8bca483381e0c74db8ec6f2bacaeded1b3825e60ddd61f8b52b686e063",
+          "maskSHA256": "eb8ece4e9c50075bc93e9886d84563abdbb04d273c5e8d35cf8928a62887c23d",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "id": "depth-band-24",
+          "name": "Depth row 25",
+          "enabled": true,
+          "zIndex": 24,
+          "paths": [],
+          "level": 24,
+          "depthRange": {
+            "start": 384,
+            "endExclusive": 400
+          },
+          "memberIDs": [
+            "festival-extra-coral-dress-visitor"
+          ],
+          "memberDepthAnchors": [
+            {
+              "id": "festival-extra-coral-dress-visitor",
+              "y": 396
+            }
+          ],
+          "depthAnchorY": 396,
+          "bounds": {
+            "x": 333,
+            "y": 352,
+            "width": 17,
+            "height": 44
+          },
+          "cutoutPNG": "assets/depth-bands/legacy/depth-band-24.png",
+          "maskPNG": "assets/depth-bands/legacy/depth-band-24-mask.png",
+          "cutoutPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sha256": "e2932f21cd51c373cc67aea2dea31fba31a52b91d89b13485cbb092fbc46be86",
+          "maskSHA256": "a561d3a46975dd20a81bcd289014a7b98ec6eee26a9c111185c230758d5673fb",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "id": "depth-band-25",
+          "name": "Depth row 26",
+          "enabled": true,
+          "zIndex": 25,
+          "paths": [],
+          "level": 25,
+          "depthRange": {
+            "start": 400,
+            "endExclusive": 416
+          },
+          "memberIDs": [
+            "festival-pale-suit-man",
+            "festival-extra-lower-yellow-visitor"
+          ],
+          "memberDepthAnchors": [
+            {
+              "id": "festival-pale-suit-man",
+              "y": 416
+            },
+            {
+              "id": "festival-extra-lower-yellow-visitor",
+              "y": 405
+            }
+          ],
+          "depthAnchorY": 416,
+          "bounds": {
+            "x": 242,
+            "y": 354,
+            "width": 54,
+            "height": 62
+          },
+          "cutoutPNG": "assets/depth-bands/legacy/depth-band-25.png",
+          "maskPNG": "assets/depth-bands/legacy/depth-band-25-mask.png",
+          "cutoutPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sha256": "42e61fcb79fd7e7786a0bd4624fe617ba72a8c9dbeae03d01ba6dda4ae652ac2",
+          "maskSHA256": "4d4bc8fbff238a835f707125f20679bdef867fe15991c0c556c8b6609315c224",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "id": "depth-band-26",
+          "name": "Depth row 27",
+          "enabled": true,
+          "zIndex": 26,
+          "paths": [],
+          "level": 26,
+          "depthRange": {
+            "start": 416,
+            "endExclusive": 432
+          },
+          "memberIDs": [
+            "festival-extra-cream-front-canopy",
+            "festival-extra-green-cyclist"
+          ],
+          "memberDepthAnchors": [
+            {
+              "id": "festival-extra-cream-front-canopy",
+              "y": 420
+            },
+            {
+              "id": "festival-extra-green-cyclist",
+              "y": 417
+            }
+          ],
+          "depthAnchorY": 420,
+          "bounds": {
+            "x": 79,
+            "y": 366,
+            "width": 255,
+            "height": 54
+          },
+          "cutoutPNG": "assets/depth-bands/legacy/depth-band-26.png",
+          "maskPNG": "assets/depth-bands/legacy/depth-band-26-mask.png",
+          "cutoutPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sha256": "032f6a100b66f219996d49e78c044d980561d2af50e565bdb9a2f22b316ad780",
+          "maskSHA256": "b017893b1adc9ee439d2b2165213ae7b6946d8bfc190a4fcdfde2bc7d3bbd10e",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "id": "depth-band-28",
+          "name": "Depth row 29",
+          "enabled": true,
+          "zIndex": 28,
+          "paths": [],
+          "level": 28,
+          "depthRange": {
+            "start": 448,
+            "endExclusive": 464
+          },
+          "memberIDs": [
+            "festival-teal-cart"
+          ],
+          "memberDepthAnchors": [
+            {
+              "id": "festival-teal-cart",
+              "y": 452
+            }
+          ],
+          "depthAnchorY": 452,
+          "bounds": {
+            "x": 355,
+            "y": 381,
+            "width": 52,
+            "height": 71
+          },
+          "cutoutPNG": "assets/depth-bands/legacy/depth-band-28.png",
+          "maskPNG": "assets/depth-bands/legacy/depth-band-28-mask.png",
+          "cutoutPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sha256": "5fcd37c43bc222b511911e3edc92ac0490bfdcfd5e570a68cf69699bba2fceb7",
+          "maskSHA256": "fa9f6b02040edd7f5e996d9fa2a90d90a44b93c1cea48931ff25462527a960d4",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "id": "depth-band-29",
+          "name": "Depth row 30",
+          "enabled": true,
+          "zIndex": 29,
+          "paths": [],
+          "level": 29,
+          "depthRange": {
+            "start": 464,
+            "endExclusive": 480
+          },
+          "memberIDs": [
+            "festival-blue-shopper",
+            "festival-navy-coat-woman",
+            "festival-extra-blue-skirt-visitor"
+          ],
+          "memberDepthAnchors": [
+            {
+              "id": "festival-blue-shopper",
+              "y": 470
+            },
+            {
+              "id": "festival-navy-coat-woman",
+              "y": 478
+            },
+            {
+              "id": "festival-extra-blue-skirt-visitor",
+              "y": 469
+            }
+          ],
+          "depthAnchorY": 478,
+          "bounds": {
+            "x": 151,
+            "y": 411,
+            "width": 116,
+            "height": 67
+          },
+          "cutoutPNG": "assets/depth-bands/legacy/depth-band-29.png",
+          "maskPNG": "assets/depth-bands/legacy/depth-band-29-mask.png",
+          "cutoutPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sha256": "28a7434312c23fa21ef3d2db6b74a75302dbcf0c0bf632039486565b748644c0",
+          "maskSHA256": "328995e7a5855cc5e92e8c9167a5cd415474265d74e6ada6135d95b7c47f326d",
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    "magic-arena": {
+      "bandHeight": 16,
+      "alphaThreshold": 32,
+      "objectAtlas": "assets/depth-bands/magic-arena/objects-only.png",
+      "registration": "assets/depth-bands/magic-arena/registrations.json",
+      "layers": [
+        {
+          "id": "depth-band-20",
+          "name": "Depth row 21",
+          "enabled": true,
+          "zIndex": 20,
+          "paths": [],
+          "level": 20,
+          "depthRange": {
+            "start": 320,
+            "endExclusive": 336
+          },
+          "memberIDs": [
+            "arena-covered-podium",
+            "arena-left-entrance",
+            "arena-red-rear-contestant"
+          ],
+          "memberDepthAnchors": [
+            {
+              "id": "arena-covered-podium",
+              "y": 331
+            },
+            {
+              "id": "arena-left-entrance",
+              "y": 330
+            },
+            {
+              "id": "arena-red-rear-contestant",
+              "y": 322
+            }
+          ],
+          "depthAnchorY": 331,
+          "bounds": {
+            "x": 47,
+            "y": 234,
+            "width": 273,
+            "height": 97
+          },
+          "cutoutPNG": "assets/depth-bands/magic-arena/depth-band-20.png",
+          "maskPNG": "assets/depth-bands/magic-arena/depth-band-20-mask.png",
+          "cutoutPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sha256": "80041bbf6c596418eafba61f7ebcee117b913519a05158b75a91f38f0566a134",
+          "maskSHA256": "2c7ff599a6f64c7c1c9f301c8ef224c83cdfbdac6a8fc8082454254a3dfe18a2",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "id": "depth-band-21",
+          "name": "Depth row 22",
+          "enabled": true,
+          "zIndex": 21,
+          "paths": [],
+          "level": 21,
+          "depthRange": {
+            "start": 336,
+            "endExclusive": 352
+          },
+          "memberIDs": [
+            "arena-green-contestant"
+          ],
+          "memberDepthAnchors": [
+            {
+              "id": "arena-green-contestant",
+              "y": 350
+            }
+          ],
+          "depthAnchorY": 350,
+          "bounds": {
+            "x": 127,
+            "y": 322,
+            "width": 12,
+            "height": 28
+          },
+          "cutoutPNG": "assets/depth-bands/magic-arena/depth-band-21.png",
+          "maskPNG": "assets/depth-bands/magic-arena/depth-band-21-mask.png",
+          "cutoutPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sha256": "97f8ed84b78bf1f33f54164c065cc55fcc603c41d4242dc78504873c7708639b",
+          "maskSHA256": "ffdb6978f5e6aa356b4a158c5af8ff0e54caa77d50164a51a30fe44ae544f2da",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "id": "depth-band-22",
+          "name": "Depth row 23",
+          "enabled": true,
+          "zIndex": 22,
+          "paths": [],
+          "level": 22,
+          "depthRange": {
+            "start": 352,
+            "endExclusive": 368
+          },
+          "memberIDs": [
+            "arena-gold-contestant",
+            "arena-brown-contestant"
+          ],
+          "memberDepthAnchors": [
+            {
+              "id": "arena-gold-contestant",
+              "y": 360
+            },
+            {
+              "id": "arena-brown-contestant",
+              "y": 360
+            }
+          ],
+          "depthAnchorY": 360,
+          "bounds": {
+            "x": 232,
+            "y": 333,
+            "width": 119,
+            "height": 27
+          },
+          "cutoutPNG": "assets/depth-bands/magic-arena/depth-band-22.png",
+          "maskPNG": "assets/depth-bands/magic-arena/depth-band-22-mask.png",
+          "cutoutPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sha256": "d77210b8a75a1e43cf72e2f7cc69efe8c980f8dea2378d05cd6bc4da6483581a",
+          "maskSHA256": "0cd35f380f69a9165d383aff89fdd614e09dba8b337ed7c65877788f8d9b54a4",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "id": "depth-band-25",
+          "name": "Depth row 26",
+          "enabled": true,
+          "zIndex": 25,
+          "paths": [],
+          "level": 25,
+          "depthRange": {
+            "start": 400,
+            "endExclusive": 416
+          },
+          "memberIDs": [
+            "arena-purple-contestant",
+            "arena-red-front-contestant"
+          ],
+          "memberDepthAnchors": [
+            {
+              "id": "arena-purple-contestant",
+              "y": 409
+            },
+            {
+              "id": "arena-red-front-contestant",
+              "y": 412
+            }
+          ],
+          "depthAnchorY": 412,
+          "bounds": {
+            "x": 133,
+            "y": 375,
+            "width": 170,
+            "height": 37
+          },
+          "cutoutPNG": "assets/depth-bands/magic-arena/depth-band-25.png",
+          "maskPNG": "assets/depth-bands/magic-arena/depth-band-25-mask.png",
+          "cutoutPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sha256": "91106c6062debfee31d43fe34450c8254729c3b1b194c9bbdcef6d0f3c0aa524",
+          "maskSHA256": "11f71ef0f08780d030778469aeba0bb5f84b62ab0e4c7018098bb90fd4121208",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "id": "depth-band-28",
+          "name": "Depth row 29",
+          "enabled": true,
+          "zIndex": 28,
+          "paths": [],
+          "level": 28,
+          "depthRange": {
+            "start": 448,
+            "endExclusive": 464
+          },
+          "memberIDs": [
+            "arena-right-stall"
+          ],
+          "memberDepthAnchors": [
+            {
+              "id": "arena-right-stall",
+              "y": 462
+            }
+          ],
+          "depthAnchorY": 462,
+          "bounds": {
+            "x": 459,
+            "y": 304,
+            "width": 53,
+            "height": 158
+          },
+          "cutoutPNG": "assets/depth-bands/magic-arena/depth-band-28.png",
+          "maskPNG": "assets/depth-bands/magic-arena/depth-band-28-mask.png",
+          "cutoutPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sha256": "0f289099840f2928d5ede24a7152a62d91d8eb459e202fe298a11ef26ee36064",
+          "maskSHA256": "f7a2cd1e534d9f646a2bcc351b873ea2a5a490799cca1dbcc1b2bc054459f138",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "id": "depth-band-31",
+          "name": "Depth row 32",
+          "enabled": true,
+          "zIndex": 31,
+          "paths": [],
+          "level": 31,
+          "depthRange": {
+            "start": 496,
+            "endExclusive": 512
+          },
+          "memberIDs": [
+            "arena-brass-tuba"
+          ],
+          "memberDepthAnchors": [
+            {
+              "id": "arena-brass-tuba",
+              "y": 503
+            }
+          ],
+          "depthAnchorY": 503,
+          "bounds": {
+            "x": 6,
+            "y": 436,
+            "width": 45,
+            "height": 67
+          },
+          "cutoutPNG": "assets/depth-bands/magic-arena/depth-band-31.png",
+          "maskPNG": "assets/depth-bands/magic-arena/depth-band-31-mask.png",
+          "cutoutPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sha256": "51d952a5de0461237596c82b88a214491704dd7f130a0c63cf6b68a7b9be06e2",
+          "maskSHA256": "b6d20c4d11dcc589bc07dea8234d2bf1cea47d62089fa4084154ba0349369e4b",
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    "qualicity-queue": {
+      "bandHeight": 16,
+      "alphaThreshold": 32,
+      "objectAtlas": "assets/depth-bands/qualicity-queue/objects-only.png",
+      "registration": "assets/depth-bands/qualicity-queue/registrations.json",
+      "layers": [
+        {
+          "id": "depth-band-17",
+          "name": "Depth row 18",
+          "enabled": true,
+          "zIndex": 17,
+          "paths": [],
+          "level": 17,
+          "depthRange": {
+            "start": 272,
+            "endExclusive": 288
+          },
+          "memberIDs": [
+            "queue-blonde-woman",
+            "queue-curly-woman",
+            "queue-right-woman"
+          ],
+          "memberDepthAnchors": [
+            {
+              "id": "queue-blonde-woman",
+              "y": 286
+            },
+            {
+              "id": "queue-curly-woman",
+              "y": 288
+            },
+            {
+              "id": "queue-right-woman",
+              "y": 283
+            }
+          ],
+          "depthAnchorY": 288,
+          "bounds": {
+            "x": 322,
+            "y": 124,
+            "width": 119,
+            "height": 164
+          },
+          "cutoutPNG": "assets/depth-bands/qualicity-queue/depth-band-17.png",
+          "maskPNG": "assets/depth-bands/qualicity-queue/depth-band-17-mask.png",
+          "cutoutPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sha256": "df8edba5a369c7ed183712476271f1da48b9064e468dc7a0cb3e8dca818befc9",
+          "maskSHA256": "a0bce7a2ff6dc3c7d391b3db91d2b8639843623a393adcbef3e36e374d6d96c0",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "id": "depth-band-18",
+          "name": "Depth row 19",
+          "enabled": true,
+          "zIndex": 18,
+          "paths": [],
+          "level": 18,
+          "depthRange": {
+            "start": 288,
+            "endExclusive": 304
+          },
+          "memberIDs": [
+            "queue-robot"
+          ],
+          "memberDepthAnchors": [
+            {
+              "id": "queue-robot",
+              "y": 295
+            }
+          ],
+          "depthAnchorY": 295,
+          "bounds": {
+            "x": 221,
+            "y": 200,
+            "width": 85,
+            "height": 95
+          },
+          "cutoutPNG": "assets/depth-bands/qualicity-queue/depth-band-18.png",
+          "maskPNG": "assets/depth-bands/qualicity-queue/depth-band-18-mask.png",
+          "cutoutPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sha256": "01324594654814d651f60e6acbf32f17bcca910569df16c1e0219ecefdebe020",
+          "maskSHA256": "655badce28350e88fc80a8b8c8ff868beb3da573e58507dc8f67aec615b3c691",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "id": "depth-band-19",
+          "name": "Depth row 20",
+          "enabled": true,
+          "zIndex": 19,
+          "paths": [],
+          "level": 19,
+          "depthRange": {
+            "start": 304,
+            "endExclusive": 320
+          },
+          "memberIDs": [
+            "queue-left-witch"
+          ],
+          "memberDepthAnchors": [
+            {
+              "id": "queue-left-witch",
+              "y": 307
+            }
+          ],
+          "depthAnchorY": 307,
+          "bounds": {
+            "x": 0,
+            "y": 179,
+            "width": 79,
+            "height": 128
+          },
+          "cutoutPNG": "assets/depth-bands/qualicity-queue/depth-band-19.png",
+          "maskPNG": "assets/depth-bands/qualicity-queue/depth-band-19-mask.png",
+          "cutoutPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sha256": "7e32e7ee99cb37c51b9cb8772af90a897652fa2b40b23128f3b636b58a3f1002",
+          "maskSHA256": "c3663f38b1a6f4499a09b90a50e73d5a73af250925a6404d81d82e05524b1481",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "id": "depth-band-24",
+          "name": "Depth row 25",
+          "enabled": true,
+          "zIndex": 24,
+          "paths": [],
+          "level": 24,
+          "depthRange": {
+            "start": 384,
+            "endExclusive": 400
+          },
+          "memberIDs": [
+            "queue-moustached-guest",
+            "queue-brass-post"
+          ],
+          "memberDepthAnchors": [
+            {
+              "id": "queue-moustached-guest",
+              "y": 387
+            },
+            {
+              "id": "queue-brass-post",
+              "y": 395
+            }
+          ],
+          "depthAnchorY": 395,
+          "bounds": {
+            "x": 69,
+            "y": 274,
+            "width": 322,
+            "height": 121
+          },
+          "cutoutPNG": "assets/depth-bands/qualicity-queue/depth-band-24.png",
+          "maskPNG": "assets/depth-bands/qualicity-queue/depth-band-24-mask.png",
+          "cutoutPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sha256": "0fc12bcb258d9621fe1c099985724e45c82ac9b94d164a3b99783c41d7d4035e",
+          "maskSHA256": "60ac3917454cd0a929caecba942f6c5d07e1ed73a13728958bd60ac08be26c85",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "id": "depth-band-27",
+          "name": "Depth row 28",
+          "enabled": true,
+          "zIndex": 27,
+          "paths": [],
+          "level": 27,
+          "depthRange": {
+            "start": 432,
+            "endExclusive": 448
+          },
+          "memberIDs": [
+            "queue-green-hat"
+          ],
+          "memberDepthAnchors": [
+            {
+              "id": "queue-green-hat",
+              "y": 433
+            }
+          ],
+          "depthAnchorY": 433,
+          "bounds": {
+            "x": 255,
+            "y": 274,
+            "width": 76,
+            "height": 159
+          },
+          "cutoutPNG": "assets/depth-bands/qualicity-queue/depth-band-27.png",
+          "maskPNG": "assets/depth-bands/qualicity-queue/depth-band-27-mask.png",
+          "cutoutPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sha256": "be6d1807041af0459a265c0db8d0f73aed75bb0c5b4086eef38537e9165e7d24",
+          "maskSHA256": "1274fbe4e3d6b356d51ce1cda3a61e7242c875b493b3f7489b6c27002d79e763",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "id": "depth-band-31",
+          "name": "Depth row 32",
+          "enabled": true,
+          "zIndex": 31,
+          "paths": [],
+          "level": 31,
+          "depthRange": {
+            "start": 496,
+            "endExclusive": 512
+          },
+          "memberIDs": [
+            "queue-foreground-witch",
+            "queue-court-guest"
+          ],
+          "memberDepthAnchors": [
+            {
+              "id": "queue-foreground-witch",
+              "y": 512
+            },
+            {
+              "id": "queue-court-guest",
+              "y": 512
+            }
+          ],
+          "depthAnchorY": 512,
+          "bounds": {
+            "x": 123,
+            "y": 372,
+            "width": 196,
+            "height": 140
+          },
+          "cutoutPNG": "assets/depth-bands/qualicity-queue/depth-band-31.png",
+          "maskPNG": "assets/depth-bands/qualicity-queue/depth-band-31-mask.png",
+          "cutoutPosition": {
+            "x": 0,
+            "y": 0
+          },
+          "sha256": "0e18f02b67663de793be93a1c3fe346a0445bd8f71e409896f4038679b3e4302",
+          "maskSHA256": "31b318accae6afc085ee0b4b18dfe7a754e90cba13ecc9e8217cb47242de9239",
+          "width": 512,
+          "height": 512
+        }
+      ]
+    }
+  }
+}

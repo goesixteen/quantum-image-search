@@ -1,0 +1,1068 @@
+{
+  "recordedAtUtc": "2026-10-11T05:34:40.145Z",
+  "contract": {
+    "featureVersion": "wanda-window-v1",
+    "featureNames": [
+      "sweater_stripe_fourier",
+      "sweater_cross_phase",
+      "sweater_red_white_balance",
+      "warm_face_brown_hair",
+      "blue_trouser_morphology",
+      "body_horizontal_alignment_px",
+      "body_vertical_alignment_px",
+      "supplied_wanda_height"
+    ],
+    "modelSHA256": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88",
+    "featureJS_SHA256": "bc9292a9dbc9ada24611916118e297aeb06d3d2eb8a5961c31f968162c26decf",
+    "qnnJS_SHA256": "c881e6a815c7e5e1b4013a241d7b36ff78f3c21ac49ef0f47f2f8005979e972e",
+    "sceneEditorSHA256": "645d3799f9eb27ac39b81aa4c9a8659cea551e00a699560046cb36eb13ff61ae",
+    "appSHA256AtStart": "87d5a7664d234ccf0142e4fa5a5e2a429477d119561d27d9b0da5b2abe7ea60e",
+    "threshold": 0.9056472752971427,
+    "grid": 64,
+    "pointTolerance": 6.657,
+    "knownSizeOnly": true,
+    "scope": "Read-only cross-backend engineering fixtures at known default center;15targets+5absences; not a fresh statistical holdout; no threshold/feature/model changes",
+    "renderer": "@napi-rs/canvas high512background staging; alpha>16trim; high target resize; resizedsprite targetSmoothing=false; frontdepth1000; opaque finalRGBA",
+    "appSHA256AtFinish": "87d5a7664d234ccf0142e4fa5a5e2a429477d119561d27d9b0da5b2abe7ea60e"
+  },
+  "targetSourceSHA256": "ae679a90fb94c8ad10a589fd6fa6a27404b7d519f6ad750557749a1595229777",
+  "targetTrim": [
+    285,
+    21,
+    725,
+    1514
+  ],
+  "cases": [
+    {
+      "id": "wanda-festival-h40-default",
+      "sceneID": "wanda-festival",
+      "targetID": "wanda",
+      "height": 40,
+      "width": 12,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "renderedCenter": [
+        276,
+        348
+      ],
+      "targetRect": {
+        "x": 270,
+        "y": 328,
+        "width": 12,
+        "height": 40
+      },
+      "targetPresent": true,
+      "targetDepth": 1000,
+      "grid": 64,
+      "threshold": 0.9056472752971427,
+      "expectedPNG": "expected/wanda-festival-h40-default.png",
+      "expectedPNG_SHA256": "fa1cfd30a414d0d6dd4b436a82cd87d8f432e3ab98013ae521f04928ffb94c40",
+      "expectedScoreFile": "expected/wanda-festival-h40-default.scores.f64",
+      "expectedScoreSHA256": "6c9b2f2d147b9ad0a1f07d37bced45bab589dabf984ad2b93031e7e7aca8e85d",
+      "browserPNG": "browser/wanda-festival-h40-default.png",
+      "nativeMarks": [
+        {
+          "index": 2786,
+          "x": 276,
+          "y": 348,
+          "score": 0.9289710901528639
+        }
+      ],
+      "nativeCompleteHit": true,
+      "nativeAbsenceClean": false,
+      "nativeRenderMs": 7.112200000000001,
+      "nativeScanMs": 1043.0658,
+      "nativeMaxScore": 0.9289710901528639,
+      "backgroundSHA256": "369f59e8c4b83ebe9d36febc42e85fe29dd650da56e7ad9f9b27f0c8363bda56",
+      "nativeCenterFeatures": [
+        0.43378687612022554,
+        0.18817096050625295,
+        0.8700404255697364,
+        0.19379847995264302,
+        0.576856956944684,
+        0.932056431270111,
+        0.8722831452726374,
+        0
+      ]
+    },
+    {
+      "id": "wanda-festival-h52-default",
+      "sceneID": "wanda-festival",
+      "targetID": "wanda",
+      "height": 52,
+      "width": 15,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "renderedCenter": [
+        276.5,
+        348
+      ],
+      "targetRect": {
+        "x": 269,
+        "y": 322,
+        "width": 15,
+        "height": 52
+      },
+      "targetPresent": true,
+      "targetDepth": 1000,
+      "grid": 64,
+      "threshold": 0.9056472752971427,
+      "expectedPNG": "expected/wanda-festival-h52-default.png",
+      "expectedPNG_SHA256": "12b6a7c2370fe62454306f6300230a84e94886da2c1ab9a55a36e00be4d7557a",
+      "expectedScoreFile": "expected/wanda-festival-h52-default.scores.f64",
+      "expectedScoreSHA256": "dcde8b3f76fc2f88f747cbac57644569047103064a8895a0434095ff3bf86241",
+      "browserPNG": "browser/wanda-festival-h52-default.png",
+      "nativeMarks": [
+        {
+          "index": 2786,
+          "x": 276,
+          "y": 348,
+          "score": 0.986674837069946
+        }
+      ],
+      "nativeCompleteHit": true,
+      "nativeAbsenceClean": false,
+      "nativeRenderMs": 4.259300000000167,
+      "nativeScanMs": 1021.258,
+      "nativeMaxScore": 0.986674837069946,
+      "backgroundSHA256": "369f59e8c4b83ebe9d36febc42e85fe29dd650da56e7ad9f9b27f0c8363bda56",
+      "nativeCenterFeatures": [
+        0.3946700462399424,
+        0.15576392840005607,
+        0.8208170468525051,
+        0.23904988268977984,
+        0.4131444830646944,
+        0.9417717975259632,
+        0.8843208060131358,
+        0.5
+      ]
+    },
+    {
+      "id": "wanda-festival-h64-default",
+      "sceneID": "wanda-festival",
+      "targetID": "wanda",
+      "height": 64,
+      "width": 19,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "renderedCenter": [
+        276.5,
+        348
+      ],
+      "targetRect": {
+        "x": 267,
+        "y": 316,
+        "width": 19,
+        "height": 64
+      },
+      "targetPresent": true,
+      "targetDepth": 1000,
+      "grid": 64,
+      "threshold": 0.9056472752971427,
+      "expectedPNG": "expected/wanda-festival-h64-default.png",
+      "expectedPNG_SHA256": "ed3c9f274ad25b7acae48647fc0e1adac5c65c15f3d85df4b47b03f106d69afa",
+      "expectedScoreFile": "expected/wanda-festival-h64-default.scores.f64",
+      "expectedScoreSHA256": "08db98e6037ce2bcb050d26d8c73f71b0af02d0b9ef87efc17abfcf76c49c068",
+      "browserPNG": "browser/wanda-festival-h64-default.png",
+      "nativeMarks": [
+        {
+          "index": 2786,
+          "x": 276,
+          "y": 348,
+          "score": 0.9899031123334845
+        }
+      ],
+      "nativeCompleteHit": true,
+      "nativeAbsenceClean": false,
+      "nativeRenderMs": 4.2546000000002095,
+      "nativeScanMs": 1018.5827999999997,
+      "nativeMaxScore": 0.9899031123334845,
+      "backgroundSHA256": "369f59e8c4b83ebe9d36febc42e85fe29dd650da56e7ad9f9b27f0c8363bda56",
+      "nativeCenterFeatures": [
+        0.4650554097846955,
+        0.2162257073849186,
+        0.9013168076410303,
+        0.2976146412599246,
+        0.543203627513706,
+        0.940136242648668,
+        0.8781248813386355,
+        1
+      ]
+    },
+    {
+      "id": "wanda-festival-h52-absent",
+      "sceneID": "wanda-festival",
+      "targetID": "wanda",
+      "height": 52,
+      "width": 15,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "renderedCenter": [
+        276.5,
+        348
+      ],
+      "targetRect": {
+        "x": 269,
+        "y": 322,
+        "width": 15,
+        "height": 52
+      },
+      "targetPresent": false,
+      "targetDepth": 1000,
+      "grid": 64,
+      "threshold": 0.9056472752971427,
+      "expectedPNG": "expected/wanda-festival-h52-absent.png",
+      "expectedPNG_SHA256": "4b863160e08f6f0fb030f49cc9de24c1173edd3ae301ced53f42510e8e1bc0a0",
+      "expectedScoreFile": "expected/wanda-festival-h52-absent.scores.f64",
+      "expectedScoreSHA256": "9cd3ee0f48a2b02a61395c319bc5eae3bc64b48e023abdb3a324bd2a0c293a2b",
+      "browserPNG": "browser/wanda-festival-h52-absent.png",
+      "nativeMarks": [],
+      "nativeCompleteHit": false,
+      "nativeAbsenceClean": true,
+      "nativeRenderMs": 3.49369999999999,
+      "nativeScanMs": 1011.1360999999997,
+      "nativeMaxScore": 0.4050144436875427,
+      "backgroundSHA256": "369f59e8c4b83ebe9d36febc42e85fe29dd650da56e7ad9f9b27f0c8363bda56",
+      "nativeCenterFeatures": [
+        0.003181708114241536,
+        0.000005594098342290298,
+        0.14728181562795958,
+        0.07231344685515423,
+        0.05805293357612893,
+        0.7973684085544074,
+        0.5288494489570076,
+        0.5
+      ]
+    },
+    {
+      "id": "wanda-beach-h40-default",
+      "sceneID": "wanda-beach",
+      "targetID": "wanda",
+      "height": 40,
+      "width": 12,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "renderedCenter": [
+        276,
+        348
+      ],
+      "targetRect": {
+        "x": 270,
+        "y": 328,
+        "width": 12,
+        "height": 40
+      },
+      "targetPresent": true,
+      "targetDepth": 1000,
+      "grid": 64,
+      "threshold": 0.9056472752971427,
+      "expectedPNG": "expected/wanda-beach-h40-default.png",
+      "expectedPNG_SHA256": "f5611785d43b0e97dfd2416d324caddf1bb4391fdf6a3be7a5ad7eb1209875fa",
+      "expectedScoreFile": "expected/wanda-beach-h40-default.scores.f64",
+      "expectedScoreSHA256": "83f2faccfc0d71bd2543b02d32c96be88e775e73ce2abe1f2681e5ed75b2ad66",
+      "browserPNG": "browser/wanda-beach-h40-default.png",
+      "nativeMarks": [],
+      "nativeCompleteHit": false,
+      "nativeAbsenceClean": false,
+      "nativeRenderMs": 6.2181000000000495,
+      "nativeScanMs": 1001.3190999999997,
+      "nativeMaxScore": 0.860167244776533,
+      "backgroundSHA256": "fce6b6ade6a36f9b1fc92bcaf11bc2f5ef874d740de872ae22095a629377226a",
+      "nativeCenterFeatures": [
+        0.43249432213912403,
+        0.1870448490359806,
+        0.8957024602368406,
+        0.20357676398409835,
+        0.5794128347383822,
+        0.9364514325537013,
+        0.8794660797512042,
+        0
+      ]
+    },
+    {
+      "id": "wanda-beach-h52-default",
+      "sceneID": "wanda-beach",
+      "targetID": "wanda",
+      "height": 52,
+      "width": 15,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "renderedCenter": [
+        276.5,
+        348
+      ],
+      "targetRect": {
+        "x": 269,
+        "y": 322,
+        "width": 15,
+        "height": 52
+      },
+      "targetPresent": true,
+      "targetDepth": 1000,
+      "grid": 64,
+      "threshold": 0.9056472752971427,
+      "expectedPNG": "expected/wanda-beach-h52-default.png",
+      "expectedPNG_SHA256": "a4cfe0811d21b0d1c43ab6ad4d53185cd4bc76b3ee04cb643f41e6ded7cdc966",
+      "expectedScoreFile": "expected/wanda-beach-h52-default.scores.f64",
+      "expectedScoreSHA256": "6b8509ff8fafd0d7df6d4e04690af7a67ca83e66479e0bc6429cc3ee6cccf103",
+      "browserPNG": "browser/wanda-beach-h52-default.png",
+      "nativeMarks": [
+        {
+          "index": 2786,
+          "x": 276,
+          "y": 348,
+          "score": 0.9835748571504127
+        }
+      ],
+      "nativeCompleteHit": true,
+      "nativeAbsenceClean": false,
+      "nativeRenderMs": 3.3119000000006054,
+      "nativeScanMs": 1007.1144999999997,
+      "nativeMaxScore": 0.9835748571504127,
+      "backgroundSHA256": "fce6b6ade6a36f9b1fc92bcaf11bc2f5ef874d740de872ae22095a629377226a",
+      "nativeCenterFeatures": [
+        0.3994057066737862,
+        0.15950060329888152,
+        0.8486248545005051,
+        0.2139323113096167,
+        0.4063150626948177,
+        0.9417073980709756,
+        0.889463561645783,
+        0.5
+      ]
+    },
+    {
+      "id": "wanda-beach-h64-default",
+      "sceneID": "wanda-beach",
+      "targetID": "wanda",
+      "height": 64,
+      "width": 19,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "renderedCenter": [
+        276.5,
+        348
+      ],
+      "targetRect": {
+        "x": 267,
+        "y": 316,
+        "width": 19,
+        "height": 64
+      },
+      "targetPresent": true,
+      "targetDepth": 1000,
+      "grid": 64,
+      "threshold": 0.9056472752971427,
+      "expectedPNG": "expected/wanda-beach-h64-default.png",
+      "expectedPNG_SHA256": "e001ac26ce7141811d6996a78a727eded4064d77f6d86f081ba0eb727890e749",
+      "expectedScoreFile": "expected/wanda-beach-h64-default.scores.f64",
+      "expectedScoreSHA256": "aea8c6246b00ec42cccab61731ccb72564c592bb04f37598423d455e7d9a4c7d",
+      "browserPNG": "browser/wanda-beach-h64-default.png",
+      "nativeMarks": [
+        {
+          "index": 2786,
+          "x": 276,
+          "y": 348,
+          "score": 0.9903795127934906
+        }
+      ],
+      "nativeCompleteHit": true,
+      "nativeAbsenceClean": false,
+      "nativeRenderMs": 3.430699999999888,
+      "nativeScanMs": 1014.2592999999997,
+      "nativeMaxScore": 0.9903795127934906,
+      "backgroundSHA256": "fce6b6ade6a36f9b1fc92bcaf11bc2f5ef874d740de872ae22095a629377226a",
+      "nativeCenterFeatures": [
+        0.4623682787311909,
+        0.21375163137969058,
+        0.9111308525595809,
+        0.29487300481622764,
+        0.5364798670773476,
+        0.9373254470900458,
+        0.8886113342548663,
+        1
+      ]
+    },
+    {
+      "id": "wanda-beach-h52-absent",
+      "sceneID": "wanda-beach",
+      "targetID": "wanda",
+      "height": 52,
+      "width": 15,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "renderedCenter": [
+        276.5,
+        348
+      ],
+      "targetRect": {
+        "x": 269,
+        "y": 322,
+        "width": 15,
+        "height": 52
+      },
+      "targetPresent": false,
+      "targetDepth": 1000,
+      "grid": 64,
+      "threshold": 0.9056472752971427,
+      "expectedPNG": "expected/wanda-beach-h52-absent.png",
+      "expectedPNG_SHA256": "cdda8c39e5924cfa110344ac5bf39915d9162918acf07ebd476d91cad2d8e535",
+      "expectedScoreFile": "expected/wanda-beach-h52-absent.scores.f64",
+      "expectedScoreSHA256": "dc93414d9421998f4dd9319dba795da95ed4341c4996b8ef323818f9e2c1a099",
+      "browserPNG": "browser/wanda-beach-h52-absent.png",
+      "nativeMarks": [],
+      "nativeCompleteHit": false,
+      "nativeAbsenceClean": true,
+      "nativeRenderMs": 3.5455999999994674,
+      "nativeScanMs": 1014.8415000000005,
+      "nativeMaxScore": 0.2869438027305596,
+      "backgroundSHA256": "fce6b6ade6a36f9b1fc92bcaf11bc2f5ef874d740de872ae22095a629377226a",
+      "nativeCenterFeatures": [
+        0.013370877359358057,
+        0.00004393162787124178,
+        0.38486614693788823,
+        0.06890665739985039,
+        0.023009725178566035,
+        0.781747477574966,
+        0.635260184448401,
+        0.5
+      ]
+    },
+    {
+      "id": "wanda-market-h40-default",
+      "sceneID": "wanda-market",
+      "targetID": "wanda",
+      "height": 40,
+      "width": 12,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "renderedCenter": [
+        276,
+        348
+      ],
+      "targetRect": {
+        "x": 270,
+        "y": 328,
+        "width": 12,
+        "height": 40
+      },
+      "targetPresent": true,
+      "targetDepth": 1000,
+      "grid": 64,
+      "threshold": 0.9056472752971427,
+      "expectedPNG": "expected/wanda-market-h40-default.png",
+      "expectedPNG_SHA256": "a7048d4b29ee0b36779448f386bfacb4957de3454322b3c9fc57a49ec5f2d803",
+      "expectedScoreFile": "expected/wanda-market-h40-default.scores.f64",
+      "expectedScoreSHA256": "91acc5ba74f55b7e03f67f68031bee2f8ab0eac458181d70b5f80e8e957ede2e",
+      "browserPNG": "browser/wanda-market-h40-default.png",
+      "nativeMarks": [
+        {
+          "index": 2786,
+          "x": 276,
+          "y": 348,
+          "score": 0.929818915915414
+        }
+      ],
+      "nativeCompleteHit": true,
+      "nativeAbsenceClean": false,
+      "nativeRenderMs": 6.169299999999566,
+      "nativeScanMs": 1015.5252,
+      "nativeMaxScore": 0.929818915915414,
+      "backgroundSHA256": "746b7ba03b5a25a91041e4d287125b4ea1d3187cc0f7712086697ddf1dd429fa",
+      "nativeCenterFeatures": [
+        0.43348561430295135,
+        0.18790975475079508,
+        0.8706567206646636,
+        0.19552091304692987,
+        0.5802295044640416,
+        0.929842162530471,
+        0.8709014454121847,
+        0
+      ]
+    },
+    {
+      "id": "wanda-market-h52-default",
+      "sceneID": "wanda-market",
+      "targetID": "wanda",
+      "height": 52,
+      "width": 15,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "renderedCenter": [
+        276.5,
+        348
+      ],
+      "targetRect": {
+        "x": 269,
+        "y": 322,
+        "width": 15,
+        "height": 52
+      },
+      "targetPresent": true,
+      "targetDepth": 1000,
+      "grid": 64,
+      "threshold": 0.9056472752971427,
+      "expectedPNG": "expected/wanda-market-h52-default.png",
+      "expectedPNG_SHA256": "682d7e3f8dbd5092269d7b09a11c5608f95b95811b9a1bd7587777fdd32d4a49",
+      "expectedScoreFile": "expected/wanda-market-h52-default.scores.f64",
+      "expectedScoreSHA256": "e4c0d4a2a847d0c5e5bd9d4917d45591b0a3f624967e23f4a51cc5f0acbd0c29",
+      "browserPNG": "browser/wanda-market-h52-default.png",
+      "nativeMarks": [
+        {
+          "index": 2786,
+          "x": 276,
+          "y": 348,
+          "score": 0.9852271887723092
+        }
+      ],
+      "nativeCompleteHit": true,
+      "nativeAbsenceClean": false,
+      "nativeRenderMs": 3.9127000000007683,
+      "nativeScanMs": 1014.4557999999997,
+      "nativeMaxScore": 0.9852271887723092,
+      "backgroundSHA256": "746b7ba03b5a25a91041e4d287125b4ea1d3187cc0f7712086697ddf1dd429fa",
+      "nativeCenterFeatures": [
+        0.3946708592297022,
+        0.15576479555986417,
+        0.8213609154106902,
+        0.22760617818540507,
+        0.4048869452282478,
+        0.9373299208358986,
+        0.8904040311820316,
+        0.5
+      ]
+    },
+    {
+      "id": "wanda-market-h64-default",
+      "sceneID": "wanda-market",
+      "targetID": "wanda",
+      "height": 64,
+      "width": 19,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "renderedCenter": [
+        276.5,
+        348
+      ],
+      "targetRect": {
+        "x": 267,
+        "y": 316,
+        "width": 19,
+        "height": 64
+      },
+      "targetPresent": true,
+      "targetDepth": 1000,
+      "grid": 64,
+      "threshold": 0.9056472752971427,
+      "expectedPNG": "expected/wanda-market-h64-default.png",
+      "expectedPNG_SHA256": "f96a7616109e5b1e086cff158ef663919e860ff6e419256f33b90fb2087895fa",
+      "expectedScoreFile": "expected/wanda-market-h64-default.scores.f64",
+      "expectedScoreSHA256": "493291dbb92ca8bc12de6d7d4245b9779d909587ba4ad9fccf8d2c3be25ce93b",
+      "browserPNG": "browser/wanda-market-h64-default.png",
+      "nativeMarks": [
+        {
+          "index": 2786,
+          "x": 276,
+          "y": 348,
+          "score": 0.9884220832198828
+        }
+      ],
+      "nativeCompleteHit": true,
+      "nativeAbsenceClean": false,
+      "nativeRenderMs": 3.285700000000361,
+      "nativeScanMs": 1014.6661999999997,
+      "nativeMaxScore": 0.9884220832198828,
+      "backgroundSHA256": "746b7ba03b5a25a91041e4d287125b4ea1d3187cc0f7712086697ddf1dd429fa",
+      "nativeCenterFeatures": [
+        0.4612087627218525,
+        0.21257070083480845,
+        0.9148004825170354,
+        0.29312466474048887,
+        0.5353426960580808,
+        0.929897042087733,
+        0.881776972486175,
+        1
+      ]
+    },
+    {
+      "id": "wanda-market-h52-absent",
+      "sceneID": "wanda-market",
+      "targetID": "wanda",
+      "height": 52,
+      "width": 15,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "renderedCenter": [
+        276.5,
+        348
+      ],
+      "targetRect": {
+        "x": 269,
+        "y": 322,
+        "width": 15,
+        "height": 52
+      },
+      "targetPresent": false,
+      "targetDepth": 1000,
+      "grid": 64,
+      "threshold": 0.9056472752971427,
+      "expectedPNG": "expected/wanda-market-h52-absent.png",
+      "expectedPNG_SHA256": "59d8e1d2e62aa460e6b45ca1f5e0a4af80148b64e702c414f4252ad2e8ce5e60",
+      "expectedScoreFile": "expected/wanda-market-h52-absent.scores.f64",
+      "expectedScoreSHA256": "d6e0aed900a4702c06fd1be55c5ef8504c1fca34e81fc49c7b91e365a722be9e",
+      "browserPNG": "browser/wanda-market-h52-absent.png",
+      "nativeMarks": [],
+      "nativeCompleteHit": false,
+      "nativeAbsenceClean": true,
+      "nativeRenderMs": 3.6344000000008236,
+      "nativeScanMs": 1008.1463000000003,
+      "nativeMaxScore": 0.535826976783648,
+      "backgroundSHA256": "746b7ba03b5a25a91041e4d287125b4ea1d3187cc0f7712086697ddf1dd429fa",
+      "nativeCenterFeatures": [
+        0.022886278986734194,
+        0.00040984591486933864,
+        0.16234730937371503,
+        0.08242856210455907,
+        0.0000998878488173015,
+        0.5327167127829197,
+        0.4757524090443974,
+        0.5
+      ]
+    },
+    {
+      "id": "wanda-park-h40-default",
+      "sceneID": "wanda-park",
+      "targetID": "wanda",
+      "height": 40,
+      "width": 12,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "renderedCenter": [
+        276,
+        348
+      ],
+      "targetRect": {
+        "x": 270,
+        "y": 328,
+        "width": 12,
+        "height": 40
+      },
+      "targetPresent": true,
+      "targetDepth": 1000,
+      "grid": 64,
+      "threshold": 0.9056472752971427,
+      "expectedPNG": "expected/wanda-park-h40-default.png",
+      "expectedPNG_SHA256": "d51807c31a6e0a6c1ff1f386a0b82a46ee8f266d9bcc181dec18c8314d87ca70",
+      "expectedScoreFile": "expected/wanda-park-h40-default.scores.f64",
+      "expectedScoreSHA256": "73ff7b694d6765e915c61a224343e27d97d5d1d88d67f83b3752d87410666929",
+      "browserPNG": "browser/wanda-park-h40-default.png",
+      "nativeMarks": [
+        {
+          "index": 2786,
+          "x": 276,
+          "y": 348,
+          "score": 0.925440750438999
+        }
+      ],
+      "nativeCompleteHit": true,
+      "nativeAbsenceClean": false,
+      "nativeRenderMs": 5.6939000000002125,
+      "nativeScanMs": 994.7150000000001,
+      "nativeMaxScore": 0.925440750438999,
+      "backgroundSHA256": "d20ea478a665eac1221fafcf3079dff71e9d9a40ca56846546628216452ceabd",
+      "nativeCenterFeatures": [
+        0.4343240695476054,
+        0.1886360973183538,
+        0.8737531340120486,
+        0.21081092284705868,
+        0.5754818910734083,
+        0.9291853045124746,
+        0.8674679442801478,
+        0
+      ]
+    },
+    {
+      "id": "wanda-park-h52-default",
+      "sceneID": "wanda-park",
+      "targetID": "wanda",
+      "height": 52,
+      "width": 15,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "renderedCenter": [
+        276.5,
+        348
+      ],
+      "targetRect": {
+        "x": 269,
+        "y": 322,
+        "width": 15,
+        "height": 52
+      },
+      "targetPresent": true,
+      "targetDepth": 1000,
+      "grid": 64,
+      "threshold": 0.9056472752971427,
+      "expectedPNG": "expected/wanda-park-h52-default.png",
+      "expectedPNG_SHA256": "a1cbf6589b06bb24a21868811e0826e6bc336507cfc922cb16a90ac5beefbb00",
+      "expectedScoreFile": "expected/wanda-park-h52-default.scores.f64",
+      "expectedScoreSHA256": "448f92fa1b0f588d060d9111de80a00999af1f0ced42e26da10705732cb03fcf",
+      "browserPNG": "browser/wanda-park-h52-default.png",
+      "nativeMarks": [
+        {
+          "index": 2786,
+          "x": 276,
+          "y": 348,
+          "score": 0.988511737985002
+        }
+      ],
+      "nativeCompleteHit": true,
+      "nativeAbsenceClean": false,
+      "nativeRenderMs": 3.4827000000004773,
+      "nativeScanMs": 1004.1401999999998,
+      "nativeMaxScore": 0.988511737985002,
+      "backgroundSHA256": "d20ea478a665eac1221fafcf3079dff71e9d9a40ca56846546628216452ceabd",
+      "nativeCenterFeatures": [
+        0.39494244847541016,
+        0.15597944091609808,
+        0.8211619020614194,
+        0.23319088431032192,
+        0.4071882436251778,
+        0.9384796937366411,
+        0.8824174439779149,
+        0.5
+      ]
+    },
+    {
+      "id": "wanda-park-h64-default",
+      "sceneID": "wanda-park",
+      "targetID": "wanda",
+      "height": 64,
+      "width": 19,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "renderedCenter": [
+        276.5,
+        348
+      ],
+      "targetRect": {
+        "x": 267,
+        "y": 316,
+        "width": 19,
+        "height": 64
+      },
+      "targetPresent": true,
+      "targetDepth": 1000,
+      "grid": 64,
+      "threshold": 0.9056472752971427,
+      "expectedPNG": "expected/wanda-park-h64-default.png",
+      "expectedPNG_SHA256": "22bcb3e5ba8164c74bd14bce2895b508f80597301a968718094b10e9aa407e1a",
+      "expectedScoreFile": "expected/wanda-park-h64-default.scores.f64",
+      "expectedScoreSHA256": "ef8044c24a2848496d3fd3e3a6d4efab8a7086c78463be99f2452402e4675c22",
+      "browserPNG": "browser/wanda-park-h64-default.png",
+      "nativeMarks": [
+        {
+          "index": 2786,
+          "x": 276,
+          "y": 348,
+          "score": 0.9892527127484746
+        }
+      ],
+      "nativeCompleteHit": true,
+      "nativeAbsenceClean": false,
+      "nativeRenderMs": 3.2378000000007887,
+      "nativeScanMs": 1022.3696,
+      "nativeMaxScore": 0.9892527127484746,
+      "backgroundSHA256": "d20ea478a665eac1221fafcf3079dff71e9d9a40ca56846546628216452ceabd",
+      "nativeCenterFeatures": [
+        0.4622159647789542,
+        0.21354204309982266,
+        0.9108177038392253,
+        0.30902508169807,
+        0.5405215533117091,
+        0.9390932101678204,
+        0.8795781765612787,
+        1
+      ]
+    },
+    {
+      "id": "wanda-park-h52-absent",
+      "sceneID": "wanda-park",
+      "targetID": "wanda",
+      "height": 52,
+      "width": 15,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "renderedCenter": [
+        276.5,
+        348
+      ],
+      "targetRect": {
+        "x": 269,
+        "y": 322,
+        "width": 15,
+        "height": 52
+      },
+      "targetPresent": false,
+      "targetDepth": 1000,
+      "grid": 64,
+      "threshold": 0.9056472752971427,
+      "expectedPNG": "expected/wanda-park-h52-absent.png",
+      "expectedPNG_SHA256": "cb800060f03dc96897d2c41d36e8aba6eb25db616077494227015facec19906e",
+      "expectedScoreFile": "expected/wanda-park-h52-absent.scores.f64",
+      "expectedScoreSHA256": "a98130a1db0911c55523de7ce4cf136cdbdc64194da4d5dddf3bc1b879e03b5e",
+      "browserPNG": "browser/wanda-park-h52-absent.png",
+      "nativeMarks": [],
+      "nativeCompleteHit": false,
+      "nativeAbsenceClean": true,
+      "nativeRenderMs": 3.0622999999995955,
+      "nativeScanMs": 1011.3896999999997,
+      "nativeMaxScore": 0.3225199875314755,
+      "backgroundSHA256": "d20ea478a665eac1221fafcf3079dff71e9d9a40ca56846546628216452ceabd",
+      "nativeCenterFeatures": [
+        0.017024633228481155,
+        0.00013492959361045484,
+        0.13079834855317768,
+        0.09744727086525379,
+        0.00935842708921938,
+        0.5949216469534071,
+        0.4199146239369125,
+        0.5
+      ]
+    },
+    {
+      "id": "wanda-fairground-h40-default",
+      "sceneID": "wanda-fairground",
+      "targetID": "wanda",
+      "height": 40,
+      "width": 12,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "renderedCenter": [
+        276,
+        348
+      ],
+      "targetRect": {
+        "x": 270,
+        "y": 328,
+        "width": 12,
+        "height": 40
+      },
+      "targetPresent": true,
+      "targetDepth": 1000,
+      "grid": 64,
+      "threshold": 0.9056472752971427,
+      "expectedPNG": "expected/wanda-fairground-h40-default.png",
+      "expectedPNG_SHA256": "4c59a8c8a59ebeb7bd75090a70ddaf9ebb3e9e1a59275f5e698ba43c9f21945a",
+      "expectedScoreFile": "expected/wanda-fairground-h40-default.scores.f64",
+      "expectedScoreSHA256": "f0ea4054e96eaddb8dc35ba559a6dd44b24b2580f5b3d813252d27efb24ae569",
+      "browserPNG": "browser/wanda-fairground-h40-default.png",
+      "nativeMarks": [],
+      "nativeCompleteHit": false,
+      "nativeAbsenceClean": false,
+      "nativeRenderMs": 5.79739999999947,
+      "nativeScanMs": 1007.3594000000012,
+      "nativeMaxScore": 0.8782823224831252,
+      "backgroundSHA256": "71a3c458f4ff642ffccdae332b8819fc935bbee8c026bfce27c59251467fb61d",
+      "nativeCenterFeatures": [
+        0.43315486058810815,
+        0.1875971342465962,
+        0.8926092322665982,
+        0.22382718071708468,
+        0.575898711475586,
+        0.9322035508975471,
+        0.8705332939465673,
+        0
+      ]
+    },
+    {
+      "id": "wanda-fairground-h52-default",
+      "sceneID": "wanda-fairground",
+      "targetID": "wanda",
+      "height": 52,
+      "width": 15,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "renderedCenter": [
+        276.5,
+        348
+      ],
+      "targetRect": {
+        "x": 269,
+        "y": 322,
+        "width": 15,
+        "height": 52
+      },
+      "targetPresent": true,
+      "targetDepth": 1000,
+      "grid": 64,
+      "threshold": 0.9056472752971427,
+      "expectedPNG": "expected/wanda-fairground-h52-default.png",
+      "expectedPNG_SHA256": "fe93cb5d39bc4bc931a02359f95869fd0be1ba383ea11053fa81b5fb04dc5269",
+      "expectedScoreFile": "expected/wanda-fairground-h52-default.scores.f64",
+      "expectedScoreSHA256": "abbc3fa2a22bf92158fe25c2da2ef8cdb886310096f1c5db94b5997972d5d6e1",
+      "browserPNG": "browser/wanda-fairground-h52-default.png",
+      "nativeMarks": [
+        {
+          "index": 2786,
+          "x": 276,
+          "y": 348,
+          "score": 0.9703472827618269
+        }
+      ],
+      "nativeCompleteHit": true,
+      "nativeAbsenceClean": false,
+      "nativeRenderMs": 3.434799999999086,
+      "nativeScanMs": 1013.5185999999994,
+      "nativeMaxScore": 0.9703472827618269,
+      "backgroundSHA256": "71a3c458f4ff642ffccdae332b8819fc935bbee8c026bfce27c59251467fb61d",
+      "nativeCenterFeatures": [
+        0.3972052268166194,
+        0.15776091950274965,
+        0.8418959864858896,
+        0.24829590190906695,
+        0.40802928448174836,
+        0.9386755778426672,
+        0.8866962430235079,
+        0.5
+      ]
+    },
+    {
+      "id": "wanda-fairground-h64-default",
+      "sceneID": "wanda-fairground",
+      "targetID": "wanda",
+      "height": 64,
+      "width": 19,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "renderedCenter": [
+        276.5,
+        348
+      ],
+      "targetRect": {
+        "x": 267,
+        "y": 316,
+        "width": 19,
+        "height": 64
+      },
+      "targetPresent": true,
+      "targetDepth": 1000,
+      "grid": 64,
+      "threshold": 0.9056472752971427,
+      "expectedPNG": "expected/wanda-fairground-h64-default.png",
+      "expectedPNG_SHA256": "b6ea4067314988e95dca8482583d437718a7302dee1cbf3916f8703116942ef6",
+      "expectedScoreFile": "expected/wanda-fairground-h64-default.scores.f64",
+      "expectedScoreSHA256": "7fff283babb9184f1c6591cd51b855b2089f4d554309395c58a218563ddd1328",
+      "browserPNG": "browser/wanda-fairground-h64-default.png",
+      "nativeMarks": [
+        {
+          "index": 2786,
+          "x": 276,
+          "y": 348,
+          "score": 0.9882265052680261
+        }
+      ],
+      "nativeCompleteHit": true,
+      "nativeAbsenceClean": false,
+      "nativeRenderMs": 3.512699999999313,
+      "nativeScanMs": 1016.6036999999997,
+      "nativeMaxScore": 0.9882265052680261,
+      "backgroundSHA256": "71a3c458f4ff642ffccdae332b8819fc935bbee8c026bfce27c59251467fb61d",
+      "nativeCenterFeatures": [
+        0.4664808726385366,
+        0.21756570676900674,
+        0.9139686941425637,
+        0.31024254632525916,
+        0.5452626150074851,
+        0.9328068177265376,
+        0.8716899469184216,
+        1
+      ]
+    },
+    {
+      "id": "wanda-fairground-h52-absent",
+      "sceneID": "wanda-fairground",
+      "targetID": "wanda",
+      "height": 52,
+      "width": 15,
+      "requestedCenter": [
+        276,
+        348
+      ],
+      "renderedCenter": [
+        276.5,
+        348
+      ],
+      "targetRect": {
+        "x": 269,
+        "y": 322,
+        "width": 15,
+        "height": 52
+      },
+      "targetPresent": false,
+      "targetDepth": 1000,
+      "grid": 64,
+      "threshold": 0.9056472752971427,
+      "expectedPNG": "expected/wanda-fairground-h52-absent.png",
+      "expectedPNG_SHA256": "5aa3820bdb5ab295044dfcec9dac4fab329251e6cb712b32b76d50c304cdf370",
+      "expectedScoreFile": "expected/wanda-fairground-h52-absent.scores.f64",
+      "expectedScoreSHA256": "f8505f8fe19d8dff41a84d7a149cdff07c1075853e4e41027f681b2e9a9ba583",
+      "browserPNG": "browser/wanda-fairground-h52-absent.png",
+      "nativeMarks": [],
+      "nativeCompleteHit": false,
+      "nativeAbsenceClean": true,
+      "nativeRenderMs": 3.5835000000006403,
+      "nativeScanMs": 1020.3902999999991,
+      "nativeMaxScore": 0.14753052958622084,
+      "backgroundSHA256": "71a3c458f4ff642ffccdae332b8819fc935bbee8c026bfce27c59251467fb61d",
+      "nativeCenterFeatures": [
+        0.013633250931350626,
+        0.00009681298277328905,
+        0.3375602292351858,
+        0.11878920163176436,
+        0,
+        0.7592460385916093,
+        0.5445987335832918,
+        0.5
+      ]
+    }
+  ]
+}

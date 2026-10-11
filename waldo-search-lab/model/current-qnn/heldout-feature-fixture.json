@@ -1,0 +1,595 @@
+{
+  "scope": "First16 rows in fixed split order; genuine final scene RGB and supplied scale; no favorable-example selection.",
+  "split": "test",
+  "featureVersion": "current-qnn-window-v3",
+  "featureNames": [
+    "stripe_fourier_magnitude",
+    "stripe_cross_phase",
+    "red_white_balance",
+    "yellow_head_outline",
+    "blue_leg_morphology",
+    "horizontal_palette_alignment_px",
+    "vertical_palette_alignment_px",
+    "supplied_target_height"
+  ],
+  "modelSHA256": "9c5a25af8a37eb8482f09e49631418e63c05c47d0317fd0a2a5ead9b6c63465a",
+  "pythonFeatureSHA256": "fc1466ffbd92027178e4d2bd52a7ca342c464292d5cf7117f6fc150b80deb0c3",
+  "pythonVsStoredNativeJSFeatureMaxError": 1.1657341758564144e-15,
+  "fixtures": [
+    {
+      "row": 0,
+      "sceneID": "legacy",
+      "sourceID": "test-0",
+      "fixture": "fixtures/test-0.png",
+      "candidateCenter": [
+        188,
+        44
+      ],
+      "targetWidth": 22,
+      "targetHeight": 65,
+      "label": 1,
+      "kind": "target",
+      "visibleFraction": 1,
+      "features": [
+        0.18111500072995698,
+        0.0241266290896026,
+        0.3833901440899832,
+        0.028367157398015437,
+        0.020860560974380826,
+        0.7319862768325245,
+        0.6336270308594523,
+        0.4659090909090909
+      ],
+      "expectedReadouts": [
+        0.08392716367027338,
+        -0.255132891340994,
+        -0.28266728118956397,
+        0.25969472755302325,
+        -0.1421175909877862,
+        0.06340399042378016,
+        0.4364769289562033
+      ],
+      "expectedProbability": 0.6560047007240556,
+      "pixelFixtureSHA256": "d43fd4cac17db19e62287a78e9b2290fba8a9935c5ac482ba5cfec12ee759b85"
+    },
+    {
+      "row": 1,
+      "sceneID": "legacy",
+      "sourceID": "test-0",
+      "fixture": "fixtures/test-0.png",
+      "candidateCenter": [
+        185,
+        43.5
+      ],
+      "targetWidth": 22,
+      "targetHeight": 65,
+      "label": 1,
+      "kind": "target",
+      "visibleFraction": 1,
+      "features": [
+        0.2736643658052781,
+        0.07485934207643444,
+        0.5196749655174292,
+        0.03602595946708168,
+        0.3534449358058393,
+        0.8676835192455363,
+        0.6572240943309331,
+        0.4659090909090909
+      ],
+      "expectedReadouts": [
+        0.47148589689622217,
+        -0.4116083336032673,
+        -0.5138645954709642,
+        0.5057882193945438,
+        -0.5034216587090242,
+        -0.47238062862277075,
+        0.45533901778145436
+      ],
+      "expectedProbability": 0.9964288939739393,
+      "pixelFixtureSHA256": "d43fd4cac17db19e62287a78e9b2290fba8a9935c5ac482ba5cfec12ee759b85"
+    },
+    {
+      "row": 2,
+      "sceneID": "legacy",
+      "sourceID": "test-0",
+      "fixture": "fixtures/test-0.png",
+      "candidateCenter": [
+        169.32139361925178,
+        29.32910838848129
+      ],
+      "targetWidth": 22,
+      "targetHeight": 65,
+      "label": 0,
+      "kind": "target",
+      "visibleFraction": 1,
+      "features": [
+        0.005378512990378139,
+        0.0,
+        0.14390152141850893,
+        0.0007227963181676558,
+        0.006548096452059374,
+        0.7316258263226273,
+        0.602426868702313,
+        0.4659090909090909
+      ],
+      "expectedReadouts": [
+        0.2244468707529515,
+        0.42220212058186957,
+        -0.0002671135670317404,
+        0.16869584097830703,
+        0.27539696767044086,
+        0.6371621254904613,
+        0.3870169289602837
+      ],
+      "expectedProbability": 0.0046679310782006146,
+      "pixelFixtureSHA256": "d43fd4cac17db19e62287a78e9b2290fba8a9935c5ac482ba5cfec12ee759b85"
+    },
+    {
+      "row": 3,
+      "sceneID": "legacy",
+      "sourceID": "test-0",
+      "fixture": "fixtures/test-0.png",
+      "candidateCenter": [
+        167.5161944445989,
+        40.062490786498046
+      ],
+      "targetWidth": 22,
+      "targetHeight": 65,
+      "label": 0,
+      "kind": "target",
+      "visibleFraction": 1,
+      "features": [
+        0.004212135474747095,
+        0.0,
+        0.16209686193812148,
+        0.0007523254584530546,
+        0.022299602364959873,
+        0.3417944739727175,
+        0.4461179684994374,
+        0.4659090909090909
+      ],
+      "expectedReadouts": [
+        0.30599668984839795,
+        0.49907447985225883,
+        0.025406974753130973,
+        0.05550562997829783,
+        0.23370159033544746,
+        0.7383922121032387,
+        0.25881421250975145
+      ],
+      "expectedProbability": 0.0032091706896866514,
+      "pixelFixtureSHA256": "d43fd4cac17db19e62287a78e9b2290fba8a9935c5ac482ba5cfec12ee759b85"
+    },
+    {
+      "row": 4,
+      "sceneID": "legacy",
+      "sourceID": "test-0",
+      "fixture": "fixtures/test-0.png",
+      "candidateCenter": [
+        182.41169643644085,
+        59.217537482887224
+      ],
+      "targetWidth": 22,
+      "targetHeight": 65,
+      "label": 0,
+      "kind": "target",
+      "visibleFraction": 1,
+      "features": [
+        0.14065958943045698,
+        0.016090973301171766,
+        0.26278561779726245,
+        0.0017135634878106003,
+        0.02690861423443424,
+        0.8389853425251667,
+        0.4248809121649404,
+        0.4659090909090909
+      ],
+      "expectedReadouts": [
+        0.021252448821134154,
+        0.09757276362790923,
+        -0.14322239592952163,
+        0.17128917921957454,
+        0.10029214479702558,
+        0.18411649339844574,
+        0.325238608006709
+      ],
+      "expectedProbability": 0.1344454119447656,
+      "pixelFixtureSHA256": "d43fd4cac17db19e62287a78e9b2290fba8a9935c5ac482ba5cfec12ee759b85"
+    },
+    {
+      "row": 5,
+      "sceneID": "legacy",
+      "sourceID": "test-0",
+      "fixture": "fixtures/test-0.png",
+      "candidateCenter": [
+        184.04746411833034,
+        65.47477886913026
+      ],
+      "targetWidth": 22,
+      "targetHeight": 65,
+      "label": 0,
+      "kind": "target",
+      "visibleFraction": 1,
+      "features": [
+        0.03774939378533074,
+        0.0013487412425940775,
+        0.05954513360598935,
+        0.0002582903129310562,
+        0.010555111602228544,
+        0.8346225981403818,
+        0.5872424153802351,
+        0.4659090909090909
+      ],
+      "expectedReadouts": [
+        0.3571160912889467,
+        0.557082939264925,
+        -0.13155719265087118,
+        0.027860811427354693,
+        0.4548406320984798,
+        0.6077940183048474,
+        0.48988295105065416
+      ],
+      "expectedProbability": 0.0029062634209445835,
+      "pixelFixtureSHA256": "d43fd4cac17db19e62287a78e9b2290fba8a9935c5ac482ba5cfec12ee759b85"
+    },
+    {
+      "row": 6,
+      "sceneID": "legacy",
+      "sourceID": "test-0",
+      "fixture": "fixtures/test-0.png",
+      "candidateCenter": [
+        204.5511397846021,
+        39.834953808165984
+      ],
+      "targetWidth": 22,
+      "targetHeight": 65,
+      "label": 0,
+      "kind": "target",
+      "visibleFraction": 1,
+      "features": [
+        0.004933520392514263,
+        2.3452824712975942e-05,
+        0.1805109466114923,
+        0.007247199736498473,
+        0.022718567574467084,
+        0.7413748900684003,
+        0.5605760533665549,
+        0.4659090909090909
+      ],
+      "expectedReadouts": [
+        0.16512682870210518,
+        0.3652943529803361,
+        0.029430175726158636,
+        0.176621209123696,
+        0.24864293178074104,
+        0.6727480984710504,
+        0.37432103962889585
+      ],
+      "expectedProbability": 0.004418491470358424,
+      "pixelFixtureSHA256": "d43fd4cac17db19e62287a78e9b2290fba8a9935c5ac482ba5cfec12ee759b85"
+    },
+    {
+      "row": 7,
+      "sceneID": "legacy",
+      "sourceID": "test-0",
+      "fixture": "fixtures/test-0.png",
+      "candidateCenter": [
+        175.6559077716021,
+        68.51637315112183
+      ],
+      "targetWidth": 22,
+      "targetHeight": 65,
+      "label": 0,
+      "kind": "target",
+      "visibleFraction": 1,
+      "features": [
+        0.003377928848987623,
+        7.981703382351023e-06,
+        0.12451189939575151,
+        0.0011595413115148313,
+        0.024895684116101942,
+        0.7566412746857628,
+        0.5517069064790531,
+        0.4659090909090909
+      ],
+      "expectedReadouts": [
+        0.2631598437237176,
+        0.4685423590643995,
+        -0.0243549232679362,
+        0.13654786510710792,
+        0.35046636987346963,
+        0.64864161897583,
+        0.44976775486979614
+      ],
+      "expectedProbability": 0.0031691707624653467,
+      "pixelFixtureSHA256": "d43fd4cac17db19e62287a78e9b2290fba8a9935c5ac482ba5cfec12ee759b85"
+    },
+    {
+      "row": 8,
+      "sceneID": "legacy",
+      "sourceID": "test-0",
+      "fixture": "fixtures/test-0-blue-stripes.png",
+      "candidateCenter": [
+        188,
+        44
+      ],
+      "targetWidth": 22,
+      "targetHeight": 65,
+      "label": 0,
+      "kind": "blue-stripes",
+      "features": [
+        0.09713606086199114,
+        0.007610902737071995,
+        0.1005762706350453,
+        0.028367157398015437,
+        0.020860560974380826,
+        0.7028066846727781,
+        0.6865423286138558,
+        0.4659090909090909
+      ],
+      "expectedReadouts": [
+        0.32622773643456016,
+        0.41930688249572323,
+        -0.288570144764252,
+        0.0563689465604697,
+        0.34649300171724523,
+        0.4476398606016867,
+        0.4244673873261964
+      ],
+      "expectedProbability": 0.01863105817041844,
+      "pixelFixtureSHA256": "87ac17155a3b219806f32d9dd40cfccaa7815bb1b0df77d462e7149fe1d41afd"
+    },
+    {
+      "row": 9,
+      "sceneID": "magic-arena",
+      "sourceID": "test-1",
+      "fixture": "fixtures/test-1.png",
+      "candidateCenter": [
+        476,
+        244
+      ],
+      "targetWidth": 13,
+      "targetHeight": 39,
+      "label": 1,
+      "kind": "target",
+      "visibleFraction": 1,
+      "features": [
+        0.15752325259294309,
+        0.019438305875616423,
+        0.4220454591814994,
+        0.012825785206384575,
+        0.0,
+        0.8605283154475025,
+        0.7371920591424411,
+        0.17045454545454544
+      ],
+      "expectedReadouts": [
+        0.32279536931526387,
+        -0.3337023864147138,
+        -0.4684369648126852,
+        0.5318807506891726,
+        -0.48730430249261625,
+        -0.4885433797074734,
+        0.494839840260896
+      ],
+      "expectedProbability": 0.9941557001271113,
+      "pixelFixtureSHA256": "02e2fcf1fc1d1400b23b2d526e75354ce3cef51f1100c183576377ca63393c14"
+    },
+    {
+      "row": 10,
+      "sceneID": "magic-arena",
+      "sourceID": "test-1",
+      "fixture": "fixtures/test-1.png",
+      "candidateCenter": [
+        482.5,
+        250.5
+      ],
+      "targetWidth": 13,
+      "targetHeight": 39,
+      "label": 1,
+      "kind": "target",
+      "visibleFraction": 1,
+      "features": [
+        0.13707045103199825,
+        0.0012878482755978465,
+        0.32957060530655796,
+        0.02009053107228336,
+        0.0,
+        0.8261574197545797,
+        0.6746361504136504,
+        0.17045454545454544
+      ],
+      "expectedReadouts": [
+        0.15289057058484573,
+        -0.23648947975538864,
+        -0.5401729342553193,
+        0.45269433626023015,
+        -0.42631565452883485,
+        -0.2652868995439686,
+        0.3743788256019851
+      ],
+      "expectedProbability": 0.9804801498603966,
+      "pixelFixtureSHA256": "02e2fcf1fc1d1400b23b2d526e75354ce3cef51f1100c183576377ca63393c14"
+    },
+    {
+      "row": 11,
+      "sceneID": "magic-arena",
+      "sourceID": "test-1",
+      "fixture": "fixtures/test-1.png",
+      "candidateCenter": [
+        502.7503323924283,
+        268.3787302980029
+      ],
+      "targetWidth": 13,
+      "targetHeight": 39,
+      "label": 0,
+      "kind": "target",
+      "visibleFraction": 1,
+      "features": [
+        0.00633409967278386,
+        5.843501394169153e-06,
+        0.08358545285049265,
+        0.006733419202118547,
+        0.0015692682785188768,
+        0.7133680798880809,
+        0.3529359695291927,
+        0.17045454545454544
+      ],
+      "expectedReadouts": [
+        0.32266686690822327,
+        0.6051057165092915,
+        -0.18193087860895352,
+        0.08597760012253675,
+        0.3267154394591065,
+        0.4749720001406734,
+        0.44037341038216493
+      ],
+      "expectedProbability": 0.008341032186336686,
+      "pixelFixtureSHA256": "02e2fcf1fc1d1400b23b2d526e75354ce3cef51f1100c183576377ca63393c14"
+    },
+    {
+      "row": 12,
+      "sceneID": "magic-arena",
+      "sourceID": "test-1",
+      "fixture": "fixtures/test-1.png",
+      "candidateCenter": [
+        460.689210920754,
+        270.3861484827529
+      ],
+      "targetWidth": 13,
+      "targetHeight": 39,
+      "label": 0,
+      "kind": "target",
+      "visibleFraction": 1,
+      "features": [
+        0.004324938730187942,
+        0.0,
+        0.1737344217751617,
+        0.0037960828604521133,
+        0.0006041157730737067,
+        0.7653697869905755,
+        0.3815130183423931,
+        0.17045454545454544
+      ],
+      "expectedReadouts": [
+        0.20554087509616595,
+        0.49865323703118664,
+        -0.11774749589955724,
+        0.20337703137296764,
+        0.2494780117647394,
+        0.4656485639361873,
+        0.3648258938460895
+      ],
+      "expectedProbability": 0.012483677513654482,
+      "pixelFixtureSHA256": "02e2fcf1fc1d1400b23b2d526e75354ce3cef51f1100c183576377ca63393c14"
+    },
+    {
+      "row": 13,
+      "sceneID": "magic-arena",
+      "sourceID": "test-1",
+      "fixture": "fixtures/test-1.png",
+      "candidateCenter": [
+        457.763413466365,
+        259.58279681750327
+      ],
+      "targetWidth": 13,
+      "targetHeight": 39,
+      "label": 0,
+      "kind": "target",
+      "visibleFraction": 1,
+      "features": [
+        0.0047115819023896355,
+        0.0,
+        0.23095121570650648,
+        0.005296255618730157,
+        0.0010536585558681539,
+        0.7961516214801323,
+        0.43428495245870397,
+        0.17045454545454544
+      ],
+      "expectedReadouts": [
+        0.05646686604630739,
+        0.37616497709527646,
+        -0.1026669957825207,
+        0.2491738033317431,
+        0.13049060068727655,
+        0.46352952500451056,
+        0.2797948325936907
+      ],
+      "expectedProbability": 0.02295104402717123,
+      "pixelFixtureSHA256": "02e2fcf1fc1d1400b23b2d526e75354ce3cef51f1100c183576377ca63393c14"
+    },
+    {
+      "row": 14,
+      "sceneID": "magic-arena",
+      "sourceID": "test-1",
+      "fixture": "fixtures/test-1.png",
+      "candidateCenter": [
+        460.5231866937032,
+        246.58666361588308
+      ],
+      "targetWidth": 13,
+      "targetHeight": 39,
+      "label": 0,
+      "kind": "target",
+      "visibleFraction": 1,
+      "features": [
+        0.0023595130607858574,
+        0.0,
+        0.24956550123840204,
+        0.0029225103439804384,
+        0.0004313811138679704,
+        0.7797591217126224,
+        0.4370803743943369,
+        0.17045454545454544
+      ],
+      "expectedReadouts": [
+        0.020389066953239943,
+        0.35578074251508557,
+        -0.07243741688125976,
+        0.26802066086533244,
+        0.10995960352628797,
+        0.4771176239178662,
+        0.2531296227506633
+      ],
+      "expectedProbability": 0.022467623357265126,
+      "pixelFixtureSHA256": "02e2fcf1fc1d1400b23b2d526e75354ce3cef51f1100c183576377ca63393c14"
+    },
+    {
+      "row": 15,
+      "sceneID": "magic-arena",
+      "sourceID": "test-1",
+      "fixture": "fixtures/test-1.png",
+      "candidateCenter": [
+        474.84188907011855,
+        232.95289635615796
+      ],
+      "targetWidth": 13,
+      "targetHeight": 39,
+      "label": 0,
+      "kind": "target",
+      "visibleFraction": 1,
+      "features": [
+        0.0012009025253109772,
+        0.0,
+        0.15052646518028223,
+        3.571666041519985e-05,
+        0.05937928444196767,
+        0.7894297139575921,
+        0.3728470537971752,
+        0.17045454545454544
+      ],
+      "expectedReadouts": [
+        0.25372189202350326,
+        0.5002853174032755,
+        -0.1628738633907163,
+        0.15327163337596234,
+        0.2651487878205845,
+        0.44183622423990526,
+        0.3842015820068805
+      ],
+      "expectedProbability": 0.014737220692296537,
+      "pixelFixtureSHA256": "02e2fcf1fc1d1400b23b2d526e75354ce3cef51f1100c183576377ca63393c14"
+    }
+  ]
+}

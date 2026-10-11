@@ -1,0 +1,19 @@
+{
+  "version": "photo-local-bands-v4",
+  "status": "predeclared before fitting or c-identity disclosure",
+  "training_assets": ["dist/assets/real-schoolbus.png", "dist/assets/street-captcha.png", "model/training-assets/sauk-centre-street-512.png"],
+  "asset_roles": "Original bus/Covington/Sauk fit and validation only. Inspected Emeryville/Oines and iteration03a/b remain diagnostic only; they are not added to training. Street-c/bus-c steward-only before exact source/model/threshold/protocol freeze.",
+  "feature_definition": "Warm color predicate unchanged fromv3. Candidate horizontal runs gap-close<=2pixels, width>=8, terminate where next-row warm occupancy<0.75. At most24 anchors ordered by width descending, then row/column. Each anchor uses nominal52pixel vertical scale: warm body[y-4,y+1], windows[y-12,y-5], lower/wheels[y+1,y+7], stripe[y-6,y+1]. Dark is<0.68 localbody warm median luminance. Eight features: visible width, bodyfill, windowdark, windowruns, spacing, lowerdarkruns, stripe, window/body contrast. Fixed quality selector chooses one coherentvector; ties within1e-12 prefer first. No design changes after fitting starts.",
+  "patch_splits": {
+    "train": {"n": 4800, "seed": 2026101030},
+    "validation": {"n": 1200, "seed": 2026101031},
+    "test": {"n": 2000, "seed": 2026101232},
+    "stress_test": {"n": 1200, "seed": 2026101233}
+  },
+  "pixel_generator": "Reuse frozenv3 patch renderer and exact seeded RGB examples/augmentation policy; only extracted features differ. Preservev3 files. Scene renderer replicated with same seed2026101080 and identical gain/gamma/channelbalance draws.",
+  "qnn": {"qubits": 4, "layers": 4, "exported_parameter_slots": 40, "optimized_slots": 36, "frozen_theta_indices": [25,27,29,31], "frozen_angle_value": 0, "restarts": 3, "steps_per_restart": 2200, "initialization": "seeded random; inactive finalRZ0", "selection": "minimum validation patchBCE every100steps plus step1; no test/diagnostic/cselection"},
+  "logistic": {"optimized_parameters": 9, "regularization_grid": [0.000001,0.00001,0.0001,0.001,0.01,0.1], "selection": "minimum validation patchBCE; same examples/features; training-only affine standardization"},
+  "scene_validation": {"placements_per_background_grid":128,"target_scenes":512,"empty_variants_per_background_grid":36,"empty_scenes":144,"ground_truth":"any insertedalpha>32pixel in tile; evaluation-only","budget":"zeroemptyfalse marks across144scenes; <=1%targetscenes withanyfalse tile mark","threshold_grid":"0.100..0.995 step0.005","selection":"amongfeasible thresholds maximize complete-scene count (at leastonetrue mark,zerofalse marks),thenpatchF1,thenlowerthreshold; all512foregroundscenes denominator,abstentionfailure. Ifnonefeasible retainexplicitfailure,do notpromote."},
+  "promotion_gate": "No automatic promotion. Require validationbudget, >=90%complete validation scenes, zeroemptydefault scenes, bothroundedUIdefaultprobes accepted, >=80%complete originalbackground random-regression placements pergrid, useful declaredboundarycoverage, identicalpixelparity, and freshcidentity audit. readyForDemo:false regardless until root reviews.",
+  "final_evaluation": "Freeze extractorPython/JS, weights, thresholds, raster/renderer, source dependencies, and protocol before cdisclosure. Freshcstreet: empty plus128seeded seen-bus placements pergrid, seed2026101130; freshcbus: originalphoto coarsebbox and52pxwide knownROI probe, no segmentation/localizationclaim. Existinga/bdiagnostic results never change candidate. Aftercscoring no fitting/feature/thresholdchanges."
+}

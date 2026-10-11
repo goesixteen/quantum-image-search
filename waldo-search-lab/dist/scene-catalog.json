@@ -1,0 +1,64 @@
+{
+  "version": 4,
+  "domain": "wanda-window-v1",
+  "scenes": [
+    {
+      "id": "wanda-festival",
+      "name": "Festival",
+      "src": "assets/wanda/festival-512.png",
+      "credit": "Original AI-generated artwork, created for Where\u2019s Wanda. Native-high 512px normalization matches the training raster.",
+      "sourceOriginal": "assets/wanda/festival.png"
+    },
+    {
+      "id": "wanda-beach",
+      "name": "Beach",
+      "src": "assets/wanda/beach-512.png",
+      "credit": "Original AI-generated artwork, created for Where\u2019s Wanda. Native-high 512px normalization matches the training raster.",
+      "sourceOriginal": "assets/wanda/beach.png"
+    },
+    {
+      "id": "wanda-market",
+      "name": "Market",
+      "src": "assets/wanda/market-512.png",
+      "credit": "Original AI-generated artwork, created for Where\u2019s Wanda. Native-high 512px normalization matches the training raster.",
+      "sourceOriginal": "assets/wanda/market.png"
+    },
+    {
+      "id": "wanda-park",
+      "name": "Park",
+      "src": "assets/wanda/park-512.png",
+      "credit": "Original AI-generated Park, with one Wanda-derived coral-and-denim lookalike added after training. Curated for the default52px search; smaller supplied sizes can falsely accept her. Historical accuracy covers the original unseeded scene.",
+      "sourceOriginal": "assets/wanda/park.png",
+      "curatedArtwork": {
+        "variantId": "park-coral-lookalike-v1",
+        "preRenderedSrc": "assets/wanda/lookalikes/park-coral-v1-512.png",
+        "placements": [
+          {
+            "id": "coral-bystander",
+            "src": "assets/wanda/lookalikes/coral-denim-v1.png",
+            "centerX": 169,
+            "centerY": 400,
+            "height": 50
+          }
+        ],
+        "scope": "Model-guided demo art. Default52px near-match; not all-scale-safe or held-out accuracy. Renderer metadata is never an inference input.",
+        "provenance": "assets/wanda/lookalikes/provenance.json"
+      }
+    },
+    {
+      "id": "wanda-fairground",
+      "name": "Fairground",
+      "src": "assets/wanda/fairground-512.png",
+      "credit": "Original AI-generated artwork, created for Where\u2019s Wanda. Native-high 512px normalization matches the training raster.",
+      "sourceOriginal": "assets/wanda/fairground.png"
+    }
+  ],
+  "targets": [
+    {
+      "id": "wanda",
+      "name": "Wanda \u00b7 striped sweater",
+      "src": "assets/wanda/wanda.png",
+      "credit": "Original AI-generated female clip-art, created for Where\u2019s Wanda. Red-and-white striped sweater, blue trousers."
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "initialAttempt": "A single DOM href evaluation returned a capped data-URL prefix near200000characters. Resulting PNG files were149990bytes and lacked complete image data.",
+  "detected": "Pillow rejected the Festival52capture as truncated before any score comparison. Initial captures were not used as valid evidence.",
+  "recovery": "Parent recaptured all20visible export hrefs in100000character chunks, checked complete original length and PNG IEND, and recorded fresh hashes. All20final browser PNGs decoded successfully.",
+  "staleSizeConclusion": "Matching hashes of truncated prefixes did not establish a stale-size bug. The complete captures produce distinct size/presence PNGs.",
+  "truncatedDecodingEnabled": false
+}

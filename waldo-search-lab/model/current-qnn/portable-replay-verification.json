@@ -1,0 +1,16 @@
+{
+  "scope": "Portable packaged native generator plus compact background-coordinate replay; exact complete labeled window matrices, not a refit.",
+  "status": "PASS",
+  "matrices": {
+    "train.f64": true,
+    "train.u8": true,
+    "validation.f64": true,
+    "validation.u8": true,
+    "test.f64": true,
+    "test.u8": true
+  },
+  "commands": [
+    "node model/current-qnn/build-corpus.mjs corpus --output <scratch>",
+    "node model/current-qnn/build-corpus.mjs reencode-backgrounds --output <scratch> --selection-file model/current-qnn/background-selection.json"
+  ]
+}

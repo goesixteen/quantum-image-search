@@ -1,0 +1,173 @@
+{
+  "version": 4,
+  "featureVersion": "photo-local-bands-v4",
+  "featureExtractor": "photo-local-bands-v4",
+  "featureNames": [
+    "visible_band_width",
+    "local_body_warm_fill",
+    "local_window_darkness",
+    "local_window_runs",
+    "local_window_spacing",
+    "local_lower_dark_runs",
+    "local_dark_stripe",
+    "window_body_contrast"
+  ],
+  "readyForDemo": false,
+  "seed": 2026101030,
+  "splitSeeds": {
+    "train": 2026101030,
+    "validation": 2026101031,
+    "test": 2026101232,
+    "stress_test": 2026101233
+  },
+  "trainingDomain": "One real bus cutout on Covington/Sauk Centre with controlled illumination; exact v3 rendered examples and localized v4 features; placements/augmentations held out, not photograph identities",
+  "assets": [
+    {
+      "file": "dist\\assets\\real-schoolbus.png",
+      "sha256": "5eb0cf031cf560b3af03407bb55a178446a57c411fc5d5d049d2680143c8d3ca"
+    },
+    {
+      "file": "dist\\assets\\street-captcha.png",
+      "sha256": "9d37da13f6d7c646c434488b505b67cf09b6ec11f1a9b897ed8adc4ca25f322a"
+    },
+    {
+      "file": "model\\training-assets\\sauk-centre-street-512.png",
+      "sha256": "57c9ec48db618c00d5443c7aec0147d87585d106c4506b17f006bebcaf4bd5ad"
+    }
+  ],
+  "sourceHashes": {
+    "photo_features_v4.py": "6394cec5c063fff0957100b905e596c19d05a0ead1d5a534a2a1d42994819a1b",
+    "photo_v4_data.py": "1bca872d4d3e78a93006b1e8708486b38ea686caf98b36a27e1debcd86ff34b0",
+    "train_photo_v4.py": "5b8d10398869b6e3ec88a3ca808e61e420242f800c5ab746927d3a53930a075d",
+    "photo_features_v3.py": "2707b7bd04941bf7d3521f45803cde94490284643f340d444a6c0e182f8ff1c3",
+    "photo_v3_data.py": "e3b513f64db6c3b337b9bc657a4d0ad24b496e201793a17cb5a5feb8b5175e21",
+    "train.py": "b52f068b5c6ae427ac00d73a4c4181a3f925efe0067ff4ff79a3dc4bd861818e",
+    "classical_baseline.py": "07694ec576b5f67044530b8120398e9aedb000a5583523078dec4837adfc3894",
+    "photo-v4-protocol.json": "0a38ded293f2d9104d503dce37762119e8f93481cfc13050f8ab2bab22dedf41"
+  },
+  "name": "BusPhoto-v4-qnn-candidate",
+  "threshold": 0.995,
+  "metrics": {
+    "train": {
+      "n": 4800,
+      "threshold": 0.995,
+      "accuracy": 0.5039583333333333,
+      "precision": 1.0,
+      "recall": 0.007916666666666667,
+      "f1": 0.015708970649028525,
+      "roc_auc": 0.9191236979166667,
+      "true_positive": 19,
+      "false_positive": 0,
+      "false_negative": 2381,
+      "true_negative": 2400,
+      "bce": 0.3512537868072968
+    },
+    "validation": {
+      "n": 1200,
+      "threshold": 0.995,
+      "accuracy": 0.5025,
+      "precision": 1.0,
+      "recall": 0.005,
+      "f1": 0.009950248756218905,
+      "roc_auc": 0.9260472222222222,
+      "true_positive": 3,
+      "false_positive": 0,
+      "false_negative": 597,
+      "true_negative": 600,
+      "bce": 0.3351272784447534
+    },
+    "test": {
+      "n": 2000,
+      "threshold": 0.995,
+      "accuracy": 0.502,
+      "precision": 1.0,
+      "recall": 0.004,
+      "f1": 0.00796812749003984,
+      "roc_auc": 0.926778,
+      "true_positive": 4,
+      "false_positive": 0,
+      "false_negative": 996,
+      "true_negative": 1000,
+      "bce": 0.33570037272810693
+    },
+    "stress_test": {
+      "n": 1200,
+      "threshold": 0.995,
+      "accuracy": 0.5025,
+      "precision": 1.0,
+      "recall": 0.005,
+      "f1": 0.009950248756218905,
+      "roc_auc": 0.8986583333333333,
+      "true_positive": 3,
+      "false_positive": 0,
+      "false_negative": 597,
+      "true_negative": 600,
+      "bce": 0.3912676184896849
+    }
+  },
+  "validationBudgetFeasible": false,
+  "qubits": 4,
+  "layers": 4,
+  "parameterCount": 36,
+  "exportedParameterSlots": 40,
+  "optimizedParameterSlots": 36,
+  "inactiveThetaIndices": [
+    25,
+    27,
+    29,
+    31
+  ],
+  "theta": [
+    0.627102080487188,
+    1.810709525093658,
+    0.04447343023756803,
+    -0.2782399975793755,
+    0.06631839596626284,
+    1.403904463473707,
+    -0.08878248709536526,
+    0.038100034704103045,
+    -0.29298456439455556,
+    0.6143866251323332,
+    -0.27081946977615146,
+    -0.7018744022472082,
+    1.203644070404369,
+    -0.14460432839803342,
+    0.7733323056325158,
+    0.441507805106052,
+    0.42893667592963997,
+    -0.97824019993514,
+    0.04123854085988596,
+    0.3246931660469819,
+    -0.9327007104546682,
+    0.12889623806216,
+    0.5528480953166096,
+    0.027595238316252255,
+    0.558492704885703,
+    0.0,
+    -0.4744737509159222,
+    0.0,
+    -0.14834842738211834,
+    0.0,
+    0.15659476791452132,
+    0.0
+  ],
+  "readout": [
+    -2.692292948891405,
+    -3.262233302015637,
+    -1.0699917203657865,
+    -1.7729977672279746,
+    1.3614640655873935,
+    0.19300392393715873,
+    -0.7450391488957987
+  ],
+  "bias": 0.5466685671644383,
+  "observables": [
+    "Z0",
+    "Z1",
+    "Z2",
+    "Z3",
+    "Z0Z1",
+    "Z2Z3",
+    "Z0Z1Z2Z3"
+  ]
+}

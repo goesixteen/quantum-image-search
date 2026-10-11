@@ -1,0 +1,107 @@
+[
+  {
+    "step": 1,
+    "validationSourceWeightedBCE": 0.684003407880293,
+    "elapsedSeconds": 0.27500128746032715
+  },
+  {
+    "step": 100,
+    "validationSourceWeightedBCE": 0.36710425279341213,
+    "elapsedSeconds": 5.235466241836548
+  },
+  {
+    "step": 200,
+    "validationSourceWeightedBCE": 0.3377107971968287,
+    "elapsedSeconds": 10.240894079208374
+  },
+  {
+    "step": 300,
+    "validationSourceWeightedBCE": 0.33453487876449034,
+    "elapsedSeconds": 14.945071935653687
+  },
+  {
+    "step": 400,
+    "validationSourceWeightedBCE": 0.3301813726365795,
+    "elapsedSeconds": 19.732194423675537
+  },
+  {
+    "step": 500,
+    "validationSourceWeightedBCE": 0.33887117418282553,
+    "elapsedSeconds": 24.56926202774048
+  },
+  {
+    "step": 600,
+    "validationSourceWeightedBCE": 0.33080013472222547,
+    "elapsedSeconds": 29.36919403076172
+  },
+  {
+    "step": 700,
+    "validationSourceWeightedBCE": 0.33048503590091377,
+    "elapsedSeconds": 34.06782937049866
+  },
+  {
+    "step": 800,
+    "validationSourceWeightedBCE": 0.32722572484419993,
+    "elapsedSeconds": 38.82250785827637
+  },
+  {
+    "step": 900,
+    "validationSourceWeightedBCE": 0.32335536877922244,
+    "elapsedSeconds": 43.681522369384766
+  },
+  {
+    "step": 1000,
+    "validationSourceWeightedBCE": 0.3339438617583432,
+    "elapsedSeconds": 48.45069169998169
+  },
+  {
+    "step": 1100,
+    "validationSourceWeightedBCE": 0.3223745829545249,
+    "elapsedSeconds": 53.27492380142212
+  },
+  {
+    "step": 1200,
+    "validationSourceWeightedBCE": 0.3216059842179576,
+    "elapsedSeconds": 58.06876873970032
+  },
+  {
+    "step": 1300,
+    "validationSourceWeightedBCE": 0.32166940171679126,
+    "elapsedSeconds": 62.82779669761658
+  },
+  {
+    "step": 1400,
+    "validationSourceWeightedBCE": 0.32000111259419917,
+    "elapsedSeconds": 67.6067578792572
+  },
+  {
+    "step": 1500,
+    "validationSourceWeightedBCE": 0.3173141021548856,
+    "elapsedSeconds": 72.41069030761719
+  },
+  {
+    "step": 1600,
+    "validationSourceWeightedBCE": 0.3184480880896417,
+    "elapsedSeconds": 77.23090863227844
+  },
+  {
+    "step": 1700,
+    "validationSourceWeightedBCE": 0.3165722726689881,
+    "elapsedSeconds": 81.97505569458008
+  },
+  {
+    "step": 1800,
+    "validationSourceWeightedBCE": 0.3168305865493573,
+    "elapsedSeconds": 86.66957259178162
+  },
+  {
+    "step": 1900,
+    "validationSourceWeightedBCE": 0.32072422008921436,
+    "elapsedSeconds": 91.31049489974976
+  },
+  {
+    "step": 2000,
+    "validationSourceWeightedBCE": 0.31455249215800696,
+    "elapsedSeconds": 95.91025280952454
+  }
+]

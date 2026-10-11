@@ -1,0 +1,1178 @@
+{
+  "recordedAtUtc": "2026-10-11T05:48:06.131Z",
+  "scope": "Controlled same-art two-copy demonstration at predefined current/former default centers; not a held-out accuracy or generalization benchmark.",
+  "renderer": {
+    "backend": "@napi-rs/canvas",
+    "background": "Native-high five-argument512 staging of delivered normalized Festival PNG.",
+    "targetTrim": [
+      285,
+      21,
+      725,
+      1514
+    ],
+    "targetResize": "High-quality15x52 sprite; integer placement, targetSmoothing=false.",
+    "foreground": "Both copies fully in front; no masks/layers affect the pixels.",
+    "browserCaveat": "Native high-quality1:1 background can differ from Chromium. Uploadable second-only PNG is provided for an actual browser comparison; this report is native, not browser parity."
+  },
+  "inferenceInputs": [
+    "final opaque RGBA pixels",
+    "declared15x52 size",
+    "unchanged saved Wanda QNN"
+  ],
+  "unchangedSources": {
+    "model": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88",
+    "features": "bc9292a9dbc9ada24611916118e297aeb06d3d2eb8a5961c31f968162c26decf",
+    "qnn": "c881e6a815c7e5e1b4013a241d7b36ff78f3c21ac49ef0f47f2f8005979e972e",
+    "compositor": "645d3799f9eb27ac39b81aa4c9a8659cea551e00a699560046cb36eb13ff61ae",
+    "grover": "6351b467e1c063cacba23b3a22a0cfdf48e1816d1edbc387ff4ea4d3669f5943",
+    "background": "369f59e8c4b83ebe9d36febc42e85fe29dd650da56e7ad9f9b27f0c8363bda56",
+    "target": "ae679a90fb94c8ad10a589fd6fa6a27404b7d519f6ad750557749a1595229777"
+  },
+  "browserBackground": {
+    "file": "../../../../work/wanda-two-target-browser-background.png",
+    "sha256": "12b6a7c2370fe62454306f6300230a84e94886da2c1ab9a55a36e00be4d7557a",
+    "containsOnlySecondWanda": true,
+    "requestedCenter": [
+      276,
+      348
+    ],
+    "renderedCenter": [
+      276.5,
+      348
+    ]
+  },
+  "cases": [
+    {
+      "id": "one",
+      "targetCount": 1,
+      "requestedCenters": [
+        [
+          420,
+          300
+        ]
+      ],
+      "renderedCenters": [
+        {
+          "x": 420.5,
+          "y": 300
+        }
+      ],
+      "targetRectangles": [
+        {
+          "x": 413,
+          "y": 274,
+          "width": 15,
+          "height": 52
+        }
+      ],
+      "knownWidth": 15,
+      "knownHeight": 52,
+      "threshold": 0.9056472752971427,
+      "N": 4096,
+      "M": 1,
+      "peak": 50,
+      "maximum": 103,
+      "theta": 0.01562563585273695,
+      "acceptedPoints": [
+        {
+          "index": 2420,
+          "x": 420,
+          "y": 300,
+          "score": 0.9786143214090327,
+          "distances": [
+            0.5
+          ],
+          "correct": true
+        }
+      ],
+      "aboveThreshold": 1,
+      "diagnostics": {
+        "scoreEvaluations": 4096,
+        "qnnCircuitEvaluations": 4096,
+        "featureSamplesPerWindow": 1792,
+        "acceptedBeforeNMS": 1,
+        "suppressedCount": 0,
+        "nmsRadius": 12,
+        "threshold": 0.9056472752971427,
+        "runtimeMs": 1044.1154000000001,
+        "oracle": "trained four-qubit Wanda QNN sigmoid readout",
+        "inferenceInputs": [
+          "final scene RGB",
+          "declared target width/height",
+          "saved model"
+        ]
+      },
+      "pointTolerance": 6.656854249492381,
+      "grading": {
+        "rule": "Closest candidate point within fixed fine-lattice quantization tolerance; every copy is fully visible. Coordinates consulted only after inference.",
+        "trueAddressSets": [
+          [
+            2420
+          ]
+        ],
+        "falseAcceptedPoints": 0
+      },
+      "probabilities": {
+        "accepted": 0.9999453461091129,
+        "trueTarget": 0.9999453461091129,
+        "eachTarget": [
+          0.9999453461091129
+        ],
+        "unmarked": 0.000054653890885630105
+      },
+      "samples": {
+        "seed": 2026101107,
+        "draws": 10000,
+        "counts": {
+          "2420": 10000
+        },
+        "unmarked": 0,
+        "misses": 0,
+        "eachTarget": [
+          10000
+        ],
+        "noPostselection": true,
+        "emptyOraclePolicy": "All measured addresses retained, including unmarked and errors."
+      },
+      "verification": {
+        "maxNormError": 1.0436096431476471e-13,
+        "maxFormulaError": 1.887379141862766e-15
+      },
+      "files": {
+        "scene": "one-scene.png",
+        "scan": "one-scan.json.gz",
+        "exactGroverHistory": "one-grover-history.json.gz",
+        "allSamples": "one-sampled-addresses.json"
+      },
+      "rounds": [
+        {
+          "round": 0,
+          "acceptedProbability": 0.000244140625,
+          "trueTargetProbability": 0.000244140625
+        },
+        {
+          "round": 1,
+          "acceptedProbability": 0.0021958353463560343,
+          "trueTargetProbability": 0.0021958353463560343
+        },
+        {
+          "round": 2,
+          "acceptedProbability": 0.006091602842843935,
+          "trueTargetProbability": 0.006091602842843935
+        },
+        {
+          "round": 3,
+          "acceptedProbability": 0.01191622898797395,
+          "trueTargetProbability": 0.01191622898797395
+        },
+        {
+          "round": 4,
+          "acceptedProbability": 0.019646966890663024,
+          "trueTargetProbability": 0.019646966890663024
+        },
+        {
+          "round": 5,
+          "acceptedProbability": 0.029253625728584965,
+          "trueTargetProbability": 0.029253625728584965
+        },
+        {
+          "round": 6,
+          "acceptedProbability": 0.04069868865227794,
+          "trueTargetProbability": 0.04069868865227794
+        },
+        {
+          "round": 7,
+          "acceptedProbability": 0.05393745929955882,
+          "trueTargetProbability": 0.05393745929955882
+        },
+        {
+          "round": 8,
+          "acceptedProbability": 0.06891823634806223,
+          "trueTargetProbability": 0.06891823634806223
+        },
+        {
+          "round": 9,
+          "acceptedProbability": 0.08558251542422474,
+          "trueTargetProbability": 0.08558251542422474
+        },
+        {
+          "round": 10,
+          "acceptedProbability": 0.10386521758020005,
+          "trueTargetProbability": 0.10386521758020005
+        },
+        {
+          "round": 11,
+          "acceptedProbability": 0.12369494344643489,
+          "trueTargetProbability": 0.12369494344643489
+        },
+        {
+          "round": 12,
+          "acceptedProbability": 0.14499425206736452,
+          "trueTargetProbability": 0.14499425206736452
+        },
+        {
+          "round": 13,
+          "acceptedProbability": 0.16767996333129204,
+          "trueTargetProbability": 0.16767996333129204
+        },
+        {
+          "round": 14,
+          "acceptedProbability": 0.1916634828133729,
+          "trueTargetProbability": 0.1916634828133729
+        },
+        {
+          "round": 15,
+          "acceptedProbability": 0.21685114776309677,
+          "trueTargetProbability": 0.21685114776309677
+        },
+        {
+          "round": 16,
+          "acceptedProbability": 0.24314459288508292,
+          "trueTargetProbability": 0.24314459288508292
+        },
+        {
+          "round": 17,
+          "acceptedProbability": 0.2704411344847069,
+          "trueTargetProbability": 0.2704411344847069
+        },
+        {
+          "round": 18,
+          "acceptedProbability": 0.29863417147835586,
+          "trueTargetProbability": 0.29863417147835586
+        },
+        {
+          "round": 19,
+          "acceptedProbability": 0.3276136017022486,
+          "trueTargetProbability": 0.3276136017022486
+        },
+        {
+          "round": 20,
+          "acceptedProbability": 0.35726625189401146,
+          "trueTargetProbability": 0.35726625189401146
+        },
+        {
+          "round": 21,
+          "acceptedProbability": 0.38747631966780366,
+          "trueTargetProbability": 0.38747631966780366
+        },
+        {
+          "round": 22,
+          "acceptedProbability": 0.41812582575694957,
+          "trueTargetProbability": 0.41812582575694957
+        },
+        {
+          "round": 23,
+          "acceptedProbability": 0.44909507475793525,
+          "trueTargetProbability": 0.44909507475793525
+        },
+        {
+          "round": 24,
+          "acceptedProbability": 0.48026312257642795,
+          "trueTargetProbability": 0.48026312257642795
+        },
+        {
+          "round": 25,
+          "acceptedProbability": 0.5115082487498034,
+          "trueTargetProbability": 0.5115082487498034
+        },
+        {
+          "round": 26,
+          "acceptedProbability": 0.5427084318016211,
+          "trueTargetProbability": 0.5427084318016211
+        },
+        {
+          "round": 27,
+          "acceptedProbability": 0.5737418257716483,
+          "trueTargetProbability": 0.5737418257716483
+        },
+        {
+          "round": 28,
+          "acceptedProbability": 0.6044872360604403,
+          "trueTargetProbability": 0.6044872360604403
+        },
+        {
+          "round": 29,
+          "acceptedProbability": 0.6348245927301646,
+          "trueTargetProbability": 0.6348245927301646
+        },
+        {
+          "round": 30,
+          "acceptedProbability": 0.664635419413288,
+          "trueTargetProbability": 0.664635419413288
+        },
+        {
+          "round": 31,
+          "acceptedProbability": 0.6938032959978991,
+          "trueTargetProbability": 0.6938032959978991
+        },
+        {
+          "round": 32,
+          "acceptedProbability": 0.7222143132827445,
+          "trueTargetProbability": 0.7222143132827445
+        },
+        {
+          "round": 33,
+          "acceptedProbability": 0.7497575178264125,
+          "trueTargetProbability": 0.7497575178264125
+        },
+        {
+          "round": 34,
+          "acceptedProbability": 0.7763253452534011,
+          "trueTargetProbability": 0.7763253452534011
+        },
+        {
+          "round": 35,
+          "acceptedProbability": 0.8018140403248782,
+          "trueTargetProbability": 0.8018140403248782
+        },
+        {
+          "round": 36,
+          "acceptedProbability": 0.826124062133635,
+          "trueTargetProbability": 0.826124062133635
+        },
+        {
+          "round": 37,
+          "acceptedProbability": 0.8491604728408242,
+          "trueTargetProbability": 0.8491604728408242
+        },
+        {
+          "round": 38,
+          "acceptedProbability": 0.8708333084363542,
+          "trueTargetProbability": 0.8708333084363542
+        },
+        {
+          "round": 39,
+          "acceptedProbability": 0.8910579300750067,
+          "trueTargetProbability": 0.8910579300750067
+        },
+        {
+          "round": 40,
+          "acceptedProbability": 0.9097553546162078,
+          "trueTargetProbability": 0.9097553546162078
+        },
+        {
+          "round": 41,
+          "acceptedProbability": 0.926852563076597,
+          "trueTargetProbability": 0.926852563076597
+        },
+        {
+          "round": 42,
+          "acceptedProbability": 0.9422827857907946,
+          "trueTargetProbability": 0.9422827857907946
+        },
+        {
+          "round": 43,
+          "acceptedProbability": 0.9559857631667302,
+          "trueTargetProbability": 0.9559857631667302
+        },
+        {
+          "round": 44,
+          "acceptedProbability": 0.9679079810172068,
+          "trueTargetProbability": 0.9679079810172068
+        },
+        {
+          "round": 45,
+          "acceptedProbability": 0.9780028795486588,
+          "trueTargetProbability": 0.9780028795486588
+        },
+        {
+          "round": 46,
+          "acceptedProbability": 0.9862310351909432,
+          "trueTargetProbability": 0.9862310351909432
+        },
+        {
+          "round": 47,
+          "acceptedProbability": 0.9925603145580632,
+          "trueTargetProbability": 0.9925603145580632
+        },
+        {
+          "round": 48,
+          "acceptedProbability": 0.9969659999385619,
+          "trueTargetProbability": 0.9969659999385619
+        },
+        {
+          "round": 49,
+          "acceptedProbability": 0.999430885825511,
+          "trueTargetProbability": 0.999430885825511
+        },
+        {
+          "round": 50,
+          "acceptedProbability": 0.9999453461091129,
+          "trueTargetProbability": 0.9999453461091129
+        },
+        {
+          "round": 51,
+          "acceptedProbability": 0.9985073716695122,
+          "trueTargetProbability": 0.9985073716695122
+        },
+        {
+          "round": 52,
+          "acceptedProbability": 0.9951225782230042,
+          "trueTargetProbability": 0.9951225782230042
+        },
+        {
+          "round": 53,
+          "acceptedProbability": 0.9898041843909992,
+          "trueTargetProbability": 0.9898041843909992
+        },
+        {
+          "round": 54,
+          "acceptedProbability": 0.9825729600773874,
+          "trueTargetProbability": 0.9825729600773874
+        },
+        {
+          "round": 55,
+          "acceptedProbability": 0.9734571453559111,
+          "trueTargetProbability": 0.9734571453559111
+        },
+        {
+          "round": 56,
+          "acceptedProbability": 0.9624923401843077,
+          "trueTargetProbability": 0.9624923401843077
+        },
+        {
+          "round": 57,
+          "acceptedProbability": 0.9497213653759258,
+          "trueTargetProbability": 0.9497213653759258
+        },
+        {
+          "round": 58,
+          "acceptedProbability": 0.9351940953717599,
+          "trueTargetProbability": 0.9351940953717599
+        },
+        {
+          "round": 59,
+          "acceptedProbability": 0.9189672634659795,
+          "trueTargetProbability": 0.9189672634659795
+        },
+        {
+          "round": 60,
+          "acceptedProbability": 0.9011042402456035,
+          "trueTargetProbability": 0.9011042402456035
+        },
+        {
+          "round": 61,
+          "acceptedProbability": 0.8816747861095804,
+          "trueTargetProbability": 0.8816747861095804
+        },
+        {
+          "round": 62,
+          "acceptedProbability": 0.8607547788337573,
+          "trueTargetProbability": 0.8607547788337573
+        },
+        {
+          "round": 63,
+          "acceptedProbability": 0.8384259172456822,
+          "trueTargetProbability": 0.8384259172456822
+        },
+        {
+          "round": 64,
+          "acceptedProbability": 0.8147754021664713,
+          "trueTargetProbability": 0.8147754021664713
+        },
+        {
+          "round": 65,
+          "acceptedProbability": 0.7898955958657641,
+          "trueTargetProbability": 0.7898955958657641
+        },
+        {
+          "round": 66,
+          "acceptedProbability": 0.7638836613596905,
+          "trueTargetProbability": 0.7638836613596905
+        },
+        {
+          "round": 67,
+          "acceptedProbability": 0.7368411829605009,
+          "trueTargetProbability": 0.7368411829605009
+        },
+        {
+          "round": 68,
+          "acceptedProbability": 0.7088737695597251,
+          "trueTargetProbability": 0.7088737695597251
+        },
+        {
+          "round": 69,
+          "acceptedProbability": 0.6800906421941562,
+          "trueTargetProbability": 0.6800906421941562
+        },
+        {
+          "round": 70,
+          "acceptedProbability": 0.6506042075053363,
+          "trueTargetProbability": 0.6506042075053363
+        },
+        {
+          "round": 71,
+          "acceptedProbability": 0.6205296187583133,
+          "trueTargetProbability": 0.6205296187583133
+        },
+        {
+          "round": 72,
+          "acceptedProbability": 0.5899843261340174,
+          "trueTargetProbability": 0.5899843261340174
+        },
+        {
+          "round": 73,
+          "acceptedProbability": 0.5590876180515013,
+          "trueTargetProbability": 0.5590876180515013
+        },
+        {
+          "round": 74,
+          "acceptedProbability": 0.5279601553113152,
+          "trueTargetProbability": 0.5279601553113152
+        },
+        {
+          "round": 75,
+          "acceptedProbability": 0.4967234998793263,
+          "trueTargetProbability": 0.4967234998793263
+        },
+        {
+          "round": 76,
+          "acceptedProbability": 0.4654996401512198,
+          "trueTargetProbability": 0.4654996401512198
+        },
+        {
+          "round": 77,
+          "acceptedProbability": 0.43441051455166546,
+          "trueTargetProbability": 0.43441051455166546
+        },
+        {
+          "round": 78,
+          "acceptedProbability": 0.40357753532863605,
+          "trueTargetProbability": 0.40357753532863605
+        },
+        {
+          "round": 79,
+          "acceptedProbability": 0.37312111440260104,
+          "trueTargetProbability": 0.37312111440260104
+        },
+        {
+          "round": 80,
+          "acceptedProbability": 0.34316019312229634,
+          "trueTargetProbability": 0.34316019312229634
+        },
+        {
+          "round": 81,
+          "acceptedProbability": 0.313811777763512,
+          "trueTargetProbability": 0.313811777763512
+        },
+        {
+          "round": 82,
+          "acceptedProbability": 0.2851904825849135,
+          "trueTargetProbability": 0.2851904825849135
+        },
+        {
+          "round": 83,
+          "acceptedProbability": 0.25740808222539796,
+          "trueTargetProbability": 0.25740808222539796
+        },
+        {
+          "round": 84,
+          "acceptedProbability": 0.23057307519100806,
+          "trueTargetProbability": 0.23057307519100806
+        },
+        {
+          "round": 85,
+          "acceptedProbability": 0.20479026013611493,
+          "trueTargetProbability": 0.20479026013611493
+        },
+        {
+          "round": 86,
+          "acceptedProbability": 0.18016032659361825,
+          "trueTargetProbability": 0.18016032659361825
+        },
+        {
+          "round": 87,
+          "acceptedProbability": 0.1567794617524834,
+          "trueTargetProbability": 0.1567794617524834
+        },
+        {
+          "round": 88,
+          "acceptedProbability": 0.13473897481826566,
+          "trueTargetProbability": 0.13473897481826566
+        },
+        {
+          "round": 89,
+          "acceptedProbability": 0.11412494042360556,
+          "trueTargetProbability": 0.11412494042360556
+        },
+        {
+          "round": 90,
+          "acceptedProbability": 0.09501786248128213,
+          "trueTargetProbability": 0.09501786248128213
+        },
+        {
+          "round": 91,
+          "acceptedProbability": 0.07749235979257804,
+          "trueTargetProbability": 0.07749235979257804
+        },
+        {
+          "round": 92,
+          "acceptedProbability": 0.06161687463874921,
+          "trueTargetProbability": 0.06161687463874921
+        },
+        {
+          "round": 93,
+          "acceptedProbability": 0.04745340549363537,
+          "trueTargetProbability": 0.04745340549363537
+        },
+        {
+          "round": 94,
+          "acceptedProbability": 0.035057264901247866,
+          "trueTargetProbability": 0.035057264901247866
+        },
+        {
+          "round": 95,
+          "acceptedProbability": 0.024476863463894785,
+          "trueTargetProbability": 0.024476863463894785
+        },
+        {
+          "round": 96,
+          "acceptedProbability": 0.0157535207844337,
+          "trueTargetProbability": 0.0157535207844337
+        },
+        {
+          "round": 97,
+          "acceptedProbability": 0.008921304100978378,
+          "trueTargetProbability": 0.008921304100978378
+        },
+        {
+          "round": 98,
+          "acceptedProbability": 0.004006895244238997,
+          "trueTargetProbability": 0.004006895244238997
+        },
+        {
+          "round": 99,
+          "acceptedProbability": 0.001029486437066686,
+          "trueTargetProbability": 0.001029486437066686
+        },
+        {
+          "round": 100,
+          "acceptedProbability": 7.053431361532939e-7,
+          "trueTargetProbability": 7.053431361532939e-7
+        },
+        {
+          "round": 101,
+          "acceptedProbability": 0.0009245696574734587,
+          "trueTargetProbability": 0.0009245696574734587
+        },
+        {
+          "round": 102,
+          "acceptedProbability": 0.003797471416166391,
+          "trueTargetProbability": 0.003797471416166391
+        },
+        {
+          "round": 103,
+          "acceptedProbability": 0.008608191086532678,
+          "trueTargetProbability": 0.008608191086532678
+        }
+      ]
+    },
+    {
+      "id": "two",
+      "targetCount": 2,
+      "requestedCenters": [
+        [
+          420,
+          300
+        ],
+        [
+          276,
+          348
+        ]
+      ],
+      "renderedCenters": [
+        {
+          "x": 420.5,
+          "y": 300
+        },
+        {
+          "x": 276.5,
+          "y": 348
+        }
+      ],
+      "targetRectangles": [
+        {
+          "x": 413,
+          "y": 274,
+          "width": 15,
+          "height": 52
+        },
+        {
+          "x": 269,
+          "y": 322,
+          "width": 15,
+          "height": 52
+        }
+      ],
+      "knownWidth": 15,
+      "knownHeight": 52,
+      "threshold": 0.9056472752971427,
+      "N": 4096,
+      "M": 2,
+      "peak": 35,
+      "maximum": 73,
+      "theta": 0.02209888557285766,
+      "acceptedPoints": [
+        {
+          "index": 2420,
+          "x": 420,
+          "y": 300,
+          "score": 0.9786143214090327,
+          "distances": [
+            0.5,
+            151.31506864816868
+          ],
+          "correct": true
+        },
+        {
+          "index": 2786,
+          "x": 276,
+          "y": 348,
+          "score": 0.986674837069946,
+          "distances": [
+            152.26375143152094,
+            0.5
+          ],
+          "correct": true
+        }
+      ],
+      "aboveThreshold": 2,
+      "diagnostics": {
+        "scoreEvaluations": 4096,
+        "qnnCircuitEvaluations": 4096,
+        "featureSamplesPerWindow": 1792,
+        "acceptedBeforeNMS": 2,
+        "suppressedCount": 0,
+        "nmsRadius": 12,
+        "threshold": 0.9056472752971427,
+        "runtimeMs": 1025.5364000000002,
+        "oracle": "trained four-qubit Wanda QNN sigmoid readout",
+        "inferenceInputs": [
+          "final scene RGB",
+          "declared target width/height",
+          "saved model"
+        ]
+      },
+      "pointTolerance": 6.656854249492381,
+      "grading": {
+        "rule": "Closest candidate point within fixed fine-lattice quantization tolerance; every copy is fully visible. Coordinates consulted only after inference.",
+        "trueAddressSets": [
+          [
+            2420
+          ],
+          [
+            2786
+          ]
+        ],
+        "falseAcceptedPoints": 0
+      },
+      "probabilities": {
+        "accepted": 0.9999968477766265,
+        "trueTarget": 0.9999968477766265,
+        "eachTarget": [
+          0.4999984238883132,
+          0.4999984238883132
+        ],
+        "unmarked": 0.000003152223374445703
+      },
+      "samples": {
+        "seed": 2026101107,
+        "draws": 10000,
+        "counts": {
+          "2420": 4987,
+          "2786": 5013
+        },
+        "unmarked": 0,
+        "misses": 0,
+        "eachTarget": [
+          4987,
+          5013
+        ],
+        "noPostselection": true,
+        "emptyOraclePolicy": "All measured addresses retained, including unmarked and errors."
+      },
+      "verification": {
+        "maxNormError": 9.325873406851315e-14,
+        "maxFormulaError": 1.5543122344752192e-15
+      },
+      "files": {
+        "scene": "two-scene.png",
+        "scan": "two-scan.json.gz",
+        "exactGroverHistory": "two-grover-history.json.gz",
+        "allSamples": "two-sampled-addresses.json"
+      },
+      "rounds": [
+        {
+          "round": 0,
+          "acceptedProbability": 0.00048828125,
+          "trueTargetProbability": 0.00048828125
+        },
+        {
+          "round": 1,
+          "acceptedProbability": 0.004388811066746712,
+          "trueTargetProbability": 0.004388811066746712
+        },
+        {
+          "round": 2,
+          "acceptedProbability": 0.012159412690387228,
+          "trueTargetProbability": 0.012159412690387228
+        },
+        {
+          "round": 3,
+          "acceptedProbability": 0.023739407938229623,
+          "trueTargetProbability": 0.023739407938229623
+        },
+        {
+          "round": 4,
+          "acceptedProbability": 0.03903837227157634,
+          "trueTargetProbability": 0.03903837227157634
+        },
+        {
+          "round": 5,
+          "acceptedProbability": 0.05793684089249051,
+          "trueTargetProbability": 0.05793684089249051
+        },
+        {
+          "round": 6,
+          "acceptedProbability": 0.08028724160680781,
+          "trueTargetProbability": 0.08028724160680781
+        },
+        {
+          "round": 7,
+          "acceptedProbability": 0.10591504716896014,
+          "trueTargetProbability": 0.10591504716896014
+        },
+        {
+          "round": 8,
+          "acceptedProbability": 0.13462013811031298,
+          "trueTargetProbability": 0.13462013811031298
+        },
+        {
+          "round": 9,
+          "acceptedProbability": 0.1661783654091189,
+          "trueTargetProbability": 0.1661783654091189
+        },
+        {
+          "round": 10,
+          "acceptedProbability": 0.2003433007996894,
+          "trueTargetProbability": 0.2003433007996894
+        },
+        {
+          "round": 11,
+          "acceptedProbability": 0.2368481610531713,
+          "trueTargetProbability": 0.2368481610531713
+        },
+        {
+          "round": 12,
+          "acceptedProbability": 0.2754078912038248,
+          "trueTargetProbability": 0.2754078912038248
+        },
+        {
+          "round": 13,
+          "acceptedProbability": 0.31572139045354514,
+          "trueTargetProbability": 0.31572139045354514
+        },
+        {
+          "round": 14,
+          "acceptedProbability": 0.35747386337323916,
+          "trueTargetProbability": 0.35747386337323916
+        },
+        {
+          "round": 15,
+          "acceptedProbability": 0.4003392780412662,
+          "trueTargetProbability": 0.4003392780412662
+        },
+        {
+          "round": 16,
+          "acceptedProbability": 0.4439829119241122,
+          "trueTargetProbability": 0.4439829119241122
+        },
+        {
+          "round": 17,
+          "acceptedProbability": 0.4880639656193184,
+          "trueTargetProbability": 0.4880639656193184
+        },
+        {
+          "round": 18,
+          "acceptedProbability": 0.5322382240507659,
+          "trueTargetProbability": 0.5322382240507659
+        },
+        {
+          "round": 19,
+          "acceptedProbability": 0.576160744335882,
+          "trueTargetProbability": 0.576160744335882
+        },
+        {
+          "round": 20,
+          "acceptedProbability": 0.6194885493360572,
+          "trueTargetProbability": 0.6194885493360572
+        },
+        {
+          "round": 21,
+          "acceptedProbability": 0.6618833058571869,
+          "trueTargetProbability": 0.6618833058571869
+        },
+        {
+          "round": 22,
+          "acceptedProbability": 0.7030139665871115,
+          "trueTargetProbability": 0.7030139665871115
+        },
+        {
+          "round": 23,
+          "acceptedProbability": 0.7425593551398975,
+          "trueTargetProbability": 0.7425593551398975
+        },
+        {
+          "round": 24,
+          "acceptedProbability": 0.7802106740211618,
+          "trueTargetProbability": 0.7802106740211618
+        },
+        {
+          "round": 25,
+          "acceptedProbability": 0.8156739159305278,
+          "trueTargetProbability": 0.8156739159305278
+        },
+        {
+          "round": 26,
+          "acceptedProbability": 0.8486721595721105,
+          "trueTargetProbability": 0.8486721595721105
+        },
+        {
+          "round": 27,
+          "acceptedProbability": 0.8789477320457698,
+          "trueTargetProbability": 0.8789477320457698
+        },
+        {
+          "round": 28,
+          "acceptedProbability": 0.9062642209336988,
+          "trueTargetProbability": 0.9062642209336988
+        },
+        {
+          "round": 29,
+          "acceptedProbability": 0.9304083203705962,
+          "trueTargetProbability": 0.9304083203705962
+        },
+        {
+          "round": 30,
+          "acceptedProbability": 0.9511914966820408,
+          "trueTargetProbability": 0.9511914966820408
+        },
+        {
+          "round": 31,
+          "acceptedProbability": 0.968451460584626,
+          "trueTargetProbability": 0.968451460584626
+        },
+        {
+          "round": 32,
+          "acceptedProbability": 0.9820534344518993,
+          "trueTargetProbability": 0.9820534344518993
+        },
+        {
+          "round": 33,
+          "acceptedProbability": 0.9918912047504356,
+          "trueTargetProbability": 0.9918912047504356
+        },
+        {
+          "round": 34,
+          "acceptedProbability": 0.9978879514278928,
+          "trueTargetProbability": 0.9978879514278928
+        },
+        {
+          "round": 35,
+          "acceptedProbability": 0.9999968477766265,
+          "trueTargetProbability": 0.9999968477766265
+        },
+        {
+          "round": 36,
+          "acceptedProbability": 0.9982014260887132,
+          "trueTargetProbability": 0.9982014260887132
+        },
+        {
+          "round": 37,
+          "acceptedProbability": 0.9925157062470998,
+          "trueTargetProbability": 0.9925157062470998
+        },
+        {
+          "round": 38,
+          "acceptedProbability": 0.9829840862487489,
+          "trueTargetProbability": 0.9829840862487489
+        },
+        {
+          "round": 39,
+          "acceptedProbability": 0.9696809955146528,
+          "trueTargetProbability": 0.9696809955146528
+        },
+        {
+          "round": 40,
+          "acceptedProbability": 0.9527103136939076,
+          "trueTargetProbability": 0.9527103136939076
+        },
+        {
+          "round": 41,
+          "acceptedProbability": 0.9322045595002247,
+          "trueTargetProbability": 0.9322045595002247
+        },
+        {
+          "round": 42,
+          "acceptedProbability": 0.9083238559149975,
+          "trueTargetProbability": 0.9083238559149975
+        },
+        {
+          "round": 43,
+          "acceptedProbability": 0.8812546798373312,
+          "trueTargetProbability": 0.8812546798373312
+        },
+        {
+          "round": 44,
+          "acceptedProbability": 0.8512084059446201,
+          "trueTargetProbability": 0.8512084059446201
+        },
+        {
+          "round": 45,
+          "acceptedProbability": 0.8184196561342127,
+          "trueTargetProbability": 0.8184196561342127
+        },
+        {
+          "round": 46,
+          "acceptedProbability": 0.7831444674348483,
+          "trueTargetProbability": 0.7831444674348483
+        },
+        {
+          "round": 47,
+          "acceptedProbability": 0.7456582926940748,
+          "trueTargetProbability": 0.7456582926940748
+        },
+        {
+          "round": 48,
+          "acceptedProbability": 0.7062538496536463,
+          "trueTargetProbability": 0.7062538496536463
+        },
+        {
+          "round": 49,
+          "acceptedProbability": 0.6652388352087951,
+          "trueTargetProbability": 0.6652388352087951
+        },
+        {
+          "round": 50,
+          "acceptedProbability": 0.6229335227000079,
+          "trueTargetProbability": 0.6229335227000079
+        },
+        {
+          "round": 51,
+          "acceptedProbability": 0.5796682609992998,
+          "trueTargetProbability": 0.5796682609992998
+        },
+        {
+          "round": 52,
+          "acceptedProbability": 0.535780894919832,
+          "trueTargetProbability": 0.535780894919832
+        },
+        {
+          "round": 53,
+          "acceptedProbability": 0.49161412709208513,
+          "trueTargetProbability": 0.49161412709208513
+        },
+        {
+          "round": 54,
+          "acceptedProbability": 0.44751284190686486,
+          "trueTargetProbability": 0.44751284190686486
+        },
+        {
+          "round": 55,
+          "acceptedProbability": 0.4038214124216288,
+          "trueTargetProbability": 0.4038214124216288
+        },
+        {
+          "round": 56,
+          "acceptedProbability": 0.3608810112596537,
+          "trueTargetProbability": 0.3608810112596537
+        },
+        {
+          "round": 57,
+          "acceptedProbability": 0.3190269465003866,
+          "trueTargetProbability": 0.3190269465003866
+        },
+        {
+          "round": 58,
+          "acceptedProbability": 0.278586043364173,
+          "trueTargetProbability": 0.278586043364173
+        },
+        {
+          "round": 59,
+          "acceptedProbability": 0.2398740921369618,
+          "trueTargetProbability": 0.2398740921369618
+        },
+        {
+          "round": 60,
+          "acceptedProbability": 0.20319338226334113,
+          "trueTargetProbability": 0.20319338226334113
+        },
+        {
+          "round": 61,
+          "acceptedProbability": 0.168830341863395,
+          "trueTargetProbability": 0.168830341863395
+        },
+        {
+          "round": 62,
+          "acceptedProbability": 0.13705330110565175,
+          "trueTargetProbability": 0.13705330110565175
+        },
+        {
+          "round": 63,
+          "acceptedProbability": 0.1081103969012408,
+          "trueTargetProbability": 0.1081103969012408
+        },
+        {
+          "round": 64,
+          "acceptedProbability": 0.08222763528084152,
+          "trueTargetProbability": 0.08222763528084152
+        },
+        {
+          "round": 65,
+          "acceptedProbability": 0.05960712658471332,
+          "trueTargetProbability": 0.05960712658471332
+        },
+        {
+          "round": 66,
+          "acceptedProbability": 0.040425507246652025,
+          "trueTargetProbability": 0.040425507246652025
+        },
+        {
+          "round": 67,
+          "acceptedProbability": 0.02483256049566542,
+          "trueTargetProbability": 0.02483256049566542
+        },
+        {
+          "round": 68,
+          "acceptedProbability": 0.012950046745874235,
+          "trueTargetProbability": 0.012950046745874235
+        },
+        {
+          "round": 69,
+          "acceptedProbability": 0.004870752807756016,
+          "trueTargetProbability": 0.004870752807756016
+        },
+        {
+          "round": 70,
+          "acceptedProbability": 0.0006577673451418103,
+          "trueTargetProbability": 0.0006577673451418103
+        },
+        {
+          "round": 71,
+          "acceptedProbability": 0.00034398823569417104,
+          "trueTargetProbability": 0.00034398823569417104
+        },
+        {
+          "round": 72,
+          "acceptedProbability": 0.0039318656817333465,
+          "trueTargetProbability": 0.0039318656817333465
+        },
+        {
+          "round": 73,
+          "acceptedProbability": 0.01139338307737844,
+          "trueTargetProbability": 0.01139338307737844
+        }
+      ]
+    }
+  ]
+}

@@ -1,8 +1,20 @@
 # Two-site comparison: schoolbus search and original crowd search
 
-Updated October 10, 2026, after Iteration 03. The bus site supports a real-photo-derived schoolbus cutout on a real street photo. The separate **Search Atlas** crowd site has an original illustrated explorer, original crowd artwork, its own trained QNN and a functioning pixel-to-oracle-to-Grover interaction. Both existing review sites are deployed privately. The new local comparison page is `bus-search-lab/dist/compare.html`; the final private update awaits its external receipt in root QA.
+Updated October 10, 2026, after resumed crowd-editor steering. The bus site supports a real-photo-derived schoolbus cutout on a real street photo. Search Atlas now has a **local layered editor**, public-domain scenes and an attributed open figure, with **classical known-template center matching** as its default. The original illustrated QNN experiment remains separate. Iteration 03's private updates succeeded; the resumed source's full browser QA/private update remains pending root's final receipt.
 
 Both review sites are owner-private. The current human instruction is to **keep improving without submitting work**; external Qollab uploads and public submission-material publication are withheld. Matched photo/crowd classical baselines and independently photographed bus failures are now available, so comparison should focus on oracle quality and educational clarity rather than implied QNN superiority.
+
+## Resumed comparison: three declared experiments
+
+| Experiment | Detector/reference | Candidate and truth |
+| --- | --- | --- |
+| Schoolbus QNN | Trained engineered-feature circuit on controlled photo/illustrated domains | 4×4/8×8 image regions; independently evaluated alpha>32 overlap |
+| Original crowd QNN | Unchanged trained stripe-feature circuit; original character and crowd only | 4×4/8×8 regions; same-art evidence and alpha>32 overlap |
+| Layered crowd template mode | Classical known-size target template plus final RGB and clean-background reference; Bruegel/Seurat/open figure/uploads | 16×16/32×32/64×64 center addresses; pixel-refined point error with declared tolerance and separate visible alpha mass |
+
+The new editor's maps distinguish template agreement, signed simulated amplitude and Born probability. Foreground cutout masks determine rendering/independent visibility evaluation, not oracle location. The matcher thresholds and suppresses local peaks; it does not force an argmax answer. Its 26 Node tests include original-template integer successes and fractional misses, which do not establish new-art/browser performance. [SCENE_EDITOR.md](../../waldo-search-lab/docs/SCENE_EDITOR.md), [open-art provenance](../../waldo-search-lab/docs/OPEN_ART.md), [draft handoff](../../LAYERED_SEARCH_HANDOFF.md).
+
+The earlier original-art directions below describe the preserved QNN experiment. They no longer describe the crowd default. New backgrounds, reference targets and occlusion are implemented controls; their broader performance still requires the actual browser/declared audit. Keep MIT code separate from CC BY-SA OpenMoji assets and public-domain painting credits.
 
 ## Distinct learning stories
 
@@ -68,7 +80,7 @@ Freeze model/predicate, threshold, candidate extraction, and ground-truth defini
 | Multiple targets | Does the measurement find any genuine target? |
 | Partial occlusion or changed scale | Does the frozen detector remain useful under the stated transformations? |
 
-Save per-family candidate precision/recall, no-target false-alarm rate, any-overlap predicate hit rate, exact ground-truth probability mass after Grover, and sampled success with a declared shot count in local reports. The common current UI rule is **any inserted alpha >32 pixel in a tile**; older bounding-box/alpha rules remain separately labelled. Keep oracle success, classifier accuracy, and true-target localization separate. Test blind inference for placement-metadata leakage in both pipelines.
+Save per-family candidate precision/recall, no-target false-alarm rate, predicate hit rate, exact ground-truth probability mass after Grover, and sampled success with a declared shot count. Both QNN region modes use **any inserted alpha>32 pixel in a tile**; the fine template mode uses declared center error/tolerance and separate visibility conventions. Older bounding-box/alpha rules remain labelled. Keep oracle success, classifier accuracy and true-target localization separate. Test blind inference for placement-metadata leakage in every pipeline.
 
 For new crowd development, split by scene/placement seeds and additionally reserve character/background identities before claiming recognition of new appearances. Rendering can encode a label through backgrounds or artifacts; include hard negatives and inspect failures. Use identical feature matrices and splits for the matched classical model. The completed same-asset audit is now inspected development evidence, not an untouched future test.
 
@@ -84,10 +96,10 @@ The project does not currently identify real people, infer identity from photogr
 
 ## Next comparison work
 
-1. Confirm the final private update only from its external receipt in root QA; preserve both Site identities and access.
+1. Finish the resumed layered editor's actual browser/new-art checks and confirm its private update only from the new external receipt; preserve both Site identities and access. Iteration 03's earlier update already succeeded.
 2. Use the implemented comparison/lesson/Boundary challenge to collect explicit voluntary local feedback about oracle confidence versus target probability. The quiz alone does not prove a learning effect or determine which interface is better.
-3. Preserve the matched [photo](PHOTO_BASELINE.md) and [crowd](../../waldo-search-lab/docs/BASELINE.md) evidence. Compare future v4 candidates on identical features/splits with scene-level false-mark constraints and coverage, not patch F1 alone. Keep current checkpoints unchanged until a useful candidate clears regression and identity tests.
-4. Introduce separately reserved training foreground/background variation and improve local object/shape or stripe representation. Freeze before releasing new holdouts; evaluated a/b identities and the expanded crowd probe suite are diagnostic thereafter.
+3. Preserve the matched [photo](PHOTO_BASELINE.md) and [crowd](../../waldo-search-lab/docs/BASELINE.md) evidence. Photo-v4's interrupted candidates also fail coverage and remain unpromoted. Compare future trained candidates on identical features/splits with scene constraints; keep them separate from the classical template matcher.
+4. Prioritize a frozen fine-mode scene/target/scale/occlusion/absence audit and report point errors, false peaks, abstention and true-target mass. Then improve representation or registration from declared development evidence. Keep photo c closed until a later full freeze; inspected identities/suites stay diagnostic.
 5. Keep the [demo storyboard](DEMO_STORYBOARD.md) and Qiskit material local. No public project/source/video or contest submission under the current human instruction.
 
 The second site should strengthen the original contribution: it makes the distinction between **recognition** and **amplitude amplification** easier to see across two different kinds of image search. A larger scene alone is not evidence of practical quantum acceleration.

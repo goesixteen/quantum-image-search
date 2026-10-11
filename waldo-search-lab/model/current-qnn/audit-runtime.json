@@ -1,0 +1,9 @@
+{
+  "node": "v24.19.0",
+  "nativeCanvas": "@napi-rs/canvas@0.1.100",
+  "platform": "win32",
+  "architecture": "x64",
+  "resizePolicy": "Native Canvas default imageSmoothingQuality, preserved from the original independent audit. The primary browser UI requests high quality and needs separate replay.",
+  "modelSHA256": "9c5a25af8a37eb8482f09e49631418e63c05c47d0317fd0a2a5ead9b6c63465a",
+  "protocolSHA256": "4a113cef7f0dcd84f61845dae60703db5952e0355d95bf7256d79fb58fb6eb90"
+}

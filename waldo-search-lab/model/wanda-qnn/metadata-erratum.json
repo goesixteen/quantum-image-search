@@ -1,0 +1,75 @@
+{
+  "frozenModelSHA256": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88",
+  "affectedField": "trainingDomain",
+  "inheritedIncorrectValue": "Same OpenMoji striped target over Original Festival, Magic Arena, and Qualicity Queue; supplied known height24\u2013112px; native high-quality resizing; always-front targets, clipping reported; no unseen identity claim.",
+  "correctedValue": "Same generated Wanda PNG over five generated crowd backgrounds (Festival, Beach, Market, Park, Fairground); supplied discrete heights40/46/52/58/64px; native high-quality resize; always-front fully visible inside-frame targets; disjoint center partitions on known art identities. No unseen identity or arbitrary-size claim.",
+  "reason": "Trainer clone retained one previous experiment description: replacement failed to match its Unicode en dash. No prior artwork or prior weights were used in this experiment.",
+  "inferenceEffect": "None. Scanner reads featureVersion/names, qubits/layers, theta/readout/bias/threshold; trainingDomain is descriptive only. All numerical parameters, predictions, thresholds, frozen files and reserved test results remain unchanged.",
+  "evidence": {
+    "featureVersion": "wanda-window-v1",
+    "protocolSHA256": "e7d6c9a0ba102bc4317ac0f2ec599143b0492291f2ad5af5e72d49387c08e761",
+    "target": {
+      "file": "assets/wanda/wanda.png",
+      "sha256": "ae679a90fb94c8ad10a589fd6fa6a27404b7d519f6ad750557749a1595229777",
+      "trim": [
+        285,
+        21,
+        725,
+        1514
+      ],
+      "aspect": 0.29470864032150035
+    },
+    "scenes": [
+      {
+        "id": "wanda-festival",
+        "source": "assets/wanda/festival.png",
+        "sourceSha256": "bcabf4cbf2559220aa6ada6c53807e8364c98edd431f21983b7cb8f7a7ec0b1b",
+        "normalized": "assets/wanda/festival-512.png",
+        "normalizedSha256": "369f59e8c4b83ebe9d36febc42e85fe29dd650da56e7ad9f9b27f0c8363bda56"
+      },
+      {
+        "id": "wanda-beach",
+        "source": "assets/wanda/beach.png",
+        "sourceSha256": "346c31f378afea982e6722eb2ed54b8e5a1e4e1731fd99a022c530150dd64516",
+        "normalized": "assets/wanda/beach-512.png",
+        "normalizedSha256": "fce6b6ade6a36f9b1fc92bcaf11bc2f5ef874d740de872ae22095a629377226a"
+      },
+      {
+        "id": "wanda-market",
+        "source": "assets/wanda/market.png",
+        "sourceSha256": "045f854bb57524834958c0ffa9566385df8d821b57b3fd8678f57fdb316b399f",
+        "normalized": "assets/wanda/market-512.png",
+        "normalizedSha256": "746b7ba03b5a25a91041e4d287125b4ea1d3187cc0f7712086697ddf1dd429fa"
+      },
+      {
+        "id": "wanda-park",
+        "source": "assets/wanda/park.png",
+        "sourceSha256": "3bb4ede549bec7fedd65b1ff750a8d8c9e2e94d0124b814688921c59cabb17bf",
+        "normalized": "assets/wanda/park-512.png",
+        "normalizedSha256": "d20ea478a665eac1221fafcf3079dff71e9d9a40ca56846546628216452ceabd"
+      },
+      {
+        "id": "wanda-fairground",
+        "source": "assets/wanda/fairground.png",
+        "sourceSha256": "98a2e98d5aa1d7971f4d50ee6508b1d9d6be63611a72fc388a7a71eaeaa51b97",
+        "normalized": "assets/wanda/fairground-512.png",
+        "normalizedSha256": "71a3c458f4ff642ffccdae332b8819fc935bbee8c026bfce27c59251467fb61d"
+      }
+    ],
+    "trainFeaturesSHA256": "1b12fe15832ed9c5a0fa0ce2158a62f8bccfbdcf13f121c38542290ddef36576",
+    "trainLabelsSHA256": "bf25129d406fdd127390569445a3f49b4444d18415ca50d21599fc11e065de7e",
+    "actualHeights": [
+      40,
+      46,
+      52,
+      58,
+      64
+    ],
+    "actualTargetScenes": {
+      "train": 800,
+      "validation": 200,
+      "test": 300
+    }
+  },
+  "preservation": "Frozen model bytes and original trainer are retained verbatim; reports use this correction instead of silently editing the checkpoint."
+}

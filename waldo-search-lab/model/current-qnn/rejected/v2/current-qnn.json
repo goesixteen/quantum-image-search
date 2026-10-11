@@ -1,0 +1,162 @@
+{
+  "name": "Current striped target QNN centered-window candidate v2",
+  "kind": "qnn",
+  "featureVersion": "current-qnn-window-v2",
+  "featureNames": [
+    "torso_red_density",
+    "torso_white_density",
+    "stripe_transition_evidence",
+    "lower_blue_density",
+    "yellow_head_alignment",
+    "horizontal_color_alignment_px",
+    "vertical_color_alignment_px",
+    "supplied_target_height"
+  ],
+  "qubits": 4,
+  "layers": 4,
+  "theta": [
+    -0.873390484035823,
+    0.6029362580276789,
+    -0.7809982116707799,
+    -0.9623093145595633,
+    0.16946344976644,
+    0.0769951036456481,
+    -0.12479238563104253,
+    -0.37444521966722877,
+    1.419194920377923,
+    -1.2997268342161898,
+    0.9994405223904749,
+    0.1781080574459357,
+    -0.3266937800863498,
+    0.9756048729087253,
+    0.8345257079769863,
+    -0.26384410548653925,
+    -0.49835087293561325,
+    -0.9295231604519886,
+    0.15439456978904767,
+    -0.26700352166928143,
+    1.37115894419846,
+    -1.7950647796576766,
+    0.00892261801497005,
+    0.28758109074681076,
+    -1.2707353549395484,
+    0.0,
+    0.7567515679708964,
+    0.0,
+    -0.00815086632610942,
+    0.0,
+    0.1886301172339939,
+    0.0
+  ],
+  "readout": [
+    -5.182342908530249,
+    -2.4729958128321043,
+    -3.579655105237369,
+    -1.5692107267288293,
+    0.9415160922871463,
+    -1.5261642758000111,
+    -3.2195394441681073
+  ],
+  "bias": -1.0551016809870324,
+  "parameterCount": 40,
+  "optimizedParameterCount": 36,
+  "frozenInactiveSlots": [
+    25,
+    27,
+    29,
+    31
+  ],
+  "readyForDemo": false,
+  "trainingDomain": "Same OpenMoji striped target over Original Festival, Magic Arena, and Qualicity Queue; supplied known height24\u2013112px; native high-quality resizing; registered depth-band partials; no unseen identity claim.",
+  "checkpointStep": 2000,
+  "sourceHashes": {
+    "trainer": "204f49cc2c6e7e0f718cbf268f9945215643ab7dc1e59914a16a4c6bba513129",
+    "qnnCore": "8d4fdd3e80d651e92ca6cf6f3450cf1048934762d9add9de612b3d06dabc4005",
+    "featurePython": "f711b73b0e0a455ae3b1943f97ba555ebc3a1d67145c31c11a2c3cf6834b8fe9",
+    "generator": "a198faf6b6c84200b26208667638d5d05db6432c10f47557ca8f52659ad8ebe3",
+    "featureJS": "1071a147ec39a3f0215d4e80e398fefbf73cbcf9079ca4563a6ef8dba579b196",
+    "rendererJS": "68299e48f627dbb772f954e5e371d5572f4b220a8b9896ec23bd27a472dc9e18",
+    "protocol": "27fb8a97af9cf1f69560e3cca69abe3ab387382a2b439ad61d16670caae85186"
+  },
+  "dataHashes": {
+    "train": {
+      "features": "e4580b1244a4fafbc4dd8cb1be3c2e69e09e152b780d3306d65bfb98d8120020",
+      "labels": "5aa20e910c0046380c4ae84263cf3b920338967ff13609db0bb6cac4fa6d1f48"
+    },
+    "validation": {
+      "features": "95ca6d2adeef08c2f114c3175363cf12660143718df31a049b975b09d6ad01bb",
+      "labels": "a3de1d941f67f3ac8c69246d50de1a192df0716c846ac3f2a4683eed5d7e2186"
+    }
+  },
+  "threshold": 0.9961073031470272,
+  "sceneValidation": {
+    "targetScenes": 150,
+    "absenceScenes": 21,
+    "completeHits": 10,
+    "completeHitRate": 0.06666666666666667,
+    "targetFalsePointScenes": 1,
+    "targetFalsePointRate": 0.006666666666666667,
+    "targetEmptyOracles": 139,
+    "targetCoverage": 0.06666666666666667,
+    "absenceFalsePointScenes": 0,
+    "absenceAcceptedPoints": 0,
+    "threshold": 0.9961073031470272,
+    "bySize": {
+      "24": {
+        "n": 17,
+        "completeHits": 0,
+        "anyFalse": 0,
+        "emptyOracles": 17
+      },
+      "52": {
+        "n": 36,
+        "completeHits": 6,
+        "anyFalse": 1,
+        "emptyOracles": 29
+      },
+      "80": {
+        "n": 37,
+        "completeHits": 2,
+        "anyFalse": 0,
+        "emptyOracles": 35
+      },
+      "112": {
+        "n": 21,
+        "completeHits": 0,
+        "anyFalse": 0,
+        "emptyOracles": 21
+      }
+    },
+    "feasible": true
+  },
+  "metrics": {
+    "train": {
+      "n": 48020,
+      "threshold": 0.9961073031470272,
+      "accuracy": 0.975801749271137,
+      "precision": 1.0,
+      "recall": 0.03166666666666667,
+      "f1": 0.061389337641357025,
+      "true_positive": 38,
+      "false_positive": 0,
+      "false_negative": 1162,
+      "true_negative": 46820,
+      "bce": 0.2169687191877662,
+      "balanced_bce": 0.28153303161101895
+    },
+    "validation": {
+      "n": 9839,
+      "threshold": 0.9961073031470272,
+      "accuracy": 0.971135277975404,
+      "precision": 1.0,
+      "recall": 0.05333333333333334,
+      "f1": 0.10126582278481013,
+      "true_positive": 16,
+      "false_positive": 0,
+      "false_negative": 284,
+      "true_negative": 9539,
+      "bce": 0.21396817217627037,
+      "balanced_bce": 0.2724905375745843
+    }
+  }
+}

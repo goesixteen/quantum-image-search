@@ -1,0 +1,6942 @@
+{
+  "qnn": {
+    "selected": {
+      "threshold": 0.9990657035635235,
+      "completeHits": 0,
+      "targetFalsePointScenes": 0,
+      "absenceFalsePointScenes": 0,
+      "feasible": true
+    },
+    "frontier": [
+      {
+        "threshold": 0.0,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.07641815468115412,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.07641815468115414,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.3851318362506702,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.38513183625067027,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.565240939755689,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.5652409397556891,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.5663147391589054,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.5663147391589055,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.7466816685063841,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.7466816685063842,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.7545716944479547,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.7545716944479548,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.7937017042945002,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.7937017042945003,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8069001723852034,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8069001723852035,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8155545965940515,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8155545965940516,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8495288991374874,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8495288991374875,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.859046242692802,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8590462426928022,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8645265528643378,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8645265528643379,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8913134585647703,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8913134585647704,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8967488207605486,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8967488207605487,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8985729067045027,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8985729067045028,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9012465604885035,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9012465604885036,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9119260457241503,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9119260457241504,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9181029260265495,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9181029260265496,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9226300611489778,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9226300611489779,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.923681227009983,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9236812270099831,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9319097528780899,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.93190975287809,
+        "completeHits": 0,
+        "targetFalsePointScenes": 149,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9364979641835556,
+        "completeHits": 0,
+        "targetFalsePointScenes": 149,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9364979641835557,
+        "completeHits": 0,
+        "targetFalsePointScenes": 149,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9433464540718788,
+        "completeHits": 0,
+        "targetFalsePointScenes": 149,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9433464540718789,
+        "completeHits": 0,
+        "targetFalsePointScenes": 149,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9451002697103987,
+        "completeHits": 0,
+        "targetFalsePointScenes": 149,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9451002697103988,
+        "completeHits": 0,
+        "targetFalsePointScenes": 149,
+        "absenceFalsePointScenes": 20,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9453697716579905,
+        "completeHits": 0,
+        "targetFalsePointScenes": 149,
+        "absenceFalsePointScenes": 20,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9453697716579906,
+        "completeHits": 1,
+        "targetFalsePointScenes": 147,
+        "absenceFalsePointScenes": 20,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9470329249385243,
+        "completeHits": 1,
+        "targetFalsePointScenes": 147,
+        "absenceFalsePointScenes": 20,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9470329249385244,
+        "completeHits": 2,
+        "targetFalsePointScenes": 146,
+        "absenceFalsePointScenes": 20,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9477442867659996,
+        "completeHits": 2,
+        "targetFalsePointScenes": 146,
+        "absenceFalsePointScenes": 20,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9477442867659998,
+        "completeHits": 2,
+        "targetFalsePointScenes": 145,
+        "absenceFalsePointScenes": 20,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9492568823530367,
+        "completeHits": 2,
+        "targetFalsePointScenes": 145,
+        "absenceFalsePointScenes": 20,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9492568823530368,
+        "completeHits": 2,
+        "targetFalsePointScenes": 145,
+        "absenceFalsePointScenes": 19,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9509084247108959,
+        "completeHits": 2,
+        "targetFalsePointScenes": 145,
+        "absenceFalsePointScenes": 19,
+        "feasible": false
+      },
+      {
+        "threshold": 0.950908424710896,
+        "completeHits": 3,
+        "targetFalsePointScenes": 144,
+        "absenceFalsePointScenes": 19,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9509084247108961,
+        "completeHits": 3,
+        "targetFalsePointScenes": 144,
+        "absenceFalsePointScenes": 19,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9509084247108962,
+        "completeHits": 4,
+        "targetFalsePointScenes": 143,
+        "absenceFalsePointScenes": 19,
+        "feasible": false
+      },
+      {
+        "threshold": 0.951514899014304,
+        "completeHits": 4,
+        "targetFalsePointScenes": 143,
+        "absenceFalsePointScenes": 19,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9515148990143041,
+        "completeHits": 4,
+        "targetFalsePointScenes": 143,
+        "absenceFalsePointScenes": 19,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9526696631772876,
+        "completeHits": 4,
+        "targetFalsePointScenes": 143,
+        "absenceFalsePointScenes": 19,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9526696631772877,
+        "completeHits": 4,
+        "targetFalsePointScenes": 143,
+        "absenceFalsePointScenes": 19,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9536622905016485,
+        "completeHits": 4,
+        "targetFalsePointScenes": 143,
+        "absenceFalsePointScenes": 19,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9536622905016486,
+        "completeHits": 5,
+        "targetFalsePointScenes": 142,
+        "absenceFalsePointScenes": 19,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9540669910891262,
+        "completeHits": 5,
+        "targetFalsePointScenes": 142,
+        "absenceFalsePointScenes": 19,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9540669910891263,
+        "completeHits": 6,
+        "targetFalsePointScenes": 141,
+        "absenceFalsePointScenes": 19,
+        "feasible": false
+      },
+      {
+        "threshold": 0.955952079360041,
+        "completeHits": 6,
+        "targetFalsePointScenes": 141,
+        "absenceFalsePointScenes": 19,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9559520793600411,
+        "completeHits": 6,
+        "targetFalsePointScenes": 140,
+        "absenceFalsePointScenes": 19,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9563502168346318,
+        "completeHits": 6,
+        "targetFalsePointScenes": 140,
+        "absenceFalsePointScenes": 19,
+        "feasible": false
+      },
+      {
+        "threshold": 0.956350216834632,
+        "completeHits": 6,
+        "targetFalsePointScenes": 139,
+        "absenceFalsePointScenes": 18,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9574261465625017,
+        "completeHits": 6,
+        "targetFalsePointScenes": 139,
+        "absenceFalsePointScenes": 18,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9574261465625018,
+        "completeHits": 6,
+        "targetFalsePointScenes": 139,
+        "absenceFalsePointScenes": 17,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9581194618530441,
+        "completeHits": 6,
+        "targetFalsePointScenes": 139,
+        "absenceFalsePointScenes": 17,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9581194618530442,
+        "completeHits": 7,
+        "targetFalsePointScenes": 138,
+        "absenceFalsePointScenes": 17,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9584710919253373,
+        "completeHits": 7,
+        "targetFalsePointScenes": 138,
+        "absenceFalsePointScenes": 17,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9584710919253374,
+        "completeHits": 8,
+        "targetFalsePointScenes": 137,
+        "absenceFalsePointScenes": 17,
+        "feasible": false
+      },
+      {
+        "threshold": 0.958642823407543,
+        "completeHits": 8,
+        "targetFalsePointScenes": 137,
+        "absenceFalsePointScenes": 17,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9586428234075431,
+        "completeHits": 8,
+        "targetFalsePointScenes": 137,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9595357824495475,
+        "completeHits": 8,
+        "targetFalsePointScenes": 137,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9595357824495476,
+        "completeHits": 8,
+        "targetFalsePointScenes": 136,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9598140786887587,
+        "completeHits": 8,
+        "targetFalsePointScenes": 136,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9598140786887588,
+        "completeHits": 9,
+        "targetFalsePointScenes": 135,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.959824733398176,
+        "completeHits": 9,
+        "targetFalsePointScenes": 135,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9598247333981761,
+        "completeHits": 10,
+        "targetFalsePointScenes": 134,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9615491486484253,
+        "completeHits": 10,
+        "targetFalsePointScenes": 134,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9615491486484254,
+        "completeHits": 12,
+        "targetFalsePointScenes": 132,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9620103715934001,
+        "completeHits": 12,
+        "targetFalsePointScenes": 132,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9620103715934002,
+        "completeHits": 12,
+        "targetFalsePointScenes": 131,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9622639289579371,
+        "completeHits": 12,
+        "targetFalsePointScenes": 131,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9622639289579372,
+        "completeHits": 11,
+        "targetFalsePointScenes": 131,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9642555463327557,
+        "completeHits": 11,
+        "targetFalsePointScenes": 131,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9642555463327558,
+        "completeHits": 11,
+        "targetFalsePointScenes": 130,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9653299656825498,
+        "completeHits": 11,
+        "targetFalsePointScenes": 130,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9653299656825499,
+        "completeHits": 13,
+        "targetFalsePointScenes": 128,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9664181819225833,
+        "completeHits": 13,
+        "targetFalsePointScenes": 128,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9664181819225834,
+        "completeHits": 13,
+        "targetFalsePointScenes": 128,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9665980738753276,
+        "completeHits": 13,
+        "targetFalsePointScenes": 128,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9665980738753277,
+        "completeHits": 13,
+        "targetFalsePointScenes": 128,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9669921740844916,
+        "completeHits": 13,
+        "targetFalsePointScenes": 128,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9669921740844917,
+        "completeHits": 12,
+        "targetFalsePointScenes": 128,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9672286978923847,
+        "completeHits": 12,
+        "targetFalsePointScenes": 128,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9672286978923849,
+        "completeHits": 12,
+        "targetFalsePointScenes": 128,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9676607511240483,
+        "completeHits": 12,
+        "targetFalsePointScenes": 128,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9676607511240484,
+        "completeHits": 12,
+        "targetFalsePointScenes": 127,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9694897936463528,
+        "completeHits": 12,
+        "targetFalsePointScenes": 127,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9694897936463529,
+        "completeHits": 12,
+        "targetFalsePointScenes": 127,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9710325827952421,
+        "completeHits": 12,
+        "targetFalsePointScenes": 127,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9710325827952422,
+        "completeHits": 13,
+        "targetFalsePointScenes": 125,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9711806401779273,
+        "completeHits": 13,
+        "targetFalsePointScenes": 125,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9711806401779274,
+        "completeHits": 13,
+        "targetFalsePointScenes": 125,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9715247116881486,
+        "completeHits": 13,
+        "targetFalsePointScenes": 125,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9715247116881487,
+        "completeHits": 13,
+        "targetFalsePointScenes": 124,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9719365341924916,
+        "completeHits": 13,
+        "targetFalsePointScenes": 124,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9719365341924917,
+        "completeHits": 13,
+        "targetFalsePointScenes": 123,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9724321021271765,
+        "completeHits": 13,
+        "targetFalsePointScenes": 123,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9724321021271766,
+        "completeHits": 14,
+        "targetFalsePointScenes": 122,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9724635923107485,
+        "completeHits": 14,
+        "targetFalsePointScenes": 122,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9724635923107486,
+        "completeHits": 13,
+        "targetFalsePointScenes": 122,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9729046682305661,
+        "completeHits": 13,
+        "targetFalsePointScenes": 122,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9729046682305662,
+        "completeHits": 13,
+        "targetFalsePointScenes": 122,
+        "absenceFalsePointScenes": 15,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9749166759338037,
+        "completeHits": 13,
+        "targetFalsePointScenes": 122,
+        "absenceFalsePointScenes": 15,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9749166759338038,
+        "completeHits": 13,
+        "targetFalsePointScenes": 122,
+        "absenceFalsePointScenes": 15,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9751666643451443,
+        "completeHits": 13,
+        "targetFalsePointScenes": 122,
+        "absenceFalsePointScenes": 15,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9751666643451444,
+        "completeHits": 13,
+        "targetFalsePointScenes": 121,
+        "absenceFalsePointScenes": 15,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9756921337449913,
+        "completeHits": 13,
+        "targetFalsePointScenes": 121,
+        "absenceFalsePointScenes": 15,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9756921337449914,
+        "completeHits": 12,
+        "targetFalsePointScenes": 121,
+        "absenceFalsePointScenes": 15,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9762552196962271,
+        "completeHits": 12,
+        "targetFalsePointScenes": 121,
+        "absenceFalsePointScenes": 15,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9762552196962272,
+        "completeHits": 14,
+        "targetFalsePointScenes": 119,
+        "absenceFalsePointScenes": 15,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9765098884963551,
+        "completeHits": 14,
+        "targetFalsePointScenes": 119,
+        "absenceFalsePointScenes": 15,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9765098884963552,
+        "completeHits": 14,
+        "targetFalsePointScenes": 118,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9768647737213667,
+        "completeHits": 14,
+        "targetFalsePointScenes": 118,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9768647737213668,
+        "completeHits": 14,
+        "targetFalsePointScenes": 118,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.977119262657733,
+        "completeHits": 14,
+        "targetFalsePointScenes": 118,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9771192626577331,
+        "completeHits": 14,
+        "targetFalsePointScenes": 118,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9781695326659444,
+        "completeHits": 14,
+        "targetFalsePointScenes": 118,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9781695326659445,
+        "completeHits": 13,
+        "targetFalsePointScenes": 118,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9781712240513915,
+        "completeHits": 13,
+        "targetFalsePointScenes": 118,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9781712240513916,
+        "completeHits": 13,
+        "targetFalsePointScenes": 118,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9781981394456594,
+        "completeHits": 13,
+        "targetFalsePointScenes": 118,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9781981394456595,
+        "completeHits": 13,
+        "targetFalsePointScenes": 117,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9798701540851649,
+        "completeHits": 13,
+        "targetFalsePointScenes": 117,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.979870154085165,
+        "completeHits": 14,
+        "targetFalsePointScenes": 116,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.980339510848746,
+        "completeHits": 14,
+        "targetFalsePointScenes": 116,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9803395108487462,
+        "completeHits": 14,
+        "targetFalsePointScenes": 116,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9808010091534022,
+        "completeHits": 14,
+        "targetFalsePointScenes": 116,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9808010091534023,
+        "completeHits": 14,
+        "targetFalsePointScenes": 115,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9815079465926031,
+        "completeHits": 14,
+        "targetFalsePointScenes": 115,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9815079465926032,
+        "completeHits": 14,
+        "targetFalsePointScenes": 114,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9817235273653663,
+        "completeHits": 14,
+        "targetFalsePointScenes": 114,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9817235273653664,
+        "completeHits": 14,
+        "targetFalsePointScenes": 114,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9827831964493687,
+        "completeHits": 14,
+        "targetFalsePointScenes": 114,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9827831964493688,
+        "completeHits": 15,
+        "targetFalsePointScenes": 113,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9828347793227582,
+        "completeHits": 15,
+        "targetFalsePointScenes": 113,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9828347793227583,
+        "completeHits": 14,
+        "targetFalsePointScenes": 113,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9833411106360554,
+        "completeHits": 14,
+        "targetFalsePointScenes": 113,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9833411106360556,
+        "completeHits": 13,
+        "targetFalsePointScenes": 113,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9836538081744471,
+        "completeHits": 13,
+        "targetFalsePointScenes": 113,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9836538081744473,
+        "completeHits": 12,
+        "targetFalsePointScenes": 113,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9843099275355699,
+        "completeHits": 12,
+        "targetFalsePointScenes": 113,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.98430992753557,
+        "completeHits": 12,
+        "targetFalsePointScenes": 113,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9847335396597147,
+        "completeHits": 12,
+        "targetFalsePointScenes": 113,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9847335396597148,
+        "completeHits": 12,
+        "targetFalsePointScenes": 113,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9847392102386974,
+        "completeHits": 12,
+        "targetFalsePointScenes": 113,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9847392102386975,
+        "completeHits": 13,
+        "targetFalsePointScenes": 112,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9849782034063104,
+        "completeHits": 13,
+        "targetFalsePointScenes": 112,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9849782034063105,
+        "completeHits": 13,
+        "targetFalsePointScenes": 112,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9850399733659286,
+        "completeHits": 13,
+        "targetFalsePointScenes": 112,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9850399733659287,
+        "completeHits": 12,
+        "targetFalsePointScenes": 112,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9851481528620273,
+        "completeHits": 12,
+        "targetFalsePointScenes": 112,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9851481528620274,
+        "completeHits": 12,
+        "targetFalsePointScenes": 112,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9851972602119882,
+        "completeHits": 12,
+        "targetFalsePointScenes": 112,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9851972602119883,
+        "completeHits": 11,
+        "targetFalsePointScenes": 112,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9852155245397974,
+        "completeHits": 11,
+        "targetFalsePointScenes": 112,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9852155245397975,
+        "completeHits": 12,
+        "targetFalsePointScenes": 111,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9853097651852065,
+        "completeHits": 12,
+        "targetFalsePointScenes": 111,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9853097651852066,
+        "completeHits": 12,
+        "targetFalsePointScenes": 111,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9855174602938336,
+        "completeHits": 12,
+        "targetFalsePointScenes": 111,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9855174602938337,
+        "completeHits": 12,
+        "targetFalsePointScenes": 111,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9856240236848414,
+        "completeHits": 12,
+        "targetFalsePointScenes": 111,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9856240236848415,
+        "completeHits": 12,
+        "targetFalsePointScenes": 111,
+        "absenceFalsePointScenes": 13,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9857056047885547,
+        "completeHits": 12,
+        "targetFalsePointScenes": 111,
+        "absenceFalsePointScenes": 13,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9857056047885548,
+        "completeHits": 12,
+        "targetFalsePointScenes": 110,
+        "absenceFalsePointScenes": 13,
+        "feasible": false
+      },
+      {
+        "threshold": 0.985755137530773,
+        "completeHits": 12,
+        "targetFalsePointScenes": 110,
+        "absenceFalsePointScenes": 13,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9857551375307732,
+        "completeHits": 13,
+        "targetFalsePointScenes": 109,
+        "absenceFalsePointScenes": 13,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9857718855841565,
+        "completeHits": 13,
+        "targetFalsePointScenes": 109,
+        "absenceFalsePointScenes": 13,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9857718855841566,
+        "completeHits": 13,
+        "targetFalsePointScenes": 109,
+        "absenceFalsePointScenes": 12,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9860712237781922,
+        "completeHits": 13,
+        "targetFalsePointScenes": 109,
+        "absenceFalsePointScenes": 12,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9860712237781923,
+        "completeHits": 14,
+        "targetFalsePointScenes": 108,
+        "absenceFalsePointScenes": 12,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9864177187553809,
+        "completeHits": 14,
+        "targetFalsePointScenes": 108,
+        "absenceFalsePointScenes": 12,
+        "feasible": false
+      },
+      {
+        "threshold": 0.986417718755381,
+        "completeHits": 13,
+        "targetFalsePointScenes": 108,
+        "absenceFalsePointScenes": 12,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9865519795179152,
+        "completeHits": 13,
+        "targetFalsePointScenes": 108,
+        "absenceFalsePointScenes": 12,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9865519795179153,
+        "completeHits": 13,
+        "targetFalsePointScenes": 108,
+        "absenceFalsePointScenes": 12,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9865522632934034,
+        "completeHits": 13,
+        "targetFalsePointScenes": 108,
+        "absenceFalsePointScenes": 12,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9865522632934035,
+        "completeHits": 12,
+        "targetFalsePointScenes": 108,
+        "absenceFalsePointScenes": 12,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9865539734264821,
+        "completeHits": 12,
+        "targetFalsePointScenes": 108,
+        "absenceFalsePointScenes": 12,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9865539734264822,
+        "completeHits": 11,
+        "targetFalsePointScenes": 108,
+        "absenceFalsePointScenes": 12,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9872347610237504,
+        "completeHits": 11,
+        "targetFalsePointScenes": 108,
+        "absenceFalsePointScenes": 12,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9872347610237505,
+        "completeHits": 11,
+        "targetFalsePointScenes": 108,
+        "absenceFalsePointScenes": 12,
+        "feasible": false
+      },
+      {
+        "threshold": 0.987369804589593,
+        "completeHits": 11,
+        "targetFalsePointScenes": 108,
+        "absenceFalsePointScenes": 12,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9873698045895931,
+        "completeHits": 10,
+        "targetFalsePointScenes": 108,
+        "absenceFalsePointScenes": 12,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9877310039125617,
+        "completeHits": 10,
+        "targetFalsePointScenes": 108,
+        "absenceFalsePointScenes": 12,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9877310039125619,
+        "completeHits": 11,
+        "targetFalsePointScenes": 107,
+        "absenceFalsePointScenes": 12,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9877722810481586,
+        "completeHits": 11,
+        "targetFalsePointScenes": 107,
+        "absenceFalsePointScenes": 12,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9877722810481587,
+        "completeHits": 11,
+        "targetFalsePointScenes": 107,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9879706070408156,
+        "completeHits": 11,
+        "targetFalsePointScenes": 107,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9879706070408157,
+        "completeHits": 11,
+        "targetFalsePointScenes": 106,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9880391449477006,
+        "completeHits": 11,
+        "targetFalsePointScenes": 106,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9880391449477007,
+        "completeHits": 11,
+        "targetFalsePointScenes": 106,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9880622551205249,
+        "completeHits": 11,
+        "targetFalsePointScenes": 106,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.988062255120525,
+        "completeHits": 11,
+        "targetFalsePointScenes": 106,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9881925599271277,
+        "completeHits": 11,
+        "targetFalsePointScenes": 106,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9881925599271278,
+        "completeHits": 11,
+        "targetFalsePointScenes": 106,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9886261436312063,
+        "completeHits": 11,
+        "targetFalsePointScenes": 106,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9886261436312064,
+        "completeHits": 11,
+        "targetFalsePointScenes": 106,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9888536011944707,
+        "completeHits": 11,
+        "targetFalsePointScenes": 106,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9888536011944709,
+        "completeHits": 10,
+        "targetFalsePointScenes": 106,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9888874534631285,
+        "completeHits": 10,
+        "targetFalsePointScenes": 106,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9888874534631286,
+        "completeHits": 10,
+        "targetFalsePointScenes": 105,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9891008966378387,
+        "completeHits": 10,
+        "targetFalsePointScenes": 105,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9891008966378388,
+        "completeHits": 9,
+        "targetFalsePointScenes": 105,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9894155412453571,
+        "completeHits": 9,
+        "targetFalsePointScenes": 105,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9894155412453572,
+        "completeHits": 9,
+        "targetFalsePointScenes": 103,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9894472559244851,
+        "completeHits": 9,
+        "targetFalsePointScenes": 103,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9894472559244852,
+        "completeHits": 9,
+        "targetFalsePointScenes": 102,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9895637958454375,
+        "completeHits": 9,
+        "targetFalsePointScenes": 102,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9895637958454376,
+        "completeHits": 9,
+        "targetFalsePointScenes": 101,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9896026161331106,
+        "completeHits": 9,
+        "targetFalsePointScenes": 101,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9896026161331107,
+        "completeHits": 9,
+        "targetFalsePointScenes": 101,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9897176850789272,
+        "completeHits": 9,
+        "targetFalsePointScenes": 101,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9897176850789273,
+        "completeHits": 9,
+        "targetFalsePointScenes": 100,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9898154942491587,
+        "completeHits": 9,
+        "targetFalsePointScenes": 100,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9898154942491588,
+        "completeHits": 9,
+        "targetFalsePointScenes": 99,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9898255787804427,
+        "completeHits": 9,
+        "targetFalsePointScenes": 99,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9898255787804429,
+        "completeHits": 8,
+        "targetFalsePointScenes": 99,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9898599997621719,
+        "completeHits": 8,
+        "targetFalsePointScenes": 99,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.989859999762172,
+        "completeHits": 8,
+        "targetFalsePointScenes": 98,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9899498118854594,
+        "completeHits": 8,
+        "targetFalsePointScenes": 98,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9899498118854595,
+        "completeHits": 7,
+        "targetFalsePointScenes": 98,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9900277520013987,
+        "completeHits": 7,
+        "targetFalsePointScenes": 98,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9900277520013988,
+        "completeHits": 7,
+        "targetFalsePointScenes": 97,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9902409191099761,
+        "completeHits": 7,
+        "targetFalsePointScenes": 97,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9902409191099762,
+        "completeHits": 7,
+        "targetFalsePointScenes": 96,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9903473778615607,
+        "completeHits": 7,
+        "targetFalsePointScenes": 96,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9903473778615608,
+        "completeHits": 7,
+        "targetFalsePointScenes": 96,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.990603730258427,
+        "completeHits": 7,
+        "targetFalsePointScenes": 96,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9906037302584271,
+        "completeHits": 7,
+        "targetFalsePointScenes": 96,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9906752279261443,
+        "completeHits": 7,
+        "targetFalsePointScenes": 96,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9906752279261444,
+        "completeHits": 6,
+        "targetFalsePointScenes": 96,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9911319578189104,
+        "completeHits": 6,
+        "targetFalsePointScenes": 96,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9911319578189105,
+        "completeHits": 6,
+        "targetFalsePointScenes": 96,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9912046014133938,
+        "completeHits": 6,
+        "targetFalsePointScenes": 96,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.991204601413394,
+        "completeHits": 6,
+        "targetFalsePointScenes": 96,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9918321740338947,
+        "completeHits": 6,
+        "targetFalsePointScenes": 96,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9918321740338948,
+        "completeHits": 6,
+        "targetFalsePointScenes": 95,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9918623215405201,
+        "completeHits": 6,
+        "targetFalsePointScenes": 95,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9918623215405202,
+        "completeHits": 5,
+        "targetFalsePointScenes": 95,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9918670728990194,
+        "completeHits": 5,
+        "targetFalsePointScenes": 95,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9918670728990195,
+        "completeHits": 4,
+        "targetFalsePointScenes": 95,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9919942825371492,
+        "completeHits": 4,
+        "targetFalsePointScenes": 95,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9919942825371493,
+        "completeHits": 4,
+        "targetFalsePointScenes": 94,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9920670361980674,
+        "completeHits": 4,
+        "targetFalsePointScenes": 94,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9920670361980675,
+        "completeHits": 4,
+        "targetFalsePointScenes": 93,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9921628743917852,
+        "completeHits": 4,
+        "targetFalsePointScenes": 93,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9921628743917853,
+        "completeHits": 4,
+        "targetFalsePointScenes": 93,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9922697925577306,
+        "completeHits": 4,
+        "targetFalsePointScenes": 93,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9922697925577307,
+        "completeHits": 4,
+        "targetFalsePointScenes": 92,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9923267384691178,
+        "completeHits": 4,
+        "targetFalsePointScenes": 92,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9923267384691179,
+        "completeHits": 4,
+        "targetFalsePointScenes": 92,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9924619362051863,
+        "completeHits": 4,
+        "targetFalsePointScenes": 92,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9924619362051864,
+        "completeHits": 4,
+        "targetFalsePointScenes": 91,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9928139899171541,
+        "completeHits": 4,
+        "targetFalsePointScenes": 91,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9928139899171542,
+        "completeHits": 3,
+        "targetFalsePointScenes": 91,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9932227487579914,
+        "completeHits": 3,
+        "targetFalsePointScenes": 91,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9932227487579915,
+        "completeHits": 3,
+        "targetFalsePointScenes": 90,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.993384685797193,
+        "completeHits": 3,
+        "targetFalsePointScenes": 90,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9933846857971931,
+        "completeHits": 3,
+        "targetFalsePointScenes": 89,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9934473561869145,
+        "completeHits": 3,
+        "targetFalsePointScenes": 89,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9934473561869146,
+        "completeHits": 3,
+        "targetFalsePointScenes": 89,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9934748628452024,
+        "completeHits": 3,
+        "targetFalsePointScenes": 89,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9934748628452025,
+        "completeHits": 3,
+        "targetFalsePointScenes": 88,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9934828227417671,
+        "completeHits": 3,
+        "targetFalsePointScenes": 88,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9934828227417672,
+        "completeHits": 3,
+        "targetFalsePointScenes": 87,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.993522220079852,
+        "completeHits": 3,
+        "targetFalsePointScenes": 87,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9935222200798521,
+        "completeHits": 3,
+        "targetFalsePointScenes": 86,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.993615138408669,
+        "completeHits": 3,
+        "targetFalsePointScenes": 86,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9936151384086691,
+        "completeHits": 3,
+        "targetFalsePointScenes": 85,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9938043296227231,
+        "completeHits": 3,
+        "targetFalsePointScenes": 85,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9938043296227232,
+        "completeHits": 3,
+        "targetFalsePointScenes": 85,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9939719208743147,
+        "completeHits": 3,
+        "targetFalsePointScenes": 85,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9939719208743149,
+        "completeHits": 3,
+        "targetFalsePointScenes": 84,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9940145393212234,
+        "completeHits": 3,
+        "targetFalsePointScenes": 84,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9940145393212235,
+        "completeHits": 2,
+        "targetFalsePointScenes": 84,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9940818524273161,
+        "completeHits": 2,
+        "targetFalsePointScenes": 84,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9940818524273162,
+        "completeHits": 2,
+        "targetFalsePointScenes": 83,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9941191425170345,
+        "completeHits": 2,
+        "targetFalsePointScenes": 83,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9941191425170346,
+        "completeHits": 2,
+        "targetFalsePointScenes": 82,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9941213487518027,
+        "completeHits": 2,
+        "targetFalsePointScenes": 82,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9941213487518028,
+        "completeHits": 2,
+        "targetFalsePointScenes": 81,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9941385335844287,
+        "completeHits": 2,
+        "targetFalsePointScenes": 81,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9941385335844288,
+        "completeHits": 2,
+        "targetFalsePointScenes": 81,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9941963041385078,
+        "completeHits": 2,
+        "targetFalsePointScenes": 81,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9941963041385079,
+        "completeHits": 2,
+        "targetFalsePointScenes": 81,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9941969804823044,
+        "completeHits": 2,
+        "targetFalsePointScenes": 81,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9941969804823045,
+        "completeHits": 2,
+        "targetFalsePointScenes": 80,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.994236785204896,
+        "completeHits": 2,
+        "targetFalsePointScenes": 80,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9942367852048961,
+        "completeHits": 3,
+        "targetFalsePointScenes": 79,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9943268694134848,
+        "completeHits": 3,
+        "targetFalsePointScenes": 79,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9943268694134849,
+        "completeHits": 3,
+        "targetFalsePointScenes": 79,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9943384780711185,
+        "completeHits": 3,
+        "targetFalsePointScenes": 79,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9943384780711186,
+        "completeHits": 3,
+        "targetFalsePointScenes": 78,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9945710241914534,
+        "completeHits": 3,
+        "targetFalsePointScenes": 78,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9945710241914535,
+        "completeHits": 3,
+        "targetFalsePointScenes": 77,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9946338016091067,
+        "completeHits": 3,
+        "targetFalsePointScenes": 77,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9946338016091069,
+        "completeHits": 3,
+        "targetFalsePointScenes": 76,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9946714342096544,
+        "completeHits": 3,
+        "targetFalsePointScenes": 76,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9946714342096545,
+        "completeHits": 3,
+        "targetFalsePointScenes": 75,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9946819857219804,
+        "completeHits": 3,
+        "targetFalsePointScenes": 75,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9946819857219805,
+        "completeHits": 3,
+        "targetFalsePointScenes": 74,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9951411052647612,
+        "completeHits": 3,
+        "targetFalsePointScenes": 74,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9951411052647613,
+        "completeHits": 2,
+        "targetFalsePointScenes": 74,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9951561098095617,
+        "completeHits": 2,
+        "targetFalsePointScenes": 74,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9951561098095618,
+        "completeHits": 2,
+        "targetFalsePointScenes": 74,
+        "absenceFalsePointScenes": 9,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9951870013342781,
+        "completeHits": 2,
+        "targetFalsePointScenes": 74,
+        "absenceFalsePointScenes": 9,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9951870013342782,
+        "completeHits": 2,
+        "targetFalsePointScenes": 73,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9952338625421061,
+        "completeHits": 2,
+        "targetFalsePointScenes": 73,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9952338625421062,
+        "completeHits": 2,
+        "targetFalsePointScenes": 73,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9954300929686555,
+        "completeHits": 2,
+        "targetFalsePointScenes": 73,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9954300929686556,
+        "completeHits": 2,
+        "targetFalsePointScenes": 73,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9954370241930031,
+        "completeHits": 2,
+        "targetFalsePointScenes": 73,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9954370241930032,
+        "completeHits": 2,
+        "targetFalsePointScenes": 72,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9955097272329595,
+        "completeHits": 2,
+        "targetFalsePointScenes": 72,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9955097272329596,
+        "completeHits": 2,
+        "targetFalsePointScenes": 70,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.995653616024324,
+        "completeHits": 2,
+        "targetFalsePointScenes": 70,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9956536160243241,
+        "completeHits": 2,
+        "targetFalsePointScenes": 69,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9957789513397726,
+        "completeHits": 2,
+        "targetFalsePointScenes": 69,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9957789513397727,
+        "completeHits": 2,
+        "targetFalsePointScenes": 67,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9958420841981187,
+        "completeHits": 2,
+        "targetFalsePointScenes": 67,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9958420841981188,
+        "completeHits": 2,
+        "targetFalsePointScenes": 62,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.99591624103993,
+        "completeHits": 2,
+        "targetFalsePointScenes": 62,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9959162410399302,
+        "completeHits": 2,
+        "targetFalsePointScenes": 61,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9962192177669209,
+        "completeHits": 2,
+        "targetFalsePointScenes": 61,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.996219217766921,
+        "completeHits": 2,
+        "targetFalsePointScenes": 61,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9963607498015089,
+        "completeHits": 2,
+        "targetFalsePointScenes": 61,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.996360749801509,
+        "completeHits": 2,
+        "targetFalsePointScenes": 60,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.996379684799792,
+        "completeHits": 2,
+        "targetFalsePointScenes": 60,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9963796847997921,
+        "completeHits": 2,
+        "targetFalsePointScenes": 59,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9963923655672235,
+        "completeHits": 2,
+        "targetFalsePointScenes": 59,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9963923655672237,
+        "completeHits": 2,
+        "targetFalsePointScenes": 58,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9964524479693385,
+        "completeHits": 2,
+        "targetFalsePointScenes": 58,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9964524479693386,
+        "completeHits": 2,
+        "targetFalsePointScenes": 56,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9965172130452316,
+        "completeHits": 2,
+        "targetFalsePointScenes": 56,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9965172130452317,
+        "completeHits": 2,
+        "targetFalsePointScenes": 55,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9965354071240098,
+        "completeHits": 2,
+        "targetFalsePointScenes": 55,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9965354071240099,
+        "completeHits": 2,
+        "targetFalsePointScenes": 54,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9965866567001829,
+        "completeHits": 2,
+        "targetFalsePointScenes": 54,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.996586656700183,
+        "completeHits": 2,
+        "targetFalsePointScenes": 53,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.996590010680838,
+        "completeHits": 2,
+        "targetFalsePointScenes": 53,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9965900106808381,
+        "completeHits": 2,
+        "targetFalsePointScenes": 53,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9966732699623391,
+        "completeHits": 2,
+        "targetFalsePointScenes": 53,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9966732699623392,
+        "completeHits": 1,
+        "targetFalsePointScenes": 53,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9966853127957381,
+        "completeHits": 1,
+        "targetFalsePointScenes": 53,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9966853127957382,
+        "completeHits": 0,
+        "targetFalsePointScenes": 53,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9967203885230305,
+        "completeHits": 0,
+        "targetFalsePointScenes": 53,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9967203885230306,
+        "completeHits": 0,
+        "targetFalsePointScenes": 51,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9967259036536888,
+        "completeHits": 0,
+        "targetFalsePointScenes": 51,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.996725903653689,
+        "completeHits": 0,
+        "targetFalsePointScenes": 50,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.996734225135397,
+        "completeHits": 0,
+        "targetFalsePointScenes": 50,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9967342251353971,
+        "completeHits": 0,
+        "targetFalsePointScenes": 49,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9967459534559844,
+        "completeHits": 0,
+        "targetFalsePointScenes": 49,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9967459534559845,
+        "completeHits": 0,
+        "targetFalsePointScenes": 48,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9968007960697924,
+        "completeHits": 0,
+        "targetFalsePointScenes": 48,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9968007960697925,
+        "completeHits": 0,
+        "targetFalsePointScenes": 47,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9968359461192695,
+        "completeHits": 0,
+        "targetFalsePointScenes": 47,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9968359461192696,
+        "completeHits": 0,
+        "targetFalsePointScenes": 46,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.996880129867198,
+        "completeHits": 0,
+        "targetFalsePointScenes": 46,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9968801298671981,
+        "completeHits": 0,
+        "targetFalsePointScenes": 45,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9968938004503899,
+        "completeHits": 0,
+        "targetFalsePointScenes": 45,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.99689380045039,
+        "completeHits": 0,
+        "targetFalsePointScenes": 44,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.996906596657827,
+        "completeHits": 0,
+        "targetFalsePointScenes": 44,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9969065966578271,
+        "completeHits": 0,
+        "targetFalsePointScenes": 42,
+        "absenceFalsePointScenes": 4,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9972221004959845,
+        "completeHits": 0,
+        "targetFalsePointScenes": 42,
+        "absenceFalsePointScenes": 4,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9972221004959846,
+        "completeHits": 0,
+        "targetFalsePointScenes": 42,
+        "absenceFalsePointScenes": 3,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9972471387568876,
+        "completeHits": 0,
+        "targetFalsePointScenes": 42,
+        "absenceFalsePointScenes": 3,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9972471387568878,
+        "completeHits": 0,
+        "targetFalsePointScenes": 37,
+        "absenceFalsePointScenes": 2,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9973284756932661,
+        "completeHits": 0,
+        "targetFalsePointScenes": 37,
+        "absenceFalsePointScenes": 2,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9973284756932662,
+        "completeHits": 0,
+        "targetFalsePointScenes": 36,
+        "absenceFalsePointScenes": 2,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9973293666363983,
+        "completeHits": 0,
+        "targetFalsePointScenes": 36,
+        "absenceFalsePointScenes": 2,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9973293666363984,
+        "completeHits": 0,
+        "targetFalsePointScenes": 36,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9973389526145404,
+        "completeHits": 0,
+        "targetFalsePointScenes": 36,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9973389526145405,
+        "completeHits": 0,
+        "targetFalsePointScenes": 35,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9973887634501689,
+        "completeHits": 0,
+        "targetFalsePointScenes": 35,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.997388763450169,
+        "completeHits": 0,
+        "targetFalsePointScenes": 34,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9974128114985702,
+        "completeHits": 0,
+        "targetFalsePointScenes": 34,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9974128114985703,
+        "completeHits": 1,
+        "targetFalsePointScenes": 33,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.997414024801828,
+        "completeHits": 1,
+        "targetFalsePointScenes": 33,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9974140248018281,
+        "completeHits": 1,
+        "targetFalsePointScenes": 32,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.997501861508181,
+        "completeHits": 1,
+        "targetFalsePointScenes": 32,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9975018615081811,
+        "completeHits": 1,
+        "targetFalsePointScenes": 31,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.997530321608762,
+        "completeHits": 1,
+        "targetFalsePointScenes": 31,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9975303216087621,
+        "completeHits": 1,
+        "targetFalsePointScenes": 30,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.997534452210054,
+        "completeHits": 1,
+        "targetFalsePointScenes": 30,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9975344522100541,
+        "completeHits": 1,
+        "targetFalsePointScenes": 28,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9975536474629708,
+        "completeHits": 1,
+        "targetFalsePointScenes": 28,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9975536474629709,
+        "completeHits": 1,
+        "targetFalsePointScenes": 27,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9976618832808646,
+        "completeHits": 1,
+        "targetFalsePointScenes": 27,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9976618832808647,
+        "completeHits": 1,
+        "targetFalsePointScenes": 26,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9976944764903214,
+        "completeHits": 1,
+        "targetFalsePointScenes": 26,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9976944764903215,
+        "completeHits": 1,
+        "targetFalsePointScenes": 25,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9977719437107258,
+        "completeHits": 1,
+        "targetFalsePointScenes": 25,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9977719437107259,
+        "completeHits": 1,
+        "targetFalsePointScenes": 24,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.997800853042801,
+        "completeHits": 1,
+        "targetFalsePointScenes": 24,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9978008530428011,
+        "completeHits": 1,
+        "targetFalsePointScenes": 23,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9978750408794747,
+        "completeHits": 1,
+        "targetFalsePointScenes": 23,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9978750408794748,
+        "completeHits": 1,
+        "targetFalsePointScenes": 22,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9979409460371583,
+        "completeHits": 1,
+        "targetFalsePointScenes": 22,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9979409460371584,
+        "completeHits": 1,
+        "targetFalsePointScenes": 21,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.998004742872045,
+        "completeHits": 1,
+        "targetFalsePointScenes": 21,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9980047428720451,
+        "completeHits": 0,
+        "targetFalsePointScenes": 21,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9981290517590817,
+        "completeHits": 0,
+        "targetFalsePointScenes": 21,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9981290517590818,
+        "completeHits": 0,
+        "targetFalsePointScenes": 20,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9981535540651603,
+        "completeHits": 0,
+        "targetFalsePointScenes": 20,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9981535540651604,
+        "completeHits": 0,
+        "targetFalsePointScenes": 19,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.998176181143065,
+        "completeHits": 0,
+        "targetFalsePointScenes": 19,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9981761811430652,
+        "completeHits": 0,
+        "targetFalsePointScenes": 18,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9982308476740959,
+        "completeHits": 0,
+        "targetFalsePointScenes": 18,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.998230847674096,
+        "completeHits": 0,
+        "targetFalsePointScenes": 16,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.99826825709356,
+        "completeHits": 0,
+        "targetFalsePointScenes": 16,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9982682570935602,
+        "completeHits": 0,
+        "targetFalsePointScenes": 15,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9982727325759931,
+        "completeHits": 0,
+        "targetFalsePointScenes": 15,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9982727325759932,
+        "completeHits": 0,
+        "targetFalsePointScenes": 14,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9982816020671021,
+        "completeHits": 0,
+        "targetFalsePointScenes": 14,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9982816020671023,
+        "completeHits": 0,
+        "targetFalsePointScenes": 13,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9982851328999839,
+        "completeHits": 0,
+        "targetFalsePointScenes": 13,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.998285132899984,
+        "completeHits": 0,
+        "targetFalsePointScenes": 12,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9983462825107863,
+        "completeHits": 0,
+        "targetFalsePointScenes": 12,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9983462825107864,
+        "completeHits": 0,
+        "targetFalsePointScenes": 11,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9983464536346086,
+        "completeHits": 0,
+        "targetFalsePointScenes": 11,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9983464536346087,
+        "completeHits": 0,
+        "targetFalsePointScenes": 9,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9983586785791229,
+        "completeHits": 0,
+        "targetFalsePointScenes": 9,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.998358678579123,
+        "completeHits": 0,
+        "targetFalsePointScenes": 8,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9985536807231811,
+        "completeHits": 0,
+        "targetFalsePointScenes": 8,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9985536807231812,
+        "completeHits": 0,
+        "targetFalsePointScenes": 3,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.998947286979104,
+        "completeHits": 0,
+        "targetFalsePointScenes": 3,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9989472869791041,
+        "completeHits": 0,
+        "targetFalsePointScenes": 2,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9990657035635234,
+        "completeHits": 0,
+        "targetFalsePointScenes": 2,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9990657035635235,
+        "completeHits": 0,
+        "targetFalsePointScenes": 0,
+        "absenceFalsePointScenes": 0,
+        "feasible": true
+      },
+      {
+        "threshold": 1.00000001,
+        "completeHits": 0,
+        "targetFalsePointScenes": 0,
+        "absenceFalsePointScenes": 0,
+        "feasible": true
+      }
+    ],
+    "scope": "Exact validation critical-score frontier; no fitting or test scoring."
+  },
+  "logistic": {
+    "selected": {
+      "threshold": 0.9993176599072902,
+      "completeHits": 0,
+      "targetFalsePointScenes": 1,
+      "absenceFalsePointScenes": 0,
+      "feasible": true
+    },
+    "frontier": [
+      {
+        "threshold": 0.0,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.05094437353111231,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.050944373531112315,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.17125611260337353,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.17125611260337356,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.5196832870654589,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.519683287065459,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.5406894055419031,
+        "completeHits": 0,
+        "targetFalsePointScenes": 150,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.5406894055419033,
+        "completeHits": 1,
+        "targetFalsePointScenes": 149,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.561152628594182,
+        "completeHits": 1,
+        "targetFalsePointScenes": 149,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.5611526285941821,
+        "completeHits": 1,
+        "targetFalsePointScenes": 149,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.572053053366246,
+        "completeHits": 1,
+        "targetFalsePointScenes": 149,
+        "absenceFalsePointScenes": 21,
+        "feasible": false
+      },
+      {
+        "threshold": 0.5720530533662461,
+        "completeHits": 1,
+        "targetFalsePointScenes": 149,
+        "absenceFalsePointScenes": 20,
+        "feasible": false
+      },
+      {
+        "threshold": 0.590397223960355,
+        "completeHits": 1,
+        "targetFalsePointScenes": 149,
+        "absenceFalsePointScenes": 20,
+        "feasible": false
+      },
+      {
+        "threshold": 0.5903972239603551,
+        "completeHits": 2,
+        "targetFalsePointScenes": 147,
+        "absenceFalsePointScenes": 20,
+        "feasible": false
+      },
+      {
+        "threshold": 0.5949987076962541,
+        "completeHits": 2,
+        "targetFalsePointScenes": 147,
+        "absenceFalsePointScenes": 20,
+        "feasible": false
+      },
+      {
+        "threshold": 0.5949987076962542,
+        "completeHits": 3,
+        "targetFalsePointScenes": 146,
+        "absenceFalsePointScenes": 20,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6083031992460342,
+        "completeHits": 3,
+        "targetFalsePointScenes": 146,
+        "absenceFalsePointScenes": 20,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6083031992460343,
+        "completeHits": 3,
+        "targetFalsePointScenes": 146,
+        "absenceFalsePointScenes": 19,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6171044528660302,
+        "completeHits": 3,
+        "targetFalsePointScenes": 146,
+        "absenceFalsePointScenes": 19,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6171044528660303,
+        "completeHits": 3,
+        "targetFalsePointScenes": 146,
+        "absenceFalsePointScenes": 18,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6187425734106975,
+        "completeHits": 3,
+        "targetFalsePointScenes": 146,
+        "absenceFalsePointScenes": 18,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6187425734106976,
+        "completeHits": 4,
+        "targetFalsePointScenes": 145,
+        "absenceFalsePointScenes": 18,
+        "feasible": false
+      },
+      {
+        "threshold": 0.619960297237238,
+        "completeHits": 4,
+        "targetFalsePointScenes": 145,
+        "absenceFalsePointScenes": 18,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6199602972372381,
+        "completeHits": 5,
+        "targetFalsePointScenes": 144,
+        "absenceFalsePointScenes": 18,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6226013876134276,
+        "completeHits": 5,
+        "targetFalsePointScenes": 144,
+        "absenceFalsePointScenes": 18,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6226013876134278,
+        "completeHits": 5,
+        "targetFalsePointScenes": 143,
+        "absenceFalsePointScenes": 18,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6352060553804818,
+        "completeHits": 5,
+        "targetFalsePointScenes": 143,
+        "absenceFalsePointScenes": 18,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6352060553804819,
+        "completeHits": 5,
+        "targetFalsePointScenes": 142,
+        "absenceFalsePointScenes": 18,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6373364609814529,
+        "completeHits": 5,
+        "targetFalsePointScenes": 142,
+        "absenceFalsePointScenes": 18,
+        "feasible": false
+      },
+      {
+        "threshold": 0.637336460981453,
+        "completeHits": 6,
+        "targetFalsePointScenes": 141,
+        "absenceFalsePointScenes": 18,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6391464523180965,
+        "completeHits": 6,
+        "targetFalsePointScenes": 141,
+        "absenceFalsePointScenes": 18,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6391464523180966,
+        "completeHits": 6,
+        "targetFalsePointScenes": 141,
+        "absenceFalsePointScenes": 18,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6413945036930172,
+        "completeHits": 6,
+        "targetFalsePointScenes": 141,
+        "absenceFalsePointScenes": 18,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6413945036930173,
+        "completeHits": 7,
+        "targetFalsePointScenes": 140,
+        "absenceFalsePointScenes": 18,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6414579060705833,
+        "completeHits": 7,
+        "targetFalsePointScenes": 140,
+        "absenceFalsePointScenes": 18,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6414579060705834,
+        "completeHits": 8,
+        "targetFalsePointScenes": 139,
+        "absenceFalsePointScenes": 18,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6422037099278833,
+        "completeHits": 8,
+        "targetFalsePointScenes": 139,
+        "absenceFalsePointScenes": 18,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6422037099278834,
+        "completeHits": 9,
+        "targetFalsePointScenes": 137,
+        "absenceFalsePointScenes": 18,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6444448530012188,
+        "completeHits": 9,
+        "targetFalsePointScenes": 137,
+        "absenceFalsePointScenes": 18,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6444448530012189,
+        "completeHits": 10,
+        "targetFalsePointScenes": 136,
+        "absenceFalsePointScenes": 18,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6504010141624071,
+        "completeHits": 10,
+        "targetFalsePointScenes": 136,
+        "absenceFalsePointScenes": 18,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6504010141624073,
+        "completeHits": 11,
+        "targetFalsePointScenes": 135,
+        "absenceFalsePointScenes": 18,
+        "feasible": false
+      },
+      {
+        "threshold": 0.654815465188183,
+        "completeHits": 11,
+        "targetFalsePointScenes": 135,
+        "absenceFalsePointScenes": 18,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6548154651881831,
+        "completeHits": 11,
+        "targetFalsePointScenes": 135,
+        "absenceFalsePointScenes": 17,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6567002592333906,
+        "completeHits": 11,
+        "targetFalsePointScenes": 135,
+        "absenceFalsePointScenes": 17,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6567002592333907,
+        "completeHits": 11,
+        "targetFalsePointScenes": 134,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6659267670870173,
+        "completeHits": 11,
+        "targetFalsePointScenes": 134,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6659267670870174,
+        "completeHits": 13,
+        "targetFalsePointScenes": 132,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.673422937395706,
+        "completeHits": 13,
+        "targetFalsePointScenes": 132,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6734229373957061,
+        "completeHits": 12,
+        "targetFalsePointScenes": 132,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.677134536507428,
+        "completeHits": 12,
+        "targetFalsePointScenes": 132,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6771345365074282,
+        "completeHits": 14,
+        "targetFalsePointScenes": 130,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6845694927287703,
+        "completeHits": 14,
+        "targetFalsePointScenes": 130,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6845694927287704,
+        "completeHits": 16,
+        "targetFalsePointScenes": 128,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6886340353607564,
+        "completeHits": 16,
+        "targetFalsePointScenes": 128,
+        "absenceFalsePointScenes": 16,
+        "feasible": false
+      },
+      {
+        "threshold": 0.6886340353607565,
+        "completeHits": 16,
+        "targetFalsePointScenes": 128,
+        "absenceFalsePointScenes": 15,
+        "feasible": false
+      },
+      {
+        "threshold": 0.7175401549667275,
+        "completeHits": 16,
+        "targetFalsePointScenes": 128,
+        "absenceFalsePointScenes": 15,
+        "feasible": false
+      },
+      {
+        "threshold": 0.7175401549667276,
+        "completeHits": 16,
+        "targetFalsePointScenes": 128,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.7178407916949959,
+        "completeHits": 16,
+        "targetFalsePointScenes": 128,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.717840791694996,
+        "completeHits": 17,
+        "targetFalsePointScenes": 127,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.7205005201375629,
+        "completeHits": 17,
+        "targetFalsePointScenes": 127,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.720500520137563,
+        "completeHits": 18,
+        "targetFalsePointScenes": 126,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.7263225755218149,
+        "completeHits": 18,
+        "targetFalsePointScenes": 126,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.726322575521815,
+        "completeHits": 19,
+        "targetFalsePointScenes": 125,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.7424839182270606,
+        "completeHits": 19,
+        "targetFalsePointScenes": 125,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.7424839182270607,
+        "completeHits": 18,
+        "targetFalsePointScenes": 125,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.7499386287437532,
+        "completeHits": 18,
+        "targetFalsePointScenes": 125,
+        "absenceFalsePointScenes": 14,
+        "feasible": false
+      },
+      {
+        "threshold": 0.7499386287437533,
+        "completeHits": 18,
+        "targetFalsePointScenes": 124,
+        "absenceFalsePointScenes": 13,
+        "feasible": false
+      },
+      {
+        "threshold": 0.7580273528258096,
+        "completeHits": 18,
+        "targetFalsePointScenes": 124,
+        "absenceFalsePointScenes": 13,
+        "feasible": false
+      },
+      {
+        "threshold": 0.7580273528258097,
+        "completeHits": 19,
+        "targetFalsePointScenes": 123,
+        "absenceFalsePointScenes": 13,
+        "feasible": false
+      },
+      {
+        "threshold": 0.7613856223861658,
+        "completeHits": 19,
+        "targetFalsePointScenes": 123,
+        "absenceFalsePointScenes": 13,
+        "feasible": false
+      },
+      {
+        "threshold": 0.7613856223861659,
+        "completeHits": 19,
+        "targetFalsePointScenes": 122,
+        "absenceFalsePointScenes": 13,
+        "feasible": false
+      },
+      {
+        "threshold": 0.765235270891105,
+        "completeHits": 19,
+        "targetFalsePointScenes": 122,
+        "absenceFalsePointScenes": 13,
+        "feasible": false
+      },
+      {
+        "threshold": 0.7652352708911051,
+        "completeHits": 20,
+        "targetFalsePointScenes": 121,
+        "absenceFalsePointScenes": 13,
+        "feasible": false
+      },
+      {
+        "threshold": 0.7913367395074206,
+        "completeHits": 20,
+        "targetFalsePointScenes": 121,
+        "absenceFalsePointScenes": 13,
+        "feasible": false
+      },
+      {
+        "threshold": 0.7913367395074207,
+        "completeHits": 21,
+        "targetFalsePointScenes": 120,
+        "absenceFalsePointScenes": 13,
+        "feasible": false
+      },
+      {
+        "threshold": 0.7945888764065571,
+        "completeHits": 21,
+        "targetFalsePointScenes": 120,
+        "absenceFalsePointScenes": 13,
+        "feasible": false
+      },
+      {
+        "threshold": 0.7945888764065572,
+        "completeHits": 21,
+        "targetFalsePointScenes": 120,
+        "absenceFalsePointScenes": 13,
+        "feasible": false
+      },
+      {
+        "threshold": 0.7960130115325323,
+        "completeHits": 21,
+        "targetFalsePointScenes": 120,
+        "absenceFalsePointScenes": 13,
+        "feasible": false
+      },
+      {
+        "threshold": 0.7960130115325325,
+        "completeHits": 21,
+        "targetFalsePointScenes": 120,
+        "absenceFalsePointScenes": 12,
+        "feasible": false
+      },
+      {
+        "threshold": 0.801548610500586,
+        "completeHits": 21,
+        "targetFalsePointScenes": 120,
+        "absenceFalsePointScenes": 12,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8015486105005861,
+        "completeHits": 20,
+        "targetFalsePointScenes": 120,
+        "absenceFalsePointScenes": 12,
+        "feasible": false
+      },
+      {
+        "threshold": 0.807020758026093,
+        "completeHits": 20,
+        "targetFalsePointScenes": 120,
+        "absenceFalsePointScenes": 12,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8070207580260931,
+        "completeHits": 20,
+        "targetFalsePointScenes": 120,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.829198877788762,
+        "completeHits": 20,
+        "targetFalsePointScenes": 120,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8291988777887621,
+        "completeHits": 21,
+        "targetFalsePointScenes": 119,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8336724105993426,
+        "completeHits": 21,
+        "targetFalsePointScenes": 119,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8336724105993427,
+        "completeHits": 22,
+        "targetFalsePointScenes": 118,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.837545766442652,
+        "completeHits": 22,
+        "targetFalsePointScenes": 118,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8375457664426521,
+        "completeHits": 22,
+        "targetFalsePointScenes": 117,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8383109453840635,
+        "completeHits": 22,
+        "targetFalsePointScenes": 117,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8383109453840636,
+        "completeHits": 23,
+        "targetFalsePointScenes": 116,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8388253850324708,
+        "completeHits": 23,
+        "targetFalsePointScenes": 116,
+        "absenceFalsePointScenes": 11,
+        "feasible": false
+      },
+      {
+        "threshold": 0.838825385032471,
+        "completeHits": 23,
+        "targetFalsePointScenes": 116,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8412921469416277,
+        "completeHits": 23,
+        "targetFalsePointScenes": 116,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8412921469416278,
+        "completeHits": 25,
+        "targetFalsePointScenes": 114,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8430904174696919,
+        "completeHits": 25,
+        "targetFalsePointScenes": 114,
+        "absenceFalsePointScenes": 10,
+        "feasible": false
+      },
+      {
+        "threshold": 0.843090417469692,
+        "completeHits": 25,
+        "targetFalsePointScenes": 114,
+        "absenceFalsePointScenes": 9,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8491206409065579,
+        "completeHits": 25,
+        "targetFalsePointScenes": 114,
+        "absenceFalsePointScenes": 9,
+        "feasible": false
+      },
+      {
+        "threshold": 0.849120640906558,
+        "completeHits": 25,
+        "targetFalsePointScenes": 114,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8495877604235111,
+        "completeHits": 25,
+        "targetFalsePointScenes": 114,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8495877604235113,
+        "completeHits": 25,
+        "targetFalsePointScenes": 113,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8530819470581231,
+        "completeHits": 25,
+        "targetFalsePointScenes": 113,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8530819470581232,
+        "completeHits": 26,
+        "targetFalsePointScenes": 112,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8624190457648933,
+        "completeHits": 26,
+        "targetFalsePointScenes": 112,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8624190457648934,
+        "completeHits": 26,
+        "targetFalsePointScenes": 112,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.869185843691816,
+        "completeHits": 26,
+        "targetFalsePointScenes": 112,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8691858436918161,
+        "completeHits": 27,
+        "targetFalsePointScenes": 111,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8793861504060007,
+        "completeHits": 27,
+        "targetFalsePointScenes": 111,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8793861504060008,
+        "completeHits": 27,
+        "targetFalsePointScenes": 111,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8845255184888191,
+        "completeHits": 27,
+        "targetFalsePointScenes": 111,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8845255184888192,
+        "completeHits": 26,
+        "targetFalsePointScenes": 111,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8892273446201983,
+        "completeHits": 26,
+        "targetFalsePointScenes": 111,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.8892273446201984,
+        "completeHits": 27,
+        "targetFalsePointScenes": 110,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9037527929322946,
+        "completeHits": 27,
+        "targetFalsePointScenes": 110,
+        "absenceFalsePointScenes": 8,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9037527929322947,
+        "completeHits": 27,
+        "targetFalsePointScenes": 110,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9073121326502167,
+        "completeHits": 27,
+        "targetFalsePointScenes": 110,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9073121326502168,
+        "completeHits": 28,
+        "targetFalsePointScenes": 109,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9114356569405219,
+        "completeHits": 28,
+        "targetFalsePointScenes": 109,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.911435656940522,
+        "completeHits": 29,
+        "targetFalsePointScenes": 108,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9118418874332235,
+        "completeHits": 29,
+        "targetFalsePointScenes": 108,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9118418874332236,
+        "completeHits": 29,
+        "targetFalsePointScenes": 108,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9206295357504901,
+        "completeHits": 29,
+        "targetFalsePointScenes": 108,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9206295357504902,
+        "completeHits": 30,
+        "targetFalsePointScenes": 107,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9367878282809058,
+        "completeHits": 30,
+        "targetFalsePointScenes": 107,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9367878282809059,
+        "completeHits": 29,
+        "targetFalsePointScenes": 107,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9437830214471529,
+        "completeHits": 29,
+        "targetFalsePointScenes": 107,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.943783021447153,
+        "completeHits": 28,
+        "targetFalsePointScenes": 107,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9455989201213462,
+        "completeHits": 28,
+        "targetFalsePointScenes": 107,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9455989201213463,
+        "completeHits": 28,
+        "targetFalsePointScenes": 106,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.946287484336244,
+        "completeHits": 28,
+        "targetFalsePointScenes": 106,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9462874843362441,
+        "completeHits": 29,
+        "targetFalsePointScenes": 105,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9482778987055579,
+        "completeHits": 29,
+        "targetFalsePointScenes": 105,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.948277898705558,
+        "completeHits": 30,
+        "targetFalsePointScenes": 104,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9624468096739305,
+        "completeHits": 30,
+        "targetFalsePointScenes": 104,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9624468096739306,
+        "completeHits": 31,
+        "targetFalsePointScenes": 103,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9628157938359176,
+        "completeHits": 31,
+        "targetFalsePointScenes": 103,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9628157938359178,
+        "completeHits": 32,
+        "targetFalsePointScenes": 102,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9689825942720489,
+        "completeHits": 32,
+        "targetFalsePointScenes": 102,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.968982594272049,
+        "completeHits": 33,
+        "targetFalsePointScenes": 101,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9692237116472858,
+        "completeHits": 33,
+        "targetFalsePointScenes": 101,
+        "absenceFalsePointScenes": 7,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9692237116472859,
+        "completeHits": 33,
+        "targetFalsePointScenes": 101,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9693624249264081,
+        "completeHits": 33,
+        "targetFalsePointScenes": 101,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9693624249264082,
+        "completeHits": 33,
+        "targetFalsePointScenes": 101,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9708338717548628,
+        "completeHits": 33,
+        "targetFalsePointScenes": 101,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9708338717548629,
+        "completeHits": 32,
+        "targetFalsePointScenes": 101,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9738747202840323,
+        "completeHits": 32,
+        "targetFalsePointScenes": 101,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9738747202840324,
+        "completeHits": 32,
+        "targetFalsePointScenes": 100,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9748817260788606,
+        "completeHits": 32,
+        "targetFalsePointScenes": 100,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9748817260788607,
+        "completeHits": 31,
+        "targetFalsePointScenes": 100,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9752409682033213,
+        "completeHits": 31,
+        "targetFalsePointScenes": 100,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9752409682033214,
+        "completeHits": 31,
+        "targetFalsePointScenes": 100,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9753578796207295,
+        "completeHits": 31,
+        "targetFalsePointScenes": 100,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9753578796207296,
+        "completeHits": 30,
+        "targetFalsePointScenes": 100,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9754055257770419,
+        "completeHits": 30,
+        "targetFalsePointScenes": 100,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.975405525777042,
+        "completeHits": 29,
+        "targetFalsePointScenes": 100,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9754801552832943,
+        "completeHits": 29,
+        "targetFalsePointScenes": 100,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9754801552832945,
+        "completeHits": 29,
+        "targetFalsePointScenes": 100,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.975994962957394,
+        "completeHits": 29,
+        "targetFalsePointScenes": 100,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9759949629573941,
+        "completeHits": 30,
+        "targetFalsePointScenes": 99,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9764654799019434,
+        "completeHits": 30,
+        "targetFalsePointScenes": 99,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9764654799019435,
+        "completeHits": 31,
+        "targetFalsePointScenes": 97,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9773056025013578,
+        "completeHits": 31,
+        "targetFalsePointScenes": 97,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9773056025013579,
+        "completeHits": 32,
+        "targetFalsePointScenes": 96,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9774027924930153,
+        "completeHits": 32,
+        "targetFalsePointScenes": 96,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9774027924930154,
+        "completeHits": 31,
+        "targetFalsePointScenes": 96,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9776351640027344,
+        "completeHits": 31,
+        "targetFalsePointScenes": 96,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9776351640027345,
+        "completeHits": 32,
+        "targetFalsePointScenes": 95,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9778359248361924,
+        "completeHits": 32,
+        "targetFalsePointScenes": 95,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9778359248361925,
+        "completeHits": 33,
+        "targetFalsePointScenes": 94,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.97789966900799,
+        "completeHits": 33,
+        "targetFalsePointScenes": 94,
+        "absenceFalsePointScenes": 6,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9778996690079901,
+        "completeHits": 33,
+        "targetFalsePointScenes": 94,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.978220320075231,
+        "completeHits": 33,
+        "targetFalsePointScenes": 94,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9782203200752311,
+        "completeHits": 33,
+        "targetFalsePointScenes": 94,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9789953755405171,
+        "completeHits": 33,
+        "targetFalsePointScenes": 94,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9789953755405172,
+        "completeHits": 34,
+        "targetFalsePointScenes": 93,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9803730637155198,
+        "completeHits": 34,
+        "targetFalsePointScenes": 93,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9803730637155199,
+        "completeHits": 35,
+        "targetFalsePointScenes": 92,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9806562690684156,
+        "completeHits": 35,
+        "targetFalsePointScenes": 92,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9806562690684157,
+        "completeHits": 35,
+        "targetFalsePointScenes": 92,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9807507914247547,
+        "completeHits": 35,
+        "targetFalsePointScenes": 92,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9807507914247549,
+        "completeHits": 35,
+        "targetFalsePointScenes": 91,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9812459986526078,
+        "completeHits": 35,
+        "targetFalsePointScenes": 91,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9812459986526079,
+        "completeHits": 35,
+        "targetFalsePointScenes": 90,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9813616442457088,
+        "completeHits": 35,
+        "targetFalsePointScenes": 90,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9813616442457089,
+        "completeHits": 35,
+        "targetFalsePointScenes": 89,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.982177519578582,
+        "completeHits": 35,
+        "targetFalsePointScenes": 89,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9821775195785821,
+        "completeHits": 36,
+        "targetFalsePointScenes": 88,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9829725554785691,
+        "completeHits": 36,
+        "targetFalsePointScenes": 88,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9829725554785692,
+        "completeHits": 37,
+        "targetFalsePointScenes": 87,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9831589901623956,
+        "completeHits": 37,
+        "targetFalsePointScenes": 87,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9831589901623957,
+        "completeHits": 37,
+        "targetFalsePointScenes": 86,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9838113530355779,
+        "completeHits": 37,
+        "targetFalsePointScenes": 86,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.983811353035578,
+        "completeHits": 38,
+        "targetFalsePointScenes": 85,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.984193058109052,
+        "completeHits": 38,
+        "targetFalsePointScenes": 85,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9841930581090521,
+        "completeHits": 38,
+        "targetFalsePointScenes": 84,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9842795007691485,
+        "completeHits": 38,
+        "targetFalsePointScenes": 84,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9842795007691486,
+        "completeHits": 38,
+        "targetFalsePointScenes": 83,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9845919793876269,
+        "completeHits": 38,
+        "targetFalsePointScenes": 83,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.984591979387627,
+        "completeHits": 38,
+        "targetFalsePointScenes": 83,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9849357738386124,
+        "completeHits": 38,
+        "targetFalsePointScenes": 83,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9849357738386125,
+        "completeHits": 39,
+        "targetFalsePointScenes": 82,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9850274348366452,
+        "completeHits": 39,
+        "targetFalsePointScenes": 82,
+        "absenceFalsePointScenes": 5,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9850274348366453,
+        "completeHits": 40,
+        "targetFalsePointScenes": 81,
+        "absenceFalsePointScenes": 4,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9851971055019079,
+        "completeHits": 40,
+        "targetFalsePointScenes": 81,
+        "absenceFalsePointScenes": 4,
+        "feasible": false
+      },
+      {
+        "threshold": 0.985197105501908,
+        "completeHits": 40,
+        "targetFalsePointScenes": 81,
+        "absenceFalsePointScenes": 3,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9854225412943971,
+        "completeHits": 40,
+        "targetFalsePointScenes": 81,
+        "absenceFalsePointScenes": 3,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9854225412943972,
+        "completeHits": 40,
+        "targetFalsePointScenes": 80,
+        "absenceFalsePointScenes": 3,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9854324605931767,
+        "completeHits": 40,
+        "targetFalsePointScenes": 80,
+        "absenceFalsePointScenes": 3,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9854324605931768,
+        "completeHits": 40,
+        "targetFalsePointScenes": 80,
+        "absenceFalsePointScenes": 2,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9857230346907557,
+        "completeHits": 40,
+        "targetFalsePointScenes": 80,
+        "absenceFalsePointScenes": 2,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9857230346907558,
+        "completeHits": 41,
+        "targetFalsePointScenes": 79,
+        "absenceFalsePointScenes": 2,
+        "feasible": false
+      },
+      {
+        "threshold": 0.985872110986775,
+        "completeHits": 41,
+        "targetFalsePointScenes": 79,
+        "absenceFalsePointScenes": 2,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9858721109867751,
+        "completeHits": 42,
+        "targetFalsePointScenes": 78,
+        "absenceFalsePointScenes": 2,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9861552704654584,
+        "completeHits": 42,
+        "targetFalsePointScenes": 78,
+        "absenceFalsePointScenes": 2,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9861552704654585,
+        "completeHits": 43,
+        "targetFalsePointScenes": 77,
+        "absenceFalsePointScenes": 2,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9865269614576824,
+        "completeHits": 43,
+        "targetFalsePointScenes": 77,
+        "absenceFalsePointScenes": 2,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9865269614576825,
+        "completeHits": 43,
+        "targetFalsePointScenes": 77,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9866004307873325,
+        "completeHits": 43,
+        "targetFalsePointScenes": 77,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9866004307873326,
+        "completeHits": 42,
+        "targetFalsePointScenes": 77,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9877705870365214,
+        "completeHits": 42,
+        "targetFalsePointScenes": 77,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9877705870365215,
+        "completeHits": 43,
+        "targetFalsePointScenes": 76,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9877820277894477,
+        "completeHits": 43,
+        "targetFalsePointScenes": 76,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9877820277894478,
+        "completeHits": 44,
+        "targetFalsePointScenes": 75,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9882468545234292,
+        "completeHits": 44,
+        "targetFalsePointScenes": 75,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9882468545234293,
+        "completeHits": 45,
+        "targetFalsePointScenes": 74,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9883106344440005,
+        "completeHits": 45,
+        "targetFalsePointScenes": 74,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9883106344440006,
+        "completeHits": 46,
+        "targetFalsePointScenes": 73,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9887674055129548,
+        "completeHits": 46,
+        "targetFalsePointScenes": 73,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9887674055129549,
+        "completeHits": 47,
+        "targetFalsePointScenes": 72,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9890283515234606,
+        "completeHits": 47,
+        "targetFalsePointScenes": 72,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9890283515234607,
+        "completeHits": 47,
+        "targetFalsePointScenes": 71,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9891203153688457,
+        "completeHits": 47,
+        "targetFalsePointScenes": 71,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9891203153688458,
+        "completeHits": 48,
+        "targetFalsePointScenes": 70,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9891236033312905,
+        "completeHits": 48,
+        "targetFalsePointScenes": 70,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9891236033312906,
+        "completeHits": 50,
+        "targetFalsePointScenes": 68,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9895097504958766,
+        "completeHits": 50,
+        "targetFalsePointScenes": 68,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9895097504958767,
+        "completeHits": 50,
+        "targetFalsePointScenes": 68,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9897810632675238,
+        "completeHits": 50,
+        "targetFalsePointScenes": 68,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9897810632675239,
+        "completeHits": 51,
+        "targetFalsePointScenes": 67,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9899610400754162,
+        "completeHits": 51,
+        "targetFalsePointScenes": 67,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9899610400754163,
+        "completeHits": 50,
+        "targetFalsePointScenes": 67,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9899633716619455,
+        "completeHits": 50,
+        "targetFalsePointScenes": 67,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9899633716619456,
+        "completeHits": 50,
+        "targetFalsePointScenes": 65,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9903581232574112,
+        "completeHits": 50,
+        "targetFalsePointScenes": 65,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9903581232574113,
+        "completeHits": 49,
+        "targetFalsePointScenes": 65,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9905715880618007,
+        "completeHits": 49,
+        "targetFalsePointScenes": 65,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9905715880618008,
+        "completeHits": 48,
+        "targetFalsePointScenes": 65,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9906330065233347,
+        "completeHits": 48,
+        "targetFalsePointScenes": 65,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9906330065233349,
+        "completeHits": 49,
+        "targetFalsePointScenes": 64,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9910410099587733,
+        "completeHits": 49,
+        "targetFalsePointScenes": 64,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9910410099587734,
+        "completeHits": 50,
+        "targetFalsePointScenes": 63,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9911904734807571,
+        "completeHits": 50,
+        "targetFalsePointScenes": 63,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9911904734807572,
+        "completeHits": 49,
+        "targetFalsePointScenes": 63,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9918580102272593,
+        "completeHits": 49,
+        "targetFalsePointScenes": 63,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9918580102272594,
+        "completeHits": 50,
+        "targetFalsePointScenes": 62,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9920494076661799,
+        "completeHits": 50,
+        "targetFalsePointScenes": 62,
+        "absenceFalsePointScenes": 1,
+        "feasible": false
+      },
+      {
+        "threshold": 0.99204940766618,
+        "completeHits": 51,
+        "targetFalsePointScenes": 57,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9923073734381196,
+        "completeHits": 51,
+        "targetFalsePointScenes": 57,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9923073734381197,
+        "completeHits": 52,
+        "targetFalsePointScenes": 56,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9924353417162329,
+        "completeHits": 52,
+        "targetFalsePointScenes": 56,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.992435341716233,
+        "completeHits": 51,
+        "targetFalsePointScenes": 56,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9925959600755171,
+        "completeHits": 51,
+        "targetFalsePointScenes": 56,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9925959600755172,
+        "completeHits": 52,
+        "targetFalsePointScenes": 55,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9934016550461116,
+        "completeHits": 52,
+        "targetFalsePointScenes": 55,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9934016550461117,
+        "completeHits": 51,
+        "targetFalsePointScenes": 55,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9934622833691081,
+        "completeHits": 51,
+        "targetFalsePointScenes": 55,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9934622833691082,
+        "completeHits": 50,
+        "targetFalsePointScenes": 55,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9935649994882298,
+        "completeHits": 50,
+        "targetFalsePointScenes": 55,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.99356499948823,
+        "completeHits": 51,
+        "targetFalsePointScenes": 54,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9936503959466209,
+        "completeHits": 51,
+        "targetFalsePointScenes": 54,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.993650395946621,
+        "completeHits": 52,
+        "targetFalsePointScenes": 53,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9937104188904893,
+        "completeHits": 52,
+        "targetFalsePointScenes": 53,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9937104188904894,
+        "completeHits": 52,
+        "targetFalsePointScenes": 53,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9940301863835855,
+        "completeHits": 52,
+        "targetFalsePointScenes": 53,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9940301863835856,
+        "completeHits": 53,
+        "targetFalsePointScenes": 52,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9948122379120709,
+        "completeHits": 53,
+        "targetFalsePointScenes": 52,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.994812237912071,
+        "completeHits": 52,
+        "targetFalsePointScenes": 52,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9949048007474637,
+        "completeHits": 52,
+        "targetFalsePointScenes": 52,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9949048007474638,
+        "completeHits": 51,
+        "targetFalsePointScenes": 52,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9950438611672102,
+        "completeHits": 51,
+        "targetFalsePointScenes": 52,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9950438611672103,
+        "completeHits": 50,
+        "targetFalsePointScenes": 52,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.995320467140183,
+        "completeHits": 50,
+        "targetFalsePointScenes": 52,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9953204671401831,
+        "completeHits": 49,
+        "targetFalsePointScenes": 52,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.99540647165606,
+        "completeHits": 49,
+        "targetFalsePointScenes": 52,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9954064716560601,
+        "completeHits": 49,
+        "targetFalsePointScenes": 52,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9955222085589452,
+        "completeHits": 49,
+        "targetFalsePointScenes": 52,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9955222085589454,
+        "completeHits": 48,
+        "targetFalsePointScenes": 52,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9956036832625555,
+        "completeHits": 48,
+        "targetFalsePointScenes": 52,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9956036832625557,
+        "completeHits": 48,
+        "targetFalsePointScenes": 52,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9957786107193461,
+        "completeHits": 48,
+        "targetFalsePointScenes": 52,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9957786107193463,
+        "completeHits": 47,
+        "targetFalsePointScenes": 52,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9961159274501384,
+        "completeHits": 47,
+        "targetFalsePointScenes": 52,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9961159274501385,
+        "completeHits": 46,
+        "targetFalsePointScenes": 52,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9963265575519474,
+        "completeHits": 46,
+        "targetFalsePointScenes": 52,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9963265575519475,
+        "completeHits": 45,
+        "targetFalsePointScenes": 52,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9963353992180138,
+        "completeHits": 45,
+        "targetFalsePointScenes": 52,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.996335399218014,
+        "completeHits": 46,
+        "targetFalsePointScenes": 51,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9966302984140587,
+        "completeHits": 46,
+        "targetFalsePointScenes": 51,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9966302984140588,
+        "completeHits": 45,
+        "targetFalsePointScenes": 51,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.996731593215695,
+        "completeHits": 45,
+        "targetFalsePointScenes": 51,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9967315932156952,
+        "completeHits": 46,
+        "targetFalsePointScenes": 50,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.99681642693315,
+        "completeHits": 46,
+        "targetFalsePointScenes": 50,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9968164269331501,
+        "completeHits": 47,
+        "targetFalsePointScenes": 49,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.996817049575126,
+        "completeHits": 47,
+        "targetFalsePointScenes": 49,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9968170495751261,
+        "completeHits": 48,
+        "targetFalsePointScenes": 48,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.99681738082954,
+        "completeHits": 48,
+        "targetFalsePointScenes": 48,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9968173808295401,
+        "completeHits": 48,
+        "targetFalsePointScenes": 47,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9968509210452486,
+        "completeHits": 48,
+        "targetFalsePointScenes": 47,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9968509210452488,
+        "completeHits": 48,
+        "targetFalsePointScenes": 47,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9968890779849177,
+        "completeHits": 48,
+        "targetFalsePointScenes": 47,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9968890779849178,
+        "completeHits": 48,
+        "targetFalsePointScenes": 47,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9968906982945118,
+        "completeHits": 48,
+        "targetFalsePointScenes": 47,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9968906982945119,
+        "completeHits": 49,
+        "targetFalsePointScenes": 46,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9970570994302551,
+        "completeHits": 49,
+        "targetFalsePointScenes": 46,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9970570994302552,
+        "completeHits": 49,
+        "targetFalsePointScenes": 45,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9971491066994252,
+        "completeHits": 49,
+        "targetFalsePointScenes": 45,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9971491066994254,
+        "completeHits": 50,
+        "targetFalsePointScenes": 44,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9971781605568788,
+        "completeHits": 50,
+        "targetFalsePointScenes": 44,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9971781605568789,
+        "completeHits": 49,
+        "targetFalsePointScenes": 44,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9972671459166423,
+        "completeHits": 49,
+        "targetFalsePointScenes": 44,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9972671459166425,
+        "completeHits": 48,
+        "targetFalsePointScenes": 44,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9974641418312918,
+        "completeHits": 48,
+        "targetFalsePointScenes": 44,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.997464141831292,
+        "completeHits": 48,
+        "targetFalsePointScenes": 44,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9974828248652283,
+        "completeHits": 48,
+        "targetFalsePointScenes": 44,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9974828248652284,
+        "completeHits": 48,
+        "targetFalsePointScenes": 43,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.997482887842916,
+        "completeHits": 48,
+        "targetFalsePointScenes": 43,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9974828878429162,
+        "completeHits": 47,
+        "targetFalsePointScenes": 43,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9976775723518233,
+        "completeHits": 47,
+        "targetFalsePointScenes": 43,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9976775723518234,
+        "completeHits": 47,
+        "targetFalsePointScenes": 43,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9976911736513351,
+        "completeHits": 47,
+        "targetFalsePointScenes": 43,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9976911736513352,
+        "completeHits": 46,
+        "targetFalsePointScenes": 43,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9976981905741679,
+        "completeHits": 46,
+        "targetFalsePointScenes": 43,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.997698190574168,
+        "completeHits": 47,
+        "targetFalsePointScenes": 42,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9977270093286181,
+        "completeHits": 47,
+        "targetFalsePointScenes": 42,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9977270093286182,
+        "completeHits": 48,
+        "targetFalsePointScenes": 41,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9977673462279665,
+        "completeHits": 48,
+        "targetFalsePointScenes": 41,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9977673462279666,
+        "completeHits": 49,
+        "targetFalsePointScenes": 40,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9977806092470687,
+        "completeHits": 49,
+        "targetFalsePointScenes": 40,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9977806092470688,
+        "completeHits": 48,
+        "targetFalsePointScenes": 40,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9978047665043196,
+        "completeHits": 48,
+        "targetFalsePointScenes": 40,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9978047665043197,
+        "completeHits": 47,
+        "targetFalsePointScenes": 40,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9978203278288478,
+        "completeHits": 47,
+        "targetFalsePointScenes": 40,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9978203278288479,
+        "completeHits": 48,
+        "targetFalsePointScenes": 39,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9978555000746538,
+        "completeHits": 48,
+        "targetFalsePointScenes": 39,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.997855500074654,
+        "completeHits": 49,
+        "targetFalsePointScenes": 38,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9978581799830564,
+        "completeHits": 49,
+        "targetFalsePointScenes": 38,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9978581799830565,
+        "completeHits": 48,
+        "targetFalsePointScenes": 38,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9978688013118964,
+        "completeHits": 48,
+        "targetFalsePointScenes": 38,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9978688013118965,
+        "completeHits": 48,
+        "targetFalsePointScenes": 37,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9980176153766904,
+        "completeHits": 48,
+        "targetFalsePointScenes": 37,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9980176153766905,
+        "completeHits": 47,
+        "targetFalsePointScenes": 37,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9980283109634864,
+        "completeHits": 47,
+        "targetFalsePointScenes": 37,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9980283109634865,
+        "completeHits": 47,
+        "targetFalsePointScenes": 36,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9980389073523086,
+        "completeHits": 47,
+        "targetFalsePointScenes": 36,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9980389073523087,
+        "completeHits": 46,
+        "targetFalsePointScenes": 36,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9980567226391447,
+        "completeHits": 46,
+        "targetFalsePointScenes": 36,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9980567226391448,
+        "completeHits": 46,
+        "targetFalsePointScenes": 35,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9981188774887866,
+        "completeHits": 46,
+        "targetFalsePointScenes": 35,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9981188774887867,
+        "completeHits": 45,
+        "targetFalsePointScenes": 35,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9982142571037269,
+        "completeHits": 45,
+        "targetFalsePointScenes": 35,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.998214257103727,
+        "completeHits": 45,
+        "targetFalsePointScenes": 35,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9982160778238583,
+        "completeHits": 45,
+        "targetFalsePointScenes": 35,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9982160778238585,
+        "completeHits": 46,
+        "targetFalsePointScenes": 34,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9982224121012411,
+        "completeHits": 46,
+        "targetFalsePointScenes": 34,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9982224121012412,
+        "completeHits": 45,
+        "targetFalsePointScenes": 34,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9982244866878445,
+        "completeHits": 45,
+        "targetFalsePointScenes": 34,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9982244866878446,
+        "completeHits": 44,
+        "targetFalsePointScenes": 34,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9982443696971877,
+        "completeHits": 44,
+        "targetFalsePointScenes": 34,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9982443696971878,
+        "completeHits": 43,
+        "targetFalsePointScenes": 34,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9982623043470538,
+        "completeHits": 43,
+        "targetFalsePointScenes": 34,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9982623043470539,
+        "completeHits": 42,
+        "targetFalsePointScenes": 34,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9982715561137655,
+        "completeHits": 42,
+        "targetFalsePointScenes": 34,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9982715561137656,
+        "completeHits": 42,
+        "targetFalsePointScenes": 33,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9982798757676532,
+        "completeHits": 42,
+        "targetFalsePointScenes": 33,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9982798757676533,
+        "completeHits": 41,
+        "targetFalsePointScenes": 33,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9983182806776164,
+        "completeHits": 41,
+        "targetFalsePointScenes": 33,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9983182806776165,
+        "completeHits": 40,
+        "targetFalsePointScenes": 33,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9983337827522186,
+        "completeHits": 40,
+        "targetFalsePointScenes": 33,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9983337827522187,
+        "completeHits": 39,
+        "targetFalsePointScenes": 33,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9983691771965126,
+        "completeHits": 39,
+        "targetFalsePointScenes": 33,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9983691771965127,
+        "completeHits": 39,
+        "targetFalsePointScenes": 33,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9984051215096483,
+        "completeHits": 39,
+        "targetFalsePointScenes": 33,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9984051215096484,
+        "completeHits": 38,
+        "targetFalsePointScenes": 33,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9984063129098898,
+        "completeHits": 38,
+        "targetFalsePointScenes": 33,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9984063129098899,
+        "completeHits": 39,
+        "targetFalsePointScenes": 32,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9984219628505022,
+        "completeHits": 39,
+        "targetFalsePointScenes": 32,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9984219628505023,
+        "completeHits": 38,
+        "targetFalsePointScenes": 32,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9984682435675575,
+        "completeHits": 38,
+        "targetFalsePointScenes": 32,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9984682435675576,
+        "completeHits": 37,
+        "targetFalsePointScenes": 32,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9984727230010633,
+        "completeHits": 37,
+        "targetFalsePointScenes": 32,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9984727230010634,
+        "completeHits": 36,
+        "targetFalsePointScenes": 32,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.998492065914119,
+        "completeHits": 36,
+        "targetFalsePointScenes": 32,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9984920659141191,
+        "completeHits": 35,
+        "targetFalsePointScenes": 32,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9985048343429683,
+        "completeHits": 35,
+        "targetFalsePointScenes": 32,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9985048343429684,
+        "completeHits": 35,
+        "targetFalsePointScenes": 31,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9985093028856135,
+        "completeHits": 35,
+        "targetFalsePointScenes": 31,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9985093028856136,
+        "completeHits": 34,
+        "targetFalsePointScenes": 31,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.998514515908996,
+        "completeHits": 34,
+        "targetFalsePointScenes": 31,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9985145159089961,
+        "completeHits": 33,
+        "targetFalsePointScenes": 31,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9985203485420356,
+        "completeHits": 33,
+        "targetFalsePointScenes": 31,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9985203485420358,
+        "completeHits": 33,
+        "targetFalsePointScenes": 31,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9985209900548638,
+        "completeHits": 33,
+        "targetFalsePointScenes": 31,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9985209900548639,
+        "completeHits": 33,
+        "targetFalsePointScenes": 30,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9985236932828229,
+        "completeHits": 33,
+        "targetFalsePointScenes": 30,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.998523693282823,
+        "completeHits": 32,
+        "targetFalsePointScenes": 30,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9985571607702197,
+        "completeHits": 32,
+        "targetFalsePointScenes": 30,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9985571607702198,
+        "completeHits": 32,
+        "targetFalsePointScenes": 29,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.998570307824263,
+        "completeHits": 32,
+        "targetFalsePointScenes": 29,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9985703078242631,
+        "completeHits": 32,
+        "targetFalsePointScenes": 28,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9985786919884848,
+        "completeHits": 32,
+        "targetFalsePointScenes": 28,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9985786919884849,
+        "completeHits": 31,
+        "targetFalsePointScenes": 28,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9985912706255777,
+        "completeHits": 31,
+        "targetFalsePointScenes": 28,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9985912706255778,
+        "completeHits": 30,
+        "targetFalsePointScenes": 28,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9986083320157172,
+        "completeHits": 30,
+        "targetFalsePointScenes": 28,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9986083320157173,
+        "completeHits": 30,
+        "targetFalsePointScenes": 27,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9986137777582332,
+        "completeHits": 30,
+        "targetFalsePointScenes": 27,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9986137777582333,
+        "completeHits": 30,
+        "targetFalsePointScenes": 27,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9986381348573994,
+        "completeHits": 30,
+        "targetFalsePointScenes": 27,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9986381348573995,
+        "completeHits": 30,
+        "targetFalsePointScenes": 26,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9986561115923899,
+        "completeHits": 30,
+        "targetFalsePointScenes": 26,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.99865611159239,
+        "completeHits": 29,
+        "targetFalsePointScenes": 26,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.998657841168969,
+        "completeHits": 29,
+        "targetFalsePointScenes": 26,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9986578411689692,
+        "completeHits": 29,
+        "targetFalsePointScenes": 26,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.998665214305796,
+        "completeHits": 29,
+        "targetFalsePointScenes": 26,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9986652143057961,
+        "completeHits": 29,
+        "targetFalsePointScenes": 25,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9986745102487502,
+        "completeHits": 29,
+        "targetFalsePointScenes": 25,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9986745102487503,
+        "completeHits": 28,
+        "targetFalsePointScenes": 25,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9986880890980966,
+        "completeHits": 28,
+        "targetFalsePointScenes": 25,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9986880890980967,
+        "completeHits": 28,
+        "targetFalsePointScenes": 24,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9986921169398401,
+        "completeHits": 28,
+        "targetFalsePointScenes": 24,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9986921169398402,
+        "completeHits": 27,
+        "targetFalsePointScenes": 24,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9987072375012555,
+        "completeHits": 27,
+        "targetFalsePointScenes": 24,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9987072375012556,
+        "completeHits": 26,
+        "targetFalsePointScenes": 24,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9987139911111077,
+        "completeHits": 26,
+        "targetFalsePointScenes": 24,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9987139911111078,
+        "completeHits": 26,
+        "targetFalsePointScenes": 24,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9987241569836411,
+        "completeHits": 26,
+        "targetFalsePointScenes": 24,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9987241569836413,
+        "completeHits": 26,
+        "targetFalsePointScenes": 23,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9987250145567212,
+        "completeHits": 26,
+        "targetFalsePointScenes": 23,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9987250145567214,
+        "completeHits": 25,
+        "targetFalsePointScenes": 23,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9987265674608583,
+        "completeHits": 25,
+        "targetFalsePointScenes": 23,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9987265674608584,
+        "completeHits": 25,
+        "targetFalsePointScenes": 22,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9987292350579852,
+        "completeHits": 25,
+        "targetFalsePointScenes": 22,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9987292350579853,
+        "completeHits": 24,
+        "targetFalsePointScenes": 22,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.99873599006255,
+        "completeHits": 24,
+        "targetFalsePointScenes": 22,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9987359900625501,
+        "completeHits": 23,
+        "targetFalsePointScenes": 22,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9987391741141071,
+        "completeHits": 23,
+        "targetFalsePointScenes": 22,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9987391741141072,
+        "completeHits": 22,
+        "targetFalsePointScenes": 22,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9987488964693311,
+        "completeHits": 22,
+        "targetFalsePointScenes": 22,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9987488964693312,
+        "completeHits": 21,
+        "targetFalsePointScenes": 22,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9987763335920752,
+        "completeHits": 21,
+        "targetFalsePointScenes": 22,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9987763335920753,
+        "completeHits": 20,
+        "targetFalsePointScenes": 22,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9987885335157646,
+        "completeHits": 20,
+        "targetFalsePointScenes": 22,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9987885335157647,
+        "completeHits": 20,
+        "targetFalsePointScenes": 21,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.998793926414481,
+        "completeHits": 20,
+        "targetFalsePointScenes": 21,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9987939264144811,
+        "completeHits": 19,
+        "targetFalsePointScenes": 21,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.998800738929291,
+        "completeHits": 19,
+        "targetFalsePointScenes": 21,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9988007389292911,
+        "completeHits": 18,
+        "targetFalsePointScenes": 21,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.99880783286739,
+        "completeHits": 18,
+        "targetFalsePointScenes": 21,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9988078328673902,
+        "completeHits": 17,
+        "targetFalsePointScenes": 21,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9988227545697156,
+        "completeHits": 17,
+        "targetFalsePointScenes": 21,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9988227545697157,
+        "completeHits": 17,
+        "targetFalsePointScenes": 20,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9988494437482557,
+        "completeHits": 17,
+        "targetFalsePointScenes": 20,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9988494437482558,
+        "completeHits": 17,
+        "targetFalsePointScenes": 19,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9988536264750939,
+        "completeHits": 17,
+        "targetFalsePointScenes": 19,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.998853626475094,
+        "completeHits": 17,
+        "targetFalsePointScenes": 18,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9988796444381332,
+        "completeHits": 17,
+        "targetFalsePointScenes": 18,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9988796444381333,
+        "completeHits": 16,
+        "targetFalsePointScenes": 18,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.998898967325311,
+        "completeHits": 16,
+        "targetFalsePointScenes": 18,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9988989673253111,
+        "completeHits": 15,
+        "targetFalsePointScenes": 18,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9989018943134356,
+        "completeHits": 15,
+        "targetFalsePointScenes": 18,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9989018943134357,
+        "completeHits": 14,
+        "targetFalsePointScenes": 18,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.998940918329701,
+        "completeHits": 14,
+        "targetFalsePointScenes": 18,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9989409183297011,
+        "completeHits": 14,
+        "targetFalsePointScenes": 17,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9989505995541086,
+        "completeHits": 14,
+        "targetFalsePointScenes": 17,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9989505995541087,
+        "completeHits": 14,
+        "targetFalsePointScenes": 16,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9989684390514738,
+        "completeHits": 14,
+        "targetFalsePointScenes": 16,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9989684390514739,
+        "completeHits": 14,
+        "targetFalsePointScenes": 15,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9989706488508245,
+        "completeHits": 14,
+        "targetFalsePointScenes": 15,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9989706488508246,
+        "completeHits": 14,
+        "targetFalsePointScenes": 14,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9989776413256249,
+        "completeHits": 14,
+        "targetFalsePointScenes": 14,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.998977641325625,
+        "completeHits": 14,
+        "targetFalsePointScenes": 13,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.999008573959354,
+        "completeHits": 14,
+        "targetFalsePointScenes": 13,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9990085739593542,
+        "completeHits": 13,
+        "targetFalsePointScenes": 13,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9990144549395955,
+        "completeHits": 13,
+        "targetFalsePointScenes": 13,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9990144549395956,
+        "completeHits": 13,
+        "targetFalsePointScenes": 12,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9990216017402566,
+        "completeHits": 13,
+        "targetFalsePointScenes": 12,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9990216017402567,
+        "completeHits": 12,
+        "targetFalsePointScenes": 12,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9990290107534148,
+        "completeHits": 12,
+        "targetFalsePointScenes": 12,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9990290107534149,
+        "completeHits": 11,
+        "targetFalsePointScenes": 12,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9990354159912875,
+        "completeHits": 11,
+        "targetFalsePointScenes": 12,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9990354159912876,
+        "completeHits": 10,
+        "targetFalsePointScenes": 12,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9990780488490064,
+        "completeHits": 10,
+        "targetFalsePointScenes": 12,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9990780488490065,
+        "completeHits": 10,
+        "targetFalsePointScenes": 11,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9990820484216402,
+        "completeHits": 10,
+        "targetFalsePointScenes": 11,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9990820484216403,
+        "completeHits": 9,
+        "targetFalsePointScenes": 11,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9990848078523322,
+        "completeHits": 9,
+        "targetFalsePointScenes": 11,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9990848078523323,
+        "completeHits": 8,
+        "targetFalsePointScenes": 11,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9990928541433669,
+        "completeHits": 8,
+        "targetFalsePointScenes": 11,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.999092854143367,
+        "completeHits": 7,
+        "targetFalsePointScenes": 11,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9991262014340434,
+        "completeHits": 7,
+        "targetFalsePointScenes": 11,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9991262014340435,
+        "completeHits": 7,
+        "targetFalsePointScenes": 10,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9991334312882554,
+        "completeHits": 7,
+        "targetFalsePointScenes": 10,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9991334312882555,
+        "completeHits": 7,
+        "targetFalsePointScenes": 9,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9991462056666397,
+        "completeHits": 7,
+        "targetFalsePointScenes": 9,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9991462056666398,
+        "completeHits": 6,
+        "targetFalsePointScenes": 9,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9991653903404952,
+        "completeHits": 6,
+        "targetFalsePointScenes": 9,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9991653903404953,
+        "completeHits": 6,
+        "targetFalsePointScenes": 8,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9991654159832207,
+        "completeHits": 6,
+        "targetFalsePointScenes": 8,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9991654159832208,
+        "completeHits": 6,
+        "targetFalsePointScenes": 7,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9991698716860172,
+        "completeHits": 6,
+        "targetFalsePointScenes": 7,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9991698716860173,
+        "completeHits": 6,
+        "targetFalsePointScenes": 6,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9991814916055282,
+        "completeHits": 6,
+        "targetFalsePointScenes": 6,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9991814916055283,
+        "completeHits": 5,
+        "targetFalsePointScenes": 6,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9991886178972652,
+        "completeHits": 5,
+        "targetFalsePointScenes": 6,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9991886178972653,
+        "completeHits": 4,
+        "targetFalsePointScenes": 6,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.999190974638182,
+        "completeHits": 4,
+        "targetFalsePointScenes": 6,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9991909746381821,
+        "completeHits": 4,
+        "targetFalsePointScenes": 5,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9992306971103991,
+        "completeHits": 4,
+        "targetFalsePointScenes": 5,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9992306971103992,
+        "completeHits": 3,
+        "targetFalsePointScenes": 5,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9992514764905256,
+        "completeHits": 3,
+        "targetFalsePointScenes": 5,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9992514764905257,
+        "completeHits": 3,
+        "targetFalsePointScenes": 4,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9992559193783904,
+        "completeHits": 3,
+        "targetFalsePointScenes": 4,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9992559193783905,
+        "completeHits": 2,
+        "targetFalsePointScenes": 4,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9992842904054903,
+        "completeHits": 2,
+        "targetFalsePointScenes": 4,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9992842904054904,
+        "completeHits": 2,
+        "targetFalsePointScenes": 3,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9992873386622172,
+        "completeHits": 2,
+        "targetFalsePointScenes": 3,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9992873386622173,
+        "completeHits": 1,
+        "targetFalsePointScenes": 3,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9992952590971733,
+        "completeHits": 1,
+        "targetFalsePointScenes": 3,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9992952590971734,
+        "completeHits": 1,
+        "targetFalsePointScenes": 2,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9993173689847632,
+        "completeHits": 1,
+        "targetFalsePointScenes": 2,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9993173689847633,
+        "completeHits": 0,
+        "targetFalsePointScenes": 2,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.99931765990729,
+        "completeHits": 0,
+        "targetFalsePointScenes": 2,
+        "absenceFalsePointScenes": 0,
+        "feasible": false
+      },
+      {
+        "threshold": 0.9993176599072902,
+        "completeHits": 0,
+        "targetFalsePointScenes": 1,
+        "absenceFalsePointScenes": 0,
+        "feasible": true
+      },
+      {
+        "threshold": 0.9994180010813251,
+        "completeHits": 0,
+        "targetFalsePointScenes": 1,
+        "absenceFalsePointScenes": 0,
+        "feasible": true
+      },
+      {
+        "threshold": 0.9994180010813252,
+        "completeHits": 0,
+        "targetFalsePointScenes": 0,
+        "absenceFalsePointScenes": 0,
+        "feasible": true
+      },
+      {
+        "threshold": 1.00000001,
+        "completeHits": 0,
+        "targetFalsePointScenes": 0,
+        "absenceFalsePointScenes": 0,
+        "feasible": true
+      }
+    ],
+    "scope": "Exact validation critical-score frontier; no fitting or test scoring."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "recordedAtUtc": "2026-10-11T01:11:35Z",
+  "clockSource": "clock.curr_time",
+  "legacyCheckpoint": "outputs/waldo-search-lab/dist/model/model.json",
+  "legacyCheckpointSHA256": "9655fb62c446acd7239904f993d82aa6a05915bac07efffebaa83c5211d3d1f2",
+  "predictRuntime": "outputs/waldo-search-lab/dist/qnn.js",
+  "predictRuntimeSHA256": "c881e6a815c7e5e1b4013a241d7b36ff78f3c21ac49ef0f47f2f8005979e972e",
+  "purpose": "Confirm the separately retained original-art checkpoint stays unchanged during current-QNN training and audit. No candidate checkpoint inspected."
+}

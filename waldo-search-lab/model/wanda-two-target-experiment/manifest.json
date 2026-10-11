@@ -1,0 +1,46 @@
+{
+  "recordedAtUtc": "2026-10-11T05:51:38.285Z",
+  "modelSHA256": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88",
+  "files": {
+    "browser-audit.mjs": "f03306a4ca394513b0dd213c047c862b1e8478a4e4239fc21477a5ad93e109cd",
+    "browser-report.json": "30fa3cee150ad1ae434b090773af58ba979f520e40e8fe7ba5004bdbd85bb37b",
+    "browser-two-grover-history.json.gz": "48753a245a217d935acb83adb124356248e7c9fc69c30acf7f76d607f2aba71d",
+    "browser-two-sampled-addresses.json": "4db660bccb51d4afeb4b2bbd325098fa0e845fd894cdadd6292a4c02a14418a5",
+    "browser-two-scan.json.gz": "72d3e17124fde94bd72702ea796d039aa732b181c8ac4f8710b84c47f99f7b46",
+    "browser-two-scene.png": "24c6b496c34847da273a5170654ca360271c08d47cfaa8bb44ff7400d0a80b3f",
+    "convergence.svg": "3369c954dfe51e9f3814005595ad79f670d75b117403288144b923d734fbe865",
+    "one-grover-history.json.gz": "e19cea2f1eed38ceeab35a6f989a9c7183c5706d9c093ddbd25f106a900e8129",
+    "one-sampled-addresses.json": "9fe4abd7ce46f066ab65ce114ded0edf6513eae7d08995a9c720b3863a40cc02",
+    "one-scan.json.gz": "cb27cc1bce115b64f2011c43531eecd3282cb32604aaf2972d694606b1b6d592",
+    "one-scene.png": "58da260d137b7844341ab259091bedce84d34bcb1de8e8be08c6d31d8b16796c",
+    "plot.py": "1414948f233642fac1a3d58dd6ccdd810e5c9cf87f250c4be9aa18fe968fc40e",
+    "README.md": "4dd65ed9caa16af344dea1b1509e789a3238a12595c9614de26357b445770c44",
+    "report.json": "2947ee3c212687d75d6ad73515997485e9fe558c658b418fff9cce99969e4f2e",
+    "run.mjs": "9f5dbc163e68e1d55d583911a84bfe0aac73d4bcaee24785b5c9ecaaed30b715",
+    "two-grover-history.json.gz": "48753a245a217d935acb83adb124356248e7c9fc69c30acf7f76d607f2aba71d",
+    "two-sampled-addresses.json": "4db660bccb51d4afeb4b2bbd325098fa0e845fd894cdadd6292a4c02a14418a5",
+    "two-scan.json.gz": "96d3fef3bf63eb1a3c526247e6cf826761a8ca1697371b6d9bed0703bd0ad1ef",
+    "two-scene.png": "c5a9695a1fa64f50be13f8db7fc925b48356deb6b2f49b972ad8978af94009d1"
+  },
+  "illustration": {
+    "path": "../../../wanda-two-target-experiment.png",
+    "sha256": "84032af2bfeb0b5f44d1d7f862eb12c1317fe85d582a666b8c84ab603296698f"
+  },
+  "convergence": {
+    "path": "../../../wanda-two-target-convergence.png",
+    "sha256": "42fd772cb51ee43fd0d85fd9717af88fdf58b4ba9f0a5750f3fa1247bb28d265"
+  },
+  "browserBackground": {
+    "file": "../../../../work/wanda-two-target-browser-background.png",
+    "sha256": "12b6a7c2370fe62454306f6300230a84e94886da2c1ab9a55a36e00be4d7557a",
+    "containsOnlySecondWanda": true,
+    "requestedCenter": [
+      276,
+      348
+    ],
+    "renderedCenter": [
+      276.5,
+      348
+    ]
+  }
+}

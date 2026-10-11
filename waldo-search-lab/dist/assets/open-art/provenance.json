@@ -1,0 +1,120 @@
+{
+  "verifiedAtUtc": "2026-10-10T17:56:13.328529+00:00",
+  "assets": [
+    {
+      "path": "bruegel-childrens-games.jpg",
+      "observedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Children%27s_Games_%28Bruegel%29.jpg/3840px-Children%27s_Games_%28Bruegel%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "resolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Children%27s_Games_%28Bruegel%29.jpg/3840px-Children%27s_Games_%28Bruegel%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "bytes": 2966195,
+      "sha256": "5b9a695aaa88b4a0ebebbbb1598247a773e58ae9f9275c56eeb8304d978dec67",
+      "mime": "image/jpeg",
+      "downloadedAtUtc": "2026-10-10T17:49:14.741452+00:00",
+      "localRasterEdits": false,
+      "dimensions": [
+        3840,
+        2769
+      ],
+      "format": "JPEG",
+      "title": "Children's Games",
+      "artist": "Pieter Bruegel the Elder",
+      "date": "1560",
+      "collection": "Kunsthistorisches Museum, Vienna",
+      "accession": "GG_1017",
+      "imageSourceCredit": "Inside Bruegel",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Children's_Games_(Bruegel).jpg",
+      "sourceRevision": 1123276037,
+      "rights": "PD-Art / Public Domain Mark 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+    },
+    {
+      "path": "seurat-grande-jatte.jpg",
+      "observedDownloadUrl": "https://www.artic.edu/iiif/2/2d484387-2509-5e8e-2c43-22f9981972eb/full/843,/0/default.jpg",
+      "resolvedUrl": "https://www.artic.edu/iiif/2/2d484387-2509-5e8e-2c43-22f9981972eb/full/843,/0/default.jpg",
+      "bytes": 197727,
+      "sha256": "90197c037e6041fcae1c35606b921b5b626d868c2ff21cd653edb640b3f6e2dd",
+      "mime": "image/jpeg",
+      "downloadedAtUtc": "2026-10-10T17:49:15.885271+00:00",
+      "localRasterEdits": false,
+      "dimensions": [
+        843,
+        565
+      ],
+      "format": "JPEG",
+      "title": "A Sunday on La Grande Jatte — 1884",
+      "artist": "Georges Seurat",
+      "date": "1884–86, border added 1888–89",
+      "collection": "Art Institute of Chicago",
+      "accession": "1926.224",
+      "creditLine": "Helen Birch Bartlett Memorial Collection",
+      "imageSourceCredit": "Digital image courtesy of the Art Institute of Chicago",
+      "sourcePage": "https://www.artic.edu/artworks/27992/a-sunday-on-la-grande-jatte-1884",
+      "primaryApi": "https://api.artic.edu/api/v1/artworks/27992",
+      "rights": "Public domain per museum API is_public_domain:true",
+      "metadataLicenseIsNotImageLicense": true
+    },
+    {
+      "path": "openmoji-standing-source.svg",
+      "observedDownloadUrl": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F9CD.svg",
+      "resolvedUrl": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F9CD.svg",
+      "bytes": 1567,
+      "sha256": "5de868175fd349d4e65af04ddae3bf5eb95f221b79294fa06b397dcc51172b0e",
+      "mime": "image/svg+xml",
+      "downloadedAtUtc": "2026-10-10T17:49:17.020562+00:00",
+      "localRasterEdits": false,
+      "title": "Person standing",
+      "unicode": "1F9CD",
+      "artist": "Laura Dworatschek / OpenMoji",
+      "date": "2019-05-06",
+      "sourcePage": "https://github.com/hfg-gmuend/openmoji/blob/master/color/svg/1F9CD.svg",
+      "sourceBlobSha1": "0ae925c25a26930b317eaa564c5f865b34f5fdad",
+      "rights": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "path": "openmoji-striped-standing.svg",
+      "title": "Striped standing person",
+      "artist": "Laura Dworatschek / OpenMoji; native clothing edit for Search Atlas",
+      "derivedFrom": "openmoji-standing-source.svg",
+      "bytes": 2899,
+      "sha256": "08678955203955561f1acf7ff3efe88adaae43135d9a2c565a1bb5660cfa6dce",
+      "rights": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "viewBox": [
+        24,
+        6,
+        23,
+        60
+      ],
+      "aspectRatio": "23/60",
+      "modifications": [
+        "Derived torso region with red/white horizontal SVG pattern clipped to original body silhouette",
+        "Blue trousers clipped to original body silhouette",
+        "Portrait SVG viewBox; source file preserved unchanged"
+      ],
+      "externalResources": false,
+      "scriptOrEvents": false,
+      "clipMatchesSourceBody": true,
+      "imageGenerationUsed": false,
+      "rasterEditingUsed": false,
+      "renderingNote": "Explicit stripe rectangles preserve appearance across SVG rasterizers."
+    },
+    {
+      "path": "openmoji-striped-standing.png",
+      "title": "Striped standing person (PNG rendition)",
+      "artist": "Laura Dworatschek / OpenMoji; striped-shirt adaptation by project",
+      "sourcePath": "openmoji-striped-standing.svg",
+      "sourcePage": "https://github.com/hfg-gmuend/openmoji/blob/master/color/svg/1F9CD.svg",
+      "rights": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "method": "Native rendering of the provided modified vector source; transparent background",
+      "dimensions": [
+        230,
+        600
+      ],
+      "bytes": 15019,
+      "sha256": "8f1b7234e857ba70c84366fe67a4753ce98b9a3b439eb785af810e88c6ff5c94"
+    }
+  ],
+  "sourceBytesUnchanged": true,
+  "reservedEvaluationAssetsInspected": false
+}

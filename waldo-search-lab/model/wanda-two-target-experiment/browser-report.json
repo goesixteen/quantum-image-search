@@ -1,0 +1,114 @@
+{
+  "recordedAtUtc": "2026-10-11T05:51:38.223Z",
+  "scope": "Engineering experiment on actual Chromium final-RGB PNG exported by the website. Frozen model rescored locally; not a held-out accuracy estimate.",
+  "inputSHA256": "24c6b496c34847da273a5170654ca360271c08d47cfaa8bb44ff7400d0a80b3f",
+  "modelSHA256": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88",
+  "featureSHA256": "bc9292a9dbc9ada24611916118e297aeb06d3d2eb8a5961c31f968162c26decf",
+  "inferenceInputs": [
+    "actual browser final opaque RGB",
+    "declared15x52 size",
+    "frozen Wanda model"
+  ],
+  "N": 4096,
+  "M": 2,
+  "peak": 35,
+  "maximum": 73,
+  "threshold": 0.9056472752971427,
+  "diagnostics": {
+    "scoreEvaluations": 4096,
+    "qnnCircuitEvaluations": 4096,
+    "featureSamplesPerWindow": 1792,
+    "acceptedBeforeNMS": 2,
+    "suppressedCount": 0,
+    "nmsRadius": 12,
+    "threshold": 0.9056472752971427,
+    "runtimeMs": 1033.636,
+    "oracle": "trained four-qubit Wanda QNN sigmoid readout",
+    "inferenceInputs": [
+      "final scene RGB",
+      "declared target width/height",
+      "saved model"
+    ]
+  },
+  "acceptedPoints": [
+    {
+      "index": 2420,
+      "x": 420,
+      "y": 300,
+      "score": 0.9883096231965375,
+      "distances": [
+        0.5,
+        151.31506864816868
+      ],
+      "correct": true
+    },
+    {
+      "index": 2786,
+      "x": 276,
+      "y": 348,
+      "score": 0.986674837069946,
+      "distances": [
+        152.26375143152094,
+        0.5
+      ],
+      "correct": true
+    }
+  ],
+  "independentGrading": {
+    "centers": [
+      {
+        "x": 420.5,
+        "y": 300
+      },
+      {
+        "x": 276.5,
+        "y": 348
+      }
+    ],
+    "pointTolerance": 6.656854249492381,
+    "trueAddressSets": [
+      [
+        2420
+      ],
+      [
+        2786
+      ]
+    ],
+    "falseAcceptedPoints": 0,
+    "websiteGraderScope": "The ordinary website knows only its inserted first copy at420.5/300. The embedded second is background RGB; the experiment grader independently knows both after scoring."
+  },
+  "probabilities": {
+    "accepted": 0.9999968477766265,
+    "eitherTrueTarget": 0.9999968477766265,
+    "eachTarget": [
+      0.4999984238883132,
+      0.4999984238883132
+    ],
+    "unmarked": 0.000003152223374445703
+  },
+  "samples": {
+    "seed": 2026101107,
+    "draws": 10000,
+    "counts": {
+      "2420": 4987,
+      "2786": 5013
+    },
+    "eachTarget": [
+      4987,
+      5013
+    ],
+    "unmarked": 0,
+    "misses": 0,
+    "noPostselection": true
+  },
+  "verification": {
+    "maxFormulaError": 1.5543122344752192e-15,
+    "maxNormError": 9.325873406851315e-14
+  },
+  "files": {
+    "rawScene": "browser-two-scene.png",
+    "scan": "browser-two-scan.json.gz",
+    "exactHistory": "browser-two-grover-history.json.gz",
+    "allSampledAddresses": "browser-two-sampled-addresses.json"
+  }
+}

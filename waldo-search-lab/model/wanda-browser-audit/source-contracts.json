@@ -1,0 +1,35 @@
+{
+  "nativeReferences": {
+    "featureVersion": "wanda-window-v1",
+    "featureNames": [
+      "sweater_stripe_fourier",
+      "sweater_cross_phase",
+      "sweater_red_white_balance",
+      "warm_face_brown_hair",
+      "blue_trouser_morphology",
+      "body_horizontal_alignment_px",
+      "body_vertical_alignment_px",
+      "supplied_wanda_height"
+    ],
+    "modelSHA256": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88",
+    "featureJS_SHA256": "bc9292a9dbc9ada24611916118e297aeb06d3d2eb8a5961c31f968162c26decf",
+    "qnnJS_SHA256": "c881e6a815c7e5e1b4013a241d7b36ff78f3c21ac49ef0f47f2f8005979e972e",
+    "sceneEditorSHA256": "645d3799f9eb27ac39b81aa4c9a8659cea551e00a699560046cb36eb13ff61ae",
+    "appSHA256AtStart": "87d5a7664d234ccf0142e4fa5a5e2a429477d119561d27d9b0da5b2abe7ea60e",
+    "threshold": 0.9056472752971427,
+    "grid": 64,
+    "pointTolerance": 6.657,
+    "knownSizeOnly": true,
+    "scope": "Read-only cross-backend engineering fixtures at known default center;15targets+5absences; not a fresh statistical holdout; no threshold/feature/model changes",
+    "renderer": "@napi-rs/canvas high512background staging; alpha>16trim; high target resize; resizedsprite targetSmoothing=false; frontdepth1000; opaque finalRGBA",
+    "appSHA256AtFinish": "87d5a7664d234ccf0142e4fa5a5e2a429477d119561d27d9b0da5b2abe7ea60e"
+  },
+  "observedLocalSourcesAtComparison": {
+    "app.js": "87d5a7664d234ccf0142e4fa5a5e2a429477d119561d27d9b0da5b2abe7ea60e",
+    "underhood.js": "0ea9cf3acb49485bd4d1825abf59a24ef8347337c05b655e2449665cc91bf706",
+    "scene-editor.js": "645d3799f9eb27ac39b81aa4c9a8659cea551e00a699560046cb36eb13ff61ae"
+  },
+  "pythonFeatureSHA256": "b9f3de6a53ce4bdb74f45d2b2687147b80090a8da50432d19b13db9e5c5994a0",
+  "pythonCircuitSHA256": "8d4fdd3e80d651e92ca6cf6f3450cf1048934762d9add9de612b3d06dabc4005",
+  "browserSourceClaim": "Parent captured current local source through visible DOM/UI, URL in capture metadata; local hashes are recorded separately from actual loaded browser source provenance."
+}

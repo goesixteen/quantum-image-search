@@ -1,0 +1,99 @@
+{
+  "scope": "Known default center belongs training partition; separate post-selection regression, not held-out scene generalization. Native high-quality resize; no threshold changes from these outcomes.",
+  "depthMode": "auto",
+  "modelSHA256": "e95a75e862a74916660b5fe2e5b24994362828ea41452e3c47a5f7d32f8d7777",
+  "scriptSHA256": "691a40d9f2de7a5ef03fbc4bfe645efc31c212accf703ca6e45f4c6b80204576",
+  "threshold": 0.9930900033313339,
+  "results": [
+    {
+      "scene": "legacy",
+      "present": true,
+      "center": [
+        280,
+        350
+      ],
+      "height": 52,
+      "width": 18,
+      "visibleFraction": 0.9425291737337933,
+      "accepted": [],
+      "correctPoints": 0,
+      "falsePoints": 0,
+      "maxScore": 0.990897866516045
+    },
+    {
+      "scene": "legacy",
+      "present": false,
+      "center": null,
+      "height": 52,
+      "width": 18,
+      "visibleFraction": 0,
+      "accepted": [],
+      "correctPoints": 0,
+      "falsePoints": 0,
+      "maxScore": 0.7901327641431284
+    },
+    {
+      "scene": "magic-arena",
+      "present": true,
+      "center": [
+        280,
+        350
+      ],
+      "height": 52,
+      "width": 18,
+      "visibleFraction": 1,
+      "accepted": [
+        {
+          "point": [
+            284,
+            348
+          ],
+          "score": 0.9932654559787143,
+          "distance": 4.47213595499958
+        }
+      ],
+      "correctPoints": 1,
+      "falsePoints": 0,
+      "maxScore": 0.9932654559787143
+    },
+    {
+      "scene": "magic-arena",
+      "present": false,
+      "center": null,
+      "height": 52,
+      "width": 18,
+      "visibleFraction": 0,
+      "accepted": [],
+      "correctPoints": 0,
+      "falsePoints": 0,
+      "maxScore": 0.2846525902944697
+    },
+    {
+      "scene": "qualicity-queue",
+      "present": true,
+      "center": [
+        280,
+        350
+      ],
+      "height": 52,
+      "width": 18,
+      "visibleFraction": 0.042631448554494696,
+      "accepted": [],
+      "correctPoints": 0,
+      "falsePoints": 0,
+      "maxScore": 0.455956602937892
+    },
+    {
+      "scene": "qualicity-queue",
+      "present": false,
+      "center": null,
+      "height": 52,
+      "width": 18,
+      "visibleFraction": 0,
+      "accepted": [],
+      "correctPoints": 0,
+      "falsePoints": 0,
+      "maxScore": 0.455956602937892
+    }
+  ]
+}

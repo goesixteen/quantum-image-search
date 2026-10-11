@@ -1,0 +1,17 @@
+{
+  "recordedAtUtc": "2026-10-11T02:11:06Z",
+  "clockSource": "clock.curr_time",
+  "authorization": "Trainer and root explicitly declared the usable clean-front candidate frozen and authorized the unchanged independent audit. No further fitting or threshold selection.",
+  "model": "work/qnn-current/current-qnn.json",
+  "modelSHA256": "9c5a25af8a37eb8482f09e49631418e63c05c47d0317fd0a2a5ead9b6c63465a",
+  "threshold": 0.967190378886187,
+  "candidateFreeze": "work/qnn-current/candidate-freeze.json",
+  "candidateAndSourceFreezeHashesVerified": true,
+  "featureVersion": "current-qnn-window-v3",
+  "javascriptSHA256": "6e3dfd5349fdc439629640d5aac3e0b467ccc2e362a0b9273d79584f5159a61a",
+  "pythonSHA256": "fc1466ffbd92027178e4d2bd52a7ca342c464292d5cf7117f6fc150b80deb0c3",
+  "protocolSHA256": "4a113cef7f0dcd84f61845dae60703db5952e0355d95bf7256d79fb58fb6eb90",
+  "harnessSHA256": "a1b8342c1085ea4b9ad6dd2068593f4756d394fcd5ce42be53c615a85c749c10",
+  "independentModelScoresReadBeforeThisLock": false,
+  "auditUnchanged": "840 probes (300 clean, 540 band crossings), 12 absences and 3 historical auto-banded regression checks. Native-default smoothing preserved despite browser-high primary UI. The audit will not change the model or threshold."
+}

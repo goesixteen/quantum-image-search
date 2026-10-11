@@ -10,3 +10,8 @@ venv/
 .sites-checkout/
 .DS_Store
 Thumbs.db
+
+# Local export and synchronization artifacts; application ZIPs remain tracked.
+/quantum-image-search-deliverables.zip
+/GITHUB_SYNC_RECEIPT.json
+/github-private-sync-proof.png

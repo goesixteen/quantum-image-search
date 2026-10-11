@@ -1,0 +1,15 @@
+{
+  "phase": "before held-out full-scene test and independent audit",
+  "files": {
+    "protocol.json": "9454ef13e93616373dee09e90cbff34d971cb9887ae8758b5421b285ea27b1ff",
+    "build-corpus.mjs": "1156f52dfec95dba354151293b682f5bcf7a6ec0a3029e4883d51fa7d85c0a98",
+    "train_current_qnn.py": "0cb4be103b3b482749f4f3c57fa06b405459c22be9513acc9acba02938bde934",
+    "current-qnn.json": "f6cbdc8e4ef2a492013046cab5a9ea67aea65882b913d112dcd7e976668b5b1f",
+    "current-logistic.json": "e14b170fd1f30d97e5c107bb3d7bb3b0aaf0c8f49c73c34309e88bce681a95b7",
+    "validation-threshold-frontier.json": "39f8589fa3737fb6931d6a09ef82879e7807bac87a856bad5c05d6c18b8b2a90",
+    "feature-collisions.json": "82d8525f7b7c8cd2384dbc31ba162c3587726c75a594a2e85cf1c2a487bb7a95",
+    "quantum-contribution.json": "0c11e4bb62c352683fce4bad74cc6a491c69a1ba65fefaef382504ce38d657fe",
+    "trained-parity-fixtures.json": "0bf93634eca2b3fcbdf8f42e17a54fa76427c447c83e2f9da7d149bec06db9f1"
+  },
+  "elapsedSeconds": 13.709978103637695
+}

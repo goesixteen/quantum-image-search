@@ -1,0 +1,500 @@
+{
+  "version": 1,
+  "scene": "magic-arena",
+  "sceneSize": 512,
+  "bandHeight": 16,
+  "alphaThreshold": 32,
+  "depthConvention": "front-when-lower",
+  "depthTieBreak": "foreground-front",
+  "method": "Whole supplied transparent object PNGs grouped by floor((alphaBottom-1)/bandHeight). Each full-scene row uses maximum member bottom; silhouettes are never horizontally sliced. Known authored masks, not semantic segmentation or automatic ground removal.",
+  "objectAtlas": {
+    "path": "assets/depth-bands/magic-arena/objects-only.png",
+    "sha256": "347e8bdd09f4b4969fa2ddb4eb897e629f5df63d3ef51ee2f977b04cf449db9f",
+    "width": 512,
+    "height": 512
+  },
+  "sourceObjects": [
+    {
+      "id": "arena-covered-podium",
+      "png": "assets/layers/magic-arena/arena-covered-podium.png",
+      "sha256": "84426456eafd0c3d7b72903e53bd5efcf80661bce638b882b81a8bba110bb7f6",
+      "maskPNG": "assets/layers/magic-arena/arena-covered-podium-mask.png",
+      "maskSHA256": "692b7a49d748718a8d0b93841144254d5aba17afff98f153a19f32fce9691955",
+      "position": {
+        "x": 256,
+        "y": 259
+      }
+    },
+    {
+      "id": "arena-right-stall",
+      "png": "assets/layers/magic-arena/arena-right-stall.png",
+      "sha256": "1a35015dd12415cca8e6bdae80414845afa2df264a182e754c08d9c6e627597c",
+      "maskPNG": "assets/layers/magic-arena/arena-right-stall-mask.png",
+      "maskSHA256": "f7a2cd1e534d9f646a2bcc351b873ea2a5a490799cca1dbcc1b2bc054459f138",
+      "position": {
+        "x": 459,
+        "y": 304
+      }
+    },
+    {
+      "id": "arena-left-entrance",
+      "png": "assets/layers/magic-arena/arena-left-entrance.png",
+      "sha256": "277b728d57db2b5d8621cdfcbecd3d591c28c8c497d5b3eab4968fe6dc8adc4e",
+      "maskPNG": "assets/layers/magic-arena/arena-left-entrance-mask.png",
+      "maskSHA256": "3e4a29886760744bab3c05961d2172f290a540c58d0c467a03e37760d3e3c892",
+      "position": {
+        "x": 47,
+        "y": 234
+      }
+    },
+    {
+      "id": "arena-brass-tuba",
+      "png": "assets/layers/magic-arena/arena-brass-tuba.png",
+      "sha256": "dd4458775183ce0f731f8a580bf46d4fcec5e966bcb34baecf723c89ab7b1944",
+      "maskPNG": "assets/layers/magic-arena/arena-brass-tuba-mask.png",
+      "maskSHA256": "b6d20c4d11dcc589bc07dea8234d2bf1cea47d62089fa4084154ba0349369e4b",
+      "position": {
+        "x": 6,
+        "y": 436
+      }
+    },
+    {
+      "id": "arena-purple-contestant",
+      "png": "assets/layers/magic-arena/arena-purple-contestant.png",
+      "sha256": "5cf4c1c36f07d645ebedf3dc45512eb851f639e7ced1acede7c7ed0543bffb49",
+      "maskPNG": "assets/layers/magic-arena/arena-purple-contestant-mask.png",
+      "maskSHA256": "b3b23d92580e3240342aeb04fc8ccd549ceec475962cd9d01e90c21c65b8df58",
+      "position": {
+        "x": 133,
+        "y": 375
+      }
+    },
+    {
+      "id": "arena-green-contestant",
+      "png": "assets/layers/magic-arena/arena-green-contestant.png",
+      "sha256": "1f578b69655b3d583ae371e7d8d3c8802819122538efdaa20b504235c74234c1",
+      "maskPNG": "assets/layers/magic-arena/arena-green-contestant-mask.png",
+      "maskSHA256": "ffdb6978f5e6aa356b4a158c5af8ff0e54caa77d50164a51a30fe44ae544f2da",
+      "position": {
+        "x": 127,
+        "y": 322
+      }
+    },
+    {
+      "id": "arena-red-rear-contestant",
+      "png": "assets/layers/magic-arena/arena-red-rear-contestant.png",
+      "sha256": "5953f71c33a6b3991ddd4030ab0963456ea08fcd125f81068885d78bb6e50e93",
+      "maskPNG": "assets/layers/magic-arena/arena-red-rear-contestant-mask.png",
+      "maskSHA256": "b683e3f66ffcf2bb1f605f90001d6aac61e6cca16a9f769cf2c2688caca20707",
+      "position": {
+        "x": 199,
+        "y": 291
+      }
+    },
+    {
+      "id": "arena-gold-contestant",
+      "png": "assets/layers/magic-arena/arena-gold-contestant.png",
+      "sha256": "ff6171d21d1255f41eeb9c61d8746ec447b47d5e6ca7bb31b7f005eabae1f108",
+      "maskPNG": "assets/layers/magic-arena/arena-gold-contestant-mask.png",
+      "maskSHA256": "5a323cf42015e701f2277f95f558542feb4824aab7cb45e2b60e51a6c10f1c54",
+      "position": {
+        "x": 232,
+        "y": 333
+      }
+    },
+    {
+      "id": "arena-brown-contestant",
+      "png": "assets/layers/magic-arena/arena-brown-contestant.png",
+      "sha256": "d1c4ede0502551e7d15c9706b5613ed226548e68b16406364ade2b6a57874b9a",
+      "maskPNG": "assets/layers/magic-arena/arena-brown-contestant-mask.png",
+      "maskSHA256": "f39e33d628a3ab484bb72074f31f08b09a74b2551ebbc2f434f325a6de2fdb95",
+      "position": {
+        "x": 339,
+        "y": 334
+      }
+    },
+    {
+      "id": "arena-red-front-contestant",
+      "png": "assets/layers/magic-arena/arena-red-front-contestant.png",
+      "sha256": "b2ebf5c3d124abdc9cb1a79e5e41285b2cb81b5e5ecd7445bda60404b7414c3f",
+      "maskPNG": "assets/layers/magic-arena/arena-red-front-contestant-mask.png",
+      "maskSHA256": "4484eb336b61d657d144cf5eb991246d1bd79094700c0fa8611d9db44f66078f",
+      "position": {
+        "x": 291,
+        "y": 381
+      }
+    }
+  ],
+  "objects": [
+    {
+      "id": "arena-covered-podium",
+      "name": "Cloth-covered central podium",
+      "depthAnchorY": 331,
+      "level": 20,
+      "bounds": {
+        "x": 256,
+        "y": 259,
+        "width": 64,
+        "height": 72
+      }
+    },
+    {
+      "id": "arena-right-stall",
+      "name": "Right red-striped awning and stall",
+      "depthAnchorY": 462,
+      "level": 28,
+      "bounds": {
+        "x": 459,
+        "y": 304,
+        "width": 53,
+        "height": 158
+      }
+    },
+    {
+      "id": "arena-left-entrance",
+      "name": "Left stone entrance and gate",
+      "depthAnchorY": 330,
+      "level": 20,
+      "bounds": {
+        "x": 47,
+        "y": 234,
+        "width": 80,
+        "height": 96
+      }
+    },
+    {
+      "id": "arena-brass-tuba",
+      "name": "Foreground brass tuba",
+      "depthAnchorY": 503,
+      "level": 31,
+      "bounds": {
+        "x": 6,
+        "y": 436,
+        "width": 45,
+        "height": 67
+      }
+    },
+    {
+      "id": "arena-purple-contestant",
+      "name": "Purple foreground contestant",
+      "depthAnchorY": 409,
+      "level": 25,
+      "bounds": {
+        "x": 133,
+        "y": 375,
+        "width": 13,
+        "height": 34
+      }
+    },
+    {
+      "id": "arena-green-contestant",
+      "name": "Green contestant near entrance",
+      "depthAnchorY": 350,
+      "level": 21,
+      "bounds": {
+        "x": 127,
+        "y": 322,
+        "width": 12,
+        "height": 28
+      }
+    },
+    {
+      "id": "arena-red-rear-contestant",
+      "name": "Red contestant behind podium",
+      "depthAnchorY": 322,
+      "level": 20,
+      "bounds": {
+        "x": 199,
+        "y": 291,
+        "width": 11,
+        "height": 31
+      }
+    },
+    {
+      "id": "arena-gold-contestant",
+      "name": "Gold contestant holding a prop",
+      "depthAnchorY": 360,
+      "level": 22,
+      "bounds": {
+        "x": 232,
+        "y": 333,
+        "width": 15,
+        "height": 27
+      }
+    },
+    {
+      "id": "arena-brown-contestant",
+      "name": "Brown contestant on right",
+      "depthAnchorY": 360,
+      "level": 22,
+      "bounds": {
+        "x": 339,
+        "y": 334,
+        "width": 12,
+        "height": 26
+      }
+    },
+    {
+      "id": "arena-red-front-contestant",
+      "name": "Red foreground contestant",
+      "depthAnchorY": 412,
+      "level": 25,
+      "bounds": {
+        "x": 291,
+        "y": 381,
+        "width": 12,
+        "height": 31
+      }
+    }
+  ],
+  "bands": [
+    {
+      "id": "depth-band-20",
+      "name": "Depth row 21",
+      "enabled": true,
+      "zIndex": 20,
+      "paths": [],
+      "level": 20,
+      "depthRange": {
+        "start": 320,
+        "endExclusive": 336
+      },
+      "memberIDs": [
+        "arena-covered-podium",
+        "arena-left-entrance",
+        "arena-red-rear-contestant"
+      ],
+      "memberDepthAnchors": [
+        {
+          "id": "arena-covered-podium",
+          "y": 331
+        },
+        {
+          "id": "arena-left-entrance",
+          "y": 330
+        },
+        {
+          "id": "arena-red-rear-contestant",
+          "y": 322
+        }
+      ],
+      "depthAnchorY": 331,
+      "bounds": {
+        "x": 47,
+        "y": 234,
+        "width": 273,
+        "height": 97
+      },
+      "cutoutPNG": "assets/depth-bands/magic-arena/depth-band-20.png",
+      "maskPNG": "assets/depth-bands/magic-arena/depth-band-20-mask.png",
+      "cutoutPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sha256": "80041bbf6c596418eafba61f7ebcee117b913519a05158b75a91f38f0566a134",
+      "maskSHA256": "2c7ff599a6f64c7c1c9f301c8ef224c83cdfbdac6a8fc8082454254a3dfe18a2",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "depth-band-21",
+      "name": "Depth row 22",
+      "enabled": true,
+      "zIndex": 21,
+      "paths": [],
+      "level": 21,
+      "depthRange": {
+        "start": 336,
+        "endExclusive": 352
+      },
+      "memberIDs": [
+        "arena-green-contestant"
+      ],
+      "memberDepthAnchors": [
+        {
+          "id": "arena-green-contestant",
+          "y": 350
+        }
+      ],
+      "depthAnchorY": 350,
+      "bounds": {
+        "x": 127,
+        "y": 322,
+        "width": 12,
+        "height": 28
+      },
+      "cutoutPNG": "assets/depth-bands/magic-arena/depth-band-21.png",
+      "maskPNG": "assets/depth-bands/magic-arena/depth-band-21-mask.png",
+      "cutoutPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sha256": "97f8ed84b78bf1f33f54164c065cc55fcc603c41d4242dc78504873c7708639b",
+      "maskSHA256": "ffdb6978f5e6aa356b4a158c5af8ff0e54caa77d50164a51a30fe44ae544f2da",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "depth-band-22",
+      "name": "Depth row 23",
+      "enabled": true,
+      "zIndex": 22,
+      "paths": [],
+      "level": 22,
+      "depthRange": {
+        "start": 352,
+        "endExclusive": 368
+      },
+      "memberIDs": [
+        "arena-gold-contestant",
+        "arena-brown-contestant"
+      ],
+      "memberDepthAnchors": [
+        {
+          "id": "arena-gold-contestant",
+          "y": 360
+        },
+        {
+          "id": "arena-brown-contestant",
+          "y": 360
+        }
+      ],
+      "depthAnchorY": 360,
+      "bounds": {
+        "x": 232,
+        "y": 333,
+        "width": 119,
+        "height": 27
+      },
+      "cutoutPNG": "assets/depth-bands/magic-arena/depth-band-22.png",
+      "maskPNG": "assets/depth-bands/magic-arena/depth-band-22-mask.png",
+      "cutoutPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sha256": "d77210b8a75a1e43cf72e2f7cc69efe8c980f8dea2378d05cd6bc4da6483581a",
+      "maskSHA256": "0cd35f380f69a9165d383aff89fdd614e09dba8b337ed7c65877788f8d9b54a4",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "depth-band-25",
+      "name": "Depth row 26",
+      "enabled": true,
+      "zIndex": 25,
+      "paths": [],
+      "level": 25,
+      "depthRange": {
+        "start": 400,
+        "endExclusive": 416
+      },
+      "memberIDs": [
+        "arena-purple-contestant",
+        "arena-red-front-contestant"
+      ],
+      "memberDepthAnchors": [
+        {
+          "id": "arena-purple-contestant",
+          "y": 409
+        },
+        {
+          "id": "arena-red-front-contestant",
+          "y": 412
+        }
+      ],
+      "depthAnchorY": 412,
+      "bounds": {
+        "x": 133,
+        "y": 375,
+        "width": 170,
+        "height": 37
+      },
+      "cutoutPNG": "assets/depth-bands/magic-arena/depth-band-25.png",
+      "maskPNG": "assets/depth-bands/magic-arena/depth-band-25-mask.png",
+      "cutoutPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sha256": "91106c6062debfee31d43fe34450c8254729c3b1b194c9bbdcef6d0f3c0aa524",
+      "maskSHA256": "11f71ef0f08780d030778469aeba0bb5f84b62ab0e4c7018098bb90fd4121208",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "depth-band-28",
+      "name": "Depth row 29",
+      "enabled": true,
+      "zIndex": 28,
+      "paths": [],
+      "level": 28,
+      "depthRange": {
+        "start": 448,
+        "endExclusive": 464
+      },
+      "memberIDs": [
+        "arena-right-stall"
+      ],
+      "memberDepthAnchors": [
+        {
+          "id": "arena-right-stall",
+          "y": 462
+        }
+      ],
+      "depthAnchorY": 462,
+      "bounds": {
+        "x": 459,
+        "y": 304,
+        "width": 53,
+        "height": 158
+      },
+      "cutoutPNG": "assets/depth-bands/magic-arena/depth-band-28.png",
+      "maskPNG": "assets/depth-bands/magic-arena/depth-band-28-mask.png",
+      "cutoutPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sha256": "0f289099840f2928d5ede24a7152a62d91d8eb459e202fe298a11ef26ee36064",
+      "maskSHA256": "f7a2cd1e534d9f646a2bcc351b873ea2a5a490799cca1dbcc1b2bc054459f138",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "depth-band-31",
+      "name": "Depth row 32",
+      "enabled": true,
+      "zIndex": 31,
+      "paths": [],
+      "level": 31,
+      "depthRange": {
+        "start": 496,
+        "endExclusive": 512
+      },
+      "memberIDs": [
+        "arena-brass-tuba"
+      ],
+      "memberDepthAnchors": [
+        {
+          "id": "arena-brass-tuba",
+          "y": 503
+        }
+      ],
+      "depthAnchorY": 503,
+      "bounds": {
+        "x": 6,
+        "y": 436,
+        "width": 45,
+        "height": 67
+      },
+      "cutoutPNG": "assets/depth-bands/magic-arena/depth-band-31.png",
+      "maskPNG": "assets/depth-bands/magic-arena/depth-band-31-mask.png",
+      "cutoutPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sha256": "51d952a5de0461237596c82b88a214491704dd7f130a0c63cf6b68a7b9be06e2",
+      "maskSHA256": "b6d20c4d11dcc589bc07dea8234d2bf1cea47d62089fa4084154ba0349369e4b",
+      "width": 512,
+      "height": 512
+    }
+  ]
+}

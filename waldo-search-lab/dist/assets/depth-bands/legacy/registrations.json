@@ -1,0 +1,1189 @@
+{
+  "version": 1,
+  "scene": "legacy",
+  "sceneSize": 512,
+  "bandHeight": 16,
+  "alphaThreshold": 32,
+  "depthConvention": "front-when-lower",
+  "depthTieBreak": "foreground-front",
+  "method": "Whole supplied transparent object PNGs grouped by floor((alphaBottom-1)/bandHeight). Each full-scene row uses maximum member bottom; silhouettes are never horizontally sliced. Known authored masks, not semantic segmentation or automatic ground removal.",
+  "objectAtlas": {
+    "path": "assets/depth-bands/legacy/objects-only.png",
+    "sha256": "e2e201ee2ebf4f767bf4ce5ab1da9047a3dfe5d1d27189bb0e8f62fc38924ed5",
+    "width": 512,
+    "height": 512
+  },
+  "sourceObjects": [
+    {
+      "id": "festival-fountain",
+      "png": "assets/layers/legacy/festival-fountain.png",
+      "sha256": "50939a2eedb6f9b949a88ec2e34848ec94b15b8ad83547afb64f7bf155c38ecf",
+      "maskPNG": "assets/layers/legacy/festival-fountain-mask.png",
+      "maskSHA256": "8e5b23a3be7a7203a6d3858c5bd523e6741a395e01a069ba0cfc6d776d78a2d4",
+      "position": {
+        "x": 237,
+        "y": 255
+      }
+    },
+    {
+      "id": "festival-cafe-umbrella",
+      "png": "assets/layers/legacy/festival-cafe-umbrella.png",
+      "sha256": "da42a54ec0c88107f279be010523299dbcc9a6f2a70e753018606f3b22670ab1",
+      "maskPNG": "assets/layers/legacy/festival-cafe-umbrella-mask.png",
+      "maskSHA256": "eb8ece4e9c50075bc93e9886d84563abdbb04d273c5e8d35cf8928a62887c23d",
+      "position": {
+        "x": 426,
+        "y": 309
+      }
+    },
+    {
+      "id": "festival-green-cart",
+      "png": "assets/layers/legacy/festival-green-cart.png",
+      "sha256": "d2abe8c04c0c10453091db52190e23db27e6ad1d83e03199fdf20ea06ba78704",
+      "maskPNG": "assets/layers/legacy/festival-green-cart-mask.png",
+      "maskSHA256": "6ef49717382ee7979bded6d3652692daa5f038d1e2baa65e1c4c5bac64c865fd",
+      "position": {
+        "x": 419,
+        "y": 198
+      }
+    },
+    {
+      "id": "festival-teal-cart",
+      "png": "assets/layers/legacy/festival-teal-cart.png",
+      "sha256": "d571a3ca3ad20c99cb4c8ad097a9917ebf56b1807476e812d4dcd17fff179a6f",
+      "maskPNG": "assets/layers/legacy/festival-teal-cart-mask.png",
+      "maskSHA256": "fa9f6b02040edd7f5e996d9fa2a90d90a44b93c1cea48931ff25462527a960d4",
+      "position": {
+        "x": 355,
+        "y": 381
+      }
+    },
+    {
+      "id": "festival-accordionist",
+      "png": "assets/layers/legacy/festival-accordionist.png",
+      "sha256": "c377278e41ed0c3ce98547093e37979595f933a8021d392bd4e50bae491c07bb",
+      "maskPNG": "assets/layers/legacy/festival-accordionist-mask.png",
+      "maskSHA256": "4669bd269d583176b2c39504df386ac3c7bded2a0e921d4c5e0f578c190eae64",
+      "position": {
+        "x": 279,
+        "y": 200
+      }
+    },
+    {
+      "id": "festival-bass-player",
+      "png": "assets/layers/legacy/festival-bass-player.png",
+      "sha256": "2330a9f59886fe90a4fe26bdf896ed50fc0dbcaf99b2bda036fa67c1954b3535",
+      "maskPNG": "assets/layers/legacy/festival-bass-player-mask.png",
+      "maskSHA256": "298e2afbbfb164c68bce6aeed60dc047db9e0a8c66bbb2d94450f1cf742393a4",
+      "position": {
+        "x": 237,
+        "y": 191
+      }
+    },
+    {
+      "id": "festival-blue-shopper",
+      "png": "assets/layers/legacy/festival-blue-shopper.png",
+      "sha256": "a4815e6c9c46807f3d7c9d32d2c3cb7d82684ceab7b15754e263fa859ffdddd4",
+      "maskPNG": "assets/layers/legacy/festival-blue-shopper-mask.png",
+      "maskSHA256": "beeedf79cf431aa0c49e9f729de1fe1026293165ab6b815341cabe0dca3341f2",
+      "position": {
+        "x": 151,
+        "y": 411
+      }
+    },
+    {
+      "id": "festival-navy-coat-woman",
+      "png": "assets/layers/legacy/festival-navy-coat-woman.png",
+      "sha256": "48c4e113c20d8d7064b0f04d16118373b65c756e327258ce6b7a45c1676c2f15",
+      "maskPNG": "assets/layers/legacy/festival-navy-coat-woman-mask.png",
+      "maskSHA256": "3e85217d27e4f020e5d02f230e3d3f7b1b8b5883b27f88e56a0d0de725649972",
+      "position": {
+        "x": 203,
+        "y": 431
+      }
+    },
+    {
+      "id": "festival-pale-suit-man",
+      "png": "assets/layers/legacy/festival-pale-suit-man.png",
+      "sha256": "c9644d51bd6e698f4fe12987fe8819bcddd78de06a2c91fabeda4222c0ec4c12",
+      "maskPNG": "assets/layers/legacy/festival-pale-suit-man-mask.png",
+      "maskSHA256": "438491f765bc89ec295664323c4ee9e171954d8ca49f83573bc180d6ca22c8c4",
+      "position": {
+        "x": 279,
+        "y": 370
+      }
+    },
+    {
+      "id": "festival-green-dress-woman",
+      "png": "assets/layers/legacy/festival-green-dress-woman.png",
+      "sha256": "1da6ea105b4f620cf3d4bb354c64c9a06f62761c99a76bcb76921c1b9cd0e2c4",
+      "maskPNG": "assets/layers/legacy/festival-green-dress-woman-mask.png",
+      "maskSHA256": "37196c53c133ecc59df1cabea1721ce3a7d3e7f6ba334d7aa51eded1189667b9",
+      "position": {
+        "x": 307,
+        "y": 315
+      }
+    },
+    {
+      "id": "festival-yellow-dancer",
+      "png": "assets/layers/legacy/festival-yellow-dancer.png",
+      "sha256": "86c2ebf4cf1e07d12d9a65095171a7134b7e0fd7802ecec399da278871039503",
+      "maskPNG": "assets/layers/legacy/festival-yellow-dancer-mask.png",
+      "maskSHA256": "4a8f42323baa1a9848d7fb040f01f597abef7e92b93b509c91394c051c5de658",
+      "position": {
+        "x": 348,
+        "y": 202
+      }
+    },
+    {
+      "id": "festival-blue-walker",
+      "png": "assets/layers/legacy/festival-blue-walker.png",
+      "sha256": "5d1ef9419adc3187b4aa6af935382eba8de8b45e1f603ddef2740b46bf1706e1",
+      "maskPNG": "assets/layers/legacy/festival-blue-walker-mask.png",
+      "maskSHA256": "487384442cb94228800284a7520a5b322fb56f46d8e557524e3596ef2716c983",
+      "position": {
+        "x": 362,
+        "y": 226
+      }
+    },
+    {
+      "id": "festival-extra-blue-market-canopy",
+      "png": "assets/layers/legacy/festival-extra-blue-market-canopy.png",
+      "sha256": "cd04b3d74585346e4bac76344fe1d63968014d1b3fc57fe522966c6a4c02c6f5",
+      "maskPNG": "assets/layers/legacy/festival-extra-blue-market-canopy-mask.png",
+      "maskSHA256": "e9b6d6ffbb3f400fa812aa1dfba84e1775733f179cb52359f08099453f1e79b2",
+      "position": {
+        "x": 184,
+        "y": 85
+      }
+    },
+    {
+      "id": "festival-extra-yellow-market-canopy",
+      "png": "assets/layers/legacy/festival-extra-yellow-market-canopy.png",
+      "sha256": "6b71a37839feaeabe3e8f29bfc6051a25090fe4083bfd4d916b978c4d7da3eb9",
+      "maskPNG": "assets/layers/legacy/festival-extra-yellow-market-canopy-mask.png",
+      "maskSHA256": "7ddfaaba3fd36bbfb7de048895a44dac306542bf2b768e4bc61bb544cf3fbe4f",
+      "position": {
+        "x": 136,
+        "y": 73
+      }
+    },
+    {
+      "id": "festival-extra-cream-upper-canopy",
+      "png": "assets/layers/legacy/festival-extra-cream-upper-canopy.png",
+      "sha256": "6e0335ada03cfc851768b420af5e435c0ce6c8188fa3a45b0b0ddee84f1ea0f6",
+      "maskPNG": "assets/layers/legacy/festival-extra-cream-upper-canopy-mask.png",
+      "maskSHA256": "1d21d4d8bd711fd818a749af5bc3c066a494a80a3b05fdf08fd70a1b060bea6c",
+      "position": {
+        "x": 242,
+        "y": 106
+      }
+    },
+    {
+      "id": "festival-extra-teal-left-canopy",
+      "png": "assets/layers/legacy/festival-extra-teal-left-canopy.png",
+      "sha256": "cd66831de514ee93c64cf464da2a9e9b6f7c3bc995d9af2deb8b9c4c0170abea",
+      "maskPNG": "assets/layers/legacy/festival-extra-teal-left-canopy-mask.png",
+      "maskSHA256": "d892ace0e4cd9b8038fa72f288563b14005bdc81b5ab132bc1e0b738a8d3fbf1",
+      "position": {
+        "x": 58,
+        "y": 156
+      }
+    },
+    {
+      "id": "festival-extra-cream-front-canopy",
+      "png": "assets/layers/legacy/festival-extra-cream-front-canopy.png",
+      "sha256": "e45fe34ffce621b7cbae2bbd3d949d58838c9587269ef0371d3663f6e3445221",
+      "maskPNG": "assets/layers/legacy/festival-extra-cream-front-canopy-mask.png",
+      "maskSHA256": "edecf7c3896e80f271962b09fa230cc755da8096ce9e3582e8e9b7fa5762a34d",
+      "position": {
+        "x": 79,
+        "y": 373
+      }
+    },
+    {
+      "id": "festival-extra-seated-blue-visitor",
+      "png": "assets/layers/legacy/festival-extra-seated-blue-visitor.png",
+      "sha256": "ed043dacca3e7baa5aa1eaa776821467ac80436775efc31fac7c100f399ddbbf",
+      "maskPNG": "assets/layers/legacy/festival-extra-seated-blue-visitor-mask.png",
+      "maskSHA256": "87c4b56138c127d275c3a4b9f29d5bfd464eb2fb0e87945d086e23a89a36d74d",
+      "position": {
+        "x": 226,
+        "y": 312
+      }
+    },
+    {
+      "id": "festival-extra-seated-white-visitor",
+      "png": "assets/layers/legacy/festival-extra-seated-white-visitor.png",
+      "sha256": "1bdcdedad3b98016858712556d45c6b2ae1b5b54db4b12d76844ba6b16fe9b10",
+      "maskPNG": "assets/layers/legacy/festival-extra-seated-white-visitor-mask.png",
+      "maskSHA256": "0d60ece14053cd018fa2fd68694adb9c87803276f1babe4d5ea299acc3cc2093",
+      "position": {
+        "x": 249,
+        "y": 317
+      }
+    },
+    {
+      "id": "festival-extra-white-dress-child",
+      "png": "assets/layers/legacy/festival-extra-white-dress-child.png",
+      "sha256": "fa96651f6a1b1c9a2e71e266f515327a57820d10174092bdb5c60b9da93c228d",
+      "maskPNG": "assets/layers/legacy/festival-extra-white-dress-child-mask.png",
+      "maskSHA256": "ef8af3941f01da5a977d5a515dd831bf99e0c1257a298096544c22d661a6df94",
+      "position": {
+        "x": 268,
+        "y": 325
+      }
+    },
+    {
+      "id": "festival-extra-green-cyclist",
+      "png": "assets/layers/legacy/festival-extra-green-cyclist.png",
+      "sha256": "196ef76bc2c1a01044e252bb55a991bf19ca78d5668d7449712e739dfa814711",
+      "maskPNG": "assets/layers/legacy/festival-extra-green-cyclist-mask.png",
+      "maskSHA256": "9e6af2f98f993f5eaebf9c555a31cde71c22e33ed68965a7b27d887a21704107",
+      "position": {
+        "x": 311,
+        "y": 366
+      }
+    },
+    {
+      "id": "festival-extra-lower-yellow-visitor",
+      "png": "assets/layers/legacy/festival-extra-lower-yellow-visitor.png",
+      "sha256": "9d2112f71272ce9860303beb5de8150694d7f6b1004ad6a2467a0ebce09d165e",
+      "maskPNG": "assets/layers/legacy/festival-extra-lower-yellow-visitor-mask.png",
+      "maskSHA256": "21bcd8a43a916c11cacace01d70f6c743aac74b723dc8ae2f75a0a15dd334267",
+      "position": {
+        "x": 242,
+        "y": 354
+      }
+    },
+    {
+      "id": "festival-extra-coral-dress-visitor",
+      "png": "assets/layers/legacy/festival-extra-coral-dress-visitor.png",
+      "sha256": "0de38fd083fa86f56a0c3acf3d1aa692da9aa216687c5eef556dd07a084d18d2",
+      "maskPNG": "assets/layers/legacy/festival-extra-coral-dress-visitor-mask.png",
+      "maskSHA256": "a561d3a46975dd20a81bcd289014a7b98ec6eee26a9c111185c230758d5673fb",
+      "position": {
+        "x": 333,
+        "y": 352
+      }
+    },
+    {
+      "id": "festival-extra-blue-skirt-visitor",
+      "png": "assets/layers/legacy/festival-extra-blue-skirt-visitor.png",
+      "sha256": "06de225afaddb3fb6e3476637e1a201b96b3a5db5ebe9010229d84a8216e6e44",
+      "maskPNG": "assets/layers/legacy/festival-extra-blue-skirt-visitor-mask.png",
+      "maskSHA256": "87a059271c473a85e8518a6ffa2d4fb128b94834eea49a3a7dc2d8ed59834319",
+      "position": {
+        "x": 242,
+        "y": 417
+      }
+    }
+  ],
+  "objects": [
+    {
+      "id": "festival-fountain",
+      "name": "Fountain basin and pedestal",
+      "depthAnchorY": 353,
+      "level": 22,
+      "bounds": {
+        "x": 237,
+        "y": 255,
+        "width": 100,
+        "height": 98
+      }
+    },
+    {
+      "id": "festival-cafe-umbrella",
+      "name": "Blue café umbrella and pole",
+      "depthAnchorY": 377,
+      "level": 23,
+      "bounds": {
+        "x": 426,
+        "y": 309,
+        "width": 84,
+        "height": 68
+      }
+    },
+    {
+      "id": "festival-green-cart",
+      "name": "Green-canopy drinks cart",
+      "depthAnchorY": 281,
+      "level": 17,
+      "bounds": {
+        "x": 419,
+        "y": 198,
+        "width": 68,
+        "height": 83
+      }
+    },
+    {
+      "id": "festival-teal-cart",
+      "name": "Teal-canopy juice cart",
+      "depthAnchorY": 452,
+      "level": 28,
+      "bounds": {
+        "x": 355,
+        "y": 381,
+        "width": 52,
+        "height": 71
+      }
+    },
+    {
+      "id": "festival-accordionist",
+      "name": "Accordion player",
+      "depthAnchorY": 253,
+      "level": 15,
+      "bounds": {
+        "x": 279,
+        "y": 200,
+        "width": 25,
+        "height": 53
+      }
+    },
+    {
+      "id": "festival-bass-player",
+      "name": "Double-bass player and instrument",
+      "depthAnchorY": 257,
+      "level": 16,
+      "bounds": {
+        "x": 237,
+        "y": 191,
+        "width": 42,
+        "height": 66
+      }
+    },
+    {
+      "id": "festival-blue-shopper",
+      "name": "Foreground shopper in blue shirt and shorts",
+      "depthAnchorY": 470,
+      "level": 29,
+      "bounds": {
+        "x": 151,
+        "y": 411,
+        "width": 25,
+        "height": 59
+      }
+    },
+    {
+      "id": "festival-navy-coat-woman",
+      "name": "Foreground woman in navy coat",
+      "depthAnchorY": 478,
+      "level": 29,
+      "bounds": {
+        "x": 203,
+        "y": 431,
+        "width": 23,
+        "height": 47
+      }
+    },
+    {
+      "id": "festival-pale-suit-man",
+      "name": "Man in a pale suit near the bicycle",
+      "depthAnchorY": 416,
+      "level": 25,
+      "bounds": {
+        "x": 279,
+        "y": 370,
+        "width": 17,
+        "height": 46
+      }
+    },
+    {
+      "id": "festival-green-dress-woman",
+      "name": "Woman in green by the fountain",
+      "depthAnchorY": 361,
+      "level": 22,
+      "bounds": {
+        "x": 307,
+        "y": 315,
+        "width": 25,
+        "height": 46
+      }
+    },
+    {
+      "id": "festival-yellow-dancer",
+      "name": "Yellow-shirt dancer",
+      "depthAnchorY": 242,
+      "level": 15,
+      "bounds": {
+        "x": 348,
+        "y": 202,
+        "width": 38,
+        "height": 40
+      }
+    },
+    {
+      "id": "festival-blue-walker",
+      "name": "Man in blue walking beside the drinks cart",
+      "depthAnchorY": 281,
+      "level": 17,
+      "bounds": {
+        "x": 362,
+        "y": 226,
+        "width": 27,
+        "height": 55
+      }
+    },
+    {
+      "id": "festival-extra-blue-market-canopy",
+      "name": "Large blue market canopy",
+      "depthAnchorY": 121,
+      "level": 7,
+      "bounds": {
+        "x": 184,
+        "y": 85,
+        "width": 87,
+        "height": 36
+      }
+    },
+    {
+      "id": "festival-extra-yellow-market-canopy",
+      "name": "Yellow striped market canopy",
+      "depthAnchorY": 102,
+      "level": 6,
+      "bounds": {
+        "x": 136,
+        "y": 73,
+        "width": 75,
+        "height": 29
+      }
+    },
+    {
+      "id": "festival-extra-cream-upper-canopy",
+      "name": "Cream canopy above central stall",
+      "depthAnchorY": 145,
+      "level": 9,
+      "bounds": {
+        "x": 242,
+        "y": 106,
+        "width": 89,
+        "height": 39
+      }
+    },
+    {
+      "id": "festival-extra-teal-left-canopy",
+      "name": "Teal canopy on the left",
+      "depthAnchorY": 192,
+      "level": 11,
+      "bounds": {
+        "x": 58,
+        "y": 156,
+        "width": 86,
+        "height": 36
+      }
+    },
+    {
+      "id": "festival-extra-cream-front-canopy",
+      "name": "Foreground cream market canopy",
+      "depthAnchorY": 420,
+      "level": 26,
+      "bounds": {
+        "x": 79,
+        "y": 373,
+        "width": 96,
+        "height": 47
+      }
+    },
+    {
+      "id": "festival-extra-seated-blue-visitor",
+      "name": "Seated visitor in blue at fountain",
+      "depthAnchorY": 352,
+      "level": 21,
+      "bounds": {
+        "x": 226,
+        "y": 312,
+        "width": 26,
+        "height": 40
+      }
+    },
+    {
+      "id": "festival-extra-seated-white-visitor",
+      "name": "Seated visitor in white vest",
+      "depthAnchorY": 356,
+      "level": 22,
+      "bounds": {
+        "x": 249,
+        "y": 317,
+        "width": 25,
+        "height": 39
+      }
+    },
+    {
+      "id": "festival-extra-white-dress-child",
+      "name": "Child in white dress at fountain",
+      "depthAnchorY": 364,
+      "level": 22,
+      "bounds": {
+        "x": 268,
+        "y": 325,
+        "width": 18,
+        "height": 39
+      }
+    },
+    {
+      "id": "festival-extra-green-cyclist",
+      "name": "Green-jacket cyclist",
+      "depthAnchorY": 417,
+      "level": 26,
+      "bounds": {
+        "x": 311,
+        "y": 366,
+        "width": 23,
+        "height": 51
+      }
+    },
+    {
+      "id": "festival-extra-lower-yellow-visitor",
+      "name": "Yellow-shirt visitor near bicycle",
+      "depthAnchorY": 405,
+      "level": 25,
+      "bounds": {
+        "x": 242,
+        "y": 354,
+        "width": 36,
+        "height": 51
+      }
+    },
+    {
+      "id": "festival-extra-coral-dress-visitor",
+      "name": "Coral-dress visitor beside fountain",
+      "depthAnchorY": 396,
+      "level": 24,
+      "bounds": {
+        "x": 333,
+        "y": 352,
+        "width": 17,
+        "height": 44
+      }
+    },
+    {
+      "id": "festival-extra-blue-skirt-visitor",
+      "name": "Visitor in brown jacket and blue skirt",
+      "depthAnchorY": 469,
+      "level": 29,
+      "bounds": {
+        "x": 242,
+        "y": 417,
+        "width": 25,
+        "height": 52
+      }
+    }
+  ],
+  "bands": [
+    {
+      "id": "depth-band-6",
+      "name": "Depth row 7",
+      "enabled": true,
+      "zIndex": 6,
+      "paths": [],
+      "level": 6,
+      "depthRange": {
+        "start": 96,
+        "endExclusive": 112
+      },
+      "memberIDs": [
+        "festival-extra-yellow-market-canopy"
+      ],
+      "memberDepthAnchors": [
+        {
+          "id": "festival-extra-yellow-market-canopy",
+          "y": 102
+        }
+      ],
+      "depthAnchorY": 102,
+      "bounds": {
+        "x": 136,
+        "y": 73,
+        "width": 75,
+        "height": 29
+      },
+      "cutoutPNG": "assets/depth-bands/legacy/depth-band-6.png",
+      "maskPNG": "assets/depth-bands/legacy/depth-band-6-mask.png",
+      "cutoutPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sha256": "6a0d8addc2a99e1dc6a67fdfa771199cbd0a0f8f77bcc8d12c6f0f847b88df64",
+      "maskSHA256": "7ddfaaba3fd36bbfb7de048895a44dac306542bf2b768e4bc61bb544cf3fbe4f",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "depth-band-7",
+      "name": "Depth row 8",
+      "enabled": true,
+      "zIndex": 7,
+      "paths": [],
+      "level": 7,
+      "depthRange": {
+        "start": 112,
+        "endExclusive": 128
+      },
+      "memberIDs": [
+        "festival-extra-blue-market-canopy"
+      ],
+      "memberDepthAnchors": [
+        {
+          "id": "festival-extra-blue-market-canopy",
+          "y": 121
+        }
+      ],
+      "depthAnchorY": 121,
+      "bounds": {
+        "x": 184,
+        "y": 85,
+        "width": 87,
+        "height": 36
+      },
+      "cutoutPNG": "assets/depth-bands/legacy/depth-band-7.png",
+      "maskPNG": "assets/depth-bands/legacy/depth-band-7-mask.png",
+      "cutoutPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sha256": "f7e42aa2ca61e3f01b53709350f908510e6cc932cb8ff11841d7fb88a16fcb40",
+      "maskSHA256": "e9b6d6ffbb3f400fa812aa1dfba84e1775733f179cb52359f08099453f1e79b2",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "depth-band-9",
+      "name": "Depth row 10",
+      "enabled": true,
+      "zIndex": 9,
+      "paths": [],
+      "level": 9,
+      "depthRange": {
+        "start": 144,
+        "endExclusive": 160
+      },
+      "memberIDs": [
+        "festival-extra-cream-upper-canopy"
+      ],
+      "memberDepthAnchors": [
+        {
+          "id": "festival-extra-cream-upper-canopy",
+          "y": 145
+        }
+      ],
+      "depthAnchorY": 145,
+      "bounds": {
+        "x": 242,
+        "y": 106,
+        "width": 89,
+        "height": 39
+      },
+      "cutoutPNG": "assets/depth-bands/legacy/depth-band-9.png",
+      "maskPNG": "assets/depth-bands/legacy/depth-band-9-mask.png",
+      "cutoutPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sha256": "74fca0fd05c4d8f4d837a6daa65f3111c1f6955344d6dc9d2d40e10eff3e42a1",
+      "maskSHA256": "1d21d4d8bd711fd818a749af5bc3c066a494a80a3b05fdf08fd70a1b060bea6c",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "depth-band-11",
+      "name": "Depth row 12",
+      "enabled": true,
+      "zIndex": 11,
+      "paths": [],
+      "level": 11,
+      "depthRange": {
+        "start": 176,
+        "endExclusive": 192
+      },
+      "memberIDs": [
+        "festival-extra-teal-left-canopy"
+      ],
+      "memberDepthAnchors": [
+        {
+          "id": "festival-extra-teal-left-canopy",
+          "y": 192
+        }
+      ],
+      "depthAnchorY": 192,
+      "bounds": {
+        "x": 58,
+        "y": 156,
+        "width": 86,
+        "height": 36
+      },
+      "cutoutPNG": "assets/depth-bands/legacy/depth-band-11.png",
+      "maskPNG": "assets/depth-bands/legacy/depth-band-11-mask.png",
+      "cutoutPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sha256": "c3057cd6546120a798a6ec748037d5c5983a4ace4e5e6b23f3ad8f8df292c350",
+      "maskSHA256": "d892ace0e4cd9b8038fa72f288563b14005bdc81b5ab132bc1e0b738a8d3fbf1",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "depth-band-15",
+      "name": "Depth row 16",
+      "enabled": true,
+      "zIndex": 15,
+      "paths": [],
+      "level": 15,
+      "depthRange": {
+        "start": 240,
+        "endExclusive": 256
+      },
+      "memberIDs": [
+        "festival-accordionist",
+        "festival-yellow-dancer"
+      ],
+      "memberDepthAnchors": [
+        {
+          "id": "festival-accordionist",
+          "y": 253
+        },
+        {
+          "id": "festival-yellow-dancer",
+          "y": 242
+        }
+      ],
+      "depthAnchorY": 253,
+      "bounds": {
+        "x": 279,
+        "y": 200,
+        "width": 107,
+        "height": 53
+      },
+      "cutoutPNG": "assets/depth-bands/legacy/depth-band-15.png",
+      "maskPNG": "assets/depth-bands/legacy/depth-band-15-mask.png",
+      "cutoutPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sha256": "c4db4bcff970f54e6d0d7d44a5d45b361f8a164be1b2925ad115ce5a46f083ae",
+      "maskSHA256": "32a2853e1bcc1a0d20c14d85bbbabc67f163e032e22de2bf36f6cbd0633b78be",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "depth-band-16",
+      "name": "Depth row 17",
+      "enabled": true,
+      "zIndex": 16,
+      "paths": [],
+      "level": 16,
+      "depthRange": {
+        "start": 256,
+        "endExclusive": 272
+      },
+      "memberIDs": [
+        "festival-bass-player"
+      ],
+      "memberDepthAnchors": [
+        {
+          "id": "festival-bass-player",
+          "y": 257
+        }
+      ],
+      "depthAnchorY": 257,
+      "bounds": {
+        "x": 237,
+        "y": 191,
+        "width": 42,
+        "height": 66
+      },
+      "cutoutPNG": "assets/depth-bands/legacy/depth-band-16.png",
+      "maskPNG": "assets/depth-bands/legacy/depth-band-16-mask.png",
+      "cutoutPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sha256": "014cefa05d864971ee55083cc1afd6145fc7f275967024ab99bf66903aadbd71",
+      "maskSHA256": "298e2afbbfb164c68bce6aeed60dc047db9e0a8c66bbb2d94450f1cf742393a4",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "depth-band-17",
+      "name": "Depth row 18",
+      "enabled": true,
+      "zIndex": 17,
+      "paths": [],
+      "level": 17,
+      "depthRange": {
+        "start": 272,
+        "endExclusive": 288
+      },
+      "memberIDs": [
+        "festival-green-cart",
+        "festival-blue-walker"
+      ],
+      "memberDepthAnchors": [
+        {
+          "id": "festival-green-cart",
+          "y": 281
+        },
+        {
+          "id": "festival-blue-walker",
+          "y": 281
+        }
+      ],
+      "depthAnchorY": 281,
+      "bounds": {
+        "x": 362,
+        "y": 198,
+        "width": 125,
+        "height": 83
+      },
+      "cutoutPNG": "assets/depth-bands/legacy/depth-band-17.png",
+      "maskPNG": "assets/depth-bands/legacy/depth-band-17-mask.png",
+      "cutoutPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sha256": "49063810e8d05e89716641f7f26daa7d2ec3a11b36cf2b0b8030f6eba1a02822",
+      "maskSHA256": "41c97f5e7658c489f7fbc1899a669fed1b8e79931c4f0149642355def8c9e7c0",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "depth-band-21",
+      "name": "Depth row 22",
+      "enabled": true,
+      "zIndex": 21,
+      "paths": [],
+      "level": 21,
+      "depthRange": {
+        "start": 336,
+        "endExclusive": 352
+      },
+      "memberIDs": [
+        "festival-extra-seated-blue-visitor"
+      ],
+      "memberDepthAnchors": [
+        {
+          "id": "festival-extra-seated-blue-visitor",
+          "y": 352
+        }
+      ],
+      "depthAnchorY": 352,
+      "bounds": {
+        "x": 226,
+        "y": 312,
+        "width": 26,
+        "height": 40
+      },
+      "cutoutPNG": "assets/depth-bands/legacy/depth-band-21.png",
+      "maskPNG": "assets/depth-bands/legacy/depth-band-21-mask.png",
+      "cutoutPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sha256": "f0481ff090f580ca79939b449d82a1530666b6e6af0c6fd5a8b9112960241bcb",
+      "maskSHA256": "87c4b56138c127d275c3a4b9f29d5bfd464eb2fb0e87945d086e23a89a36d74d",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "depth-band-22",
+      "name": "Depth row 23",
+      "enabled": true,
+      "zIndex": 22,
+      "paths": [],
+      "level": 22,
+      "depthRange": {
+        "start": 352,
+        "endExclusive": 368
+      },
+      "memberIDs": [
+        "festival-fountain",
+        "festival-green-dress-woman",
+        "festival-extra-seated-white-visitor",
+        "festival-extra-white-dress-child"
+      ],
+      "memberDepthAnchors": [
+        {
+          "id": "festival-fountain",
+          "y": 353
+        },
+        {
+          "id": "festival-green-dress-woman",
+          "y": 361
+        },
+        {
+          "id": "festival-extra-seated-white-visitor",
+          "y": 356
+        },
+        {
+          "id": "festival-extra-white-dress-child",
+          "y": 364
+        }
+      ],
+      "depthAnchorY": 364,
+      "bounds": {
+        "x": 237,
+        "y": 255,
+        "width": 100,
+        "height": 109
+      },
+      "cutoutPNG": "assets/depth-bands/legacy/depth-band-22.png",
+      "maskPNG": "assets/depth-bands/legacy/depth-band-22-mask.png",
+      "cutoutPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sha256": "79f97f12b7bb9d2279d995b2f5ef97e473e062c6042eb6d7d0051fb8a57539f3",
+      "maskSHA256": "77a017e0d74550d3eccb88ef7e8395b8e255a3a306e7300d1746bce87a504127",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "depth-band-23",
+      "name": "Depth row 24",
+      "enabled": true,
+      "zIndex": 23,
+      "paths": [],
+      "level": 23,
+      "depthRange": {
+        "start": 368,
+        "endExclusive": 384
+      },
+      "memberIDs": [
+        "festival-cafe-umbrella"
+      ],
+      "memberDepthAnchors": [
+        {
+          "id": "festival-cafe-umbrella",
+          "y": 377
+        }
+      ],
+      "depthAnchorY": 377,
+      "bounds": {
+        "x": 426,
+        "y": 309,
+        "width": 84,
+        "height": 68
+      },
+      "cutoutPNG": "assets/depth-bands/legacy/depth-band-23.png",
+      "maskPNG": "assets/depth-bands/legacy/depth-band-23-mask.png",
+      "cutoutPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sha256": "1bd9cc8bca483381e0c74db8ec6f2bacaeded1b3825e60ddd61f8b52b686e063",
+      "maskSHA256": "eb8ece4e9c50075bc93e9886d84563abdbb04d273c5e8d35cf8928a62887c23d",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "depth-band-24",
+      "name": "Depth row 25",
+      "enabled": true,
+      "zIndex": 24,
+      "paths": [],
+      "level": 24,
+      "depthRange": {
+        "start": 384,
+        "endExclusive": 400
+      },
+      "memberIDs": [
+        "festival-extra-coral-dress-visitor"
+      ],
+      "memberDepthAnchors": [
+        {
+          "id": "festival-extra-coral-dress-visitor",
+          "y": 396
+        }
+      ],
+      "depthAnchorY": 396,
+      "bounds": {
+        "x": 333,
+        "y": 352,
+        "width": 17,
+        "height": 44
+      },
+      "cutoutPNG": "assets/depth-bands/legacy/depth-band-24.png",
+      "maskPNG": "assets/depth-bands/legacy/depth-band-24-mask.png",
+      "cutoutPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sha256": "e2932f21cd51c373cc67aea2dea31fba31a52b91d89b13485cbb092fbc46be86",
+      "maskSHA256": "a561d3a46975dd20a81bcd289014a7b98ec6eee26a9c111185c230758d5673fb",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "depth-band-25",
+      "name": "Depth row 26",
+      "enabled": true,
+      "zIndex": 25,
+      "paths": [],
+      "level": 25,
+      "depthRange": {
+        "start": 400,
+        "endExclusive": 416
+      },
+      "memberIDs": [
+        "festival-pale-suit-man",
+        "festival-extra-lower-yellow-visitor"
+      ],
+      "memberDepthAnchors": [
+        {
+          "id": "festival-pale-suit-man",
+          "y": 416
+        },
+        {
+          "id": "festival-extra-lower-yellow-visitor",
+          "y": 405
+        }
+      ],
+      "depthAnchorY": 416,
+      "bounds": {
+        "x": 242,
+        "y": 354,
+        "width": 54,
+        "height": 62
+      },
+      "cutoutPNG": "assets/depth-bands/legacy/depth-band-25.png",
+      "maskPNG": "assets/depth-bands/legacy/depth-band-25-mask.png",
+      "cutoutPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sha256": "42e61fcb79fd7e7786a0bd4624fe617ba72a8c9dbeae03d01ba6dda4ae652ac2",
+      "maskSHA256": "4d4bc8fbff238a835f707125f20679bdef867fe15991c0c556c8b6609315c224",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "depth-band-26",
+      "name": "Depth row 27",
+      "enabled": true,
+      "zIndex": 26,
+      "paths": [],
+      "level": 26,
+      "depthRange": {
+        "start": 416,
+        "endExclusive": 432
+      },
+      "memberIDs": [
+        "festival-extra-cream-front-canopy",
+        "festival-extra-green-cyclist"
+      ],
+      "memberDepthAnchors": [
+        {
+          "id": "festival-extra-cream-front-canopy",
+          "y": 420
+        },
+        {
+          "id": "festival-extra-green-cyclist",
+          "y": 417
+        }
+      ],
+      "depthAnchorY": 420,
+      "bounds": {
+        "x": 79,
+        "y": 366,
+        "width": 255,
+        "height": 54
+      },
+      "cutoutPNG": "assets/depth-bands/legacy/depth-band-26.png",
+      "maskPNG": "assets/depth-bands/legacy/depth-band-26-mask.png",
+      "cutoutPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sha256": "032f6a100b66f219996d49e78c044d980561d2af50e565bdb9a2f22b316ad780",
+      "maskSHA256": "b017893b1adc9ee439d2b2165213ae7b6946d8bfc190a4fcdfde2bc7d3bbd10e",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "depth-band-28",
+      "name": "Depth row 29",
+      "enabled": true,
+      "zIndex": 28,
+      "paths": [],
+      "level": 28,
+      "depthRange": {
+        "start": 448,
+        "endExclusive": 464
+      },
+      "memberIDs": [
+        "festival-teal-cart"
+      ],
+      "memberDepthAnchors": [
+        {
+          "id": "festival-teal-cart",
+          "y": 452
+        }
+      ],
+      "depthAnchorY": 452,
+      "bounds": {
+        "x": 355,
+        "y": 381,
+        "width": 52,
+        "height": 71
+      },
+      "cutoutPNG": "assets/depth-bands/legacy/depth-band-28.png",
+      "maskPNG": "assets/depth-bands/legacy/depth-band-28-mask.png",
+      "cutoutPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sha256": "5fcd37c43bc222b511911e3edc92ac0490bfdcfd5e570a68cf69699bba2fceb7",
+      "maskSHA256": "fa9f6b02040edd7f5e996d9fa2a90d90a44b93c1cea48931ff25462527a960d4",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "id": "depth-band-29",
+      "name": "Depth row 30",
+      "enabled": true,
+      "zIndex": 29,
+      "paths": [],
+      "level": 29,
+      "depthRange": {
+        "start": 464,
+        "endExclusive": 480
+      },
+      "memberIDs": [
+        "festival-blue-shopper",
+        "festival-navy-coat-woman",
+        "festival-extra-blue-skirt-visitor"
+      ],
+      "memberDepthAnchors": [
+        {
+          "id": "festival-blue-shopper",
+          "y": 470
+        },
+        {
+          "id": "festival-navy-coat-woman",
+          "y": 478
+        },
+        {
+          "id": "festival-extra-blue-skirt-visitor",
+          "y": 469
+        }
+      ],
+      "depthAnchorY": 478,
+      "bounds": {
+        "x": 151,
+        "y": 411,
+        "width": 116,
+        "height": 67
+      },
+      "cutoutPNG": "assets/depth-bands/legacy/depth-band-29.png",
+      "maskPNG": "assets/depth-bands/legacy/depth-band-29-mask.png",
+      "cutoutPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "sha256": "28a7434312c23fa21ef3d2db6b74a75302dbcf0c0bf632039486565b748644c0",
+      "maskSHA256": "328995e7a5855cc5e92e8c9167a5cd415474265d74e6ada6135d95b7c47f326d",
+      "width": 512,
+      "height": 512
+    }
+  ]
+}

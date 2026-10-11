@@ -1,0 +1,584 @@
+{
+  "train": {
+    "split": "train",
+    "seed": 202610104,
+    "n": 56264,
+    "positives": 1200,
+    "negative": 55064,
+    "featuresSha256": "0ea31136709210211791560f49d6ae7505a16d833266201192b4d20257b01470",
+    "labelsSha256": "ecaababdc4db350301a841160d98c63d328f89881decbf3fab98c7284e2c2cf7",
+    "sourceHashes": {
+      "generator": "4924157712b6248fd8ef1d979d60638922b8b272e8e71eb727e61b1553482d27",
+      "featureJS": "6e3dfd5349fdc439629640d5aac3e0b467ccc2e362a0b9273d79584f5159a61a",
+      "rendererJS": "68299e48f627dbb772f954e5e371d5572f4b220a8b9896ec23bd27a472dc9e18",
+      "protocol": "77863afddce0fd9a4f1b280cd222c86f636c019df66c3d8ee6b9299cfd3c2e32"
+    },
+    "target": {
+      "file": "assets/open-art/openmoji-striped-standing.png",
+      "sha256": "8f1b7234e857ba70c84366fe67a4753ce98b9a3b439eb785af810e88c6ff5c94",
+      "trim": [
+        13,
+        6,
+        213,
+        586
+      ],
+      "aspect": 0.3448275862068966
+    },
+    "scenes": [
+      {
+        "id": "legacy",
+        "source": "assets/crowd-captcha.png",
+        "sourceSha256": "17f9c327bdbeb186a3bb15a9d922383357651c70b22f627f2bf97b9c4e9997b3",
+        "bandRegistrationsSha256": "8c99aee6094e2887a97de2baab11d2b2b96cdb8f35bdde6075ca677460685c3b",
+        "bands": [
+          {
+            "id": "depth-band-6",
+            "foregroundSha256": "6a0d8addc2a99e1dc6a67fdfa771199cbd0a0f8f77bcc8d12c6f0f847b88df64",
+            "maskSha256": "7ddfaaba3fd36bbfb7de048895a44dac306542bf2b768e4bc61bb544cf3fbe4f"
+          },
+          {
+            "id": "depth-band-7",
+            "foregroundSha256": "f7e42aa2ca61e3f01b53709350f908510e6cc932cb8ff11841d7fb88a16fcb40",
+            "maskSha256": "e9b6d6ffbb3f400fa812aa1dfba84e1775733f179cb52359f08099453f1e79b2"
+          },
+          {
+            "id": "depth-band-9",
+            "foregroundSha256": "74fca0fd05c4d8f4d837a6daa65f3111c1f6955344d6dc9d2d40e10eff3e42a1",
+            "maskSha256": "1d21d4d8bd711fd818a749af5bc3c066a494a80a3b05fdf08fd70a1b060bea6c"
+          },
+          {
+            "id": "depth-band-11",
+            "foregroundSha256": "c3057cd6546120a798a6ec748037d5c5983a4ace4e5e6b23f3ad8f8df292c350",
+            "maskSha256": "d892ace0e4cd9b8038fa72f288563b14005bdc81b5ab132bc1e0b738a8d3fbf1"
+          },
+          {
+            "id": "depth-band-15",
+            "foregroundSha256": "c4db4bcff970f54e6d0d7d44a5d45b361f8a164be1b2925ad115ce5a46f083ae",
+            "maskSha256": "32a2853e1bcc1a0d20c14d85bbbabc67f163e032e22de2bf36f6cbd0633b78be"
+          },
+          {
+            "id": "depth-band-16",
+            "foregroundSha256": "014cefa05d864971ee55083cc1afd6145fc7f275967024ab99bf66903aadbd71",
+            "maskSha256": "298e2afbbfb164c68bce6aeed60dc047db9e0a8c66bbb2d94450f1cf742393a4"
+          },
+          {
+            "id": "depth-band-17",
+            "foregroundSha256": "49063810e8d05e89716641f7f26daa7d2ec3a11b36cf2b0b8030f6eba1a02822",
+            "maskSha256": "41c97f5e7658c489f7fbc1899a669fed1b8e79931c4f0149642355def8c9e7c0"
+          },
+          {
+            "id": "depth-band-21",
+            "foregroundSha256": "f0481ff090f580ca79939b449d82a1530666b6e6af0c6fd5a8b9112960241bcb",
+            "maskSha256": "87c4b56138c127d275c3a4b9f29d5bfd464eb2fb0e87945d086e23a89a36d74d"
+          },
+          {
+            "id": "depth-band-22",
+            "foregroundSha256": "79f97f12b7bb9d2279d995b2f5ef97e473e062c6042eb6d7d0051fb8a57539f3",
+            "maskSha256": "77a017e0d74550d3eccb88ef7e8395b8e255a3a306e7300d1746bce87a504127"
+          },
+          {
+            "id": "depth-band-23",
+            "foregroundSha256": "1bd9cc8bca483381e0c74db8ec6f2bacaeded1b3825e60ddd61f8b52b686e063",
+            "maskSha256": "eb8ece4e9c50075bc93e9886d84563abdbb04d273c5e8d35cf8928a62887c23d"
+          },
+          {
+            "id": "depth-band-24",
+            "foregroundSha256": "e2932f21cd51c373cc67aea2dea31fba31a52b91d89b13485cbb092fbc46be86",
+            "maskSha256": "a561d3a46975dd20a81bcd289014a7b98ec6eee26a9c111185c230758d5673fb"
+          },
+          {
+            "id": "depth-band-25",
+            "foregroundSha256": "42e61fcb79fd7e7786a0bd4624fe617ba72a8c9dbeae03d01ba6dda4ae652ac2",
+            "maskSha256": "4d4bc8fbff238a835f707125f20679bdef867fe15991c0c556c8b6609315c224"
+          },
+          {
+            "id": "depth-band-26",
+            "foregroundSha256": "032f6a100b66f219996d49e78c044d980561d2af50e565bdb9a2f22b316ad780",
+            "maskSha256": "b017893b1adc9ee439d2b2165213ae7b6946d8bfc190a4fcdfde2bc7d3bbd10e"
+          },
+          {
+            "id": "depth-band-28",
+            "foregroundSha256": "5fcd37c43bc222b511911e3edc92ac0490bfdcfd5e570a68cf69699bba2fceb7",
+            "maskSha256": "fa9f6b02040edd7f5e996d9fa2a90d90a44b93c1cea48931ff25462527a960d4"
+          },
+          {
+            "id": "depth-band-29",
+            "foregroundSha256": "28a7434312c23fa21ef3d2db6b74a75302dbcf0c0bf632039486565b748644c0",
+            "maskSha256": "328995e7a5855cc5e92e8c9167a5cd415474265d74e6ada6135d95b7c47f326d"
+          }
+        ]
+      },
+      {
+        "id": "magic-arena",
+        "source": "assets/busy-art/magic-arena.png",
+        "sourceSha256": "379adca27715dffd8daf0bd1c115f33c11fc29d28358bc603424d8f6703d86e2",
+        "bandRegistrationsSha256": "4eb995b527de9c1cc726790c00f2102ee981c24ae835571a74e042fb265ce240",
+        "bands": [
+          {
+            "id": "depth-band-20",
+            "foregroundSha256": "80041bbf6c596418eafba61f7ebcee117b913519a05158b75a91f38f0566a134",
+            "maskSha256": "2c7ff599a6f64c7c1c9f301c8ef224c83cdfbdac6a8fc8082454254a3dfe18a2"
+          },
+          {
+            "id": "depth-band-21",
+            "foregroundSha256": "97f8ed84b78bf1f33f54164c065cc55fcc603c41d4242dc78504873c7708639b",
+            "maskSha256": "ffdb6978f5e6aa356b4a158c5af8ff0e54caa77d50164a51a30fe44ae544f2da"
+          },
+          {
+            "id": "depth-band-22",
+            "foregroundSha256": "d77210b8a75a1e43cf72e2f7cc69efe8c980f8dea2378d05cd6bc4da6483581a",
+            "maskSha256": "0cd35f380f69a9165d383aff89fdd614e09dba8b337ed7c65877788f8d9b54a4"
+          },
+          {
+            "id": "depth-band-25",
+            "foregroundSha256": "91106c6062debfee31d43fe34450c8254729c3b1b194c9bbdcef6d0f3c0aa524",
+            "maskSha256": "11f71ef0f08780d030778469aeba0bb5f84b62ab0e4c7018098bb90fd4121208"
+          },
+          {
+            "id": "depth-band-28",
+            "foregroundSha256": "0f289099840f2928d5ede24a7152a62d91d8eb459e202fe298a11ef26ee36064",
+            "maskSha256": "f7a2cd1e534d9f646a2bcc351b873ea2a5a490799cca1dbcc1b2bc054459f138"
+          },
+          {
+            "id": "depth-band-31",
+            "foregroundSha256": "51d952a5de0461237596c82b88a214491704dd7f130a0c63cf6b68a7b9be06e2",
+            "maskSha256": "b6d20c4d11dcc589bc07dea8234d2bf1cea47d62089fa4084154ba0349369e4b"
+          }
+        ]
+      },
+      {
+        "id": "qualicity-queue",
+        "source": "assets/busy-art/qualicity-queue.png",
+        "sourceSha256": "8eb027c991a6e04803e81bd7f461d0cd3e8494fb4b250792e75325a3157e1bd8",
+        "bandRegistrationsSha256": "6e12f2e92e68f2ae95793ebd005f539b4c8ff98c890dd70d2d495451c7921399",
+        "bands": [
+          {
+            "id": "depth-band-17",
+            "foregroundSha256": "df8edba5a369c7ed183712476271f1da48b9064e468dc7a0cb3e8dca818befc9",
+            "maskSha256": "a0bce7a2ff6dc3c7d391b3db91d2b8639843623a393adcbef3e36e374d6d96c0"
+          },
+          {
+            "id": "depth-band-18",
+            "foregroundSha256": "01324594654814d651f60e6acbf32f17bcca910569df16c1e0219ecefdebe020",
+            "maskSha256": "655badce28350e88fc80a8b8c8ff868beb3da573e58507dc8f67aec615b3c691"
+          },
+          {
+            "id": "depth-band-19",
+            "foregroundSha256": "7e32e7ee99cb37c51b9cb8772af90a897652fa2b40b23128f3b636b58a3f1002",
+            "maskSha256": "c3663f38b1a6f4499a09b90a50e73d5a73af250925a6404d81d82e05524b1481"
+          },
+          {
+            "id": "depth-band-24",
+            "foregroundSha256": "0fc12bcb258d9621fe1c099985724e45c82ac9b94d164a3b99783c41d7d4035e",
+            "maskSha256": "60ac3917454cd0a929caecba942f6c5d07e1ed73a13728958bd60ac08be26c85"
+          },
+          {
+            "id": "depth-band-27",
+            "foregroundSha256": "be6d1807041af0459a265c0db8d0f73aed75bb0c5b4086eef38537e9165e7d24",
+            "maskSha256": "1274fbe4e3d6b356d51ce1cda3a61e7242c875b493b3f7489b6c27002d79e763"
+          },
+          {
+            "id": "depth-band-31",
+            "foregroundSha256": "0e18f02b67663de793be93a1c3fe346a0445bd8f71e409896f4038679b3e4302",
+            "maskSha256": "31b318accae6afc085ee0b4b18dfe7a754e90cba13ecc9e8217cb47242de9239"
+          }
+        ]
+      }
+    ],
+    "targetCompositeCount": 600,
+    "targetRecordSHA256": "b2a843c719bfd98ac0a130d8585c0661d70b8051034b12108ab5638a5c4c2e89",
+    "sourceManifestSHA256": "a84852ebade5d0077ed4bd81558fc25482ac83cb50fe998de4a27dca6abc3af0",
+    "visibilityRange": [
+      1,
+      1
+    ]
+  },
+  "validation": {
+    "split": "validation",
+    "seed": 202610105,
+    "n": 9839,
+    "positives": 300,
+    "negative": 9539,
+    "featuresSha256": "3555e50d9a21f1078dd11355622305e94cef0f9e6620aa9ed57ad570bc3d640d",
+    "labelsSha256": "a3de1d941f67f3ac8c69246d50de1a192df0716c846ac3f2a4683eed5d7e2186",
+    "sourceHashes": {
+      "generator": "4924157712b6248fd8ef1d979d60638922b8b272e8e71eb727e61b1553482d27",
+      "featureJS": "6e3dfd5349fdc439629640d5aac3e0b467ccc2e362a0b9273d79584f5159a61a",
+      "rendererJS": "68299e48f627dbb772f954e5e371d5572f4b220a8b9896ec23bd27a472dc9e18",
+      "protocol": "77863afddce0fd9a4f1b280cd222c86f636c019df66c3d8ee6b9299cfd3c2e32"
+    },
+    "target": {
+      "file": "assets/open-art/openmoji-striped-standing.png",
+      "sha256": "8f1b7234e857ba70c84366fe67a4753ce98b9a3b439eb785af810e88c6ff5c94",
+      "trim": [
+        13,
+        6,
+        213,
+        586
+      ],
+      "aspect": 0.3448275862068966
+    },
+    "scenes": [
+      {
+        "id": "legacy",
+        "source": "assets/crowd-captcha.png",
+        "sourceSha256": "17f9c327bdbeb186a3bb15a9d922383357651c70b22f627f2bf97b9c4e9997b3",
+        "bandRegistrationsSha256": "8c99aee6094e2887a97de2baab11d2b2b96cdb8f35bdde6075ca677460685c3b",
+        "bands": [
+          {
+            "id": "depth-band-6",
+            "foregroundSha256": "6a0d8addc2a99e1dc6a67fdfa771199cbd0a0f8f77bcc8d12c6f0f847b88df64",
+            "maskSha256": "7ddfaaba3fd36bbfb7de048895a44dac306542bf2b768e4bc61bb544cf3fbe4f"
+          },
+          {
+            "id": "depth-band-7",
+            "foregroundSha256": "f7e42aa2ca61e3f01b53709350f908510e6cc932cb8ff11841d7fb88a16fcb40",
+            "maskSha256": "e9b6d6ffbb3f400fa812aa1dfba84e1775733f179cb52359f08099453f1e79b2"
+          },
+          {
+            "id": "depth-band-9",
+            "foregroundSha256": "74fca0fd05c4d8f4d837a6daa65f3111c1f6955344d6dc9d2d40e10eff3e42a1",
+            "maskSha256": "1d21d4d8bd711fd818a749af5bc3c066a494a80a3b05fdf08fd70a1b060bea6c"
+          },
+          {
+            "id": "depth-band-11",
+            "foregroundSha256": "c3057cd6546120a798a6ec748037d5c5983a4ace4e5e6b23f3ad8f8df292c350",
+            "maskSha256": "d892ace0e4cd9b8038fa72f288563b14005bdc81b5ab132bc1e0b738a8d3fbf1"
+          },
+          {
+            "id": "depth-band-15",
+            "foregroundSha256": "c4db4bcff970f54e6d0d7d44a5d45b361f8a164be1b2925ad115ce5a46f083ae",
+            "maskSha256": "32a2853e1bcc1a0d20c14d85bbbabc67f163e032e22de2bf36f6cbd0633b78be"
+          },
+          {
+            "id": "depth-band-16",
+            "foregroundSha256": "014cefa05d864971ee55083cc1afd6145fc7f275967024ab99bf66903aadbd71",
+            "maskSha256": "298e2afbbfb164c68bce6aeed60dc047db9e0a8c66bbb2d94450f1cf742393a4"
+          },
+          {
+            "id": "depth-band-17",
+            "foregroundSha256": "49063810e8d05e89716641f7f26daa7d2ec3a11b36cf2b0b8030f6eba1a02822",
+            "maskSha256": "41c97f5e7658c489f7fbc1899a669fed1b8e79931c4f0149642355def8c9e7c0"
+          },
+          {
+            "id": "depth-band-21",
+            "foregroundSha256": "f0481ff090f580ca79939b449d82a1530666b6e6af0c6fd5a8b9112960241bcb",
+            "maskSha256": "87c4b56138c127d275c3a4b9f29d5bfd464eb2fb0e87945d086e23a89a36d74d"
+          },
+          {
+            "id": "depth-band-22",
+            "foregroundSha256": "79f97f12b7bb9d2279d995b2f5ef97e473e062c6042eb6d7d0051fb8a57539f3",
+            "maskSha256": "77a017e0d74550d3eccb88ef7e8395b8e255a3a306e7300d1746bce87a504127"
+          },
+          {
+            "id": "depth-band-23",
+            "foregroundSha256": "1bd9cc8bca483381e0c74db8ec6f2bacaeded1b3825e60ddd61f8b52b686e063",
+            "maskSha256": "eb8ece4e9c50075bc93e9886d84563abdbb04d273c5e8d35cf8928a62887c23d"
+          },
+          {
+            "id": "depth-band-24",
+            "foregroundSha256": "e2932f21cd51c373cc67aea2dea31fba31a52b91d89b13485cbb092fbc46be86",
+            "maskSha256": "a561d3a46975dd20a81bcd289014a7b98ec6eee26a9c111185c230758d5673fb"
+          },
+          {
+            "id": "depth-band-25",
+            "foregroundSha256": "42e61fcb79fd7e7786a0bd4624fe617ba72a8c9dbeae03d01ba6dda4ae652ac2",
+            "maskSha256": "4d4bc8fbff238a835f707125f20679bdef867fe15991c0c556c8b6609315c224"
+          },
+          {
+            "id": "depth-band-26",
+            "foregroundSha256": "032f6a100b66f219996d49e78c044d980561d2af50e565bdb9a2f22b316ad780",
+            "maskSha256": "b017893b1adc9ee439d2b2165213ae7b6946d8bfc190a4fcdfde2bc7d3bbd10e"
+          },
+          {
+            "id": "depth-band-28",
+            "foregroundSha256": "5fcd37c43bc222b511911e3edc92ac0490bfdcfd5e570a68cf69699bba2fceb7",
+            "maskSha256": "fa9f6b02040edd7f5e996d9fa2a90d90a44b93c1cea48931ff25462527a960d4"
+          },
+          {
+            "id": "depth-band-29",
+            "foregroundSha256": "28a7434312c23fa21ef3d2db6b74a75302dbcf0c0bf632039486565b748644c0",
+            "maskSha256": "328995e7a5855cc5e92e8c9167a5cd415474265d74e6ada6135d95b7c47f326d"
+          }
+        ]
+      },
+      {
+        "id": "magic-arena",
+        "source": "assets/busy-art/magic-arena.png",
+        "sourceSha256": "379adca27715dffd8daf0bd1c115f33c11fc29d28358bc603424d8f6703d86e2",
+        "bandRegistrationsSha256": "4eb995b527de9c1cc726790c00f2102ee981c24ae835571a74e042fb265ce240",
+        "bands": [
+          {
+            "id": "depth-band-20",
+            "foregroundSha256": "80041bbf6c596418eafba61f7ebcee117b913519a05158b75a91f38f0566a134",
+            "maskSha256": "2c7ff599a6f64c7c1c9f301c8ef224c83cdfbdac6a8fc8082454254a3dfe18a2"
+          },
+          {
+            "id": "depth-band-21",
+            "foregroundSha256": "97f8ed84b78bf1f33f54164c065cc55fcc603c41d4242dc78504873c7708639b",
+            "maskSha256": "ffdb6978f5e6aa356b4a158c5af8ff0e54caa77d50164a51a30fe44ae544f2da"
+          },
+          {
+            "id": "depth-band-22",
+            "foregroundSha256": "d77210b8a75a1e43cf72e2f7cc69efe8c980f8dea2378d05cd6bc4da6483581a",
+            "maskSha256": "0cd35f380f69a9165d383aff89fdd614e09dba8b337ed7c65877788f8d9b54a4"
+          },
+          {
+            "id": "depth-band-25",
+            "foregroundSha256": "91106c6062debfee31d43fe34450c8254729c3b1b194c9bbdcef6d0f3c0aa524",
+            "maskSha256": "11f71ef0f08780d030778469aeba0bb5f84b62ab0e4c7018098bb90fd4121208"
+          },
+          {
+            "id": "depth-band-28",
+            "foregroundSha256": "0f289099840f2928d5ede24a7152a62d91d8eb459e202fe298a11ef26ee36064",
+            "maskSha256": "f7a2cd1e534d9f646a2bcc351b873ea2a5a490799cca1dbcc1b2bc054459f138"
+          },
+          {
+            "id": "depth-band-31",
+            "foregroundSha256": "51d952a5de0461237596c82b88a214491704dd7f130a0c63cf6b68a7b9be06e2",
+            "maskSha256": "b6d20c4d11dcc589bc07dea8234d2bf1cea47d62089fa4084154ba0349369e4b"
+          }
+        ]
+      },
+      {
+        "id": "qualicity-queue",
+        "source": "assets/busy-art/qualicity-queue.png",
+        "sourceSha256": "8eb027c991a6e04803e81bd7f461d0cd3e8494fb4b250792e75325a3157e1bd8",
+        "bandRegistrationsSha256": "6e12f2e92e68f2ae95793ebd005f539b4c8ff98c890dd70d2d495451c7921399",
+        "bands": [
+          {
+            "id": "depth-band-17",
+            "foregroundSha256": "df8edba5a369c7ed183712476271f1da48b9064e468dc7a0cb3e8dca818befc9",
+            "maskSha256": "a0bce7a2ff6dc3c7d391b3db91d2b8639843623a393adcbef3e36e374d6d96c0"
+          },
+          {
+            "id": "depth-band-18",
+            "foregroundSha256": "01324594654814d651f60e6acbf32f17bcca910569df16c1e0219ecefdebe020",
+            "maskSha256": "655badce28350e88fc80a8b8c8ff868beb3da573e58507dc8f67aec615b3c691"
+          },
+          {
+            "id": "depth-band-19",
+            "foregroundSha256": "7e32e7ee99cb37c51b9cb8772af90a897652fa2b40b23128f3b636b58a3f1002",
+            "maskSha256": "c3663f38b1a6f4499a09b90a50e73d5a73af250925a6404d81d82e05524b1481"
+          },
+          {
+            "id": "depth-band-24",
+            "foregroundSha256": "0fc12bcb258d9621fe1c099985724e45c82ac9b94d164a3b99783c41d7d4035e",
+            "maskSha256": "60ac3917454cd0a929caecba942f6c5d07e1ed73a13728958bd60ac08be26c85"
+          },
+          {
+            "id": "depth-band-27",
+            "foregroundSha256": "be6d1807041af0459a265c0db8d0f73aed75bb0c5b4086eef38537e9165e7d24",
+            "maskSha256": "1274fbe4e3d6b356d51ce1cda3a61e7242c875b493b3f7489b6c27002d79e763"
+          },
+          {
+            "id": "depth-band-31",
+            "foregroundSha256": "0e18f02b67663de793be93a1c3fe346a0445bd8f71e409896f4038679b3e4302",
+            "maskSha256": "31b318accae6afc085ee0b4b18dfe7a754e90cba13ecc9e8217cb47242de9239"
+          }
+        ]
+      }
+    ],
+    "targetCompositeCount": 150,
+    "targetRecordSHA256": "ce18b310e27e8a9e999c2d0011f15b852858ea03e5c61e56b024f49a91024ee3",
+    "sourceManifestSHA256": "5dd278996b1925e61936f1c59c4493dbb6e5c0874cdc6528bc438a2e4ee22fac",
+    "visibilityRange": [
+      1,
+      1
+    ]
+  },
+  "test": {
+    "split": "test",
+    "seed": 202610106,
+    "n": 11912,
+    "positives": 500,
+    "negative": 11412,
+    "featuresSha256": "71a6e26a46b2d1a50a9a6a48761201434f3555558f451c90d20b76c8117d2e64",
+    "labelsSha256": "dcff382a35e2c62d674dcd98760222379c71371b9d492922bbe6626e76f9a031",
+    "sourceHashes": {
+      "generator": "4924157712b6248fd8ef1d979d60638922b8b272e8e71eb727e61b1553482d27",
+      "featureJS": "6e3dfd5349fdc439629640d5aac3e0b467ccc2e362a0b9273d79584f5159a61a",
+      "rendererJS": "68299e48f627dbb772f954e5e371d5572f4b220a8b9896ec23bd27a472dc9e18",
+      "protocol": "77863afddce0fd9a4f1b280cd222c86f636c019df66c3d8ee6b9299cfd3c2e32"
+    },
+    "target": {
+      "file": "assets/open-art/openmoji-striped-standing.png",
+      "sha256": "8f1b7234e857ba70c84366fe67a4753ce98b9a3b439eb785af810e88c6ff5c94",
+      "trim": [
+        13,
+        6,
+        213,
+        586
+      ],
+      "aspect": 0.3448275862068966
+    },
+    "scenes": [
+      {
+        "id": "legacy",
+        "source": "assets/crowd-captcha.png",
+        "sourceSha256": "17f9c327bdbeb186a3bb15a9d922383357651c70b22f627f2bf97b9c4e9997b3",
+        "bandRegistrationsSha256": "8c99aee6094e2887a97de2baab11d2b2b96cdb8f35bdde6075ca677460685c3b",
+        "bands": [
+          {
+            "id": "depth-band-6",
+            "foregroundSha256": "6a0d8addc2a99e1dc6a67fdfa771199cbd0a0f8f77bcc8d12c6f0f847b88df64",
+            "maskSha256": "7ddfaaba3fd36bbfb7de048895a44dac306542bf2b768e4bc61bb544cf3fbe4f"
+          },
+          {
+            "id": "depth-band-7",
+            "foregroundSha256": "f7e42aa2ca61e3f01b53709350f908510e6cc932cb8ff11841d7fb88a16fcb40",
+            "maskSha256": "e9b6d6ffbb3f400fa812aa1dfba84e1775733f179cb52359f08099453f1e79b2"
+          },
+          {
+            "id": "depth-band-9",
+            "foregroundSha256": "74fca0fd05c4d8f4d837a6daa65f3111c1f6955344d6dc9d2d40e10eff3e42a1",
+            "maskSha256": "1d21d4d8bd711fd818a749af5bc3c066a494a80a3b05fdf08fd70a1b060bea6c"
+          },
+          {
+            "id": "depth-band-11",
+            "foregroundSha256": "c3057cd6546120a798a6ec748037d5c5983a4ace4e5e6b23f3ad8f8df292c350",
+            "maskSha256": "d892ace0e4cd9b8038fa72f288563b14005bdc81b5ab132bc1e0b738a8d3fbf1"
+          },
+          {
+            "id": "depth-band-15",
+            "foregroundSha256": "c4db4bcff970f54e6d0d7d44a5d45b361f8a164be1b2925ad115ce5a46f083ae",
+            "maskSha256": "32a2853e1bcc1a0d20c14d85bbbabc67f163e032e22de2bf36f6cbd0633b78be"
+          },
+          {
+            "id": "depth-band-16",
+            "foregroundSha256": "014cefa05d864971ee55083cc1afd6145fc7f275967024ab99bf66903aadbd71",
+            "maskSha256": "298e2afbbfb164c68bce6aeed60dc047db9e0a8c66bbb2d94450f1cf742393a4"
+          },
+          {
+            "id": "depth-band-17",
+            "foregroundSha256": "49063810e8d05e89716641f7f26daa7d2ec3a11b36cf2b0b8030f6eba1a02822",
+            "maskSha256": "41c97f5e7658c489f7fbc1899a669fed1b8e79931c4f0149642355def8c9e7c0"
+          },
+          {
+            "id": "depth-band-21",
+            "foregroundSha256": "f0481ff090f580ca79939b449d82a1530666b6e6af0c6fd5a8b9112960241bcb",
+            "maskSha256": "87c4b56138c127d275c3a4b9f29d5bfd464eb2fb0e87945d086e23a89a36d74d"
+          },
+          {
+            "id": "depth-band-22",
+            "foregroundSha256": "79f97f12b7bb9d2279d995b2f5ef97e473e062c6042eb6d7d0051fb8a57539f3",
+            "maskSha256": "77a017e0d74550d3eccb88ef7e8395b8e255a3a306e7300d1746bce87a504127"
+          },
+          {
+            "id": "depth-band-23",
+            "foregroundSha256": "1bd9cc8bca483381e0c74db8ec6f2bacaeded1b3825e60ddd61f8b52b686e063",
+            "maskSha256": "eb8ece4e9c50075bc93e9886d84563abdbb04d273c5e8d35cf8928a62887c23d"
+          },
+          {
+            "id": "depth-band-24",
+            "foregroundSha256": "e2932f21cd51c373cc67aea2dea31fba31a52b91d89b13485cbb092fbc46be86",
+            "maskSha256": "a561d3a46975dd20a81bcd289014a7b98ec6eee26a9c111185c230758d5673fb"
+          },
+          {
+            "id": "depth-band-25",
+            "foregroundSha256": "42e61fcb79fd7e7786a0bd4624fe617ba72a8c9dbeae03d01ba6dda4ae652ac2",
+            "maskSha256": "4d4bc8fbff238a835f707125f20679bdef867fe15991c0c556c8b6609315c224"
+          },
+          {
+            "id": "depth-band-26",
+            "foregroundSha256": "032f6a100b66f219996d49e78c044d980561d2af50e565bdb9a2f22b316ad780",
+            "maskSha256": "b017893b1adc9ee439d2b2165213ae7b6946d8bfc190a4fcdfde2bc7d3bbd10e"
+          },
+          {
+            "id": "depth-band-28",
+            "foregroundSha256": "5fcd37c43bc222b511911e3edc92ac0490bfdcfd5e570a68cf69699bba2fceb7",
+            "maskSha256": "fa9f6b02040edd7f5e996d9fa2a90d90a44b93c1cea48931ff25462527a960d4"
+          },
+          {
+            "id": "depth-band-29",
+            "foregroundSha256": "28a7434312c23fa21ef3d2db6b74a75302dbcf0c0bf632039486565b748644c0",
+            "maskSha256": "328995e7a5855cc5e92e8c9167a5cd415474265d74e6ada6135d95b7c47f326d"
+          }
+        ]
+      },
+      {
+        "id": "magic-arena",
+        "source": "assets/busy-art/magic-arena.png",
+        "sourceSha256": "379adca27715dffd8daf0bd1c115f33c11fc29d28358bc603424d8f6703d86e2",
+        "bandRegistrationsSha256": "4eb995b527de9c1cc726790c00f2102ee981c24ae835571a74e042fb265ce240",
+        "bands": [
+          {
+            "id": "depth-band-20",
+            "foregroundSha256": "80041bbf6c596418eafba61f7ebcee117b913519a05158b75a91f38f0566a134",
+            "maskSha256": "2c7ff599a6f64c7c1c9f301c8ef224c83cdfbdac6a8fc8082454254a3dfe18a2"
+          },
+          {
+            "id": "depth-band-21",
+            "foregroundSha256": "97f8ed84b78bf1f33f54164c065cc55fcc603c41d4242dc78504873c7708639b",
+            "maskSha256": "ffdb6978f5e6aa356b4a158c5af8ff0e54caa77d50164a51a30fe44ae544f2da"
+          },
+          {
+            "id": "depth-band-22",
+            "foregroundSha256": "d77210b8a75a1e43cf72e2f7cc69efe8c980f8dea2378d05cd6bc4da6483581a",
+            "maskSha256": "0cd35f380f69a9165d383aff89fdd614e09dba8b337ed7c65877788f8d9b54a4"
+          },
+          {
+            "id": "depth-band-25",
+            "foregroundSha256": "91106c6062debfee31d43fe34450c8254729c3b1b194c9bbdcef6d0f3c0aa524",
+            "maskSha256": "11f71ef0f08780d030778469aeba0bb5f84b62ab0e4c7018098bb90fd4121208"
+          },
+          {
+            "id": "depth-band-28",
+            "foregroundSha256": "0f289099840f2928d5ede24a7152a62d91d8eb459e202fe298a11ef26ee36064",
+            "maskSha256": "f7a2cd1e534d9f646a2bcc351b873ea2a5a490799cca1dbcc1b2bc054459f138"
+          },
+          {
+            "id": "depth-band-31",
+            "foregroundSha256": "51d952a5de0461237596c82b88a214491704dd7f130a0c63cf6b68a7b9be06e2",
+            "maskSha256": "b6d20c4d11dcc589bc07dea8234d2bf1cea47d62089fa4084154ba0349369e4b"
+          }
+        ]
+      },
+      {
+        "id": "qualicity-queue",
+        "source": "assets/busy-art/qualicity-queue.png",
+        "sourceSha256": "8eb027c991a6e04803e81bd7f461d0cd3e8494fb4b250792e75325a3157e1bd8",
+        "bandRegistrationsSha256": "6e12f2e92e68f2ae95793ebd005f539b4c8ff98c890dd70d2d495451c7921399",
+        "bands": [
+          {
+            "id": "depth-band-17",
+            "foregroundSha256": "df8edba5a369c7ed183712476271f1da48b9064e468dc7a0cb3e8dca818befc9",
+            "maskSha256": "a0bce7a2ff6dc3c7d391b3db91d2b8639843623a393adcbef3e36e374d6d96c0"
+          },
+          {
+            "id": "depth-band-18",
+            "foregroundSha256": "01324594654814d651f60e6acbf32f17bcca910569df16c1e0219ecefdebe020",
+            "maskSha256": "655badce28350e88fc80a8b8c8ff868beb3da573e58507dc8f67aec615b3c691"
+          },
+          {
+            "id": "depth-band-19",
+            "foregroundSha256": "7e32e7ee99cb37c51b9cb8772af90a897652fa2b40b23128f3b636b58a3f1002",
+            "maskSha256": "c3663f38b1a6f4499a09b90a50e73d5a73af250925a6404d81d82e05524b1481"
+          },
+          {
+            "id": "depth-band-24",
+            "foregroundSha256": "0fc12bcb258d9621fe1c099985724e45c82ac9b94d164a3b99783c41d7d4035e",
+            "maskSha256": "60ac3917454cd0a929caecba942f6c5d07e1ed73a13728958bd60ac08be26c85"
+          },
+          {
+            "id": "depth-band-27",
+            "foregroundSha256": "be6d1807041af0459a265c0db8d0f73aed75bb0c5b4086eef38537e9165e7d24",
+            "maskSha256": "1274fbe4e3d6b356d51ce1cda3a61e7242c875b493b3f7489b6c27002d79e763"
+          },
+          {
+            "id": "depth-band-31",
+            "foregroundSha256": "0e18f02b67663de793be93a1c3fe346a0445bd8f71e409896f4038679b3e4302",
+            "maskSha256": "31b318accae6afc085ee0b4b18dfe7a754e90cba13ecc9e8217cb47242de9239"
+          }
+        ]
+      }
+    ],
+    "targetCompositeCount": 250,
+    "targetRecordSHA256": "8d61f60e9893f3bfa8a6b4e1892bebf7345ccd94cc07389cc7f3c80da4cc5304",
+    "sourceManifestSHA256": "7899f84ec40bcf56d7964472d98c9f562edbdbba74ee0ff38700ca2be34c37ab",
+    "visibilityRange": [
+      1,
+      1
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "path": "bruegel-childrens-games.jpg",
+    "observedDownloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Children%27s_Games_%28Bruegel%29.jpg/3840px-Children%27s_Games_%28Bruegel%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+    "resolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Children%27s_Games_%28Bruegel%29.jpg/3840px-Children%27s_Games_%28Bruegel%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+    "bytes": 2966195,
+    "sha256": "5b9a695aaa88b4a0ebebbbb1598247a773e58ae9f9275c56eeb8304d978dec67",
+    "mime": "image/jpeg",
+    "downloadedAtUtc": "2026-10-10T17:49:14.741452+00:00",
+    "localRasterEdits": false,
+    "dimensions": [
+      3840,
+      2769
+    ],
+    "format": "JPEG"
+  },
+  {
+    "path": "seurat-grande-jatte.jpg",
+    "observedDownloadUrl": "https://www.artic.edu/iiif/2/2d484387-2509-5e8e-2c43-22f9981972eb/full/843,/0/default.jpg",
+    "resolvedUrl": "https://www.artic.edu/iiif/2/2d484387-2509-5e8e-2c43-22f9981972eb/full/843,/0/default.jpg",
+    "bytes": 197727,
+    "sha256": "90197c037e6041fcae1c35606b921b5b626d868c2ff21cd653edb640b3f6e2dd",
+    "mime": "image/jpeg",
+    "downloadedAtUtc": "2026-10-10T17:49:15.885271+00:00",
+    "localRasterEdits": false,
+    "dimensions": [
+      843,
+      565
+    ],
+    "format": "JPEG"
+  },
+  {
+    "path": "openmoji-standing-source.svg",
+    "observedDownloadUrl": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F9CD.svg",
+    "resolvedUrl": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/svg/1F9CD.svg",
+    "bytes": 1567,
+    "sha256": "5de868175fd349d4e65af04ddae3bf5eb95f221b79294fa06b397dcc51172b0e",
+    "mime": "image/svg+xml",
+    "downloadedAtUtc": "2026-10-10T17:49:17.020562+00:00",
+    "localRasterEdits": false
+  }
+]

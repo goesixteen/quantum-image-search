@@ -1,0 +1,13 @@
+{
+  "recordedAtUtc": "2026-10-11T01:22:15Z",
+  "clockSource": "clock.curr_time",
+  "protocolSHA256": "4a113cef7f0dcd84f61845dae60703db5952e0355d95bf7256d79fb58fb6eb90",
+  "featureVersion": "current-qnn-window-v2",
+  "javascript": "outputs/waldo-search-lab/dist/qnn-localizer.js",
+  "javascriptSHA256": "1071a147ec39a3f0215d4e80e398fefbf73cbcf9079ca4563a6ef8dba579b196",
+  "python": "outputs/waldo-search-lab/model/qnn_localizer_features.py",
+  "pythonSHA256": "f711b73b0e0a455ae3b1943f97ba555ebc3a1d67145c31c11a2c3cf6834b8fe9",
+  "change": "Training/validation-only representation revision. Scanner interface, fixed4096 lattice, NMS, tolerance, frozen audit geometries/assets/seeds/outcomes unchanged. Known target height is an explicit feature; alignment features come from final-image color moments. No template/background/truth/placement inference inputs.",
+  "candidateModelRead": false,
+  "independentModelScoresRead": false
+}

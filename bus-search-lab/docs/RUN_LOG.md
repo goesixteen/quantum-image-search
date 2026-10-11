@@ -4,6 +4,8 @@
 
 The user explicitly said: “dont submit any of the work” and “just keep iterating improvements.” No contest submission was made. Subsequent work continues on UX, training/evaluation, and fair comparisons. Submission and public submission-material publication are withheld for the user. Both existing Sites stay owner-private.
 
+Latest resumed steering after the usage interruption prioritizes **finer crowd-search cells, signed-amplitude/probability maps, multiple backgrounds and target images, foreground occlusion and drag/drop**. Prefer existing open-source artwork over AI imagery where practical and use a red/white striped standing figure. The resumed default is classical known-template matching with a declared clean-background reference; the trained original-art QNN remains a separate preserved mode.
+
 ## Run 01 — October 10, 2026, started approximately 03:15 ET
 
 ### User steering incorporated
@@ -148,4 +150,136 @@ Continued the user's **no-submission / keep-iterating** instruction. No Qollab u
 
 ### Next hourly priority
 
-Develop **v4 local object/shape representation and foreground variation** using designated training/validation identities, with matched classical/QNN comparisons and scene-level constrained validation. Analyze ranking and coverage as well as false-mark budget; brighter masks or more circuit depth are insufficient fixes on current evidence. Preserve both working demos and their checkpoints. Keep the c-labelled street/bus pair steward-only until a new feature/model/threshold/renderer/protocol freeze; never choose thresholds from its results. Improve the local comparison/lesson using explicit feedback without claiming measured learning. Platform uploads, public submission materials and entry remain withheld. Record the private update receipt only when root obtains it, then stop temporary servers after handoff.
+This historical plan was interrupted and is superseded by the resumed crowd priority below. Preserve the saved feature research and working checkpoints. Keep the c-labelled pair steward-only; platform uploads, public submission materials and entry remain withheld.
+
+## Iteration 04 recovery and resumed layered crowd editor — October 10, approximately 17:42–18:00 UTC
+
+### Recovery facts and authorization
+
+- The earlier Iteration 04 began at 09:56 UTC and stopped at a reported usage limit. Read-only recovery inventoried saved evidence without opening reserved photo identities/pixels. The latest successful private update was actually **Iteration 03**, confirmed in `outputs/publication-receipt.json` at 09:36:31 UTC: bus `appgdep_6aca06d97cf4819191d7cd98c5a80355`, crowd `appgdep_6aca06e69354819195cd5c4266a6205a`. This resolves earlier log entries' pending wording.
+- Saved photo-v4 metrics do not support promotion: QNN threshold 0.995 has 1/144 false empty validation scenes, 7/512 complete target probes and 0.4% test recall; logistic threshold 0.99 meets the false-mark budget but has 17/512 complete target probes and 7.0% test recall. Final exact freeze/model-card/parity-verification files were absent at recovery and this documentation check. Production models remain unchanged; c remains closed.
+- Hypothetical reliability mathematics and 889 statevector checks survived, but served module/results files and the explanation document were initially absent. The subsequent local repair copied exact frozen bytes to both served paths and added [ERROR_PROPAGATION.md](ERROR_PROPAGATION.md). All20 served scenarios match; local headless Edge normal/perfect/absent checks had no page errors and both resources returned HTTP200 byte-identically. Hosting remains pending its new receipt. [SESSION_RECOVERY.md](../../waldo-search-lab/docs/SESSION_RECOVERY.md) records the initial gap and repair.
+- User steering now prioritizes the crowd editor and existing open artwork. **No contest submission, Qollab upload or public submission materials** were produced; the root workflow may update existing owner-private review sites after QA. No reserved asset was disclosed or inspected for this work.
+
+### Open artwork and licensing
+
+- Acquired a Commons-hosted **3840×2769 Bruegel Children's Games JPEG** (2,966,195 bytes), marked PD-Art/Public Domain Mark, and a museum-hosted **843×565 Seurat La Grande Jatte JPEG** (197,727 bytes), declared public domain by the Art Institute's API. Exact observed image URLs, collection credits, download times and SHA-256 hashes are recorded. Both downloaded rasters remain unchanged.
+- Preserved Laura Dworatschek's **OpenMoji person standing, 1F9CD** SVG and made a native SVG clothing adaptation: red/white stripes clipped to its original body silhouette, blue trousers and portrait intrinsic dimensions. It is **CC BY-SA 4.0**; retain source, modification and license links/attribution independently of MIT code. No AI raster generation/editing was used for the new figure.
+- SVG validation confirms the body clip matches the original, local references only, and no scripts/external imagery/events. [OPEN_ART.md](../../waldo-search-lab/docs/OPEN_ART.md) and the new open-art acquisition/provenance files are the asset authority. Original generated festival/explorer art is retained for its frozen QNN benchmark.
+- Root rendered the adapted SVG to a transparent 230×600 PNG. The first native render omitted its pattern fill, so root replaced the vector shirt fill with a white base and five explicit red rectangles under the same clip, rerendered and visually verified the stripes. Current provenance hashes identify the final SVG/PNG; any earlier yellow-shirt browser result is preliminary. No AI generation or subsequent raster edits were used.
+
+### Local layered editor and fine search
+
+- Implemented 512px layered scenes, named foreground PNG-equivalent cutouts derived from registered background pixels, target-behind/in-front stacking, custom paint/erase masks, target/background local uploads, drag/drop, keyboard movement/Enter, target-size control, fine grids, PNG/composite/layer-data downloads, reset and remove/random placement.
+- Fine **16×16 /32×32 /64×64** mode searches target center-point addresses with **8/10/12 simulated address qubits**. Target display size is separate from grid pitch. The custom classical pixel matcher uses final RGB, the supplied known-size template and clean background RGB, without target coordinates/presence/occlusion truth. Retained threshold-qualified peaks undergo nearby suppression and construct the accepted set; an empty set abstains without forced argmax.
+- Kept the saved four-qubit QNN separately available only for its original character/crowd pair at 4×4/8×8. Original patch metrics and expanded nominal/stress audit evidence describe that model, not the new template matcher or open artwork. All three trained checkpoints are preserved.
+- Labelled detector scores, signed Grover amplitudes, Born probabilities, accepted-set mass and independently evaluated target mass separately. Fine truth uses refined-center error against the rendered rectangle anchor, with a displayed half-cell-diagonal plus1px tolerance; coarse QNN truth retains alpha>32 tile overlap.
+- Remaining/full alpha mass is the UI visible-fraction measure; a>1% convention gates point evaluation. Occlusion comes from actual upper layers. Visibility annotation is independent evaluation data, never a matcher input. Fully hidden/absent cases cannot acquire a coordinate oracle from renderer metadata.
+- Local-only file decoding uses object URLs/canvas pixels. Source review found static asset/model GETs and no file-content transmission; dynamic browser checks remain pending. Known clean-background access is an explicit assumption of this compositing experiment.
+
+### Verification and remaining status
+
+- Independently ran the crowd Node suite at approximately 18:00 UTC: **26/26 tests pass**, consisting of 14 layer/compositing checks and 12 matcher/search checks. Original-art matcher fixtures locate 24 integer placements per fine grid, zero false marked points and 0px refined-center error. Separate fractional resampling stress locates only **1/3**, preserving two threshold misses. Original-art partial/extensive occlusion fixtures retain a match at 29.801% covered pixels and abstain at 92.185% covered pixels; no general robustness claim follows.
+- Read-only scientific review confirms pixel/truth separation, retained-peak predicate, known-background scope and empty-oracle behavior. The webpage predicate equation must refer to retained accepted peaks after suppression, rather than every threshold-passing score. Source size/parity and actual browser antialiasing can change outcomes; new assets need new checks.
+- **Actual new-editor browser QA and owner-private deployment remain pending root's final evidence.** The previous Iteration 03 receipts remain the last confirmed hosted state. [LAYERED_SEARCH_HANDOFF.md](../../LAYERED_SEARCH_HANDOFF.md) is a draft for root to finalize; it must not imply the new editor is already hosted.
+
+### Next hourly action
+
+Complete browser/open-art/editor checks and record the private receipt first. Then lock a structured scene/target/size/occlusion/absence audit with explicit center error, false peaks, abstention and true-target mass. Preserve fractional and heavy-occlusion failures; distinguish classical template matching from trained QNN research. Use [NEXT_STEPS.md](NEXT_STEPS.md) for the current sequence. Keep c closed, source/asset licenses explicit, and all submission/public materials withheld.
+
+
+## Completed layered-editor step — 2026-10-10 18:20:10 UTC
+
+The preceding resumed draft's browser/private-publication TODO is resolved for the crowd site:26 Node tests,2,064 native audit probes and final in-app-browser checks completed. Existing owner-private deployment **appgdep_6aca8173567481918885735d43c44972** succeeded from source **6938f0974fc6e8e0af0e701ee66f8ff114603152**. Read [the finalized handoff](../../LAYERED_SEARCH_HANDOFF.md) and [actual browser observations](../../waldo-search-lab/docs/LAYERED_BROWSER_QA.md). The bus hosted version is unchanged; repaired reliability dependencies are local and unpublished. Production models and reserve assets are unchanged. Retained previews remain running for this visible review. No hackathon submission or public sharing.
+
+The next work is heavy-occlusion/registration robustness under a declared protocol and user-browser checks of tray drop, brush and data-URL downloads. Preserve435 visible misses in the frozen report rather than promote a guarantee.
+
+## Iteration 06 — whole-object bands and soft field (October 10, ~19:30 UTC)
+
+Built on the completed layered editor and the user's clarified lower-feet=in-front rule. Replaced the two painting picker entries with David Revoy's CC BY4.0 Magic Arena and Coronation Queue panels, preserving source JPEGs and declared crop coordinates. Original Festival retains the frozen QNN benchmark and was tested before the two new scenes.
+
+Expanded Festival to 24 complete object PNGs; constructed transparent ground-free copies and full-object 16px foot-level bands (Festival15, Arena6, Queue6). Source pixels and full silhouettes remain registered; no straight line cuts through an object. Maximum member alpha>32 bottom controls stacking, with equal bottoms foreground-front. Masks are approximate selected objects, not complete segmentation. Independent native decoded-PNG audit preserves 205 in-bounds probes,117hits,77visible misses,11less-visible abstentions,0falsepoints; all3empty stacks and27band reconstructions pass. Previous per-object/painting protocols remain historical.
+
+Added an actual raw pixel-resemblance scan for display, Gaussian gradients/contours, cinematic~8sstate playback, softness/emphasis/exposure controls, and separate exact maps/measurement. The extra4096raw center tests are disclosed; their marks are unused. Display interpolation does not imply quantum spatial diffusion. A review caught and fixed cancelled-frame races. No frozen classifier/oracle/quantum core parameters were tuned.
+
+Validation:60Node tests pass. Festival default/musician-crossing, Arena, Queue abstention/visible placement, uploads, absent target, native tray drag, custom paint/clear, animation cancellation, original QNN4x4 and390pxviewport pass. Native ZIP (24object/15band/atlas) and layerJSON downloads passed. All174static references and7relative imports resolve. Published pushed SHA deb635994bb72097b7b508abc20a4b1fd23f5a94; private deployment appgdep_6aca912d26308191beb39805cbe4b61d succeeded at19:25:43UTC, saved version appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_e2d25597238c8191a47ec716d6aa5475. Credential expired before the first helper attempt; it was renewed without any source mutation, then push/package succeeded. A fresh authenticated hosted tab verified the new picker/default band search/soft field and no errors; old-tab caching immediately after deployment was not treated as success proof. Hosted screenshot and exact receipt saved.
+
+Rubric check: clearer educational contribution for Novelty & Creativity, actual layer/field execution and disclosed classical costs for Technical Execution, explicit bounds on Impact claims, and reproducible failure/provenance/audit records for Documentation Quality. No new judging weights or quantum/person-recognition advantage were invented. Existing private audiences preserved; schoolbus live revision unchanged. No Qollab/contest upload or public source/video/submission material release.
+
+Continue from ../../LAYERED_SEARCH_HANDOFF.md and ../../publication-receipt.json. User instruction remains: keep iterating, do not submit work. Current preview processes are retained for review, not duplicated.
+
+## Iteration 07 — stronger scene field opacity (2026-10-10T19:57:19.315Z)
+
+Answered the shared-field question: matching Soft search field selectors use the same computed raster; their backgrounds, alpha and contours differ, and selectors are independent. Increased only the scene soft-field/raw-resemblance multiplier from0.58to0.90, keeping intensity-dependent alpha/transparent zeros and explanatory0.94. Initial candidates and final peak are clearer. Local round0/50 and default search, syntax and whitespace checks passed; no new tests mirroring a cosmetic constant. Prior60tests/native audits remain unchanged historical evidence.
+
+Published exact pushed source ed3521866bc46bb68b579dbd35a383e073fc5007 through existing owner-private Site; deployment appgdep_6aca9831f3008191a6e7b27d6df51fdd succeeded. An older hosted tab initially retained prior alpha; fresh hosted tab verified the new candidate and final fields, default0pxerror/94%visibility/99.99%accepted mass and no console errors. Saved both hosted proofs, updated receipt/handoff/state/archive. This strengthens demo readability for Technical Execution and educational presentation while preserving scientific disclosure for Documentation Quality. No model, oracle, search state, artwork, bus deployment, audience or contest submission changed.
+
+
+## Trained striped-person QNN default — 2026-10-11T02:33:48.222368+00:00
+
+**Latest completed step, 2026-10-11T02:33:48.222368+00:00:** the crowd default is now genuinely trained-QNN powered and privately deployed from `1448ac24789ffd2ac3e8ce899268fd8abd755a25`. This supersedes historical classical-default statements below. User relaxed occlusion work; target starts fully visible.4 qubit / 4 layer / 4,096 window inference uses final pixels+supplied size, with no template/background/truth gate. Reserved test223/250complete versus logistic221/250;25 QNN abstentions and2 wrong points retained. Separate native audit232/300 clean and203/540 historical stress hits;12 wrong points/11 scenes and all12 empty abstentions.74 Node/9Qiskit tests,parity/replay,desktop/mobile/uploads/drag/cancellation pass at documented scopes. The24 pxFestival browser miss remains. Both private identities preserved; bus live revision unchanged. No submission. Read [current handoff](../../CURRENT_QNN_HANDOFF.md), [model protocol/results](../../waldo-search-lab/docs/CURRENT_QNN.md), and [actual receipt](../../publication-receipt.json). Older dated sections are history.
+
+RejectedV1,V2,V2b,mixedV3 before opening final test/audit; clean-front V3 selected on validation then frozen. Saved36optimized/40 exported slots. Retained all new misses and close point errors. Private Site deployment succeeded,actual hosted QNN proof saved,sourceZIP rebuilt. Contest/public publishing withheld.
+
+## Future iteration direction — October 10, 2026 (America/New_York)
+
+Saved the user's two-part Where’s Wanda brief: interactive-only female striped-character demo with five same-scale busy crowd backgrounds, followed by an approachable interactive image → QNN → Grover explanation. AI/open artwork is now acceptable. Recorded estimated planning weights (30/35/25/10), clearly not official. Independent technical plan review clarified reduced-state Bloch vectors, full-state entanglement/correlations, faithful rotations/CNOT transitions, separate classifier/location registers and display-only smoothing. New assets require new-domain training; prior 223/250 remains historical evidence. No new site/model/assets are claimed in this planning step. Preserve private review updates and no-submission instruction.
+
+
+## Wanda first completed iteration
+
+**Latest completed step — 2026-10-11T05:08:29.176094+00:00:** Where’s Wanda is implemented and privately deployed from `5a339e2ff0348701e2572d1c796cedd0ec541571`. Five new crowded scenes, a female striped PNG and compact play menu are separated from the image → trained QNN → Bloch/gate → Grover lesson. New-domain frozen test: 298/300 target scenes, 0/25 empty false detections, baseline 299/300; known art and supplied 40–64px sizes only. 92 Node tests, independent actual-state parity, frozen verification and real browser/mobile checks pass. Exact hosting/proof is in [WANDA_HANDOFF.md](../../WANDA_HANDOFF.md) and [publication-receipt.json](../../publication-receipt.json). The prior 223/250 experiment below is historical, not Wanda. Both owner-private identities and the bus live revision are preserved. Do not submit.
+
+
+## Iteration 10 — 2026-10-11T05:56:31.231419+00:00
+
+Completed guidedWanda lesson, rigorous predicate board and exact run controls; QiskitWanda companion10tests andNode102 pass. Fixed stale build-only measurement text and lesson readiness after loading. Preserved originalweights/threshold/native reserved failures. Paired20-case browser/native audit documents15/15vs13/15target hits,0/5emptyfalse,18/20predicateagreement and no pixelidentity. Initial truncatedPNG transfers were rejected and recaptured fully.
+
+Human steering during work: explained Wanda-specific clue heat versuspersonness; addeddisplay-onlyfaintboost toggle; movedFestivaldefault to420300 andverifiedactualsample. Two-copy native/browserexperiment accepts2420/2786, peaks35instead50, eachprobability0.4999984238883132;10,000drawssplit4987/5013withalloutcomesretained. LatestrequestedabsentFestivalcheckreturns0/4096,no match,round0,samplingdisabled.
+
+Private deploymentappgdep_6acb244d71b08191bf46732484430aed succeeded from65519a96792c5c162028de9047c8455e1b411555; exactreceipt/proofs/sourceZIP are external. Owner/custom1user0groups0externalvisitors confirmed. Bus unchanged; no contest/public submission. Next: novice clarity walkthrough and prospectively frozen renderer/generalization work. See WANDA_HANDOFF.
+
+
+## Crowd iteration11 — 2026-10-11T06:48:08.132205+00:00
+
+Private crowd commit`af83edd7fa01f026d3df1aa568a740a52495d63b`, deployment`appgdep_6acb2f2906688191babcf44c9b5b3fc1`, succeeded. Park52px curated bystander70.21%unmarked; realWanda420300found. Model/threshold and original298/300 reserve unchanged.114Node tests;125curation/regression checks retained with40/46falsematches and renderer failure. Bus deployment unchanged. Current WANDA_HANDOFF.md/receipt supersede earlier crowd status. Next: single2–3stage underhood, no duplicateheatmap/mainfalse-positiveexercise; optionalevidence. Overnight capone reset, zero used, preserveone; readresourceledger. No submission.
+
+
+## Crowd iteration 12 — 2026-10-11T07:25:18.690451+00:00
+
+Private source `f5e429a94f885dc8afd1469079ca69f065c8cd56`, deployment `appgdep_6acb38e5baa881919a77eec0bb38408a`, succeeded. Compact three-stage explainer is complete; 120 Node tests and frozen/curation checks pass. Current external handoff/receipt supersede prior crowd status. Bus deployment unchanged. Next: Polish the same three-stage experience with a novice walkthrough and clearer responsive circuit/probability labels. Keep advanced evidence optional. Plan any new rendering/generalization data prospectively before freezing and reserved testing; do not retune the opened Wanda checkpoint. Overnight reset maximum one, 0 used; preserve one. No submission.
+
+
+## Crowd iteration 13 — 2026-10-11T08:18:24.188036+00:00
+
+Private source `d14bf6a99c8dfc1513d3290ed36e6c474e4ad896`, deployment `appgdep_6acb4488c1688191b4163aa2c3d07dd4`, succeeded. Responsive charts and compact explanatory action cues;126 Node tests and independent frozen/curation checks pass. Current external handoff/receipt supersede prior crowd status. Bus deployment unchanged. Next: Polish keyboard/pointer, loading/cancellation and reduced-motion paths across all five worlds; dry-run the packaged quick-start. Seek voluntary first-time feedback when available, without claiming measured learning. Keep the same compact flow and frozen evidence. Overnight reset maximum one, 0 used; preserve one. No submission.
+
+
+## Crowd iteration 14 — 2026-10-11T09:25:53.149557+00:00
+
+Private source `f8090bd03045d350bdb6d2e9133c0e882887a3b8`, deployment `appgdep_6acb5549b6bc8191aea20694b9916792`, succeeded. Stop/Escape cancellation, reduced animation, actual image-error recovery and portable startup verified. 131 Node tests and independent frozen/curation checks pass; these are engineering checks, not new accuracy. Current external handoff, receipt, quick-start and package audit supersede prior crowd status. The iteration 13 QA remains preserved. Bus deployment, Wanda model/threshold and known Park failures are unchanged. Next: Review the compact walkthrough as a first-time visitor, then improve the most confusing copy or interaction without adding more teaching units. If actual novice feedback is available, document it separately from heuristic QA. Keep the frozen model/evidence and private publication constraint; predeclare any future domain or recognition study. Overnight reset maximum one, zero used; preserve one. No contest or public project, video, source or Qollab submission/publication. Owner-private review Site updates remain authorized.
+
+
+## Crowd iteration 15 — 2026-10-11T10:21:14.708449+00:00
+
+Private source `a5b285dc484a6db9a35d806c21de36caa652bd93`, deployment `appgdep_6acb626b9bb48191ac72b5fa1984de6a`, succeeded. Watch one round guides exact snapshots through oracle, reflection preview and one saved commit. Pause, reduced stepping and stale continuation cancellation are verified. 140 Node tests pass; these are engineering checks, not new accuracy. Current external handoff, receipt and quick-start supersede prior crowd status. The iteration 14 package audit remains prior portable proof; interaction 14 and responsive explainer 13 QA remain preserved. Bus deployment, Wanda model/threshold and known Park failures are unchanged. Next: Review the compact three-stage explanation for the next concrete usability gap; seek voluntary novice feedback when available. Preserve the frozen model and scope, and declare any future domain/model study before testing. Overnight reset maximum one, zero used; preserve one. No contest or public project, video, source or Qollab submission/publication. Owner-private review Site updates remain authorized.
+
+
+## Crowd iteration 16 — 2026-10-11T11:11:22.254474+00:00
+
+Private source `2f3f836e5d13df81f32abc040f101a2959c04ee0`, deployment `appgdep_6acb6db2fa84819194c044f570f6c8db`, succeeded. Play this layer pauses the actual QNN at gates 20/40/60/80 while retaining all 80-gate controls. Boundary captions, pause and one-gate reduced stepping are verified. 147 Node tests pass; these are engineering checks, not new accuracy. Current external handoff, receipt and quick-start supersede prior crowd status. The iteration 14 package audit remains prior portable proof; guided-round 15, interaction 14 and responsive explainer 13 QA remain preserved. Bus deployment, Wanda model/threshold and known Park failures are unchanged. Next: Keep the connected three-stage flow and seek the next observed usability or comprehension gap; request voluntary novice feedback when available. Preserve frozen evidence and predeclare any future model/domain study. Overnight reset maximum one, zero used; preserve one. No contest or public project, video, source or Qollab submission/publication. Owner-private review Site updates remain authorized.
+
+## Local crowd continuation 17 — rehearsal documentation
+
+
+Created WANDA_DEMO_REHEARSAL.md and WANDA_ITERATION17_HANDOFF.md. Actual
+owner-private browser walkthrough found the default 52px Festival Wanda at
+(420,300), paused QNN playback at 20/40/60/80 gates, and sampled address 2420
+once after exact Grover phase/reflection playback. Center error was 0.5px;
+target visibility was 100%. Tool-driven duration was 237.405 seconds, not a
+verified two-minute human presentation. No broad tests were rerun for this
+documentation-only continuation. Application source, model, threshold, artwork,
+benchmark and deployment remain iteration 16, with its prior 147 passing tests.
+No contest submission or agent usage reset occurred. Next: privately time a
+spoken walkthrough and improve an observed comprehension gap while preserving
+the same three stages and frozen evidence.

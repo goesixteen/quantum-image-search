@@ -1,0 +1,89 @@
+{
+  "scope": "Known default center belongs training partition; separate post-selection regression, not held-out scene generalization. Native high-quality resize; no threshold changes from these outcomes.",
+  "modelSHA256": "73aa5aff1cf77a8a1ce9c93cac2837a20de0064f627049ddc46f25fd54bb4143",
+  "scriptSHA256": "88cae4a4f4f586c533bb9f110b0496f76cb356fcd42ad6b660fca35fe6630690",
+  "threshold": 0.9956411685232663,
+  "results": [
+    {
+      "scene": "legacy",
+      "present": true,
+      "center": [
+        280,
+        350
+      ],
+      "height": 52,
+      "width": 18,
+      "visibleFraction": 0.9425291737337933,
+      "accepted": [],
+      "correctPoints": 0,
+      "falsePoints": 0,
+      "maxScore": 0.9923107316795153
+    },
+    {
+      "scene": "legacy",
+      "present": false,
+      "center": null,
+      "height": 52,
+      "width": 18,
+      "visibleFraction": 0,
+      "accepted": [],
+      "correctPoints": 0,
+      "falsePoints": 0,
+      "maxScore": 0.9712990764915942
+    },
+    {
+      "scene": "magic-arena",
+      "present": true,
+      "center": [
+        280,
+        350
+      ],
+      "height": 52,
+      "width": 18,
+      "visibleFraction": 1,
+      "accepted": [],
+      "correctPoints": 0,
+      "falsePoints": 0,
+      "maxScore": 0.9848490954045134
+    },
+    {
+      "scene": "magic-arena",
+      "present": false,
+      "center": null,
+      "height": 52,
+      "width": 18,
+      "visibleFraction": 0,
+      "accepted": [],
+      "correctPoints": 0,
+      "falsePoints": 0,
+      "maxScore": 0.9497315784515349
+    },
+    {
+      "scene": "qualicity-queue",
+      "present": true,
+      "center": [
+        280,
+        350
+      ],
+      "height": 52,
+      "width": 18,
+      "visibleFraction": 0.042631448554494696,
+      "accepted": [],
+      "correctPoints": 0,
+      "falsePoints": 0,
+      "maxScore": 0.953217816340408
+    },
+    {
+      "scene": "qualicity-queue",
+      "present": false,
+      "center": null,
+      "height": 52,
+      "width": 18,
+      "visibleFraction": 0,
+      "accepted": [],
+      "correctPoints": 0,
+      "falsePoints": 0,
+      "maxScore": 0.953217816340408
+    }
+  ]
+}

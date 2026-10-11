@@ -1,0 +1,663 @@
+{
+  "featureVersion": "wanda-window-v1",
+  "featureNames": [
+    "sweater_stripe_fourier",
+    "sweater_cross_phase",
+    "sweater_red_white_balance",
+    "warm_face_brown_hair",
+    "blue_trouser_morphology",
+    "body_horizontal_alignment_px",
+    "body_vertical_alignment_px",
+    "supplied_wanda_height"
+  ],
+  "featureSHA256": "bc9292a9dbc9ada24611916118e297aeb06d3d2eb8a5961c31f968162c26decf",
+  "targetSHA256": "ae679a90fb94c8ad10a589fd6fa6a27404b7d519f6ad750557749a1595229777",
+  "modelSHA256": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88",
+  "model": {
+    "name": "Wanda same-art centered-window variational QNN",
+    "kind": "qnn",
+    "featureVersion": "wanda-window-v1",
+    "featureNames": [
+      "sweater_stripe_fourier",
+      "sweater_cross_phase",
+      "sweater_red_white_balance",
+      "warm_face_brown_hair",
+      "blue_trouser_morphology",
+      "body_horizontal_alignment_px",
+      "body_vertical_alignment_px",
+      "supplied_wanda_height"
+    ],
+    "qubits": 4,
+    "layers": 4,
+    "theta": [
+      -1.124501148840976,
+      0.5459344352035447,
+      -0.0686719158235772,
+      1.004002314554204,
+      -0.13321684773841427,
+      0.6400365554316715,
+      0.7747642628342918,
+      -0.9124971907819255,
+      0.25013392243458077,
+      1.5311989178614005,
+      0.9999288831765742,
+      0.8221014220655719,
+      -0.5606927983039008,
+      0.4409285958018202,
+      0.8229167260285001,
+      0.4400423579346437,
+      0.5638652958155208,
+      0.23941742431550628,
+      -1.1526276963202529,
+      -0.6022718483199593,
+      0.4745974238961892,
+      0.9062385986535318,
+      0.2943011335636588,
+      0.5894746151304034,
+      0.14343816235593265,
+      0,
+      -0.9259069087995083,
+      0,
+      0.12361110679197984,
+      0,
+      0.14631862114994001,
+      0
+    ],
+    "readout": [
+      -2.5490880268905665,
+      -2.9733331557775,
+      1.129770756082002,
+      4.592533003297506,
+      -5.0277837557165155,
+      0.7711342039870704,
+      -5.3507123182197445
+    ],
+    "bias": -0.9984008046869021,
+    "parameterCount": 40,
+    "optimizedParameterCount": 36,
+    "frozenInactiveSlots": [
+      25,
+      27,
+      29,
+      31
+    ],
+    "readyForDemo": true,
+    "trainingDomain": "Same OpenMoji striped target over Original Festival, Magic Arena, and Qualicity Queue; supplied known height24–112px; native high-quality resizing; always-front targets, clipping reported; no unseen identity claim.",
+    "checkpointStep": 1000,
+    "sourceHashes": {
+      "trainer": "40e745903522924adfc1343a4bd7fd399639d0221a82ceb84117d562fd475526",
+      "qnnCore": "8d4fdd3e80d651e92ca6cf6f3450cf1048934762d9add9de612b3d06dabc4005",
+      "featurePython": "b9f3de6a53ce4bdb74f45d2b2687147b80090a8da50432d19b13db9e5c5994a0",
+      "generator": "27316676e237a74b800d68c51d68d2f9a96da94f42be35188595d329ce45b691",
+      "featureJS": "bc9292a9dbc9ada24611916118e297aeb06d3d2eb8a5961c31f968162c26decf",
+      "protocol": "e7d6c9a0ba102bc4317ac0f2ec599143b0492291f2ad5af5e72d49387c08e761"
+    },
+    "dataHashes": {
+      "train": {
+        "features": "1b12fe15832ed9c5a0fa0ce2158a62f8bccfbdcf13f121c38542290ddef36576",
+        "labels": "bf25129d406fdd127390569445a3f49b4444d18415ca50d21599fc11e065de7e"
+      },
+      "validation": {
+        "features": "9d7fddb569c4b7e43c34d7d9dbb62ae33b5969a163482872c3c1da44bd4572b3",
+        "labels": "03189777d89d05d4b6376c8694e128dbb74f367a642edce29dd4eda576591cca"
+      }
+    },
+    "optimizationSeed": 2026101105,
+    "optimizationStarts": [
+      2026101105,
+      2026101106
+    ],
+    "fitRevision": "wanda-v1-front-discrete-sizes",
+    "trainingObjective": "Source-group weighted BCE: positives 0.5, neighbors/decoys 0.25, mined backgrounds 0.25; plus 0.25 times mean softplus(1 - positive logit + nearby negative logit) over 9,600 pairs from the same image.",
+    "threshold": 0.9056472752971427,
+    "sceneValidation": {
+      "targetScenes": 200,
+      "absenceScenes": 25,
+      "completeHits": 200,
+      "completeHitRate": 1,
+      "targetFalsePointScenes": 0,
+      "targetFalsePointRate": 0,
+      "targetEmptyOracles": 0,
+      "targetCoverage": 1,
+      "absenceFalsePointScenes": 0,
+      "absenceAcceptedPoints": 0,
+      "threshold": 0.9056472752971427,
+      "bySizeRanges": {
+        "40-40": {
+          "n": 40,
+          "completeHits": 40,
+          "completeHitRate": 1,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        },
+        "46-46": {
+          "n": 40,
+          "completeHits": 40,
+          "completeHitRate": 1,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        },
+        "52-52": {
+          "n": 40,
+          "completeHits": 40,
+          "completeHitRate": 1,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        },
+        "58-58": {
+          "n": 40,
+          "completeHits": 40,
+          "completeHitRate": 1,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        },
+        "64-64": {
+          "n": 40,
+          "completeHits": 40,
+          "completeHitRate": 1,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        }
+      },
+      "byScene": {
+        "wanda-beach": {
+          "n": 40,
+          "completeHits": 40,
+          "completeHitRate": 1,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        },
+        "wanda-fairground": {
+          "n": 40,
+          "completeHits": 40,
+          "completeHitRate": 1,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        },
+        "wanda-festival": {
+          "n": 40,
+          "completeHits": 40,
+          "completeHitRate": 1,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        },
+        "wanda-market": {
+          "n": 40,
+          "completeHits": 40,
+          "completeHitRate": 1,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        },
+        "wanda-park": {
+          "n": 40,
+          "completeHits": 40,
+          "completeHitRate": 1,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        }
+      },
+      "byVisibility": {
+        "20-50%": {
+          "n": 0,
+          "completeHits": 0,
+          "completeHitRate": 0,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        },
+        "50-90%": {
+          "n": 0,
+          "completeHits": 0,
+          "completeHitRate": 0,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        },
+        "90-below100%": {
+          "n": 0,
+          "completeHits": 0,
+          "completeHitRate": 0,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        },
+        "100%": {
+          "n": 200,
+          "completeHits": 200,
+          "completeHitRate": 1,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        }
+      },
+      "byFrameClipping": {
+        "inside": {
+          "n": 200,
+          "completeHits": 200,
+          "completeHitRate": 1,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        },
+        "clipped": {
+          "n": 0,
+          "completeHits": 0,
+          "completeHitRate": 0,
+          "anyFalse": 0,
+          "emptyOracles": 0
+        }
+      },
+      "minimumCriticalScoreMargin": 0.025932700743291237,
+      "minimumFullScoreGap": 0.00022484439047520954,
+      "feasible": true
+    },
+    "metrics": {
+      "train": {
+        "n": 11467,
+        "threshold": 0.9056472752971427,
+        "accuracy": 0.9959884887067236,
+        "precision": 0.9974391805377721,
+        "recall": 0.97375,
+        "f1": 0.9854522454142948,
+        "true_positive": 1558,
+        "false_positive": 4,
+        "false_negative": 42,
+        "true_negative": 9863,
+        "bce": 0.019693973077597675,
+        "balanced_bce": 0.017810778868161174
+      },
+      "validation": {
+        "n": 6467,
+        "threshold": 0.9056472752971427,
+        "accuracy": 0.998144425545075,
+        "precision": 0.9974358974358974,
+        "recall": 0.9725,
+        "f1": 0.9848101265822785,
+        "true_positive": 389,
+        "false_positive": 1,
+        "false_negative": 11,
+        "true_negative": 6066,
+        "bce": 0.012680663355846269,
+        "balanced_bce": 0.014348083248589303
+      }
+    },
+    "defaultTargetHeight": 52,
+    "supportedTrainingHeights": [
+      40,
+      46,
+      52,
+      58,
+      64
+    ],
+    "detectorScoreMeaning": "Learned sigmoid score; real-world probability calibration not established"
+  },
+  "fixtures": [
+    {
+      "id": 0,
+      "file": "parity-pixels/fixture-0.png",
+      "sha256": "36a04d4edc77b4bc5307e54ca8539a80830e4182b9276937209b0d8816f36a46",
+      "candidateCenter": [
+        48,
+        48
+      ],
+      "targetWidth": 12,
+      "targetHeight": 40,
+      "features": [
+        0.4342811944911859,
+        0.18860001298564355,
+        0.875300873562919,
+        0.1816273446042793,
+        0.580264999278497,
+        0.9297851987837591,
+        0.8651989325769223,
+        0
+      ],
+      "readout": [
+        -0.029093286500725454,
+        -0.1573957442188095,
+        -0.13155791606710063,
+        0.20689203366009007,
+        0.0028345367205588863,
+        0.3216265504435731,
+        -0.36503273235459816
+      ],
+      "score": 0.9263705795806597
+    },
+    {
+      "id": 1,
+      "file": "parity-pixels/fixture-1.png",
+      "sha256": "68dbce715be89501d9ec77dc3f331d08432c76cdb4525c63ced5097cc56c1f48",
+      "candidateCenter": [
+        52,
+        44
+      ],
+      "targetWidth": 14,
+      "targetHeight": 46,
+      "features": [
+        0.24988178616684437,
+        0.04484184946517379,
+        0.6241403524467933,
+        0.06743594384919477,
+        0.08471734959947258,
+        0.8013819369660777,
+        0.783837418817845,
+        0.25
+      ],
+      "readout": [
+        -0.027564520909859582,
+        -0.021204169359560796,
+        0.5212134364364845,
+        0.40074689650430984,
+        -0.4688408564181023,
+        0.4902882146713999,
+        -0.5323138950283414
+      ],
+      "score": 0.9992140040875342
+    },
+    {
+      "id": 2,
+      "file": "parity-pixels/fixture-2.png",
+      "sha256": "011d1b007ea310942c5265aaa31819ad8ad96c3cd0173320070d21c9d8a717e5",
+      "candidateCenter": [
+        56,
+        53
+      ],
+      "targetWidth": 15,
+      "targetHeight": 52,
+      "features": [
+        0.07403248100750662,
+        0,
+        0.33973569074702237,
+        0.07292990919694399,
+        0.08181135520361209,
+        0.5535520382619025,
+        0.7583874294999865,
+        0.5
+      ],
+      "readout": [
+        0.3732282694154477,
+        0.44130872734614146,
+        -0.5533261944082265,
+        -0.08009662468904755,
+        0.4948115943815812,
+        0.0254930225677622,
+        0.22622359164191905
+      ],
+      "score": 0.000358389024730005
+    },
+    {
+      "id": 3,
+      "file": "parity-pixels/fixture-3.png",
+      "sha256": "09264304fb2b7c692ff74ef65d2cde57f67219f78f5757738bc14ac2ea213581",
+      "candidateCenter": [
+        43,
+        56
+      ],
+      "targetWidth": 17,
+      "targetHeight": 58,
+      "features": [
+        0.14023830237364024,
+        0,
+        0.5924802463371225,
+        0.06800808618650714,
+        0.2128668792518718,
+        0.6953843422742567,
+        0.6779084790544154,
+        0.75
+      ],
+      "readout": [
+        -0.07814875747591016,
+        0.21599821722122592,
+        0.21715188807023755,
+        -0.11666431229493225,
+        0.23030929143025364,
+        0.007928588455768673,
+        -0.022543749423040424
+      ],
+      "score": 0.059351817690997434
+    },
+    {
+      "id": 4,
+      "file": "parity-pixels/fixture-4.png",
+      "sha256": "308c0d9d49c8ea403f7b60770632b5ad0baea1afeea5708c830df4fb03925010",
+      "candidateCenter": [
+        48,
+        48
+      ],
+      "targetWidth": 19,
+      "targetHeight": 64,
+      "features": [
+        0.3981061135292037,
+        0.15764830283596892,
+        0.8359303404067505,
+        0.2791246226499464,
+        0.5345602946164933,
+        0.9292886314769554,
+        0.8736314887396965,
+        1
+      ],
+      "readout": [
+        -0.19905194537295454,
+        0.26253136427030294,
+        0.020260896035009475,
+        0.07413127966892565,
+        -0.6800352979165116,
+        0.34218006194613265,
+        -0.3402402567809409
+      ],
+      "score": 0.9900009156026712
+    },
+    {
+      "id": 5,
+      "file": "parity-pixels/fixture-5.png",
+      "sha256": "1862f212ebdb04de11ce811d165026704091f87261f4019af8e50025d8a3e433",
+      "candidateCenter": [
+        52,
+        44
+      ],
+      "targetWidth": 12,
+      "targetHeight": 40,
+      "features": [
+        0.11392309296579829,
+        0,
+        0.6004149229385267,
+        0.06306190617949105,
+        0.20278658480370704,
+        0.768539662626311,
+        0.7829036441376518,
+        0
+      ],
+      "readout": [
+        -0.16227949469236835,
+        0.24257456977411462,
+        -0.05229757547849125,
+        -0.04228000559648983,
+        -0.3622224941873683,
+        0.48684708544712485,
+        -0.47407833231066054
+      ],
+      "score": 0.9598444236183231
+    },
+    {
+      "id": 6,
+      "file": "parity-pixels/fixture-6.png",
+      "sha256": "0d9874eea3f42d22fc5fdf9a2539dd1d29ba37ab6c30935150a83a33da3a1b0d",
+      "candidateCenter": [
+        56,
+        53
+      ],
+      "targetWidth": 14,
+      "targetHeight": 46,
+      "features": [
+        0.08975973746556898,
+        1.1212703496408418e-21,
+        0.24503009014300248,
+        0.04922869519176908,
+        0.02046322485720864,
+        0.5439690755768875,
+        0.7386909676890971,
+        0.25
+      ],
+      "readout": [
+        0.3613797332493627,
+        0.3067546216129899,
+        -0.3516180620023378,
+        0.08258275888553906,
+        0.4055219280062096,
+        0.07310559768224108,
+        0.2165154696167909
+      ],
+      "score": 0.00249573953753205
+    },
+    {
+      "id": 7,
+      "file": "parity-pixels/fixture-7.png",
+      "sha256": "52169d61d93f79387c150ff9745424d7457e8685f668632d56e8ed2ff78efd86",
+      "candidateCenter": [
+        43,
+        56
+      ],
+      "targetWidth": 15,
+      "targetHeight": 52,
+      "features": [
+        0.07416822970176737,
+        0.005210837159003195,
+        0.5197668989256016,
+        0.032229163642706275,
+        0.19662422226994528,
+        0.6636505862953189,
+        0.660573689964583,
+        0.5
+      ],
+      "readout": [
+        0.46549468291281,
+        0.44474834244371236,
+        -0.025526931991815476,
+        -0.2576246631267456,
+        0.3988391275691469,
+        -0.14029223347915074,
+        0.07744935737759495
+      ],
+      "score": 0.0007116358560955718
+    },
+    {
+      "id": 8,
+      "file": "parity-pixels/fixture-8.png",
+      "sha256": "f042f6d8afd55f47a4240099b84f87c7e70413bf0fe8f22e3e5a06f04d004ca4",
+      "candidateCenter": [
+        48,
+        48
+      ],
+      "targetWidth": 17,
+      "targetHeight": 58,
+      "features": [
+        0.39430018589089755,
+        0.15326220429719944,
+        0.8470076548587666,
+        0.25949032586941634,
+        0.44703814447578283,
+        0.9278316960706329,
+        0.8675845071109147,
+        0.75
+      ],
+      "readout": [
+        -0.2850926958504878,
+        0.11371631657719411,
+        0.19321038637541532,
+        0.27566970356629406,
+        -0.39419917680458627,
+        0.3411207252418236,
+        -0.36595803656222137
+      ],
+      "score": 0.9938040794546148
+    },
+    {
+      "id": 9,
+      "file": "parity-pixels/fixture-9.png",
+      "sha256": "0a1a45e501f65173945f6707363012e574381aa600ea72fc534b7231e15a6ab1",
+      "candidateCenter": [
+        52,
+        44
+      ],
+      "targetWidth": 19,
+      "targetHeight": 64,
+      "features": [
+        0.26475420881411726,
+        0.04801625825520511,
+        0.720900868211797,
+        0.10317471987738826,
+        0,
+        0.8255055156573954,
+        0.7850744906194713,
+        1
+      ],
+      "readout": [
+        0.010865461534234837,
+        0.1200789756454472,
+        0.002098891972551205,
+        0.4596450866235455,
+        -0.2889334909822163,
+        0.2126130023459967,
+        -0.269977116258584
+      ],
+      "score": 0.9779337368697906
+    },
+    {
+      "id": 10,
+      "file": "parity-pixels/fixture-10.png",
+      "sha256": "218f504db72a6634acc6340287f53a4292d7a4622768fd28cf1ac039bd8287c7",
+      "candidateCenter": [
+        13,
+        18
+      ],
+      "targetWidth": 12,
+      "targetHeight": 40,
+      "features": [
+        0.07113589117378445,
+        0,
+        0.2137907274959063,
+        0.07943969649562929,
+        0.11825372624831525,
+        0.7242865622246561,
+        0.8145820449353973,
+        0
+      ],
+      "readout": [
+        0.39500968772912265,
+        0.4619181103864084,
+        -0.05687585046219919,
+        0.3355808821098599,
+        0.06257415889390117,
+        0.36235603830202784,
+        0.2880741073884616
+      ],
+      "score": 0.029932291849642162
+    },
+    {
+      "id": 11,
+      "file": "parity-pixels/fixture-11.png",
+      "sha256": "e398aa2082a113b5d6ebc284dbc7d9566ff7f5bfe839a198c84c4b6c8e15d3c2",
+      "candidateCenter": [
+        88,
+        97
+      ],
+      "targetWidth": 14,
+      "targetHeight": 46,
+      "features": [
+        0.11180191130911757,
+        0,
+        0.44150002489537715,
+        0.01964454505772979,
+        0,
+        0.7211122504976497,
+        0.2705744921093455,
+        0.25
+      ],
+      "readout": [
+        -0.06485219542121995,
+        0.6697960290231496,
+        -0.2822904183387764,
+        -0.2586116639376184,
+        0.06769974363153772,
+        -0.026093131246923126,
+        0.44295142263774534
+      ],
+      "score": 0.0008564769894920558
+    }
+  ]
+}

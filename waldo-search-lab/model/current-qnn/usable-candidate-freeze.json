@@ -1,0 +1,17 @@
+{
+  "frozenAtUtc": "2026-10-11 02:10:45 UTC",
+  "phase": "Usable front defaults and trained pixel parity passed; before any reserved test or independent scores",
+  "parameterChangeAllowed": false,
+  "files": {
+    "current-qnn.json": "9c5a25af8a37eb8482f09e49631418e63c05c47d0317fd0a2a5ead9b6c63465a",
+    "current-logistic.json": "c73409c9565a69aac73345c4cd16cdf765da051a7173b53222fe764ae5f85d21",
+    "candidate-freeze.json": "3edc56fd57aeb36c717fba2009199d0a2a84a05772f16fb58d782a7a478d14fa",
+    "protocol.json": "77863afddce0fd9a4f1b280cd222c86f636c019df66c3d8ee6b9299cfd3c2e32",
+    "default-regression-front.json": "33c27ded85891c37331b32a48c704504f0f5b1ec0dcdb802982442142fb4bd48",
+    "trained-parity-verification.json": "55e4b49d43e996a34b744e41dd5fe54cb75053547890699062964a4765112ce7",
+    "trained-pixel-fixtures.json": "e0f21edb40aa25bab20e4aea849e38100b9d64efb3251ad87a56070109b24cfe",
+    "verify-trained-pixels.py": "2879c30e19dec0a722148bc671d383152ec0dc425b621be5d0034a4f94952a70",
+    "verify-trained-pixels.mjs": "7b866a7fd0f0bdb158dc3693dd0783e2fb140d8fc70ca2aeefa18379a66bc329",
+    "evaluate-mixed-diagnostic.py": "29605e59c604b41d869d977fae4243205cf087f81548c171a4bb1d5e3c0eb5b2"
+  }
+}

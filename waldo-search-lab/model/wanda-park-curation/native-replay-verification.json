@@ -1,0 +1,1543 @@
+{
+  "scope": "Engineering replay of model-guided artwork curation, not accuracy or an independent evaluation",
+  "startedAtUtc": "2026-10-11T06:30:35.796Z",
+  "nativeBackend": "@napi-rs/canvas0.1.100",
+  "rows": [
+    {
+      "id": "lower-walkway-h42-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "4fb976f50ffa69fc045f8ef7f14fa1f265f2449c70d44edce16bd260c05477b7",
+      "scanMs": 1073.2235
+    },
+    {
+      "id": "lower-walkway-h44-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "fb62e38381407241cf1b97a95a2db57b25218fcbbf6276f0fba8fcbc211cc4fa",
+      "scanMs": 1043.8682999999999
+    },
+    {
+      "id": "lower-walkway-h46-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "00a025a6b7fc7a9a23a43948c1a6f47c240cdf041e705e98ba02ebd49cd9d128",
+      "scanMs": 1039.9001999999996
+    },
+    {
+      "id": "lower-walkway-h48-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 3157,
+        "x": 172,
+        "y": 396,
+        "score": 0.37536308959877773
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "a38b110f85ea79bc3dc0b87574fa1eca6f0669942c2b17d98d442e8e0dfc2d31",
+      "scanMs": 1046.0806000000002
+    },
+    {
+      "id": "lower-walkway-h50-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 3157,
+        "x": 172,
+        "y": 396,
+        "score": 0.7020770671355234
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "586ca63a9e04fc4bc96253deca174dca31f009230390ce7c42d25f7bc9f79a08",
+      "scanMs": 1046.4750000000004
+    },
+    {
+      "id": "lower-walkway-h52-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 3157,
+        "x": 172,
+        "y": 396,
+        "score": 0.8394103243555867
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "abf9eb0ffdf0189e388aef3604f02fbc418557b4105ec67c79a21e7513c9716b",
+      "scanMs": 1046.5046000000002
+    },
+    {
+      "id": "lower-walkway-h54-scan52",
+      "marks": [
+        3221
+      ],
+      "maximum": {
+        "index": 3221,
+        "x": 172,
+        "y": 404,
+        "score": 0.9503721085340399
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "ad3ce488049df55761c9b7a1e30152fc6ceea994a0ce46115d5215a9679a5142",
+      "scanMs": 1063.0126
+    },
+    {
+      "id": "right-walkway-h42-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 3314,
+        "x": 404,
+        "y": 412,
+        "score": 0.5458719787739043
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "a323d99b9d693c1a823cbe21708ffee2757bb03a388a61049063112c2bcadc7c",
+      "scanMs": 1058.1131999999998
+    },
+    {
+      "id": "right-walkway-h44-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "87c48fc0a0c701a9c735a598986f88efd4a4f594aeaddb0cce392f7f229100b2",
+      "scanMs": 1045.0964999999997
+    },
+    {
+      "id": "right-walkway-h46-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "1e3103cf96c3f12a546d1b6c0085e1a6b687816a5ce49a9aa77affbae2203db7",
+      "scanMs": 1040.9451000000008
+    },
+    {
+      "id": "right-walkway-h48-scan52",
+      "marks": [
+        3314
+      ],
+      "maximum": {
+        "index": 3314,
+        "x": 404,
+        "y": 412,
+        "score": 0.9866627157297736
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "25078ff574414ecda165b6bc09ff41b9a95ddc128d72def53264d111db8445fa",
+      "scanMs": 1050.266599999999
+    },
+    {
+      "id": "right-walkway-h50-scan52",
+      "marks": [
+        3314
+      ],
+      "maximum": {
+        "index": 3314,
+        "x": 404,
+        "y": 412,
+        "score": 0.987279098121704
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "60c7c7d91783658a33bf9f47d2dafb3ff9267d2db25536429d612db228327850",
+      "scanMs": 1049.3127999999997
+    },
+    {
+      "id": "right-walkway-h52-scan52",
+      "marks": [
+        3314
+      ],
+      "maximum": {
+        "index": 3314,
+        "x": 404,
+        "y": 412,
+        "score": 0.9865168556538544
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "bcaff5b9ffd34286cf09104487a201e513b6cc8eaeccedfbdc1b74d83a5fc27e",
+      "scanMs": 1048.0770000000011
+    },
+    {
+      "id": "right-walkway-h54-scan52",
+      "marks": [
+        3314
+      ],
+      "maximum": {
+        "index": 3314,
+        "x": 404,
+        "y": 412,
+        "score": 0.9994744591600904
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "97c2110d0195f6f31f52206364c4969e11d83b120469e946fd1ac157fa169e64",
+      "scanMs": 1041.2914999999994
+    },
+    {
+      "id": "middle-right-h42-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "e290700753e7f8dfbf37d81a678a4309c33f68b3d05b0d828bf1c27d4f1386df",
+      "scanMs": 1042.1198000000004
+    },
+    {
+      "id": "middle-right-h44-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2233,
+        "x": 460,
+        "y": 276,
+        "score": 0.5027327884027686
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "94d4dee957a23a41a42bb60e450358e718d36208489f8a78c2d552f8ad01814d",
+      "scanMs": 1046.690999999999
+    },
+    {
+      "id": "middle-right-h46-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2233,
+        "x": 460,
+        "y": 276,
+        "score": 0.4871354480590449
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "645f919828669547c5b2237e75e4cf7c1b13d0dc7147075bfd073dd2b79b459f",
+      "scanMs": 1044.0449999999983
+    },
+    {
+      "id": "middle-right-h48-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "a9cc2cc14fa254f9af94ecf899a71c125faaa60a97aeb5cfdfae6d2e7a84eddc",
+      "scanMs": 1047.4696999999978
+    },
+    {
+      "id": "middle-right-h50-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2233,
+        "x": 460,
+        "y": 276,
+        "score": 0.5166504019366661
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "9b7b4fe051e095df4d33dbe05d79546f2dbc7128b34975e52a27c0c8f15a5d5e",
+      "scanMs": 1044.7747000000018
+    },
+    {
+      "id": "middle-right-h52-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2233,
+        "x": 460,
+        "y": 276,
+        "score": 0.8699917215381077
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "7a4145fe0ee6c948ad3e5af3330c3d82bfd44f99e18ac35af7a424e713d14f2b",
+      "scanMs": 1041.0475000000006
+    },
+    {
+      "id": "middle-right-h54-scan52",
+      "marks": [
+        2233
+      ],
+      "maximum": {
+        "index": 2233,
+        "x": 460,
+        "y": 276,
+        "score": 0.9976452840898254
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "2258cd59db7538ad5448e8c4a2dd4443e54a0db219cd3e0662049032e51b7445",
+      "scanMs": 1039.9801000000007
+    },
+    {
+      "id": "lower-center-h42-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 3174,
+        "x": 308,
+        "y": 396,
+        "score": 0.39708323478127616
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "3436383bd17742b134cead07e980911b64b56e56203a5e90d2fe19c767ca9c1b",
+      "scanMs": 1042.8552999999993
+    },
+    {
+      "id": "lower-center-h44-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "db9a5f8574d7cbb6969aa52425dc35968ad18aaf035df6aefee728722edded07",
+      "scanMs": 1044.416799999999
+    },
+    {
+      "id": "lower-center-h46-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "35a81e9440487539946accf090c7a67cda307ede7e42bae10a18aaea8dca653e",
+      "scanMs": 1037.1483999999982
+    },
+    {
+      "id": "lower-center-h48-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 3174,
+        "x": 308,
+        "y": 396,
+        "score": 0.5838089185446749
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "21e70323106e1098811e52d2430ab7d95af27f847ee19378573eea116798b66a",
+      "scanMs": 1039.1561000000002
+    },
+    {
+      "id": "lower-center-h50-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 3174,
+        "x": 308,
+        "y": 396,
+        "score": 0.8566260258336534
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "eb8088575a4e40349a02b21d135d96504af6549861cd437a934d813461b85946",
+      "scanMs": 1037.349199999997
+    },
+    {
+      "id": "lower-center-h52-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 3174,
+        "x": 308,
+        "y": 396,
+        "score": 0.86224824781498
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "b72a5fff39ec68a63b0cb30c980724139b63a028b866403b625b563589471dca",
+      "scanMs": 1045.857500000002
+    },
+    {
+      "id": "lower-center-h54-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 3174,
+        "x": 308,
+        "y": 396,
+        "score": 0.8971220481595581
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "44faea2377effdc92fb270cb8973ba8defaac1ce4cd83728da5cd4298303f5b3",
+      "scanMs": 1043.1566999999995
+    },
+    {
+      "id": "left-stand-h42-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2702,
+        "x": 116,
+        "y": 340,
+        "score": 0.5673832463978312
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "93acd8e6af2d3264a8cca592cbda121091a4d9f2097b5649c10668d9e7fe174e",
+      "scanMs": 1042.3955999999998
+    },
+    {
+      "id": "left-stand-h44-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "55c0cbbfc9bf95b248076746b4d7fd1df39c19bb646db5c619a91523b167e274",
+      "scanMs": 1036.5717000000004
+    },
+    {
+      "id": "left-stand-h46-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "e149dfa53a3f66855a571aa442d5617798e0d14c793a89370972bc617e9399b3",
+      "scanMs": 1029.3697999999968
+    },
+    {
+      "id": "left-stand-h48-scan52",
+      "marks": [
+        2702
+      ],
+      "maximum": {
+        "index": 2702,
+        "x": 116,
+        "y": 340,
+        "score": 0.9889554896082793
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "bed7275f3926dda3b71565a924c83c17a4f268f370e1a8f557633ec63d49b750",
+      "scanMs": 1036.2309999999998
+    },
+    {
+      "id": "left-stand-h50-scan52",
+      "marks": [
+        2702
+      ],
+      "maximum": {
+        "index": 2702,
+        "x": 116,
+        "y": 340,
+        "score": 0.9899090522706405
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "a8cd5ead45c034cba4a0c69f9188a8fa0ccd9d03520e8d4e11035d9ca81d6d6d",
+      "scanMs": 1030.7260999999999
+    },
+    {
+      "id": "left-stand-h52-scan52",
+      "marks": [
+        2702
+      ],
+      "maximum": {
+        "index": 2702,
+        "x": 116,
+        "y": 340,
+        "score": 0.989512657612879
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "0116c419fa60801afe1a4fe5831eb96ee791e315bce55c1e695491c2a427b427",
+      "scanMs": 1028.7914000000019
+    },
+    {
+      "id": "left-stand-h54-scan52",
+      "marks": [
+        2702
+      ],
+      "maximum": {
+        "index": 2702,
+        "x": 116,
+        "y": 340,
+        "score": 0.9996082989666445
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "b6b5ae300d2916f7158e33198e61e3c0cfb46f976ab378358c4e8a8d41bee386",
+      "scanMs": 1027.6359000000011
+    },
+    {
+      "id": "central-walkway-h42-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "616b5549d9c90f8146aa058e8ad64eef96ea28189bc499ae4b0ec939e7cf3a9e",
+      "scanMs": 1032.2367999999988
+    },
+    {
+      "id": "central-walkway-h44-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 1758,
+        "x": 244,
+        "y": 220,
+        "score": 0.3342310655213865
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "6713520e7177505c6422ca057867d82a780c37a7095a562d2afef30bb8121df3",
+      "scanMs": 1029.6946000000025
+    },
+    {
+      "id": "central-walkway-h46-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 1757,
+        "x": 236,
+        "y": 220,
+        "score": 0.637547331601773
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "bc5ccc24cb2300d5a1c5cfa52abb88958594fceb79b33f7796c2e182d0fdc5c5",
+      "scanMs": 1029.849500000004
+    },
+    {
+      "id": "central-walkway-h48-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 1757,
+        "x": 236,
+        "y": 220,
+        "score": 0.7410854327815874
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "7be9b4eed3be22568f133846b6073d910385084dc2210b08fab7f30d90207e03",
+      "scanMs": 1095.7372000000032
+    },
+    {
+      "id": "central-walkway-h50-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 1758,
+        "x": 244,
+        "y": 220,
+        "score": 0.6904400273504192
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "bfad93e25f02492979e84151e7baed43859207cfcf908f26883558d04237d289",
+      "scanMs": 1033.824099999998
+    },
+    {
+      "id": "central-walkway-h52-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 1758,
+        "x": 244,
+        "y": 220,
+        "score": 0.8270104054476797
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "3109326eb5be66c3c4ffb3351c9176d08949f4050aec3f37ae43860c9c42578a",
+      "scanMs": 1030.947500000002
+    },
+    {
+      "id": "central-walkway-h54-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 1822,
+        "x": 244,
+        "y": 228,
+        "score": 0.8707891421986367
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "e697140cbecaeb822f2d5f6c06c379733b9e548bad854e3744ec567b35fb6afb",
+      "scanMs": 1029.322500000002
+    },
+    {
+      "id": "central-walkway-phase-h46-scan52--2-0",
+      "marks": [
+        1757
+      ],
+      "maximum": {
+        "index": 1757,
+        "x": 236,
+        "y": 220,
+        "score": 0.9697211525000505
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "9b7b4f730fa188c6bd4049b5950b74692b51a3d0e3dddbef34159ce94898c95a",
+      "scanMs": 1031.3597000000009
+    },
+    {
+      "id": "central-walkway-phase-h46-scan52-2-0",
+      "marks": [
+        1758
+      ],
+      "maximum": {
+        "index": 1758,
+        "x": 244,
+        "y": 220,
+        "score": 0.959656755871678
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "ae53b5966454724db72278536eecfdf4f02416bc9aaa2e063af198ca3786e71c",
+      "scanMs": 1026.2497999999978
+    },
+    {
+      "id": "central-walkway-phase-h46-scan52-0--2",
+      "marks": [
+        1758
+      ],
+      "maximum": {
+        "index": 1758,
+        "x": 244,
+        "y": 220,
+        "score": 0.9479648683982732
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "cf85cd16b055914c24ee5ca9b438624d3dadb9a52fe1be64460ffabe350cab1f",
+      "scanMs": 1027.8629999999976
+    },
+    {
+      "id": "central-walkway-phase-h46-scan52-0-2",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "063bb81c25b5234916df40e2948cd7c135ee32c076dfdcb0e268cc60554cfcaf",
+      "scanMs": 1028.559699999998
+    },
+    {
+      "id": "lower-walkway-phase-h50-scan52--2-0",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "35127759dca5e6d64c25ba2c3a5d07b2513d87df13e14de34f070d8a996c7bf8",
+      "scanMs": 1033.793399999995
+    },
+    {
+      "id": "lower-walkway-phase-h50-scan52-2-0",
+      "marks": [],
+      "maximum": {
+        "index": 3157,
+        "x": 172,
+        "y": 396,
+        "score": 0.7823882817154302
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "7710136ab5a6725053ddb1f160366f2e24b3b707235a285f8a2066c681214bf9",
+      "scanMs": 1039.3522000000012
+    },
+    {
+      "id": "lower-walkway-phase-h50-scan52-0--2",
+      "marks": [],
+      "maximum": {
+        "index": 3157,
+        "x": 172,
+        "y": 396,
+        "score": 0.8592747523672297
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "b036296cf2b26e3e42f01861b55dba9c43fd3b2ab7c69cf2c792d93ade739d83",
+      "scanMs": 1023.4501999999993
+    },
+    {
+      "id": "lower-walkway-phase-h50-scan52-0-2",
+      "marks": [
+        3221
+      ],
+      "maximum": {
+        "index": 3221,
+        "x": 172,
+        "y": 404,
+        "score": 0.9968922294303098
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "d1ed7077daeb91c5132d22d34aa63cbc7e0fd36314f8b6a690ee626116cb9405",
+      "scanMs": 1023.4824999999983
+    },
+    {
+      "id": "central-walkway-h46-scan40-final",
+      "marks": [
+        1822
+      ],
+      "maximum": {
+        "index": 1822,
+        "x": 244,
+        "y": 228,
+        "score": 0.9985716430431634
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "bc5ccc24cb2300d5a1c5cfa52abb88958594fceb79b33f7796c2e182d0fdc5c5",
+      "scanMs": 1018.695000000007
+    },
+    {
+      "id": "central-walkway-h46-scan46-final",
+      "marks": [
+        1822
+      ],
+      "maximum": {
+        "index": 1822,
+        "x": 244,
+        "y": 228,
+        "score": 0.9899288934223474
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "bc5ccc24cb2300d5a1c5cfa52abb88958594fceb79b33f7796c2e182d0fdc5c5",
+      "scanMs": 1034.3756999999969
+    },
+    {
+      "id": "central-walkway-h46-scan52-final",
+      "marks": [],
+      "maximum": {
+        "index": 1757,
+        "x": 236,
+        "y": 220,
+        "score": 0.637547331601773
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "bc5ccc24cb2300d5a1c5cfa52abb88958594fceb79b33f7796c2e182d0fdc5c5",
+      "scanMs": 1026.476300000002
+    },
+    {
+      "id": "central-walkway-h46-scan58-final",
+      "marks": [],
+      "maximum": {
+        "index": 3282,
+        "x": 148,
+        "y": 412,
+        "score": 0.1941006073297674
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "bc5ccc24cb2300d5a1c5cfa52abb88958594fceb79b33f7796c2e182d0fdc5c5",
+      "scanMs": 1030.427499999998
+    },
+    {
+      "id": "central-walkway-h46-scan64-final",
+      "marks": [],
+      "maximum": {
+        "index": 1692,
+        "x": 228,
+        "y": 212,
+        "score": 0.6173084411583436
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "bc5ccc24cb2300d5a1c5cfa52abb88958594fceb79b33f7796c2e182d0fdc5c5",
+      "scanMs": 1030.9655000000057
+    },
+    {
+      "id": "central-walkway-h50-scan40-final",
+      "marks": [
+        1822
+      ],
+      "maximum": {
+        "index": 1822,
+        "x": 244,
+        "y": 228,
+        "score": 0.9993588453571682
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "bfad93e25f02492979e84151e7baed43859207cfcf908f26883558d04237d289",
+      "scanMs": 1022.8862999999983
+    },
+    {
+      "id": "central-walkway-h50-scan46-final",
+      "marks": [
+        1822
+      ],
+      "maximum": {
+        "index": 1822,
+        "x": 244,
+        "y": 228,
+        "score": 0.9995241705650073
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "bfad93e25f02492979e84151e7baed43859207cfcf908f26883558d04237d289",
+      "scanMs": 1026.2615000000005
+    },
+    {
+      "id": "central-walkway-h50-scan52-final",
+      "marks": [],
+      "maximum": {
+        "index": 1758,
+        "x": 244,
+        "y": 220,
+        "score": 0.6904400273504192
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "bfad93e25f02492979e84151e7baed43859207cfcf908f26883558d04237d289",
+      "scanMs": 1030.4727000000057
+    },
+    {
+      "id": "central-walkway-h50-scan58-final",
+      "marks": [],
+      "maximum": {
+        "index": 1822,
+        "x": 244,
+        "y": 228,
+        "score": 0.3259589018091215
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "bfad93e25f02492979e84151e7baed43859207cfcf908f26883558d04237d289",
+      "scanMs": 1034.6088999999993
+    },
+    {
+      "id": "central-walkway-h50-scan64-final",
+      "marks": [],
+      "maximum": {
+        "index": 1692,
+        "x": 228,
+        "y": 212,
+        "score": 0.6915293039215051
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "bfad93e25f02492979e84151e7baed43859207cfcf908f26883558d04237d289",
+      "scanMs": 1038.7900000000009
+    },
+    {
+      "id": "lower-walkway-h50-scan40-final",
+      "marks": [
+        3221
+      ],
+      "maximum": {
+        "index": 3221,
+        "x": 172,
+        "y": 404,
+        "score": 0.9998092646459517
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "586ca63a9e04fc4bc96253deca174dca31f009230390ce7c42d25f7bc9f79a08",
+      "scanMs": 1019.633600000001
+    },
+    {
+      "id": "lower-walkway-h50-scan46-final",
+      "marks": [
+        3221
+      ],
+      "maximum": {
+        "index": 3221,
+        "x": 172,
+        "y": 404,
+        "score": 0.9998964056580023
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "586ca63a9e04fc4bc96253deca174dca31f009230390ce7c42d25f7bc9f79a08",
+      "scanMs": 1026.7825000000012
+    },
+    {
+      "id": "lower-walkway-h50-scan52-final",
+      "marks": [],
+      "maximum": {
+        "index": 3157,
+        "x": 172,
+        "y": 396,
+        "score": 0.7020770671355234
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "586ca63a9e04fc4bc96253deca174dca31f009230390ce7c42d25f7bc9f79a08",
+      "scanMs": 1027.1424999999945
+    },
+    {
+      "id": "lower-walkway-h50-scan58-final",
+      "marks": [],
+      "maximum": {
+        "index": 3282,
+        "x": 148,
+        "y": 412,
+        "score": 0.1836430615840328
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "586ca63a9e04fc4bc96253deca174dca31f009230390ce7c42d25f7bc9f79a08",
+      "scanMs": 1031.042100000006
+    },
+    {
+      "id": "lower-walkway-h50-scan64-final",
+      "marks": [],
+      "maximum": {
+        "index": 2738,
+        "x": 404,
+        "y": 340,
+        "score": 0.231635245313214
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "586ca63a9e04fc4bc96253deca174dca31f009230390ce7c42d25f7bc9f79a08",
+      "scanMs": 1028.639599999995
+    },
+    {
+      "id": "lower-center-h48-scan40-final",
+      "marks": [
+        3174
+      ],
+      "maximum": {
+        "index": 3174,
+        "x": 308,
+        "y": 396,
+        "score": 0.9781333468297967
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "21e70323106e1098811e52d2430ab7d95af27f847ee19378573eea116798b66a",
+      "scanMs": 1021.9235000000044
+    },
+    {
+      "id": "lower-center-h48-scan46-final",
+      "marks": [
+        3174
+      ],
+      "maximum": {
+        "index": 3174,
+        "x": 308,
+        "y": 396,
+        "score": 0.9978408537436926
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "21e70323106e1098811e52d2430ab7d95af27f847ee19378573eea116798b66a",
+      "scanMs": 1025.7090000000026
+    },
+    {
+      "id": "lower-center-h48-scan52-final",
+      "marks": [],
+      "maximum": {
+        "index": 3174,
+        "x": 308,
+        "y": 396,
+        "score": 0.5838089185446749
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "21e70323106e1098811e52d2430ab7d95af27f847ee19378573eea116798b66a",
+      "scanMs": 1027.2783000000054
+    },
+    {
+      "id": "lower-center-h48-scan58-final",
+      "marks": [],
+      "maximum": {
+        "index": 3174,
+        "x": 308,
+        "y": 396,
+        "score": 0.8435201004402505
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "21e70323106e1098811e52d2430ab7d95af27f847ee19378573eea116798b66a",
+      "scanMs": 1030.2708999999886
+    },
+    {
+      "id": "lower-center-h48-scan64-final",
+      "marks": [],
+      "maximum": {
+        "index": 2738,
+        "x": 404,
+        "y": 340,
+        "score": 0.231635245313214
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "21e70323106e1098811e52d2430ab7d95af27f847ee19378573eea116798b66a",
+      "scanMs": 1026.9152999999933
+    },
+    {
+      "id": "left-stand-h42-scan40-final",
+      "marks": [
+        2702
+      ],
+      "maximum": {
+        "index": 2702,
+        "x": 116,
+        "y": 340,
+        "score": 0.9990814922623175
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "93acd8e6af2d3264a8cca592cbda121091a4d9f2097b5649c10668d9e7fe174e",
+      "scanMs": 1017.9985999999917
+    },
+    {
+      "id": "left-stand-h42-scan46-final",
+      "marks": [
+        2702
+      ],
+      "maximum": {
+        "index": 2702,
+        "x": 116,
+        "y": 340,
+        "score": 0.9797911158210916
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "93acd8e6af2d3264a8cca592cbda121091a4d9f2097b5649c10668d9e7fe174e",
+      "scanMs": 1017.8646000000008
+    },
+    {
+      "id": "left-stand-h42-scan52-final",
+      "marks": [],
+      "maximum": {
+        "index": 2702,
+        "x": 116,
+        "y": 340,
+        "score": 0.5673832463978312
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "93acd8e6af2d3264a8cca592cbda121091a4d9f2097b5649c10668d9e7fe174e",
+      "scanMs": 1021.0913
+    },
+    {
+      "id": "left-stand-h42-scan58-final",
+      "marks": [],
+      "maximum": {
+        "index": 3282,
+        "x": 148,
+        "y": 412,
+        "score": 0.1941006073297674
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "93acd8e6af2d3264a8cca592cbda121091a4d9f2097b5649c10668d9e7fe174e",
+      "scanMs": 1026.745900000009
+    },
+    {
+      "id": "left-stand-h42-scan64-final",
+      "marks": [],
+      "maximum": {
+        "index": 2738,
+        "x": 404,
+        "y": 340,
+        "score": 0.231635245313214
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "93acd8e6af2d3264a8cca592cbda121091a4d9f2097b5649c10668d9e7fe174e",
+      "scanMs": 1028.5757999999914
+    },
+    {
+      "id": "central-walkway-h48-scan40-final",
+      "marks": [
+        1822
+      ],
+      "maximum": {
+        "index": 1822,
+        "x": 244,
+        "y": 228,
+        "score": 0.9984096745667076
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "7be9b4eed3be22568f133846b6073d910385084dc2210b08fab7f30d90207e03",
+      "scanMs": 1023.3842999999906
+    },
+    {
+      "id": "central-walkway-h48-scan46-final",
+      "marks": [
+        1822
+      ],
+      "maximum": {
+        "index": 1822,
+        "x": 244,
+        "y": 228,
+        "score": 0.9946129146618865
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "7be9b4eed3be22568f133846b6073d910385084dc2210b08fab7f30d90207e03",
+      "scanMs": 1025.3964000000124
+    },
+    {
+      "id": "central-walkway-h48-scan52-final",
+      "marks": [],
+      "maximum": {
+        "index": 1757,
+        "x": 236,
+        "y": 220,
+        "score": 0.7410854327815874
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "7be9b4eed3be22568f133846b6073d910385084dc2210b08fab7f30d90207e03",
+      "scanMs": 1025.953999999998
+    },
+    {
+      "id": "central-walkway-h48-scan58-final",
+      "marks": [],
+      "maximum": {
+        "index": 3282,
+        "x": 148,
+        "y": 412,
+        "score": 0.1941006073297674
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "7be9b4eed3be22568f133846b6073d910385084dc2210b08fab7f30d90207e03",
+      "scanMs": 1041.1863000000012
+    },
+    {
+      "id": "central-walkway-h48-scan64-final",
+      "marks": [],
+      "maximum": {
+        "index": 1692,
+        "x": 228,
+        "y": 212,
+        "score": 0.6557061761241867
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "7be9b4eed3be22568f133846b6073d910385084dc2210b08fab7f30d90207e03",
+      "scanMs": 1026.4872000000032
+    },
+    {
+      "id": "v2-lower-walkway-h50-scan40",
+      "marks": [],
+      "maximum": {
+        "index": 1994,
+        "x": 84,
+        "y": 252,
+        "score": 0.33325735373561133
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "0825eb358580c0f83bb6aca4c5da98f6ab1de45cbd3a2754724354cf175aee2a",
+      "scanMs": 1018.4885000000068
+    },
+    {
+      "id": "v2-lower-walkway-h50-scan46",
+      "marks": [],
+      "maximum": {
+        "index": 2429,
+        "x": 492,
+        "y": 300,
+        "score": 0.44194176951785
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "0825eb358580c0f83bb6aca4c5da98f6ab1de45cbd3a2754724354cf175aee2a",
+      "scanMs": 1025.0071999999927
+    },
+    {
+      "id": "v2-lower-walkway-h50-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "0825eb358580c0f83bb6aca4c5da98f6ab1de45cbd3a2754724354cf175aee2a",
+      "scanMs": 1024.3024000000005
+    },
+    {
+      "id": "v2-lower-walkway-h50-scan58",
+      "marks": [],
+      "maximum": {
+        "index": 3282,
+        "x": 148,
+        "y": 412,
+        "score": 0.229030032466474
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "0825eb358580c0f83bb6aca4c5da98f6ab1de45cbd3a2754724354cf175aee2a",
+      "scanMs": 1025.7943999999989
+    },
+    {
+      "id": "v2-lower-walkway-h50-scan64",
+      "marks": [],
+      "maximum": {
+        "index": 2738,
+        "x": 404,
+        "y": 340,
+        "score": 0.231635245313214
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "0825eb358580c0f83bb6aca4c5da98f6ab1de45cbd3a2754724354cf175aee2a",
+      "scanMs": 1028.6022000000085
+    },
+    {
+      "id": "v2-lower-walkway-h44-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "ee76026a3401b9afac3f07dd64cdf2217f5421bcbb2391ae8e35c3a8bb4dcb8c",
+      "scanMs": 1027.8574999999983
+    },
+    {
+      "id": "v2-lower-walkway-h46-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "05b31ede731978c2fbf163666bf8e77b54e93e4bf0ab6267fb2c249036061e07",
+      "scanMs": 1025.6889999999985
+    },
+    {
+      "id": "v2-lower-walkway-h48-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "6ebc003076deb968f0c454f52f0ffd756bc66b82d8f39cc540f868cab2e37cab",
+      "scanMs": 1023.7785999999905
+    },
+    {
+      "id": "v2-lower-walkway-h52-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "ef9e511eb9a61d850cc81493635125d4c27933c5b14d672fe0373f588a212569",
+      "scanMs": 1029.243300000002
+    },
+    {
+      "id": "v2-lower-center-h44-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "4a730b0fe2a3c126e1acdd45996d6111e3f21cee4ea1f0f0f3b69e5382e7f9d9",
+      "scanMs": 1026.2747999999992
+    },
+    {
+      "id": "v2-lower-center-h46-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "44d345b727b6ee6b00cf60275290da60f05a7d0ba8b76e3aed458f9b4c4b983d",
+      "scanMs": 1026.748099999997
+    },
+    {
+      "id": "v2-lower-center-h48-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "e5351e920ab57012193597c207d64f45fc2ee7a94068b8826f57424ebce6a257",
+      "scanMs": 1053.7307
+    },
+    {
+      "id": "v2-lower-center-h50-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "b236742bbf3b8adb6dcc077bf30df19a0cbabfedbddec7d183d74ec510bd1192",
+      "scanMs": 1022.979600000006
+    },
+    {
+      "id": "v2-lower-center-h52-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "55ac0f4beee6f25aa8f408b93580f2a7a5203a7d8ca937612941cfb98cb99fad",
+      "scanMs": 1028.5012000000133
+    },
+    {
+      "id": "v3-lower-walkway-h50-scan40",
+      "marks": [
+        3221
+      ],
+      "maximum": {
+        "index": 3221,
+        "x": 172,
+        "y": 404,
+        "score": 0.9925804166043962
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "10160013c8fc38a1642ba214cd735d9c8044f813dbf2813fb44436d8e9cabe24",
+      "scanMs": 1010.3033999999898
+    },
+    {
+      "id": "v3-lower-walkway-h50-scan46",
+      "marks": [
+        3221
+      ],
+      "maximum": {
+        "index": 3221,
+        "x": 172,
+        "y": 404,
+        "score": 0.9821515169554644
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "10160013c8fc38a1642ba214cd735d9c8044f813dbf2813fb44436d8e9cabe24",
+      "scanMs": 1017.1296999999904
+    },
+    {
+      "id": "v3-lower-walkway-h50-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "10160013c8fc38a1642ba214cd735d9c8044f813dbf2813fb44436d8e9cabe24",
+      "scanMs": 1028.2755999999936
+    },
+    {
+      "id": "v3-lower-walkway-h50-scan58",
+      "marks": [],
+      "maximum": {
+        "index": 3282,
+        "x": 148,
+        "y": 412,
+        "score": 0.20004353367231648
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "10160013c8fc38a1642ba214cd735d9c8044f813dbf2813fb44436d8e9cabe24",
+      "scanMs": 1025.2733000000007
+    },
+    {
+      "id": "v3-lower-walkway-h50-scan64",
+      "marks": [],
+      "maximum": {
+        "index": 2738,
+        "x": 404,
+        "y": 340,
+        "score": 0.231635245313214
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "10160013c8fc38a1642ba214cd735d9c8044f813dbf2813fb44436d8e9cabe24",
+      "scanMs": 1026.2122999999992
+    },
+    {
+      "id": "v3-lower-walkway-h44-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "880daaba874097e64a968f42bcd2694f8a90bb2739a79affaf49c4729e233264",
+      "scanMs": 1025.2014000000054
+    },
+    {
+      "id": "v3-lower-walkway-h46-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "fb23d2b6122705f2bf1a4efe3b194b5381f56619a683a39f90f85e394e666089",
+      "scanMs": 1023.0617999999959
+    },
+    {
+      "id": "v3-lower-walkway-h48-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "9d987d27f8d9ddfe1c726ef96f8d7ebbc1e3481114a78d885924821ded968880",
+      "scanMs": 1022.9703000000009
+    },
+    {
+      "id": "v3-lower-walkway-h52-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "1345b3bd7a11eb50449ce2432c9e47a7dece5ff8d45825817692633d17193508",
+      "scanMs": 1026.0482000000047
+    },
+    {
+      "id": "v3-lower-center-h44-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "1f7da1aaf13e0c5c56339f79517bbcd24856009dac336355afa865dac95437b0",
+      "scanMs": 1029.6667000000016
+    },
+    {
+      "id": "v3-lower-center-h46-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "087dff3687b75e066ab61bf3af7e1792837318cf45eb8f2a8fa583bb9656fb23",
+      "scanMs": 1024.3093999999983
+    },
+    {
+      "id": "v3-lower-center-h48-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 2651,
+        "x": 220,
+        "y": 332,
+        "score": 0.3225199875314755
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "7b7214f703ae64458f4db213a34109755c1b27e56fbd77046d15bd0278ae475b",
+      "scanMs": 1022.4199999999983
+    },
+    {
+      "id": "v3-lower-center-h50-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 3174,
+        "x": 308,
+        "y": 396,
+        "score": 0.32539544990093067
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "39c4bcca11d4d4149468c3ae814c852954047cd0a06378c29a9765e57f3e084a",
+      "scanMs": 1030.0215000000026
+    },
+    {
+      "id": "v3-lower-center-h52-scan52",
+      "marks": [],
+      "maximum": {
+        "index": 3174,
+        "x": 308,
+        "y": 396,
+        "score": 0.412579299573469
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "3077e3dd1e256427c25b9b0170bcc977df41cc5337ab07ed9e72719f71717db7",
+      "scanMs": 1021.274900000004
+    },
+    {
+      "id": "v3-lower-center-h52-scan40-final",
+      "marks": [],
+      "maximum": {
+        "index": 3110,
+        "x": 308,
+        "y": 388,
+        "score": 0.5774214443757908
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "3077e3dd1e256427c25b9b0170bcc977df41cc5337ab07ed9e72719f71717db7",
+      "scanMs": 1013.5825000000041
+    },
+    {
+      "id": "v3-lower-center-h52-scan46-final",
+      "marks": [
+        3174
+      ],
+      "maximum": {
+        "index": 3174,
+        "x": 308,
+        "y": 396,
+        "score": 0.9855115401602578
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "3077e3dd1e256427c25b9b0170bcc977df41cc5337ab07ed9e72719f71717db7",
+      "scanMs": 1024.7727000000014
+    },
+    {
+      "id": "v3-lower-center-h52-scan52-final",
+      "marks": [],
+      "maximum": {
+        "index": 3174,
+        "x": 308,
+        "y": 396,
+        "score": 0.412579299573469
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "3077e3dd1e256427c25b9b0170bcc977df41cc5337ab07ed9e72719f71717db7",
+      "scanMs": 1033.4363000000012
+    },
+    {
+      "id": "v3-lower-center-h52-scan58-final",
+      "marks": [],
+      "maximum": {
+        "index": 3282,
+        "x": 148,
+        "y": 412,
+        "score": 0.1941006073297674
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "3077e3dd1e256427c25b9b0170bcc977df41cc5337ab07ed9e72719f71717db7",
+      "scanMs": 1032.6668999999965
+    },
+    {
+      "id": "v3-lower-center-h52-scan64-final",
+      "marks": [],
+      "maximum": {
+        "index": 2738,
+        "x": 404,
+        "y": 340,
+        "score": 0.231635245313214
+      },
+      "maximumScoreError": 0,
+      "pngSHA256": "3077e3dd1e256427c25b9b0170bcc977df41cc5337ab07ed9e72719f71717db7",
+      "scanMs": 1039.715400000001
+    }
+  ],
+  "finishedAtUtc": "2026-10-11T06:32:33.976Z",
+  "summary": {
+    "rows": 113,
+    "maxScoreError": 0,
+    "maxFeatureError": 0,
+    "exactMarks": true,
+    "exactTopEightAndLocalPeaks": true,
+    "archivedPNGChecks": 45
+  }
+}

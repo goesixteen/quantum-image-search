@@ -1,0 +1,13 @@
+"""Correct report prose only. Never modify frozen model or evidence/score data."""
+from pathlib import Path
+import json,argparse,hashlib,datetime
+HERE=Path(__file__).resolve().parent;PROJECT=HERE.parents[1];p=argparse.ArgumentParser();p.add_argument('--output',default=str(HERE));a=p.parse_args();OUT=Path(a.output)
+def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+model=json.loads((OUT/'wanda-qnn.json').read_text());protocol=json.loads((HERE/'protocol.json').read_text());train=json.loads((OUT/'train-dataset.json').read_text())
+correct='Same generated Wanda PNG over five generated crowd backgrounds (Festival, Beach, Market, Park, Fairground); supplied discrete heights40/46/52/58/64px; native high-quality resize; always-front fully visible inside-frame targets; disjoint center partitions on known art identities. No unseen identity or arbitrary-size claim.'
+erratum=dict(frozenModelSHA256=sha(OUT/'wanda-qnn.json'),affectedField='trainingDomain',inheritedIncorrectValue=model['trainingDomain'],correctedValue=correct,reason='Trainer clone retained one previous experiment description: replacement failed to match its Unicode en dash. No prior artwork or prior weights were used in this experiment.',inferenceEffect='None. Scanner reads featureVersion/names, qubits/layers, theta/readout/bias/threshold; trainingDomain is descriptive only. All numerical parameters, predictions, thresholds, frozen files and reserved test results remain unchanged.',evidence=dict(featureVersion=model['featureVersion'],protocolSHA256=sha(HERE/'protocol.json'),target=train['target'],scenes=train['scenes'],trainFeaturesSHA256=train['featuresSha256'],trainLabelsSHA256=train['labelsSha256'],actualHeights=protocol['heights'],actualTargetScenes=protocol['targetScenes']),preservation='Frozen model bytes and original trainer are retained verbatim; reports use this correction instead of silently editing the checkpoint.')
+(OUT/'metadata-erratum.json').write_text(json.dumps(erratum,indent=2)+'\n')
+metricsFile=OUT/'wanda-qnn-metrics.json'
+if metricsFile.exists():
+    metrics=json.loads(metricsFile.read_text());metrics['scope']=correct;metrics['metadataErratum']={'path':'model/wanda-qnn/metadata-erratum.json','sha256':sha(OUT/'metadata-erratum.json'),'affectedFrozenModelSHA256':erratum['frozenModelSHA256'],'affectedField':'trainingDomain','inferenceEffect':'none'};metricsFile.write_text(json.dumps(metrics,indent=2,allow_nan=False)+'\n')
+print(json.dumps({'frozenModelSHA256':erratum['frozenModelSHA256'],'correctedField':'report scope only','erratumSHA256':sha(OUT/'metadata-erratum.json')}))

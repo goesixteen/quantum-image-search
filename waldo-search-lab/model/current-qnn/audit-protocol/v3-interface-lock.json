@@ -1,0 +1,17 @@
+{
+  "recordedAtUtc": "2026-10-11T01:49:26Z",
+  "clockSource": "clock.curr_time",
+  "protocolSHA256": "4a113cef7f0dcd84f61845dae60703db5952e0355d95bf7256d79fb58fb6eb90",
+  "featureVersion": "current-qnn-window-v3",
+  "javascript": "outputs/waldo-search-lab/dist/qnn-localizer.js",
+  "javascriptSHA256": "6e3dfd5349fdc439629640d5aac3e0b467ccc2e362a0b9273d79584f5159a61a",
+  "python": "outputs/waldo-search-lab/model/qnn_localizer_features.py",
+  "pythonSHA256": "fc1466ffbd92027178e4d2bd52a7ca342c464292d5cf7117f6fc150b80deb0c3",
+  "numericalFixture": "outputs/waldo-search-lab/tests/qnn-localizer-fixtures.json",
+  "numericalFixtureSHA256": "669c59c6a4cf268897dc850f34482787c69db09abec2ba7a8f5ed23edcac3960",
+  "change": "Training/validation-only representation revision: known-style continuous palette memberships, periodic stripe power and phase consistency, head/ring/leg morphology, fixed-pixel centroid priors, and supplied height. Scanner API, fixed 4096 lattice, threshold/NMS acceptance, point tolerance, audit assets, geometries, seeds and grading criteria remain unchanged. Runtime inference has no target image pixels, clean background, truth position, renderer masks, template results or feature-based acceptance gate.",
+  "rasterizerDisclosure": "The frozen audit retains native Canvas default resize smoothing. The app now explicitly requests browser Canvas high smoothing, chosen before V3 fitting without independent audit scores. Native audit and browser replay may therefore differ; do not treat them as byte-identical rasterizers.",
+  "sourceHashesVerified": true,
+  "candidateModelRead": false,
+  "independentModelScoresRead": false
+}

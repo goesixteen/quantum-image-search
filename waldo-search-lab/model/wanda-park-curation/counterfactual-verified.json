@@ -1,0 +1,8 @@
+{
+  "scope": "Counterfactual feature-vector/circuit diagnosis, not rendered-image evaluation or causal attribution. Joint feature combinations may not be physically renderable. No fitting or threshold changes.",
+  "rows": 18,
+  "interventions": 37,
+  "comparisons": 684,
+  "maximumScoreError": 0.0,
+  "verified": true
+}

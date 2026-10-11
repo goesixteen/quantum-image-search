@@ -1,0 +1,10 @@
+{
+  "recordedAtUtc": "2026-10-11T01:33:13Z",
+  "clockSource": "clock.curr_time",
+  "originalProtocolSHA256": "4a113cef7f0dcd84f61845dae60703db5952e0355d95bf7256d79fb58fb6eb90",
+  "previousHarnessSHA256": "d37c949ad2126eb3a0636c7e429aef30ed91051a9f178ea00b4d3edd015e1ad3",
+  "currentHarnessSHA256": "fff02812e6bc1559703441fc8680c98287652a23e9d20a939483ce1758684d8c",
+  "change": "Portability only: explicit --protocol-dir flag and matching exported-function option locate unchanged frozen records in delivered source. Original default work/qnn-current retained. No cases, seeds, assets, visibility, geometry, threshold or scoring changes.",
+  "candidateModelRead": false,
+  "independentModelScoresRead": false
+}

@@ -1,0 +1,18 @@
+"""Prepare/freeze validated candidate; report reserved results without changing weights."""
+from pathlib import Path
+import argparse,json,hashlib,datetime,shutil
+HERE=Path(__file__).resolve().parent;PROJECT=HERE.parents[1]
+p=argparse.ArgumentParser();p.add_argument('mode',choices=['prepare','freeze','report']);p.add_argument('--output',default=str(HERE));a=p.parse_args();OUT=Path(a.output)
+def read(f):return json.loads((OUT/f).read_text())
+def save(f,x): (OUT/f).write_text(json.dumps(x,indent=2,allow_nan=False)+'\n')
+def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+model=read('wanda-qnn.json')
+if a.mode=='prepare':
+    regression=read('default-regression.json');parity=read('parity-verification.json');assert regression['passed'] and parity['passed'];assert regression['modelSHA256']==sha(OUT/'wanda-qnn.json') and parity['modelSHA256']==sha(OUT/'wanda-qnn.json')
+    assert model['sceneValidation']['absenceFalsePointScenes']==0 and model['sceneValidation']['targetFalsePointRate']<=.01
+    model['readyForDemo']=True;model['defaultTargetHeight']=52;model['supportedTrainingHeights']=[40,46,52,58,64];model['detectorScoreMeaning']='Learned sigmoid score; real-world probability calibration not established';save('wanda-qnn.json',model)
+elif a.mode=='freeze':
+    regression=read('default-regression.json');parity=read('parity-verification.json');assert model['readyForDemo'] and regression['passed'] and parity['passed'];assert regression['modelSHA256']==sha(OUT/'wanda-qnn.json') and parity['modelSHA256']==sha(OUT/'wanda-qnn.json')
+    record=read('candidate-freeze.json');record['phase']='usable default/parity-checked candidate, before any reserved test scores';record['frozenAtUtc']=datetime.datetime.now(datetime.timezone.utc).isoformat();record['files']={f:sha(OUT/f) for f in record['files']};record['files'].update({f:sha(OUT/f) for f in ['default-regression.json','parity-verification.json','pixel-parity-fixtures.json']});record['sourceFiles'].update({f:sha(HERE/f) for f in ['release.py','normalize-backgrounds.mjs','parity.mjs']});save('candidate-freeze.json',record);save('usable-candidate-freeze.json',record);print(json.dumps({'modelSHA256':sha(OUT/'wanda-qnn.json'),'freezeSHA256':sha(OUT/'usable-candidate-freeze.json'),'sceneValidation':model['sceneValidation']}))
+else:
+    freeze=read('usable-candidate-freeze.json');assert all(sha(OUT/f)==h for f,h in freeze['files'].items()),'Frozen checkpoint or evidence changed';test=read('held-out-test-results.json');validation=read('validation-scene-results.json');baseline=read('wanda-logistic.json');contribution=read('quantum-contribution.json');metrics={'name':'Wanda same-art fully-visible learned oracle','featureVersion':model['featureVersion'],'scope':model['trainingDomain'],'frozenModelSHA256':sha(OUT/'wanda-qnn.json'),'protocol':json.loads((HERE/'protocol.json').read_text()),'quantumContribution':contribution,'defaultRegression':read('default-regression.json'),'qnn':{'windowMetrics':{**model['metrics'],'test':test['results']['qnn']['windows']},'sceneMetrics':{'validation':validation['qnn']['summary'],'test':test['results']['qnn']['sceneSummary']}},'logistic':{'windowMetrics':{**baseline['metrics'],'test':test['results']['logistic']['windows']},'sceneMetrics':{'validation':validation['logistic']['summary'],'test':test['results']['logistic']['sceneSummary']},'regularization':baseline['regularization']},'testDataHashes':test['testDataHashes'],'warning':'Same generated target and background identities; held-out center partitions, not unseen identities. No quantum advantage is claimed.'};save('wanda-qnn-metrics.json',metrics);print(json.dumps({k:metrics[k]['sceneMetrics']['test'] for k in ['qnn','logistic']}))

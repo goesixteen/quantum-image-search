@@ -1,0 +1,444 @@
+{
+  "recorded_at": "2026-10-11T09:25:53.149557+00:00",
+  "iteration": 14,
+  "work_step": "interaction-recovery-and-portable-quick-start",
+  "bus": {
+    "project_id": "appgprj_6ac9e65f76c48191b8d53784212b5f4c",
+    "commit_sha": "2f616c21b832d8164b06c60a7ffc66499c20290f",
+    "deployment_id": "appgdep_6aca06d97cf4819191d7cd98c5a80355",
+    "version_id": "appgprj_6ac9e65f76c48191b8d53784212b5f4c~appgver_3d2d9fda24e08191bfc638a1664a844a",
+    "status": "succeeded",
+    "url": "https://bus-search-quantum-lab.syrupyspool2.chatgpt.site",
+    "audience": "owner-private"
+  },
+  "crowd": {
+    "project_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1",
+    "commit_sha": "f8090bd03045d350bdb6d2e9133c0e882887a3b8",
+    "deployment_id": "appgdep_6acb5549b6bc8191aea20694b9916792",
+    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_9b48a7cb5724819195d907ec353d4c4b",
+    "status": "succeeded",
+    "url": "https://quantum-crowd-search.syrupyspool2.chatgpt.site",
+    "audience": "owner-private"
+  },
+  "previous_crowd_revision": {
+    "project_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1",
+    "commit_sha": "d14bf6a99c8dfc1513d3290ed36e6c474e4ad896",
+    "deployment_id": "appgdep_6acb4488c1688191b4163aa2c3d07dd4",
+    "version_id": "appgprj_6ac9ed0456008191aafac54f8d5af4d1~appgver_81a54d9fa44481919f79d5d15374683d",
+    "status": "succeeded",
+    "url": "https://quantum-crowd-search.syrupyspool2.chatgpt.site",
+    "audience": "owner-private"
+  },
+  "submission": {
+    "status": "not-submitted",
+    "instruction": "Do not submit any work. Keep iterating improvements.",
+    "public_materials_published": false
+  },
+  "browser_preview": "Private five-world game and connected three-stage quantum explanation have working Stop/Escape cancellation, visible reduced-animation controls, signed amplitude labels and image-error recovery. Actual local/hosted engineering checks preserve exact QNN/Grover behavior and the frozen evidence. Portable startup and package-resolution checks are documented with npm/cross-platform limits.",
+  "hosted_browser_proofs": [
+    "wanda-interaction-game-hosted-proof.png",
+    "wanda-interaction-qnn-hosted-proof.png",
+    "wanda-interaction-grover-hosted-proof.png",
+    "wanda-interaction-measurement-hosted-proof.png",
+    "wanda-interaction-phone-hosted-proof.png"
+  ],
+  "current_qa": {
+    "node_tests_passed": 131,
+    "frozen_model_sha256": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88",
+    "frozen_verifier": {
+      "passed": true,
+      "frozen_files": 11,
+      "frozen_sources": 7,
+      "pixel_fixtures": 12
+    },
+    "scope": "Known Wanda PNG, five known backgrounds, disjoint center partitions and seeded placements, supplied40/46/52/58/64px heights, front and inside frame. No unseen-person, unknown-size, occlusion or quantum-advantage claim.",
+    "reserved_qnn": {
+      "complete_hits": 298,
+      "target_scenes": 300,
+      "wrong_point_scenes": 1,
+      "abstentions": 1,
+      "empty_false_detections": 0,
+      "empty_scenes": 25
+    },
+    "reserved_logistic": {
+      "complete_hits": 299,
+      "target_scenes": 300,
+      "wrong_point_scenes": 0,
+      "abstentions": 1,
+      "empty_false_detections": 0,
+      "empty_scenes": 25
+    },
+    "actual_state_trace": {
+      "fixed_cases": 28,
+      "raster_fixtures": 15,
+      "gate_frames": 4508,
+      "max_expectation_error": 6.38e-16,
+      "max_score_error": 7.63e-17
+    },
+    "canonical_native_renderer": {
+      "frames": 325,
+      "compared_rgba_channels": 340787200,
+      "different_rgba_channels": 0,
+      "max_feature_error": 0,
+      "max_score_error": 1.33e-15,
+      "full_failure_lattices": 2,
+      "scope": "Engineering parity to opened frozen corpus; not a new holdout or Chromium byte-parity claim"
+    },
+    "descriptive_metadata_erratum": "waldo-search-lab/model/wanda-qnn/metadata-erratum.json",
+    "qiskit_wanda_tests_passed": 10,
+    "browser_rendering_audit": {
+      "targets": 15,
+      "browser_complete": 15,
+      "native_complete": 13,
+      "empty_scenes": 5,
+      "browser_empty_false_points": 0,
+      "native_empty_false_points": 0,
+      "equal_predicate_pairs": 18,
+      "pairs": 20,
+      "identical_pixel_pairs": 0,
+      "center": [
+        276,
+        348
+      ],
+      "scope": "Former-default known-center engineering diagnostic, not reserved accuracy; frozen weights unchanged."
+    },
+    "two_wanda": {
+      "accepted_points": [
+        [
+          420,
+          300
+        ],
+        [
+          276,
+          348
+        ]
+      ],
+      "peak_round_one": 50,
+      "peak_round_two": 35,
+      "combined_peak_probability": 0.9999968477766265,
+      "per_copy_peak_probability": 0.4999984238883132,
+      "seeded_draws": 10000,
+      "counts": [
+        4987,
+        5013
+      ],
+      "scope": "Controlled same-art native and actual browser-image experiment, not reserved accuracy."
+    },
+    "latest_absence_check": {
+      "world": "CuratedPark",
+      "height": 52,
+      "accepted": 0,
+      "scanned": 4096,
+      "result": "No match found",
+      "round": 0,
+      "sampling_disabled": true,
+      "strongest_background_score_displayed_percent": 70.21,
+      "threshold_percent": 90.56472752971428,
+      "where": "Actual local and terminal-deployed private Chromium page"
+    },
+    "park_curation": {
+      "native_curation_scans": 113,
+      "native_positive_regressions": 1,
+      "actual_browser_score_checks": 11,
+      "total_full_field_checks": 125,
+      "artifact_hashes_verified": 40,
+      "external_hashes_verified": 12,
+      "complete_PNG_fixtures": 9,
+      "default_supplied_height": 52,
+      "absent_peak": 0.7020770671355234,
+      "absent_accepted": 0,
+      "best_window": [
+        172,
+        396
+      ],
+      "positive_accepted": [
+        2420
+      ],
+      "positive_point": [
+        420,
+        300
+      ],
+      "positive_score": 0.9933728169957108,
+      "positive_grade_center_error_px": 0.5,
+      "false_acceptance_sizes": [
+        40,
+        46
+      ],
+      "scope": "Model-guided artwork curation; conditional52px demonstration. Not new holdout, all-size identity recognition, retraining or an extension of298/300."
+    },
+    "prior_compact_explainer_iteration12": {
+      "node_tests_passed": 120,
+      "local": {
+        "status": "PASS",
+        "checks": [
+          "Exactly five worlds, trained QNN default; one visible panel and three accessible tabs. Unbuilt Grover and Measurement show actual-run placeholders.",
+          "Festival Read this image accepts address2420 and saves round0 without a measurement. Phase preserves 0.024414063% accepted mass; reflection previews round1 while the saved round remains0.",
+          "An actual round0 draw3014 maps to(52,380), is unmarked and misses Wanda by377.1px; its outcome remains visible without postselection.",
+          "Complete one round saves round1 and0.21958353% accepted mass. First peak50 gives99.994535%; an actual draw2420 maps to(420,300), center error0.5px and100% visibility.",
+          "Past the peak101 gives0.092456966% accepted mass and accepted amplitude\u22120.030406737. Measurement uses this saved state, not the reflection preview.",
+          "Home/End/Left/Right and tab clicks preserve window, gate, round, phase preview and measurement. Inactive panels have zero layout height. Hiding playback pauses at gate0.27; returning preserves it.",
+          "At gate20 the four physical reduced Bloch lengths are0.571/0.202/0.374/0.188. The crop, actual descriptor values, circuit map and four spheres form one connected panel.",
+          "The actual interface download contains4096 amplitudes/probabilities, mark2420 and iteration50. Every probability equals a\u00b2 exactly; norm0.9999999999999403, accepted0.9999453461091129, unmarked per-address1.33464935007652e\u22128. No renormalization.",
+          "Changing world clears the old sample/run and returns to Image+QNN. Empty Park52 accepts zero, abstains and disables sampling. Highest window(172,396) remains70.21%, unmarked.",
+          "At390\u00c3\u2014844, no horizontal overflow. Tabs wrap clearly, spheres are120px, primary controls remain visible, and footer Next navigates Grover then Measurement. Default viewport restored afterward.",
+          "Comparison mode clears the Wanda trace and exports, disables lesson building/sampling and identifies the separate comparator. Restoring the trained QNN restores inspection.",
+          "Festival16\u00d716 uses8 location qubits/256 addresses; peak12 sample157 maps to representative(420,300), with0.5px center error. Changing supplied size52\u219246 clears the run/sample and returns to stage1.",
+          "Start over restores Festival52,64\u00c3\u201464 and trained QNN. Main Find Wanda finishes at round50, sample2420 and Found Wanda; the explainer shows the same saved run. No console errors observed.",
+          "Final slider repair: after peak sample2420, range and label both2420; ArrowRight changes both to2421 and shows its exact unmarked tail without changing the recorded measurement."
+        ]
+      },
+      "hosted": {
+        "status": "PASS",
+        "recordedAtUtc": "2026-10-11T07:25:18.369076+00:00",
+        "summary": "Final owner-private revision f5e429a94f885dc8afd1469079ca69f065c8cd56 is terminal-deployed and verified in actual Chromium. One connected three-stage explainer, actual QNN crop/reduced states, phase/probability semantics and current-round sampling work. Empty Park52 abstains. The inspected-address slider repair is verified; final proof captures replace the intermediate capture, which is archived.",
+        "checks": [
+          "Default Festival: exactly five worlds, trained QNN, three tabs, one active panel, optional advanced/evidence disclosures.",
+          "Reading builds address2420 at round0 and waits without measurement; phase keeps accepted0.024414063%. Reflection preview and saved-round distinction are verified.",
+          "First peak50: accepted99.994535%, unmarked0.0054653891%, per-unmarked1.334649e-8. Actual sample2420 reports(420,300),0.5px center error and100% visibility.",
+          "Final repair: sample2420 synchronizes range/label2420; ArrowRight synchronizes both2421 and shows exact negative amplitude/unmarked tail. The recorded sample remains2420.",
+          "Final gate20 shows real reduced Bloch lengths0.571/0.202/0.374/0.188 while preserving saved round50. Screenshot includes actual crop, descriptors, circuit and four spheres.",
+          "Final empty Park52: zero accepted, no answer, sampling disabled; highest(172,396) score70.21% remains below threshold.",
+          "No console errors observed. Start over leaves Festival52,64\u00d764 and Ready to search for review.",
+          "Postpublication audience verified owner/custom:1user,0groups,0external visitors. Both Site identities and bus deployment preserved."
+        ],
+        "proofs": [
+          "wanda-compact-qnn-hosted-proof.png",
+          "wanda-compact-measurement-hosted-proof.png"
+        ],
+        "scope": "Engineering/deployment regressions, not new held-out accuracy."
+      },
+      "checks_performed": [
+        "120 Node tests, all passing (114 existing plus6 exact-measurement tests)",
+        "Read-only frozen verifier:11files/7sources/12pixel fixtures",
+        "Park curation verifier:40artifact hashes/12external guards/9completePNG fixtures",
+        "Syntax and Git whitespace checks",
+        "Static references:192unique crowd IDs/33local references; shared bus/crowd quantum modules identical",
+        "Actual local Chromium three-stage build/phase/reflection/current-round sampling/overshoot/full export",
+        "Keyboard, hidden-playback,390px mobile, empty Park, comparison mode, coarse register and edited-size invalidation",
+        "Main Find Wanda flow linked to the same saved state",
+        "Final terminal private deployment from exact pushed source f5e429a94f885dc8afd1469079ca69f065c8cd56",
+        "Actual final hosted three-stage/circuit/probability/sample/inspector and empty-Park checks",
+        "Postpublication owner-only audience and clean crowd checkout"
+      ],
+      "retained_limits": [
+        "The trained model and threshold are unchanged. The original298/300 native result is not a new browser or general-person accuracy claim.",
+        "Park artwork remains a curated52px demonstration;40px and46px can falsely accept its lookalike. All curation failures remain preserved.",
+        "Classical pixel features and predicate compilation separate the four-qubit classifier from the location register. No end-to-end quantum speedup or hardware claim.",
+        "Repeated samples represent freshly prepared copies; statevector collapse is not simulated. Soft image colors remain display only.",
+        "No novice learning study was conducted. Mobile canvas labels are small; exact probabilities are repeated in readable text below the bars. Further polish is appropriate."
+      ],
+      "known_attempts_and_repairs": [
+        "A scratch numeric check requested nonexistent runGrover; corrected to existing simulateGrover.",
+        "An rg docs/WANDA* argument was rejected on Windows; reran with explicit docs directory and -g filters.",
+        "Exact accessible nav name including an aria-hidden arrow matched no link; inspected DOM and used the observed header href.",
+        "A full-page clip captured the sticky tabs over introductory text; corrected framing by returning to the underhood anchor. The mobile/default sizes were restored after testing.",
+        "Independent review found a tiny nonuniform probability class mislabelled equal under a tolerance; replaced with exact equality and added a regression.",
+        "First private hosted screenshot exposed a cached address text/range-thumb mismatch. Reopened exact source, synchronized range on inspector update, and passed focused local sample2420/manual2421 checks. Intermediate deployment retained; final hosted check pending.",
+        "Bookkeeping apply_patch initially combined Delete/Add for the same release-file target and was rejected without modification; corrected with one Update File operation.",
+        "Final hosted sample2420/manual2421 and empty-Park checks pass after the inspector repair. Intermediate source/deployment and thumb-defect screenshot are retained.",
+        "A Windows default-codepage read garbled Unicode in new QA bookkeeping strings; repaired those records from cp1252 back to UTF-8 and made the finalization scripts read UTF-8 explicitly. Source code, numeric evidence and deployed state were unaffected."
+      ],
+      "next_priority": "Polish the same three-stage experience with a novice walkthrough and clearer responsive circuit/probability labels. Keep advanced evidence optional. Plan any new rendering/generalization data prospectively before freezing and reserved testing; do not retune the opened Wanda checkpoint.",
+      "proof_images": [
+        {
+          "label": "Actual private crop-to-QNN stage",
+          "path": "wanda-compact-qnn-hosted-proof.png"
+        },
+        {
+          "label": "Actual private exact measurement stage",
+          "path": "wanda-compact-measurement-hosted-proof.png"
+        }
+      ]
+    },
+    "responsive_explainer_iteration13": {
+      "iteration": 13,
+      "node_tests_passed": 126,
+      "local": {
+        "status": "PASS",
+        "checks": [
+          "126 Node tests pass, including six responsive drawing regressions; syntax/static references pass: 197  crowd IDs / 33 references,73 bus IDs / 13 references; shared quantum modules identical.",
+          "Read-only frozen verifier: 11 files / 7 sources / 12 pixel fixtures and Park: 40 artifacts / 12 external guards / 9 PNGs / 125 engineering checks pass; frozen model and threshold unchanged.",
+          "Actual Chromium desktop, 390\u00d7844,320\u00d7740 and 768\u00d71024 has no horizontal overflow; labelled real circuit slices and complete16-outcome layouts retain actual state.",
+          "Read image builds round 0 without sampling. Phase keeps accepted mass 0.024414063%; reflection previews round 1 at 0.21958353%, then commit saves it.",
+          "Main Find returns address 2420/point (420, 300) at peak 50; explicit Start at round 0 clears the old sample while tabs keep the current round.",
+          "CNOT gate 16\u219217 changes two Bloch lengths 1\u2192.292 and purities 1\u2192.543; the other two remain pure. Reduced states come from the full joint circuit.",
+          "Peak 50 accepted mass 99.994535%; each unmarked probability 1.334649e-8. Full UI export: 4,096 exact a\u00b2 values has norm 0.9999999999999403 without renormalization.",
+          "Reflection preview 51 shows 99.850737% but measurement still uses saved round 50; resizing preserves gate/round/sample and manual address inspection preserves actual outcome.",
+          "Park 52px absent accepts 0, shows the uniform mathematical distribution, disables sampling and reports no answer."
+        ]
+      },
+      "hosted": {
+        "status": "PASS",
+        "checks": [
+          "Exact source d14bf6a99c8dfc1513d3290ed36e6c474e4ad896 deployed successfully to the existing Site; post-deployment owner/custom audience remains one user, zero groups/external visitors.",
+          "Actual Chromium shows the final descriptor wording, visible angle legend/full-circuit readout, all five worlds and only three primary stages.",
+          "Read image waits at round 0 without sampling. Phase leaves 0.024414063% mass unchanged; reflection previews round 1 at 0.21958353%, then saved round commits.",
+          "At peak 50 the actual sample is 2420 \u2192 (420, 300), center error 0.5px. Inspector range/text agree; all 4,096 exported amplitudes/probabilities exactly match the local JSON export.",
+          "390px layout has no horizontal overflow,305px \u00d7 210px measurement canvas and6 of 20 labelled circuit slice; resizing/tab reveal retains gate 20 / round 50 / sample 2420.",
+          "Park 52px absent has zero accepted addresses, uniform state, disabled sampling and qualified sampling cue. No forced answer.",
+          "Keyboard target movement then Enter completes a real search, returning (420, 300) with 2.1px center error. This is an engineering check, not new accuracy.",
+          "No local or hosted browser errors/warnings observed. Normal viewport restored; temporarylocal QA tabsclosed and existinguser review tabs preserved."
+        ],
+        "proofs": [
+          "wanda-responsive-qnn-hosted-proof.png",
+          "wanda-responsive-grover-hosted-proof.png",
+          "wanda-responsive-measurement-hosted-proof.png",
+          "wanda-responsive-mobile-hosted-proof.png",
+          "wanda-responsive-mobile-qnn-hosted-proof.png"
+        ],
+        "summary": "Private responsive three-stage quantum walkthrough is terminal-deployed and verified in actual Chromium. Full-circuit readout, genuine reduced Bloch states, phase/preview/saved-round semantics and all 4,096 exact probabilities remain correct. Phone resizing preserves the run, default empty Park abstains, and keyboard Find works. Frozen model/threshold/evidence unchanged."
+      },
+      "checks_performed": [
+        "Full126Node test suite",
+        "JavaScript syntax",
+        "Static IDs/references and shared quantum module equality",
+        "Read-only frozen-model/source/pixel parity verifier",
+        "Read-only Park curation verifier",
+        "Independent scientific/drawing/copy review",
+        "Actual local/hosted Chromium UI, responsive geometry, sampling and complete probability exports"
+      ],
+      "attempts_repairs": [
+        "Independent review removed inherited one-pixel signed-bar minimum; subpixel tails and zero are now exact.",
+        "Initial address-slice test caught marks crowding out distant reference addresses; spread-out references now reserved.",
+        "Static helper initially used wrong cwd; corrected root invocation passes.",
+        "Browser inspector IDs and scene option corrected using current DOM. Phone override verified on the newest QA tab.",
+        "Hosted gate milestone selected while a fresh scan was finishing was reset by the legitimate new-scene event; reselected after scan completion. Final proof shows saved gate20.",
+        "Ambiguous Play header selector corrected to the exact link label before keyboard testing; no user state changed by the failed selector."
+      ],
+      "retained_limits": [
+        "Engineering and heuristic walkthrough checks, not a human learning study or new held-out recognition evidence.",
+        "Historical298/300 native result belongs to original unseeded scenes. Curated Park40/46 false acceptances and renderer differences remain recorded.",
+        "Known Wanda, supplied scale, simulated quantum circuit; no arbitrary-person recognition, occlusion, hardware execution or end-to-end speedup claim."
+      ],
+      "next_priority": "Polish keyboard/pointer, loading/cancellation and reduced-motion paths across all five worlds; dry-run the packaged quick-start. Seek voluntary first-time feedback when available, without claiming measured learning. Keep the same compact flow and frozen evidence.",
+      "proof_images": [
+        {
+          "label": "Hosted QNN stage",
+          "path": "wanda-responsive-qnn-hosted-proof.png"
+        },
+        {
+          "label": "Hosted interference stage",
+          "path": "wanda-responsive-grover-hosted-proof.png"
+        },
+        {
+          "label": "Hosted measurement stage",
+          "path": "wanda-responsive-measurement-hosted-proof.png"
+        },
+        {
+          "label": "Hosted phone layout",
+          "path": "wanda-responsive-mobile-hosted-proof.png"
+        }
+      ]
+    },
+    "interaction_iteration14": {
+      "iteration": 14,
+      "node_tests_passed": 131,
+      "local": {
+        "status": "PASS",
+        "checks": [
+          "All 131 Node tests pass, including five new interaction ownership regressions. Syntax, diff and static checks pass: 197 crowd IDs / 33 references; 73 bus IDs / 13 references; shared quantum modules identical.",
+          "Read-only frozen verifier checks 11 files, seven source contracts and 12 pixel fixtures; Park verifier checks 40 artifacts, 12 external guards, nine PNGs and 125 full-field checks. Model, threshold and retained failure evidence unchanged.",
+          "Actual Chromium Stop during scanning and Escape during amplification at round 1 clear the run/sample without changing the analyzed PNG. Busy ARIA returns true\u2192false; controls recover.",
+          "Start over followed immediately by Market selection keeps Market. Native tray drag and on-canvas drag followed by Find return points (252,260) and (324,188), center errors 3.9px and 2.5px; both within 6.7px tolerance.",
+          "Festival, Beach, Market, Park and Fairground default-position searches return address 2420 / point (420,300), peak 50, 0.5px error, 100% target visibility. These are known-placement engineering checks.",
+          "Visible Reduce animations advances exactly one circuit gate, shortens game playback and works when checked during amplification without changing the exact peak/sample.",
+          "Malformed background upload retains Festival and the analyzed PNG, reports an image error, clears both predicate counts to Not scanned, disables top-window inspection and re-enables Find/Read. A new Find succeeds.",
+          "Recovered UI export has all 4,096 amplitudes/probabilities, norm 0.9999999999999403 and zero error against p=a\u00b2. No browser console errors/warnings.",
+          "390\u00d7844 phone view has 375px document width, an 18px checkbox and no overflow; Stop works. Empty Park52 returns zero accepted addresses, uniform state and disabled sampling.",
+          "Independent fresh iteration13 ZIP extraction passes 126 crowd / 20 bus tests and frozen/Park verifiers. Updated separate copy passes 126 original tests with local Canvas 0.1.100 and Codex fallback unavailable; exact Windows packages copied, npm installation untested.",
+          "Updated port-0 server prints its actual free URL and serves four byte-identical resources; occupied/invalid ports fail usefully. Temporary audit servers stopped; existing user previews preserved."
+        ]
+      },
+      "hosted": {
+        "status": "PASS",
+        "checks": [
+          "Source f8090bd03045d350bdb6d2e9133c0e882887a3b8 deployed terminal-succeeded to the existing owner-private Site; owner/custom audience remains one user, zero groups and external visitors.",
+          "Actual hosted Stop is enabled with busy=true, then clears run/sample and restores busy=false while preserving the analyzed PNG.",
+          "Visible Reduce animations advances one real gate; the default search reaches peak 50 and point (420,300). Gate 20 shows four mixed reduced states with lengths 0.571, 0.202, 0.374 and 0.188.",
+          "Signed chart labels accepted/unmarked classes and zero. Round-0 oracle preview shows the accepted amplitude negative with unchanged accepted mass 0.024414063%.",
+          "Peak-50 sampling returns 2420 / (420,300), error 0.5px, 100% visibility. All 4,096 exported amplitudes/probabilities exactly equal the local values; norm 0.9999999999999403, max p=a\u00b2 error zero.",
+          "Hosted 390\u00d7844 layout has 375px document width, 18px checkbox and no horizontal overflow. Gate stepping and Stop work. Empty Park52 has zero marks, uniform probabilities, disabled sampling and no match.",
+          "No hosted desktop/phone console errors/warnings. Viewport restored, temporary QA tabs closed, existing review tabs preserved; final hosted review tab retained."
+        ],
+        "proofs": [
+          "wanda-interaction-game-hosted-proof.png",
+          "wanda-interaction-qnn-hosted-proof.png",
+          "wanda-interaction-grover-hosted-proof.png",
+          "wanda-interaction-measurement-hosted-proof.png",
+          "wanda-interaction-phone-hosted-proof.png"
+        ],
+        "summary": "Private five-world game and connected three-stage quantum explanation have working Stop/Escape cancellation, visible reduced-animation controls, signed amplitude labels and image-error recovery. Actual local/hosted engineering checks preserve exact QNN/Grover behavior and the frozen evidence. Portable startup and package-resolution checks are documented with npm/cross-platform limits."
+      },
+      "checks_performed": [
+        "Full 131 Node test suite",
+        "JavaScript syntax/diff/static checks",
+        "Read-only frozen model/pixel/source verifier",
+        "Read-only Park artifact verifier",
+        "Independent archive extraction and updated local-dependency/port startup dry-run",
+        "Actual local and hosted Chromium interaction, upload recovery, phone layout and full probability export"
+      ],
+      "attempts_repairs": [
+        "Original archive defaults hit occupied ports, and two test loaders bypassed a local Canvas dependency; explicit/free ports and local-first resolution now work.",
+        "Phone review caught an inherited 180px checkbox width; corrected to 18px.",
+        "An initial hidden-input file-chooser wait reset browser control; reacquired documentation and opened the nested disclosure before retry. No application data lost.",
+        "Failed upload initially retained stale acceptance counts in the explainer; final recovery republishes the unchanged image with cleared scan evidence and was rechecked.",
+        "A status selector and hidden-tab checkbox attempt were corrected using current DOM; no user state changed by those failed selectors."
+      ],
+      "retained_limits": [
+        "Engineering and heuristic UX checks, not a human learning study or new held-out recognition result.",
+        "Historical native 298/300 applies to the original unseeded backgrounds. Curated Park40/46 lookalike false acceptances and native/browser resampling differences remain recorded.",
+        "Known Wanda PNG, supplied scale, fully visible targets and classical descriptors feeding a simulated trained quantum circuit; no arbitrary-person, occlusion, hardware or end-to-end speedup claim.",
+        "Physical multi-touch and OS motion preference were not directly changed/tested. npm installation and cross-platform execution remain unverified; ordinary local package resolution was tested with copied exact installed Windows packages."
+      ],
+      "next_priority": "Review the compact walkthrough as a first-time visitor, then improve the most confusing copy or interaction without adding more teaching units. If actual novice feedback is available, document it separately from heuristic QA. Keep the frozen model/evidence and private publication constraint; predeclare any future domain or recognition study.",
+      "proof_images": [
+        {
+          "label": "Hosted game",
+          "path": "wanda-interaction-game-hosted-proof.png"
+        },
+        {
+          "label": "Hosted real QNN stage",
+          "path": "wanda-interaction-qnn-hosted-proof.png"
+        },
+        {
+          "label": "Hosted signed interference stage",
+          "path": "wanda-interaction-grover-hosted-proof.png"
+        },
+        {
+          "label": "Hosted phone circuit controls",
+          "path": "wanda-interaction-phone-hosted-proof.png"
+        }
+      ]
+    }
+  },
+  "next_work": [
+    "Improve the educational story and verify it with unfamiliar users before cosmetic expansion",
+    "Audit Chromium versus native raster behavior and port the new Wanda circuit into the existing Qiskit companion",
+    "Broaden to separately held-out background identities and explain learned features versus supplied size",
+    "Keep frozen298/300 results and retained failures; no reserved-test tuning",
+    "Maintain both owner-private Sites and no contest submission"
+  ],
+  "owner_access_verified": {
+    "role": "owner",
+    "mode": "custom",
+    "allowed_users": 1,
+    "allowed_groups": 0,
+    "external_visitors": 0
+  },
+  "checks_performed_this_iteration": [
+    "Full 131 Node test suite",
+    "JavaScript syntax/diff/static checks",
+    "Read-only frozen model/pixel/source verifier",
+    "Read-only Park artifact verifier",
+    "Independent archive extraction and updated local-dependency/port startup dry-run",
+    "Actual local and hosted Chromium interaction, upload recovery, phone layout and full probability export"
+  ],
+  "next_priority": "Review the compact walkthrough as a first-time visitor, then improve the most confusing copy or interaction without adding more teaching units. If actual novice feedback is available, document it separately from heuristic QA. Keep the frozen model/evidence and private publication constraint; predeclare any future domain or recognition study.",
+  "overnight_reset_budget": {
+    "maximum": 1,
+    "agent_consumed": 0,
+    "available_observed": 2,
+    "preserve_for_user": 1,
+    "ledger": "OVERNIGHT_RESOURCE_BUDGET.json"
+  }
+}

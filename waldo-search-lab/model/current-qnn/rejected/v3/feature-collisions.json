@@ -1,0 +1,23 @@
+{
+  "train": {
+    "n": 56264,
+    "allZeroPositive": 0,
+    "positiveN": 1200,
+    "uniqueRounded12": 56261,
+    "conflictingVectors": 1,
+    "rowsAtConflictingVectors": 2,
+    "positiveRowsAtConflictingVectors": 1,
+    "irreducibleClassificationErrorsAtIdenticalVectors": 1
+  },
+  "validation": {
+    "n": 9839,
+    "allZeroPositive": 0,
+    "positiveN": 300,
+    "uniqueRounded12": 9838,
+    "conflictingVectors": 0,
+    "rowsAtConflictingVectors": 0,
+    "positiveRowsAtConflictingVectors": 0,
+    "irreducibleClassificationErrorsAtIdenticalVectors": 0
+  },
+  "rounding": "12 decimals for exact-vector collision diagnostic, not model input"
+}

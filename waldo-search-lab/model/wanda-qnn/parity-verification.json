@@ -1,0 +1,11 @@
+{
+  "fixtures": 12,
+  "featureVersion": "wanda-window-v1",
+  "maxFeatureError": 3.1086244689504383e-15,
+  "maxReadoutError": 4.8433479449272454e-15,
+  "maxScoreError": 5.551115123125783e-16,
+  "modelSHA256": "d1f49aa304668d2826f36652ac70d0f51b64dc4eb86acfd2c0e7804f80ff4c88",
+  "gradientParameters": 40,
+  "maxGradientError": 2.1452090104290278e-11,
+  "passed": true
+}
